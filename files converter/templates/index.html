@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>File Converter</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 40px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    form {
+      background: #fff;
+      padding: 25px 30px;
+      border-radius: 10px;
+      display: inline-block;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    input[type="file"],
+    select {
+      margin: 15px 0;
+      padding: 10px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #28a745;
+      border: none;
+      padding: 10px 25px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: #218838;
+    }
+
+    .message {
+      color: red;
+      margin-top: 10px;
+    }
+
+    .download-section {
+      margin-top: 30px;
+    }
+
+    .download-button {
+      background-color: #007bff;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-size: 16px;
+      text-decoration: none;
+    }
+
+    .download-button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>File Converter</h1>
+
+  {% with messages = get_flashed_messages() %}
+    {% if messages %}
+      <div class="message">{{ messages[0] }}</div>
+    {% endif %}
+  {% endwith %}
+
+  <form method="POST" enctype="multipart/form-data">
+    <input type="file" name="file" id="fileInput" required><br>
+
+    <select name="target_format" id="targetFormat" required>
+      <option value="">-- Select target format --</option>
+    </select><br>
+
+    <button type="submit">Convert</button>
+  </form>
+
+  {% if download_url %}
+  <div class="download-section">
+    <a href="{{ download_url }}" class="download-button">Download Converted File</a>
+  </div>
+  {% endif %}
+
+  <script>
+    const formatMap = {
+      pdf: ["docx", "png"],
+      docx: ["txt", "pdf"],
+      txt: ["docx"],
+      png: ["pdf"],
+      jpg: ["pdf"],
+      jpeg: ["pdf"],
+      csv: ["json"],
+      json: ["csv"]
+    };
+
+    const fileInput = document.getElementById("fileInput");
+    const targetSelect = document.getElementById("targetFormat");
+
+    fileInput.addEventListener("change", () => {
+      const file = fileInput.files[0];
+      targetSelect.innerHTML = '<option value="">-- Select target format --</option>';
+
+      if (file) {
+        const ext = file.name.split('.').pop().toLowerCase();
+        const targets = formatMap[ext] || [];
+
+        for (let format of targets) {
+          const option = document.createElement("option");
+          option.value = format;
+          option.textContent = format.toUpperCase();
+          targetSelect.appendChild(option);
+        }
+
+        if (targets.length === 0) {
+          const option = document.createElement("option");
+          option.textContent = "No compatible conversions";
+          option.disabled = true;
+          targetSelect.appendChild(option);
+        }
+      }
+    });
+  </script>
+</body>
+</html>
+
