@@ -1,6 +1,0 @@
-pdf2image
-pytesseract
-Pillow
-Flask
-python-docx
-opencv-python-headless
