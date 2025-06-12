@@ -1,8 +1,6 @@
 PDF ↔ PNG
 TXT ↔ DOCX
 DOCX ↔ PDF
-PNG/JPG → PDF
-PDF → DOCX
 CSV ↔ JSON
 
 
