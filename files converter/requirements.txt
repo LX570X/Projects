@@ -5,3 +5,5 @@ Pillow
 python-docx
 pytesseract
 fpdf
+pdfplumber
+pymupdf>=1.23.9 

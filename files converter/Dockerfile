@@ -8,7 +8,9 @@ RUN apt-get update && apt-get install -y \
     libreoffice \
     build-essential \
     python3-dev \
-    && apt-get clean
+    && apt-get clean \
+    fonts-dejavu-core \
+    && rm -rf /var/lib/apt/lists/*
 
 # Create folders
 WORKDIR /app

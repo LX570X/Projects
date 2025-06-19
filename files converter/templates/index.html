@@ -100,16 +100,16 @@
   {% endif %}
 
   <script>
-    const formatMap = {
-      pdf: ["docx", "png"],
-      docx: ["txt", "pdf"],
-      txt: ["docx"],
-      png: ["pdf"],
-      jpg: ["pdf"],
-      jpeg: ["pdf"],
-      csv: ["json"],
-      json: ["csv"]
-    };
+  const formatMap = {
+    pdf: ["docx", "png", "csv"],
+    docx: ["txt", "pdf"],
+    txt: ["docx"],
+    png: ["pdf"],
+    jpg: ["pdf"],
+    jpeg: ["pdf"],
+    csv: ["json", "pdf"],
+    json: ["csv"]
+  };
 
     const fileInput = document.getElementById("fileInput");
     const targetSelect = document.getElementById("targetFormat");

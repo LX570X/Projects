@@ -108,6 +108,80 @@ def convert_file(file, target_format):
                 input_path
             ], check=True)
             output_path = os.path.join(OUTPUT_FOLDER, f"{name}.pdf")
+        
+        # PDF → CSV (OCR-based)
+        elif ext == "pdf" and target_format == "csv":
+            import csv
+            import pdfplumber
+            from pdf2image import convert_from_path
+            from pytesseract import image_to_string
+
+            rows = []
+
+            # 1️⃣  Try pdfplumber table extraction
+            with pdfplumber.open(input_path) as pdf:
+                for page in pdf.pages:
+                    table = page.extract_table()
+                    if table:
+                        rows.extend(table)
+
+            # 2️⃣  Fallback to OCR if nothing found
+            if not rows:
+                images = convert_from_path(input_path)
+                for img in images:
+                    text = image_to_string(img, lang="eng")
+                    for line in text.splitlines():
+                        cleaned = [cell.strip() for cell in line.split() if cell.strip()]
+                        if cleaned:
+                            rows.append(cleaned)
+
+            if not rows:
+                raise Exception("No table or text found in PDF.")
+
+            # 3️⃣  Write CSV
+            with open(output_path, "w", newline="", encoding="utf-8") as f:
+                writer = csv.writer(f)
+                writer.writerows(rows)
+        
+        
+        # CSV → PDF
+        elif ext == "csv" and target_format == "pdf":
+            import csv
+            from fpdf import FPDF
+
+            class PDF(FPDF):
+                pass
+
+            pdf = PDF(orientation="L", unit="mm", format="A4")
+            pdf.set_auto_page_break(auto=True, margin=10)
+            pdf.add_page()
+
+            font_path = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
+            if not os.path.exists(font_path):
+                font_path = os.path.join("fonts", "DejaVuSans.ttf")
+
+            pdf.add_font("DejaVu", "", font_path, uni=True)
+            pdf.set_font("DejaVu", size=7.5)
+
+            with open(input_path, newline='', encoding="utf-8-sig") as csvfile:
+                reader = list(csv.reader(csvfile))
+                if not reader:
+                    raise Exception("CSV is empty.")
+                col_count = len(reader[0])
+                page_width = pdf.w - 2 * pdf.l_margin
+                col_width = page_width / col_count
+
+                max_chars_per_cell = int(col_width // 2.5)  # adjust if needed
+
+                for row in reader:
+                    for cell in row:
+                        text = str(cell)
+                        if len(text) > max_chars_per_cell:
+                            text = text[:max_chars_per_cell - 3] + "..."
+                        pdf.cell(col_width, 8, text, border=1)
+                    pdf.ln()
+
+            pdf.output(output_path)
 
         # PDF → DOCX (OCR-based)
         elif ext == "pdf" and target_format == "docx":
