@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Multilingual Voice Transcriber</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 40px;
+    }
+    .rtl { direction: rtl; text-align: right; }
+    .ltr { direction: ltr; text-align: left; }
+    /* Recording indicator */
+    #recordIndicator {
+      width: 12px; height: 12px; border-radius: 50%;
+      background: gray; display: inline-block;
+      margin-left: 8px; vertical-align: middle;
+      transition: box-shadow 0.2s;
+    }
+    #recordIndicator.recording {
+      background: red; box-shadow: 0 0 8px red;
+    }
+    #recordStatus { margin-left: 8px; font-weight: bold; }
+    #recordStatus.recording { color: red; }
+  </style>
+</head>
+<body class="{{ 'rtl' if selected_language in ['ar','ur'] else 'ltr' }}">
+  <h1>Multilingual Voice Transcriber</h1>
+
+  <form id="transcribeForm" method="POST" enctype="multipart/form-data">
+    <label>Choose Language:</label>
+    <select name="language">
+      <option value="auto" {% if selected_language=='auto' %}selected{% endif %}>Auto Detect</option>
+      <option value="en"   {% if selected_language=='en'   %}selected{% endif %}>English</option>
+      <option value="ar"   {% if selected_language=='ar'   %}selected{% endif %}>Arabic</option>
+      <option value="hi"   {% if selected_language=='hi'   %}selected{% endif %}>Hindi</option>
+      <option value="ur"   {% if selected_language=='ur'   %}selected{% endif %}>Urdu</option>
+    </select>
+    <br><br>
+
+    <!-- Hidden slot for recorded audio -->
+    <input type="file" id="recordFileInput" name="record_file" accept="audio/*" hidden>
+
+    <label>Record with Microphone:</label><br>
+    <button type="button" onclick="startRecording()">🎙️ Start</button>
+    <button type="button" onclick="stopRecording()">⏹️ Stop</button>
+    <div id="recordIndicator"></div>
+    <span id="recordStatus">Not recording</span>
+    <br><br>
+
+    <label>Or upload an audio/video file:</label><br>
+    <input
+      type="file"
+      id="audioInput"
+      name="audio"
+      accept="audio/*,video/*"
+    >
+    <br><br>
+
+    <button type="submit">Transcribe</button>
+  </form>
+
+  {% if transcript %}
+    <h2>Transcript:</h2>
+    <pre>{{ transcript }}</pre>
+    <a href="/static/output/transcript.txt" download>Download Transcript</a>
+  {% endif %}
+
+  <script>
+    let mediaRecorder, audioChunks = [];
+
+    function startRecording() {
+      audioChunks = [];
+      navigator.mediaDevices.getUserMedia({ audio: true })
+        .then(stream => {
+          mediaRecorder = new MediaRecorder(stream);
+          mediaRecorder.start();
+          document.getElementById('recordIndicator').classList.add('recording');
+          document.getElementById('recordStatus').classList.add('recording');
+          document.getElementById('recordStatus').innerText = "Recording…";
+
+          mediaRecorder.ondataavailable = e => audioChunks.push(e.data);
+          mediaRecorder.onstop = () => {
+            document.getElementById('recordIndicator').classList.remove('recording');
+            document.getElementById('recordStatus').classList.remove('recording');
+            document.getElementById('recordStatus').innerText = "Processing…";
+
+            const blob = new Blob(audioChunks, { type: "audio/webm" });
+            const file = new File([blob], "recording.webm", { type: "audio/webm" });
+            const input = document.getElementById("recordFileInput");
+            const dt = new DataTransfer();
+            dt.items.add(file);
+            input.files = dt.files;
+
+            document.getElementById("transcribeForm").submit();
+          };
+        })
+        .catch(() => alert("Microphone permission denied."));
+    }
+
+    function stopRecording() {
+      if (mediaRecorder && mediaRecorder.state !== "inactive") {
+        mediaRecorder.stop();
+      }
+    }
+  </script>
+</body>
+</html>
