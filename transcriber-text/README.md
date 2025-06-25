@@ -7,9 +7,13 @@ Play back those MP3s in your browser
 
 Component:
 Flask	 pip install flask
+
 Whisper	 pip install whisper
+
 googletrans	 pip install googletrans==4.0.0-rc1
+
 gTTS	 pip install gtts
+
 ffmpeg	 Download from ffmpeg.org + add to PATH
 
 
