@@ -1,9 +1,11 @@
 Flask web app
+
 Record (via your browser) or upload an audio/video file
 Auto-detect the spoken language and transcribe it using OpenAI’s Whisper model
 Translate that transcript into any of several target languages with googletrans
 Generate speech from both the raw transcript and the translation using gTTS
 Play back those MP3s in your browser
+
 
 Component:
 Flask	 pip install flask
@@ -17,11 +19,14 @@ gTTS	 pip install gtts
 ffmpeg	 Download from ffmpeg.org + add to PATH
 
 
+
 Install dependencies in your virtualenv or global Python:
 pip install flask whisper googletrans==4.0.0-rc1 gtts
 
+
 Download & install ffmpeg (required by Whisper to read webm/mp4).
 Grab the static build from https://ffmpeg.org/download.html
+
 
 
 Folder Structure
@@ -34,8 +39,10 @@ Folder Structure
 •	    └── output/ 
 
 
+
 Frontend:
 Uses the MediaRecorder API to capture audio, or an <input type="file"> for uploads.
+
 
 Flask endpoint (/):
 1.	Saves the incoming file to uploads/
