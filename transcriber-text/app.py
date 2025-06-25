@@ -1,5 +1,3 @@
-# app.py
-
 import os
 import whisper
 from flask import Flask, request, render_template, url_for
@@ -33,11 +31,10 @@ def index():
     detected_code = None
     transcript_speech_url = translation_speech_url = None
 
-    # only let user pick translation target
     target_lang = request.form.get("target_language", "none")
 
     if request.method == "POST":
-        audio_file = request.files.get("record_file") or request.files.get("audio")
+        audio_file = request.files.get("record_file")
         if audio_file and audio_file.filename:
             os.makedirs("uploads", exist_ok=True)
             filepath = os.path.join("uploads", audio_file.filename)
@@ -60,20 +57,27 @@ def index():
 
             # 3) Translate if requested
             if target_lang != "none":
-                translation = translator.translate(
-                    transcript,
-                    src=detected_code,
-                    dest=target_lang
-                ).text
-
-                # 4) TTS for translation
                 try:
-                    tts2 = gTTS(text=translation, lang=target_lang)
-                    out2 = os.path.join("static", "output", "translation.mp3")
-                    tts2.save(out2)
-                    translation_speech_url = url_for("static", filename="output/translation.mp3")
-                except Exception:
-                    translation_speech_url = None
+                    translated = translator.translate(
+                        transcript,
+                        src=detected_code,
+                        dest=target_lang
+                    )
+                    translation = translated.text
+                except Exception as e:
+                    # Log the error and skip translation
+                    app.logger.warning(f"Translation failed: {e}")
+                    translation = None
+
+                # 4) TTS for translation (only if we got a valid translation)
+                if translation:
+                    try:
+                        tts2 = gTTS(text=translation, lang=target_lang)
+                        out2 = os.path.join("static", "output", "translation.mp3")
+                        tts2.save(out2)
+                        translation_speech_url = url_for("static", filename="output/translation.mp3")
+                    except Exception:
+                        translation_speech_url = None
 
     detected_name = LANGUAGE_NAMES.get(detected_code, detected_code) if detected_code else None
     target_name   = LANGUAGE_NAMES.get(target_lang, target_lang) if target_lang!="none" else None

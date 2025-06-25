@@ -46,10 +46,6 @@
                 <span id="recordStatus">Not recording</span>
               </div>
             </div>
-            <div class="col-12">
-              <label for="audioInput" class="form-label">Or upload an audio/video file:</label>
-              <input class="form-control" type="file" id="audioInput" name="audio" accept="audio/*,video/*">
-            </div>
             <input type="file" id="recordFileInput" name="record_file" accept="audio/*" hidden>
             <!-- Processing bar (hidden until transcription starts) -->
             <div id="processingBar" class="col-12">
@@ -107,7 +103,6 @@
           document.getElementById('recordIndicator').classList.remove('recording');
           document.getElementById('recordStatus').classList.remove('recording');
           document.getElementById('recordStatus').innerText = "Processing…";
-          // show processing bar
           processingBar.style.display = 'block';
           const blob = new Blob(audioChunks, { type: "audio/webm" });
           const file = new File([blob], "recording.webm", { type: "audio/webm" });
