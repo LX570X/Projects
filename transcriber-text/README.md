@@ -1,6 +1,6 @@
 Flask web app
 
-Record (via your browser) or upload an audio/video file
+Record (via your browser) 
 Auto-detect the spoken language and transcribe it using OpenAI’s Whisper model
 Translate that transcript into any of several target languages with googletrans
 Generate speech from both the raw transcript and the translation using gTTS
