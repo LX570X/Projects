@@ -30,13 +30,19 @@ Grab the static build from https://ffmpeg.org/download.html
 
 
 Folder Structure
-•	your-project/
-•	├── app.py
-•	├── templates/
-•	│   └── index.html
-•	├── uploads/           ← temporary audio uploads
-•	└── static/
-•	    └── output/ 
+
+your-project/
+
+├── app.py
+
+├── templates/
+
+   └── index.html
+
+├── uploads/           ← temporary audio uploads
+
+└── static/
+	└── output/ 
 
 
 
