@@ -8,15 +8,15 @@ Play back those MP3s in your browser
 
 
 Component:
-Flask	 pip install flask
+Flask	->  pip install flask
 
-Whisper	 pip install whisper
+Whisper	 ->  pip install whisper
 
-googletrans	 pip install googletrans==4.0.0-rc1
+googletrans ->  pip install googletrans==4.0.0-rc1
 
-gTTS	 pip install gtts
+gTTS  ->  pip install gtts
 
-ffmpeg	 Download from ffmpeg.org + add to PATH
+ffmpeg	->  Download from ffmpeg.org + add to PATH
 
 
 
