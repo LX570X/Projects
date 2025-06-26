@@ -7,6 +7,7 @@ Generate speech from both the raw transcript and the translation using gTTS
 Play back those MP3s in your browser
 
 
+
 Component:
 Flask	->  pip install flask
 
@@ -20,12 +21,15 @@ ffmpeg	->  Download from ffmpeg.org + add to PATH
 
 
 
+
 Install dependencies in your virtualenv or global Python:
 pip install flask whisper googletrans==4.0.0-rc1 gtts
 
 
+
 Download & install ffmpeg (required by Whisper to read webm/mp4).
 Grab the static build from https://ffmpeg.org/download.html
+
 
 
 
