@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chat UI</title>
+  <style>
+    body { font-family: sans-serif; max-width: 600px; margin: 2rem auto; }
+    #chat { border: 1px solid #ccc; height: 400px; overflow-y: scroll; padding: .5rem; }
+    .msg { margin: .5rem 0; }
+    .bubble { display: inline-block; padding: .5rem 1rem; border-radius: 1rem; background: #f1f1f1; }
+    .time { font-size: .75rem; color: #666; margin-left: .5rem; }
+    form { display: flex; gap: .5rem; margin-top: 1rem; }
+    textarea { flex: 1; resize: none; }
+  </style>
+</head>
+<body>
+  <h2>Chat</h2>
+  <div id="chat"></div>
+
+  <form id="chatForm">
+    <textarea id="text" rows="1" placeholder="Type a message…"></textarea>
+    <input type="file" id="file" />
+    <button type="submit">Send</button>
+  </form>
+
+  <script>
+    let lastTimestamp = null;
+    const chat = document.getElementById("chat");
+
+    async function loadMessages() {
+      const url = "/api/messages" + (lastTimestamp ? `?since=${lastTimestamp}` : "");
+      const res = await fetch(url);
+      const msgs = await res.json();
+      for (const m of msgs) {
+        const d = new Date(m.timestamp);
+        const wrap = document.createElement("div");
+        wrap.className = "msg";
+        const bubble = document.createElement("div");
+        bubble.className = "bubble";
+        if (m.text) bubble.innerText = m.text;
+        if (m.fileUrl) {
+          const link = document.createElement("a");
+          link.href = m.fileUrl;
+          link.target = "_blank";
+          link.innerText = "📎 " + m.fileUrl.split("/").pop();
+          bubble.appendChild(document.createElement("br"));
+          bubble.appendChild(link);
+        }
+        const time = document.createElement("span");
+        time.className = "time";
+        time.innerText = d.toLocaleTimeString();
+        wrap.appendChild(bubble);
+        wrap.appendChild(time);
+        chat.appendChild(wrap);
+        chat.scrollTop = chat.scrollHeight;
+        lastTimestamp = m.timestamp;
+      }
+    }
+
+    document.getElementById("chatForm").addEventListener("submit", async e => {
+      e.preventDefault();
+      const form = new FormData();
+      const txt = document.getElementById("text").value.trim();
+      const file = document.getElementById("file").files[0];
+      if (txt) form.append("text", txt);
+      if (file) form.append("file", file);
+      await fetch("/api/messages", { method: "POST", body: form });
+      document.getElementById("text").value = "";
+      document.getElementById("file").value = "";
+      await loadMessages();
+    });
+
+    // Poll every 2s
+    setInterval(loadMessages, 2000);
+    // Initial load
+    loadMessages();
+  </script>
+</body>
+</html>
