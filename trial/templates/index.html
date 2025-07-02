@@ -2,26 +2,129 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Chat UI</title>
+  <title>Messaging Interface</title>
   <style>
-    body { font-family: sans-serif; max-width: 600px; margin: 2rem auto; }
-    #chat { border: 1px solid #ccc; height: 400px; overflow-y: scroll; padding: .5rem; }
-    .msg { margin: .5rem 0; }
-    .bubble { display: inline-block; padding: .5rem 1rem; border-radius: 1rem; background: #f1f1f1; }
-    .time { font-size: .75rem; color: #666; margin-left: .5rem; }
-    form { display: flex; gap: .5rem; margin-top: 1rem; }
-    textarea { flex: 1; resize: none; }
+    /* Reset & base */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f7fa;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    /* Container */
+    #container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      max-width: 600px;
+      width: 100%;
+      margin: auto;
+      background: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      overflow: hidden;
+    }
+
+    /* Chat area */
+    #chat {
+      flex: 1;
+      padding: 1rem;
+      overflow-y: auto;
+    }
+    .msg {
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: flex-end;
+    }
+    .bubble {
+      max-width: 75%;
+      padding: 0.75rem 1rem;
+      border-radius: 1rem;
+      background-color: #e4e6eb;
+      line-height: 1.4;
+      font-size: 0.95rem;
+    }
+    .time {
+      font-size: 0.75rem;
+      color: #8a8d91;
+      margin-left: 0.5rem;
+    }
+
+    /* Input area */
+    #inputArea {
+      border-top: 1px solid #dddfe2;
+      padding: 0.75rem;
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      background: #fafafa;
+    }
+    #text {
+      flex: 1;
+      padding: 0.5rem;
+      border: 1px solid #ccd0d5;
+      border-radius: 20px;
+      resize: none;
+      font-size: 1rem;
+      font-family: inherit;
+      height: 40px;
+    }
+    #text:focus {
+      outline: none;
+      border-color: #1877f2;
+      box-shadow: 0 0 0 2px rgba(24,119,242,0.2);
+    }
+    #file {
+      font-size: 0.9rem;
+    }
+    button {
+      background-color: #1877f2;
+      color: #fff;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+    button:hover {
+      background-color: #165ec9;
+    }
+    /* Clear button */
+    #clearBtn {
+      background: transparent;
+      color: #65676b;
+      font-size: 0.9rem;
+      margin: 0.75rem;
+      align-self: flex-end;
+      cursor: pointer;
+      border: none;
+    }
+    #clearBtn:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
-  <h2>Chat</h2>
-  <div id="chat"></div>
+  <div id="container">
+    <button id="clearBtn">Clear all messages</button>
+    <div id="chat"></div>
 
-  <form id="chatForm">
-    <textarea id="text" rows="1" placeholder="Type a message…"></textarea>
-    <input type="file" id="file" />
-    <button type="submit">Send</button>
-  </form>
+    <form id="chatForm" autocomplete="off" enctype="multipart/form-data">
+      <div id="inputArea">
+        <textarea
+          id="text"
+          rows="1"
+          placeholder="Type your message..."
+        ></textarea>
+        <input type="file" id="file" />
+        <button type="submit">Send</button>
+      </div>
+    </form>
+  </div>
 
   <script>
     let lastTimestamp = null;
@@ -48,7 +151,7 @@
         }
         const time = document.createElement("span");
         time.className = "time";
-        time.innerText = d.toLocaleTimeString();
+        time.innerText = d.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
         wrap.appendChild(bubble);
         wrap.appendChild(time);
         chat.appendChild(wrap);
@@ -68,6 +171,13 @@
       document.getElementById("text").value = "";
       document.getElementById("file").value = "";
       await loadMessages();
+    });
+
+    document.getElementById("clearBtn").addEventListener("click", async () => {
+      if (!confirm("Really clear all messages?")) return;
+      await fetch("/api/messages", { method: "DELETE" });
+      chat.innerHTML = "";
+      lastTimestamp = null;
     });
 
     // Poll every 2s

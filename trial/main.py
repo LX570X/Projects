@@ -2,7 +2,7 @@ from fastapi import FastAPI, File, UploadFile, Form, Request
 from fastapi.responses import JSONResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
-from sqlmodel import Field, SQLModel, Session, create_engine, select
+from sqlmodel import Field, SQLModel, Session, create_engine, select, delete
 import os, shutil
 from datetime import datetime
 
@@ -14,7 +14,7 @@ class Message(SQLModel, table=True):
     text:       str | None
     file_path:  str | None
     timestamp:  datetime      = Field(default_factory=datetime.utcnow)
-    
+
 DATABASE_URL = "sqlite:///database.db"
 engine = create_engine(
     DATABASE_URL, connect_args={"check_same_thread": False}
@@ -78,6 +78,14 @@ async def get_messages(since: str | None = None):
         }
         for m in msgs
     ]
+
+@app.delete("/api/messages")
+async def clear_messages():
+    """Delete every message in the database."""
+    with Session(engine) as session:
+        session.exec(delete(Message))
+        session.commit()
+    return {"status": "cleared"}
 
 if __name__ == "__main__":
     import uvicorn
