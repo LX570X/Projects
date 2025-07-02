@@ -6,26 +6,24 @@
   <style>
     /* Reset & base */
     * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      height: 100%;
+    }
     body {
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f5f7fa;
+      font-family: "Segoe UI", sans-serif;
+      background: #f5f7fa;
       display: flex;
       flex-direction: column;
-      height: 100vh;
     }
 
-    /* Container */
+    /* Full-screen container */
     #container {
       flex: 1;
       display: flex;
       flex-direction: column;
-      max-width: 600px;
       width: 100%;
-      margin: auto;
-      background: #ffffff;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-      overflow: hidden;
+      height: 100%;
+      background: #fff;
     }
 
     /* Chat area */
@@ -33,6 +31,7 @@
       flex: 1;
       padding: 1rem;
       overflow-y: auto;
+      background: #e9ebee;
     }
     .msg {
       margin-bottom: 1rem;
@@ -41,35 +40,34 @@
     }
     .bubble {
       max-width: 75%;
-      padding: 0.75rem 1rem;
+      padding: .75rem 1rem;
       border-radius: 1rem;
-      background-color: #e4e6eb;
+      background: #fff;
       line-height: 1.4;
-      font-size: 0.95rem;
+      font-size: .95rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
     }
     .time {
-      font-size: 0.75rem;
+      font-size: .75rem;
       color: #8a8d91;
-      margin-left: 0.5rem;
+      margin-left: .5rem;
     }
 
     /* Input area */
     #inputArea {
-      border-top: 1px solid #dddfe2;
-      padding: 0.75rem;
       display: flex;
-      gap: 0.5rem;
       align-items: center;
+      padding: .5rem;
+      border-top: 1px solid #ccd0d5;
       background: #fafafa;
     }
     #text {
       flex: 1;
-      padding: 0.5rem;
+      padding: .5rem 1rem;
       border: 1px solid #ccd0d5;
       border-radius: 20px;
       resize: none;
       font-size: 1rem;
-      font-family: inherit;
       height: 40px;
     }
     #text:focus {
@@ -77,35 +75,54 @@
       border-color: #1877f2;
       box-shadow: 0 0 0 2px rgba(24,119,242,0.2);
     }
-    #file {
-      font-size: 0.9rem;
+    input[type="file"] {
+      margin-left: .5rem;
+      font-size: .9rem;
     }
-    button {
-      background-color: #1877f2;
+    button.send {
+      background: #1877f2;
       color: #fff;
       border: none;
-      padding: 0.5rem 1rem;
+      padding: .5rem 1rem;
       border-radius: 20px;
-      font-size: 1rem;
+      margin-left: .5rem;
       cursor: pointer;
-      transition: background-color 0.2s;
+      transition: background .2s;
     }
-    button:hover {
-      background-color: #165ec9;
+    button.send:hover { background: #165ec9; }
+
+    /* Mic button */
+    button#micBtn {
+      background: transparent;
+      border: none;
+      font-size: 1.4rem;
+      margin-right: .5rem;
+      cursor: pointer;
+      position: relative;
     }
+    button#micBtn.recording::after {
+      content: '';
+      position: absolute;
+      top: 2px; right: 2px;
+      width: 8px; height: 8px;
+      background: red; border-radius: 50%;
+      animation: blink 1s infinite;
+    }
+    @keyframes blink {
+      0%,50%,100% { opacity: 1; }
+      25%,75%   { opacity: 0; }
+    }
+
     /* Clear button */
     #clearBtn {
-      background: transparent;
-      color: #65676b;
-      font-size: 0.9rem;
-      margin: 0.75rem;
-      align-self: flex-end;
-      cursor: pointer;
+      background: none;
       border: none;
+      color: #65676b;
+      text-align: right;
+      padding: .5rem;
+      cursor: pointer;
     }
-    #clearBtn:hover {
-      text-decoration: underline;
-    }
+    #clearBtn:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
@@ -113,22 +130,21 @@
     <button id="clearBtn">Clear all messages</button>
     <div id="chat"></div>
 
-    <form id="chatForm" autocomplete="off" enctype="multipart/form-data">
+    <form id="chatForm" autocomplete="off">
       <div id="inputArea">
-        <textarea
-          id="text"
-          rows="1"
-          placeholder="Type your message..."
-        ></textarea>
+        <button type="button" id="micBtn" title="Record voice">🎤</button>
+        <textarea id="text" rows="1" placeholder="Type your message..."></textarea>
         <input type="file" id="file" />
-        <button type="submit">Send</button>
+        <button type="submit" class="send">Send</button>
       </div>
     </form>
   </div>
 
   <script>
     let lastTimestamp = null;
+    let mediaRecorder, audioChunks = [], recording = false;
     const chat = document.getElementById("chat");
+    const micBtn = document.getElementById("micBtn");
 
     async function loadMessages() {
       const url = "/api/messages" + (lastTimestamp ? `?since=${lastTimestamp}` : "");
@@ -176,13 +192,37 @@
     document.getElementById("clearBtn").addEventListener("click", async () => {
       if (!confirm("Really clear all messages?")) return;
       await fetch("/api/messages", { method: "DELETE" });
-      chat.innerHTML = "";
-      lastTimestamp = null;
+      chat.innerHTML = ""; lastTimestamp = null;
     });
 
-    // Poll every 2s
+    micBtn.addEventListener("click", async () => {
+      if (!recording) {
+        const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+        mediaRecorder = new MediaRecorder(stream);
+        audioChunks = [];
+        mediaRecorder.ondataavailable = e => audioChunks.push(e.data);
+        mediaRecorder.start();
+        recording = true;
+        micBtn.classList.add("recording");
+      } else {
+        mediaRecorder.onstop = async () => {
+          const blob = new Blob(audioChunks, { type: 'audio/webm' });
+          const form = new FormData();
+          form.append('file', blob, 'voice.webm');
+          micBtn.classList.remove("recording");
+          micBtn.textContent = '⏳';
+          const res = await fetch('/api/transcribe', { method: 'POST', body: form });
+          const { text } = await res.json();
+          const txtArea = document.getElementById("text");
+          txtArea.value = (txtArea.value ? txtArea.value + ' ' : '') + text;
+          micBtn.textContent = '🎤';
+        };
+        mediaRecorder.stop();
+        recording = false;
+      }
+    });
+
     setInterval(loadMessages, 2000);
-    // Initial load
     loadMessages();
   </script>
 </body>

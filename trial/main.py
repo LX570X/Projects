@@ -5,6 +5,10 @@ from fastapi.templating import Jinja2Templates
 from sqlmodel import Field, SQLModel, Session, create_engine, select, delete
 import os, shutil
 from datetime import datetime
+import whisper  # <— new
+
+# — load Whisper model once on startup —
+model = whisper.load_model("base")
 
 # — Models & DB setup —
 class Message(SQLModel, table=True):
@@ -24,12 +28,11 @@ SQLModel.metadata.create_all(engine)
 # — App setup —
 app = FastAPI()
 templates = Jinja2Templates(directory="templates")
-
-# Ensure upload folder exists, and serve it as static
 os.makedirs("uploads", exist_ok=True)
 app.mount("/uploads", StaticFiles(directory="uploads"), name="uploads")
 
-# — Routes —
+# — Routes — 
+
 @app.get("/")
 async def get_ui(request: Request):
     return templates.TemplateResponse("index.html", {"request": request})
@@ -81,11 +84,24 @@ async def get_messages(since: str | None = None):
 
 @app.delete("/api/messages")
 async def clear_messages():
-    """Delete every message in the database."""
     with Session(engine) as session:
         session.exec(delete(Message))
         session.commit()
     return {"status": "cleared"}
+
+# — NEW: Transcription endpoint —
+@app.post("/api/transcribe")
+async def transcribe_audio(file: UploadFile = File(...)):
+    # save incoming audio
+    tmp = f"uploads/{int(datetime.utcnow().timestamp()*1000)}_{file.filename}"
+    with open(tmp, "wb") as buf:
+        shutil.copyfileobj(file.file, buf)
+    # whisper transcription
+    result = model.transcribe(tmp)
+    text = result["text"].strip()
+    # clean up temp file if you like:
+    # os.remove(tmp)
+    return {"text": text}
 
 if __name__ == "__main__":
     import uvicorn
