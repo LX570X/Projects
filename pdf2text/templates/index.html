@@ -2,45 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>PDF Text & Image Extractor</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            padding: 40px;
-        }
-        h2 {
-            color: #333;
-        }
-        textarea {
-            width: 100%;
-            max-width: 900px;
-            height: 300px;
-            margin-top: 20px;
-            font-family: monospace;
-            white-space: pre-wrap;
-        }
-        .download {
-            margin-top: 20px;
-        }
-    </style>
+    <title>PDF Extractor</title>
 </head>
 <body>
-    <h2>Upload a PDF to Extract Text and Images</h2>
+    <h2>Upload PDF to Extract Text and Images</h2>
     <form method="post" enctype="multipart/form-data">
-        <input type="file" name="pdf" accept=".pdf" required>
+        <input type="file" name="pdf" required>
         <button type="submit">Convert</button>
     </form>
 
-    {% if zip_file %}
-        <div class="download">
-            <h3>✅ Download your results:</h3>
-            <a href="{{ url_for('download', filename=zip_file) }}">{{ zip_file }}</a>
-        </div>
+    {% if txt_file or docx_file or zip_file %}
+        <h3>Downloads:</h3>
+        <ul>
+            {% if txt_file %}
+            <li><a href="{{ url_for('download', filename=txt_file) }}">Download TXT</a></li>
+            {% endif %}
+            {% if docx_file %}
+            <li><a href="{{ url_for('download', filename=docx_file) }}">Download DOCX</a></li>
+            {% endif %}
+            {% if zip_file %}
+            <li><a href="{{ url_for('download', filename=zip_file) }}">Download ZIP (All Files)</a></li>
+            {% endif %}
+        </ul>
     {% endif %}
 
     {% if preview_text %}
-        <h3>📄 Preview of Extracted Text:</h3>
-        <textarea readonly>{{ preview_text }}</textarea>
+        <h3>Preview:</h3>
+        <textarea rows="20" cols="100" readonly>{{ preview_text }}</textarea>
     {% endif %}
 </body>
 </html>
+

@@ -5,13 +5,14 @@ import re
 import zipfile
 from flask import Flask, request, render_template, send_file
 from docx import Document
+from docx.shared import Inches, Pt
 from werkzeug.utils import secure_filename
 
 app = Flask(__name__)
 UPLOAD_FOLDER = 'uploads'
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
-app.config['MAX_CONTENT_LENGTH'] = 20 * 1024 * 1024  # 20MB
+app.config['MAX_CONTENT_LENGTH'] = 20 * 1024 * 1024  # 20MB max
 
 def clean_and_format_text(raw_text):
     cleaned = ''.join(c for c in raw_text if unicodedata.category(c)[0] != 'C' or c == '\n')
@@ -73,7 +74,7 @@ def index():
             blocks = page.get_text("blocks")
             blocks.sort(key=lambda b: (round(b[1]), b[0]))
 
-            # Format aligned blocks (tables and layout)
+            # Group text by Y and align by X
             rows = {}
             for b in blocks:
                 y = round(b[1])
@@ -81,28 +82,48 @@ def index():
                     rows[y] = []
                 rows[y].append((b[0], b[4].strip()))
 
-            formatted_lines = []
+            sorted_rows = []
             for y in sorted(rows):
                 row = sorted(rows[y], key=lambda x: x[0])
-                line = "\t".join(cell[1] for cell in row)
-                formatted_lines.append(line)
+                sorted_rows.append([text for _, text in row])
+
+            max_cols = max(len(row) for row in sorted_rows)
+            col_widths = [0] * max_cols
+            for row in sorted_rows:
+                for i, cell in enumerate(row):
+                    col_widths[i] = max(col_widths[i], len(cell))
+
+            formatted_lines = []
+            for row in sorted_rows:
+                padded = [row[i].ljust(col_widths[i]) if i < len(row) else '' for i in range(max_cols)]
+                formatted_lines.append("  ".join(padded))
 
             block_text = "\n".join(formatted_lines)
             block_text = join_broken_lines(block_text)
 
-            all_text += f"\n\n——— Page {page_num + 1} ———\n"
-            document.add_paragraph(f"——— Page {page_num + 1} ———")
+            # Add page header
+            page_header = f"========== Page {page_num + 1} ==========\n"
+            all_text += f"\n\n{page_header}\n"
+            header = document.add_paragraph(f"Page {page_num + 1}")
+            header.paragraph_format.space_after = Pt(10)
+            header.runs[0].bold = True
 
+            # Paragraphs with smart formatting
             paragraphs = clean_and_format_text(block_text)
             for para in paragraphs:
-                document.add_paragraph(para)
-                all_text += para + "\n\n"
+                all_text += "    " + para + "\n\n"  # indent
+                p = document.add_paragraph(para)
+                p.paragraph_format.first_line_indent = Inches(0.25)
+                p.paragraph_format.line_spacing = 1.5
+                p.paragraph_format.space_after = Pt(8)
 
+            # Images
             image_tags = extract_images(page, page_num, base_name, image_folder)
             for tag in image_tags:
-                document.add_paragraph(tag)
                 all_text += tag + "\n"
+                document.add_paragraph(tag)
 
+        # Save outputs
         txt_output = os.path.join(app.config['UPLOAD_FOLDER'], base_name + '.txt')
         docx_output = os.path.join(app.config['UPLOAD_FOLDER'], base_name + '.docx')
         zip_output = os.path.join(app.config['UPLOAD_FOLDER'], base_name + '.zip')
@@ -118,6 +139,8 @@ def index():
                 zipf.write(os.path.join(image_folder, img_file), f"images/{img_file}")
 
         return render_template('index.html',
+                               txt_file=os.path.basename(txt_output),
+                               docx_file=os.path.basename(docx_output),
                                zip_file=os.path.basename(zip_output),
                                preview_text=all_text[:5000])
 
@@ -125,8 +148,7 @@ def index():
 
 @app.route('/download/<filename>')
 def download(filename):
-    return send_file(os.path.join(app.config['UPLOAD_FOLDER'], filename),
-                     as_attachment=True)
+    return send_file(os.path.join(app.config['UPLOAD_FOLDER'], filename), as_attachment=True)
 
 if __name__ == '__main__':
     app.run(debug=True)
