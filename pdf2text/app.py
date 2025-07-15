@@ -12,13 +12,12 @@ app = Flask(__name__)
 UPLOAD_FOLDER = 'uploads'
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
-app.config['MAX_CONTENT_LENGTH'] = 20 * 1024 * 1024  # 20MB max
+app.config['MAX_CONTENT_LENGTH'] = 20 * 1024 * 1024
 
-def clean_and_format_text(raw_text):
-    cleaned = ''.join(c for c in raw_text if unicodedata.category(c)[0] != 'C' or c == '\n')
+def clean_and_format_text(text):
+    cleaned = ''.join(c for c in text if unicodedata.category(c)[0] != 'C' or c == '\n')
     cleaned = cleaned.replace('\r', '').strip()
-    paragraphs = re.split(r'\n{2,}', cleaned)
-    return [p.strip() for p in paragraphs if p.strip()]
+    return [p.strip() for p in re.split(r'\n{2,}', cleaned) if p.strip()]
 
 def join_broken_lines(text):
     lines = text.split('\n')
@@ -34,21 +33,20 @@ def join_broken_lines(text):
     return '\n'.join(joined_lines)
 
 def extract_images(page, page_num, base_name, image_folder):
-    image_tags = []
+    tags = []
     for img_index, img in enumerate(page.get_images(full=True), start=1):
         xref = img[0]
         pix = fitz.Pixmap(page.parent, xref)
-        if pix.n > 4:
-            pix = fitz.Pixmap(fitz.csRGB, pix)
-        elif pix.n == 4:
+        if pix.n > 4 or pix.n == 4:
             pix = fitz.Pixmap(fitz.csRGB, pix)
 
         img_filename = f"{base_name}_page{page_num+1}_img{img_index}.png"
         img_path = os.path.join(image_folder, img_filename)
         pix.save(img_path)
-        image_tags.append(f"📷 [Image: {img_filename}]")
         pix = None
-    return image_tags
+
+        tags.append(f"📷 [Image: {img_filename}]")
+    return tags
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
@@ -74,76 +72,50 @@ def index():
             blocks = page.get_text("blocks")
             blocks.sort(key=lambda b: (round(b[1]), b[0]))
 
-            # Group text by Y and align by X
-            rows = {}
-            for b in blocks:
-                y = round(b[1])
-                if y not in rows:
-                    rows[y] = []
-                rows[y].append((b[0], b[4].strip()))
+            lines = [b[4].strip() for b in blocks if b[4].strip()]
+            text = join_broken_lines('\n'.join(lines))
 
-            sorted_rows = []
-            for y in sorted(rows):
-                row = sorted(rows[y], key=lambda x: x[0])
-                sorted_rows.append([text for _, text in row])
-
-            max_cols = max(len(row) for row in sorted_rows)
-            col_widths = [0] * max_cols
-            for row in sorted_rows:
-                for i, cell in enumerate(row):
-                    col_widths[i] = max(col_widths[i], len(cell))
-
-            formatted_lines = []
-            for row in sorted_rows:
-                padded = [row[i].ljust(col_widths[i]) if i < len(row) else '' for i in range(max_cols)]
-                formatted_lines.append("  ".join(padded))
-
-            block_text = "\n".join(formatted_lines)
-            block_text = join_broken_lines(block_text)
-
-            # Add page header
+            # Page header
             page_header = f"========== Page {page_num + 1} ==========\n"
             all_text += f"\n\n{page_header}\n"
             header = document.add_paragraph(f"Page {page_num + 1}")
             header.paragraph_format.space_after = Pt(10)
             header.runs[0].bold = True
 
-            # Paragraphs with smart formatting
-            paragraphs = clean_and_format_text(block_text)
-            for para in paragraphs:
-                all_text += "    " + para + "\n\n"  # indent
+            # Paragraphs
+            for para in clean_and_format_text(text):
+                all_text += "    " + para + "\n\n"
                 p = document.add_paragraph(para)
                 p.paragraph_format.first_line_indent = Inches(0.25)
                 p.paragraph_format.line_spacing = 1.5
                 p.paragraph_format.space_after = Pt(8)
 
-            # Images
+            # Image tags
             image_tags = extract_images(page, page_num, base_name, image_folder)
             for tag in image_tags:
                 all_text += tag + "\n"
                 document.add_paragraph(tag)
 
         # Save outputs
-        txt_output = os.path.join(app.config['UPLOAD_FOLDER'], base_name + '.txt')
-        docx_output = os.path.join(app.config['UPLOAD_FOLDER'], base_name + '.docx')
-        zip_output = os.path.join(app.config['UPLOAD_FOLDER'], base_name + '.zip')
+        txt_path = os.path.join(app.config['UPLOAD_FOLDER'], base_name + '.txt')
+        docx_path = os.path.join(app.config['UPLOAD_FOLDER'], base_name + '.docx')
+        zip_path = os.path.join(app.config['UPLOAD_FOLDER'], base_name + '.zip')
 
-        with open(txt_output, 'w', encoding='utf-8') as f:
+        with open(txt_path, 'w', encoding='utf-8') as f:
             f.write(all_text.strip())
-        document.save(docx_output)
+        document.save(docx_path)
 
-        with zipfile.ZipFile(zip_output, 'w') as zipf:
-            zipf.write(txt_output, os.path.basename(txt_output))
-            zipf.write(docx_output, os.path.basename(docx_output))
+        with zipfile.ZipFile(zip_path, 'w') as zipf:
+            zipf.write(txt_path, os.path.basename(txt_path))
+            zipf.write(docx_path, os.path.basename(docx_path))
             for img_file in os.listdir(image_folder):
                 zipf.write(os.path.join(image_folder, img_file), f"images/{img_file}")
 
         return render_template('index.html',
-                               txt_file=os.path.basename(txt_output),
-                               docx_file=os.path.basename(docx_output),
-                               zip_file=os.path.basename(zip_output),
+                               txt_file=os.path.basename(txt_path),
+                               docx_file=os.path.basename(docx_path),
+                               zip_file=os.path.basename(zip_path),
                                preview_text=all_text[:5000])
-
     return render_template('index.html')
 
 @app.route('/download/<filename>')

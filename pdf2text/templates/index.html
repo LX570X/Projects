@@ -2,34 +2,67 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>PDF Extractor</title>
+    <title>PDF to TXT or DOCX</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding-top: 50px;
+        }
+        .container {
+            max-width: 800px;
+        }
+        textarea {
+            font-family: monospace;
+            white-space: pre-wrap;
+        }
+    </style>
 </head>
 <body>
-    <h2>Upload PDF to Extract Text and Images</h2>
-    <form method="post" enctype="multipart/form-data">
-        <input type="file" name="pdf" required>
-        <button type="submit">Convert</button>
-    </form>
+    <div class="container bg-white shadow-sm p-5 rounded">
+        <h2 class="mb-4 text-center">📄 PDF Extractor</h2>
 
-    {% if txt_file or docx_file or zip_file %}
-        <h3>Downloads:</h3>
-        <ul>
-            {% if txt_file %}
-            <li><a href="{{ url_for('download', filename=txt_file) }}">Download TXT</a></li>
-            {% endif %}
-            {% if docx_file %}
-            <li><a href="{{ url_for('download', filename=docx_file) }}">Download DOCX</a></li>
-            {% endif %}
-            {% if zip_file %}
-            <li><a href="{{ url_for('download', filename=zip_file) }}">Download ZIP (All Files)</a></li>
-            {% endif %}
-        </ul>
-    {% endif %}
+        <form method="post" enctype="multipart/form-data" class="mb-4">
+            <div class="mb-3">
+                <input class="form-control" type="file" name="pdf" required>
+            </div>
+            <button class="btn btn-primary w-100" type="submit">Convert PDF</button>
+        </form>
 
-    {% if preview_text %}
-        <h3>Preview:</h3>
-        <textarea rows="20" cols="100" readonly>{{ preview_text }}</textarea>
-    {% endif %}
+        {% if txt_file or docx_file or zip_file %}
+        <div class="mb-4">
+            <h4>📥 Download Extracted Files:</h4>
+            <ul class="list-group">
+                {% if txt_file %}
+                <li class="list-group-item">
+                    <a href="{{ url_for('download', filename=txt_file) }}" class="btn btn-outline-secondary w-100">Download TXT</a>
+                </li>
+                {% endif %}
+                {% if docx_file %}
+                <li class="list-group-item">
+                    <a href="{{ url_for('download', filename=docx_file) }}" class="btn btn-outline-success w-100">Download DOCX</a>
+                </li>
+                {% endif %}
+                {% if zip_file %}
+                <li class="list-group-item">
+                    <a href="{{ url_for('download', filename=zip_file) }}" class="btn btn-outline-dark w-100">Download ZIP (All Files)</a>
+                </li>
+                {% endif %}
+            </ul>
+        </div>
+        {% endif %}
+
+        {% if preview_text %}
+        <div>
+            <h4>📝 Preview:</h4>
+            <textarea class="form-control" rows="15" readonly>{{ preview_text }}</textarea>
+        </div>
+        {% endif %}
+    </div>
+
+    <!-- Bootstrap JS (Optional for interactivity) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
