@@ -33,8 +33,15 @@ pdf-extractor/
 └── uploads/              # Stores uploaded PDFs & outputs
 
 
+.
+.
+
+
 Run the application:
 app.py
+
+.
+.
 
 Visit in your web browser:
 http://127.0.0.1:5000
