@@ -7,9 +7,9 @@ Installation:
 
 Download or clone this repository:
 
-git clone https://github.com/your-username/pdf-extractor.git
+git clone https://github.com/..../pdf2text
 
-cd pdf-extractor
+cd pdf2text
 
 .
 .
