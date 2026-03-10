@@ -1,0 +1,52 @@
+=== DOCUMENT EXTRACTION REPORT ===
+
+FILE NAME: TDRA Presentation.pdf
+FILE TYPE: .pdf
+
+STATUS:
+processed
+
+SUMMARY:
+Document text extracted successfully
+
+TEXT:
+TDRA 
+How to know if the service is helpful and needed and how to make it helpful. 
+ 
+Service 2.0: make things easier, (mabrook ma yak), proactive services, all electronic, 
+always available, and can be checked any time (checking the process) 
+ 
+DFV model 
+Desirability, feasibility, viability 
+ 
+To make a digital product, team of 3: 
+- 
+Product designer 
+- 
+Technical developer 
+- 
+Marketing specialist 
+ 
+ 
+Tools: 
+- 
+Chatgpt 
+- 
+Claude 
+- 
+Google ai studio 
+- 
+Canva ai 
+ 
+Write me a prompt to give to claude for it to create FR and NFR for an MVP for the following 
+product: 
+I want a smart platform to help students before graduating from high school decide what 
+they want to study and work for. The platform will allow students to create and account, 
+then it should contain a personality test that students can take to show them what is the 
+best path they should take based on gemini's search from details and database fed by 
+universities: UAEU and Khalifa University in UAE. next, it will help them build their 
+CV/Resume suggested and the users follows the path and after that the the app will make 
+the resume for the students and adds things to the cv every time the user and the university 
+
+updates. I will then use the FR and NFR document created by Claude to feed into AI Studio 
+to build the MVP

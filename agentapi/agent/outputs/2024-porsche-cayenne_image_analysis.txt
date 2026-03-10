@@ -1,0 +1,28 @@
+=== IMAGE ANALYSIS REPORT ===
+
+FILE NAME: 2024-porsche-cayenne.jpg
+FILE TYPE: .jpg
+
+STATUS:
+processed
+
+SUMMARY:
+Image analyzed successfully
+
+DESCRIPTION:
+A dark gray Porsche Cayenne SUV parked on asphalt with a cloudy sky and hills in the background, featuring blue wheels with yellow brake calipers and racing barriers nearby.
+
+TEXT DETECTED:
+(empty)
+
+OBJECTS:
+- Porsche Cayenne
+- wheels
+- brake calipers
+- asphalt
+- hills
+- clouds
+- racing barriers
+
+POSSIBLE TYPE:
+car photo

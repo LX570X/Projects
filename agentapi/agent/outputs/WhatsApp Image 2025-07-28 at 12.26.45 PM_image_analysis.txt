@@ -1,0 +1,67 @@
+=== IMAGE ANALYSIS REPORT ===
+
+FILE NAME: WhatsApp Image 2025-07-28 at 12.26.45 PM.jpeg
+FILE TYPE: .jpeg
+
+STATUS:
+processed
+
+SUMMARY:
+Image analyzed successfully
+
+DESCRIPTION:
+A screenshot of a resume-building web application called 'Student Future' showing a student's resume on the left and a CV assistant with skill suggestions and job openings on the right.
+
+TEXT DETECTED:
+https://aistudio.google.com
+Build | Google AI Studio
+Student Future
+Student Future
+Discover your path, from personality to profession.
+← Back to Recommendations
+Mohammed Albreiki
+Albreiki_123@gmail.com +971 5X XXX XXXX Alain, UAE
+Objective
+A highly motivated and aspiring Computer Science student seeking to leverage strong analytical and technical skills in a challenging entry-level role.
+Education
+UAEU
+B.S. in Computer Science
+Expected Graduation: 2029
+Skills
+• Microsoft Office Suite
+• Programming Languages (e.g., Python, Java, C++)
+• Solving and Logical Thinking
+• Version Control (e.g., Git)
+• Team Collaboration
+• Data Structures and Algorithms
+• Problem
+• Teamwork and Collaboration
+More sections for Experience and Projects can be added here.
+CV Assistant
++ Get AI Skill Suggestions
+Click to add a skill:
+Programming Languages (e.g., Python, Java, C++) ✓
+Data Structures and Algorithms ✓
+Problem ✓
+Solving and Logical Thinking ✓
+Version Control (e.g., Git) ✓
+Teamwork and Collaboration ✓
+Find Job Openings
+Software Engineer
+at Careem or Noon
+Data Analyst
+at First Abu Dhabi Bank (FAB) or Etisalat (e& Group)
+Junior DevOps Engineer
+at G42 or Amazon Web Services (AWS)
+Associate Technical Consultant
+at Accenture or Deloitte
+
+OBJECTS:
+- resume
+- CV Assistant panel
+- job openings list
+- skill buttons
+- navigation bar
+
+POSSIBLE TYPE:
+screenshot
