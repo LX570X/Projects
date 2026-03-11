@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+python-dotenv
+openai
+langchain
+langchain-openai
+pydantic
+pymupdf
+python-docx
+pandas
+openpyxl
+opencv-python
+moviepy
+python-multipart
