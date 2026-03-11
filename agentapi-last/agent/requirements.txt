@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+python-dotenv
+openai
+pymupdf
+python-docx
+pandas
+openpyxl
+opencv-python
+moviepy
+python-multipart
