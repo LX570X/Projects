@@ -1,0 +1,9 @@
+[2026-03-12 12:57:31] [INFO] START run: source file processor
+[2026-03-12 12:57:31] [INFO] MinIO disabled: using local filesystem as primary artifact store
+[2026-03-12 12:57:31] [INFO] START file: TDRA Presentation.pdf
+[2026-03-12 12:57:31] [INFO] SKIP file: TDRA Presentation.pdf (already has single report)
+[2026-03-12 12:57:31] [INFO] DONE file: TDRA Presentation.pdf (status=skipped, 0.09s)
+[2026-03-12 12:57:31] [INFO] START final report: 1 single report(s)
+[2026-03-12 12:57:49] [INFO] DONE final report: final_report.json
+[2026-03-12 12:57:49] [INFO] SUMMARY run: processed=1, success=0, failed=0, skipped=1, duration=18.27s
+{'processed': 1, 'skipped': 1, 'single_reports_generated': 0, 'single_reports_used_for_final': 1, 'final_report_file': 'final_report.json', 'final_report_job_id': 6, 'final_report_run_id': 4, 'metadata_db': 'metadata.db', 'results': [{'file_id': 1, 'source_file': 'source-files\\TDRA Presentation.pdf', 'classification': 'document', 'status': 'skipped', 'output_file': None, 'single_report_file': 'single_reports\\TDRA Presentation.pdf.report.json', 'error': None}]}
