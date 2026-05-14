@@ -1,0 +1,1445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Learn Chinese — 学中文</title>
+<style>
+@import url('data:text/css,');
+:root {
+  --red-deep: #8B0000;
+  --red: #C41E3A;
+  --red-light: #E74C3C;
+  --gold: #D4A017;
+  --gold-light: #F4D03F;
+  --gold-pale: #FFF3C4;
+  --cream: #FFF8EE;
+  --dark: #1A0A0A;
+  --dark2: #2D1515;
+  --dark3: #3D2020;
+  --text: #2C1810;
+  --text-light: #8B7355;
+  --white: #FFFDF8;
+  --green: #2ECC71;
+  --green-dark: #27AE60;
+  --blue: #3498DB;
+  --shadow: 0 4px 20px rgba(139,0,0,0.15);
+  --shadow-gold: 0 4px 20px rgba(212,160,23,0.2);
+  --radius: 12px;
+  --radius-lg: 20px;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Georgia', 'Noto Serif SC', serif;
+  background: var(--cream);
+  color: var(--text);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+/* ── SCROLLBAR ── */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--dark); }
+::-webkit-scrollbar-thumb { background: var(--red); border-radius: 4px; }
+/* ── NAV ── */
+.nav {
+  position: fixed; top:0; left:0; right:0; z-index:1000;
+  background: linear-gradient(135deg, var(--dark) 0%, var(--dark2) 100%);
+  border-bottom: 2px solid var(--gold);
+  padding: 0 20px;
+  display: flex; align-items: center; justify-content: space-between;
+  height: 60px;
+  box-shadow: 0 4px 30px rgba(0,0,0,0.4);
+}
+.nav-brand {
+  color: var(--gold);
+  font-size: 1.3em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+.nav-links {
+  display: flex; gap: 4px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding: 4px 0;
+}
+.nav-links::-webkit-scrollbar { display: none; }
+.nav-links a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.78em;
+  padding: 6px 10px;
+  border-radius: 6px;
+  white-space: nowrap;
+  transition: all 0.3s;
+  font-family: sans-serif;
+}
+.nav-links a:hover, .nav-links a.active {
+  color: var(--gold);
+  background: rgba(212,160,23,0.12);
+}
+.menu-btn {
+  display: none;
+  background: none; border: none;
+  color: var(--gold); font-size: 1.5em; cursor: pointer;
+}
+@media(max-width:900px) {
+  .menu-btn { display: block; }
+  .nav-links {
+    display: none;
+    position: absolute; top: 60px; left: 0; right: 0;
+    background: var(--dark);
+    flex-direction: column;
+    padding: 10px 20px;
+    border-bottom: 2px solid var(--gold);
+  }
+  .nav-links.open { display: flex; }
+}
+/* ── SECTIONS ── */
+section {
+  padding: 80px 20px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.section-title {
+  text-align: center;
+  font-size: 2em;
+  color: var(--red-deep);
+  margin-bottom: 8px;
+  position: relative;
+}
+.section-title::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--red), var(--gold));
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+.section-sub {
+  text-align: center;
+  color: var(--text-light);
+  margin-bottom: 40px;
+  font-size: 1em;
+}
+/* ── HERO ── */
+.hero {
+  min-height: 100vh;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  text-align: center;
+  background: linear-gradient(135deg, var(--dark) 0%, var(--red-deep) 40%, var(--dark2) 100%);
+  color: var(--white);
+  position: relative;
+  overflow: hidden;
+  padding: 100px 20px 60px;
+}
+.hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: radial-gradient(circle at 30% 40%, rgba(212,160,23,0.08) 0%, transparent 50%),
+              radial-gradient(circle at 70% 60%, rgba(196,30,58,0.1) 0%, transparent 50%);
+}
+.hero-chinese {
+  font-size: 4em;
+  color: var(--gold);
+  text-shadow: 0 0 40px rgba(212,160,23,0.3);
+  margin-bottom: 10px;
+  position: relative;
+  animation: glow 3s ease-in-out infinite alternate;
+}
+@keyframes glow {
+  from { text-shadow: 0 0 20px rgba(212,160,23,0.2); }
+  to { text-shadow: 0 0 40px rgba(212,160,23,0.5); }
+}
+.hero h1 {
+  font-size: 2.8em;
+  margin-bottom: 10px;
+  position: relative;
+}
+.hero p {
+  font-size: 1.1em;
+  opacity: 0.85;
+  max-width: 600px;
+  position: relative;
+  margin-bottom: 30px;
+}
+.stats-row {
+  display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;
+  position: relative;
+  margin-top: 20px;
+}
+.stat-card {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(212,160,23,0.3);
+  border-radius: var(--radius);
+  padding: 20px 28px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  min-width: 130px;
+  transition: transform 0.3s, border-color 0.3s;
+}
+.stat-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--gold);
+}
+.stat-num {
+  font-size: 2em;
+  color: var(--gold);
+  font-weight: bold;
+  display: block;
+}
+.stat-label {
+  font-size: 0.8em;
+  opacity: 0.7;
+  font-family: sans-serif;
+}
+/* ── CARDS ── */
+.grid { display: grid; gap: 20px; }
+.grid-2 { grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
+.grid-3 { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+.grid-4 { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
+.grid-5 { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
+.card {
+  background: var(--white);
+  border: 1px solid rgba(212,160,23,0.2);
+  border-radius: var(--radius);
+  padding: 24px;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(139,0,0,0.2);
+}
+.card::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--red), var(--gold));
+}
+/* ── LEVEL CARDS ── */
+.level-card {
+  cursor: pointer;
+  border-left: 4px solid var(--red);
+}
+.level-card .level-num {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--red), var(--red-deep));
+  color: white;
+  width: 36px; height: 36px;
+  line-height: 36px;
+  text-align: center;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+.level-card h3 { color: var(--red-deep); margin-bottom: 6px; }
+.level-card .desc { font-size: 0.85em; color: var(--text-light); margin-bottom: 12px; font-family: sans-serif; }
+.progress-bar {
+  height: 6px;
+  background: #eee;
+  border-radius: 3px;
+  overflow: hidden;
+  margin: 8px 0;
+}
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--red), var(--gold));
+  border-radius: 3px;
+  transition: width 0.5s;
+}
+.badge {
+  display: inline-block;
+  font-size: 0.7em;
+  padding: 2px 10px;
+  border-radius: 10px;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+.badge-easy { background: #d4edda; color: #155724; }
+.badge-medium { background: #fff3cd; color: #856404; }
+.badge-hard { background: #f8d7da; color: #721c24; }
+.btn {
+  display: inline-block;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9em;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+.btn-red {
+  background: linear-gradient(135deg, var(--red), var(--red-deep));
+  color: white;
+}
+.btn-red:hover { background: linear-gradient(135deg, var(--red-light), var(--red)); box-shadow: var(--shadow); }
+.btn-gold {
+  background: linear-gradient(135deg, var(--gold), #B8860B);
+  color: white;
+}
+.btn-gold:hover { box-shadow: var(--shadow-gold); }
+.btn-outline {
+  background: transparent;
+  border: 2px solid var(--red);
+  color: var(--red);
+}
+.btn-outline:hover { background: var(--red); color: white; }
+.btn-sm { padding: 6px 14px; font-size: 0.8em; }
+/* ── LESSONS MODAL ── */
+.modal-overlay {
+  display: none;
+  position: fixed; inset: 0; z-index: 2000;
+  background: rgba(0,0,0,0.7);
+  overflow-y: auto;
+  padding: 40px 20px;
+}
+.modal-overlay.active { display: flex; justify-content: center; align-items: flex-start; }
+.modal {
+  background: var(--cream);
+  border-radius: var(--radius-lg);
+  max-width: 800px;
+  width: 100%;
+  padding: 36px;
+  position: relative;
+  border: 2px solid var(--gold);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+}
+.modal-close {
+  position: absolute; top: 14px; right: 18px;
+  background: none; border: none;
+  font-size: 1.8em; cursor: pointer;
+  color: var(--red);
+}
+.lesson-item {
+  background: var(--white);
+  border: 1px solid rgba(212,160,23,0.15);
+  border-radius: var(--radius);
+  padding: 20px;
+  margin-bottom: 16px;
+}
+.lesson-item .chinese {
+  font-size: 2em;
+  color: var(--red-deep);
+  margin: 4px 0;
+}
+.lesson-item .pinyin {
+  color: var(--gold);
+  font-size: 1.1em;
+  font-style: italic;
+}
+.lesson-item .meta {
+  font-size: 0.85em;
+  color: var(--text-light);
+  font-family: sans-serif;
+  margin: 4px 0;
+}
+.lesson-item .usage {
+  background: var(--gold-pale);
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 0.88em;
+  margin-top: 8px;
+  border-left: 3px solid var(--gold);
+}
+.mini-quiz {
+  background: #fef3f3;
+  border: 1px solid rgba(196,30,58,0.2);
+  border-radius: 8px;
+  padding: 14px;
+  margin-top: 10px;
+}
+.mini-quiz button {
+  margin: 4px;
+  padding: 6px 14px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: white;
+  cursor: pointer;
+  font-size: 0.85em;
+  transition: all 0.2s;
+}
+.mini-quiz button:hover { border-color: var(--red); }
+.mini-quiz button.correct { background: var(--green); color: white; border-color: var(--green); }
+.mini-quiz button.wrong { background: var(--red-light); color: white; border-color: var(--red-light); }
+/* ── VOCAB ── */
+.filter-bar {
+  display: flex; gap: 8px; flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.filter-btn {
+  padding: 8px 18px;
+  border: 2px solid var(--red);
+  border-radius: 20px;
+  background: transparent;
+  color: var(--red);
+  cursor: pointer;
+  font-size: 0.82em;
+  font-family: sans-serif;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+.filter-btn:hover, .filter-btn.active {
+  background: var(--red);
+  color: white;
+}
+.vocab-card {
+  text-align: center;
+  padding: 20px 16px;
+}
+.vocab-card .zh {
+  font-size: 2.2em;
+  color: var(--red-deep);
+  margin: 6px 0;
+}
+.vocab-card .py {
+  color: var(--gold);
+  font-style: italic;
+  font-size: 0.95em;
+}
+.vocab-card .en {
+  font-weight: bold;
+  margin-bottom: 4px;
+  font-family: sans-serif;
+}
+.vocab-card .ex {
+  font-size: 0.8em;
+  color: var(--text-light);
+  margin-top: 8px;
+  font-family: sans-serif;
+}
+/* ── CHARACTERS ── */
+.char-card {
+  text-align: center;
+  padding: 24px 16px;
+}
+.char-card .big-char {
+  font-size: 4em;
+  color: var(--red-deep);
+  line-height: 1.2;
+  text-shadow: 0 2px 8px rgba(139,0,0,0.1);
+}
+.char-card .info {
+  font-size: 0.82em;
+  color: var(--text-light);
+  font-family: sans-serif;
+  margin: 2px 0;
+}
+.char-card .tip {
+  background: var(--gold-pale);
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 0.8em;
+  margin-top: 8px;
+  font-family: sans-serif;
+}
+/* ── PINYIN / TONES ── */
+.tone-card {
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.tone-card:hover { transform: scale(1.05); }
+.tone-card.active { border: 2px solid var(--red); }
+.tone-card .tone-num {
+  font-size: 3em;
+  color: var(--red-deep);
+}
+.tone-card .tone-name {
+  font-weight: bold;
+  margin: 4px 0;
+  font-family: sans-serif;
+}
+.tone-card .tone-desc {
+  font-size: 0.82em;
+  color: var(--text-light);
+  font-family: sans-serif;
+}
+/* ── FLASHCARDS ── */
+.flashcard-area {
+  display: flex; flex-direction: column; align-items: center; gap: 20px;
+}
+.flashcard {
+  width: 340px; height: 220px;
+  perspective: 800px;
+  cursor: pointer;
+}
+.flashcard-inner {
+  width: 100%; height: 100%;
+  position: relative;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+.flashcard.flipped .flashcard-inner {
+  transform: rotateY(180deg);
+}
+.flashcard-front, .flashcard-back {
+  position: absolute; inset: 0;
+  backface-visibility: hidden;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  border: 2px solid var(--gold);
+}
+.flashcard-front {
+  background: linear-gradient(135deg, var(--dark), var(--red-deep));
+  color: var(--gold);
+  font-size: 1.4em;
+}
+.flashcard-back {
+  background: var(--white);
+  transform: rotateY(180deg);
+  border-color: var(--red);
+}
+.flashcard-back .zh { font-size: 2.2em; color: var(--red-deep); }
+.flashcard-back .py { color: var(--gold); font-style: italic; }
+.fc-controls {
+  display: flex; gap: 12px; align-items: center;
+}
+.fc-counter { font-family: sans-serif; color: var(--text-light); }
+/* ── QUIZ ── */
+.quiz-box {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+.quiz-question {
+  font-size: 1.5em;
+  color: var(--red-deep);
+  margin-bottom: 8px;
+}
+.quiz-prompt {
+  font-size: 2.4em;
+  margin: 16px 0;
+}
+.quiz-options {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+  margin: 20px 0;
+}
+.quiz-opt {
+  padding: 16px;
+  border: 2px solid #ddd;
+  border-radius: var(--radius);
+  background: var(--white);
+  cursor: pointer;
+  font-size: 1em;
+  transition: all 0.3s;
+  font-family: sans-serif;
+}
+.quiz-opt:hover { border-color: var(--red); background: #fff5f5; }
+.quiz-opt.correct { border-color: var(--green); background: #d4edda; }
+.quiz-opt.wrong { border-color: var(--red-light); background: #f8d7da; }
+.quiz-opt.disabled { pointer-events: none; opacity: 0.7; }
+.quiz-score {
+  font-size: 1.1em;
+  font-family: sans-serif;
+  color: var(--text-light);
+  margin-bottom: 20px;
+}
+.quiz-result {
+  padding: 30px;
+  text-align: center;
+}
+.quiz-result .big { font-size: 3em; color: var(--gold); }
+/* ── REVIEW ── */
+.review-card {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 40px;
+}
+.review-card .zh { font-size: 3em; color: var(--red-deep); margin: 10px 0; }
+.review-card .py { font-size: 1.2em; color: var(--gold); font-style: italic; }
+.review-btns { display: flex; gap: 12px; justify-content: center; margin-top: 20px; }
+/* ── TIPS ── */
+.tip-item {
+  display: flex; gap: 16px; align-items: flex-start;
+  padding: 20px;
+}
+.tip-icon {
+  font-size: 2em;
+  flex-shrink: 0;
+}
+.tip-item h3 { color: var(--red-deep); margin-bottom: 4px; }
+.tip-item p { font-size: 0.9em; color: var(--text-light); font-family: sans-serif; }
+/* ── PROGRESS BAR SECTION ── */
+.daily-goal {
+  max-width: 400px;
+  margin: 20px auto;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(212,160,23,0.3);
+  border-radius: var(--radius);
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+.daily-goal .progress-bar { height: 10px; margin: 12px 0; }
+/* ── DIVIDER ── */
+.cn-divider {
+  text-align: center;
+  margin: 40px 0;
+  color: var(--gold);
+  font-size: 1.4em;
+  letter-spacing: 12px;
+  opacity: 0.5;
+}
+/* ── FOOTER ── */
+footer {
+  background: var(--dark);
+  color: rgba(255,255,255,0.5);
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 0.85em;
+  font-family: sans-serif;
+  border-top: 2px solid var(--gold);
+}
+/* ── ANIM ── */
+@keyframes fadeUp {
+  from { opacity:0; transform: translateY(20px); }
+  to { opacity:1; transform: translateY(0); }
+}
+.fade-up { animation: fadeUp 0.6s ease forwards; }
+/* ── RESPONSIVE ── */
+@media(max-width:600px) {
+  .hero h1 { font-size: 1.8em; }
+  .hero-chinese { font-size: 2.5em; }
+  section { padding: 60px 14px 30px; }
+  .section-title { font-size: 1.5em; }
+  .quiz-options { grid-template-columns: 1fr; }
+  .flashcard { width: 280px; height: 190px; }
+  .stats-row { gap: 10px; }
+  .stat-card { padding: 14px 18px; min-width: 100px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════ NAVIGATION ═══════ -->
+<nav class="nav">
+  <div class="nav-brand">🏮 学中文</div>
+  <button class="menu-btn" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+  <div class="nav-links">
+    <a href="#hero">Dashboard</a>
+    <a href="#levels">Levels</a>
+    <a href="#vocabulary">Vocabulary</a>
+    <a href="#characters">Characters</a>
+    <a href="#pinyin">Pinyin</a>
+    <a href="#flashcards">Flashcards</a>
+    <a href="#quiz">Quiz</a>
+    <a href="#review">Review</a>
+    <a href="#tips">Tips</a>
+  </div>
+</nav>
+
+<!-- ═══════ HERO / DASHBOARD ═══════ -->
+<section id="hero" class="hero">
+  <div class="hero-chinese">学中文</div>
+  <h1>Learn Chinese</h1>
+  <p>Your personal journey from zero to fluency. Master Mandarin Chinese with structured lessons, interactive quizzes, flashcards, and real-world vocabulary — all offline, all in one place.</p>
+
+  <div class="daily-goal" style="color:var(--white);">
+    <div style="font-size:0.85em;opacity:0.7;font-family:sans-serif;">Daily Goal Progress</div>
+    <div style="font-size:1.4em;margin:6px 0;" id="goalText">0 / 10 items reviewed</div>
+    <div class="progress-bar" style="background:rgba(255,255,255,0.15);">
+      <div class="progress-fill" id="goalFill" style="width:0%;"></div>
+    </div>
+    <div style="font-size:0.75em;opacity:0.6;font-family:sans-serif;">Level: <span id="currentLevel">Beginner</span></div>
+  </div>
+
+  <div class="stats-row">
+    <div class="stat-card">
+      <span class="stat-num" id="statWords">0</span>
+      <span class="stat-label">Words Learned</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-num" id="statChars">0</span>
+      <span class="stat-label">Characters</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-num" id="statLessons">0</span>
+      <span class="stat-label">Lessons Done</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-num" id="statStreak">0</span>
+      <span class="stat-label">Day Streak 🔥</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ LEVELS ═══════ -->
+<section id="levels">
+  <h2 class="section-title">Learning Levels</h2>
+  <p class="section-sub">10 structured levels from absolute beginner to review challenge</p>
+  <div class="grid grid-2" id="levelsGrid"></div>
+</section>
+
+<!-- ═══════ LESSON MODAL ═══════ -->
+<div class="modal-overlay" id="lessonModal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal()">&times;</button>
+    <h2 id="modalTitle" style="color:var(--red-deep);margin-bottom:20px;"></h2>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<!-- ═══════ VOCABULARY ═══════ -->
+<section id="vocabulary">
+  <h2 class="section-title">Vocabulary Bank</h2>
+  <p class="section-sub">Over 80 essential words across 10 categories</p>
+  <div class="filter-bar" id="vocabFilters"></div>
+  <div class="grid grid-4" id="vocabGrid"></div>
+</section>
+
+<div class="cn-divider">龍 ◆ 鳳 ◆ 福 ◆ 壽</div>
+
+<!-- ═══════ CHARACTERS ═══════ -->
+<section id="characters">
+  <h2 class="section-title">Chinese Characters</h2>
+  <p class="section-sub">Learn 20 essential characters with radicals and memory tips</p>
+  <div class="grid grid-4" id="charGrid"></div>
+</section>
+
+<!-- ═══════ PINYIN ═══════ -->
+<section id="pinyin">
+  <h2 class="section-title">Pinyin & Tones Guide</h2>
+  <p class="section-sub">Master the sound system of Mandarin Chinese</p>
+
+  <div class="card" style="max-width:700px;margin:0 auto 30px;">
+    <h3 style="color:var(--red-deep);margin-bottom:10px;">What is Pinyin?</h3>
+    <p style="font-family:sans-serif;font-size:0.92em;color:var(--text-light);">
+      Pinyin is the official romanization system for Standard Mandarin Chinese. It uses Latin letters with tone marks to represent how Chinese characters are pronounced. Learning pinyin is the essential first step for any Chinese learner — it's your pronunciation roadmap. Mandarin has four tones plus a neutral tone, and the same syllable pronounced with a different tone can have a completely different meaning.
+    </p>
+  </div>
+
+  <div class="grid grid-5" id="toneGrid"></div>
+
+  <div id="toneDetail" class="card" style="max-width:600px;margin:30px auto 0;display:none;text-align:center;">
+    <div id="toneDetailContent"></div>
+  </div>
+</section>
+
+<div class="cn-divider">⬥ ⬥ ⬥ ⬥ ⬥</div>
+
+<!-- ═══════ FLASHCARDS ═══════ -->
+<section id="flashcards">
+  <h2 class="section-title">Flashcards</h2>
+  <p class="section-sub">Flip to reveal — test your memory</p>
+
+  <div style="text-align:center;margin-bottom:20px;">
+    <select id="fcCategory" onchange="initFlashcards()" style="padding:8px 16px;border-radius:8px;border:2px solid var(--red);font-size:0.9em;font-family:sans-serif;background:white;">
+    </select>
+  </div>
+
+  <div class="flashcard-area">
+    <div class="flashcard" id="flashcard" onclick="flipCard()">
+      <div class="flashcard-inner">
+        <div class="flashcard-front">
+          <div style="font-size:0.6em;opacity:0.6;margin-bottom:8px;">TAP TO FLIP</div>
+          <div id="fcFront">Hello</div>
+        </div>
+        <div class="flashcard-back">
+          <div class="zh" id="fcBackZh">你好</div>
+          <div class="py" id="fcBackPy">nǐ hǎo</div>
+          <div style="margin-top:8px;font-family:sans-serif;color:var(--text-light);" id="fcBackEn">Hello</div>
+        </div>
+      </div>
+    </div>
+    <div class="fc-controls">
+      <button class="btn btn-outline btn-sm" onclick="prevCard()">← Prev</button>
+      <span class="fc-counter" id="fcCounter">1 / 10</span>
+      <button class="btn btn-red btn-sm" onclick="nextCard()">Next →</button>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ QUIZ ═══════ -->
+<section id="quiz">
+  <h2 class="section-title">Practice Quiz</h2>
+  <p class="section-sub">Test your knowledge with 20 questions</p>
+
+  <div class="quiz-box card" id="quizBox">
+    <div id="quizContent">
+      <button class="btn btn-red" onclick="startQuiz()" style="font-size:1.1em;padding:14px 40px;">Start Quiz 🎯</button>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ REVIEW ═══════ -->
+<section id="review">
+  <h2 class="section-title">Today's Review</h2>
+  <p class="section-sub">Refresh your memory with random items</p>
+  <div class="card review-card" id="reviewCard">
+    <div style="font-size:0.85em;color:var(--text-light);font-family:sans-serif;margin-bottom:10px;">🔄 Random Review</div>
+    <div class="en" id="revEn" style="font-size:1.1em;font-family:sans-serif;font-weight:bold;">Click below to start</div>
+    <div class="zh" id="revZh">—</div>
+    <div class="py" id="revPy" style="color:var(--gold);font-style:italic;">—</div>
+    <div id="revUsage" style="font-size:0.85em;color:var(--text-light);font-family:sans-serif;margin-top:8px;"></div>
+    <div class="review-btns">
+      <button class="btn btn-outline btn-sm" onclick="markReview(false)">Review Again 🔁</button>
+      <button class="btn btn-gold btn-sm" onclick="randomReview()">Next Random ↻</button>
+      <button class="btn btn-red btn-sm" onclick="markReview(true)">I Know This ✓</button>
+    </div>
+    <div id="revMsg" style="margin-top:12px;font-size:0.85em;color:var(--green-dark);font-family:sans-serif;"></div>
+  </div>
+</section>
+
+<!-- ═══════ TIPS ═══════ -->
+<section id="tips">
+  <h2 class="section-title">Study Tips</h2>
+  <p class="section-sub">Proven strategies for mastering Chinese</p>
+  <div class="grid grid-2" id="tipsGrid"></div>
+</section>
+
+<!-- ═══════ PROGRESS CONTROLS ═══════ -->
+<section style="text-align:center;">
+  <h2 class="section-title">Progress</h2>
+  <p class="section-sub">Your learning data is saved locally in your browser</p>
+  <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+    <button class="btn btn-red" onclick="if(confirm('Reset all progress?')){localStorage.clear();loadProgress();alert('Progress reset!')}">Reset Progress</button>
+    <button class="btn btn-gold" onclick="window.scrollTo({top:0,behavior:'smooth'})">Back to Top ↑</button>
+  </div>
+</section>
+
+<footer>
+  <p>🏮 Learn Chinese — 学中文 — A complete offline Mandarin learning experience</p>
+  <p style="margin-top:6px;">Built with ❤️ for language learners everywhere</p>
+</footer>
+
+<script>
+// ═══════════════════════════════════════
+// DATA
+// ═══════════════════════════════════════
+
+const LEVELS = [
+  {id:1, name:"Absolute Beginner", desc:"Hello, goodbye, basic greetings and essential first words.", lessons:5, diff:"easy"},
+  {id:2, name:"Basic Phrases", desc:"Simple sentences for everyday situations and polite expressions.", lessons:5, diff:"easy"},
+  {id:3, name:"Daily Conversation", desc:"Talk about yourself, ask questions, and hold simple chats.", lessons:4, diff:"easy"},
+  {id:4, name:"Travel Chinese", desc:"Navigate airports, hotels, transportation, and directions.", lessons:4, diff:"medium"},
+  {id:5, name:"Food & Shopping", desc:"Order food, go shopping, discuss prices and preferences.", lessons:4, diff:"medium"},
+  {id:6, name:"Grammar Basics", desc:"Sentence structure, measure words, and basic grammar patterns.", lessons:3, diff:"medium"},
+  {id:7, name:"Characters & Radicals", desc:"Understanding how Chinese characters are built and structured.", lessons:3, diff:"medium"},
+  {id:8, name:"Intermediate Sentences", desc:"Complex sentences, opinions, comparisons, and descriptions.", lessons:3, diff:"hard"},
+  {id:9, name:"Listening & Pronunciation", desc:"Tone pairs, tricky sounds, and common pronunciation mistakes.", lessons:3, diff:"hard"},
+  {id:10, name:"Review Challenge", desc:"Comprehensive review across all previous levels.", lessons:3, diff:"hard"},
+];
+
+const LESSONS = {
+  1: [
+    {en:"Hello",zh:"你好",py:"nǐ hǎo",lit:"you good",meaning:"A common greeting used in all situations.",ex:"你好，我是李明。(Nǐ hǎo, wǒ shì Lǐ Míng.) — Hello, I am Li Ming.",quiz:{q:"How do you say 'hello'?",opts:["你好","再见","谢谢","对不起"],ans:0}},
+    {en:"Thank you",zh:"谢谢",py:"xiè xie",lit:"thank thank",meaning:"The most common way to express gratitude.",ex:"谢谢你的帮助。(Xiè xie nǐ de bāng zhù.) — Thank you for your help.",quiz:{q:"Which means 'thank you'?",opts:["你好","再见","谢谢","不客气"],ans:2}},
+    {en:"Goodbye",zh:"再见",py:"zài jiàn",lit:"again see",meaning:"Standard farewell, literally means 'see you again'.",ex:"明天再见！(Míng tiān zài jiàn!) — See you tomorrow!",quiz:{q:"'再见' means?",opts:["Hello","Sorry","Goodbye","Thanks"],ans:2}},
+    {en:"Sorry / Excuse me",zh:"对不起",py:"duì bu qǐ",lit:"face not rise",meaning:"Used for apologies. Literally suggests you can't face someone.",ex:"对不起，我迟到了。(Duì bu qǐ, wǒ chí dào le.) — Sorry, I'm late.",quiz:{q:"How do you apologize?",opts:["谢谢","对不起","你好","没关系"],ans:1}},
+    {en:"You're welcome",zh:"不客气",py:"bú kè qi",lit:"not guest spirit",meaning:"Polite response to thanks, literally 'don't be a stranger'.",ex:"不客气！这是应该的。(Bú kè qi! Zhè shì yīng gāi de.) — You're welcome! It's the right thing to do.",quiz:{q:"Reply to 谢谢?",opts:["再见","不客气","对不起","你好"],ans:1}},
+  ],
+  2: [
+    {en:"How are you?",zh:"你好吗？",py:"nǐ hǎo ma?",lit:"you good [question]?",meaning:"Add 吗 to any statement to make it a yes/no question.",ex:"你好吗？我很好。(Nǐ hǎo ma? Wǒ hěn hǎo.) — How are you? I'm fine.",quiz:{q:"吗 makes a sentence into a...",opts:["Statement","Question","Command","Greeting"],ans:1}},
+    {en:"I am fine",zh:"我很好",py:"wǒ hěn hǎo",lit:"I very good",meaning:"Standard response to 你好吗. 很 (hěn) links adjectives.",ex:"我很好，谢谢。(Wǒ hěn hǎo, xiè xie.) — I'm fine, thanks.",quiz:{q:"很 means?",opts:["Not","Also","Very","Is"],ans:2}},
+    {en:"What is your name?",zh:"你叫什么名字？",py:"nǐ jiào shén me míng zi?",lit:"you called what name?",meaning:"The standard way to ask someone's name.",ex:"你叫什么名字？我叫小红。— What's your name? I'm Xiaohong.",quiz:{q:"什么 means?",opts:["Who","What","Where","When"],ans:1}},
+    {en:"My name is...",zh:"我叫...",py:"wǒ jiào...",lit:"I called...",meaning:"叫 means 'to be called'. Use it to introduce yourself.",ex:"我叫大卫。(Wǒ jiào Dà wèi.) — My name is David.",quiz:{q:"叫 means?",opts:["To eat","To be called","To go","To see"],ans:1}},
+    {en:"Nice to meet you",zh:"认识你很高兴",py:"rèn shi nǐ hěn gāo xìng",lit:"know you very happy",meaning:"A warm phrase used when meeting someone for the first time.",ex:"你好！认识你很高兴。— Hello! Nice to meet you.",quiz:{q:"高兴 means?",opts:["Sad","Angry","Happy","Tired"],ans:2}},
+  ],
+  3: [
+    {en:"Where are you from?",zh:"你是哪里人？",py:"nǐ shì nǎ lǐ rén?",lit:"you are where person?",meaning:"Ask someone's origin. 哪里 means 'where'.",ex:"你是哪里人？我是美国人。— Where are you from? I'm American.",quiz:{q:"哪里 means?",opts:["When","Where","What","Who"],ans:1}},
+    {en:"I am from America",zh:"我是美国人",py:"wǒ shì Měi guó rén",lit:"I am America person",meaning:"Country + 人 = person from that country.",ex:"她是中国人。(Tā shì Zhōng guó rén.) — She is Chinese.",quiz:{q:"美国 means?",opts:["China","England","America","Japan"],ans:2}},
+    {en:"Do you speak Chinese?",zh:"你会说中文吗？",py:"nǐ huì shuō zhōng wén ma?",lit:"you can speak Chinese [question]?",meaning:"会 indicates ability or skill.",ex:"我会说一点中文。(Wǒ huì shuō yì diǎn zhōng wén.) — I can speak a little Chinese.",quiz:{q:"会 indicates?",opts:["Want to","Must","Ability/can","Have to"],ans:2}},
+    {en:"A little bit",zh:"一点点",py:"yì diǎn diǎn",lit:"one dot dot",meaning:"A humble way to say you know a small amount.",ex:"我会一点点。(Wǒ huì yì diǎn diǎn.) — I know a tiny bit.",quiz:{q:"一点点 means?",opts:["A lot","Nothing","A tiny bit","Everything"],ans:2}},
+  ],
+  4: [
+    {en:"Where is the bathroom?",zh:"洗手间在哪里？",py:"xǐ shǒu jiān zài nǎ lǐ?",lit:"wash hand room at where?",meaning:"Essential travel phrase. 在 means 'at/in'.",ex:"请问，洗手间在哪里？— Excuse me, where is the bathroom?",quiz:{q:"洗手间 means?",opts:["Kitchen","Bathroom","Bedroom","Hotel"],ans:1}},
+    {en:"How much is this?",zh:"这个多少钱？",py:"zhè ge duō shǎo qián?",lit:"this how-much money?",meaning:"Essential for shopping and bargaining.",ex:"这个多少钱？太贵了！— How much? Too expensive!",quiz:{q:"钱 means?",opts:["Time","Food","Money","People"],ans:2}},
+    {en:"I want to go to...",zh:"我想去...",py:"wǒ xiǎng qù...",lit:"I want go...",meaning:"想 means 'want to' or 'think'. 去 means 'to go'.",ex:"我想去北京。(Wǒ xiǎng qù Běi jīng.) — I want to go to Beijing.",quiz:{q:"去 means?",opts:["Come","Go","Stay","Return"],ans:1}},
+    {en:"Can you help me?",zh:"你能帮我吗？",py:"nǐ néng bāng wǒ ma?",lit:"you can help me [question]?",meaning:"能 means 'can/able to'. Very useful when traveling.",ex:"你能帮我叫出租车吗？— Can you help me call a taxi?",quiz:{q:"帮 means?",opts:["Help","Hit","Carry","Find"],ans:0}},
+  ],
+  5: [
+    {en:"I want to eat...",zh:"我想吃...",py:"wǒ xiǎng chī...",lit:"I want eat...",meaning:"吃 is one of the most important verbs — 'to eat'.",ex:"我想吃面条。(Wǒ xiǎng chī miàn tiáo.) — I want to eat noodles.",quiz:{q:"吃 means?",opts:["Drink","Eat","Cook","Buy"],ans:1}},
+    {en:"The check, please",zh:"买单",py:"mǎi dān",lit:"buy bill",meaning:"Used to ask for the bill at a restaurant.",ex:"服务员，买单！— Waiter, check please!",quiz:{q:"买单 is used to?",opts:["Order food","Ask for the bill","Say goodbye","Complain"],ans:1}},
+    {en:"Too expensive",zh:"太贵了",py:"tài guì le",lit:"too expensive [particle]",meaning:"太...了 is a pattern meaning 'too [adjective]'.",ex:"五百块？太贵了！— 500 yuan? Too expensive!",quiz:{q:"太...了 means?",opts:["Not enough","Very much","Too...","A little"],ans:2}},
+    {en:"Can it be cheaper?",zh:"能便宜一点吗？",py:"néng pián yi yì diǎn ma?",lit:"can cheap a-bit [question]?",meaning:"Essential bargaining phrase at markets.",ex:"能便宜一点吗？我买两个。— Can it be cheaper? I'll buy two.",quiz:{q:"便宜 means?",opts:["Expensive","Cheap","Beautiful","Big"],ans:1}},
+  ],
+  6: [
+    {en:"Subject + Verb + Object",zh:"主语 + 动词 + 宾语",py:"zhǔ yǔ + dòng cí + bīn yǔ",lit:"subject + verb + object",meaning:"Chinese follows SVO order like English: 我吃饭 (I eat rice).",ex:"我喝水。(Wǒ hē shuǐ.) — I drink water. / 她看书。(Tā kàn shū.) — She reads books.",quiz:{q:"Chinese word order is?",opts:["SOV","VSO","SVO","OVS"],ans:2}},
+    {en:"Negation with 不",zh:"不 (bù)",py:"bù",lit:"not",meaning:"Place 不 before a verb or adjective to negate it.",ex:"我不喝咖啡。(Wǒ bù hē kā fēi.) — I don't drink coffee.",quiz:{q:"不 is placed?",opts:["After verb","Before verb","At end","At start"],ans:1}},
+    {en:"Past tense with 了",zh:"了 (le)",py:"le",lit:"[completion particle]",meaning:"了 after a verb indicates completed action (similar to past tense).",ex:"我吃了。(Wǒ chī le.) — I ate. / 她去了。(Tā qù le.) — She went.",quiz:{q:"了 indicates?",opts:["Future","Question","Completed action","Ability"],ans:2}},
+  ],
+  7: [
+    {en:"Radicals are building blocks",zh:"部首",py:"bù shǒu",lit:"section head",meaning:"Radicals are the basic components of Chinese characters. Learning them helps you guess meanings.",ex:"水 (water) appears in 河 (river), 海 (sea), 湖 (lake), 洗 (wash).",quiz:{q:"Radicals help with?",opts:["Pronunciation only","Guessing meaning","Grammar","Tones"],ans:1}},
+    {en:"Left-right structure",zh:"左右结构",py:"zuǒ yòu jié gòu",lit:"left right structure",meaning:"Many characters combine a radical on the left with a phonetic component on the right.",ex:"妈 = 女 (woman) + 马 (horse/sound mǎ). The radical 女 hints at meaning, 马 hints at sound.",quiz:{q:"In 妈, 女 provides?",opts:["Sound","Meaning","Tone","Nothing"],ans:1}},
+    {en:"Stroke order matters",zh:"笔顺",py:"bǐ shùn",lit:"pen order",meaning:"Characters must be written in a specific stroke order: top to bottom, left to right.",ex:"十 = horizontal stroke first (一), then vertical stroke (丨).",quiz:{q:"General stroke order rule?",opts:["Bottom to top","Right to left","Top-bottom, left-right","Random"],ans:2}},
+  ],
+  8: [
+    {en:"I think...",zh:"我觉得...",py:"wǒ jué de...",lit:"I feel/think...",meaning:"Used to express opinions. More subjective than 我想.",ex:"我觉得中文很有意思。— I think Chinese is very interesting.",quiz:{q:"觉得 expresses?",opts:["A fact","An opinion","A command","A question"],ans:1}},
+    {en:"...compared to...",zh:"比 (bǐ)",py:"bǐ",lit:"compare",meaning:"A比B + adjective: A is more [adj] than B.",ex:"中文比英文难。(Zhōng wén bǐ Yīng wén nán.) — Chinese is harder than English.",quiz:{q:"A比B大 means?",opts:["A is smaller than B","A equals B","A is bigger than B","B is bigger"],ans:2}},
+    {en:"Because...so...",zh:"因为...所以...",py:"yīn wèi...suǒ yǐ...",lit:"because...therefore...",meaning:"Connecting cause and result. Both words are used together.",ex:"因为下雨，所以我不去。— Because it's raining, I'm not going.",quiz:{q:"因为 means?",opts:["Although","Because","However","And"],ans:1}},
+  ],
+  9: [
+    {en:"Tone pairs practice",zh:"声调组合",py:"shēng diào zǔ hé",lit:"tone combination",meaning:"Practice saying two-syllable words to master tone transitions.",ex:"中国 (1-2), 学习 (2-2), 你好 (3-3→2-3), 再见 (4-4).",quiz:{q:"你好 tones are?",opts:["1-1","2-4","3-3","4-2"],ans:2}},
+    {en:"The tricky ü sound",zh:"ü 的发音",py:"ü de fā yīn",lit:"ü sound",meaning:"ü is like saying 'ee' with rounded lips. Appears in 女, 绿, 旅.",ex:"女 (nǚ), 绿 (lǜ), 旅 (lǚ) — practice rounding your lips while saying 'ee'.",quiz:{q:"ü sounds like?",opts:["'oo' sound","'ah' sound","'ee' with rounded lips","'oh' sound"],ans:2}},
+    {en:"Zh, Ch, Sh vs Z, C, S",zh:"翘舌音 vs 平舌音",py:"qiào shé yīn vs píng shé yīn",lit:"curled tongue vs flat tongue",meaning:"Zh/Ch/Sh curl the tongue back; Z/C/S keep it flat behind teeth.",ex:"知 (zhī) vs 资 (zī), 吃 (chī) vs 次 (cì), 是 (shì) vs 四 (sì).",quiz:{q:"Zh, Ch, Sh are?",opts:["Flat tongue","Curled tongue","No tongue","Side tongue"],ans:1}},
+  ],
+  10: [
+    {en:"Mixed Review: Greetings",zh:"综合复习：问候",py:"zōng hé fù xí: wèn hòu",lit:"comprehensive review: greetings",meaning:"Review all greetings: 你好, 再见, 谢谢, 对不起, 不客气.",ex:"Practice: Say hello, introduce yourself, and say goodbye in Chinese.",quiz:{q:"不客气 means?",opts:["Sorry","Hello","You're welcome","Goodbye"],ans:2}},
+    {en:"Mixed Review: Daily Life",zh:"综合复习：日常",py:"zōng hé fù xí: rì cháng",lit:"comprehensive review: daily",meaning:"Review daily vocabulary: food, time, family, numbers.",ex:"我每天早上七点起床。— I get up at 7 AM every day.",quiz:{q:"每天 means?",opts:["Sometimes","Every day","Yesterday","Never"],ans:1}},
+    {en:"Mixed Review: Travel",zh:"综合复习：旅行",py:"zōng hé fù xí: lǚ xíng",lit:"comprehensive review: travel",meaning:"Review travel vocabulary: directions, transport, hotels, prices.",ex:"请问，火车站怎么走？— Excuse me, how do I get to the train station?",quiz:{q:"火车站 means?",opts:["Airport","Bus stop","Train station","Hotel"],ans:2}},
+  ],
+};
+
+const VOCAB = [
+  // Greetings (10)
+  {en:"Hello",zh:"你好",py:"nǐ hǎo",cat:"Greetings",ex:"你好，很高兴认识你。"},
+  {en:"Good morning",zh:"早上好",py:"zǎo shang hǎo",cat:"Greetings",ex:"早上好！今天天气很好。"},
+  {en:"Good night",zh:"晚安",py:"wǎn ān",cat:"Greetings",ex:"晚安，做个好梦。"},
+  {en:"Goodbye",zh:"再见",py:"zài jiàn",cat:"Greetings",ex:"明天再见！"},
+  {en:"Thank you",zh:"谢谢",py:"xiè xie",cat:"Greetings",ex:"谢谢你的帮助。"},
+  {en:"You're welcome",zh:"不客气",py:"bú kè qi",cat:"Greetings",ex:"不客气，这是应该的。"},
+  {en:"Sorry",zh:"对不起",py:"duì bu qǐ",cat:"Greetings",ex:"对不起，我来晚了。"},
+  {en:"No problem",zh:"没关系",py:"méi guān xi",cat:"Greetings",ex:"没关系，别担心。"},
+  {en:"How are you?",zh:"你好吗？",py:"nǐ hǎo ma?",cat:"Greetings",ex:"你好吗？最近怎么样？"},
+  {en:"Long time no see",zh:"好久不见",py:"hǎo jiǔ bú jiàn",cat:"Greetings",ex:"好久不见，你最近好吗？"},
+  // Numbers (10)
+  {en:"One",zh:"一",py:"yī",cat:"Numbers",ex:"我要一杯水。"},
+  {en:"Two",zh:"二",py:"èr",cat:"Numbers",ex:"我有二十块钱。"},
+  {en:"Three",zh:"三",py:"sān",cat:"Numbers",ex:"三个人一起去。"},
+  {en:"Four",zh:"四",py:"sì",cat:"Numbers",ex:"四月是春天。"},
+  {en:"Five",zh:"五",py:"wǔ",cat:"Numbers",ex:"五点钟下班。"},
+  {en:"Six",zh:"六",py:"liù",cat:"Numbers",ex:"六个苹果。"},
+  {en:"Seven",zh:"七",py:"qī",cat:"Numbers",ex:"一个星期有七天。"},
+  {en:"Eight",zh:"八",py:"bā",cat:"Numbers",ex:"八是幸运数字。"},
+  {en:"Nine",zh:"九",py:"jiǔ",cat:"Numbers",ex:"九月开学。"},
+  {en:"Ten",zh:"十",py:"shí",cat:"Numbers",ex:"十个人参加了。"},
+  // Family (8)
+  {en:"Mother",zh:"妈妈",py:"mā ma",cat:"Family",ex:"妈妈做饭很好吃。"},
+  {en:"Father",zh:"爸爸",py:"bà ba",cat:"Family",ex:"爸爸在公司上班。"},
+  {en:"Older brother",zh:"哥哥",py:"gē ge",cat:"Family",ex:"我哥哥比我高。"},
+  {en:"Older sister",zh:"姐姐",py:"jiě jie",cat:"Family",ex:"姐姐在大学学习。"},
+  {en:"Younger brother",zh:"弟弟",py:"dì di",cat:"Family",ex:"弟弟今年十岁。"},
+  {en:"Younger sister",zh:"妹妹",py:"mèi mei",cat:"Family",ex:"妹妹很可爱。"},
+  {en:"Husband",zh:"丈夫",py:"zhàng fu",cat:"Family",ex:"她的丈夫是医生。"},
+  {en:"Wife",zh:"妻子",py:"qī zi",cat:"Family",ex:"他的妻子是老师。"},
+  // Food (10)
+  {en:"Rice",zh:"米饭",py:"mǐ fàn",cat:"Food",ex:"中国人每天吃米饭。"},
+  {en:"Noodles",zh:"面条",py:"miàn tiáo",cat:"Food",ex:"我喜欢吃面条。"},
+  {en:"Dumplings",zh:"饺子",py:"jiǎo zi",cat:"Food",ex:"过年要吃饺子。"},
+  {en:"Tea",zh:"茶",py:"chá",cat:"Food",ex:"请喝茶。"},
+  {en:"Water",zh:"水",py:"shuǐ",cat:"Food",ex:"我要一杯水。"},
+  {en:"Coffee",zh:"咖啡",py:"kā fēi",cat:"Food",ex:"早上喝一杯咖啡。"},
+  {en:"Vegetables",zh:"蔬菜",py:"shū cài",cat:"Food",ex:"多吃蔬菜对身体好。"},
+  {en:"Meat",zh:"肉",py:"ròu",cat:"Food",ex:"我不吃肉。"},
+  {en:"Fruit",zh:"水果",py:"shuǐ guǒ",cat:"Food",ex:"水果很新鲜。"},
+  {en:"Beer",zh:"啤酒",py:"pí jiǔ",cat:"Food",ex:"来一瓶啤酒。"},
+  // Travel (8)
+  {en:"Airport",zh:"机场",py:"jī chǎng",cat:"Travel",ex:"我们去机场。"},
+  {en:"Hotel",zh:"酒店",py:"jiǔ diàn",cat:"Travel",ex:"这个酒店很好。"},
+  {en:"Train station",zh:"火车站",py:"huǒ chē zhàn",cat:"Travel",ex:"火车站在哪里？"},
+  {en:"Taxi",zh:"出租车",py:"chū zū chē",cat:"Travel",ex:"我要叫一辆出租车。"},
+  {en:"Map",zh:"地图",py:"dì tú",cat:"Travel",ex:"你有地图吗？"},
+  {en:"Passport",zh:"护照",py:"hù zhào",cat:"Travel",ex:"请出示你的护照。"},
+  {en:"Ticket",zh:"票",py:"piào",cat:"Travel",ex:"我买了两张票。"},
+  {en:"Luggage",zh:"行李",py:"xíng li",cat:"Travel",ex:"我的行李在哪里？"},
+  // Shopping (8)
+  {en:"Money",zh:"钱",py:"qián",cat:"Shopping",ex:"你有多少钱？"},
+  {en:"Expensive",zh:"贵",py:"guì",cat:"Shopping",ex:"这个太贵了。"},
+  {en:"Cheap",zh:"便宜",py:"pián yi",cat:"Shopping",ex:"这个很便宜。"},
+  {en:"To buy",zh:"买",py:"mǎi",cat:"Shopping",ex:"我想买这个。"},
+  {en:"To sell",zh:"卖",py:"mài",cat:"Shopping",ex:"他在卖水果。"},
+  {en:"Size",zh:"大小",py:"dà xiǎo",cat:"Shopping",ex:"这个大小合适吗？"},
+  {en:"Color",zh:"颜色",py:"yán sè",cat:"Shopping",ex:"你喜欢什么颜色？"},
+  {en:"Credit card",zh:"信用卡",py:"xìn yòng kǎ",cat:"Shopping",ex:"可以用信用卡吗？"},
+  // Time (8)
+  {en:"Today",zh:"今天",py:"jīn tiān",cat:"Time",ex:"今天星期一。"},
+  {en:"Tomorrow",zh:"明天",py:"míng tiān",cat:"Time",ex:"明天见。"},
+  {en:"Yesterday",zh:"昨天",py:"zuó tiān",cat:"Time",ex:"昨天很冷。"},
+  {en:"Now",zh:"现在",py:"xiàn zài",cat:"Time",ex:"现在几点了？"},
+  {en:"Morning",zh:"早上",py:"zǎo shang",cat:"Time",ex:"我早上六点起床。"},
+  {en:"Afternoon",zh:"下午",py:"xià wǔ",cat:"Time",ex:"下午三点开会。"},
+  {en:"Evening",zh:"晚上",py:"wǎn shang",cat:"Time",ex:"晚上一起吃饭吧。"},
+  {en:"Week",zh:"星期",py:"xīng qī",cat:"Time",ex:"一个星期有七天。"},
+  // Common Verbs (10)
+  {en:"To eat",zh:"吃",py:"chī",cat:"Verbs",ex:"你想吃什么？"},
+  {en:"To drink",zh:"喝",py:"hē",cat:"Verbs",ex:"你喝茶还是咖啡？"},
+  {en:"To go",zh:"去",py:"qù",cat:"Verbs",ex:"你去哪里？"},
+  {en:"To come",zh:"来",py:"lái",cat:"Verbs",ex:"请进来。"},
+  {en:"To see/look",zh:"看",py:"kàn",cat:"Verbs",ex:"我看电视。"},
+  {en:"To listen",zh:"听",py:"tīng",cat:"Verbs",ex:"我听音乐。"},
+  {en:"To speak",zh:"说",py:"shuō",cat:"Verbs",ex:"你说中文吗？"},
+  {en:"To read",zh:"读",py:"dú",cat:"Verbs",ex:"我喜欢读书。"},
+  {en:"To write",zh:"写",py:"xiě",cat:"Verbs",ex:"请写你的名字。"},
+  {en:"To learn",zh:"学",py:"xué",cat:"Verbs",ex:"我在学中文。"},
+  // Emotions (5)
+  {en:"Happy",zh:"高兴",py:"gāo xìng",cat:"Emotions",ex:"我很高兴。"},
+  {en:"Sad",zh:"难过",py:"nán guò",cat:"Emotions",ex:"他很难过。"},
+  {en:"Angry",zh:"生气",py:"shēng qì",cat:"Emotions",ex:"别生气了。"},
+  {en:"Tired",zh:"累",py:"lèi",cat:"Emotions",ex:"今天太累了。"},
+  {en:"Nervous",zh:"紧张",py:"jǐn zhāng",cat:"Emotions",ex:"考试前我很紧张。"},
+  // Useful Questions (8)
+  {en:"What?",zh:"什么？",py:"shén me?",cat:"Questions",ex:"你说什么？"},
+  {en:"Where?",zh:"哪里？",py:"nǎ lǐ?",cat:"Questions",ex:"洗手间在哪里？"},
+  {en:"When?",zh:"什么时候？",py:"shén me shí hou?",cat:"Questions",ex:"你什么时候来？"},
+  {en:"Who?",zh:"谁？",py:"shéi?",cat:"Questions",ex:"他是谁？"},
+  {en:"Why?",zh:"为什么？",py:"wèi shén me?",cat:"Questions",ex:"你为什么不去？"},
+  {en:"How?",zh:"怎么？",py:"zěn me?",cat:"Questions",ex:"这个字怎么写？"},
+  {en:"How many?",zh:"多少？",py:"duō shǎo?",cat:"Questions",ex:"一共多少钱？"},
+  {en:"Can I...?",zh:"可以...吗？",py:"kě yǐ...ma?",cat:"Questions",ex:"可以试试吗？"},
+];
+
+const CHARACTERS = [
+  {ch:"你",py:"nǐ",en:"you",strokes:7,radical:"亻(person)",tip:"A person (亻) standing next to another — 'you' are that other person.",word:"你好 (hello)"},
+  {ch:"好",py:"hǎo",en:"good",strokes:6,radical:"女(woman)",tip:"A woman (女) with a child (子) = 'good'. Family harmony.",word:"好吃 (delicious)"},
+  {ch:"我",py:"wǒ",en:"I / me",strokes:7,radical:"戈(weapon)",tip:"A hand holding a weapon to defend — 'I' stand my ground.",word:"我们 (we)"},
+  {ch:"是",py:"shì",en:"is / am",strokes:9,radical:"日(sun)",tip:"The sun (日) moving straight (正) = truth = 'is'.",word:"是的 (yes)"},
+  {ch:"不",py:"bù",en:"not",strokes:4,radical:"一(one)",tip:"A bird trying to fly up but blocked — negation.",word:"不好 (not good)"},
+  {ch:"人",py:"rén",en:"person",strokes:2,radical:"人(person)",tip:"Two strokes like legs walking — a person.",word:"人们 (people)"},
+  {ch:"中",py:"zhōng",en:"middle",strokes:4,radical:"丨(line)",tip:"A line through the center of a rectangle — the middle.",word:"中国 (China)"},
+  {ch:"国",py:"guó",en:"country",strokes:8,radical:"囗(enclosure)",tip:"Jade (玉) inside borders (囗) — a precious territory.",word:"中国 (China)"},
+  {ch:"学",py:"xué",en:"study",strokes:8,radical:"子(child)",tip:"A child (子) under a roof learning — to study.",word:"学生 (student)"},
+  {ch:"生",py:"shēng",en:"life / birth",strokes:5,radical:"生(life)",tip:"A plant sprouting from the ground — new life.",word:"学生 (student)"},
+  {ch:"水",py:"shuǐ",en:"water",strokes:4,radical:"水(water)",tip:"Picture a flowing stream — the middle stroke is the current.",word:"喝水 (drink water)"},
+  {ch:"火",py:"huǒ",en:"fire",strokes:4,radical:"火(fire)",tip:"A person with arms raised by flames.",word:"火车 (train)"},
+  {ch:"木",py:"mù",en:"wood/tree",strokes:4,radical:"木(wood)",tip:"A tree with branches above and roots below.",word:"木头 (wood)"},
+  {ch:"山",py:"shān",en:"mountain",strokes:3,radical:"山(mountain)",tip:"Three peaks — the tallest in the middle.",word:"山上 (on the mountain)"},
+  {ch:"日",py:"rì",en:"sun / day",strokes:4,radical:"日(sun)",tip:"A picture of the sun — a rectangle with a line inside.",word:"今日 (today)"},
+  {ch:"月",py:"yuè",en:"moon / month",strokes:4,radical:"月(moon)",tip:"A crescent moon shape with lines inside.",word:"月亮 (moon)"},
+  {ch:"大",py:"dà",en:"big",strokes:3,radical:"大(big)",tip:"A person stretching arms wide — big!",word:"大家 (everyone)"},
+  {ch:"小",py:"xiǎo",en:"small",strokes:3,radical:"小(small)",tip:"A vertical line split into tiny pieces — small.",word:"小心 (careful)"},
+  {ch:"吃",py:"chī",en:"eat",strokes:6,radical:"口(mouth)",tip:"A mouth (口) begging (乞) for food.",word:"吃饭 (eat a meal)"},
+  {ch:"喝",py:"hē",en:"drink",strokes:12,radical:"口(mouth)",tip:"A mouth (口) that is thirsty — to drink.",word:"喝茶 (drink tea)"},
+];
+
+const TONES = [
+  {num:1,mark:"ā",name:"1st Tone",desc:"High and flat, like singing a steady note.",ex:"mā 妈 (mother)",color:"#E74C3C",visual:"—————"},
+  {num:2,mark:"á",name:"2nd Tone",desc:"Rising, like asking 'what?' in surprise.",ex:"má 麻 (hemp/numb)",color:"#F39C12",visual:"／"},
+  {num:3,mark:"ǎ",name:"3rd Tone",desc:"Dipping low then rising — a valley shape.",ex:"mǎ 马 (horse)",color:"#27AE60",visual:"﹀"},
+  {num:4,mark:"à",name:"4th Tone",desc:"Sharp falling, like giving a firm command.",ex:"mà 骂 (scold)",color:"#3498DB",visual:"＼"},
+  {num:5,mark:"a",name:"Neutral",desc:"Light and short, no emphasis. Unstressed.",ex:"ma 吗 (question particle)",color:"#95A5A6",visual:"·"},
+];
+
+const QUIZ_DATA = [
+  {q:"What does 你好 mean?",opts:["Goodbye","Hello","Thank you","Sorry"],ans:1,type:"meaning"},
+  {q:"How do you say 'water' in Chinese?",opts:["火","水","木","山"],ans:1,type:"translate"},
+  {q:"What is the pinyin for 谢谢?",opts:["xǐ xǐ","xiè xie","shè she","xié xié"],ans:1,type:"pinyin"},
+  {q:"Which character means 'person'?",opts:["大","小","人","山"],ans:2,type:"character"},
+  {q:"再见 means?",opts:["Hello","Sorry","See you again","Thank you"],ans:2,type:"meaning"},
+  {q:"Choose the correct pinyin for 吃:",opts:["chī","cī","shī","zhī"],ans:0,type:"pinyin"},
+  {q:"What does 大 mean?",opts:["Small","Big","Mountain","Fire"],ans:1,type:"meaning"},
+  {q:"How do you say 'I' in Chinese?",opts:["你","我","他","她"],ans:1,type:"translate"},
+  {q:"Which means 'country'?",opts:["中","人","国","学"],ans:2,type:"character"},
+  {q:"What is the 3rd tone pattern?",opts:["High flat","Rising","Dipping","Falling"],ans:2,type:"pinyin"},
+  {q:"妈妈 means?",opts:["Father","Older sister","Mother","Grandmother"],ans:2,type:"meaning"},
+  {q:"How do you say 'tea'?",opts:["水","茶","酒","奶"],ans:1,type:"translate"},
+  {q:"不 is used for?",opts:["Questions","Negation","Past tense","Plurals"],ans:1,type:"meaning"},
+  {q:"What does 学生 mean?",opts:["Teacher","Student","Doctor","Friend"],ans:1,type:"meaning"},
+  {q:"Choose the character for 'moon':",opts:["日","月","火","木"],ans:1,type:"character"},
+  {q:"了 indicates what?",opts:["Future","Ability","Completed action","Question"],ans:2,type:"meaning"},
+  {q:"Pinyin for 中国 is?",opts:["zhōng guó","zhǒng guō","zhòng guò","zōng guó"],ans:0,type:"pinyin"},
+  {q:"太贵了 means?",opts:["Too cheap","Too big","Too expensive","Too small"],ans:2,type:"meaning"},
+  {q:"Which means 'to drink'?",opts:["吃","喝","看","听"],ans:1,type:"meaning"},
+  {q:"What is 火车站?",opts:["Airport","Bus stop","Train station","Hotel"],ans:2,type:"meaning"},
+  {q:"对不起 is used to?",opts:["Greet","Thank","Apologize","Ask"],ans:2,type:"meaning"},
+  {q:"多少钱 asks about?",opts:["Time","Price","Quantity","Name"],ans:1,type:"meaning"},
+];
+
+const TIPS = [
+  {icon:"🎵",title:"Practice Tones Daily",text:"Mandarin has 4 tones and a neutral tone. The same syllable with different tones means completely different words. Practice tone pairs every day."},
+  {icon:"🔤",title:"Learn Pinyin First",text:"Before characters, master pinyin. It's your pronunciation guide and the key to looking up new words. Invest time here early."},
+  {icon:"🔁",title:"Use Spaced Repetition",text:"Review words at increasing intervals. If you remember a word, wait longer before reviewing. If you forget, review sooner."},
+  {icon:"✍️",title:"Write Characters by Hand",text:"Writing builds muscle memory and helps you remember stroke order and character structure. Even 10 minutes a day helps."},
+  {icon:"💬",title:"Learn Phrases Before Grammar",text:"Memorize useful phrases first. You'll absorb grammar patterns naturally, and you'll be able to communicate right away."},
+  {icon:"📅",title:"Review Small Amounts Daily",text:"15 minutes every day is far better than 2 hours once a week. Consistency is the secret to language learning."},
+  {icon:"👂",title:"Listen Actively",text:"Watch Chinese media with subtitles. Listen to podcasts. Even passive listening builds familiarity with tones and rhythm."},
+  {icon:"🧩",title:"Learn Radicals",text:"The 214 radicals are building blocks of characters. Knowing them helps you guess meanings and remember new characters."},
+  {icon:"📖",title:"Read Graded Readers",text:"Start with texts designed for your level. Children's books and graded readers build vocabulary in context."},
+  {icon:"🗣️",title:"Speak From Day One",text:"Don't wait until you're 'ready'. Practice speaking immediately, even if it's just repeating phrases to yourself."},
+];
+
+// ═══════════════════════════════════════
+// PROGRESS / STATE
+// ═══════════════════════════════════════
+
+let progress = {words:0,chars:0,lessons:0,streak:0,completed:[],quizScores:[],goal:0,lastDate:""};
+
+function loadProgress() {
+  try {
+    const saved = localStorage.getItem('cn_progress');
+    if (saved) progress = JSON.parse(saved);
+    // Check streak
+    const today = new Date().toDateString();
+    if (progress.lastDate && progress.lastDate !== today) {
+      const last = new Date(progress.lastDate);
+      const diff = Math.floor((new Date() - last) / 86400000);
+      if (diff > 1) progress.streak = 0;
+    }
+  } catch(e) {}
+  updateStats();
+}
+
+function saveProgress() {
+  progress.lastDate = new Date().toDateString();
+  try { localStorage.setItem('cn_progress', JSON.stringify(progress)); } catch(e) {}
+  updateStats();
+}
+
+function updateStats() {
+  document.getElementById('statWords').textContent = progress.words;
+  document.getElementById('statChars').textContent = progress.chars;
+  document.getElementById('statLessons').textContent = progress.lessons;
+  document.getElementById('statStreak').textContent = progress.streak;
+  document.getElementById('goalText').textContent = Math.min(progress.goal,10) + ' / 10 items reviewed';
+  document.getElementById('goalFill').style.width = Math.min(progress.goal/10*100,100) + '%';
+  const lvl = progress.lessons < 5 ? 'Beginner' : progress.lessons < 15 ? 'Elementary' : progress.lessons < 25 ? 'Intermediate' : 'Advanced';
+  document.getElementById('currentLevel').textContent = lvl;
+}
+
+// ═══════════════════════════════════════
+// LEVELS
+// ═══════════════════════════════════════
+
+function renderLevels() {
+  const g = document.getElementById('levelsGrid');
+  g.innerHTML = LEVELS.map(l => {
+    const done = LESSONS[l.id] ? LESSONS[l.id].filter((_,i) => progress.completed.includes(l.id+'-'+i)).length : 0;
+    const pct = Math.round(done / l.lessons * 100);
+    return `<div class="card level-card" onclick="openLevel(${l.id})">
+      <span class="level-num">${l.id}</span>
+      <h3>${l.name}</h3>
+      <p class="desc">${l.desc}</p>
+      <div style="display:flex;justify-content:space-between;align-items:center;font-family:sans-serif;font-size:0.8em;color:var(--text-light);">
+        <span>${l.lessons} lessons</span>
+        <span class="badge badge-${l.diff}">${l.diff}</span>
+      </div>
+      <div class="progress-bar"><div class="progress-fill" style="width:${pct}%"></div></div>
+      <div style="text-align:right;font-size:0.75em;font-family:sans-serif;color:var(--text-light);">${pct}% complete</div>
+    </div>`;
+  }).join('');
+}
+
+function openLevel(id) {
+  const lessons = LESSONS[id];
+  if (!lessons) return;
+  const level = LEVELS.find(l=>l.id===id);
+  document.getElementById('modalTitle').textContent = `Level ${id}: ${level.name}`;
+  document.getElementById('modalContent').innerHTML = lessons.map((l,i) => {
+    const key = id+'-'+i;
+    const isDone = progress.completed.includes(key);
+    return `<div class="lesson-item">
+      <div style="display:flex;justify-content:space-between;align-items:center;">
+        <strong style="font-family:sans-serif;">Lesson ${i+1}: ${l.en}</strong>
+        ${isDone ? '<span style="color:var(--green);font-family:sans-serif;font-size:0.85em;">✓ Done</span>' : ''}
+      </div>
+      <div class="chinese">${l.zh}</div>
+      <div class="pinyin">${l.py}</div>
+      <div class="meta"><strong>Literal:</strong> ${l.lit}</div>
+      <div class="meta"><strong>Meaning:</strong> ${l.meaning}</div>
+      <div class="usage">📖 <strong>Example:</strong> ${l.ex}</div>
+      ${l.quiz ? `<div class="mini-quiz">
+        <div style="font-family:sans-serif;font-weight:600;margin-bottom:8px;">🧠 Quick Check: ${l.quiz.q}</div>
+        <div>${l.quiz.opts.map((o,oi) => `<button onclick="checkMini(this,${oi},${l.quiz.ans})">${o}</button>`).join('')}</div>
+      </div>` : ''}
+      ${!isDone ? `<button class="btn btn-gold btn-sm" style="margin-top:10px;" onclick="completeLesson('${key}',this)">✓ Mark Complete</button>` : ''}
+    </div>`;
+  }).join('');
+  document.getElementById('lessonModal').classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  document.getElementById('lessonModal').classList.remove('active');
+  document.body.style.overflow = '';
+  renderLevels();
+}
+
+function checkMini(btn, selected, correct) {
+  const sibs = btn.parentElement.querySelectorAll('button');
+  sibs.forEach((b,i) => {
+    b.classList.add(i===correct?'correct':'');
+    if(i===selected && i!==correct) b.classList.add('wrong');
+    b.disabled = true;
+  });
+  progress.goal++;
+  saveProgress();
+}
+
+function completeLesson(key, btn) {
+  if (!progress.completed.includes(key)) {
+    progress.completed.push(key);
+    progress.lessons++;
+    progress.words += 3;
+    progress.goal++;
+    progress.streak = Math.max(progress.streak, 1);
+    const today = new Date().toDateString();
+    if (progress.lastDate === today) {
+      // same day
+    } else {
+      const last = progress.lastDate ? new Date(progress.lastDate) : null;
+      if (last) {
+        const diff = Math.floor((new Date() - last) / 86400000);
+        if (diff <= 1) progress.streak++;
+        else progress.streak = 1;
+      } else { progress.streak = 1; }
+    }
+    saveProgress();
+    btn.textContent = '✓ Completed!';
+    btn.disabled = true;
+    btn.style.opacity = '0.6';
+  }
+}
+
+// ═══════════════════════════════════════
+// VOCABULARY
+// ═══════════════════════════════════════
+
+const VOCAB_CATS = [...new Set(VOCAB.map(v=>v.cat))];
+let currentCat = 'All';
+
+function renderVocabFilters() {
+  const f = document.getElementById('vocabFilters');
+  f.innerHTML = `<button class="filter-btn active" onclick="filterVocab('All',this)">All (${VOCAB.length})</button>` +
+    VOCAB_CATS.map(c => {
+      const cnt = VOCAB.filter(v=>v.cat===c).length;
+      return `<button class="filter-btn" onclick="filterVocab('${c}',this)">${c} (${cnt})</button>`;
+    }).join('');
+}
+
+function filterVocab(cat, btn) {
+  currentCat = cat;
+  document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+  if(btn) btn.classList.add('active');
+  renderVocab();
+}
+
+function renderVocab() {
+  const items = currentCat === 'All' ? VOCAB : VOCAB.filter(v=>v.cat===currentCat);
+  document.getElementById('vocabGrid').innerHTML = items.map(v =>
+    `<div class="card vocab-card">
+      <div class="en">${v.en}</div>
+      <div class="zh">${v.zh}</div>
+      <div class="py">${v.py}</div>
+      <div class="ex">${v.ex}</div>
+    </div>`
+  ).join('');
+}
+
+// ═══════════════════════════════════════
+// CHARACTERS
+// ═══════════════════════════════════════
+
+function renderCharacters() {
+  document.getElementById('charGrid').innerHTML = CHARACTERS.map(c =>
+    `<div class="card char-card">
+      <div class="big-char">${c.ch}</div>
+      <div class="pinyin" style="color:var(--gold);font-style:italic;font-size:1.1em;">${c.py}</div>
+      <div class="info"><strong>${c.en}</strong></div>
+      <div class="info">${c.strokes} strokes · ${c.radical}</div>
+      <div class="tip">💡 ${c.tip}</div>
+      <div class="info" style="margin-top:6px;">Ex: ${c.word}</div>
+    </div>`
+  ).join('');
+}
+
+// ═══════════════════════════════════════
+// TONES
+// ═══════════════════════════════════════
+
+function renderTones() {
+  document.getElementById('toneGrid').innerHTML = TONES.map((t,i) =>
+    `<div class="card tone-card" onclick="showToneDetail(${i})" style="border-top:3px solid ${t.color};">
+      <div class="tone-num" style="color:${t.color};">${t.mark}</div>
+      <div class="tone-name">${t.name}</div>
+      <div style="font-size:2em;letter-spacing:4px;color:${t.color};margin:4px 0;">${t.visual}</div>
+      <div class="tone-desc">${t.desc}</div>
+    </div>`
+  ).join('');
+}
+
+function showToneDetail(idx) {
+  const t = TONES[idx];
+  document.querySelectorAll('.tone-card').forEach((c,i)=>c.classList.toggle('active',i===idx));
+  const det = document.getElementById('toneDetail');
+  det.style.display = 'block';
+  det.style.borderColor = t.color;
+  document.getElementById('toneDetailContent').innerHTML = `
+    <div style="font-size:3em;color:${t.color};">${t.mark}</div>
+    <h3 style="color:var(--red-deep);margin:8px 0;">${t.name}</h3>
+    <p style="font-family:sans-serif;color:var(--text-light);margin-bottom:12px;">${t.desc}</p>
+    <div style="font-size:1.3em;background:var(--gold-pale);display:inline-block;padding:8px 20px;border-radius:8px;">${t.ex}</div>
+    <div style="margin-top:12px;font-size:2.5em;color:${t.color};letter-spacing:8px;">${t.visual}</div>
+  `;
+}
+
+// ═══════════════════════════════════════
+// FLASHCARDS
+// ═══════════════════════════════════════
+
+let fcItems = [], fcIndex = 0;
+
+function initFlashcards() {
+  const sel = document.getElementById('fcCategory').value;
+  fcItems = sel === 'All' ? [...VOCAB] : VOCAB.filter(v => v.cat === sel);
+  if (fcItems.length === 0) fcItems = VOCAB.slice(0,10);
+  fcIndex = 0;
+  showFlashcard();
+}
+
+function showFlashcard() {
+  const fc = fcItems[fcIndex];
+  document.getElementById('flashcard').classList.remove('flipped');
+  document.getElementById('fcFront').textContent = fc.en;
+  document.getElementById('fcBackZh').textContent = fc.zh;
+  document.getElementById('fcBackPy').textContent = fc.py;
+  document.getElementById('fcBackEn').textContent = fc.en;
+  document.getElementById('fcCounter').textContent = (fcIndex+1) + ' / ' + fcItems.length;
+}
+
+function flipCard() {
+  document.getElementById('flashcard').classList.toggle('flipped');
+  progress.goal++;
+  saveProgress();
+}
+function nextCard() { fcIndex = (fcIndex+1) % fcItems.length; showFlashcard(); }
+function prevCard() { fcIndex = (fcIndex-1+fcItems.length) % fcItems.length; showFlashcard(); }
+
+function populateFCCategories() {
+  const sel = document.getElementById('fcCategory');
+  sel.innerHTML = '<option value="All">All Categories</option>' + VOCAB_CATS.map(c => `<option value="${c}">${c}</option>`).join('');
+}
+
+// ═══════════════════════════════════════
+// QUIZ
+// ═══════════════════════════════════════
+
+let quizIndex = 0, quizScore = 0, quizAnswered = false;
+
+function startQuiz() {
+  quizIndex = 0; quizScore = 0;
+  showQuizQuestion();
+}
+
+function showQuizQuestion() {
+  if (quizIndex >= QUIZ_DATA.length) { showQuizResult(); return; }
+  const q = QUIZ_DATA[quizIndex];
+  quizAnswered = false;
+  document.getElementById('quizContent').innerHTML = `
+    <div class="quiz-score">Question ${quizIndex+1} of ${QUIZ_DATA.length} · Score: ${quizScore}</div>
+    <div class="quiz-question">${q.q}</div>
+    <div class="quiz-options">
+      ${q.opts.map((o,i) => `<button class="quiz-opt" onclick="answerQuiz(${i})">${o}</button>`).join('')}
+    </div>
+  `;
+}
+
+function answerQuiz(idx) {
+  if (quizAnswered) return;
+  quizAnswered = true;
+  const q = QUIZ_DATA[quizIndex];
+  const btns = document.querySelectorAll('.quiz-opt');
+  btns.forEach((b,i) => {
+    if (i === q.ans) b.classList.add('correct');
+    if (i === idx && i !== q.ans) b.classList.add('wrong');
+    b.classList.add('disabled');
+  });
+  if (idx === q.ans) quizScore++;
+  progress.goal++;
+  saveProgress();
+  setTimeout(() => { quizIndex++; showQuizQuestion(); }, 1200);
+}
+
+function showQuizResult() {
+  const pct = Math.round(quizScore / QUIZ_DATA.length * 100);
+  progress.quizScores.push(pct);
+  progress.chars += 2;
+  saveProgress();
+  let msg = pct >= 90 ? '🏆 Outstanding!' : pct >= 70 ? '🎉 Great job!' : pct >= 50 ? '👍 Good effort!' : '💪 Keep practicing!';
+  document.getElementById('quizContent').innerHTML = `
+    <div class="quiz-result">
+      <div class="big">${quizScore} / ${QUIZ_DATA.length}</div>
+      <div style="font-size:1.3em;margin:10px 0;">${pct}%</div>
+      <div style="font-size:1.5em;margin:10px 0;">${msg}</div>
+      <button class="btn btn-red" onclick="startQuiz()" style="margin-top:16px;">Try Again 🔄</button>
+    </div>
+  `;
+}
+
+// ═══════════════════════════════════════
+// REVIEW
+// ═══════════════════════════════════════
+
+const motivations = [
+  "Great work! Keep going! 加油！",
+  "Every word brings you closer to fluency!",
+  "You're making progress! 很好！",
+  "Stay consistent — 15 minutes a day!",
+  "One step at a time! 一步一步来！",
+  "Your future self will thank you!",
+  "Practice makes perfect! 熟能生巧！",
+];
+
+function randomReview() {
+  const item = VOCAB[Math.floor(Math.random() * VOCAB.length)];
+  document.getElementById('revEn').textContent = item.en;
+  document.getElementById('revZh').textContent = item.zh;
+  document.getElementById('revPy').textContent = item.py;
+  document.getElementById('revUsage').textContent = item.ex;
+  document.getElementById('revMsg').textContent = motivations[Math.floor(Math.random()*motivations.length)];
+}
+
+function markReview(known) {
+  if (known) { progress.words++; progress.goal++; saveProgress(); }
+  randomReview();
+}
+
+// ═══════════════════════════════════════
+// TIPS
+// ═══════════════════════════════════════
+
+function renderTips() {
+  document.getElementById('tipsGrid').innerHTML = TIPS.map(t =>
+    `<div class="card tip-item">
+      <div class="tip-icon">${t.icon}</div>
+      <div>
+        <h3>${t.title}</h3>
+        <p>${t.text}</p>
+      </div>
+    </div>`
+  ).join('');
+}
+
+// ═══════════════════════════════════════
+// INIT
+// ═══════════════════════════════════════
+
+function init() {
+  loadProgress();
+  renderLevels();
+  renderVocabFilters();
+  renderVocab();
+  renderCharacters();
+  renderTones();
+  populateFCCategories();
+  initFlashcards();
+  renderTips();
+  randomReview();
+
+  // Close modal on overlay click
+  document.getElementById('lessonModal').addEventListener('click', function(e) {
+    if (e.target === this) closeModal();
+  });
+
+  // Smooth scroll for nav links
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    a.addEventListener('click', () => {
+      document.querySelector('.nav-links').classList.remove('open');
+    });
+  });
+}
+
+document.addEventListener('DOMContentLoaded', init);
+</script>
+</body>
+</html>
