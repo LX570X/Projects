@@ -1,4 +1,29 @@
 {
- "generated_at_utc": "2026-07-17T09:24:06+00:00",
- "alerts": []
+ "generated_at_utc": "2026-07-17T10:24:02+00:00",
+ "alerts": [
+  {
+   "ticker": "EMAAR",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "EMAAR moved -3.5% in the last day (now 11.16 AED)"
+  },
+  {
+   "ticker": "EMIRATESNBD",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "EMIRATESNBD moved -4.2% in the last day (now 28.84 AED)"
+  },
+  {
+   "ticker": "EMIRATESNBD",
+   "severity": "info",
+   "type": "signal_change",
+   "msg": "EMIRATESNBD: BUY -> HOLD (score 35 -> -15)"
+  },
+  {
+   "ticker": "EMIRATESNBD",
+   "severity": "actionable",
+   "type": "trend",
+   "msg": "EMIRATESNBD: price crossed below its 50-day average \u2014 trend change"
+  }
+ ]
 }
