@@ -17,6 +17,8 @@ This file is the operating procedure for the hourly advisor routine
    invalidated by news (earnings, regulation, hacks).
 4. Update the dashboard artifact (same file path → same URL) with the
    fresh signals table, levels, and a short "what to do now" plan.
+   Artifact URL: https://claude.ai/code/artifact/6a72554f-21a9-43b9-8283-c1cc7cea3f66
+   (republish advisor/reports/dashboard.html from this session to keep it).
 5. Notify (PushNotification) ONLY when at least one of:
    - a signal band changed to/from BUY, STRONG BUY, SELL, STRONG SELL
    - price crossed the 50-day average (trend change)
