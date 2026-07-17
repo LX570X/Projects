@@ -29,6 +29,9 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Probe data sources (only when probe.py exists)
+        run: if [ -f advisor/probe.py ]; then python advisor/probe.py; fi
+
       - name: Fetch market data
         run: python advisor/fetch_data.py
 

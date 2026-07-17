@@ -1,1 +1,1 @@
-cycle requested: 2026-07-17T07:02Z initial run
+cycle requested: 2026-07-17T07:02:34Z probe ADX sources
