@@ -288,20 +288,41 @@ def analyze(ticker, a):
     }
 
 
+def resolve_states(prev_signals, signals):
+    """Annotate signals with debounce state: trend_state uses a 0.5% buffer
+    around the 50-day average (no flip inside the buffer), prev_band remembers
+    last run's signal so an A->B->A whipsaw within two runs never re-alerts."""
+    prev = {s["ticker"]: s for s in (prev_signals or [])}
+    for s in signals:
+        p = prev.get(s["ticker"]) or {}
+        s["prev_band"] = p.get("signal")
+        s["prev_trend_state"] = p.get("trend_state")
+        raw = None
+        if s.get("sma50"):
+            if s["last"] > s["sma50"] * 1.005:
+                raw = "above"
+            elif s["last"] < s["sma50"] * 0.995:
+                raw = "below"
+        s["trend_state"] = raw or p.get("trend_state")
+
+
 def diff_alerts(prev_signals, signals):
     alerts = []
     prev = {s["ticker"]: s for s in (prev_signals or [])}
     for s in signals:
         p = prev.get(s["ticker"])
         chg = s.get("change24h_pct")
-        big_move = chg is not None and abs(chg) >= (4.0 if s["kind"] == "crypto" else 2.5)
-        if big_move:
+        threshold = 4.0 if s["kind"] == "crypto" else 2.5
+        big_move = chg is not None and abs(chg) >= threshold
+        prev_chg = (p or {}).get("change24h_pct")
+        was_big = prev_chg is not None and abs(prev_chg) >= threshold
+        if big_move and not was_big:
             alerts.append({"ticker": s["ticker"], "severity": "info",
                            "type": "big_move",
                            "msg": f"{s['ticker']} moved {chg:+.1f}% in the last day (now {s['last']:.6g} {s['currency']})"})
         if not p:
             continue
-        if p["signal"] != s["signal"]:
+        if p["signal"] != s["signal"] and p.get("prev_band") != s["signal"]:
             sev = "actionable" if ("BUY" in s["signal"] or "SELL" in s["signal"]) else "info"
             alerts.append({"ticker": s["ticker"], "severity": sev,
                            "type": "signal_change",
@@ -316,13 +337,10 @@ def diff_alerts(prev_signals, signals):
         if p.get("macd_cross") != s.get("macd_cross") and s.get("macd_cross"):
             alerts.append({"ticker": s["ticker"], "severity": "info", "type": "macd",
                            "msg": f"{s['ticker']}: MACD {s['macd_cross']} cross"})
-        if p.get("sma50") and s.get("sma50"):
-            was_above = p["last"] > p["sma50"]
-            now_above = s["last"] > s["sma50"]
-            if was_above != now_above:
-                d = "above" if now_above else "below"
-                alerts.append({"ticker": s["ticker"], "severity": "actionable", "type": "trend",
-                               "msg": f"{s['ticker']}: price crossed {d} its 50-day average — trend change"})
+        ps, ns = p.get("trend_state"), s.get("trend_state")
+        if ps and ns and ps != ns and p.get("prev_trend_state") != ns:
+            alerts.append({"ticker": s["ticker"], "severity": "actionable", "type": "trend",
+                           "msg": f"{s['ticker']}: price crossed {ns} its 50-day average — trend change"})
     return alerts
 
 
@@ -461,6 +479,7 @@ def main():
         except Exception as e:  # noqa: BLE001
             print(f"analyze failed for {ticker}: {e}")
 
+    resolve_states(prev_signals, signals)
     port = portfolio_report(portfolio, signals)
     alerts = portfolio_alerts(prev_port, port) + diff_alerts(prev_signals, signals)
     now = datetime.now(timezone.utc).isoformat(timespec="seconds")
