@@ -75,13 +75,13 @@ def row(s, bars_by_ticker):
     reasons = esc("; ".join(s.get("reasons", [])))
     return f"""<tr title="{reasons}">
 <td class="asset"><strong>{esc(s['ticker'])}</strong><span class="asset-name">{esc(s['name'] or '')}</span></td>
-<td class="num spark-cell">{spark_svg(closes, up)}</td>
+<td><span class="chip {SIGNAL_CLASS.get(sig, 'chip-hold')}">{esc(sig)}</span></td>
 <td class="num">{fmt(s['last'])}<span class="unit">{esc(s['currency'] or '')}</span></td>
 <td class="num">{chg_html}</td>
-<td class="num">{s['rsi'] if s['rsi'] is not None else '—'}</td>
-<td>{trend}</td>
-<td><span class="chip {SIGNAL_CLASS.get(sig, 'chip-hold')}">{esc(sig)}</span></td>
-<td class="num">{s['score']:+d}</td>
+<td class="num hide-sm spark-cell">{spark_svg(closes, up)}</td>
+<td class="num hide-sm">{s['rsi'] if s['rsi'] is not None else '—'}</td>
+<td class="hide-sm">{trend}</td>
+<td class="num hide-sm">{s['score']:+d}</td>
 <td class="num">{fmt(s['stop_suggest'])}</td>
 <td class="num">{fmt(s['target1'])}</td>
 </tr>"""
@@ -89,7 +89,9 @@ def row(s, bars_by_ticker):
 
 def idea_card(s, note=None):
     buy = "BUY" in s["signal"]
-    return f"""<div class="idea">
+    sizing = (f'<div class="sizing" data-ticker="{esc(s["ticker"])}"></div>' if buy else
+              '<p class="idea-note">Not a new position — if you hold it, consider reducing or exiting.</p>')
+    return f"""<div class="idea" data-ticker="{esc(s['ticker'])}">
 <div class="idea-head"><span class="chip {SIGNAL_CLASS.get(s['signal'], 'chip-hold')}">{esc(s['signal'])}</span>
 <strong>{esc(s['ticker'])}</strong><span class="asset-name">{esc(s['name'] or '')} · {esc(s['market'])}</span></div>
 <p class="idea-why">{esc('; '.join(s.get('reasons', [])[:3]))}.</p>
@@ -99,7 +101,8 @@ def idea_card(s, note=None):
 <div><span class="lvl-label">Stop</span><span class="lvl-val">{fmt(s['stop_suggest'])}</span></div>
 <div><span class="lvl-label">Target 1</span><span class="lvl-val">{fmt(s['target1'])}</span></div>
 <div><span class="lvl-label">Target 2</span><span class="lvl-val">{fmt(s['target2'])}</span></div>
-</div></div>"""
+</div>
+{sizing}</div>"""
 
 
 def main():
@@ -129,15 +132,99 @@ def main():
         return f"""<section>
 <p class="eyebrow">{esc(label)}</p><p class="section-sub">{esc(sub)}</p>
 <div class="table-wrap"><table>
-<thead><tr><th>Asset</th><th>60d</th><th class="num">Price</th><th class="num">Change</th>
-<th class="num">RSI</th><th>Trend</th><th>Signal</th><th class="num">Score</th>
-<th class="num">Stop</th><th class="num">Target</th></tr></thead>
+<thead><tr><th>Asset</th><th>Signal</th><th class="num">Price</th><th class="num">Change</th>
+<th class="num hide-sm">60d</th><th class="num hide-sm">RSI</th><th class="hide-sm">Trend</th>
+<th class="num hide-sm">Score</th><th class="num">Stop</th><th class="num">Target</th></tr></thead>
 <tbody>{rows}</tbody></table></div></section>"""
 
     ideas_html = ""
     if buys or sells:
-        cards = "\n".join(idea_card(s, (notes.get(s["ticker"]) or [{}])[0].get("headline")) for s in (buys + sells)[:6])
+        picks = buys[:4] + sells[:3]
+        cards = "\n".join(idea_card(s, (notes.get(s["ticker"]) or [{}])[0].get("headline")) for s in picks)
         ideas_html = f'<section><p class="eyebrow">Action plan — right now</p><div class="ideas">{cards}</div></section>'
+
+    calc_data = json.dumps([
+        {"ticker": s["ticker"], "kind": s["kind"], "last": s["last"],
+         "stop": s["stop_suggest"], "signal": s["signal"], "currency": s["currency"]}
+        for s in signals])
+    calc_html = f"""<section class="calc" aria-label="Position size calculator">
+<p class="eyebrow">Your money — position size calculator</p>
+<p class="section-sub">Enter what you're willing to trade with. Each buy idea below then shows exactly
+how much to buy so that a stop-out loses only the chosen risk share of your budget.</p>
+<div class="calc-row">
+<label>Crypto budget <input id="calc-crypto" type="number" min="0" step="50" placeholder="e.g. 1000"> USD</label>
+<label>UAE stocks budget <input id="calc-stocks" type="number" min="0" step="500" placeholder="e.g. 10000"> AED</label>
+<label>Risk per trade <select id="calc-risk"><option value="0.01" selected>1% (careful)</option><option value="0.02">2% (aggressive)</option></select></label>
+</div>
+<p id="calc-hint" class="ctx-updated">Fill in a budget to see buy amounts on the cards above.</p>
+</section>
+<script>
+(function () {{
+  var SIGNALS = {calc_data};
+  var byTicker = {{}};
+  SIGNALS.forEach(function (s) {{ byTicker[s.ticker] = s; }});
+  var elC = document.getElementById('calc-crypto');
+  var elS = document.getElementById('calc-stocks');
+  var elR = document.getElementById('calc-risk');
+  var hint = document.getElementById('calc-hint');
+  try {{
+    elC.value = localStorage.getItem('advisor.budget.crypto') || '';
+    elS.value = localStorage.getItem('advisor.budget.stocks') || '';
+    elR.value = localStorage.getItem('advisor.risk') || '0.01';
+  }} catch (e) {{}}
+  function fmtQty(q, kind) {{
+    if (kind === 'stock') return Math.floor(q).toLocaleString() + ' shares';
+    if (q >= 100) return q.toFixed(0) + ' units';
+    return q.toPrecision(4) + ' units';
+  }}
+  function money(v, cur) {{
+    return v.toLocaleString(undefined, {{maximumFractionDigits: 0}}) + ' ' + cur;
+  }}
+  function render() {{
+    var budgets = {{ crypto: parseFloat(elC.value) || 0, stock: parseFloat(elS.value) || 0 }};
+    var risk = parseFloat(elR.value) || 0.01;
+    try {{
+      localStorage.setItem('advisor.budget.crypto', elC.value);
+      localStorage.setItem('advisor.budget.stocks', elS.value);
+      localStorage.setItem('advisor.risk', elR.value);
+    }} catch (e) {{}}
+    var any = false;
+    document.querySelectorAll('.sizing').forEach(function (el) {{
+      var s = byTicker[el.getAttribute('data-ticker')];
+      if (!s) {{ el.textContent = ''; return; }}
+      var budget = budgets[s.kind];
+      if (!budget || !s.stop || s.stop >= s.last) {{
+        el.innerHTML = '';
+        return;
+      }}
+      any = true;
+      var riskAmt = budget * risk;
+      var perUnit = s.last - s.stop;
+      var qty = riskAmt / perUnit;
+      var cost = qty * s.last;
+      var capped = '';
+      if (cost > budget) {{
+        qty = budget / s.last;
+        cost = budget;
+        capped = ' (capped by your budget)';
+      }}
+      if (s.kind === 'stock') {{
+        qty = Math.floor(qty);
+        cost = qty * s.last;
+        if (qty < 1) {{ el.innerHTML = '<span class="size-line">Budget too small for this one at 1 share risk math.</span>'; return; }}
+      }}
+      el.innerHTML = '<span class="size-line"><strong>Buy ' + fmtQty(qty, s.kind) + '</strong> ≈ ' +
+        money(cost, s.currency) + ' · if the stop hits you lose ≈ ' +
+        money(Math.min(riskAmt, cost), s.currency) + capped + '</span>';
+    }});
+    hint.textContent = any
+      ? 'Sizes assume you buy at the shown entry and honor the stop. Never add to a losing position.'
+      : 'Fill in a budget to see buy amounts on the cards above.';
+  }}
+  [elC, elS, elR].forEach(function (el) {{ el.addEventListener('input', render); }});
+  render();
+}})();
+</script>"""
     watch_html = ""
     if watch:
         items = "".join(f"<li><strong>{esc(s['ticker'])}</strong> — {esc(s['reasons'][0] if s['reasons'] else 'neutral')}; "
@@ -232,6 +319,19 @@ ul.watch, ul.alerts, ul.ctx {{ margin: 0; padding: 0 0 0 2px; list-style: none;
 ul.alerts li, ul.watch li, ul.ctx li {{ background: var(--surface); border: 1px solid var(--border);
   border-radius: 8px; padding: 8px 12px; }}
 .ctx-updated {{ color: var(--muted); font-size: 12px; margin: 8px 0 0; }}
+.calc-row {{ display: flex; flex-wrap: wrap; gap: 12px; margin: 4px 0 10px; }}
+.calc-row label {{ display: flex; align-items: center; gap: 8px; background: var(--surface);
+  border: 1px solid var(--border); border-radius: 8px; padding: 8px 12px; font-size: 13.5px; color: var(--ink-2); }}
+.calc-row input, .calc-row select {{ font: inherit; color: var(--ink); background: var(--page);
+  border: 1px solid var(--grid); border-radius: 6px; padding: 4px 8px; width: 110px; }}
+.size-line {{ display: block; margin-top: 10px; padding-top: 8px; border-top: 1px dashed var(--grid);
+  font-size: 13.5px; color: var(--ink); }}
+@media (max-width: 700px) {{
+  .hide-sm {{ display: none; }}
+  table {{ min-width: 0; }}
+  th, td {{ padding: 8px 8px; }}
+  .levels {{ grid-template-columns: repeat(2, 1fr); }}
+}}
 footer {{ color: var(--ink-2); font-size: 13px; border-top: 1px solid var(--grid); padding-top: 16px; }}
 footer p {{ max-width: 72ch; }}
 a {{ color: var(--accent); }}
@@ -252,6 +352,7 @@ a {{ color: var(--accent); }}
 </div>
 </header>
 {ideas_html}
+{calc_html}
 {section_table('crypto', 'Crypto — execute on Binance', 'Prices in USD (USDT pairs), daily bars, sorted by score.')}
 {section_table('stock', 'UAE stocks — execute via Al Ramz', 'DFM and ADX listings, prices in AED, sorted by score.')}
 {watch_html}
