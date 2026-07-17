@@ -1,17 +1,4 @@
 {
- "generated_at_utc": "2026-07-17T17:24:07+00:00",
- "alerts": [
-  {
-   "ticker": "BTCUSDT",
-   "severity": "info",
-   "type": "signal_change",
-   "msg": "BTCUSDT: SELL -> HOLD (score -35 -> 15)"
-  },
-  {
-   "ticker": "BTCUSDT",
-   "severity": "actionable",
-   "type": "trend",
-   "msg": "BTCUSDT: price crossed above its 50-day average \u2014 trend change"
-  }
- ]
+ "generated_at_utc": "2026-07-17T18:26:30+00:00",
+ "alerts": []
 }
