@@ -1,1 +1,1 @@
-cycle requested: 2026-07-17T07:02:34Z probe ADX sources
+cycle requested: 2026-07-17T07:08:59Z ADX via TradingView + prev-close fix

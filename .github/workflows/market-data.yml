@@ -38,6 +38,9 @@ jobs:
       - name: Compute signals
         run: python advisor/engine.py
 
+      - name: Build dashboard
+        run: python advisor/build_dashboard.py
+
       - name: Commit results
         run: |
           git config user.name "advisor-bot"

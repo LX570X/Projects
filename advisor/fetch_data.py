@@ -3,9 +3,10 @@
 
 Designed to run on a GitHub Actions runner (full internet access).
 Sources, tried in order until one succeeds per asset:
-  crypto: Binance public data mirror -> Binance.US -> Kraken -> CoinGecko
-  UAE stocks: Yahoo Finance chart API (tries each suffix variant listed
-  in watchlist.json, remembers the one that worked for next time)
+  crypto:     Binance public data mirror -> Binance.US -> Kraken -> CoinGecko
+  DFM stocks: Yahoo Finance chart API (full history) -> TradingView scanner
+  ADX stocks: TradingView scanner (Yahoo does not list ADX equities);
+              the scanner returns precomputed daily indicators instead of bars.
 
 Writes advisor/data/snapshot.json. Stdlib only — no dependencies.
 """
@@ -22,13 +23,16 @@ DATA_DIR = os.path.join(HERE, "data")
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36")
 HISTORY_DAYS = 210
+MAX_SANE_STOCK_PRICE = 10000.0  # AED; anything above is a bad symbol (bond/index)
 
 
-def get_json(url, timeout=20, retries=2, headers=None):
+def get_json(url, timeout=20, retries=2, headers=None, data=None):
     last_err = None
     for attempt in range(retries + 1):
         try:
-            req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/json", **(headers or {})})
+            req = urllib.request.Request(
+                url, data=data,
+                headers={"User-Agent": UA, "Accept": "application/json", **(headers or {})})
             with urllib.request.urlopen(req, timeout=timeout) as resp:
                 return json.loads(resp.read().decode("utf-8"))
         except Exception as e:  # noqa: BLE001 - we want to fall through sources
@@ -38,23 +42,19 @@ def get_json(url, timeout=20, retries=2, headers=None):
     raise RuntimeError(f"GET {url} failed: {last_err}")
 
 
+# --------------------------------------------------------------------- crypto
+
 def bars_from_binance_klines(rows):
-    bars = []
-    for r in rows:
-        bars.append({
-            "t": int(r[0] // 1000),
-            "o": float(r[1]), "h": float(r[2]), "l": float(r[3]),
-            "c": float(r[4]), "v": float(r[5]),
-        })
-    return bars
+    return [{"t": int(r[0] // 1000),
+             "o": float(r[1]), "h": float(r[2]), "l": float(r[3]),
+             "c": float(r[4]), "v": float(r[5])} for r in rows]
 
 
 def fetch_crypto_binance(host, sym):
     kl = get_json(f"https://{host}/api/v3/klines?symbol={sym}&interval=1d&limit={HISTORY_DAYS}")
     tk = get_json(f"https://{host}/api/v3/ticker/24hr?symbol={sym}")
-    bars = bars_from_binance_klines(kl)
     return {
-        "bars": bars,
+        "bars": bars_from_binance_klines(kl),
         "last": float(tk["lastPrice"]),
         "change24h_pct": float(tk["priceChangePercent"]),
         "high24h": float(tk["highPrice"]),
@@ -71,8 +71,7 @@ def fetch_crypto_kraken(pair):
     bars = [{"t": int(r[0]), "o": float(r[1]), "h": float(r[2]), "l": float(r[3]),
              "c": float(r[4]), "v": float(r[6])} for r in ohlc["result"][key]][-HISTORY_DAYS:]
     tick = get_json(f"https://api.kraken.com/0/public/Ticker?pair={pair}")
-    tkey = [k for k in tick["result"]][0]
-    t = tick["result"][tkey]
+    t = tick["result"][[k for k in tick["result"]][0]]
     last = float(t["c"][0])
     open24 = float(t["o"])
     return {
@@ -87,9 +86,8 @@ def fetch_crypto_kraken(pair):
 
 def fetch_crypto_coingecko(cg_id):
     mc = get_json(f"https://api.coingecko.com/api/v3/coins/{cg_id}/market_chart?vs_currency=usd&days={HISTORY_DAYS}&interval=daily")
-    prices = mc.get("prices") or []
     bars = [{"t": int(p[0] // 1000), "o": None, "h": None, "l": None, "c": float(p[1]), "v": None}
-            for p in prices]
+            for p in (mc.get("prices") or [])]
     sp = get_json(f"https://api.coingecko.com/api/v3/simple/price?ids={cg_id}&vs_currencies=usd&include_24hr_change=true&include_24hr_vol=true")
     d = sp[cg_id]
     return {
@@ -125,6 +123,8 @@ def fetch_crypto(asset, log):
     return None
 
 
+# ---------------------------------------------------------------- UAE stocks
+
 def fetch_yahoo_chart(symbol):
     url = (f"https://query1.finance.yahoo.com/v8/finance/chart/{symbol}"
            f"?range=1y&interval=1d&includePrePost=false&events=div%2Csplit")
@@ -134,6 +134,8 @@ def fetch_yahoo_chart(symbol):
         raise RuntimeError(f"no chart result: {(data.get('chart') or {}).get('error')}")
     r = result[0]
     meta = r["meta"]
+    if meta.get("exchangeName") == "YHD":
+        raise RuntimeError("YHD placeholder symbol (delisted/unknown)")
     ts = r.get("timestamp") or []
     q = (r.get("indicators", {}).get("quote") or [{}])[0]
     bars = []
@@ -149,11 +151,18 @@ def fetch_yahoo_chart(symbol):
     if len(bars) < 30:
         raise RuntimeError(f"only {len(bars)} usable bars")
     last = meta.get("regularMarketPrice")
-    prev = meta.get("chartPreviousClose") or meta.get("previousClose")
-    change = (last / prev - 1.0) * 100 if last and prev else None
+    last = float(last) if last is not None else bars[-1]["c"]
+    if last > MAX_SANE_STOCK_PRICE:
+        raise RuntimeError(f"insane price {last} — wrong instrument")
+    # previous close: Yahoo meta first, else second-to-last daily bar.
+    # (meta.chartPreviousClose is the close before the RANGE START — never use it.)
+    prev = meta.get("regularMarketPreviousClose")
+    if not prev and len(bars) >= 2:
+        prev = bars[-2]["c"] if abs(bars[-1]["c"] - last) / last < 0.05 else bars[-1]["c"]
+    change = (last / float(prev) - 1.0) * 100 if prev else None
     return {
         "bars": bars[-HISTORY_DAYS:],
-        "last": float(last) if last is not None else bars[-1]["c"],
+        "last": last,
         "change24h_pct": change,
         "high24h": meta.get("regularMarketDayHigh"),
         "low24h": meta.get("regularMarketDayLow"),
@@ -161,25 +170,48 @@ def fetch_yahoo_chart(symbol):
         "currency": meta.get("currency") or "AED",
         "yahoo_symbol": meta.get("symbol") or symbol,
         "exchange_name": meta.get("exchangeName"),
-        "market_time": meta.get("regularMarketTime"),
     }
 
 
-def fetch_stock(asset, preferred, log):
-    variants = list(asset.get("yahoo") or [])
-    pref = preferred.get(asset["ticker"])
-    if pref in variants:
-        variants.remove(pref)
-        variants.insert(0, pref)
-    for sym in variants:
-        try:
-            out = fetch_yahoo_chart(sym)
-            out["source"] = f"yahoo:{sym}"
-            log.append(f"OK   stock {asset['ticker']} via yahoo {sym} ({len(out['bars'])} bars, last={out['last']} {out['currency']})")
-            return out
-        except Exception as e:  # noqa: BLE001
-            log.append(f"fail stock {asset['ticker']} via yahoo {sym}: {e}")
-    return None
+TV_COLS = ["name", "description", "close", "change", "volume", "high", "low", "open",
+           "currency", "RSI", "SMA20", "SMA50", "MACD.macd", "MACD.signal", "ATR",
+           "BB.upper", "BB.lower", "price_52_week_high", "price_52_week_low",
+           "High.1M", "Low.1M", "Recommend.All"]
+
+
+def fetch_tv_scanner(tv_tickers):
+    """One batch call to TradingView's public UAE scanner. Returns {tv_ticker: cols}."""
+    payload = json.dumps({"symbols": {"tickers": tv_tickers, "query": {"types": []}},
+                          "columns": TV_COLS}).encode()
+    d = get_json("https://scanner.tradingview.com/uae/scan", data=payload,
+                 headers={"Content-Type": "application/json"})
+    return {row["s"]: dict(zip(TV_COLS, row["d"])) for row in d.get("data", [])}
+
+
+def asset_from_tv(vals):
+    def f(key):
+        v = vals.get(key)
+        return float(v) if v is not None else None
+    close = f("close")
+    if close is None or close <= 0 or close > MAX_SANE_STOCK_PRICE:
+        raise RuntimeError(f"tv close insane: {close}")
+    return {
+        "bars": [],
+        "last": close,
+        "change24h_pct": f("change"),
+        "high24h": f("high"),
+        "low24h": f("low"),
+        "quote_volume24h": f("volume"),
+        "currency": vals.get("currency") or "AED",
+        "precomputed": {
+            "rsi": f("RSI"), "sma20": f("SMA20"), "sma50": f("SMA50"),
+            "macd": f("MACD.macd"), "macd_signal": f("MACD.signal"),
+            "atr": f("ATR"), "bb_upper": f("BB.upper"), "bb_lower": f("BB.lower"),
+            "hi52": f("price_52_week_high"), "lo52": f("price_52_week_low"),
+            "hi20": f("High.1M"), "lo20": f("Low.1M"),
+            "tv_recommend": f("Recommend.All"),
+        },
+    }
 
 
 def main():
@@ -203,6 +235,7 @@ def main():
     log = []
     assets = {}
     failures = []
+
     for c in wl["crypto"]:
         out = fetch_crypto(c, log)
         if out:
@@ -210,14 +243,57 @@ def main():
             assets[c["symbol"]] = out
         else:
             failures.append(c["symbol"])
+
+    # Yahoo first (full daily history) for stocks that have candidate symbols
+    pending_tv = []
     for s in wl["uae_stocks"]:
-        out = fetch_stock(s, preferred, log)
-        if out:
-            out.update({"kind": "stock", "name": s["name"], "market": s["exchange"], "ticker": s["ticker"]})
-            assets[s["ticker"]] = out
+        variants = list(s.get("yahoo") or [])
+        pref = preferred.get(s["ticker"])
+        if pref in variants:
+            variants.remove(pref)
+            variants.insert(0, pref)
+        got = None
+        for sym in variants:
+            try:
+                got = fetch_yahoo_chart(sym)
+                got["source"] = f"yahoo:{sym}"
+                log.append(f"OK   stock {s['ticker']} via yahoo {sym} "
+                           f"({len(got['bars'])} bars, last={got['last']} {got['currency']})")
+                break
+            except Exception as e:  # noqa: BLE001
+                log.append(f"fail stock {s['ticker']} via yahoo {sym}: {e}")
+        if got:
+            got.update({"kind": "stock", "name": s["name"], "market": s["exchange"], "ticker": s["ticker"]})
+            assets[s["ticker"]] = got
+        elif s.get("tv"):
+            pending_tv.append(s)
         else:
             failures.append(s["ticker"])
-        time.sleep(0.4)  # be polite to Yahoo
+        if variants:
+            time.sleep(0.4)  # be polite to Yahoo
+
+    if pending_tv:
+        try:
+            tv = fetch_tv_scanner([s["tv"] for s in pending_tv])
+        except Exception as e:  # noqa: BLE001
+            log.append(f"fail tradingview batch: {e}")
+            tv = {}
+        for s in pending_tv:
+            vals = tv.get(s["tv"])
+            if not vals:
+                log.append(f"fail stock {s['ticker']} via tradingview {s['tv']}: not in response")
+                failures.append(s["ticker"])
+                continue
+            try:
+                out = asset_from_tv(vals)
+                out.update({"kind": "stock", "name": s["name"], "market": s["exchange"],
+                            "ticker": s["ticker"], "source": f"tradingview:{s['tv']}"})
+                assets[s["ticker"]] = out
+                log.append(f"OK   stock {s['ticker']} via tradingview {s['tv']} "
+                           f"(precomputed indicators, last={out['last']} {out['currency']})")
+            except Exception as e:  # noqa: BLE001
+                log.append(f"fail stock {s['ticker']} via tradingview {s['tv']}: {e}")
+                failures.append(s["ticker"])
 
     now = datetime.now(timezone.utc)
     snapshot = {
@@ -232,7 +308,6 @@ def main():
         f.write("\n".join(log) + "\n")
     print("\n".join(log))
     print(f"\nSnapshot: {len(assets)} assets ok, {len(failures)} failed: {failures}")
-    # Fail the job only if we got almost nothing — partial data is still useful.
     if len(assets) < max(3, (len(wl["crypto"]) + len(wl["uae_stocks"])) // 3):
         sys.exit(1)
 

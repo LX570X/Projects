@@ -122,7 +122,82 @@ def crossed(series_a, series_b, lookback=3):
     return None
 
 
+def analyze_precomputed(ticker, a):
+    """Analysis path for sources that provide daily indicators, not bars
+    (TradingView scanner). Same scoring rules minus slope/cross detection."""
+    p = a["precomputed"]
+    last = a["last"]
+    s20, s50, rsi, atr14 = p.get("sma20"), p.get("sma50"), p.get("rsi"), p.get("atr")
+    hist = (p["macd"] - p["macd_signal"]) if p.get("macd") is not None and p.get("macd_signal") is not None else None
+    bb_up, bb_lo = p.get("bb_upper"), p.get("bb_lower")
+    pct_b = (last - bb_lo) / (bb_up - bb_lo) if bb_up and bb_lo and bb_up > bb_lo else 0.5
+    hi52, lo52 = p.get("hi52"), p.get("lo52")
+    hi20, lo20 = p.get("hi20"), p.get("lo20")
+
+    score = 0
+    why = []
+    if s50 is not None:
+        if last > s50:
+            score += 25; why.append(f"price above 50-day average ({s50:.4g}) — uptrend")
+        else:
+            score -= 25; why.append(f"price below 50-day average ({s50:.4g}) — downtrend")
+    if s20 is not None and s50 is not None:
+        if s20 > s50:
+            score += 15; why.append("20-day avg above 50-day avg (bullish structure)")
+        else:
+            score -= 15; why.append("20-day avg below 50-day avg (bearish structure)")
+    if hist is not None:
+        if hist > 0:
+            score += 15; why.append("MACD momentum positive")
+        else:
+            score -= 15; why.append("MACD momentum negative")
+    if rsi is not None:
+        if rsi < 30:
+            score += 20; why.append(f"RSI {rsi:.0f} oversold — bounce candidate")
+        elif rsi > 70:
+            score -= 20; why.append(f"RSI {rsi:.0f} overbought — pullback risk")
+        else:
+            why.append(f"RSI {rsi:.0f} neutral")
+    if pct_b < 0:
+        score += 10; why.append("price below lower Bollinger band (stretched down)")
+    elif pct_b > 1:
+        score -= 10; why.append("price above upper Bollinger band (stretched up)")
+    tvr = p.get("tv_recommend")
+    if tvr is not None:
+        if tvr >= 0.3:
+            score += 10; why.append("TradingView technical consensus bullish")
+        elif tvr <= -0.3:
+            score -= 10; why.append("TradingView technical consensus bearish")
+
+    band = next(label for cutoff, label in BANDS if score >= cutoff)
+    stop = target1 = target2 = None
+    if atr14:
+        stop = max(last - 2 * atr14, 0)
+        if lo20 is not None and lo20 < last:
+            stop = min(stop, lo20)
+        target1 = last + 2 * atr14
+        target2 = last + 4 * atr14
+
+    return {
+        "ticker": ticker, "name": a.get("name"), "market": a.get("market"),
+        "kind": a.get("kind"), "currency": a.get("currency"),
+        "source": a.get("source"), "last": last,
+        "change24h_pct": a.get("change24h_pct"),
+        "score": score, "signal": band, "reasons": why,
+        "rsi": round(rsi, 1) if rsi is not None else None,
+        "sma20": s20, "sma50": s50,
+        "macd_hist": hist, "macd_cross": None,
+        "pct_b": round(pct_b, 3),
+        "atr14": atr14, "stop_suggest": stop,
+        "target1": target1, "target2": target2,
+        "hi52": hi52, "lo52": lo52, "hi20": hi20, "lo20": lo20,
+        "off_52w_high_pct": round((last / hi52 - 1) * 100, 2) if hi52 else None,
+    }
+
+
 def analyze(ticker, a):
+    if a.get("precomputed"):
+        return analyze_precomputed(ticker, a)
     bars = a["bars"]
     closes = [b["c"] for b in bars]
     last = a.get("last") or closes[-1]
