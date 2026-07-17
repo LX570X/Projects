@@ -1,7 +1,7 @@
 # Trading Advisor — Signal Report
 
-- Data fetched: 2026-07-17T12:24:11+00:00 UTC
-- Report time: 2026-07-17 16:24 Dubai time
+- Data fetched: 2026-07-17T13:24:09+00:00 UTC
+- Report time: 2026-07-17 17:24 Dubai time
 - UAE market (DFM/ADX): CLOSED (hours Mon–Fri 10:00–15:00 Dubai)
 
 > Educational, rules-based technical screen — not licensed financial advice. Markets can move against any signal; never risk money you cannot afford to lose.
@@ -10,19 +10,19 @@
 
 | Asset | Price | 24h/1d | Signal | Score | RSI | Stop | Target 1 | Target 2 |
 |---|---|---|---|---|---|---|---|---|
-| ETHUSDT (Ethereum) | 1,836.97 USD | -2.3% | **STRONG BUY** | 45 | 56.3 | 1,571.96 | 1,977.39 | 2,117.81 |
-| SOLUSDT (Solana) | 74.77 USD | -1.8% | **HOLD** | 15 | 46.1 | 69.12 | 80.42 | 86.07 |
-| BTCUSDT (Bitcoin) | 63,257.99 USD | -1.4% | **SELL** | -35 | 49.0 | 58,624.71 | 66,692.07 | 70,126.16 |
-| BNBUSDT (BNB) | 563.85 USD | -2.4% | **SELL** | -35 | 43.1 | 534.26 | 593.44 | 623.02 |
-| XRPUSDT (XRP) | 1.083 USD | -2.3% | **SELL** | -35 | 44.0 | 1.007 | 1.158 | 1.234 |
-| DOGEUSDT (Dogecoin) | 0.07196 USD | -1.7% | **SELL** | -35 | 36.5 | 0.06653 | 0.07739 | 0.08283 |
+| ETHUSDT (Ethereum) | 1,818.09 USD | -3.5% | **STRONG BUY** | 45 | 54.2 | 1,572.01 | 1,960.32 | 2,102.54 |
+| SOLUSDT (Solana) | 73.83 USD | -3.2% | **HOLD** | 15 | 44.0 | 68.09 | 79.57 | 85.31 |
+| BTCUSDT (Bitcoin) | 62,927.46 USD | -2.0% | **SELL** | -35 | 47.7 | 58,624.71 | 66,361.54 | 69,795.63 |
+| BNBUSDT (BNB) | 559.03 USD | -3.4% | **SELL** | -35 | 41.2 | 528.72 | 589.34 | 619.66 |
+| XRPUSDT (XRP) | 1.074 USD | -3.2% | **SELL** | -35 | 42.5 | 0.9971 | 1.151 | 1.228 |
+| DOGEUSDT (Dogecoin) | 0.07147 USD | -2.6% | **SELL** | -35 | 35.5 | 0.06604 | 0.0769 | 0.08234 |
 
-**ETHUSDT** — STRONG BUY (score 45): price above 50-day average (1742) — uptrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping down; MACD momentum positive; RSI 56 neutral.
-**SOLUSDT** — HOLD (score 15): price above 50-day average (73.67) — uptrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping down; MACD momentum negative; RSI 46 neutral.
-**BTCUSDT** — SELL (score -35): price below 50-day average (6.376e+04) — downtrend; 20-day avg below 50-day avg (bearish structure); 50-day average sloping down; MACD momentum positive; RSI 49 neutral.
-**BNBUSDT** — SELL (score -35): price below 50-day average (591.6) — downtrend; 20-day avg below 50-day avg (bearish structure); 50-day average sloping down; MACD momentum positive; RSI 43 neutral.
-**XRPUSDT** — SELL (score -35): price below 50-day average (1.137) — downtrend; 20-day avg below 50-day avg (bearish structure); 50-day average sloping down; MACD momentum positive; RSI 44 neutral.
-**DOGEUSDT** — SELL (score -35): price below 50-day average (0.08127) — downtrend; 20-day avg below 50-day avg (bearish structure); 50-day average sloping down; MACD momentum positive; RSI 37 neutral.
+**ETHUSDT** — STRONG BUY (score 45): price above 50-day average (1738) — uptrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping down; MACD momentum positive; RSI 54 neutral.
+**SOLUSDT** — HOLD (score 15): price above 50-day average (73.65) — uptrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping down; MACD momentum negative; RSI 44 neutral.
+**BTCUSDT** — SELL (score -35): price below 50-day average (6.375e+04) — downtrend; 20-day avg below 50-day avg (bearish structure); 50-day average sloping down; MACD momentum positive; RSI 48 neutral.
+**BNBUSDT** — SELL (score -35): price below 50-day average (591.5) — downtrend; 20-day avg below 50-day avg (bearish structure); 50-day average sloping down; MACD momentum positive; RSI 41 neutral.
+**XRPUSDT** — SELL (score -35): price below 50-day average (1.136) — downtrend; 20-day avg below 50-day avg (bearish structure); 50-day average sloping down; MACD momentum positive; RSI 43 neutral.
+**DOGEUSDT** — SELL (score -35): price below 50-day average (0.08126) — downtrend; 20-day avg below 50-day avg (bearish structure); 50-day average sloping down; MACD momentum positive; RSI 36 neutral.
 
 ## UAE Stocks (trade via Al Ramz)
 
