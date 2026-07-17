@@ -326,6 +326,52 @@ def diff_alerts(prev_signals, signals):
     return alerts
 
 
+def portfolio_report(portfolio, signals):
+    """Per-holding live status: value, P&L vs reference, stop/target flags."""
+    sig_by = {s["ticker"]: s for s in signals}
+    out = []
+    for h in (portfolio or {}).get("holdings", []):
+        s = sig_by.get(h["ticker"])
+        if not s:
+            continue
+        last = s["last"]
+        out.append({
+            "ticker": h["ticker"], "qty": h["qty"], "last": last,
+            "currency": s.get("currency"),
+            "value": h["qty"] * last,
+            "ref_price": h.get("ref_price"),
+            "pnl_pct": (last / h["ref_price"] - 1) * 100 if h.get("ref_price") else None,
+            "stop": h.get("stop"), "target1": h.get("target1"), "target2": h.get("target2"),
+            "stop_hit": h.get("stop") is not None and last <= h["stop"],
+            "t1_hit": h.get("target1") is not None and last >= h["target1"],
+            "t2_hit": h.get("target2") is not None and last >= h["target2"],
+            "signal": s["signal"], "plan": h.get("plan"),
+        })
+    return out
+
+
+def portfolio_alerts(prev_port, port):
+    alerts = []
+    prev = {p["ticker"]: p for p in (prev_port or [])}
+    for p in port:
+        b = prev.get(p["ticker"], {})
+        if p["stop_hit"] and not b.get("stop_hit"):
+            alerts.append({"ticker": p["ticker"], "severity": "actionable", "type": "stop_hit",
+                           "msg": f"YOUR POSITION {p['ticker']}: STOP HIT at {p['last']:.6g} (stop {p['stop']:.6g}) — plan says exit to USDT now"})
+        if p["t1_hit"] and not b.get("t1_hit"):
+            alerts.append({"ticker": p["ticker"], "severity": "actionable", "type": "target_hit",
+                           "msg": f"YOUR POSITION {p['ticker']}: TARGET 1 reached ({p['target1']:.6g}) — plan says take half off, stop to entry"})
+        if p["t2_hit"] and not b.get("t2_hit"):
+            alerts.append({"ticker": p["ticker"], "severity": "actionable", "type": "target_hit",
+                           "msg": f"YOUR POSITION {p['ticker']}: TARGET 2 reached ({p['target2']:.6g}) — plan says take remaining profit"})
+        if "SELL" in p["signal"] and not p["stop_hit"]:
+            was_sell = "SELL" in (b.get("signal") or "")
+            if not was_sell:
+                alerts.append({"ticker": p["ticker"], "severity": "actionable", "type": "held_signal",
+                               "msg": f"YOUR POSITION {p['ticker']}: signal turned {p['signal']} — tighten stop or exit early"})
+    return alerts
+
+
 def uae_market_open(now_utc):
     dubai = now_utc + timedelta(hours=4)
     return dubai.weekday() <= 4 and (10, 0) <= (dubai.hour, dubai.minute) <= (15, 0)
@@ -388,12 +434,23 @@ def main():
     with open(os.path.join(DATA_DIR, "snapshot.json")) as f:
         snapshot = json.load(f)
 
-    prev_signals = None
+    prev_signals = prev_port = None
     sig_path = os.path.join(DATA_DIR, "signals.json")
     if os.path.exists(sig_path):
         try:
             with open(sig_path) as f:
-                prev_signals = json.load(f).get("signals")
+                prev_doc = json.load(f)
+            prev_signals = prev_doc.get("signals")
+            prev_port = prev_doc.get("portfolio")
+        except Exception:
+            pass
+
+    portfolio = None
+    port_path = os.path.join(DATA_DIR, "portfolio.json")
+    if os.path.exists(port_path):
+        try:
+            with open(port_path) as f:
+                portfolio = json.load(f)
         except Exception:
             pass
 
@@ -404,10 +461,11 @@ def main():
         except Exception as e:  # noqa: BLE001
             print(f"analyze failed for {ticker}: {e}")
 
-    alerts = diff_alerts(prev_signals, signals)
+    port = portfolio_report(portfolio, signals)
+    alerts = portfolio_alerts(prev_port, port) + diff_alerts(prev_signals, signals)
     now = datetime.now(timezone.utc).isoformat(timespec="seconds")
     with open(sig_path, "w") as f:
-        json.dump({"generated_at_utc": now, "signals": signals}, f, indent=1)
+        json.dump({"generated_at_utc": now, "signals": signals, "portfolio": port}, f, indent=1)
     with open(os.path.join(DATA_DIR, "alerts.json"), "w") as f:
         json.dump({"generated_at_utc": now, "alerts": alerts}, f, indent=1)
     os.makedirs(REPORT_DIR, exist_ok=True)

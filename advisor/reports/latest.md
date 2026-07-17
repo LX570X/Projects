@@ -1,7 +1,7 @@
 # Trading Advisor — Signal Report
 
 - Data fetched: 2026-07-17T08:42:21+00:00 UTC
-- Report time: 2026-07-17 12:42 Dubai time
+- Report time: 2026-07-17 13:07 Dubai time
 - UAE market (DFM/ADX): OPEN (hours Mon–Fri 10:00–15:00 Dubai)
 
 > Educational, rules-based technical screen — not licensed financial advice. Markets can move against any signal; never risk money you cannot afford to lose.

@@ -1,0 +1,19 @@
+{
+  "updated": "2026-07-17T08:55:00+00:00",
+  "note": "User holdings, tracked by the advisor. Plan levels are frozen at position entry, not floating.",
+  "cash": {"USDT": 0},
+  "holdings": [
+    {
+      "ticker": "ETHUSDT",
+      "qty": 0.0364,
+      "ref_price": 1829.7,
+      "ref_value_usd": 66.6,
+      "added": "2026-07-17",
+      "source": "converted from BTC on Binance",
+      "stop": 1572.0,
+      "target1": 1964.0,
+      "target2": 2105.0,
+      "plan": "Hold. If price closes below the stop, convert ALL to USDT (not another coin). At target 1, convert half to USDT and raise the stop to 1830 (entry). At target 2, take the rest."
+    }
+  ]
+}

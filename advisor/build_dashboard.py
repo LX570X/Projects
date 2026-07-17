@@ -137,6 +137,41 @@ def main():
 <th class="num hide-sm">Score</th><th class="num">Stop</th><th class="num">Target</th></tr></thead>
 <tbody>{rows}</tbody></table></div></section>"""
 
+    port = sig.get("portfolio") or []
+    port_html = ""
+    if port:
+        cards = []
+        for p in port:
+            pnl = p.get("pnl_pct")
+            pnl_html = "" if pnl is None else (
+                f' · <span class="{"delta-up" if pnl >= 0 else "delta-down"}">{pnl:+.1f}% since added</span>')
+            if p["stop_hit"]:
+                action, chip = "STOP HIT — exit to USDT now.", "chip-sell chip-strong"
+            elif p.get("t2_hit"):
+                action, chip = "Target 2 reached — take remaining profit.", "chip-buy chip-strong"
+            elif p.get("t1_hit"):
+                action, chip = "Target 1 reached — sell half, move stop to your entry.", "chip-buy"
+            elif "SELL" in p["signal"]:
+                action, chip = f"Signal turned {p['signal']} — tighten the stop or exit early.", "chip-sell"
+            else:
+                action, chip = "Hold. Act only if the stop or a target is hit — you'll be notified.", "chip-hold"
+            to_stop = (p["stop"] / p["last"] - 1) * 100 if p.get("stop") else None
+            to_t1 = (p["target1"] / p["last"] - 1) * 100 if p.get("target1") else None
+            cards.append(f"""<div class="idea">
+<div class="idea-head"><span class="chip {SIGNAL_CLASS.get(p['signal'], 'chip-hold')}">{esc(p['signal'])}</span>
+<strong>{esc(p['ticker'])}</strong><span class="asset-name">{p['qty']:g} units · {fmt(p['value'], p['currency'] or 'USD')}{pnl_html}</span></div>
+<p class="idea-why"><strong>{esc(action)}</strong></p>
+<div class="levels">
+<div><span class="lvl-label">Now</span><span class="lvl-val">{fmt(p['last'])}</span></div>
+<div><span class="lvl-label">Stop{f' ({to_stop:+.1f}%)' if to_stop is not None else ''}</span><span class="lvl-val">{fmt(p['stop'])}</span></div>
+<div><span class="lvl-label">Target 1{f' ({to_t1:+.1f}%)' if to_t1 is not None else ''}</span><span class="lvl-val">{fmt(p['target1'])}</span></div>
+<div><span class="lvl-label">Target 2</span><span class="lvl-val">{fmt(p['target2'])}</span></div>
+</div>
+<p class="idea-note">{esc(p.get('plan') or '')}</p>
+</div>""")
+        port_html = (f'<section><p class="eyebrow">Your holdings</p>'
+                     f'<div class="ideas">{"".join(cards)}</div></section>')
+
     ideas_html = ""
     if buys or sells:
         picks = buys[:4] + sells[:3]
@@ -388,6 +423,7 @@ a {{ color: var(--accent); }}
 <span class="pill">Auto-refreshes hourly</span>
 </div>
 </header>
+{port_html}
 {ideas_html}
 {calc_html}
 {section_table('crypto', 'Crypto — execute on Binance', 'Prices in USD (USDT pairs), daily bars, sorted by score.')}

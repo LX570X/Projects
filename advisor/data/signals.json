@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-07-17T08:42:21+00:00",
+ "generated_at_utc": "2026-07-17T09:07:10+00:00",
  "signals": [
   {
    "ticker": "BTCUSDT",
@@ -713,6 +713,25 @@
    "hi20": 22.3,
    "lo20": 20.12,
    "off_52w_high_pct": -25.75
+  }
+ ],
+ "portfolio": [
+  {
+   "ticker": "ETHUSDT",
+   "qty": 0.0364,
+   "last": 1823.82,
+   "currency": "USD",
+   "value": 66.38704800000001,
+   "ref_price": 1829.7,
+   "pnl_pct": -0.3213641580587012,
+   "stop": 1572.0,
+   "target1": 1964.0,
+   "target2": 2105.0,
+   "stop_hit": false,
+   "t1_hit": false,
+   "t2_hit": false,
+   "signal": "STRONG BUY",
+   "plan": "Hold. If price closes below the stop, convert ALL to USDT (not another coin). At target 1, convert half to USDT and raise the stop to 1830 (entry). At target 2, take the rest."
   }
  ]
 }
