@@ -1,29 +1,4 @@
 {
- "generated_at_utc": "2026-07-17T07:09:32+00:00",
- "alerts": [
-  {
-   "ticker": "ETHUSDT",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "ETHUSDT moved -4.7% in the last day (now 1830.48 USD)"
-  },
-  {
-   "ticker": "TALABAT",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "TALABAT moved -2.5% in the last day (now 1.16 AED)"
-  },
-  {
-   "ticker": "ADCB",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "ADCB: STRONG BUY -> BUY (score 45 -> 25)"
-  },
-  {
-   "ticker": "EAND",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "EAND: BUY -> STRONG BUY (score 35 -> 65)"
-  }
- ]
+ "generated_at_utc": "2026-07-17T08:26:44+00:00",
+ "alerts": []
 }
