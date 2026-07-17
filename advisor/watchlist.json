@@ -1,0 +1,27 @@
+{
+  "crypto": [
+    {"symbol": "BTCUSDT", "base": "BTC", "name": "Bitcoin", "binance": "BTCUSDT", "binanceus": "BTCUSDT", "kraken": ["XBTUSD"], "coingecko": "bitcoin"},
+    {"symbol": "ETHUSDT", "base": "ETH", "name": "Ethereum", "binance": "ETHUSDT", "binanceus": "ETHUSDT", "kraken": ["ETHUSD"], "coingecko": "ethereum"},
+    {"symbol": "BNBUSDT", "base": "BNB", "name": "BNB", "binance": "BNBUSDT", "binanceus": "BNBUSDT", "kraken": [], "coingecko": "binancecoin"},
+    {"symbol": "SOLUSDT", "base": "SOL", "name": "Solana", "binance": "SOLUSDT", "binanceus": "SOLUSDT", "kraken": ["SOLUSD"], "coingecko": "solana"},
+    {"symbol": "XRPUSDT", "base": "XRP", "name": "XRP", "binance": "XRPUSDT", "binanceus": "XRPUSDT", "kraken": ["XRPUSD"], "coingecko": "ripple"},
+    {"symbol": "DOGEUSDT", "base": "DOGE", "name": "Dogecoin", "binance": "DOGEUSDT", "binanceus": "DOGEUSDT", "kraken": ["DOGEUSD", "XDGUSD"], "coingecko": "dogecoin"}
+  ],
+  "uae_stocks": [
+    {"ticker": "EMAAR", "name": "Emaar Properties", "exchange": "DFM", "yahoo": ["EMAAR.AE", "EMAAR.DU"]},
+    {"ticker": "EMIRATESNBD", "name": "Emirates NBD", "exchange": "DFM", "yahoo": ["EMIRATESNBD.AE", "EMIRATESNBD.DU"]},
+    {"ticker": "DIB", "name": "Dubai Islamic Bank", "exchange": "DFM", "yahoo": ["DIB.AE", "DIB.DU"]},
+    {"ticker": "SALIK", "name": "Salik Company", "exchange": "DFM", "yahoo": ["SALIK.AE", "SALIK.DU"]},
+    {"ticker": "DEWA", "name": "Dubai Electricity & Water Authority", "exchange": "DFM", "yahoo": ["DEWA.AE", "DEWA.DU"]},
+    {"ticker": "TALABAT", "name": "Talabat Holding", "exchange": "DFM", "yahoo": ["TALABAT.AE", "TALABAT.DU"]},
+    {"ticker": "AIRARABIA", "name": "Air Arabia", "exchange": "DFM", "yahoo": ["AIRARABIA.AE", "AIRARABIA.DU"]},
+    {"ticker": "ALDAR", "name": "Aldar Properties", "exchange": "ADX", "yahoo": ["ALDAR.AB", "ALDAR.AD", "ALDAR.AE"]},
+    {"ticker": "FAB", "name": "First Abu Dhabi Bank", "exchange": "ADX", "yahoo": ["FAB.AB", "FAB.AD", "FAB.AE"]},
+    {"ticker": "ADCB", "name": "Abu Dhabi Commercial Bank", "exchange": "ADX", "yahoo": ["ADCB.AB", "ADCB.AD", "ADCB.AE"]},
+    {"ticker": "IHC", "name": "International Holding Company", "exchange": "ADX", "yahoo": ["IHC.AB", "IHC.AD", "IHC.AE"]},
+    {"ticker": "EAND", "name": "e& (Etisalat Group)", "exchange": "ADX", "yahoo": ["EAND.AB", "EAND.AD", "ETISALAT.AB", "ETISALAT.AD", "EAND.AE"]},
+    {"ticker": "ADNOCGAS", "name": "ADNOC Gas", "exchange": "ADX", "yahoo": ["ADNOCGAS.AB", "ADNOCGAS.AD", "ADNOCGAS.AE"]},
+    {"ticker": "TAQA", "name": "Abu Dhabi National Energy (TAQA)", "exchange": "ADX", "yahoo": ["TAQA.AB", "TAQA.AD", "TAQA.AE"]},
+    {"ticker": "ADIB", "name": "Abu Dhabi Islamic Bank", "exchange": "ADX", "yahoo": ["ADIB.AB", "ADIB.AD", "ADIB.AE"]}
+  ]
+}

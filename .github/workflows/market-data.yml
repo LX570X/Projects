@@ -1,0 +1,48 @@
+name: market-data
+
+on:
+  workflow_dispatch: {}
+  schedule:
+    # hourly at :17 UTC — only effective once this file is on the default branch
+    - cron: "17 * * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: market-data-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  fetch-and-analyze:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch market data
+        run: python advisor/fetch_data.py
+
+      - name: Compute signals
+        run: python advisor/engine.py
+
+      - name: Commit results
+        run: |
+          git config user.name "advisor-bot"
+          git config user.email "advisor-bot@users.noreply.github.com"
+          git add advisor/data advisor/reports
+          if git diff --cached --quiet; then
+            echo "no changes"
+            exit 0
+          fi
+          git commit -m "market data update $(date -u +'%Y-%m-%dT%H:%MZ')"
+          for i in 1 2 3; do
+            git pull --rebase origin "${GITHUB_REF_NAME}" || true
+            git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
+            sleep $((i * 3))
+          done
+          exit 1
