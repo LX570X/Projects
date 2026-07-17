@@ -1,0 +1,35 @@
+OK   crypto BTCUSDT via binance (210 bars, last=62935.99)
+OK   crypto ETHUSDT via binance (210 bars, last=1831.4)
+OK   crypto BNBUSDT via binance (210 bars, last=569.89)
+OK   crypto SOLUSDT via binance (210 bars, last=74.58)
+OK   crypto XRPUSDT via binance (210 bars, last=1.0866)
+OK   crypto DOGEUSDT via binance (210 bars, last=0.07182)
+OK   stock EMAAR via yahoo EMAAR.AE (207 bars, last=11.36 AED)
+OK   stock EMIRATESNBD via yahoo EMIRATESNBD.AE (207 bars, last=29.56 AED)
+OK   stock DIB via yahoo DIB.AE (207 bars, last=7.37 AED)
+OK   stock SALIK via yahoo SALIK.AE (207 bars, last=5.56 AED)
+OK   stock DEWA via yahoo DEWA.AE (207 bars, last=2.68 AED)
+OK   stock TALABAT via yahoo TALABAT.AE (207 bars, last=1.17 AED)
+OK   stock AIRARABIA via yahoo AIRARABIA.AE (207 bars, last=5.19 AED)
+fail stock ALDAR via yahoo ALDAR.AB: GET https://query1.finance.yahoo.com/v8/finance/chart/ALDAR.AB?range=1y&interval=1d&includePrePost=false&events=div%2Csplit failed: HTTP Error 404: Not Found
+fail stock ALDAR via yahoo ALDAR.AD: GET https://query1.finance.yahoo.com/v8/finance/chart/ALDAR.AD?range=1y&interval=1d&includePrePost=false&events=div%2Csplit failed: HTTP Error 404: Not Found
+fail stock ALDAR via yahoo ALDAR.AE: GET https://query1.finance.yahoo.com/v8/finance/chart/ALDAR.AE?range=1y&interval=1d&includePrePost=false&events=div%2Csplit failed: HTTP Error 404: Not Found
+fail stock FAB via yahoo FAB.AB: GET https://query1.finance.yahoo.com/v8/finance/chart/FAB.AB?range=1y&interval=1d&includePrePost=false&events=div%2Csplit failed: HTTP Error 404: Not Found
+fail stock FAB via yahoo FAB.AD: GET https://query1.finance.yahoo.com/v8/finance/chart/FAB.AD?range=1y&interval=1d&includePrePost=false&events=div%2Csplit failed: HTTP Error 404: Not Found
+fail stock FAB via yahoo FAB.AE: GET https://query1.finance.yahoo.com/v8/finance/chart/FAB.AE?range=1y&interval=1d&includePrePost=false&events=div%2Csplit failed: HTTP Error 404: Not Found
+OK   stock ADCB via yahoo ADCB.AB (210 bars, last=7884740100.0 AED)
+fail stock IHC via yahoo IHC.AB: GET https://query1.finance.yahoo.com/v8/finance/chart/IHC.AB?range=1y&interval=1d&includePrePost=false&events=div%2Csplit failed: HTTP Error 404: Not Found
+fail stock IHC via yahoo IHC.AD: GET https://query1.finance.yahoo.com/v8/finance/chart/IHC.AD?range=1y&interval=1d&includePrePost=false&events=div%2Csplit failed: HTTP Error 404: Not Found
+fail stock IHC via yahoo IHC.AE: GET https://query1.finance.yahoo.com/v8/finance/chart/IHC.AE?range=1y&interval=1d&includePrePost=false&events=div%2Csplit failed: HTTP Error 404: Not Found
+fail stock EAND via yahoo EAND.AB: GET https://query1.finance.yahoo.com/v8/finance/chart/EAND.AB?range=1y&interval=1d&includePrePost=false&events=div%2Csplit failed: HTTP Error 404: Not Found
+fail stock EAND via yahoo EAND.AD: GET https://query1.finance.yahoo.com/v8/finance/chart/EAND.AD?range=1y&interval=1d&includePrePost=false&events=div%2Csplit failed: HTTP Error 404: Not Found
+OK   stock EAND via yahoo ETISALAT.AB (210 bars, last=52272890000.0 AED)
+fail stock ADNOCGAS via yahoo ADNOCGAS.AB: GET https://query1.finance.yahoo.com/v8/finance/chart/ADNOCGAS.AB?range=1y&interval=1d&includePrePost=false&events=div%2Csplit failed: HTTP Error 404: Not Found
+fail stock ADNOCGAS via yahoo ADNOCGAS.AD: GET https://query1.finance.yahoo.com/v8/finance/chart/ADNOCGAS.AD?range=1y&interval=1d&includePrePost=false&events=div%2Csplit failed: HTTP Error 404: Not Found
+fail stock ADNOCGAS via yahoo ADNOCGAS.AE: GET https://query1.finance.yahoo.com/v8/finance/chart/ADNOCGAS.AE?range=1y&interval=1d&includePrePost=false&events=div%2Csplit failed: HTTP Error 404: Not Found
+fail stock TAQA via yahoo TAQA.AB: GET https://query1.finance.yahoo.com/v8/finance/chart/TAQA.AB?range=1y&interval=1d&includePrePost=false&events=div%2Csplit failed: HTTP Error 404: Not Found
+fail stock TAQA via yahoo TAQA.AD: GET https://query1.finance.yahoo.com/v8/finance/chart/TAQA.AD?range=1y&interval=1d&includePrePost=false&events=div%2Csplit failed: HTTP Error 404: Not Found
+fail stock TAQA via yahoo TAQA.AE: GET https://query1.finance.yahoo.com/v8/finance/chart/TAQA.AE?range=1y&interval=1d&includePrePost=false&events=div%2Csplit failed: HTTP Error 404: Not Found
+fail stock ADIB via yahoo ADIB.AB: GET https://query1.finance.yahoo.com/v8/finance/chart/ADIB.AB?range=1y&interval=1d&includePrePost=false&events=div%2Csplit failed: HTTP Error 404: Not Found
+fail stock ADIB via yahoo ADIB.AD: GET https://query1.finance.yahoo.com/v8/finance/chart/ADIB.AD?range=1y&interval=1d&includePrePost=false&events=div%2Csplit failed: HTTP Error 404: Not Found
+fail stock ADIB via yahoo ADIB.AE: GET https://query1.finance.yahoo.com/v8/finance/chart/ADIB.AE?range=1y&interval=1d&includePrePost=false&events=div%2Csplit failed: HTTP Error 404: Not Found
