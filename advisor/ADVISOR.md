@@ -47,3 +47,14 @@ This file is the operating procedure for the hourly advisor routine
 - Watchlist changes on user request: edit `watchlist.json`.
 - If the user asks to stop: delete the Routine (list_triggers →
   delete_trigger) and stop notifying.
+
+## Monthly plan (user-confirmed, 2026-07-17)
+
+- 1,000 AED/month: 400 core UAE stocks (accumulate, deploy quarterly into
+  strongest BUY-rated dividend blue chip via Al Ramz), 300 core crypto DCA
+  (BTC+ETH monthly, split per current signals), 300 opportunity fund in USDT
+  (deploys only on BUY signals, 1-2% risk sizing).
+- Monthly reminder routine fires on the 1st ~09:47 Dubai: compute that month's
+  exact shopping list from live signals and push-notify with amounts.
+- User's position sizes are small: phrase crypto exits as CONVERT to USDT or
+  buy more - never "sell/cash out".

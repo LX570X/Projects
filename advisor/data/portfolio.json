@@ -1,19 +1,43 @@
 {
-  "updated": "2026-07-17T08:55:00+00:00",
-  "note": "User holdings, tracked by the advisor. Plan levels are frozen at position entry, not floating.",
-  "cash": {"USDT": 0},
-  "holdings": [
-    {
-      "ticker": "ETHUSDT",
-      "qty": 0.0364,
-      "ref_price": 1829.7,
-      "ref_value_usd": 66.6,
-      "added": "2026-07-17",
-      "source": "converted from BTC on Binance",
-      "stop": 1572.0,
-      "target1": 1964.0,
-      "target2": 2105.0,
-      "plan": "Hold. If price closes below the stop, convert ALL to USDT (not another coin). At target 1, convert half to USDT and raise the stop to 1830 (entry). At target 2, take the rest."
-    }
-  ]
+ "updated": "2026-07-17T09:05:00+00:00",
+ "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
+ "cash": {
+  "USDT": 0
+ },
+ "holdings": [
+  {
+   "ticker": "ETHUSDT",
+   "qty": 0.0364,
+   "ref_price": 1829.7,
+   "ref_value_usd": 66.6,
+   "added": "2026-07-17",
+   "source": "converted from BTC on Binance",
+   "stop": 1572.0,
+   "target1": 1964.0,
+   "target2": 2105.0,
+   "plan": "Hold. If price closes below the stop, convert ALL to USDT (not another coin). At target 1, convert half to USDT and raise the stop to 1830 (entry). At target 2, take the rest."
+  }
+ ],
+ "monthly_plan": {
+  "amount_aed": 1000,
+  "buckets": [
+   {
+    "name": "core_uae_stocks",
+    "aed": 400,
+    "note": "accumulate, deploy quarterly (1200 AED) into strongest BUY-rated dividend blue chip; broker min commission makes monthly orders wasteful"
+   },
+   {
+    "name": "core_crypto",
+    "aed": 300,
+    "note": "monthly DCA into BTC+ETH regardless of price; split decided by monthly reminder from current signals"
+   },
+   {
+    "name": "opportunity",
+    "aed": 300,
+    "note": "hold in USDT until advisor BUY signal; size via 1-2% risk rule; no deploy = fine"
+   }
+  ],
+  "started": "2026-07-17",
+  "stocks_account": "Al Ramz - not opened yet, user will confirm"
+ }
 }
