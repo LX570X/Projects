@@ -231,6 +231,43 @@ how much to buy so that a stop-out loses only the chosen risk share of your budg
                         f"turns interesting nearer {fmt(s['lo20'])} support or on a break of {fmt(s['hi20'])}.</li>" for s in watch)
         watch_html = f'<section><p class="eyebrow">Watching</p><ul class="watch">{items}</ul></section>'
 
+    scanner = load("scanner.json", {}) or {}
+    scanner_html = ""
+    if scanner.get("movers"):
+        rows = []
+        for m in scanner["movers"]:
+            chg = m.get("change24h_pct")
+            chg_html = "—" if chg is None else f'<span class="{"delta-up" if chg >= 0 else "delta-down"}">{chg:+.1f}%</span>'
+            trend_bits = []
+            if m.get("above_sma50") is True:
+                trend_bits.append('<span class="delta-up">above 50d</span>')
+            elif m.get("above_sma50") is False:
+                trend_bits.append('<span class="delta-down">below 50d</span>')
+            rsi = m.get("rsi")
+            heat = ""
+            if rsi is not None and rsi >= 75:
+                heat = ' <span class="chip chip-sell">overheated</span>'
+            elif rsi is not None and rsi <= 25:
+                heat = ' <span class="chip chip-buy">washed out</span>'
+            vol_m = (m.get("quote_volume24h") or 0) / 1e6
+            rows.append(f"""<tr>
+<td class="asset"><strong>{esc(m['symbol'])}</strong></td>
+<td class="num">{fmt(m['last'])}<span class="unit">USD</span></td>
+<td class="num">{chg_html}</td>
+<td class="num hide-sm">{vol_m:,.0f}M</td>
+<td class="num">{rsi if rsi is not None else '—'}{heat}</td>
+<td>{' '.join(trend_bits) or '—'}</td>
+</tr>""")
+        scanner_html = f"""<section>
+<p class="eyebrow">Market scanner — biggest movers across all of Binance (24h)</p>
+<p class="section-sub">Every liquid USDT pair on Binance is scanned each cycle (volume ≥ $5M, no leveraged
+tokens); these are the {len(scanner['movers'])} biggest movers right now. Movers are usually news-driven and very
+volatile — <strong>check the story before touching anything here</strong>. They are not part of the advised plan.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Coin</th><th class="num">Price</th><th class="num">24h</th>
+<th class="num hide-sm">Volume</th><th class="num">RSI</th><th>Trend</th></tr></thead>
+<tbody>{''.join(rows)}</tbody></table></div></section>"""
+
     alerts_html = ""
     if alerts:
         items = "".join(f'<li><span class="chip {"chip-sell" if a["severity"] == "actionable" else "chip-hold"}">'
@@ -355,6 +392,7 @@ a {{ color: var(--accent); }}
 {calc_html}
 {section_table('crypto', 'Crypto — execute on Binance', 'Prices in USD (USDT pairs), daily bars, sorted by score.')}
 {section_table('stock', 'UAE stocks — execute via Al Ramz', 'DFM and ADX listings, prices in AED, sorted by score.')}
+{scanner_html}
 {watch_html}
 {alerts_html}
 {ctx_html}

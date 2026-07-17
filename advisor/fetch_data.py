@@ -123,6 +123,61 @@ def fetch_crypto(asset, log):
     return None
 
 
+# ------------------------------------------------------- full-market scanner
+
+STABLE_BASES = {"USDC", "FDUSD", "TUSD", "DAI", "EUR", "EURI", "AEUR", "USDP",
+                "BUSD", "USD1", "XUSD", "PYUSD", "FRAX", "GUSD"}
+SCAN_MIN_QUOTE_VOL = 5_000_000  # USD, 24h — below this, too illiquid to advise on
+SCAN_TOP_N = 10
+
+
+def scan_binance_market(watch_symbols, log):
+    """One bulk 24h-ticker call over ALL Binance pairs; keep liquid USDT pairs,
+    rank by |24h move|, enrich the top movers with 60-day RSI/SMA context."""
+    import engine  # local module; pure functions
+
+    tickers = get_json("https://data-api.binance.vision/api/v3/ticker/24hr")
+    candidates = []
+    for t in tickers:
+        sym = t.get("symbol", "")
+        if not sym.endswith("USDT") or sym in watch_symbols:
+            continue
+        base = sym[:-4]
+        if base in STABLE_BASES or base.endswith(("UP", "DOWN", "BULL", "BEAR")):
+            continue
+        try:
+            qv = float(t["quoteVolume"])
+            chg = float(t["priceChangePercent"])
+            last = float(t["lastPrice"])
+        except (KeyError, ValueError):
+            continue
+        if qv < SCAN_MIN_QUOTE_VOL or last <= 0:
+            continue
+        candidates.append({"symbol": sym, "last": last, "change24h_pct": chg,
+                           "quote_volume24h": qv})
+    log.append(f"scanner: {len(candidates)} liquid USDT pairs on Binance")
+    candidates.sort(key=lambda c: -abs(c["change24h_pct"]))
+    movers = []
+    for c in candidates[:SCAN_TOP_N + 2]:  # a couple spare in case klines fail
+        if len(movers) >= SCAN_TOP_N:
+            break
+        try:
+            kl = get_json(f"https://data-api.binance.vision/api/v3/klines?symbol={c['symbol']}&interval=1d&limit=60",
+                          retries=1)
+            closes = [float(r[4]) for r in kl]
+            rsi = engine.rsi_series(closes)[-1] if len(closes) > 15 else None
+            s20 = engine.sma(closes, 20)
+            s50 = engine.sma(closes, 50)
+            c["rsi"] = round(rsi, 1) if rsi is not None else None
+            c["above_sma20"] = (c["last"] > s20) if s20 else None
+            c["above_sma50"] = (c["last"] > s50) if s50 else None
+            movers.append(c)
+        except Exception as e:  # noqa: BLE001
+            log.append(f"scanner: klines failed for {c['symbol']}: {e}")
+    log.append(f"scanner: kept top {len(movers)} movers")
+    return movers
+
+
 # ---------------------------------------------------------------- UAE stocks
 
 def fetch_yahoo_chart(symbol):
@@ -294,6 +349,14 @@ def main():
             except Exception as e:  # noqa: BLE001
                 log.append(f"fail stock {s['ticker']} via tradingview {s['tv']}: {e}")
                 failures.append(s["ticker"])
+
+    try:
+        movers = scan_binance_market({c["symbol"] for c in wl["crypto"]}, log)
+        with open(os.path.join(DATA_DIR, "scanner.json"), "w") as f:
+            json.dump({"generated_at_utc": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+                       "movers": movers}, f, indent=1)
+    except Exception as e:  # noqa: BLE001
+        log.append(f"scanner failed (non-fatal): {e}")
 
     now = datetime.now(timezone.utc)
     snapshot = {
