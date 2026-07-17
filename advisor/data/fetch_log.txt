@@ -1,9 +1,9 @@
-OK   crypto BTCUSDT via binance (210 bars, last=64029.84)
-OK   crypto ETHUSDT via binance (210 bars, last=1840.02)
-OK   crypto BNBUSDT via binance (210 bars, last=567.45)
-OK   crypto SOLUSDT via binance (210 bars, last=75.03)
-OK   crypto XRPUSDT via binance (210 bars, last=1.0883)
-OK   crypto DOGEUSDT via binance (210 bars, last=0.07246)
+OK   crypto BTCUSDT via binance (210 bars, last=64158.0)
+OK   crypto ETHUSDT via binance (210 bars, last=1845.81)
+OK   crypto BNBUSDT via binance (210 bars, last=568.72)
+OK   crypto SOLUSDT via binance (210 bars, last=75.16)
+OK   crypto XRPUSDT via binance (210 bars, last=1.0902)
+OK   crypto DOGEUSDT via binance (210 bars, last=0.07281)
 OK   stock EMAAR via yahoo EMAAR.AE (208 bars, last=11.16 AED)
 OK   stock EMIRATESNBD via yahoo EMIRATESNBD.AE (208 bars, last=29.3 AED)
 OK   stock DIB via yahoo DIB.AE (208 bars, last=7.34 AED)
@@ -19,5 +19,5 @@ OK   stock EAND via tradingview ADX:EAND (precomputed indicators, last=20.28 AED
 OK   stock ADNOCGAS via tradingview ADX:ADNOCGAS (precomputed indicators, last=3.33 AED)
 OK   stock TAQA via tradingview ADX:TAQA (precomputed indicators, last=2.65 AED)
 OK   stock ADIB via tradingview ADX:ADIB (precomputed indicators, last=20.7 AED)
-scanner: 59 liquid USDT pairs on Binance
+scanner: 58 liquid USDT pairs on Binance
 scanner: kept top 10 movers
