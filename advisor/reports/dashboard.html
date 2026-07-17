@@ -1,0 +1,438 @@
+<title>UAE + Crypto Trading Advisor</title>
+<style>
+:root {
+  color-scheme: light;
+  --page: #f9f9f7; --surface: #fcfcfb; --ink: #0b0b0b; --ink-2: #52514e;
+  --muted: #898781; --grid: #e1e0d9; --border: rgba(11,11,11,0.10);
+  --accent: #2a78d6; --good: #0ca30c; --good-text: #006300;
+  --warn: #fab219; --crit: #d03b3b;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --page: #0d0d0d; --surface: #1a1a19; --ink: #ffffff; --ink-2: #c3c2b7;
+    --muted: #898781; --grid: #2c2c2a; --border: rgba(255,255,255,0.10);
+    --accent: #3987e5; --good: #0ca30c; --good-text: #0ca30c;
+    --warn: #fab219; --crit: #e66767;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --page: #0d0d0d; --surface: #1a1a19; --ink: #ffffff; --ink-2: #c3c2b7;
+  --muted: #898781; --grid: #2c2c2a; --border: rgba(255,255,255,0.10);
+  --accent: #3987e5; --good: #0ca30c; --good-text: #0ca30c;
+  --warn: #fab219; --crit: #e66767;
+}
+* { box-sizing: border-box; }
+body { background: var(--page); color: var(--ink);
+  font: 15px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif;
+  margin: 0; padding: 32px 20px 60px; }
+main { max-width: 1060px; margin: 0 auto; display: flex; flex-direction: column; gap: 36px; }
+.eyebrow { font-size: 12px; font-weight: 700; letter-spacing: 0.09em; text-transform: uppercase;
+  color: var(--muted); margin: 0 0 6px; }
+h1 { font-size: 30px; margin: 0 0 4px; letter-spacing: -0.01em; text-wrap: balance; }
+.asof { color: var(--ink-2); margin: 0; }
+.pills { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+.pill { border: 1px solid var(--border); background: var(--surface); border-radius: 999px;
+  padding: 4px 12px; font-size: 13px; color: var(--ink-2); }
+.pill .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; }
+.dot-open { background: var(--good); } .dot-closed { background: var(--muted); }
+.section-sub { margin: 0 0 12px; color: var(--ink-2); }
+.table-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 10px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; min-width: 860px; }
+th, td { text-align: left; padding: 9px 12px; border-top: 1px solid var(--grid); white-space: nowrap; }
+thead th { border-top: 0; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em;
+  color: var(--muted); font-weight: 600; }
+tbody tr:hover { background: color-mix(in srgb, var(--accent) 6%, transparent); }
+td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+.unit { color: var(--muted); font-size: 12px; margin-left: 4px; }
+.asset-name { display: block; color: var(--muted); font-size: 12px; font-weight: 400; }
+.chip { display: inline-block; border-radius: 999px; padding: 2px 10px; font-size: 12px;
+  font-weight: 700; letter-spacing: 0.02em; }
+.chip-buy { background: color-mix(in srgb, var(--good) 16%, transparent); color: var(--good-text); }
+.chip-sell { background: color-mix(in srgb, var(--crit) 14%, transparent); color: var(--crit); }
+.chip-hold { background: color-mix(in srgb, var(--muted) 16%, transparent); color: var(--ink-2); }
+.chip-strong { outline: 1.5px solid currentColor; }
+.delta-up { color: var(--good-text); } .delta-down { color: var(--crit); }
+.spark-line { stroke: var(--accent); stroke-width: 2; }
+.spark-area { fill: color-mix(in srgb, var(--accent) 12%, transparent); }
+.spark-end { fill: var(--accent); }
+.spark-down .spark-line { stroke: var(--crit); }
+.spark-down .spark-area { fill: color-mix(in srgb, var(--crit) 10%, transparent); }
+.spark-down .spark-end { fill: var(--crit); }
+.ideas { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 14px; }
+.idea { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; }
+.idea-head { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.idea-why { color: var(--ink-2); margin: 8px 0 4px; font-size: 13.5px; }
+.idea-note { color: var(--ink-2); margin: 4px 0; font-size: 13px; font-style: italic; }
+.levels { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-top: 10px; }
+.lvl-label { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
+.lvl-val { font-variant-numeric: tabular-nums; font-weight: 600; }
+ul.watch, ul.alerts, ul.ctx { margin: 0; padding: 0 0 0 2px; list-style: none;
+  display: flex; flex-direction: column; gap: 8px; }
+ul.alerts li, ul.watch li, ul.ctx li { background: var(--surface); border: 1px solid var(--border);
+  border-radius: 8px; padding: 8px 12px; }
+.ctx-updated { color: var(--muted); font-size: 12px; margin: 8px 0 0; }
+footer { color: var(--ink-2); font-size: 13px; border-top: 1px solid var(--grid); padding-top: 16px; }
+footer p { max-width: 72ch; }
+a { color: var(--accent); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+@media (prefers-reduced-motion: no-preference) {
+  tbody tr { transition: background 120ms ease; }
+}
+</style>
+<main>
+<header>
+<p class="eyebrow">Live advisor — DFM · ADX · Binance</p>
+<h1>UAE + Crypto Trading Desk</h1>
+<p class="asof">Signals computed 2026-07-17T07:09:32+00:00 UTC · data as of 2026-07-17T07:09:32+00:00 · 11:09 Dubai time</p>
+<div class="pills">
+<span class="pill"><span class="dot dot-open"></span>UAE market OPEN (Mon–Fri 10:00–15:00 Dubai)</span>
+<span class="pill"><span class="dot dot-open"></span>Crypto 24/7</span>
+<span class="pill">Auto-refreshes hourly</span>
+</div>
+</header>
+<section><p class="eyebrow">Action plan — right now</p><div class="ideas"><div class="idea">
+<div class="idea-head"><span class="chip chip-buy chip-strong">STRONG BUY</span>
+<strong>FAB</strong><span class="asset-name">First Abu Dhabi Bank · ADX</span></div>
+<p class="idea-why">price above 50-day average (17.29) — uptrend; 20-day avg above 50-day avg (bullish structure); MACD momentum positive.</p>
+
+<div class="levels">
+<div><span class="lvl-label">Entry zone</span><span class="lvl-val">17.78 AED</span></div>
+<div><span class="lvl-label">Stop</span><span class="lvl-val">16.68</span></div>
+<div><span class="lvl-label">Target 1</span><span class="lvl-val">18.57</span></div>
+<div><span class="lvl-label">Target 2</span><span class="lvl-val">19.36</span></div>
+</div></div>
+<div class="idea">
+<div class="idea-head"><span class="chip chip-buy chip-strong">STRONG BUY</span>
+<strong>EAND</strong><span class="asset-name">e&amp; (Etisalat Group) · ADX</span></div>
+<p class="idea-why">price above 50-day average (19.17) — uptrend; 20-day avg above 50-day avg (bullish structure); MACD momentum positive.</p>
+
+<div class="levels">
+<div><span class="lvl-label">Entry zone</span><span class="lvl-val">20.12 AED</span></div>
+<div><span class="lvl-label">Stop</span><span class="lvl-val">18.74</span></div>
+<div><span class="lvl-label">Target 1</span><span class="lvl-val">20.99</span></div>
+<div><span class="lvl-label">Target 2</span><span class="lvl-val">21.86</span></div>
+</div></div>
+<div class="idea">
+<div class="idea-head"><span class="chip chip-buy chip-strong">STRONG BUY</span>
+<strong>ETHUSDT</strong><span class="asset-name">Ethereum · BINANCE</span></div>
+<p class="idea-why">price above 50-day average (1742) — uptrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping down.</p>
+
+<div class="levels">
+<div><span class="lvl-label">Entry zone</span><span class="lvl-val">1,830.5 USD</span></div>
+<div><span class="lvl-label">Stop</span><span class="lvl-val">1,572.0</span></div>
+<div><span class="lvl-label">Target 1</span><span class="lvl-val">1,970.9</span></div>
+<div><span class="lvl-label">Target 2</span><span class="lvl-val">2,111.3</span></div>
+</div></div>
+<div class="idea">
+<div class="idea-head"><span class="chip chip-buy">BUY</span>
+<strong>EMIRATESNBD</strong><span class="asset-name">Emirates NBD · DFM</span></div>
+<p class="idea-why">price above 50-day average (29.05) — uptrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping up.</p>
+
+<div class="levels">
+<div><span class="lvl-label">Entry zone</span><span class="lvl-val">29.68 AED</span></div>
+<div><span class="lvl-label">Stop</span><span class="lvl-val">28.00</span></div>
+<div><span class="lvl-label">Target 1</span><span class="lvl-val">31.36</span></div>
+<div><span class="lvl-label">Target 2</span><span class="lvl-val">33.05</span></div>
+</div></div>
+<div class="idea">
+<div class="idea-head"><span class="chip chip-buy">BUY</span>
+<strong>TALABAT</strong><span class="asset-name">Talabat Holding · DFM</span></div>
+<p class="idea-why">price above 50-day average (1.102) — uptrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping up.</p>
+
+<div class="levels">
+<div><span class="lvl-label">Entry zone</span><span class="lvl-val">1.16 AED</span></div>
+<div><span class="lvl-label">Stop</span><span class="lvl-val">1.079</span></div>
+<div><span class="lvl-label">Target 1</span><span class="lvl-val">1.241</span></div>
+<div><span class="lvl-label">Target 2</span><span class="lvl-val">1.323</span></div>
+</div></div>
+<div class="idea">
+<div class="idea-head"><span class="chip chip-buy">BUY</span>
+<strong>AIRARABIA</strong><span class="asset-name">Air Arabia · DFM</span></div>
+<p class="idea-why">price above 50-day average (5.143) — uptrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping up.</p>
+
+<div class="levels">
+<div><span class="lvl-label">Entry zone</span><span class="lvl-val">5.18 AED</span></div>
+<div><span class="lvl-label">Stop</span><span class="lvl-val">4.919</span></div>
+<div><span class="lvl-label">Target 1</span><span class="lvl-val">5.441</span></div>
+<div><span class="lvl-label">Target 2</span><span class="lvl-val">5.703</span></div>
+</div></div></div></section>
+<section>
+<p class="eyebrow">Crypto — execute on Binance</p><p class="section-sub">Prices in USD (USDT pairs), daily bars, sorted by score.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Asset</th><th>60d</th><th class="num">Price</th><th class="num">Change</th>
+<th class="num">RSI</th><th>Trend</th><th>Signal</th><th class="num">Score</th>
+<th class="num">Stop</th><th class="num">Target</th></tr></thead>
+<tbody><tr title="price above 50-day average (1742) — uptrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping down; MACD momentum positive; RSI 56 neutral">
+<td class="asset"><strong>ETHUSDT</strong><span class="asset-name">Ethereum</span></td>
+<td class="num spark-cell"><svg class="spark spark-down" viewBox="0 0 120 32" width="120" height="32" role="img" aria-label="60-day price trend"><title>60-day trend</title><polygon class="spark-area" points="3,29 3.0,4.0 4.9,3.2 6.9,3.0 8.8,6.1 10.7,3.7 12.7,4.6 14.6,4.0 16.5,5.8 18.5,8.0 20.4,8.7 22.3,8.5 24.3,8.1 26.2,8.8 28.1,8.8 30.1,15.6 32.0,17.7 33.9,19.7 35.8,28.3 37.8,28.9 39.7,23.4 41.6,23.4 43.6,25.7 45.5,26.5 47.4,24.1 49.4,24.5 51.3,23.8 53.2,21.8 55.2,18.5 57.1,18.7 59.0,20.6 61.0,22.4 62.9,22.4 64.8,21.0 66.8,22.6 68.7,21.6 70.6,24.4 72.6,26.5 74.5,29.0 76.4,28.5 78.4,28.7 80.3,28.8 82.2,26.9 84.2,28.8 86.1,27.1 88.0,22.9 89.9,20.3 91.9,19.2 93.8,19.0 95.7,18.4 97.7,19.6 99.6,20.9 101.5,20.9 103.5,18.5 105.4,18.9 107.3,18.0 109.3,19.4 111.2,14.1 113.1,12.9 115.1,15.4 117.0,16.9 117.0,29"></polygon><polyline class="spark-line" points="3.0,4.0 4.9,3.2 6.9,3.0 8.8,6.1 10.7,3.7 12.7,4.6 14.6,4.0 16.5,5.8 18.5,8.0 20.4,8.7 22.3,8.5 24.3,8.1 26.2,8.8 28.1,8.8 30.1,15.6 32.0,17.7 33.9,19.7 35.8,28.3 37.8,28.9 39.7,23.4 41.6,23.4 43.6,25.7 45.5,26.5 47.4,24.1 49.4,24.5 51.3,23.8 53.2,21.8 55.2,18.5 57.1,18.7 59.0,20.6 61.0,22.4 62.9,22.4 64.8,21.0 66.8,22.6 68.7,21.6 70.6,24.4 72.6,26.5 74.5,29.0 76.4,28.5 78.4,28.7 80.3,28.8 82.2,26.9 84.2,28.8 86.1,27.1 88.0,22.9 89.9,20.3 91.9,19.2 93.8,19.0 95.7,18.4 97.7,19.6 99.6,20.9 101.5,20.9 103.5,18.5 105.4,18.9 107.3,18.0 109.3,19.4 111.2,14.1 113.1,12.9 115.1,15.4 117.0,16.9" fill="none"></polyline><circle class="spark-end" cx="117.0" cy="16.9" r="2.5"></circle></svg></td>
+<td class="num">1,830.5<span class="unit">USD</span></td>
+<td class="num"><span class="delta-down">-4.7%</span></td>
+<td class="num">55.6</td>
+<td><span class="delta-up">above 50d</span></td>
+<td><span class="chip chip-buy chip-strong">STRONG BUY</span></td>
+<td class="num">+45</td>
+<td class="num">1,572.0</td>
+<td class="num">1,970.9</td>
+</tr>
+<tr title="price above 50-day average (73.67) — uptrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping down; MACD momentum negative; RSI 46 neutral">
+<td class="asset"><strong>SOLUSDT</strong><span class="asset-name">Solana</span></td>
+<td class="num spark-cell"><svg class="spark spark-down" viewBox="0 0 120 32" width="120" height="32" role="img" aria-label="60-day price trend"><title>60-day trend</title><polygon class="spark-area" points="3,29 3.0,6.2 4.9,4.2 6.9,3.0 8.8,6.1 10.7,4.7 12.7,5.2 14.6,5.4 16.5,6.8 18.5,8.1 20.4,8.4 22.3,8.5 24.3,7.8 26.2,8.1 28.1,9.3 30.1,16.6 32.0,19.3 33.9,22.1 35.8,27.5 37.8,29.0 39.7,24.6 41.6,24.2 43.6,26.1 45.5,28.0 47.4,24.1 49.4,24.2 51.3,22.0 53.2,19.6 55.2,16.8 57.1,17.3 59.0,18.8 61.0,21.2 62.9,21.2 64.8,17.6 66.8,18.4 68.7,18.9 70.6,21.2 72.6,22.9 74.5,23.3 76.4,19.0 78.4,20.4 80.3,19.5 82.2,15.6 84.2,17.1 86.1,13.2 88.0,9.9 89.9,8.2 91.9,8.7 93.8,9.0 95.7,8.6 97.7,10.0 99.6,12.8 101.5,12.6 103.5,12.5 105.4,13.9 107.3,13.8 109.3,15.8 111.2,12.8 113.1,13.4 115.1,15.4 117.0,16.2 117.0,29"></polygon><polyline class="spark-line" points="3.0,6.2 4.9,4.2 6.9,3.0 8.8,6.1 10.7,4.7 12.7,5.2 14.6,5.4 16.5,6.8 18.5,8.1 20.4,8.4 22.3,8.5 24.3,7.8 26.2,8.1 28.1,9.3 30.1,16.6 32.0,19.3 33.9,22.1 35.8,27.5 37.8,29.0 39.7,24.6 41.6,24.2 43.6,26.1 45.5,28.0 47.4,24.1 49.4,24.2 51.3,22.0 53.2,19.6 55.2,16.8 57.1,17.3 59.0,18.8 61.0,21.2 62.9,21.2 64.8,17.6 66.8,18.4 68.7,18.9 70.6,21.2 72.6,22.9 74.5,23.3 76.4,19.0 78.4,20.4 80.3,19.5 82.2,15.6 84.2,17.1 86.1,13.2 88.0,9.9 89.9,8.2 91.9,8.7 93.8,9.0 95.7,8.6 97.7,10.0 99.6,12.8 101.5,12.6 103.5,12.5 105.4,13.9 107.3,13.8 109.3,15.8 111.2,12.8 113.1,13.4 115.1,15.4 117.0,16.2" fill="none"></polyline><circle class="spark-end" cx="117.0" cy="16.2" r="2.5"></circle></svg></td>
+<td class="num">74.54<span class="unit">USD</span></td>
+<td class="num"><span class="delta-down">-3.5%</span></td>
+<td class="num">45.6</td>
+<td><span class="delta-up">above 50d</span></td>
+<td><span class="chip chip-hold">HOLD</span></td>
+<td class="num">+15</td>
+<td class="num">68.90</td>
+<td class="num">80.18</td>
+</tr>
+<tr title="price below 50-day average (6.354e+04) — downtrend; 20-day avg below 50-day avg (bearish structure); 50-day average sloping down; MACD momentum positive; RSI 48 neutral">
+<td class="asset"><strong>BTCUSDT</strong><span class="asset-name">Bitcoin</span></td>
+<td class="num spark-cell"><svg class="spark spark-down" viewBox="0 0 120 32" width="120" height="32" role="img" aria-label="60-day price trend"><title>60-day trend</title><polygon class="spark-area" points="3,29 3.0,4.1 4.9,3.1 6.9,3.0 8.8,5.8 10.7,4.2 12.7,3.8 14.6,3.4 16.5,5.3 18.5,7.3 20.4,8.5 22.3,8.7 24.3,8.1 26.2,8.4 28.1,11.5 30.1,17.9 32.0,21.4 33.9,21.8 35.8,25.7 37.8,25.9 39.7,22.6 41.6,22.9 43.6,24.7 45.5,25.0 47.4,22.2 49.4,22.2 51.3,21.0 53.2,19.2 55.2,18.5 57.1,19.3 59.0,20.9 61.0,23.1 62.9,22.3 64.8,21.2 66.8,22.6 68.7,21.6 70.6,23.4 72.6,25.6 74.5,27.4 76.4,27.0 78.4,27.1 80.3,27.7 82.2,26.8 84.2,29.0 86.1,27.1 88.0,25.0 89.9,23.6 91.9,22.8 93.8,22.1 95.7,21.6 97.7,22.5 99.6,24.0 101.5,22.7 103.5,21.4 105.4,21.9 107.3,21.9 109.3,23.9 111.2,20.2 113.1,20.6 115.1,21.9 117.0,23.2 117.0,29"></polygon><polyline class="spark-line" points="3.0,4.1 4.9,3.1 6.9,3.0 8.8,5.8 10.7,4.2 12.7,3.8 14.6,3.4 16.5,5.3 18.5,7.3 20.4,8.5 22.3,8.7 24.3,8.1 26.2,8.4 28.1,11.5 30.1,17.9 32.0,21.4 33.9,21.8 35.8,25.7 37.8,25.9 39.7,22.6 41.6,22.9 43.6,24.7 45.5,25.0 47.4,22.2 49.4,22.2 51.3,21.0 53.2,19.2 55.2,18.5 57.1,19.3 59.0,20.9 61.0,23.1 62.9,22.3 64.8,21.2 66.8,22.6 68.7,21.6 70.6,23.4 72.6,25.6 74.5,27.4 76.4,27.0 78.4,27.1 80.3,27.7 82.2,26.8 84.2,29.0 86.1,27.1 88.0,25.0 89.9,23.6 91.9,22.8 93.8,22.1 95.7,21.6 97.7,22.5 99.6,24.0 101.5,22.7 103.5,21.4 105.4,21.9 107.3,21.9 109.3,23.9 111.2,20.2 113.1,20.6 115.1,21.9 117.0,23.2" fill="none"></polyline><circle class="spark-end" cx="117.0" cy="23.2" r="2.5"></circle></svg></td>
+<td class="num">62,890<span class="unit">USD</span></td>
+<td class="num"><span class="delta-down">-2.8%</span></td>
+<td class="num">47.6</td>
+<td><span class="delta-down">below 50d</span></td>
+<td><span class="chip chip-sell">SELL</span></td>
+<td class="num">-35</td>
+<td class="num">58,625</td>
+<td class="num">66,317</td>
+</tr>
+<tr title="price below 50-day average (591.7) — downtrend; 20-day avg below 50-day avg (bearish structure); 50-day average sloping down; MACD momentum positive; RSI 46 neutral">
+<td class="asset"><strong>BNBUSDT</strong><span class="asset-name">BNB</span></td>
+<td class="num spark-cell"><svg class="spark spark-down" viewBox="0 0 120 32" width="120" height="32" role="img" aria-label="60-day price trend"><title>60-day trend</title><polygon class="spark-area" points="3,29 3.0,14.9 4.9,13.5 6.9,12.1 8.8,13.3 10.7,12.4 12.7,12.4 14.6,11.4 16.5,12.4 18.5,13.6 20.4,15.2 22.3,14.4 24.3,3.0 26.2,4.2 28.1,6.9 30.1,13.3 32.0,17.8 33.9,20.2 35.8,25.1 37.8,24.8 39.7,20.3 41.6,20.6 43.6,21.9 45.5,23.0 47.4,20.1 49.4,20.3 51.3,19.5 53.2,18.4 55.2,18.2 57.1,20.2 59.0,20.7 61.0,24.2 62.9,23.7 64.8,22.7 66.8,23.3 68.7,22.4 70.6,24.2 72.6,26.3 74.5,26.9 76.4,25.8 78.4,27.4 80.3,28.3 82.2,27.0 84.2,29.0 86.1,28.4 88.0,27.1 89.9,24.9 91.9,24.6 93.8,22.5 95.7,23.0 97.7,24.4 99.6,25.7 101.5,25.6 103.5,24.6 105.4,24.8 107.3,24.9 109.3,25.8 111.2,23.7 113.1,23.9 115.1,25.1 117.0,25.5 117.0,29"></polygon><polyline class="spark-line" points="3.0,14.9 4.9,13.5 6.9,12.1 8.8,13.3 10.7,12.4 12.7,12.4 14.6,11.4 16.5,12.4 18.5,13.6 20.4,15.2 22.3,14.4 24.3,3.0 26.2,4.2 28.1,6.9 30.1,13.3 32.0,17.8 33.9,20.2 35.8,25.1 37.8,24.8 39.7,20.3 41.6,20.6 43.6,21.9 45.5,23.0 47.4,20.1 49.4,20.3 51.3,19.5 53.2,18.4 55.2,18.2 57.1,20.2 59.0,20.7 61.0,24.2 62.9,23.7 64.8,22.7 66.8,23.3 68.7,22.4 70.6,24.2 72.6,26.3 74.5,26.9 76.4,25.8 78.4,27.4 80.3,28.3 82.2,27.0 84.2,29.0 86.1,28.4 88.0,27.1 89.9,24.9 91.9,24.6 93.8,22.5 95.7,23.0 97.7,24.4 99.6,25.7 101.5,25.6 103.5,24.6 105.4,24.8 107.3,24.9 109.3,25.8 111.2,23.7 113.1,23.9 115.1,25.1 117.0,25.5" fill="none"></polyline><circle class="spark-end" cx="117.0" cy="25.5" r="2.5"></circle></svg></td>
+<td class="num">569.67<span class="unit">USD</span></td>
+<td class="num"><span class="delta-down">-2.2%</span></td>
+<td class="num">45.6</td>
+<td><span class="delta-down">below 50d</span></td>
+<td><span class="chip chip-sell">SELL</span></td>
+<td class="num">-35</td>
+<td class="num">540.71</td>
+<td class="num">598.63</td>
+</tr>
+<tr title="price below 50-day average (1.137) — downtrend; 20-day avg below 50-day avg (bearish structure); 50-day average sloping down; MACD momentum positive; RSI 45 neutral">
+<td class="asset"><strong>XRPUSDT</strong><span class="asset-name">XRP</span></td>
+<td class="num spark-cell"><svg class="spark spark-down" viewBox="0 0 120 32" width="120" height="32" role="img" aria-label="60-day price trend"><title>60-day trend</title><polygon class="spark-area" points="3,29 3.0,4.0 4.9,3.5 6.9,3.0 8.8,6.1 10.7,4.2 12.7,4.8 14.6,4.8 16.5,6.5 18.5,8.2 20.4,7.5 22.3,6.4 24.3,5.6 26.2,6.2 28.1,9.0 30.1,15.6 32.0,16.5 33.9,19.0 35.8,24.5 37.8,24.8 39.7,20.0 41.6,19.0 43.6,21.4 45.5,24.6 47.4,21.0 49.4,21.8 51.3,20.4 53.2,17.6 55.2,13.6 57.1,15.2 59.0,17.6 61.0,20.7 62.9,21.5 64.8,20.4 66.8,22.4 68.7,22.0 70.6,23.5 72.6,26.4 74.5,28.7 76.4,28.3 78.4,28.4 80.3,28.3 82.2,27.5 84.2,29.0 86.1,28.0 88.0,25.3 89.9,21.6 91.9,19.9 93.8,19.9 95.7,20.8 97.7,23.4 99.6,25.1 101.5,24.9 103.5,24.0 105.4,24.6 107.3,25.4 109.3,26.9 111.2,23.4 113.1,23.3 115.1,25.3 117.0,25.4 117.0,29"></polygon><polyline class="spark-line" points="3.0,4.0 4.9,3.5 6.9,3.0 8.8,6.1 10.7,4.2 12.7,4.8 14.6,4.8 16.5,6.5 18.5,8.2 20.4,7.5 22.3,6.4 24.3,5.6 26.2,6.2 28.1,9.0 30.1,15.6 32.0,16.5 33.9,19.0 35.8,24.5 37.8,24.8 39.7,20.0 41.6,19.0 43.6,21.4 45.5,24.6 47.4,21.0 49.4,21.8 51.3,20.4 53.2,17.6 55.2,13.6 57.1,15.2 59.0,17.6 61.0,20.7 62.9,21.5 64.8,20.4 66.8,22.4 68.7,22.0 70.6,23.5 72.6,26.4 74.5,28.7 76.4,28.3 78.4,28.4 80.3,28.3 82.2,27.5 84.2,29.0 86.1,28.0 88.0,25.3 89.9,21.6 91.9,19.9 93.8,19.9 95.7,20.8 97.7,23.4 99.6,25.1 101.5,24.9 103.5,24.0 105.4,24.6 107.3,25.4 109.3,26.9 111.2,23.4 113.1,23.3 115.1,25.3 117.0,25.4" fill="none"></polyline><circle class="spark-end" cx="117.0" cy="25.4" r="2.5"></circle></svg></td>
+<td class="num">1.086<span class="unit">USD</span></td>
+<td class="num"><span class="delta-down">-2.4%</span></td>
+<td class="num">44.6</td>
+<td><span class="delta-down">below 50d</span></td>
+<td><span class="chip chip-sell">SELL</span></td>
+<td class="num">-35</td>
+<td class="num">1.01</td>
+<td class="num">1.162</td>
+</tr>
+<tr title="price below 50-day average (0.08071) — downtrend; 20-day avg below 50-day avg (bearish structure); 50-day average sloping down; MACD momentum positive; RSI 36 neutral">
+<td class="asset"><strong>DOGEUSDT</strong><span class="asset-name">Dogecoin</span></td>
+<td class="num spark-cell"><svg class="spark spark-down" viewBox="0 0 120 32" width="120" height="32" role="img" aria-label="60-day price trend"><title>60-day trend</title><polygon class="spark-area" points="3,29 3.0,5.1 4.9,4.5 6.9,3.0 8.8,5.6 10.7,5.0 12.7,5.6 14.6,5.7 16.5,6.6 18.5,7.0 20.4,7.7 22.3,7.6 24.3,6.9 26.2,7.0 28.1,6.5 30.1,12.9 32.0,14.0 33.9,16.1 35.8,21.6 37.8,21.3 39.7,17.9 41.6,17.9 43.6,19.1 45.5,20.5 47.4,18.1 49.4,18.1 51.3,16.7 53.2,15.9 55.2,16.5 57.1,17.2 59.0,18.2 61.0,20.0 62.9,20.0 64.8,19.9 66.8,21.0 68.7,20.8 70.6,23.6 72.6,25.7 74.5,26.6 76.4,26.0 78.4,27.0 80.3,28.0 82.2,27.8 84.2,28.8 86.1,28.7 88.0,27.2 89.9,24.6 91.9,24.5 93.8,24.4 95.7,25.3 97.7,27.2 99.6,28.5 101.5,28.2 103.5,27.2 105.4,27.9 107.3,28.3 109.3,28.9 111.2,27.0 113.1,27.3 115.1,28.6 117.0,29.0 117.0,29"></polygon><polyline class="spark-line" points="3.0,5.1 4.9,4.5 6.9,3.0 8.8,5.6 10.7,5.0 12.7,5.6 14.6,5.7 16.5,6.6 18.5,7.0 20.4,7.7 22.3,7.6 24.3,6.9 26.2,7.0 28.1,6.5 30.1,12.9 32.0,14.0 33.9,16.1 35.8,21.6 37.8,21.3 39.7,17.9 41.6,17.9 43.6,19.1 45.5,20.5 47.4,18.1 49.4,18.1 51.3,16.7 53.2,15.9 55.2,16.5 57.1,17.2 59.0,18.2 61.0,20.0 62.9,20.0 64.8,19.9 66.8,21.0 68.7,20.8 70.6,23.6 72.6,25.7 74.5,26.6 76.4,26.0 78.4,27.0 80.3,28.0 82.2,27.8 84.2,28.8 86.1,28.7 88.0,27.2 89.9,24.6 91.9,24.5 93.8,24.4 95.7,25.3 97.7,27.2 99.6,28.5 101.5,28.2 103.5,27.2 105.4,27.9 107.3,28.3 109.3,28.9 111.2,27.0 113.1,27.3 115.1,28.6 117.0,29.0" fill="none"></polyline><circle class="spark-end" cx="117.0" cy="29.0" r="2.5"></circle></svg></td>
+<td class="num">0.07185<span class="unit">USD</span></td>
+<td class="num"><span class="delta-down">-3.1%</span></td>
+<td class="num">36.3</td>
+<td><span class="delta-down">below 50d</span></td>
+<td><span class="chip chip-sell">SELL</span></td>
+<td class="num">-35</td>
+<td class="num">0.06645</td>
+<td class="num">0.07725</td>
+</tr></tbody></table></div></section>
+<section>
+<p class="eyebrow">UAE stocks — execute via Al Ramz</p><p class="section-sub">DFM and ADX listings, prices in AED, sorted by score.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Asset</th><th>60d</th><th class="num">Price</th><th class="num">Change</th>
+<th class="num">RSI</th><th>Trend</th><th>Signal</th><th class="num">Score</th>
+<th class="num">Stop</th><th class="num">Target</th></tr></thead>
+<tbody><tr title="price above 50-day average (17.29) — uptrend; 20-day avg above 50-day avg (bullish structure); MACD momentum positive; RSI 54 neutral; TradingView technical consensus bullish">
+<td class="asset"><strong>FAB</strong><span class="asset-name">First Abu Dhabi Bank</span></td>
+<td class="num spark-cell"></td>
+<td class="num">17.78<span class="unit">AED</span></td>
+<td class="num"><span class="delta-up">+0.8%</span></td>
+<td class="num">54.4</td>
+<td><span class="delta-up">above 50d</span></td>
+<td><span class="chip chip-buy chip-strong">STRONG BUY</span></td>
+<td class="num">+65</td>
+<td class="num">16.68</td>
+<td class="num">18.57</td>
+</tr>
+<tr title="price above 50-day average (19.17) — uptrend; 20-day avg above 50-day avg (bullish structure); MACD momentum positive; RSI 58 neutral; TradingView technical consensus bullish">
+<td class="asset"><strong>EAND</strong><span class="asset-name">e&amp; (Etisalat Group)</span></td>
+<td class="num spark-cell"></td>
+<td class="num">20.12<span class="unit">AED</span></td>
+<td class="num"><span class="delta-down">-0.2%</span></td>
+<td class="num">58.0</td>
+<td><span class="delta-up">above 50d</span></td>
+<td><span class="chip chip-buy chip-strong">STRONG BUY</span></td>
+<td class="num">+65</td>
+<td class="num">18.74</td>
+<td class="num">20.99</td>
+</tr>
+<tr title="price above 50-day average (29.05) — uptrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping up; MACD momentum negative; RSI 49 neutral">
+<td class="asset"><strong>EMIRATESNBD</strong><span class="asset-name">Emirates NBD</span></td>
+<td class="num spark-cell"><svg class="spark spark-up" viewBox="0 0 120 32" width="120" height="32" role="img" aria-label="60-day price trend"><title>60-day trend</title><polygon class="spark-area" points="3,29 3.0,20.9 4.9,21.1 6.9,23.4 8.8,10.4 10.7,14.9 12.7,13.9 14.6,13.5 16.5,10.2 18.5,12.2 20.4,12.6 22.3,12.6 24.3,15.0 26.2,15.2 28.1,11.9 30.1,14.6 32.0,15.7 33.9,17.9 35.8,20.2 37.8,19.1 39.7,14.7 41.6,13.9 43.6,17.8 45.5,21.2 47.4,22.3 49.4,23.1 51.3,25.7 53.2,23.7 55.2,24.4 57.1,24.0 59.0,23.9 61.0,23.9 62.9,23.9 64.8,23.9 66.8,24.9 68.7,26.9 70.6,26.6 72.6,28.1 74.5,29.0 76.4,26.7 78.4,28.3 80.3,28.5 82.2,13.7 84.2,12.5 86.1,3.0 88.0,6.6 89.9,9.9 91.9,10.0 93.8,11.8 95.7,13.1 97.7,15.4 99.6,13.4 101.5,12.6 103.5,9.1 105.4,9.2 107.3,9.1 109.3,9.6 111.2,10.6 113.1,14.2 115.1,13.8 117.0,14.9 117.0,29"></polygon><polyline class="spark-line" points="3.0,20.9 4.9,21.1 6.9,23.4 8.8,10.4 10.7,14.9 12.7,13.9 14.6,13.5 16.5,10.2 18.5,12.2 20.4,12.6 22.3,12.6 24.3,15.0 26.2,15.2 28.1,11.9 30.1,14.6 32.0,15.7 33.9,17.9 35.8,20.2 37.8,19.1 39.7,14.7 41.6,13.9 43.6,17.8 45.5,21.2 47.4,22.3 49.4,23.1 51.3,25.7 53.2,23.7 55.2,24.4 57.1,24.0 59.0,23.9 61.0,23.9 62.9,23.9 64.8,23.9 66.8,24.9 68.7,26.9 70.6,26.6 72.6,28.1 74.5,29.0 76.4,26.7 78.4,28.3 80.3,28.5 82.2,13.7 84.2,12.5 86.1,3.0 88.0,6.6 89.9,9.9 91.9,10.0 93.8,11.8 95.7,13.1 97.7,15.4 99.6,13.4 101.5,12.6 103.5,9.1 105.4,9.2 107.3,9.1 109.3,9.6 111.2,10.6 113.1,14.2 115.1,13.8 117.0,14.9" fill="none"></polyline><circle class="spark-end" cx="117.0" cy="14.9" r="2.5"></circle></svg></td>
+<td class="num">29.68<span class="unit">AED</span></td>
+<td class="num"><span class="delta-down">-0.9%</span></td>
+<td class="num">49.1</td>
+<td><span class="delta-up">above 50d</span></td>
+<td><span class="chip chip-buy">BUY</span></td>
+<td class="num">+35</td>
+<td class="num">28.00</td>
+<td class="num">31.36</td>
+</tr>
+<tr title="price above 50-day average (1.102) — uptrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping up; MACD momentum negative; RSI 46 neutral">
+<td class="asset"><strong>TALABAT</strong><span class="asset-name">Talabat Holding</span></td>
+<td class="num spark-cell"><svg class="spark spark-down" viewBox="0 0 120 32" width="120" height="32" role="img" aria-label="60-day price trend"><title>60-day trend</title><polygon class="spark-area" points="3,29 3.0,29.0 4.9,28.8 6.9,29.0 8.8,28.5 10.7,29.0 12.7,28.7 14.6,26.9 16.5,25.7 18.5,25.4 20.4,24.7 22.3,24.7 24.3,25.3 26.2,25.5 28.1,25.2 30.1,23.2 32.0,22.7 33.9,23.2 35.8,21.7 37.8,22.2 39.7,20.9 41.6,21.3 43.6,22.7 45.5,23.1 47.4,25.2 49.4,23.7 51.3,24.3 53.2,22.6 55.2,20.4 57.1,19.8 59.0,13.1 61.0,13.1 62.9,13.1 64.8,13.1 66.8,7.3 68.7,6.4 70.6,9.2 72.6,5.4 74.5,6.4 76.4,4.4 78.4,3.0 80.3,3.0 82.2,3.0 84.2,3.5 86.1,4.0 88.0,5.9 89.9,6.4 91.9,5.9 93.8,6.4 95.7,7.3 97.7,6.8 99.6,8.8 101.5,5.9 103.5,5.4 105.4,5.9 107.3,8.8 109.3,7.8 111.2,8.8 113.1,9.2 115.1,8.8 117.0,10.2 117.0,29"></polygon><polyline class="spark-line" points="3.0,29.0 4.9,28.8 6.9,29.0 8.8,28.5 10.7,29.0 12.7,28.7 14.6,26.9 16.5,25.7 18.5,25.4 20.4,24.7 22.3,24.7 24.3,25.3 26.2,25.5 28.1,25.2 30.1,23.2 32.0,22.7 33.9,23.2 35.8,21.7 37.8,22.2 39.7,20.9 41.6,21.3 43.6,22.7 45.5,23.1 47.4,25.2 49.4,23.7 51.3,24.3 53.2,22.6 55.2,20.4 57.1,19.8 59.0,13.1 61.0,13.1 62.9,13.1 64.8,13.1 66.8,7.3 68.7,6.4 70.6,9.2 72.6,5.4 74.5,6.4 76.4,4.4 78.4,3.0 80.3,3.0 82.2,3.0 84.2,3.5 86.1,4.0 88.0,5.9 89.9,6.4 91.9,5.9 93.8,6.4 95.7,7.3 97.7,6.8 99.6,8.8 101.5,5.9 103.5,5.4 105.4,5.9 107.3,8.8 109.3,7.8 111.2,8.8 113.1,9.2 115.1,8.8 117.0,10.2" fill="none"></polyline><circle class="spark-end" cx="117.0" cy="10.2" r="2.5"></circle></svg></td>
+<td class="num">1.16<span class="unit">AED</span></td>
+<td class="num"><span class="delta-down">-2.5%</span></td>
+<td class="num">46.2</td>
+<td><span class="delta-up">above 50d</span></td>
+<td><span class="chip chip-buy">BUY</span></td>
+<td class="num">+35</td>
+<td class="num">1.079</td>
+<td class="num">1.241</td>
+</tr>
+<tr title="price above 50-day average (5.143) — uptrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping up; MACD momentum negative; RSI 45 neutral">
+<td class="asset"><strong>AIRARABIA</strong><span class="asset-name">Air Arabia</span></td>
+<td class="num spark-cell"><svg class="spark spark-up" viewBox="0 0 120 32" width="120" height="32" role="img" aria-label="60-day price trend"><title>60-day trend</title><polygon class="spark-area" points="3,29 3.0,29.0 4.9,28.2 6.9,28.4 8.8,22.3 10.7,21.1 12.7,20.4 14.6,18.7 16.5,14.4 18.5,11.4 20.4,12.1 22.3,12.4 24.3,13.7 26.2,12.8 28.1,12.7 30.1,13.3 32.0,13.0 33.9,16.2 35.8,15.1 37.8,17.6 39.7,13.4 41.6,13.0 43.6,14.5 45.5,15.8 47.4,15.5 49.4,16.2 51.3,19.9 53.2,19.3 55.2,20.1 57.1,18.6 59.0,17.2 61.0,17.2 62.9,17.2 64.8,17.2 66.8,17.8 68.7,19.3 70.6,19.3 72.6,19.6 74.5,20.3 76.4,19.7 78.4,18.7 80.3,17.8 82.2,10.0 84.2,7.6 86.1,3.0 88.0,4.3 89.9,6.1 91.9,7.1 93.8,7.1 95.7,8.6 97.7,9.2 99.6,8.5 101.5,9.6 103.5,8.2 105.4,7.1 107.3,8.8 109.3,9.2 111.2,10.0 113.1,11.6 115.1,11.3 117.0,13.0 117.0,29"></polygon><polyline class="spark-line" points="3.0,29.0 4.9,28.2 6.9,28.4 8.8,22.3 10.7,21.1 12.7,20.4 14.6,18.7 16.5,14.4 18.5,11.4 20.4,12.1 22.3,12.4 24.3,13.7 26.2,12.8 28.1,12.7 30.1,13.3 32.0,13.0 33.9,16.2 35.8,15.1 37.8,17.6 39.7,13.4 41.6,13.0 43.6,14.5 45.5,15.8 47.4,15.5 49.4,16.2 51.3,19.9 53.2,19.3 55.2,20.1 57.1,18.6 59.0,17.2 61.0,17.2 62.9,17.2 64.8,17.2 66.8,17.8 68.7,19.3 70.6,19.3 72.6,19.6 74.5,20.3 76.4,19.7 78.4,18.7 80.3,17.8 82.2,10.0 84.2,7.6 86.1,3.0 88.0,4.3 89.9,6.1 91.9,7.1 93.8,7.1 95.7,8.6 97.7,9.2 99.6,8.5 101.5,9.6 103.5,8.2 105.4,7.1 107.3,8.8 109.3,9.2 111.2,10.0 113.1,11.6 115.1,11.3 117.0,13.0" fill="none"></polyline><circle class="spark-end" cx="117.0" cy="13.0" r="2.5"></circle></svg></td>
+<td class="num">5.18<span class="unit">AED</span></td>
+<td class="num"><span class="delta-down">-2.3%</span></td>
+<td class="num">45.0</td>
+<td><span class="delta-up">above 50d</span></td>
+<td><span class="chip chip-buy">BUY</span></td>
+<td class="num">+35</td>
+<td class="num">4.919</td>
+<td class="num">5.441</td>
+</tr>
+<tr title="price above 50-day average (2.471) — uptrend; 20-day avg above 50-day avg (bullish structure); MACD momentum negative; RSI 64 neutral; TradingView technical consensus bullish">
+<td class="asset"><strong>TAQA</strong><span class="asset-name">Abu Dhabi National Energy (TAQA)</span></td>
+<td class="num spark-cell"></td>
+<td class="num">2.65<span class="unit">AED</span></td>
+<td class="num"><span class="delta-up">+0.0%</span></td>
+<td class="num">63.9</td>
+<td><span class="delta-up">above 50d</span></td>
+<td><span class="chip chip-buy">BUY</span></td>
+<td class="num">+35</td>
+<td class="num">2.582</td>
+<td class="num">2.718</td>
+</tr>
+<tr title="price above 50-day average (14.14) — uptrend; 20-day avg above 50-day avg (bullish structure); MACD momentum negative; RSI 44 neutral">
+<td class="asset"><strong>ADCB</strong><span class="asset-name">Abu Dhabi Commercial Bank</span></td>
+<td class="num spark-cell"></td>
+<td class="num">14.14<span class="unit">AED</span></td>
+<td class="num"><span class="delta-down">-0.6%</span></td>
+<td class="num">43.5</td>
+<td><span class="delta-up">above 50d</span></td>
+<td><span class="chip chip-buy">BUY</span></td>
+<td class="num">+25</td>
+<td class="num">13.45</td>
+<td class="num">14.83</td>
+</tr>
+<tr title="price above 50-day average (20.56) — uptrend; 20-day avg above 50-day avg (bullish structure); MACD momentum negative; RSI 48 neutral; TradingView technical consensus bearish">
+<td class="asset"><strong>ADIB</strong><span class="asset-name">Abu Dhabi Islamic Bank</span></td>
+<td class="num spark-cell"></td>
+<td class="num">21.02<span class="unit">AED</span></td>
+<td class="num"><span class="delta-down">-0.2%</span></td>
+<td class="num">47.7</td>
+<td><span class="delta-up">above 50d</span></td>
+<td><span class="chip chip-hold">HOLD</span></td>
+<td class="num">+15</td>
+<td class="num">19.96</td>
+<td class="num">22.08</td>
+</tr>
+<tr title="price below 50-day average (7.422) — downtrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping up; MACD momentum negative; RSI 45 neutral">
+<td class="asset"><strong>DIB</strong><span class="asset-name">Dubai Islamic Bank</span></td>
+<td class="num spark-cell"><svg class="spark spark-down" viewBox="0 0 120 32" width="120" height="32" role="img" aria-label="60-day price trend"><title>60-day trend</title><polygon class="spark-area" points="3,29 3.0,23.2 4.9,19.1 6.9,18.5 8.8,5.3 10.7,5.6 12.7,20.8 14.6,21.1 16.5,17.0 18.5,17.6 20.4,22.6 22.3,22.0 24.3,23.2 26.2,29.0 28.1,25.2 30.1,24.3 32.0,27.0 33.9,27.5 35.8,25.8 37.8,25.8 39.7,19.7 41.6,18.5 43.6,25.8 45.5,24.0 47.4,26.4 49.4,25.2 51.3,25.5 53.2,20.5 55.2,21.7 57.1,22.3 59.0,19.9 61.0,19.9 62.9,19.9 64.8,19.9 66.8,17.6 68.7,20.2 70.6,25.5 72.6,23.7 74.5,20.5 76.4,20.8 78.4,22.3 80.3,24.0 82.2,9.4 84.2,8.8 86.1,3.0 88.0,10.0 89.9,10.9 91.9,13.2 93.8,17.6 95.7,17.0 97.7,18.5 99.6,14.4 101.5,13.5 103.5,11.8 105.4,12.6 107.3,14.7 109.3,15.9 111.2,11.5 113.1,16.4 115.1,14.7 117.0,19.9 117.0,29"></polygon><polyline class="spark-line" points="3.0,23.2 4.9,19.1 6.9,18.5 8.8,5.3 10.7,5.6 12.7,20.8 14.6,21.1 16.5,17.0 18.5,17.6 20.4,22.6 22.3,22.0 24.3,23.2 26.2,29.0 28.1,25.2 30.1,24.3 32.0,27.0 33.9,27.5 35.8,25.8 37.8,25.8 39.7,19.7 41.6,18.5 43.6,25.8 45.5,24.0 47.4,26.4 49.4,25.2 51.3,25.5 53.2,20.5 55.2,21.7 57.1,22.3 59.0,19.9 61.0,19.9 62.9,19.9 64.8,19.9 66.8,17.6 68.7,20.2 70.6,25.5 72.6,23.7 74.5,20.5 76.4,20.8 78.4,22.3 80.3,24.0 82.2,9.4 84.2,8.8 86.1,3.0 88.0,10.0 89.9,10.9 91.9,13.2 93.8,17.6 95.7,17.0 97.7,18.5 99.6,14.4 101.5,13.5 103.5,11.8 105.4,12.6 107.3,14.7 109.3,15.9 111.2,11.5 113.1,16.4 115.1,14.7 117.0,19.9" fill="none"></polyline><circle class="spark-end" cx="117.0" cy="19.9" r="2.5"></circle></svg></td>
+<td class="num">7.4<span class="unit">AED</span></td>
+<td class="num"><span class="delta-down">-2.4%</span></td>
+<td class="num">44.7</td>
+<td><span class="delta-down">below 50d</span></td>
+<td><span class="chip chip-hold">HOLD</span></td>
+<td class="num">-15</td>
+<td class="num">7.084</td>
+<td class="num">7.716</td>
+</tr>
+<tr title="price below 50-day average (5.67) — downtrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping up; MACD momentum negative; RSI 42 neutral">
+<td class="asset"><strong>SALIK</strong><span class="asset-name">Salik Company</span></td>
+<td class="num spark-cell"><svg class="spark spark-down" viewBox="0 0 120 32" width="120" height="32" role="img" aria-label="60-day price trend"><title>60-day trend</title><polygon class="spark-area" points="3,29 3.0,27.8 4.9,26.4 6.9,29.0 8.8,16.2 10.7,18.4 12.7,16.7 14.6,12.5 16.5,10.1 18.5,8.0 20.4,12.5 22.3,13.2 24.3,14.6 26.2,15.8 28.1,14.6 30.1,13.6 32.0,11.0 33.9,14.8 35.8,16.7 37.8,17.2 39.7,12.0 41.6,6.8 43.6,11.5 45.5,13.6 47.4,11.0 49.4,13.2 51.3,17.7 53.2,17.2 55.2,18.4 57.1,17.2 59.0,20.7 61.0,20.7 62.9,20.7 64.8,20.7 66.8,17.2 68.7,14.6 70.6,15.5 72.6,14.3 74.5,13.6 76.4,11.7 78.4,12.2 80.3,14.8 82.2,8.7 84.2,6.5 86.1,3.0 88.0,8.0 89.9,10.1 91.9,5.4 93.8,7.7 95.7,8.2 97.7,8.2 99.6,7.0 101.5,10.1 103.5,8.2 105.4,8.4 107.3,12.2 109.3,14.8 111.2,14.8 113.1,16.0 115.1,15.5 117.0,16.0 117.0,29"></polygon><polyline class="spark-line" points="3.0,27.8 4.9,26.4 6.9,29.0 8.8,16.2 10.7,18.4 12.7,16.7 14.6,12.5 16.5,10.1 18.5,8.0 20.4,12.5 22.3,13.2 24.3,14.6 26.2,15.8 28.1,14.6 30.1,13.6 32.0,11.0 33.9,14.8 35.8,16.7 37.8,17.2 39.7,12.0 41.6,6.8 43.6,11.5 45.5,13.6 47.4,11.0 49.4,13.2 51.3,17.7 53.2,17.2 55.2,18.4 57.1,17.2 59.0,20.7 61.0,20.7 62.9,20.7 64.8,20.7 66.8,17.2 68.7,14.6 70.6,15.5 72.6,14.3 74.5,13.6 76.4,11.7 78.4,12.2 80.3,14.8 82.2,8.7 84.2,6.5 86.1,3.0 88.0,8.0 89.9,10.1 91.9,5.4 93.8,7.7 95.7,8.2 97.7,8.2 99.6,7.0 101.5,10.1 103.5,8.2 105.4,8.4 107.3,12.2 109.3,14.8 111.2,14.8 113.1,16.0 115.1,15.5 117.0,16.0" fill="none"></polyline><circle class="spark-end" cx="117.0" cy="16.0" r="2.5"></circle></svg></td>
+<td class="num">5.55<span class="unit">AED</span></td>
+<td class="num"><span class="delta-down">-0.4%</span></td>
+<td class="num">42.0</td>
+<td><span class="delta-down">below 50d</span></td>
+<td><span class="chip chip-hold">HOLD</span></td>
+<td class="num">-15</td>
+<td class="num">5.301</td>
+<td class="num">5.799</td>
+</tr>
+<tr title="price below 50-day average (3.377) — downtrend; 20-day avg above 50-day avg (bullish structure); MACD momentum negative; RSI 35 neutral; price below lower Bollinger band (stretched down); TradingView technical consensus bearish">
+<td class="asset"><strong>ADNOCGAS</strong><span class="asset-name">ADNOC Gas</span></td>
+<td class="num spark-cell"></td>
+<td class="num">3.31<span class="unit">AED</span></td>
+<td class="num"><span class="delta-up">+0.3%</span></td>
+<td class="num">35.1</td>
+<td><span class="delta-down">below 50d</span></td>
+<td><span class="chip chip-sell">SELL</span></td>
+<td class="num">-25</td>
+<td class="num">3.21</td>
+<td class="num">3.41</td>
+</tr>
+<tr title="price below 50-day average (11.88) — downtrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping down; MACD momentum negative; RSI 39 neutral">
+<td class="asset"><strong>EMAAR</strong><span class="asset-name">Emaar Properties</span></td>
+<td class="num spark-cell"><svg class="spark spark-down" viewBox="0 0 120 32" width="120" height="32" role="img" aria-label="60-day price trend"><title>60-day trend</title><polygon class="spark-area" points="3,29 3.0,10.8 4.9,22.0 6.9,27.1 8.8,10.5 10.7,16.1 12.7,18.5 14.6,14.9 16.5,10.5 18.5,6.7 20.4,7.5 22.3,7.0 24.3,10.3 26.2,10.5 28.1,9.1 30.1,8.9 32.0,11.0 33.9,17.3 35.8,14.9 37.8,15.4 39.7,9.3 41.6,10.0 43.6,13.3 45.5,16.4 47.4,16.8 49.4,17.5 51.3,23.8 53.2,23.1 55.2,24.5 57.1,23.1 59.0,17.5 61.0,17.5 62.9,17.5 64.8,17.5 66.8,20.1 68.7,21.0 70.6,24.3 72.6,22.9 74.5,23.8 76.4,24.1 78.4,26.0 80.3,29.0 82.2,11.4 84.2,6.5 86.1,3.0 88.0,4.4 89.9,7.9 91.9,8.4 93.8,12.6 95.7,13.3 97.7,15.9 99.6,14.5 101.5,15.6 103.5,13.5 105.4,14.2 107.3,15.6 109.3,16.6 111.2,19.6 113.1,20.8 115.1,20.3 117.0,22.4 117.0,29"></polygon><polyline class="spark-line" points="3.0,10.8 4.9,22.0 6.9,27.1 8.8,10.5 10.7,16.1 12.7,18.5 14.6,14.9 16.5,10.5 18.5,6.7 20.4,7.5 22.3,7.0 24.3,10.3 26.2,10.5 28.1,9.1 30.1,8.9 32.0,11.0 33.9,17.3 35.8,14.9 37.8,15.4 39.7,9.3 41.6,10.0 43.6,13.3 45.5,16.4 47.4,16.8 49.4,17.5 51.3,23.8 53.2,23.1 55.2,24.5 57.1,23.1 59.0,17.5 61.0,17.5 62.9,17.5 64.8,17.5 66.8,20.1 68.7,21.0 70.6,24.3 72.6,22.9 74.5,23.8 76.4,24.1 78.4,26.0 80.3,29.0 82.2,11.4 84.2,6.5 86.1,3.0 88.0,4.4 89.9,7.9 91.9,8.4 93.8,12.6 95.7,13.3 97.7,15.9 99.6,14.5 101.5,15.6 103.5,13.5 105.4,14.2 107.3,15.6 109.3,16.6 111.2,19.6 113.1,20.8 115.1,20.3 117.0,22.4" fill="none"></polyline><circle class="spark-end" cx="117.0" cy="22.4" r="2.5"></circle></svg></td>
+<td class="num">11.36<span class="unit">AED</span></td>
+<td class="num"><span class="delta-down">-1.6%</span></td>
+<td class="num">39.2</td>
+<td><span class="delta-down">below 50d</span></td>
+<td><span class="chip chip-sell">SELL</span></td>
+<td class="num">-35</td>
+<td class="num">10.79</td>
+<td class="num">11.93</td>
+</tr>
+<tr title="price below 50-day average (2.703) — downtrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping down; MACD momentum negative; RSI 43 neutral">
+<td class="asset"><strong>DEWA</strong><span class="asset-name">Dubai Electricity &amp; Water Authority</span></td>
+<td class="num spark-cell"><svg class="spark spark-down" viewBox="0 0 120 32" width="120" height="32" role="img" aria-label="60-day price trend"><title>60-day trend</title><polygon class="spark-area" points="3,29 3.0,20.1 4.9,19.3 6.9,22.3 8.8,6.7 10.7,9.7 12.7,14.1 14.6,16.4 16.5,11.9 18.5,14.1 20.4,14.9 22.3,16.4 24.3,20.1 26.2,19.3 28.1,19.3 30.1,19.3 32.0,19.3 33.9,21.6 35.8,17.1 37.8,17.9 39.7,15.6 41.6,14.9 43.6,17.9 45.5,11.9 47.4,13.4 49.4,17.1 51.3,20.8 53.2,23.1 55.2,23.8 57.1,23.1 59.0,24.5 61.0,24.5 62.9,24.5 64.8,24.5 66.8,25.3 68.7,28.3 70.6,29.0 72.6,27.5 74.5,26.0 76.4,22.3 78.4,20.8 80.3,21.6 82.2,14.1 84.2,11.9 86.1,8.9 88.0,5.2 89.9,6.7 91.9,3.0 93.8,11.9 95.7,11.9 97.7,11.9 99.6,13.4 101.5,14.1 103.5,11.2 105.4,9.7 107.3,13.4 109.3,11.9 111.2,14.1 113.1,17.1 115.1,17.1 117.0,19.3 117.0,29"></polygon><polyline class="spark-line" points="3.0,20.1 4.9,19.3 6.9,22.3 8.8,6.7 10.7,9.7 12.7,14.1 14.6,16.4 16.5,11.9 18.5,14.1 20.4,14.9 22.3,16.4 24.3,20.1 26.2,19.3 28.1,19.3 30.1,19.3 32.0,19.3 33.9,21.6 35.8,17.1 37.8,17.9 39.7,15.6 41.6,14.9 43.6,17.9 45.5,11.9 47.4,13.4 49.4,17.1 51.3,20.8 53.2,23.1 55.2,23.8 57.1,23.1 59.0,24.5 61.0,24.5 62.9,24.5 64.8,24.5 66.8,25.3 68.7,28.3 70.6,29.0 72.6,27.5 74.5,26.0 76.4,22.3 78.4,20.8 80.3,21.6 82.2,14.1 84.2,11.9 86.1,8.9 88.0,5.2 89.9,6.7 91.9,3.0 93.8,11.9 95.7,11.9 97.7,11.9 99.6,13.4 101.5,14.1 103.5,11.2 105.4,9.7 107.3,13.4 109.3,11.9 111.2,14.1 113.1,17.1 115.1,17.1 117.0,19.3" fill="none"></polyline><circle class="spark-end" cx="117.0" cy="19.3" r="2.5"></circle></svg></td>
+<td class="num">2.68<span class="unit">AED</span></td>
+<td class="num"><span class="delta-down">-1.1%</span></td>
+<td class="num">42.6</td>
+<td><span class="delta-down">below 50d</span></td>
+<td><span class="chip chip-sell">SELL</span></td>
+<td class="num">-35</td>
+<td class="num">2.57</td>
+<td class="num">2.79</td>
+</tr>
+<tr title="price below 50-day average (7.949) — downtrend; 20-day avg above 50-day avg (bullish structure); MACD momentum negative; RSI 38 neutral; TradingView technical consensus bearish">
+<td class="asset"><strong>ALDAR</strong><span class="asset-name">Aldar Properties</span></td>
+<td class="num spark-cell"></td>
+<td class="num">7.69<span class="unit">AED</span></td>
+<td class="num"><span class="delta-down">-1.0%</span></td>
+<td class="num">37.7</td>
+<td><span class="delta-down">below 50d</span></td>
+<td><span class="chip chip-sell">SELL</span></td>
+<td class="num">-35</td>
+<td class="num">7.258</td>
+<td class="num">8.122</td>
+</tr>
+<tr title="price below 50-day average (386.3) — downtrend; 20-day avg below 50-day avg (bearish structure); MACD momentum negative; RSI 34 neutral; TradingView technical consensus bearish">
+<td class="asset"><strong>IHC</strong><span class="asset-name">International Holding Company</span></td>
+<td class="num spark-cell"></td>
+<td class="num">379.60<span class="unit">AED</span></td>
+<td class="num"><span class="delta-up">+0.0%</span></td>
+<td class="num">34.3</td>
+<td><span class="delta-down">below 50d</span></td>
+<td><span class="chip chip-sell chip-strong">STRONG SELL</span></td>
+<td class="num">-65</td>
+<td class="num">375.84</td>
+<td class="num">383.36</td>
+</tr></tbody></table></div></section>
+<section><p class="eyebrow">Watching</p><ul class="watch"><li><strong>SOLUSDT</strong> — price above 50-day average (73.67) — uptrend; turns interesting nearer 71.38 support or on a break of 82.34.</li><li><strong>DIB</strong> — price below 50-day average (7.422) — downtrend; turns interesting nearer 7.4 support or on a break of 7.98.</li><li><strong>SALIK</strong> — price below 50-day average (5.67) — downtrend; turns interesting nearer 5.55 support or on a break of 6.1.</li><li><strong>ADIB</strong> — price above 50-day average (20.56) — uptrend; turns interesting nearer 20.12 support or on a break of 22.30.</li></ul></section>
+<section><p class="eyebrow">Alerts — latest cycle</p><ul class="alerts"><li><span class="chip chip-hold">info</span> ETHUSDT moved -4.7% in the last day (now 1830.48 USD)</li><li><span class="chip chip-hold">info</span> TALABAT moved -2.5% in the last day (now 1.16 AED)</li><li><span class="chip chip-sell">actionable</span> ADCB: STRONG BUY -&gt; BUY (score 45 -&gt; 25)</li><li><span class="chip chip-sell">actionable</span> EAND: BUY -&gt; STRONG BUY (score 35 -&gt; 65)</li></ul></section>
+
+<footer>
+<p class="eyebrow">Method &amp; risk</p>
+<p>Signals are a rules-based technical screen: trend vs the 20/50-day averages, MACD momentum,
+RSI extremes and Bollinger stretch, combined into a −100…+100 score. Stops are 2×ATR(14) capped
+at the 20-day swing low; targets are 2× and 4×ATR. Size positions so that a stop-out costs at most
+1–2% of your capital.</p>
+<p><strong>This is educational analysis, not licensed financial advice.</strong> Markets can and do
+move against any signal. Execution happens manually in your own Binance and Al Ramz accounts —
+never trade money you cannot afford to lose.</p>
+</footer>
+</main>

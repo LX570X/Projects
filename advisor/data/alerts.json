@@ -1,65 +1,29 @@
 {
- "generated_at_utc": "2026-07-17T07:04:34+00:00",
+ "generated_at_utc": "2026-07-17T07:09:32+00:00",
  "alerts": [
   {
    "ticker": "ETHUSDT",
    "severity": "info",
    "type": "big_move",
-   "msg": "ETHUSDT moved -4.6% in the last day (now 1832.35 USD)"
-  },
-  {
-   "ticker": "EMAAR",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "EMAAR moved -21.9% in the last day (now 11.36 AED)"
-  },
-  {
-   "ticker": "EMIRATESNBD",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "EMIRATESNBD moved +12.3% in the last day (now 29.64 AED)"
-  },
-  {
-   "ticker": "DIB",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "DIB moved -22.2% in the last day (now 7.37 AED)"
-  },
-  {
-   "ticker": "SALIK",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "SALIK moved -7.0% in the last day (now 5.56 AED)"
-  },
-  {
-   "ticker": "DEWA",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "DEWA moved -4.6% in the last day (now 2.69 AED)"
+   "msg": "ETHUSDT moved -4.7% in the last day (now 1830.48 USD)"
   },
   {
    "ticker": "TALABAT",
    "severity": "info",
    "type": "big_move",
-   "msg": "TALABAT moved -14.7% in the last day (now 1.16 AED)"
-  },
-  {
-   "ticker": "AIRARABIA",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "AIRARABIA moved +46.2% in the last day (now 5.19 AED)"
+   "msg": "TALABAT moved -2.5% in the last day (now 1.16 AED)"
   },
   {
    "ticker": "ADCB",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "ADCB moved +50738353181.9% in the last day (now 7.88474e+09 AED)"
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ADCB: STRONG BUY -> BUY (score 45 -> 25)"
   },
   {
    "ticker": "EAND",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "EAND moved +286898408242.5% in the last day (now 5.22729e+10 AED)"
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "EAND: BUY -> STRONG BUY (score 35 -> 65)"
   }
  ]
 }
