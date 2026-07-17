@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-07-17T11:24:21+00:00",
+ "generated_at_utc": "2026-07-17T12:24:12+00:00",
  "signals": [
   {
    "ticker": "BTCUSDT",
@@ -8,32 +8,35 @@
    "kind": "crypto",
    "currency": "USD",
    "source": "binance",
-   "last": 63116.67,
-   "change24h_pct": -1.764,
+   "last": 63257.99,
+   "change24h_pct": -1.426,
    "score": -35,
    "signal": "SELL",
    "reasons": [
-    "price below 50-day average (6.355e+04) \u2014 downtrend",
+    "price below 50-day average (6.376e+04) \u2014 downtrend",
     "20-day avg below 50-day avg (bearish structure)",
     "50-day average sloping down",
     "MACD momentum positive",
-    "RSI 48 neutral"
+    "RSI 49 neutral"
    ],
-   "rsi": 48.4,
-   "sma20": 62836.06900000002,
-   "sma50": 63548.881599999986,
-   "macd_hist": 205.66556326763458,
+   "rsi": 49.0,
+   "sma20": 62666.64500000002,
+   "sma50": 63758.78739999999,
+   "macd_hist": 297.57565490604446,
    "macd_cross": null,
-   "pct_b": 0.544,
+   "pct_b": 0.585,
    "atr14": 1717.0414285714292,
    "stop_suggest": 58624.71,
-   "target1": 66550.75285714286,
-   "target2": 69984.83571428571,
+   "target1": 66692.07285714286,
+   "target2": 70126.15571428572,
    "hi52": 96951.78,
    "lo52": 58624.71,
    "hi20": 65043.98,
    "lo20": 58624.71,
-   "off_52w_high_pct": -34.9
+   "off_52w_high_pct": -34.75,
+   "prev_band": "SELL",
+   "prev_trend_state": null,
+   "trend_state": "below"
   },
   {
    "ticker": "ETHUSDT",
@@ -42,32 +45,35 @@
    "kind": "crypto",
    "currency": "USD",
    "source": "binance",
-   "last": 1835.58,
-   "change24h_pct": -2.791,
+   "last": 1836.97,
+   "change24h_pct": -2.309,
    "score": 45,
    "signal": "STRONG BUY",
    "reasons": [
-    "price above 50-day average (1739) \u2014 uptrend",
+    "price above 50-day average (1742) \u2014 uptrend",
     "20-day avg above 50-day avg (bullish structure)",
     "50-day average sloping down",
     "MACD momentum positive",
     "RSI 56 neutral"
    ],
-   "rsi": 56.1,
-   "sma20": 1769.6600000000024,
-   "sma50": 1738.6981999999991,
-   "macd_hist": 13.030877590474663,
+   "rsi": 56.3,
+   "sma20": 1756.5470000000023,
+   "sma50": 1742.304599999999,
+   "macd_hist": 17.234280390799768,
    "macd_cross": null,
-   "pct_b": 0.688,
+   "pct_b": 0.709,
    "atr14": 70.21071428571429,
-   "stop_suggest": 1572.01,
-   "target1": 1976.0014285714285,
-   "target2": 2116.422857142857,
+   "stop_suggest": 1571.96,
+   "target1": 1977.3914285714286,
+   "target2": 2117.812857142857,
    "hi52": 3354.92,
    "lo52": 1567.84,
    "hi20": 1917.86,
-   "lo20": 1572.01,
-   "off_52w_high_pct": -45.29
+   "lo20": 1571.96,
+   "off_52w_high_pct": -45.25,
+   "prev_band": "STRONG BUY",
+   "prev_trend_state": null,
+   "trend_state": "above"
   },
   {
    "ticker": "BNBUSDT",
@@ -76,32 +82,35 @@
    "kind": "crypto",
    "currency": "USD",
    "source": "binance",
-   "last": 563.64,
-   "change24h_pct": -2.368,
+   "last": 563.85,
+   "change24h_pct": -2.369,
    "score": -35,
    "signal": "SELL",
    "reasons": [
-    "price below 50-day average (590) \u2014 downtrend",
+    "price below 50-day average (591.6) \u2014 downtrend",
     "20-day avg below 50-day avg (bearish structure)",
     "50-day average sloping down",
     "MACD momentum positive",
     "RSI 43 neutral"
    ],
-   "rsi": 43.0,
-   "sma20": 570.4159999999995,
-   "sma50": 590.0327999999995,
-   "macd_hist": 0.7996490750246696,
+   "rsi": 43.1,
+   "sma20": 569.7984999999995,
+   "sma50": 591.6263999999995,
+   "macd_hist": 1.4457410068517298,
    "macd_cross": null,
-   "pct_b": 0.343,
+   "pct_b": 0.37,
    "atr14": 14.793571428571422,
-   "stop_suggest": 534.0528571428572,
-   "target1": 593.2271428571428,
-   "target2": 622.8142857142857,
+   "stop_suggest": 534.2628571428572,
+   "target1": 593.4371428571428,
+   "target2": 623.0242857142857,
    "hi52": 948.47,
    "lo52": 546.52,
    "hi20": 589.87,
    "lo20": 546.52,
-   "off_52w_high_pct": -40.57
+   "off_52w_high_pct": -40.55,
+   "prev_band": "SELL",
+   "prev_trend_state": null,
+   "trend_state": "below"
   },
   {
    "ticker": "SOLUSDT",
@@ -111,7 +120,7 @@
    "currency": "USD",
    "source": "binance",
    "last": 74.77,
-   "change24h_pct": -1.928,
+   "change24h_pct": -1.786,
    "score": 15,
    "signal": "HOLD",
    "reasons": [
@@ -135,7 +144,10 @@
    "lo52": 62.2,
    "hi20": 82.34,
    "lo20": 71.38,
-   "off_52w_high_pct": -49.03
+   "off_52w_high_pct": -49.03,
+   "prev_band": "HOLD",
+   "prev_trend_state": null,
+   "trend_state": "above"
   },
   {
    "ticker": "XRPUSDT",
@@ -144,8 +156,8 @@
    "kind": "crypto",
    "currency": "USD",
    "source": "binance",
-   "last": 1.084,
-   "change24h_pct": -2.175,
+   "last": 1.0826,
+   "change24h_pct": -2.31,
    "score": -35,
    "signal": "SELL",
    "reasons": [
@@ -155,21 +167,24 @@
     "MACD momentum positive",
     "RSI 44 neutral"
    ],
-   "rsi": 44.2,
-   "sma20": 1.096489999999999,
-   "sma50": 1.1365399999999994,
-   "macd_hist": 0.002878487263370255,
+   "rsi": 44.0,
+   "sma20": 1.096419999999999,
+   "sma50": 1.1365119999999995,
+   "macd_hist": 0.002789142534025447,
    "macd_cross": null,
-   "pct_b": 0.406,
+   "pct_b": 0.396,
    "atr14": 0.0379214285714286,
-   "stop_suggest": 1.008157142857143,
-   "target1": 1.1598428571428572,
-   "target2": 1.2356857142857145,
+   "stop_suggest": 1.006757142857143,
+   "target1": 1.158442857142857,
+   "target2": 1.2342857142857144,
    "hi52": 2.3478,
    "lo52": 1.0401,
    "hi20": 1.1574,
    "lo20": 1.0401,
-   "off_52w_high_pct": -53.83
+   "off_52w_high_pct": -53.89,
+   "prev_band": "SELL",
+   "prev_trend_state": null,
+   "trend_state": "below"
   },
   {
    "ticker": "DOGEUSDT",
@@ -178,8 +193,8 @@
    "kind": "crypto",
    "currency": "USD",
    "source": "binance",
-   "last": 0.07195,
-   "change24h_pct": -1.775,
+   "last": 0.07196,
+   "change24h_pct": -1.734,
    "score": -35,
    "signal": "SELL",
    "reasons": [
@@ -187,23 +202,26 @@
     "20-day avg below 50-day avg (bearish structure)",
     "50-day average sloping down",
     "MACD momentum positive",
-    "RSI 36 neutral"
+    "RSI 37 neutral"
    ],
    "rsi": 36.5,
-   "sma20": 0.07396099999999993,
-   "sma50": 0.081266,
-   "macd_hist": 0.00040770239505856336,
+   "sma20": 0.07396149999999993,
+   "sma50": 0.0812662,
+   "macd_hist": 0.0004083405716967313,
    "macd_cross": null,
-   "pct_b": 0.237,
+   "pct_b": 0.238,
    "atr14": 0.0027171428571428563,
-   "stop_suggest": 0.06651571428571429,
-   "target1": 0.07738428571428571,
-   "target2": 0.08281857142857142,
+   "stop_suggest": 0.06652571428571429,
+   "target1": 0.07739428571428571,
+   "target2": 0.08282857142857142,
    "hi52": 0.15171,
-   "lo52": 0.07195,
+   "lo52": 0.07196,
    "hi20": 0.07787,
-   "lo20": 0.07195,
-   "off_52w_high_pct": -52.57
+   "lo20": 0.07196,
+   "off_52w_high_pct": -52.57,
+   "prev_band": "SELL",
+   "prev_trend_state": null,
+   "trend_state": "below"
   },
   {
    "ticker": "EMAAR",
@@ -237,7 +255,10 @@
    "lo52": 10.649999618530273,
    "hi20": 13.020000457763672,
    "lo20": 11.15999984741211,
-   "off_52w_high_pct": -34.74
+   "off_52w_high_pct": -34.74,
+   "prev_band": "SELL",
+   "prev_trend_state": null,
+   "trend_state": "below"
   },
   {
    "ticker": "EMIRATESNBD",
@@ -271,7 +292,10 @@
    "lo52": 24.149999618530273,
    "hi20": 32.400001525878906,
    "lo20": 29.299999237060547,
-   "off_52w_high_pct": -20.81
+   "off_52w_high_pct": -20.81,
+   "prev_band": "BUY",
+   "prev_trend_state": null,
+   "trend_state": "above"
   },
   {
    "ticker": "DIB",
@@ -305,7 +329,10 @@
    "lo52": 7.090000152587891,
    "hi20": 7.980000019073486,
    "lo20": 7.34,
-   "off_52w_high_pct": -28.04
+   "off_52w_high_pct": -28.04,
+   "prev_band": "HOLD",
+   "prev_trend_state": null,
+   "trend_state": "below"
   },
   {
    "ticker": "SALIK",
@@ -339,7 +366,10 @@
    "lo52": 4.989999771118164,
    "hi20": 6.099999904632568,
    "lo20": 5.5,
-   "off_52w_high_pct": -18.76
+   "off_52w_high_pct": -18.76,
+   "prev_band": "HOLD",
+   "prev_trend_state": null,
+   "trend_state": "below"
   },
   {
    "ticker": "DEWA",
@@ -373,7 +403,10 @@
    "lo52": 2.549999952316284,
    "hi20": 2.9000000953674316,
    "lo20": 2.66,
-   "off_52w_high_pct": -15.02
+   "off_52w_high_pct": -15.02,
+   "prev_band": "SELL",
+   "prev_trend_state": null,
+   "trend_state": "below"
   },
   {
    "ticker": "TALABAT",
@@ -407,7 +440,10 @@
    "lo52": 0.6579999923706055,
    "hi20": 1.2999999523162842,
    "lo20": 1.1699999570846558,
-   "off_52w_high_pct": -13.97
+   "off_52w_high_pct": -13.97,
+   "prev_band": "BUY",
+   "prev_trend_state": null,
+   "trend_state": "above"
   },
   {
    "ticker": "AIRARABIA",
@@ -441,7 +477,10 @@
    "lo52": 3.549999952316284,
    "hi20": 5.889999866485596,
    "lo20": 5.19,
-   "off_52w_high_pct": -11.88
+   "off_52w_high_pct": -11.88,
+   "prev_band": "BUY",
+   "prev_trend_state": null,
+   "trend_state": "above"
   },
   {
    "ticker": "ALDAR",
@@ -475,7 +514,10 @@
    "lo52": 7.03,
    "hi20": 9.05,
    "lo20": 7.57,
-   "off_52w_high_pct": -35.85
+   "off_52w_high_pct": -35.85,
+   "prev_band": "SELL",
+   "prev_trend_state": null,
+   "trend_state": "below"
   },
   {
    "ticker": "FAB",
@@ -509,7 +551,10 @@
    "lo52": 15.32,
    "hi20": 18.46,
    "lo20": 16.68,
-   "off_52w_high_pct": -14.18
+   "off_52w_high_pct": -14.18,
+   "prev_band": "STRONG BUY",
+   "prev_trend_state": null,
+   "trend_state": "above"
   },
   {
    "ticker": "ADCB",
@@ -542,7 +587,10 @@
    "lo52": 11.58,
    "hi20": 15.5,
    "lo20": 14.08,
-   "off_52w_high_pct": -12.7
+   "off_52w_high_pct": -12.7,
+   "prev_band": "BUY",
+   "prev_trend_state": null,
+   "trend_state": "above"
   },
   {
    "ticker": "IHC",
@@ -576,7 +624,10 @@
    "lo52": 379.0,
    "hi20": 388.2,
    "lo20": 379.0,
-   "off_52w_high_pct": -6.01
+   "off_52w_high_pct": -6.01,
+   "prev_band": "STRONG SELL",
+   "prev_trend_state": null,
+   "trend_state": "below"
   },
   {
    "ticker": "EAND",
@@ -610,7 +661,10 @@
    "lo52": 17.4,
    "hi20": 21.0,
    "lo20": 18.74,
-   "off_52w_high_pct": -6.11
+   "off_52w_high_pct": -6.11,
+   "prev_band": "STRONG BUY",
+   "prev_trend_state": null,
+   "trend_state": "above"
   },
   {
    "ticker": "ADNOCGAS",
@@ -644,7 +698,10 @@
    "lo52": 3.12,
    "hi20": 3.52,
    "lo20": 3.3,
-   "off_52w_high_pct": -11.44
+   "off_52w_high_pct": -11.44,
+   "prev_band": "SELL",
+   "prev_trend_state": null,
+   "trend_state": "below"
   },
   {
    "ticker": "TAQA",
@@ -678,7 +735,10 @@
    "lo52": 2.17,
    "hi20": 2.67,
    "lo20": 2.61,
-   "off_52w_high_pct": -32.05
+   "off_52w_high_pct": -32.05,
+   "prev_band": "BUY",
+   "prev_trend_state": null,
+   "trend_state": "above"
   },
   {
    "ticker": "ADIB",
@@ -712,18 +772,21 @@
    "lo52": 18.28,
    "hi20": 22.3,
    "lo20": 20.12,
-   "off_52w_high_pct": -25.97
+   "off_52w_high_pct": -25.97,
+   "prev_band": "HOLD",
+   "prev_trend_state": null,
+   "trend_state": "above"
   }
  ],
  "portfolio": [
   {
    "ticker": "ETHUSDT",
    "qty": 0.0364,
-   "last": 1835.58,
+   "last": 1836.97,
    "currency": "USD",
-   "value": 66.815112,
+   "value": 66.865708,
    "ref_price": 1829.7,
-   "pnl_pct": 0.3213641580587012,
+   "pnl_pct": 0.39733289610317524,
    "stop": 1572.0,
    "target1": 1964.0,
    "target2": 2105.0,
