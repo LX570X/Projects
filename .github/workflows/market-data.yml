@@ -2,6 +2,11 @@ name: market-data
 
 on:
   workflow_dispatch: {}
+  push:
+    branches:
+      - "claude/live-trading-advisor-pgvxab"
+    paths:
+      - "advisor/trigger.txt"
   schedule:
     # hourly at :17 UTC — only effective once this file is on the default branch
     - cron: "17 * * * *"
