@@ -1,21 +1,21 @@
 {
- "generated_at_utc": "2026-07-18T20:24:27+00:00",
+ "generated_at_utc": "2026-07-18T21:24:06+00:00",
  "movers": [
   {
    "symbol": "BANKUSDT",
-   "last": 0.1076,
-   "change24h_pct": 63.03,
-   "quote_volume24h": 28190240.14503,
-   "rsi": 93.6,
+   "last": 0.1109,
+   "change24h_pct": 72.205,
+   "quote_volume24h": 28874768.46145,
+   "rsi": 93.9,
    "above_sma20": true,
    "above_sma50": true
   },
   {
    "symbol": "SYNUSDT",
-   "last": 0.2428,
-   "change24h_pct": 30.826,
-   "quote_volume24h": 22035252.894628,
-   "rsi": 45.9,
+   "last": 0.23056,
+   "change24h_pct": 26.196,
+   "quote_volume24h": 22920796.74617,
+   "rsi": 44.6,
    "above_sma20": false,
    "above_sma50": true
   },
@@ -29,65 +29,65 @@
    "above_sma50": false
   },
   {
-   "symbol": "ALLOUSDT",
-   "last": 0.4476,
-   "change24h_pct": 12.491,
-   "quote_volume24h": 11777075.00012,
-   "rsi": 57.9,
-   "above_sma20": true,
-   "above_sma50": true
-  },
-  {
    "symbol": "HOMEUSDT",
-   "last": 0.00723,
-   "change24h_pct": -11.829,
-   "quote_volume24h": 10138937.66951,
+   "last": 0.00724,
+   "change24h_pct": -12.349,
+   "quote_volume24h": 10074584.49514,
    "rsi": 31.1,
    "above_sma20": false,
    "above_sma50": false
   },
   {
+   "symbol": "ALLOUSDT",
+   "last": 0.4455,
+   "change24h_pct": 10.987,
+   "quote_volume24h": 11770734.51844,
+   "rsi": 57.8,
+   "above_sma20": true,
+   "above_sma50": true
+  },
+  {
    "symbol": "BONKUSDT",
-   "last": 2.85e-06,
-   "change24h_pct": -10.938,
-   "quote_volume24h": 6898993.67931439,
-   "rsi": 25.1,
+   "last": 2.82e-06,
+   "change24h_pct": -10.191,
+   "quote_volume24h": 6834610.29909723,
+   "rsi": 24.8,
    "above_sma20": false,
    "above_sma50": false
   },
   {
    "symbol": "REUSDT",
-   "last": 0.3956,
-   "change24h_pct": -10.861,
-   "quote_volume24h": 33518913.59111,
-   "rsi": 41.9,
+   "last": 0.3996,
+   "change24h_pct": -9.797,
+   "quote_volume24h": 33819771.5718,
+   "rsi": 42.1,
    "above_sma20": false,
    "above_sma50": null
   },
   {
-   "symbol": "ZBTUSDT",
-   "last": 0.0985,
-   "change24h_pct": 9.933,
-   "quote_volume24h": 6782846.19392,
-   "rsi": 41.8,
-   "above_sma20": false,
-   "above_sma50": false
-  },
-  {
    "symbol": "XECUSDT",
-   "last": 9.16e-06,
-   "change24h_pct": 9.701,
-   "quote_volume24h": 12714609.51531851,
-   "rsi": 76.3,
+   "last": 9.06e-06,
+   "change24h_pct": 9.157,
+   "quote_volume24h": 12643448.71200232,
+   "rsi": 75.9,
    "above_sma20": true,
    "above_sma50": true
   },
   {
+   "symbol": "ZBTUSDT",
+   "last": 0.0963,
+   "change24h_pct": 7.0,
+   "quote_volume24h": 7065200.6382,
+   "rsi": 40.7,
+   "above_sma20": false,
+   "above_sma50": false
+  },
+  {
    "symbol": "ONDOUSDT",
-   "last": 0.3499,
-   "change24h_pct": -5.789,
-   "quote_volume24h": 22369251.30522,
-   "rsi": 54.2,
+   "last": 0.3485,
+   "change24h_pct": -6.342,
+   "quote_volume24h": 22802548.21817,
+   "rsi": 53.8,
    "above_sma20": true,
    "above_sma50": true
   }
