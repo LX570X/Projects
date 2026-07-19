@@ -9,7 +9,7 @@
     {"symbol": "LINKUSDT", "base": "LINK", "name": "Chainlink", "binance": "LINKUSDT", "binanceus": "LINKUSDT", "kraken": ["LINKUSD"], "coingecko": "chainlink"},
     {"symbol": "AVAXUSDT", "base": "AVAX", "name": "Avalanche", "binance": "AVAXUSDT", "binanceus": "AVAXUSDT", "kraken": ["AVAXUSD"], "coingecko": "avalanche-2"},
     {"symbol": "ADAUSDT", "base": "ADA", "name": "Cardano", "binance": "ADAUSDT", "binanceus": "ADAUSDT", "kraken": ["ADAUSD"], "coingecko": "cardano"},
-    {"symbol": "TONUSDT", "base": "TON", "name": "Toncoin", "binance": "TONUSDT", "binanceus": "", "kraken": ["TONUSD"], "coingecko": "the-open-network"},
+    {"symbol": "GRAMUSDT", "base": "GRAM", "name": "Gram (ex-Toncoin)", "binance": "GRAMUSDT", "binanceus": "", "kraken": ["TONUSD"], "coingecko": "the-open-network"},
     {"symbol": "LTCUSDT", "base": "LTC", "name": "Litecoin", "binance": "LTCUSDT", "binanceus": "LTCUSDT", "kraken": ["LTCUSD"], "coingecko": "litecoin"}
   ],
   "uae_stocks": [
