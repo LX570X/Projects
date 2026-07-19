@@ -1,7 +1,7 @@
 # Trading Advisor — Signal Report
 
-- Data fetched: 2026-07-19T12:39:20+00:00 UTC
-- Report time: 2026-07-19 16:39 Dubai time
+- Data fetched: 2026-07-19T13:24:22+00:00 UTC
+- Report time: 2026-07-19 17:24 Dubai time
 - UAE market (DFM/ADX): CLOSED (hours Mon–Fri 10:00–15:00 Dubai)
 
 > Educational, rules-based technical screen — not licensed financial advice. Markets can move against any signal; never risk money you cannot afford to lose.
@@ -10,26 +10,26 @@
 
 | Asset | Price | 24h/1d | Signal | Score | RSI | Stop | Target 1 | Target 2 |
 |---|---|---|---|---|---|---|---|---|
-| ETHUSDT (Ethereum) | 1,872.60 USD | +1.6% | **STRONG BUY** | 45 | 59.6 | 1,572.01 | 2,005.33 | 2,138.05 |
-| LINKUSDT (Chainlink) | 8.362 USD | +0.6% | **STRONG BUY** | 45 | 58.3 | 7.358 | 8.959 | 9.557 |
-| LTCUSDT (Litecoin) | 47.11 USD | +2.9% | **BUY** | 35 | 62.6 | 41.93 | 49.97 | 52.84 |
-| BTCUSDT (Bitcoin) | 64,405.01 USD | +0.4% | **HOLD** | 15 | 53.2 | 58,624.71 | 67,755.23 | 71,105.44 |
-| SOLUSDT (Solana) | 76.13 USD | +1.6% | **HOLD** | 15 | 49.7 | 70.8 | 81.46 | 86.78 |
-| BNBUSDT (BNB) | 567.67 USD | -0.4% | **SELL** | -35 | 44.9 | 540.37 | 594.97 | 622.27 |
-| XRPUSDT (XRP) | 1.096 USD | +0.6% | **SELL** | -35 | 46.8 | 1.029 | 1.162 | 1.229 |
-| DOGEUSDT (Dogecoin) | 0.07251 USD | +0.4% | **SELL** | -35 | 38.0 | 0.06774 | 0.07728 | 0.08205 |
-| AVAXUSDT (Avalanche) | 6.432 USD | -1.8% | **SELL** | -35 | 42.9 | 5.88 | 6.984 | 7.536 |
-| ADAUSDT (Cardano) | 0.1653 USD | -0.3% | **SELL** | -35 | 48.1 | 0.1444 | 0.1818 | 0.1982 |
-| GRAMUSDT (Gram (ex-Toncoin)) | 1.437 USD | -2.6% | **STRONG SELL** | -65 | 34.0 | 1.259 | 1.615 | 1.794 |
+| ETHUSDT (Ethereum) | 1,867.86 USD | +1.6% | **STRONG BUY** | 45 | 59.2 | 1,572.01 | 2,000.59 | 2,133.31 |
+| LINKUSDT (Chainlink) | 8.328 USD | +0.9% | **STRONG BUY** | 45 | 57.5 | 7.201 | 8.925 | 9.523 |
+| LTCUSDT (Litecoin) | 47.24 USD | +3.3% | **BUY** | 35 | 63.1 | 41.93 | 50.1 | 52.97 |
+| BTCUSDT (Bitcoin) | 64,365.44 USD | +0.6% | **HOLD** | 15 | 53.0 | 58,624.71 | 67,715.66 | 71,065.87 |
+| SOLUSDT (Solana) | 75.94 USD | +1.8% | **HOLD** | 15 | 49.2 | 70.61 | 81.27 | 86.59 |
+| BNBUSDT (BNB) | 567.37 USD | -0.3% | **SELL** | -35 | 44.7 | 540.07 | 594.67 | 621.97 |
+| XRPUSDT (XRP) | 1.093 USD | +0.8% | **SELL** | -35 | 46.1 | 1.026 | 1.16 | 1.226 |
+| DOGEUSDT (Dogecoin) | 0.07228 USD | +0.4% | **SELL** | -35 | 37.4 | 0.0675 | 0.07706 | 0.08183 |
+| AVAXUSDT (Avalanche) | 6.433 USD | -1.6% | **SELL** | -35 | 43.0 | 5.881 | 6.985 | 7.537 |
+| ADAUSDT (Cardano) | 0.1648 USD | +0.2% | **SELL** | -35 | 47.7 | 0.1444 | 0.1813 | 0.1977 |
+| GRAMUSDT (Gram (ex-Toncoin)) | 1.432 USD | -2.9% | **STRONG SELL** | -65 | 33.7 | 1.254 | 1.61 | 1.789 |
 
-**ETHUSDT** — STRONG BUY (score 45): price above 50-day average (1736) — uptrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping down; MACD momentum positive; RSI 60 neutral.
-**LINKUSDT** — STRONG BUY (score 45): price above 50-day average (7.912) — uptrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping down; MACD momentum positive; RSI 58 neutral.
+**ETHUSDT** — STRONG BUY (score 45): price above 50-day average (1736) — uptrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping down; MACD momentum positive; RSI 59 neutral.
+**LINKUSDT** — STRONG BUY (score 45): price above 50-day average (7.927) — uptrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping down; MACD momentum positive; RSI 57 neutral.
 **LTCUSDT** — BUY (score 35): price above 50-day average (44.34) — uptrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping down; MACD momentum positive; RSI 63 neutral; price above upper Bollinger band (stretched up).
 **BTCUSDT** — HOLD (score 15): price above 50-day average (6.341e+04) — uptrend; 20-day avg below 50-day avg (bearish structure); 50-day average sloping down; MACD momentum positive; RSI 53 neutral.
-**SOLUSDT** — HOLD (score 15): price above 50-day average (73.42) — uptrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping down; MACD momentum negative; RSI 50 neutral.
+**SOLUSDT** — HOLD (score 15): price above 50-day average (73.41) — uptrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping down; MACD momentum negative; RSI 49 neutral.
 **BNBUSDT** — SELL (score -35): price below 50-day average (587.2) — downtrend; 20-day avg below 50-day avg (bearish structure); 50-day average sloping down; MACD momentum positive; RSI 45 neutral.
-**XRPUSDT** — SELL (score -35): price below 50-day average (1.127) — downtrend; 20-day avg below 50-day avg (bearish structure); 50-day average sloping down; MACD momentum positive; RSI 47 neutral.
-**DOGEUSDT** — SELL (score -35): price below 50-day average (0.08017) — downtrend; 20-day avg below 50-day avg (bearish structure); 50-day average sloping down; MACD momentum positive; RSI 38 neutral.
+**XRPUSDT** — SELL (score -35): price below 50-day average (1.127) — downtrend; 20-day avg below 50-day avg (bearish structure); 50-day average sloping down; MACD momentum positive; RSI 46 neutral.
+**DOGEUSDT** — SELL (score -35): price below 50-day average (0.08017) — downtrend; 20-day avg below 50-day avg (bearish structure); 50-day average sloping down; MACD momentum positive; RSI 37 neutral.
 **AVAXUSDT** — SELL (score -35): price below 50-day average (6.77) — downtrend; 20-day avg below 50-day avg (bearish structure); 50-day average sloping down; MACD momentum positive; RSI 43 neutral.
 **ADAUSDT** — SELL (score -35): price below 50-day average (0.1687) — downtrend; 20-day avg below 50-day avg (bearish structure); 50-day average sloping down; MACD momentum positive; RSI 48 neutral.
 **GRAMUSDT** — STRONG SELL (score -65): price below 50-day average (1.655) — downtrend; 20-day avg below 50-day avg (bearish structure); 50-day average sloping down; MACD momentum negative; RSI 34 neutral.
@@ -79,9 +79,6 @@
 **ADNOCDRILL** — STRONG SELL (score -55): price below 50-day average (5.911) — downtrend; 20-day avg below 50-day avg (bearish structure); MACD momentum negative; RSI 40 neutral.
 **EMAARDEV** — STRONG SELL (score -65): price below 50-day average (14.17) — downtrend; 20-day avg below 50-day avg (bearish structure); 50-day average sloping down; MACD momentum negative; RSI 37 neutral.
 **IHC** — STRONG SELL (score -65): price below 50-day average (386.3) — downtrend; 20-day avg below 50-day avg (bearish structure); MACD momentum negative; RSI 35 neutral; TradingView technical consensus bearish.
-
-## Alerts (changes since previous run)
-- [info] EMAARDEV moved -3.0% in the last day (now 13.12 AED)
 
 Position sizing: risk no more than 1–2% of capital per idea; the suggested stop defines the risk per unit.
 

@@ -1,11 +1,4 @@
 {
- "generated_at_utc": "2026-07-19T12:39:20+00:00",
- "alerts": [
-  {
-   "ticker": "EMAARDEV",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "EMAARDEV moved -3.0% in the last day (now 13.12 AED)"
-  }
- ]
+ "generated_at_utc": "2026-07-19T13:24:23+00:00",
+ "alerts": []
 }
