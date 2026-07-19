@@ -1,0 +1,15 @@
+{
+ "entries": [
+  {
+   "date": "2026-07-19",
+   "ticker": "BTCUSDT",
+   "action": "signal upgrade HOLD -> STRONG BUY",
+   "price": 64604.99,
+   "stop": 60024.0,
+   "target1": 67927.0,
+   "target2": 71249.0,
+   "rationale": "Confirmed breakout above 50-day avg; institutional ETF inflows ~$1.2bn/week, softer US PPI (-0.3% June), regulatory optimism. Distinct from July 17 fear-driven reclaim.",
+   "opportunity_fund": "eligible deploy: 300 AED ~= $82; risk to stop = 7.1%, so full budget risks ~$5.8 (within 1-2% of a >$400 account; at $82 standalone the stop caps loss at ~$5.8)"
+  }
+ ]
+}
