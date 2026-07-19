@@ -1,7 +1,7 @@
 # Trading Advisor — Signal Report
 
-- Data fetched: 2026-07-19T08:24:01+00:00 UTC
-- Report time: 2026-07-19 12:24 Dubai time
+- Data fetched: 2026-07-19T09:24:17+00:00 UTC
+- Report time: 2026-07-19 13:24 Dubai time
 - UAE market (DFM/ADX): CLOSED (hours Mon–Fri 10:00–15:00 Dubai)
 
 > Educational, rules-based technical screen — not licensed financial advice. Markets can move against any signal; never risk money you cannot afford to lose.
@@ -10,17 +10,17 @@
 
 | Asset | Price | 24h/1d | Signal | Score | RSI | Stop | Target 1 | Target 2 |
 |---|---|---|---|---|---|---|---|---|
-| ETHUSDT (Ethereum) | 1,868.00 USD | +1.3% | **STRONG BUY** | 45 | 59.2 | 1,572.01 | 2,000.43 | 2,132.87 |
-| BTCUSDT (Bitcoin) | 64,631.54 USD | +1.0% | **HOLD** | 15 | 54.2 | 58,624.71 | 67,935.24 | 71,238.93 |
-| SOLUSDT (Solana) | 76.17 USD | +1.7% | **HOLD** | 15 | 49.9 | 70.84 | 81.5 | 86.82 |
-| BNBUSDT (BNB) | 568.82 USD | +0.1% | **SELL** | -35 | 45.4 | 541.57 | 596.07 | 623.33 |
-| XRPUSDT (XRP) | 1.095 USD | +0.5% | **SELL** | -35 | 46.7 | 1.029 | 1.162 | 1.229 |
-| DOGEUSDT (Dogecoin) | 0.0725 USD | +0.2% | **SELL** | -35 | 38.0 | 0.06773 | 0.07727 | 0.08204 |
+| ETHUSDT (Ethereum) | 1,868.28 USD | +1.3% | **STRONG BUY** | 45 | 59.2 | 1,572.01 | 2,000.71 | 2,133.15 |
+| BTCUSDT (Bitcoin) | 64,578.87 USD | +1.0% | **HOLD** | 15 | 54.0 | 58,624.71 | 67,891.26 | 71,203.66 |
+| SOLUSDT (Solana) | 76 USD | +1.6% | **HOLD** | 15 | 49.4 | 70.67 | 81.33 | 86.65 |
+| BNBUSDT (BNB) | 567.64 USD | -0.1% | **SELL** | -35 | 44.8 | 540.39 | 594.89 | 622.15 |
+| XRPUSDT (XRP) | 1.096 USD | +0.9% | **SELL** | -35 | 46.8 | 1.029 | 1.162 | 1.229 |
+| DOGEUSDT (Dogecoin) | 0.07253 USD | +0.6% | **SELL** | -35 | 38.1 | 0.06776 | 0.0773 | 0.08207 |
 
 **ETHUSDT** — STRONG BUY (score 45): price above 50-day average (1736) — uptrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping down; MACD momentum positive; RSI 59 neutral.
 **BTCUSDT** — HOLD (score 15): price above 50-day average (6.341e+04) — uptrend; 20-day avg below 50-day avg (bearish structure); 50-day average sloping down; MACD momentum positive; RSI 54 neutral.
-**SOLUSDT** — HOLD (score 15): price above 50-day average (73.42) — uptrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping down; MACD momentum negative; RSI 50 neutral.
-**BNBUSDT** — SELL (score -35): price below 50-day average (584.4) — downtrend; 20-day avg below 50-day avg (bearish structure); 50-day average sloping down; MACD momentum positive; RSI 45 neutral.
+**SOLUSDT** — HOLD (score 15): price above 50-day average (73.41) — uptrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping down; MACD momentum negative; RSI 49 neutral.
+**BNBUSDT** — SELL (score -35): price below 50-day average (587.2) — downtrend; 20-day avg below 50-day avg (bearish structure); 50-day average sloping down; MACD momentum positive; RSI 45 neutral.
 **XRPUSDT** — SELL (score -35): price below 50-day average (1.127) — downtrend; 20-day avg below 50-day avg (bearish structure); 50-day average sloping down; MACD momentum positive; RSI 47 neutral.
 **DOGEUSDT** — SELL (score -35): price below 50-day average (0.08017) — downtrend; 20-day avg below 50-day avg (bearish structure); 50-day average sloping down; MACD momentum positive; RSI 38 neutral.
 
