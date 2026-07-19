@@ -1,4 +1,11 @@
 {
- "generated_at_utc": "2026-07-19T09:24:17+00:00",
- "alerts": []
+ "generated_at_utc": "2026-07-19T10:24:14+00:00",
+ "alerts": [
+  {
+   "ticker": "BTCUSDT",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "BTCUSDT: HOLD -> STRONG BUY (score 15 -> 45)"
+  }
+ ]
 }
