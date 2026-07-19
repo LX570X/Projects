@@ -10,6 +10,26 @@
    "target2": 71249.0,
    "rationale": "Confirmed breakout above 50-day avg; institutional ETF inflows ~$1.2bn/week, softer US PPI (-0.3% June), regulatory optimism. Distinct from July 17 fear-driven reclaim.",
    "opportunity_fund": "eligible deploy: 300 AED ~= $82; risk to stop = 7.1%, so full budget risks ~$5.8 (within 1-2% of a >$400 account; at $82 standalone the stop caps loss at ~$5.8)"
+  },
+  {
+   "date": "2026-07-19",
+   "ticker": "BTCUSDT",
+   "action": "BUY re-confirmed",
+   "price": 64450.1,
+   "stop": 60024.0,
+   "target1": 67800.0,
+   "context": "Signal held/reconfirmed after weekend wobble; $1.2B weekly ETF inflows; opportunity-fund candidate",
+   "status": "open"
+  },
+  {
+   "date": "2026-07-19",
+   "ticker": "LTCUSDT",
+   "action": "BUY",
+   "price": 47.17,
+   "stop": 42.71,
+   "target1": 50.07,
+   "context": "Upgraded to STRONG BUY; Emirates airline LTC acceptance + LitVM investment; satellite candidate alongside LINK",
+   "status": "open"
   }
  ]
 }
