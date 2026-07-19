@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-17T09:05:00+00:00",
+ "updated": "2026-07-19T11:45:00+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": 0
@@ -28,13 +28,18 @@
    },
    {
     "name": "core_crypto",
-    "aed": 300,
+    "aed": 250,
     "note": "monthly DCA into BTC+ETH regardless of price; split decided by monthly reminder from current signals"
    },
    {
     "name": "opportunity",
-    "aed": 300,
-    "note": "hold in USDT until advisor BUY signal; size via 1-2% risk rule; no deploy = fine"
+    "aed": 250,
+    "note": "hold in USDT until advisor BUY signal on any watchlist asset; size via 1-2% risk rule; no deploy = fine"
+   },
+   {
+    "name": "satellite",
+    "aed": 100,
+    "note": "alt-coin trades outside BTC/ETH: deploys into the strongest non-BTC/ETH watchlist alt rated BUY+ (or a user-named alt), ALWAYS with a stop; reviewed monthly; max one satellite position at a time"
    }
   ],
   "started": "2026-07-17",

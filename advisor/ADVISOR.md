@@ -48,12 +48,20 @@ This file is the operating procedure for the hourly advisor routine
 - If the user asks to stop: delete the Routine (list_triggers →
   delete_trigger) and stop notifying.
 
-## Monthly plan (user-confirmed, 2026-07-17)
+## Monthly plan (user-confirmed, 2026-07-17; satellite added 2026-07-19)
 
 - 1,000 AED/month: 400 core UAE stocks (accumulate, deploy quarterly into
-  strongest BUY-rated dividend blue chip via Al Ramz), 300 core crypto DCA
-  (BTC+ETH monthly, split per current signals), 300 opportunity fund in USDT
-  (deploys only on BUY signals, 1-2% risk sizing).
+  strongest BUY-rated dividend blue chip via Al Ramz), 250 core crypto DCA
+  (BTC+ETH monthly, split per current signals), 250 opportunity fund in USDT
+  (deploys only on BUY signals on ANY watchlist asset, 1-2% risk sizing),
+  100 satellite (alt trades beyond BTC/ETH: strongest non-BTC/ETH watchlist
+  alt rated BUY+, or a user-named alt; always with a stop; max one position).
+- Authoritative bucket amounts live in advisor/data/portfolio.json
+  monthly_plan — read them there, do not hardcode.
+- Watchlist widened 2026-07-19: +LINK/AVAX/ADA/TON/LTC crypto,
+  +EMAARDEV/DU/TECOM/ADPORTS/ADNOCDRILL UAE. Scanner flags "quality setup"
+  movers (above 50d, RSI 45-70, vol >= $10M, up on the day) — these are
+  research candidates for opportunity/satellite money, still not auto-buys.
 - Monthly reminder routine fires on the 1st ~09:47 Dubai: compute that month's
   exact shopping list from live signals and push-notify with amounts.
 - User's position sizes are small: phrase crypto exits as CONVERT to USDT or

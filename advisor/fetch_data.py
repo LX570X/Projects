@@ -171,6 +171,9 @@ def scan_binance_market(watch_symbols, log):
             c["rsi"] = round(rsi, 1) if rsi is not None else None
             c["above_sma20"] = (c["last"] > s20) if s20 else None
             c["above_sma50"] = (c["last"] > s50) if s50 else None
+            # quality setup: uptrend + healthy (not overheated) momentum + real liquidity
+            c["setup"] = bool(c["above_sma50"] and rsi is not None and 45 <= rsi <= 70
+                              and c["quote_volume24h"] >= 10_000_000 and c["change24h_pct"] > 0)
             movers.append(c)
         except Exception as e:  # noqa: BLE001
             log.append(f"scanner: klines failed for {c['symbol']}: {e}")

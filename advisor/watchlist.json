@@ -5,7 +5,12 @@
     {"symbol": "BNBUSDT", "base": "BNB", "name": "BNB", "binance": "BNBUSDT", "binanceus": "BNBUSDT", "kraken": [], "coingecko": "binancecoin"},
     {"symbol": "SOLUSDT", "base": "SOL", "name": "Solana", "binance": "SOLUSDT", "binanceus": "SOLUSDT", "kraken": ["SOLUSD"], "coingecko": "solana"},
     {"symbol": "XRPUSDT", "base": "XRP", "name": "XRP", "binance": "XRPUSDT", "binanceus": "XRPUSDT", "kraken": ["XRPUSD"], "coingecko": "ripple"},
-    {"symbol": "DOGEUSDT", "base": "DOGE", "name": "Dogecoin", "binance": "DOGEUSDT", "binanceus": "DOGEUSDT", "kraken": ["DOGEUSD", "XDGUSD"], "coingecko": "dogecoin"}
+    {"symbol": "DOGEUSDT", "base": "DOGE", "name": "Dogecoin", "binance": "DOGEUSDT", "binanceus": "DOGEUSDT", "kraken": ["DOGEUSD", "XDGUSD"], "coingecko": "dogecoin"},
+    {"symbol": "LINKUSDT", "base": "LINK", "name": "Chainlink", "binance": "LINKUSDT", "binanceus": "LINKUSDT", "kraken": ["LINKUSD"], "coingecko": "chainlink"},
+    {"symbol": "AVAXUSDT", "base": "AVAX", "name": "Avalanche", "binance": "AVAXUSDT", "binanceus": "AVAXUSDT", "kraken": ["AVAXUSD"], "coingecko": "avalanche-2"},
+    {"symbol": "ADAUSDT", "base": "ADA", "name": "Cardano", "binance": "ADAUSDT", "binanceus": "ADAUSDT", "kraken": ["ADAUSD"], "coingecko": "cardano"},
+    {"symbol": "TONUSDT", "base": "TON", "name": "Toncoin", "binance": "TONUSDT", "binanceus": "", "kraken": ["TONUSD"], "coingecko": "the-open-network"},
+    {"symbol": "LTCUSDT", "base": "LTC", "name": "Litecoin", "binance": "LTCUSDT", "binanceus": "LTCUSDT", "kraken": ["LTCUSD"], "coingecko": "litecoin"}
   ],
   "uae_stocks": [
     {"ticker": "EMAAR", "name": "Emaar Properties", "exchange": "DFM", "yahoo": ["EMAAR.AE"], "tv": "DFM:EMAAR"},
@@ -22,6 +27,11 @@
     {"ticker": "EAND", "name": "e& (Etisalat Group)", "exchange": "ADX", "yahoo": [], "tv": "ADX:EAND"},
     {"ticker": "ADNOCGAS", "name": "ADNOC Gas", "exchange": "ADX", "yahoo": [], "tv": "ADX:ADNOCGAS"},
     {"ticker": "TAQA", "name": "Abu Dhabi National Energy (TAQA)", "exchange": "ADX", "yahoo": [], "tv": "ADX:TAQA"},
-    {"ticker": "ADIB", "name": "Abu Dhabi Islamic Bank", "exchange": "ADX", "yahoo": [], "tv": "ADX:ADIB"}
+    {"ticker": "ADIB", "name": "Abu Dhabi Islamic Bank", "exchange": "ADX", "yahoo": [], "tv": "ADX:ADIB"},
+    {"ticker": "EMAARDEV", "name": "Emaar Development", "exchange": "DFM", "yahoo": ["EMAARDEV.AE"], "tv": "DFM:EMAARDEV"},
+    {"ticker": "DU", "name": "Emirates Integrated Telecom (du)", "exchange": "DFM", "yahoo": ["DU.AE"], "tv": "DFM:DU"},
+    {"ticker": "TECOM", "name": "TECOM Group", "exchange": "DFM", "yahoo": ["TECOM.AE"], "tv": "DFM:TECOM"},
+    {"ticker": "ADPORTS", "name": "AD Ports Group", "exchange": "ADX", "yahoo": [], "tv": "ADX:ADPORTS"},
+    {"ticker": "ADNOCDRILL", "name": "ADNOC Drilling", "exchange": "ADX", "yahoo": [], "tv": "ADX:ADNOCDRILL"}
   ]
 }

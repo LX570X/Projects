@@ -280,7 +280,9 @@ how much to buy so that a stop-out loses only the chosen risk share of your budg
                 trend_bits.append('<span class="delta-down">below 50d</span>')
             rsi = m.get("rsi")
             heat = ""
-            if rsi is not None and rsi >= 75:
+            if m.get("setup"):
+                heat = ' <span class="chip chip-buy">quality setup</span>'
+            elif rsi is not None and rsi >= 75:
                 heat = ' <span class="chip chip-sell">overheated</span>'
             elif rsi is not None and rsi <= 25:
                 heat = ' <span class="chip chip-buy">washed out</span>'
