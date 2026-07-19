@@ -1,7 +1,7 @@
 # Trading Advisor — Signal Report
 
-- Data fetched: 2026-07-19T06:24:22+00:00 UTC
-- Report time: 2026-07-19 10:24 Dubai time
+- Data fetched: 2026-07-19T07:23:56+00:00 UTC
+- Report time: 2026-07-19 11:23 Dubai time
 - UAE market (DFM/ADX): CLOSED (hours Mon–Fri 10:00–15:00 Dubai)
 
 > Educational, rules-based technical screen — not licensed financial advice. Markets can move against any signal; never risk money you cannot afford to lose.
@@ -10,12 +10,12 @@
 
 | Asset | Price | 24h/1d | Signal | Score | RSI | Stop | Target 1 | Target 2 |
 |---|---|---|---|---|---|---|---|---|
-| ETHUSDT (Ethereum) | 1,870.56 USD | +1.3% | **STRONG BUY** | 45 | 59.4 | 1,572.01 | 2,002.99 | 2,135.43 |
-| BTCUSDT (Bitcoin) | 64,759.32 USD | +1.2% | **HOLD** | 15 | 54.8 | 58,624.71 | 68,063.02 | 71,366.71 |
-| SOLUSDT (Solana) | 76.08 USD | +1.3% | **HOLD** | 15 | 49.6 | 70.75 | 81.41 | 86.73 |
-| BNBUSDT (BNB) | 568.99 USD | +0.1% | **SELL** | -35 | 45.5 | 541.74 | 596.24 | 623.50 |
-| XRPUSDT (XRP) | 1.098 USD | +0.8% | **SELL** | -35 | 47.3 | 1.031 | 1.165 | 1.231 |
-| DOGEUSDT (Dogecoin) | 0.07245 USD | +0.1% | **SELL** | -35 | 37.8 | 0.06768 | 0.07722 | 0.08199 |
+| ETHUSDT (Ethereum) | 1,868.70 USD | +1.3% | **STRONG BUY** | 45 | 59.2 | 1,572.01 | 2,001.13 | 2,133.57 |
+| BTCUSDT (Bitcoin) | 64,711.05 USD | +1.1% | **HOLD** | 15 | 54.6 | 58,624.71 | 68,014.75 | 71,318.44 |
+| SOLUSDT (Solana) | 76.18 USD | +1.6% | **HOLD** | 15 | 49.9 | 70.85 | 81.51 | 86.83 |
+| BNBUSDT (BNB) | 568.97 USD | +0.2% | **SELL** | -35 | 45.5 | 541.72 | 596.22 | 623.48 |
+| XRPUSDT (XRP) | 1.097 USD | +0.6% | **SELL** | -35 | 47.0 | 1.03 | 1.163 | 1.23 |
+| DOGEUSDT (Dogecoin) | 0.07247 USD | +0.1% | **SELL** | -35 | 37.9 | 0.0677 | 0.07724 | 0.08201 |
 
 **ETHUSDT** — STRONG BUY (score 45): price above 50-day average (1736) — uptrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping down; MACD momentum positive; RSI 59 neutral.
 **BTCUSDT** — HOLD (score 15): price above 50-day average (6.342e+04) — uptrend; 20-day avg below 50-day avg (bearish structure); 50-day average sloping down; MACD momentum positive; RSI 55 neutral.
