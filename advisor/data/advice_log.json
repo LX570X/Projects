@@ -30,6 +30,16 @@
    "target1": 50.07,
    "context": "Upgraded to STRONG BUY; Emirates airline LTC acceptance + LitVM investment; satellite candidate alongside LINK",
    "status": "open"
+  },
+  {
+   "date": "2026-07-29",
+   "ticker": "ETHUSDT",
+   "action": "MISSED target-1 action (advisor outage)",
+   "price": 1916.34,
+   "stop": 1572.0,
+   "target1": 1964.0,
+   "rationale": "Advisor cycles were skipped 2026-07-20..29 (operator error: daily fires misjudged as duplicates). During the gap ETH touched target1 intraday on Jul 26 (high 1967.36) and Jul 27 (high 1981.24) but closed below both days; the plan's 'sell half at 1964' action was never executed. Stop (1572) was never threatened - lowest low 1843.14, 17.2% above stop. Position unharmed: +4.7% vs entry.",
+   "outcome": "no loss; planned partial profit-take missed; position still open and BUY-rated"
   }
  ]
 }
