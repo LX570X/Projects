@@ -1,1 +1,1 @@
-cycle requested: 2026-07-19T21:19:13Z hourly cycle
+cycle requested: 2026-07-29T08:18:54Z daily cycle (recovery after 10-day gap)
