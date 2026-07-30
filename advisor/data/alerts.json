@@ -1,11 +1,47 @@
 {
- "generated_at_utc": "2026-07-29T08:23:05+00:00",
+ "generated_at_utc": "2026-07-30T07:13:26+00:00",
  "alerts": [
   {
-   "ticker": "BTCUSDT",
+   "ticker": "EMIRATESNBD",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "EMIRATESNBD: HOLD -> BUY (score 15 -> 35)"
+  },
+  {
+   "ticker": "DEWA",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "DEWA: HOLD -> SELL (score 15 -> -35)"
+  },
+  {
+   "ticker": "TECOM",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "TECOM: HOLD -> STRONG BUY (score -15 -> 75)"
+  },
+  {
+   "ticker": "TECOM",
    "severity": "info",
    "type": "macd",
-   "msg": "BTCUSDT: MACD bearish cross"
+   "msg": "TECOM: MACD bullish cross"
+  },
+  {
+   "ticker": "ADNOCGAS",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ADNOCGAS: SELL -> STRONG SELL (score -35 -> -65)"
+  },
+  {
+   "ticker": "ADIB",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ADIB: BUY -> STRONG BUY (score 35 -> 65)"
+  },
+  {
+   "ticker": "ADNOCDRILL",
+   "severity": "info",
+   "type": "signal_change",
+   "msg": "ADNOCDRILL: SELL -> HOLD (score -25 -> -15)"
   }
  ]
 }
