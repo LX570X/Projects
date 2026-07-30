@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-07-30T07:13:26+00:00",
+ "generated_at_utc": "2026-07-30T07:15:58+00:00",
  "signals": [
   {
    "ticker": "BTCUSDT",
@@ -34,7 +34,7 @@
    "hi20": 66556.16,
    "lo20": 62334.52,
    "off_52w_high_pct": -33.89,
-   "prev_band": "HOLD",
+   "prev_band": "BUY",
    "prev_trend_state": "above",
    "trend_state": "above"
   },
@@ -47,13 +47,13 @@
    "source": "binance",
    "last": 1906.11,
    "change24h_pct": -0.755,
-   "score": 25,
+   "score": 40,
    "signal": "BUY",
    "reasons": [
     "price above 50-day average (1771) \u2014 uptrend",
     "20-day avg above 50-day avg (bullish structure)",
     "50-day average sloping up",
-    "MACD momentum negative",
+    "MACD momentum flat (not scored)",
     "fresh MACD bearish cross (last 3 days)",
     "RSI 56 neutral"
    ],
@@ -271,13 +271,13 @@
    "source": "binance",
    "last": 6.452,
    "change24h_pct": 0.327,
-   "score": -35,
-   "signal": "SELL",
+   "score": -50,
+   "signal": "STRONG SELL",
    "reasons": [
     "price below 50-day average (6.569) \u2014 downtrend",
     "20-day avg below 50-day avg (bearish structure)",
     "50-day average sloping down",
-    "MACD momentum positive",
+    "MACD momentum flat (not scored)",
     "RSI 46 neutral"
    ],
    "rsi": 46.4,
@@ -308,11 +308,11 @@
    "source": "binance",
    "last": 0.1629,
    "change24h_pct": -0.731,
-   "score": -35,
-   "signal": "SELL",
+   "score": -50,
+   "signal": "STRONG SELL",
    "reasons": [
     "price below 50-day average (0.1645) \u2014 downtrend",
-    "20-day avg above 50-day avg (bullish structure)",
+    "20/50-day averages within 0.33% \u2014 no structural edge (not scored)",
     "50-day average sloping down",
     "MACD momentum negative",
     "RSI 47 neutral"
@@ -481,7 +481,7 @@
    "hi20": 31.0,
    "lo20": 29.299999237060547,
    "off_52w_high_pct": -20.16,
-   "prev_band": "HOLD",
+   "prev_band": "BUY",
    "prev_trend_state": "above",
    "trend_state": "above"
   },
@@ -592,7 +592,7 @@
    "hi20": 2.809999942779541,
    "lo20": 2.6600000858306885,
    "off_52w_high_pct": -14.06,
-   "prev_band": "HOLD",
+   "prev_band": "SELL",
    "prev_trend_state": "below",
    "trend_state": "below"
   },
@@ -753,13 +753,13 @@
    "source": "yahoo:TECOM.AE",
    "last": 3.38,
    "change24h_pct": 0.2967393109943428,
-   "score": 75,
+   "score": 45,
    "signal": "STRONG BUY",
    "reasons": [
     "price above 50-day average (3.366) \u2014 uptrend",
-    "20-day avg above 50-day avg (bullish structure)",
+    "20/50-day averages within 0.10% \u2014 no structural edge (not scored)",
     "50-day average sloping up",
-    "MACD momentum positive",
+    "MACD momentum flat (not scored)",
     "fresh MACD bullish cross (last 3 days)",
     "RSI 50 neutral"
    ],
@@ -778,7 +778,7 @@
    "hi20": 3.4700000286102295,
    "lo20": 3.299999952316284,
    "off_52w_high_pct": -18.55,
-   "prev_band": "HOLD",
+   "prev_band": "STRONG BUY",
    "prev_trend_state": null,
    "trend_state": null
   },
@@ -902,12 +902,12 @@
    "source": "tradingview:ADX:IHC",
    "last": 379.2,
    "change24h_pct": 0.05277044854880967,
-   "score": -25,
+   "score": -40,
    "signal": "SELL",
    "reasons": [
     "price below 50-day average (384.3) \u2014 downtrend",
     "20-day avg below 50-day avg (bearish structure)",
-    "MACD momentum positive",
+    "MACD momentum flat (not scored)",
     "RSI 37 neutral"
    ],
    "rsi": 36.9,
@@ -975,12 +975,12 @@
    "source": "tradingview:ADX:ADNOCGAS",
    "last": 3.33,
    "change24h_pct": 0.3012048192771154,
-   "score": -65,
-   "signal": "STRONG SELL",
+   "score": -35,
+   "signal": "SELL",
    "reasons": [
     "price below 50-day average (3.375) \u2014 downtrend",
-    "20-day avg below 50-day avg (bearish structure)",
-    "MACD momentum negative",
+    "20/50-day averages within 0.09% \u2014 no structural edge (not scored)",
+    "MACD momentum flat (not scored)",
     "RSI 44 neutral",
     "TradingView technical consensus bearish"
    ],
@@ -999,7 +999,7 @@
    "hi20": 3.47,
    "lo20": 3.28,
    "off_52w_high_pct": -11.44,
-   "prev_band": "SELL",
+   "prev_band": "STRONG SELL",
    "prev_trend_state": "below",
    "trend_state": "below"
   },
@@ -1048,12 +1048,12 @@
    "source": "tradingview:ADX:ADIB",
    "last": 21.48,
    "change24h_pct": -0.09302325581395152,
-   "score": 65,
+   "score": 50,
    "signal": "STRONG BUY",
    "reasons": [
     "price above 50-day average (20.71) \u2014 uptrend",
     "20-day avg above 50-day avg (bullish structure)",
-    "MACD momentum positive",
+    "MACD momentum flat (not scored)",
     "RSI 55 neutral",
     "TradingView technical consensus bullish"
    ],
@@ -1072,7 +1072,7 @@
    "hi20": 22.12,
    "lo20": 20.06,
    "off_52w_high_pct": -23.18,
-   "prev_band": "BUY",
+   "prev_band": "STRONG BUY",
    "prev_trend_state": "above",
    "trend_state": "above"
   },
@@ -1145,7 +1145,7 @@
    "hi20": 5.89,
    "lo20": 5.5,
    "off_52w_high_pct": -13.19,
-   "prev_band": "SELL",
+   "prev_band": "HOLD",
    "prev_trend_state": "below",
    "trend_state": "below"
   }

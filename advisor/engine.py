@@ -22,6 +22,12 @@ REPORT_DIR = os.path.join(HERE, "reports")
 
 BANDS = [(45, "STRONG BUY"), (20, "BUY"), (-20, "HOLD"), (-45, "SELL"), (-10**9, "STRONG SELL")]
 
+# Deadbands: a difference this small is noise, not signal. Without these, an
+# sma20 sitting 0.09% above sma50 scored the same +15 as one sitting 5% above,
+# which manufactured STRONG BUY ratings out of flat charts.
+MA_DEADBAND = 0.005      # 0.5% min separation between the 20- and 50-day averages
+MACD_DEADBAND = 0.0015   # MACD histogram must exceed 0.15% of price to count
+
 
 def sma(vals, n):
     if len(vals) < n:
@@ -142,12 +148,17 @@ def analyze_precomputed(ticker, a):
         else:
             score -= 25; why.append(f"price below 50-day average ({s50:.4g}) — downtrend")
     if s20 is not None and s50 is not None:
-        if s20 > s50:
+        sep = abs(s20 / s50 - 1) if s50 else 0
+        if sep < MA_DEADBAND:
+            why.append(f"20/50-day averages within {sep*100:.2f}% — no structural edge (not scored)")
+        elif s20 > s50:
             score += 15; why.append("20-day avg above 50-day avg (bullish structure)")
         else:
             score -= 15; why.append("20-day avg below 50-day avg (bearish structure)")
     if hist is not None:
-        if hist > 0:
+        if abs(hist) < MACD_DEADBAND * last:
+            why.append("MACD momentum flat (not scored)")
+        elif hist > 0:
             score += 15; why.append("MACD momentum positive")
         else:
             score -= 15; why.append("MACD momentum negative")
@@ -229,7 +240,10 @@ def analyze(ticker, a):
         else:
             score -= 25; why.append(f"price below 50-day average ({s50:.4g}) — downtrend")
     if s20 is not None and s50 is not None:
-        if s20 > s50:
+        sep = abs(s20 / s50 - 1) if s50 else 0
+        if sep < MA_DEADBAND:
+            why.append(f"20/50-day averages within {sep*100:.2f}% — no structural edge (not scored)")
+        elif s20 > s50:
             score += 15; why.append("20-day avg above 50-day avg (bullish structure)")
         else:
             score -= 15; why.append("20-day avg below 50-day avg (bearish structure)")
@@ -240,7 +254,9 @@ def analyze(ticker, a):
         else:
             score -= 10; why.append("50-day average sloping down")
     if hist[-1] is not None:
-        if hist[-1] > 0:
+        if abs(hist[-1]) < MACD_DEADBAND * last:
+            why.append("MACD momentum flat (not scored)")
+        elif hist[-1] > 0:
             score += 15; why.append("MACD momentum positive")
         else:
             score -= 15; why.append("MACD momentum negative")
