@@ -27,6 +27,7 @@ BANDS = [(45, "STRONG BUY"), (20, "BUY"), (-20, "HOLD"), (-45, "SELL"), (-10**9,
 # which manufactured STRONG BUY ratings out of flat charts.
 MA_DEADBAND = 0.005      # 0.5% min separation between the 20- and 50-day averages
 MACD_DEADBAND = 0.0015   # MACD histogram must exceed 0.15% of price to count
+MIN_BARS = 55            # below this the 50-day trend does not exist yet
 
 
 def sma(vals, n):
@@ -277,10 +278,18 @@ def analyze(ticker, a):
     elif pct_b > 1:
         score -= 10; why.append("price above upper Bollinger band (stretched up)")
 
-    band = next(label for cutoff, label in BANDS if score >= cutoff)
+    # Insufficient history => the trend components silently score nothing and the
+    # asset lands on 0 = "HOLD", which reads as a confident neutral call. It isn't:
+    # it is "unknown". Say so explicitly and keep it out of buy/sell lists.
+    if s50 is None or len(closes) < MIN_BARS:
+        band = "INSUFFICIENT DATA"
+        score = 0
+        why = [f"only {len(closes)} daily bars (need {MIN_BARS}) — indicators unreliable, not rated"]
+    else:
+        band = next(label for cutoff, label in BANDS if score >= cutoff)
 
     stop = target1 = target2 = None
-    if atr14:
+    if atr14 and band != "INSUFFICIENT DATA":
         stop = max(last - 2 * atr14, 0)
         # for long ideas anchor stop below recent swing low when it is tighter
         stop = min(stop, lo20) if lo20 < last else stop
@@ -326,6 +335,8 @@ def diff_alerts(prev_signals, signals):
     alerts = []
     prev = {s["ticker"]: s for s in (prev_signals or [])}
     for s in signals:
+        if s["signal"] == "INSUFFICIENT DATA":
+            continue  # never alert on an asset we cannot actually rate
         p = prev.get(s["ticker"])
         chg = s.get("change24h_pct")
         threshold = 4.0 if s["kind"] == "crypto" else 2.5

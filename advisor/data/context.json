@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-30T07:13+00:00",
+ "updated": "2026-07-31T07:11+00:00",
  "market_notes": [
   {
    "market": "Crypto macro",
@@ -12,6 +12,10 @@
   {
    "market": "ADX banks",
    "note": "Bank strength is fundamentally backed: ADCB Q2 pre-tax profit +26% (H1 +28%), 20th consecutive quarter of growth, ~4.4% dividend yield, 15 straight years of dividends, and a pledge of >AED 25bn dividends over five years. FAB reported record ~24% net profit growth with CET1 above 13.5%. This supports FAB/ADCB as the core UAE stock candidates."
+  },
+  {
+   "market": "Altcoins",
+   "note": "ADA flipped bearish->bullish on real catalysts: RealFi Phase 1 testnet (Hoskinson calls it the project's largest upgrade), Binance/Coinbase readiness for the van Rossem hard fork, whale wallets (10-100M ADA) lifting supply share 37.66%->38.13%, and a pending Grayscale spot-ETF application. ADA ran ~18% off its $0.1387 low. BNB reclaimed its 50-day helped by BNB Chain's AWS 'Agent Studio' launch (Jul 1) and Grayscale/VanEck spot-BNB ETF filings. Both signals are technically thin - ADA clears our MA deadband by only 0.05pp."
   }
  ],
  "asset_notes": {
@@ -356,5 +360,8 @@
   "Fed HIKE risk is materially understated: post-June-SEP, the median 2026 dot was revised UP to 3.8% (from 3.4%), nine of eighteen members project at least one hike, and CNBC's June-CPI coverage says the Fed is 'broadly expected to raise its benchmark rate in September.' The findings frame July 28-29 almost entirely as hold-vs-cut; a hike-skewed Fed is a different regime for crypto beta and for dirham-pegged UAE funding costs. (CNBC Jul 14, Intellectia, NPR Jun 17.)",
   "Iran succession is resolved, not open: Ali Khamenei was assassinated February 28, 2026 and Mojtaba Khamenei was announced as supreme leader on March 9 after an Assembly of Experts vote \u2014 important context for regime durability and war trajectory that the UAE findings present as unresolved 'succession uncertainty.' (Wikipedia, CNN, Washington Post, Carnegie.)",
   "CLARITY Act floor-vote development: Senate Majority Leader Thune has pledged a floor vote before the August recess, with the week of July 20 under active discussion \u2014 a nearer and harder catalyst than the findings' 'no floor vote scheduled' framing. (Coinpedia, KuCoin/Lummis, PYMNTS.)"
+ ],
+ "data_notes": [
+  "GRAM (ex-Toncoin) has only 30 daily bars since its 2026-07-02 Binance relisting; it is rated INSUFFICIENT DATA until 55 bars exist (~mid-Sept 2026) and is excluded from ratings and alerts."
  ]
 }

@@ -59,7 +59,8 @@ def spark_svg(closes, up):
 
 
 SIGNAL_CLASS = {"STRONG BUY": "chip-buy chip-strong", "BUY": "chip-buy",
-                "HOLD": "chip-hold", "SELL": "chip-sell", "STRONG SELL": "chip-sell chip-strong"}
+                "HOLD": "chip-hold", "SELL": "chip-sell", "STRONG SELL": "chip-sell chip-strong",
+                "INSUFFICIENT DATA": "chip-hold"}
 
 
 def row(s, bars_by_ticker):

@@ -1,5 +1,5 @@
 {
- "generated_at_utc": "2026-07-31T07:09:06+00:00",
+ "generated_at_utc": "2026-07-31T07:10:42+00:00",
  "signals": [
   {
    "ticker": "BTCUSDT",
@@ -109,8 +109,8 @@
    "hi20": 592.51,
    "lo20": 564.9,
    "off_52w_high_pct": -37.53,
-   "prev_band": "SELL",
-   "prev_trend_state": "below",
+   "prev_band": "BUY",
+   "prev_trend_state": "above",
    "trend_state": "above"
   },
   {
@@ -333,8 +333,8 @@
    "hi20": 0.1745,
    "lo20": 0.1556,
    "off_52w_high_pct": -60.12,
-   "prev_band": "STRONG SELL",
-   "prev_trend_state": "below",
+   "prev_band": "STRONG BUY",
+   "prev_trend_state": "above",
    "trend_state": "above"
   },
   {
@@ -347,9 +347,9 @@
    "last": 1.403,
    "change24h_pct": -1.751,
    "score": 0,
-   "signal": "HOLD",
+   "signal": "INSUFFICIENT DATA",
    "reasons": [
-    "RSI 36 neutral"
+    "only 30 daily bars (need 55) \u2014 indicators unreliable, not rated"
    ],
    "rsi": 36.4,
    "sma20": 1.4955500000000002,
@@ -358,15 +358,15 @@
    "macd_cross": null,
    "pct_b": 0.145,
    "atr14": 0.0635,
-   "stop_suggest": 1.276,
-   "target1": 1.53,
-   "target2": 1.657,
+   "stop_suggest": null,
+   "target1": null,
+   "target2": null,
    "hi52": 1.78,
    "lo52": 1.403,
    "hi20": 1.62,
    "lo20": 1.403,
    "off_52w_high_pct": -21.18,
-   "prev_band": "STRONG SELL",
+   "prev_band": "HOLD",
    "prev_trend_state": "below",
    "trend_state": "below"
   },
@@ -515,7 +515,7 @@
    "hi20": 7.690000057220459,
    "lo20": 7.340000152587891,
    "off_52w_high_pct": -27.84,
-   "prev_band": "HOLD",
+   "prev_band": "SELL",
    "prev_trend_state": "below",
    "trend_state": "below"
   },
@@ -589,7 +589,7 @@
    "hi20": 2.809999942779541,
    "lo20": 2.6600000858306885,
    "off_52w_high_pct": -14.38,
-   "prev_band": "SELL",
+   "prev_band": "HOLD",
    "prev_trend_state": "below",
    "trend_state": "below"
   },
@@ -776,7 +776,7 @@
    "lo20": 3.299999952316284,
    "off_52w_high_pct": -18.31,
    "prev_band": "STRONG BUY",
-   "prev_trend_state": null,
+   "prev_trend_state": "above",
    "trend_state": "above"
   },
   {
@@ -923,7 +923,7 @@
    "hi20": 385.0,
    "lo20": 379.0,
    "off_52w_high_pct": -6.11,
-   "prev_band": "SELL",
+   "prev_band": "STRONG SELL",
    "prev_trend_state": "below",
    "trend_state": "below"
   },
