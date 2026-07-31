@@ -1,17 +1,59 @@
 {
- "generated_at_utc": "2026-07-30T07:15:58+00:00",
+ "generated_at_utc": "2026-07-31T07:09:06+00:00",
  "alerts": [
   {
-   "ticker": "AVAXUSDT",
+   "ticker": "BNBUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "AVAXUSDT: SELL -> STRONG SELL (score -35 -> -50)"
+   "msg": "BNBUSDT: SELL -> BUY (score -35 -> 20)"
+  },
+  {
+   "ticker": "BNBUSDT",
+   "severity": "actionable",
+   "type": "trend",
+   "msg": "BNBUSDT: price crossed above its 50-day average \u2014 trend change"
   },
   {
    "ticker": "ADAUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "ADAUSDT: SELL -> STRONG SELL (score -35 -> -50)"
+   "msg": "ADAUSDT: STRONG SELL -> STRONG BUY (score -50 -> 55)"
+  },
+  {
+   "ticker": "ADAUSDT",
+   "severity": "info",
+   "type": "macd",
+   "msg": "ADAUSDT: MACD bullish cross"
+  },
+  {
+   "ticker": "ADAUSDT",
+   "severity": "actionable",
+   "type": "trend",
+   "msg": "ADAUSDT: price crossed above its 50-day average \u2014 trend change"
+  },
+  {
+   "ticker": "GRAMUSDT",
+   "severity": "info",
+   "type": "signal_change",
+   "msg": "GRAMUSDT: STRONG SELL -> HOLD (score -65 -> 0)"
+  },
+  {
+   "ticker": "DIB",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "DIB: HOLD -> SELL (score -15 -> -30)"
+  },
+  {
+   "ticker": "DEWA",
+   "severity": "info",
+   "type": "signal_change",
+   "msg": "DEWA: SELL -> HOLD (score -35 -> -15)"
+  },
+  {
+   "ticker": "IHC",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "IHC: SELL -> STRONG SELL (score -40 -> -50)"
   }
  ]
 }
