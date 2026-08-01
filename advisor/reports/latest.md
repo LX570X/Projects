@@ -1,7 +1,7 @@
 # Trading Advisor — Signal Report
 
-- Data fetched: 2026-08-01T05:48:37+00:00 UTC
-- Report time: 2026-08-01 09:48 Dubai time
+- Data fetched: 2026-08-01T07:08:52+00:00 UTC
+- Report time: 2026-08-01 11:08 Dubai time
 - UAE market (DFM/ADX): CLOSED (hours Mon–Fri 10:00–15:00 Dubai)
 
 > Educational, rules-based technical screen — not licensed financial advice. Markets can move against any signal; never risk money you cannot afford to lose.
@@ -10,28 +10,28 @@
 
 | Asset | Price | 24h/1d | Signal | Score | RSI | Stop | Target 1 | Target 2 |
 |---|---|---|---|---|---|---|---|---|
-| ADAUSDT (Cardano) | 0.17 USD | +0.9% | **STRONG BUY** | 55 | 53.0 | 0.1537 | 0.1863 | 0.2026 |
-| ETHUSDT (Ethereum) | 1,865.69 USD | -1.9% | **BUY** | 35 | 51.0 | 1,747.38 | 1,984.00 | 2,102.32 |
-| LINKUSDT (Chainlink) | 8.191 USD | -2.0% | **BUY** | 35 | 47.9 | 7.609 | 8.773 | 9.355 |
-| BNBUSDT (BNB) | 590.35 USD | +0.1% | **BUY** | 20 | 59.0 | 564.90 | 611.86 | 633.36 |
-| GRAMUSDT (Gram (ex-Toncoin)) | 1.397 USD | -0.4% | **INSUFFICIENT DATA** | 0 | 35.9 | — | — | — |
-| BTCUSDT (Bitcoin) | 63,008.59 USD | -2.0% | **HOLD** | -15 | 44.8 | 59,893.51 | 66,123.67 | 69,238.76 |
-| SOLUSDT (Solana) | 72.92 USD | -1.6% | **HOLD** | -15 | 42.1 | 68.55 | 77.29 | 81.65 |
-| LTCUSDT (Litecoin) | 44.42 USD | -2.2% | **HOLD** | -15 | 43.1 | 41.69 | 47.15 | 49.87 |
-| DOGEUSDT (Dogecoin) | 0.07005 USD | -0.0% | **SELL** | -35 | 40.8 | 0.06521 | 0.07489 | 0.07974 |
-| AVAXUSDT (Avalanche) | 6.401 USD | -0.7% | **STRONG SELL** | -60 | 45.2 | 5.88 | 6.922 | 7.444 |
-| XRPUSDT (XRP) | 1.063 USD | -1.6% | **STRONG SELL** | -65 | 41.6 | 1.001 | 1.124 | 1.186 |
+| ADAUSDT (Cardano) | 0.1706 USD | +1.4% | **STRONG BUY** | 55 | 53.5 | 0.1543 | 0.1869 | 0.2032 |
+| ETHUSDT (Ethereum) | 1,870.50 USD | -1.3% | **BUY** | 35 | 51.6 | 1,752.16 | 1,988.84 | 2,107.17 |
+| LINKUSDT (Chainlink) | 8.19 USD | -1.4% | **BUY** | 35 | 47.9 | 7.607 | 8.773 | 9.356 |
+| BNBUSDT (BNB) | 591.34 USD | -0.2% | **BUY** | 20 | 59.5 | 564.90 | 612.85 | 634.35 |
+| GRAMUSDT (Gram (ex-Toncoin)) | 1.395 USD | -0.6% | **INSUFFICIENT DATA** | 0 | 35.8 | — | — | — |
+| BTCUSDT (Bitcoin) | 63,083.42 USD | -1.7% | **HOLD** | -15 | 45.1 | 59,968.34 | 66,198.50 | 69,313.59 |
+| SOLUSDT (Solana) | 73.01 USD | -1.2% | **HOLD** | -15 | 42.4 | 68.64 | 77.38 | 81.74 |
+| LTCUSDT (Litecoin) | 44.58 USD | -1.5% | **HOLD** | -15 | 44.1 | 41.85 | 47.31 | 50.03 |
+| DOGEUSDT (Dogecoin) | 0.07018 USD | +0.4% | **SELL** | -35 | 41.2 | 0.06534 | 0.07502 | 0.07987 |
+| AVAXUSDT (Avalanche) | 6.422 USD | +0.0% | **SELL** | -45 | 45.9 | 5.901 | 6.943 | 7.465 |
+| XRPUSDT (XRP) | 1.064 USD | -1.2% | **STRONG SELL** | -65 | 41.8 | 1.002 | 1.125 | 1.187 |
 
-**ADAUSDT** — STRONG BUY (score 55): price above 50-day average (0.1646) — uptrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping down; MACD momentum positive; fresh MACD bullish cross (last 3 days); RSI 53 neutral.
-**ETHUSDT** — BUY (score 35): price above 50-day average (1779) — uptrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping up; MACD momentum negative; RSI 51 neutral.
+**ADAUSDT** — STRONG BUY (score 55): price above 50-day average (0.1646) — uptrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping down; MACD momentum positive; fresh MACD bullish cross (last 3 days); RSI 54 neutral.
+**ETHUSDT** — BUY (score 35): price above 50-day average (1779) — uptrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping up; MACD momentum negative; RSI 52 neutral.
 **LINKUSDT** — BUY (score 35): price above 50-day average (8.031) — uptrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping up; MACD momentum negative; RSI 48 neutral.
-**BNBUSDT** — BUY (score 20): price above 50-day average (576.3) — uptrend; 20/50-day averages within 0.37% — no structural edge (not scored); 50-day average sloping down; MACD momentum positive; RSI 59 neutral; price above upper Bollinger band (stretched up).
+**BNBUSDT** — BUY (score 20): price above 50-day average (576.3) — uptrend; 20/50-day averages within 0.36% — no structural edge (not scored); 50-day average sloping down; MACD momentum positive; RSI 60 neutral; price above upper Bollinger band (stretched up).
 **GRAMUSDT** — INSUFFICIENT DATA (score 0): only 31 daily bars (need 55) — indicators unreliable, not rated.
 **BTCUSDT** — HOLD (score -15): price below 50-day average (6.343e+04) — downtrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping up; MACD momentum negative; RSI 45 neutral.
 **SOLUSDT** — HOLD (score -15): price below 50-day average (74.97) — downtrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping up; MACD momentum negative; RSI 42 neutral.
-**LTCUSDT** — HOLD (score -15): price below 50-day average (44.69) — downtrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping up; MACD momentum negative; RSI 43 neutral.
-**DOGEUSDT** — SELL (score -35): price below 50-day average (0.07565) — downtrend; 20-day avg below 50-day avg (bearish structure); 50-day average sloping down; MACD momentum positive; RSI 41 neutral.
-**AVAXUSDT** — STRONG SELL (score -60): price below 50-day average (6.56) — downtrend; 20-day avg below 50-day avg (bearish structure); 50-day average sloping down; MACD momentum flat (not scored); fresh MACD bearish cross (last 3 days); RSI 45 neutral.
+**LTCUSDT** — HOLD (score -15): price below 50-day average (44.69) — downtrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping up; MACD momentum negative; RSI 44 neutral.
+**DOGEUSDT** — SELL (score -35): price below 50-day average (0.07566) — downtrend; 20-day avg below 50-day avg (bearish structure); 50-day average sloping down; MACD momentum positive; RSI 41 neutral.
+**AVAXUSDT** — SELL (score -45): price below 50-day average (6.554) — downtrend; 20/50-day averages within 0.44% — no structural edge (not scored); 50-day average sloping down; MACD momentum flat (not scored); fresh MACD bearish cross (last 3 days); RSI 46 neutral.
 **XRPUSDT** — STRONG SELL (score -65): price below 50-day average (1.107) — downtrend; 20-day avg below 50-day avg (bearish structure); 50-day average sloping down; MACD momentum negative; RSI 42 neutral.
 
 ## UAE Stocks (trade via Al Ramz)
@@ -81,20 +81,7 @@
 **ALDAR** — STRONG SELL (score -65): price below 50-day average (7.888) — downtrend; 20-day avg below 50-day avg (bearish structure); MACD momentum negative; RSI 33 neutral; TradingView technical consensus bearish.
 
 ## Alerts (changes since previous run)
-- [info] BTCUSDT: BUY -> HOLD (score 35 -> -15)
-- [actionable] BTCUSDT: price crossed below its 50-day average — trend change
-- [info] AVAXUSDT: MACD bearish cross
-- [info] LTCUSDT: BUY -> HOLD (score 25 -> -15)
-- [actionable] LTCUSDT: price crossed below its 50-day average — trend change
-- [actionable] DEWA: HOLD -> STRONG BUY (score -15 -> 60)
-- [info] DEWA: MACD bullish cross
-- [actionable] DEWA: price crossed above its 50-day average — trend change
-- [actionable] FAB: STRONG BUY -> BUY (score 65 -> 35)
-- [info] FAB: RSI crossed above 70 (now 71.0)
-- [actionable] IHC: STRONG SELL -> SELL (score -50 -> -40)
-- [actionable] ADNOCGAS: SELL -> STRONG SELL (score -35 -> -50)
-- [actionable] ADIB: STRONG BUY -> BUY (score 50 -> 40)
-- [actionable] ADNOCDRILL: HOLD -> BUY (score -15 -> 35)
+- [actionable] AVAXUSDT: STRONG SELL -> SELL (score -60 -> -45)
 
 Position sizing: risk no more than 1–2% of capital per idea; the suggested stop defines the risk per unit.
 
