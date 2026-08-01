@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-19T11:45:00+00:00",
+ "updated": "2026-08-01T05:50+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": 0
@@ -43,6 +43,49 @@
    }
   ],
   "started": "2026-07-17",
-  "stocks_account": "Al Ramz - not opened yet, user will confirm"
+  "stocks_account": "Al Ramz - not opened yet, user will confirm",
+  "accumulations": {
+   "core_uae_stocks_aed": 400,
+   "opportunity_usdt_aed": 250
+  },
+  "dca_history": [
+   {
+    "date": "2026-08-01",
+    "amount_aed": 1000,
+    "core_crypto": {
+     "eth_aed": 162,
+     "eth_usd": 44.25,
+     "eth_qty": 0.02372,
+     "eth_price": 1865.69,
+     "btc_aed": 88,
+     "btc_usd": 23.83,
+     "btc_qty": 0.000378,
+     "btc_price": 63008.59,
+     "split_reason": "ETH above 50-day & BUY(+35); BTC lost its 50-day today -> HOLD(-15). Tilt 65/35 to ETH, still accumulate BTC per DCA rule."
+    },
+    "core_uae_stocks": {
+     "action": "accumulate",
+     "aed": 400,
+     "bucket_total_aed": 400,
+     "reason": "Al Ramz account not open; needs 1,200 AED before first buy"
+    },
+    "opportunity": {
+     "action": "hold as USDT",
+     "aed": 250,
+     "bucket_total_aed": 250,
+     "reason": "BTC broke below its 50-day (63,009 vs 63,428) and LTC too - crypto breadth deteriorating. Deploy trigger: BTC reclaims 63,428."
+    },
+    "satellite": {
+     "action": "user decision",
+     "candidate": "ADAUSDT",
+     "aed": 100,
+     "qty": 160.2,
+     "price": 0.17,
+     "stop": 0.15369,
+     "max_loss_usd": 2.61,
+     "reason": "Strongest non-BTC/ETH alt (+55) with real catalysts (RealFi testnet, van Rossem fork, Grayscale ETF filing, whale accumulation); but clears MA deadband by only 0.05pp and BTC breaking down is a headwind for alts."
+    }
+   }
+  ]
  }
 }
