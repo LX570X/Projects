@@ -1,4 +1,89 @@
 {
- "generated_at_utc": "2026-07-31T07:10:42+00:00",
- "alerts": []
+ "generated_at_utc": "2026-08-01T05:48:37+00:00",
+ "alerts": [
+  {
+   "ticker": "BTCUSDT",
+   "severity": "info",
+   "type": "signal_change",
+   "msg": "BTCUSDT: BUY -> HOLD (score 35 -> -15)"
+  },
+  {
+   "ticker": "BTCUSDT",
+   "severity": "actionable",
+   "type": "trend",
+   "msg": "BTCUSDT: price crossed below its 50-day average \u2014 trend change"
+  },
+  {
+   "ticker": "AVAXUSDT",
+   "severity": "info",
+   "type": "macd",
+   "msg": "AVAXUSDT: MACD bearish cross"
+  },
+  {
+   "ticker": "LTCUSDT",
+   "severity": "info",
+   "type": "signal_change",
+   "msg": "LTCUSDT: BUY -> HOLD (score 25 -> -15)"
+  },
+  {
+   "ticker": "LTCUSDT",
+   "severity": "actionable",
+   "type": "trend",
+   "msg": "LTCUSDT: price crossed below its 50-day average \u2014 trend change"
+  },
+  {
+   "ticker": "DEWA",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "DEWA: HOLD -> STRONG BUY (score -15 -> 60)"
+  },
+  {
+   "ticker": "DEWA",
+   "severity": "info",
+   "type": "macd",
+   "msg": "DEWA: MACD bullish cross"
+  },
+  {
+   "ticker": "DEWA",
+   "severity": "actionable",
+   "type": "trend",
+   "msg": "DEWA: price crossed above its 50-day average \u2014 trend change"
+  },
+  {
+   "ticker": "FAB",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "FAB: STRONG BUY -> BUY (score 65 -> 35)"
+  },
+  {
+   "ticker": "FAB",
+   "severity": "info",
+   "type": "rsi",
+   "msg": "FAB: RSI crossed above 70 (now 71.0)"
+  },
+  {
+   "ticker": "IHC",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "IHC: STRONG SELL -> SELL (score -50 -> -40)"
+  },
+  {
+   "ticker": "ADNOCGAS",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ADNOCGAS: SELL -> STRONG SELL (score -35 -> -50)"
+  },
+  {
+   "ticker": "ADIB",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ADIB: STRONG BUY -> BUY (score 50 -> 40)"
+  },
+  {
+   "ticker": "ADNOCDRILL",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ADNOCDRILL: HOLD -> BUY (score -15 -> 35)"
+  }
+ ]
 }
