@@ -40,6 +40,17 @@
    "target1": 1964.0,
    "rationale": "Advisor cycles were skipped 2026-07-20..29 (operator error: daily fires misjudged as duplicates). During the gap ETH touched target1 intraday on Jul 26 (high 1967.36) and Jul 27 (high 1981.24) but closed below both days; the plan's 'sell half at 1964' action was never executed. Stop (1572) was never threatened - lowest low 1843.14, 17.2% above stop. Position unharmed: +4.7% vs entry.",
    "outcome": "no loss; planned partial profit-take missed; position still open and BUY-rated"
+  },
+  {
+   "date": "2026-08-02",
+   "ticker": "BTCUSDT",
+   "action": "OPPORTUNITY FUND TRIGGER FIRED - BUY",
+   "price": 63480.01,
+   "stop": 60256.328571428574,
+   "target1": 66703.69142857143,
+   "rationale": "BTC reclaimed its 50-day ($63,480 vs $63,405), the exact trigger set on 2026-08-01 for the 250 AED opportunity bucket. Whale/shark wallets accumulated ~19,700 BTC over eight days. Breadth also repaired: LTC and BTC both back to BUY, AVAX off SELL.",
+   "sizing": "250 AED ($68.07) -> 0.001072 BTC; max loss to stop $3.46",
+   "status": "advised - awaiting user execution"
   }
  ]
 }
