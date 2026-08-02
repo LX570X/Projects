@@ -1,11 +1,41 @@
 {
- "generated_at_utc": "2026-08-01T07:08:52+00:00",
+ "generated_at_utc": "2026-08-02T07:08:45+00:00",
  "alerts": [
+  {
+   "ticker": "BTCUSDT",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "BTCUSDT: HOLD -> BUY (score -15 -> 35)"
+  },
+  {
+   "ticker": "SOLUSDT",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "SOLUSDT: HOLD -> SELL (score -15 -> -30)"
+  },
+  {
+   "ticker": "AVAXUSDT",
+   "severity": "info",
+   "type": "signal_change",
+   "msg": "AVAXUSDT: SELL -> HOLD (score -45 -> 5)"
+  },
   {
    "ticker": "AVAXUSDT",
    "severity": "actionable",
+   "type": "trend",
+   "msg": "AVAXUSDT: price crossed above its 50-day average \u2014 trend change"
+  },
+  {
+   "ticker": "ADAUSDT",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "ADAUSDT moved +8.7% in the last day (now 0.1856 USD)"
+  },
+  {
+   "ticker": "LTCUSDT",
+   "severity": "actionable",
    "type": "signal_change",
-   "msg": "AVAXUSDT: STRONG SELL -> SELL (score -60 -> -45)"
+   "msg": "LTCUSDT: HOLD -> BUY (score -15 -> 35)"
   }
  ]
 }
