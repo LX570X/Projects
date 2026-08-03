@@ -51,6 +51,17 @@
    "rationale": "BTC reclaimed its 50-day ($63,480 vs $63,405), the exact trigger set on 2026-08-01 for the 250 AED opportunity bucket. Whale/shark wallets accumulated ~19,700 BTC over eight days. Breadth also repaired: LTC and BTC both back to BUY, AVAX off SELL.",
    "sizing": "250 AED ($68.07) -> 0.001072 BTC; max loss to stop $3.46",
    "status": "advised - awaiting user execution"
+  },
+  {
+   "date": "2026-08-03",
+   "ticker": "BTCUSDT",
+   "action": "WHIPSAW on yesterday's opportunity-fund BUY",
+   "price": 62676.85,
+   "advised_entry": 63480.01,
+   "stop": 60256.33,
+   "rationale": "BTC lost the 50-day again one day after reclaiming it (62,677 vs 50d 63,345). The 2026-08-02 opportunity-fund trigger therefore whipsawed: if executed, position is -1.3% and 3.9% above its stop. Seasonality is a headwind - BTC has averaged roughly -10% across recent Augusts and remains below its 20- and 50-day EMAs after failing at $66,500.",
+   "outcome": "open, underwater 1.3%; stop intact at 60,256 - no action required unless stop breaks",
+   "lesson": "A single-day close through a moving average is a weak trigger for deployment; require a 2-day hold above the level before committing the opportunity bucket."
   }
  ]
 }

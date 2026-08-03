@@ -1,21 +1,21 @@
 {
- "updated": "2026-08-02T07:10+00:00",
+ "updated": "2026-08-03T07:10+00:00",
  "market_notes": [
   {
    "market": "DFM property",
    "note": "The Dubai property EQUITY selloff is geopolitical repricing, not deteriorating business. DFM real-estate index lost 17%+ and erased its 2025 gain after the early-March strike on Dubai; developers sold as a risk-off hedge. Physical market is far more resilient (~90% cash-funded, ~70% end-user). Emaar/Aldar reportedly enter H2 with record pipelines. Our STRONG SELL on EMAAR/EMAARDEV/ALDAR is a TREND signal - do not read it as a solvency call."
   },
   {
-   "market": "ADX banks",
-   "note": "Bank strength is fundamentally backed: ADCB Q2 pre-tax profit +26% (H1 +28%), 20th consecutive quarter of growth, ~4.4% dividend yield, 15 straight years of dividends, and a pledge of >AED 25bn dividends over five years. FAB reported record ~24% net profit growth with CET1 above 13.5%. This supports FAB/ADCB as the core UAE stock candidates."
+   "market": "Altcoins",
+   "note": "ADA +8.7% on the day (~$0.186), extending its run: whales bought 30M+ ADA in a week, tokenized RWA ecosystem grew to $55.3M, and futures history may qualify it for spot-ETF eligibility around Aug 9. Note ADA has now run well past our Aug-1 quoted entry of $0.17 - chasing it here means a much wider stop."
   },
   {
    "market": "Crypto macro",
-   "note": "Breadth repaired 2026-08-02: BTC reclaimed its 50-day ($63,480 vs $63,405) and LTC returned to BUY; AVAX off SELL. On-chain, whale/shark wallets accumulated ~19,700 BTC over eight days as retail dip-buying cooled - read as smart money absorbing supply."
+   "note": "BTC reclaimed then immediately lost its 50-day (Aug 2 -> Aug 3), a classic whipsaw. Seasonality is against it: BTC has averaged about -10% across recent Augusts, and it sits below both its 20- and 50-day EMAs after failing at $66,500. Broad crypto red today; ADA the only STRONG BUY left."
   },
   {
-   "market": "Altcoins",
-   "note": "ADA +8.7% on the day (~$0.186), extending its run: whales bought 30M+ ADA in a week, tokenized RWA ecosystem grew to $55.3M, and futures history may qualify it for spot-ETF eligibility around Aug 9. Note ADA has now run well past our Aug-1 quoted entry of $0.17 - chasing it here means a much wider stop."
+   "market": "UAE banks",
+   "note": "Bank cluster upgraded broadly (FAB, EMIRATESNBD, EAND, ADIB all to STRONG BUY; ADCB already there). Emirates NBD posted AED 6.42bn Q2 profit, above forecast; FAB Securities upgraded it to buy with a AED 35.50 target, citing a resilient quarter and diversified revenue. Banks are now the strongest sector on the board while property remains the weakest."
   }
  ],
  "asset_notes": {
