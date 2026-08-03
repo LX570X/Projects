@@ -1,41 +1,65 @@
 {
- "generated_at_utc": "2026-08-02T07:08:45+00:00",
+ "generated_at_utc": "2026-08-03T07:08:54+00:00",
  "alerts": [
   {
-   "ticker": "BTCUSDT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "BTCUSDT: HOLD -> BUY (score -15 -> 35)"
-  },
-  {
-   "ticker": "SOLUSDT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "SOLUSDT: HOLD -> SELL (score -15 -> -30)"
-  },
-  {
-   "ticker": "AVAXUSDT",
-   "severity": "info",
-   "type": "signal_change",
-   "msg": "AVAXUSDT: SELL -> HOLD (score -45 -> 5)"
-  },
-  {
    "ticker": "AVAXUSDT",
    "severity": "actionable",
-   "type": "trend",
-   "msg": "AVAXUSDT: price crossed above its 50-day average \u2014 trend change"
+   "type": "signal_change",
+   "msg": "AVAXUSDT: HOLD -> STRONG SELL (score 5 -> -50)"
   },
   {
-   "ticker": "ADAUSDT",
+   "ticker": "EMIRATESNBD",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "EMIRATESNBD: BUY -> STRONG BUY (score 35 -> 50)"
+  },
+  {
+   "ticker": "TALABAT",
    "severity": "info",
    "type": "big_move",
-   "msg": "ADAUSDT moved +8.7% in the last day (now 0.1856 USD)"
+   "msg": "TALABAT moved +2.8% in the last day (now 1.09 AED)"
   },
   {
-   "ticker": "LTCUSDT",
+   "ticker": "EMAARDEV",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "LTCUSDT: HOLD -> BUY (score -15 -> 35)"
+   "msg": "EMAARDEV: STRONG SELL -> SELL (score -65 -> -40)"
+  },
+  {
+   "ticker": "EMAARDEV",
+   "severity": "info",
+   "type": "macd",
+   "msg": "EMAARDEV: MACD bullish cross"
+  },
+  {
+   "ticker": "FAB",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "FAB: BUY -> STRONG BUY (score 35 -> 55)"
+  },
+  {
+   "ticker": "IHC",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "IHC: SELL -> STRONG SELL (score -40 -> -50)"
+  },
+  {
+   "ticker": "EAND",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "EAND: BUY -> STRONG BUY (score 35 -> 50)"
+  },
+  {
+   "ticker": "ADIB",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ADIB: BUY -> STRONG BUY (score 40 -> 50)"
+  },
+  {
+   "ticker": "ADNOCDRILL",
+   "severity": "actionable",
+   "type": "trend",
+   "msg": "ADNOCDRILL: price crossed above its 50-day average \u2014 trend change"
   }
  ]
 }
