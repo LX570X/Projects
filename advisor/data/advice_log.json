@@ -62,6 +62,24 @@
    "rationale": "BTC lost the 50-day again one day after reclaiming it (62,677 vs 50d 63,345). The 2026-08-02 opportunity-fund trigger therefore whipsawed: if executed, position is -1.3% and 3.9% above its stop. Seasonality is a headwind - BTC has averaged roughly -10% across recent Augusts and remains below its 20- and 50-day EMAs after failing at $66,500.",
    "outcome": "open, underwater 1.3%; stop intact at 60,256 - no action required unless stop breaks",
    "lesson": "A single-day close through a moving average is a weak trigger for deployment; require a 2-day hold above the level before committing the opportunity bucket."
+  },
+  {
+   "date": "2026-08-04",
+   "ticker": "BTCUSDT",
+   "action": "trigger re-armed - NOT deploying today (2-day rule)",
+   "price": 63592.01,
+   "level": 63307.626199999984,
+   "rationale": "BTC back above its 50-day (63,592 vs 63,308) but this is day 1 of the confirmation window added after the 2026-08-03 whipsaw. Deploy only if it also closes above the 50-day tomorrow.",
+   "status": "pending confirmation"
+  },
+  {
+   "date": "2026-08-04",
+   "ticker": "ADAUSDT",
+   "action": "missed satellite entry - review",
+   "price": 0.195,
+   "advised_entry_on_aug1": 0.17,
+   "rationale": "Advised waiting on Aug 1 at $0.17 and again on Aug 2 at $0.186 (pullback to ~$0.173). ADA has instead run to $0.1950, +14.7% above the original quote. The wait call has cost roughly 15% of upside on a 100 AED position (~$4).",
+   "outcome": "not taken; entry now materially worse - do not chase, satellite stays uncommitted or goes to a different name"
   }
  ]
 }
