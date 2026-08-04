@@ -1,24 +1,64 @@
 {
- "generated_at_utc": "2026-08-03T07:08:53+00:00",
+ "generated_at_utc": "2026-08-04T07:14:13+00:00",
  "movers": [
   {
-   "symbol": "BICOUSDT",
-   "last": 0.0145,
-   "change24h_pct": 21.746,
-   "quote_volume24h": 11112796.3624473,
-   "rsi": 51.6,
+   "symbol": "VICUSDT",
+   "last": 0.0479,
+   "change24h_pct": 74.182,
+   "quote_volume24h": 24962359.936214,
+   "rsi": 66.2,
+   "above_sma20": true,
+   "above_sma50": true,
+   "setup": true
+  },
+  {
+   "symbol": "HOMEUSDT",
+   "last": 0.00967,
+   "change24h_pct": 41.789,
+   "quote_volume24h": 23715447.70059,
+   "rsi": 48.1,
    "above_sma20": true,
    "above_sma50": false,
    "setup": false
   },
   {
-   "symbol": "KAITOUSDT",
-   "last": 0.9569,
-   "change24h_pct": -18.472,
-   "quote_volume24h": 15603779.24828,
-   "rsi": 50.2,
-   "above_sma20": false,
+   "symbol": "HFTUSDT",
+   "last": 0.009096,
+   "change24h_pct": 25.462,
+   "quote_volume24h": 6005683.336014,
+   "rsi": 50.0,
+   "above_sma20": true,
+   "above_sma50": false,
+   "setup": false
+  },
+  {
+   "symbol": "GIGGLEUSDT",
+   "last": 34.2,
+   "change24h_pct": -21.882,
+   "quote_volume24h": 12353506.14233,
+   "rsi": 54.8,
+   "above_sma20": true,
    "above_sma50": true,
+   "setup": false
+  },
+  {
+   "symbol": "TUTUSDT",
+   "last": 0.02322,
+   "change24h_pct": 20.561,
+   "quote_volume24h": 6715558.74054,
+   "rsi": 83.6,
+   "above_sma20": true,
+   "above_sma50": true,
+   "setup": false
+  },
+  {
+   "symbol": "BICOUSDT",
+   "last": 0.01735,
+   "change24h_pct": 18.917,
+   "quote_volume24h": 16975892.8035469,
+   "rsi": 62.6,
+   "above_sma20": true,
+   "above_sma50": false,
    "setup": false
   },
   {
@@ -32,73 +72,33 @@
    "setup": false
   },
   {
-   "symbol": "GIGGLEUSDT",
-   "last": 44.72,
-   "change24h_pct": 10.775,
-   "quote_volume24h": 16722605.02098,
-   "rsi": 72.1,
-   "above_sma20": true,
-   "above_sma50": true,
-   "setup": false
-  },
-  {
-   "symbol": "HOMEUSDT",
-   "last": 0.00683,
-   "change24h_pct": -9.536,
-   "quote_volume24h": 24198341.85591,
-   "rsi": 36.2,
+   "symbol": "VANRYUSDT",
+   "last": 0.003999,
+   "change24h_pct": 12.426,
+   "quote_volume24h": 6176579.181273,
+   "rsi": 44.5,
    "above_sma20": false,
    "above_sma50": false,
    "setup": false
   },
   {
-   "symbol": "HYPERUSDT",
-   "last": 0.0623,
-   "change24h_pct": -8.785,
-   "quote_volume24h": 7350248.63441,
-   "rsi": 45.5,
-   "above_sma20": false,
-   "above_sma50": false,
+   "symbol": "SNXXBUSDT",
+   "last": 10.85,
+   "change24h_pct": 11.282,
+   "quote_volume24h": 6649355.7702,
+   "rsi": null,
+   "above_sma20": null,
+   "above_sma50": null,
    "setup": false
   },
   {
    "symbol": "BANKUSDT",
-   "last": 0.045,
-   "change24h_pct": -7.407,
-   "quote_volume24h": 12614692.41075,
-   "rsi": 39.0,
+   "last": 0.0405,
+   "change24h_pct": -9.598,
+   "quote_volume24h": 12784213.48598,
+   "rsi": 38.5,
    "above_sma20": false,
    "above_sma50": false,
-   "setup": false
-  },
-  {
-   "symbol": "ZAMAUSDT",
-   "last": 0.05051,
-   "change24h_pct": -6.22,
-   "quote_volume24h": 7489369.58971,
-   "rsi": 59.1,
-   "above_sma20": true,
-   "above_sma50": true,
-   "setup": false
-  },
-  {
-   "symbol": "ONDOUSDT",
-   "last": 0.3686,
-   "change24h_pct": -6.089,
-   "quote_volume24h": 9417149.69447,
-   "rsi": 48.7,
-   "above_sma20": false,
-   "above_sma50": true,
-   "setup": false
-  },
-  {
-   "symbol": "EULUSDT",
-   "last": 1.379,
-   "change24h_pct": -5.483,
-   "quote_volume24h": 42638602.01237,
-   "rsi": 52.2,
-   "above_sma20": true,
-   "above_sma50": true,
    "setup": false
   }
  ]

@@ -1,65 +1,89 @@
 {
- "generated_at_utc": "2026-08-03T07:08:54+00:00",
+ "generated_at_utc": "2026-08-04T07:14:13+00:00",
  "alerts": [
+  {
+   "ticker": "AVAXUSDT",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "AVAXUSDT moved +6.2% in the last day (now 6.795 USD)"
+  },
   {
    "ticker": "AVAXUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "AVAXUSDT: HOLD -> STRONG SELL (score 5 -> -50)"
+   "msg": "AVAXUSDT: STRONG SELL -> BUY (score -50 -> 40)"
+  },
+  {
+   "ticker": "AVAXUSDT",
+   "severity": "info",
+   "type": "macd",
+   "msg": "AVAXUSDT: MACD bullish cross"
+  },
+  {
+   "ticker": "ADAUSDT",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "ADAUSDT moved +6.0% in the last day (now 0.195 USD)"
   },
   {
    "ticker": "EMIRATESNBD",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "EMIRATESNBD: BUY -> STRONG BUY (score 35 -> 50)"
-  },
-  {
-   "ticker": "TALABAT",
    "severity": "info",
    "type": "big_move",
-   "msg": "TALABAT moved +2.8% in the last day (now 1.09 AED)"
+   "msg": "EMIRATESNBD moved +3.2% in the last day (now 31.36 AED)"
   },
   {
-   "ticker": "EMAARDEV",
+   "ticker": "EMIRATESNBD",
+   "severity": "info",
+   "type": "macd",
+   "msg": "EMIRATESNBD: MACD bullish cross"
+  },
+  {
+   "ticker": "DIB",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "EMAARDEV: STRONG SELL -> SELL (score -65 -> -40)"
+   "msg": "DIB: SELL -> STRONG BUY (score -30 -> 50)"
+  },
+  {
+   "ticker": "SALIK",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "SALIK moved +2.7% in the last day (now 5.41 AED)"
+  },
+  {
+   "ticker": "DEWA",
+   "severity": "info",
+   "type": "macd",
+   "msg": "DEWA: MACD bullish cross"
   },
   {
    "ticker": "EMAARDEV",
    "severity": "info",
-   "type": "macd",
-   "msg": "EMAARDEV: MACD bullish cross"
+   "type": "big_move",
+   "msg": "EMAARDEV moved +3.1% in the last day (now 13.38 AED)"
+  },
+  {
+   "ticker": "ALDAR",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ALDAR: STRONG SELL -> SELL (score -65 -> -40)"
   },
   {
    "ticker": "FAB",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "FAB: BUY -> STRONG BUY (score 35 -> 55)"
+   "severity": "info",
+   "type": "rsi",
+   "msg": "FAB: RSI crossed above 70 (now 70.9)"
   },
   {
-   "ticker": "IHC",
-   "severity": "actionable",
+   "ticker": "TAQA",
+   "severity": "info",
    "type": "signal_change",
-   "msg": "IHC: SELL -> STRONG SELL (score -40 -> -50)"
-  },
-  {
-   "ticker": "EAND",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "EAND: BUY -> STRONG BUY (score 35 -> 50)"
+   "msg": "TAQA: BUY -> HOLD (score 25 -> 15)"
   },
   {
    "ticker": "ADIB",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "ADIB: BUY -> STRONG BUY (score 40 -> 50)"
-  },
-  {
-   "ticker": "ADNOCDRILL",
-   "severity": "actionable",
-   "type": "trend",
-   "msg": "ADNOCDRILL: price crossed above its 50-day average \u2014 trend change"
+   "severity": "info",
+   "type": "big_move",
+   "msg": "ADIB moved +2.6% in the last day (now 22.5 AED)"
   }
  ]
 }
