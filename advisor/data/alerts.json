@@ -1,89 +1,101 @@
 {
- "generated_at_utc": "2026-08-04T07:14:13+00:00",
+ "generated_at_utc": "2026-08-05T07:14:52+00:00",
  "alerts": [
   {
-   "ticker": "AVAXUSDT",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "AVAXUSDT moved +6.2% in the last day (now 6.795 USD)"
+   "ticker": "BTCUSDT",
+   "severity": "actionable",
+   "type": "trend",
+   "msg": "BTCUSDT: price crossed above its 50-day average \u2014 trend change"
   },
   {
-   "ticker": "AVAXUSDT",
+   "ticker": "BNBUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "AVAXUSDT: STRONG SELL -> BUY (score -50 -> 40)"
+   "msg": "BNBUSDT: BUY -> STRONG BUY (score 30 -> 45)"
   },
   {
-   "ticker": "AVAXUSDT",
-   "severity": "info",
-   "type": "macd",
-   "msg": "AVAXUSDT: MACD bullish cross"
+   "ticker": "LTCUSDT",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "LTCUSDT: HOLD -> BUY (score -15 -> 35)"
   },
   {
-   "ticker": "ADAUSDT",
+   "ticker": "LTCUSDT",
+   "severity": "actionable",
+   "type": "trend",
+   "msg": "LTCUSDT: price crossed above its 50-day average \u2014 trend change"
+  },
+  {
+   "ticker": "EMAAR",
    "severity": "info",
    "type": "big_move",
-   "msg": "ADAUSDT moved +6.0% in the last day (now 0.195 USD)"
+   "msg": "EMAAR moved +6.9% in the last day (now 11.84 AED)"
   },
   {
-   "ticker": "EMIRATESNBD",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "EMIRATESNBD moved +3.2% in the last day (now 31.36 AED)"
+   "ticker": "EMAAR",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "EMAAR: STRONG SELL -> BUY (score -50 -> 25)"
   },
   {
-   "ticker": "EMIRATESNBD",
+   "ticker": "EMAAR",
    "severity": "info",
    "type": "macd",
-   "msg": "EMIRATESNBD: MACD bullish cross"
+   "msg": "EMAAR: MACD bullish cross"
+  },
+  {
+   "ticker": "EMAAR",
+   "severity": "actionable",
+   "type": "trend",
+   "msg": "EMAAR: price crossed above its 50-day average \u2014 trend change"
+  },
+  {
+   "ticker": "DIB",
+   "severity": "info",
+   "type": "macd",
+   "msg": "DIB: MACD bullish cross"
   },
   {
    "ticker": "DIB",
    "severity": "actionable",
-   "type": "signal_change",
-   "msg": "DIB: SELL -> STRONG BUY (score -30 -> 50)"
+   "type": "trend",
+   "msg": "DIB: price crossed above its 50-day average \u2014 trend change"
   },
   {
-   "ticker": "SALIK",
+   "ticker": "AIRARABIA",
    "severity": "info",
    "type": "big_move",
-   "msg": "SALIK moved +2.7% in the last day (now 5.41 AED)"
+   "msg": "AIRARABIA moved +4.7% in the last day (now 5.3 AED)"
   },
   {
-   "ticker": "DEWA",
-   "severity": "info",
-   "type": "macd",
-   "msg": "DEWA: MACD bullish cross"
-  },
-  {
-   "ticker": "EMAARDEV",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "EMAARDEV moved +3.1% in the last day (now 13.38 AED)"
-  },
-  {
-   "ticker": "ALDAR",
+   "ticker": "AIRARABIA",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "ALDAR: STRONG SELL -> SELL (score -65 -> -40)"
+   "msg": "AIRARABIA: SELL -> STRONG BUY (score -35 -> 55)"
+  },
+  {
+   "ticker": "AIRARABIA",
+   "severity": "info",
+   "type": "macd",
+   "msg": "AIRARABIA: MACD bullish cross"
+  },
+  {
+   "ticker": "AIRARABIA",
+   "severity": "actionable",
+   "type": "trend",
+   "msg": "AIRARABIA: price crossed above its 50-day average \u2014 trend change"
   },
   {
    "ticker": "FAB",
-   "severity": "info",
-   "type": "rsi",
-   "msg": "FAB: RSI crossed above 70 (now 70.9)"
-  },
-  {
-   "ticker": "TAQA",
-   "severity": "info",
+   "severity": "actionable",
    "type": "signal_change",
-   "msg": "TAQA: BUY -> HOLD (score 25 -> 15)"
+   "msg": "FAB: STRONG BUY -> BUY (score 45 -> 35)"
   },
   {
-   "ticker": "ADIB",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "ADIB moved +2.6% in the last day (now 22.5 AED)"
+   "ticker": "ADNOCGAS",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ADNOCGAS: STRONG SELL -> BUY (score -65 -> 20)"
   }
  ]
 }
