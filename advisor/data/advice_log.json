@@ -80,6 +80,18 @@
    "advised_entry_on_aug1": 0.17,
    "rationale": "Advised waiting on Aug 1 at $0.17 and again on Aug 2 at $0.186 (pullback to ~$0.173). ADA has instead run to $0.1950, +14.7% above the original quote. The wait call has cost roughly 15% of upside on a 100 AED position (~$4).",
    "outcome": "not taken; entry now materially worse - do not chase, satellite stays uncommitted or goes to a different name"
+  },
+  {
+   "date": "2026-08-05",
+   "ticker": "BTCUSDT",
+   "action": "OPPORTUNITY FUND DEPLOY - confirmed",
+   "price": 64180.84,
+   "stop": 61235.32571428571,
+   "target1": 67126.35428571429,
+   "target2": 70071.86857142857,
+   "sizing": "250 AED ($68.07) -> 0.001061 BTC; max loss $3.12 (4.6%)",
+   "rationale": "Second consecutive day above the 50-day (64,181 vs 63,288, +1.4%), satisfying the 2-day confirmation rule added after the Aug-3 whipsaw. Breadth strong: BNB to STRONG BUY, LTC reclaimed its 50-day, 6 of 11 crypto BUY+.",
+   "status": "advised - awaiting user execution"
   }
  ]
 }
