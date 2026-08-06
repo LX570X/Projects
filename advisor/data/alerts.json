@@ -1,101 +1,47 @@
 {
- "generated_at_utc": "2026-08-05T07:14:52+00:00",
+ "generated_at_utc": "2026-08-06T07:14:48+00:00",
  "alerts": [
   {
    "ticker": "BTCUSDT",
-   "severity": "actionable",
-   "type": "trend",
-   "msg": "BTCUSDT: price crossed above its 50-day average \u2014 trend change"
-  },
-  {
-   "ticker": "BNBUSDT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "BNBUSDT: BUY -> STRONG BUY (score 30 -> 45)"
-  },
-  {
-   "ticker": "LTCUSDT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "LTCUSDT: HOLD -> BUY (score -15 -> 35)"
-  },
-  {
-   "ticker": "LTCUSDT",
-   "severity": "actionable",
-   "type": "trend",
-   "msg": "LTCUSDT: price crossed above its 50-day average \u2014 trend change"
-  },
-  {
-   "ticker": "EMAAR",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "EMAAR moved +6.9% in the last day (now 11.84 AED)"
-  },
-  {
-   "ticker": "EMAAR",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "EMAAR: STRONG SELL -> BUY (score -50 -> 25)"
-  },
-  {
-   "ticker": "EMAAR",
    "severity": "info",
    "type": "macd",
-   "msg": "EMAAR: MACD bullish cross"
+   "msg": "BTCUSDT: MACD bullish cross"
   },
   {
-   "ticker": "EMAAR",
-   "severity": "actionable",
-   "type": "trend",
-   "msg": "EMAAR: price crossed above its 50-day average \u2014 trend change"
-  },
-  {
-   "ticker": "DIB",
+   "ticker": "SOLUSDT",
    "severity": "info",
-   "type": "macd",
-   "msg": "DIB: MACD bullish cross"
+   "type": "signal_change",
+   "msg": "SOLUSDT: SELL -> HOLD (score -30 -> -15)"
   },
   {
-   "ticker": "DIB",
-   "severity": "actionable",
-   "type": "trend",
-   "msg": "DIB: price crossed above its 50-day average \u2014 trend change"
-  },
-  {
-   "ticker": "AIRARABIA",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "AIRARABIA moved +4.7% in the last day (now 5.3 AED)"
-  },
-  {
-   "ticker": "AIRARABIA",
+   "ticker": "TALABAT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "AIRARABIA: SELL -> STRONG BUY (score -35 -> 55)"
+   "msg": "TALABAT: HOLD -> SELL (score -15 -> -45)"
   },
   {
-   "ticker": "AIRARABIA",
+   "ticker": "IHC",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "IHC: STRONG SELL -> SELL (score -50 -> -40)"
+  },
+  {
+   "ticker": "ADIB",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ADIB: STRONG BUY -> BUY (score 55 -> 35)"
+  },
+  {
+   "ticker": "ADIB",
    "severity": "info",
-   "type": "macd",
-   "msg": "AIRARABIA: MACD bullish cross"
+   "type": "rsi",
+   "msg": "ADIB: RSI crossed above 70 (now 72.5)"
   },
   {
-   "ticker": "AIRARABIA",
-   "severity": "actionable",
-   "type": "trend",
-   "msg": "AIRARABIA: price crossed above its 50-day average \u2014 trend change"
-  },
-  {
-   "ticker": "FAB",
+   "ticker": "ADPORTS",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "FAB: STRONG BUY -> BUY (score 45 -> 35)"
-  },
-  {
-   "ticker": "ADNOCGAS",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "ADNOCGAS: STRONG SELL -> BUY (score -65 -> 20)"
+   "msg": "ADPORTS: BUY -> STRONG BUY (score 35 -> 50)"
   }
  ]
 }
