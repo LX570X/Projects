@@ -92,6 +92,26 @@
    "sizing": "250 AED ($68.07) -> 0.001061 BTC; max loss $3.12 (4.6%)",
    "rationale": "Second consecutive day above the 50-day (64,181 vs 63,288, +1.4%), satisfying the 2-day confirmation rule added after the Aug-3 whipsaw. Breadth strong: BNB to STRONG BUY, LTC reclaimed its 50-day, 6 of 11 crypto BUY+.",
    "status": "advised - awaiting user execution"
+  },
+  {
+   "date": "2026-08-06",
+   "ticker": "ETHUSDT",
+   "action": "approaching target 1 - prepare",
+   "price": 1913.84,
+   "target1": 1964.0,
+   "distance_pct": 2.62,
+   "rationale": "ETH +2.5% to $1,913.84, now 2.6% from target 1. Institutional accumulation reported (Arthur Hayes +3,298 ETH ~$6.32M; Bitmine +7,500 ETH ~$14.61M). Plan on a target-1 touch: convert half (~0.0182 ETH) to USDT and raise the stop to entry 1830.",
+   "status": "pending - not yet hit"
+  },
+  {
+   "date": "2026-08-06",
+   "ticker": "BTCUSDT",
+   "action": "deploy working",
+   "price": 64893.36,
+   "entry": 64180.84,
+   "stop": 61235.0,
+   "rationale": "Third day above the 50-day; +1.1% since the confirmed deploy. MACD bullish cross today.",
+   "status": "open, in profit"
   }
  ]
 }
