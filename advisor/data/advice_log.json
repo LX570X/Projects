@@ -112,6 +112,31 @@
    "stop": 61235.0,
    "rationale": "Third day above the 50-day; +1.1% since the confirmed deploy. MACD bullish cross today.",
    "status": "open, in profit"
+  },
+  {
+   "date": "2026-08-07",
+   "ticker": "TECOM",
+   "action": "thin-signal warning vindicated",
+   "price": 3.33,
+   "rationale": "TECOM went STRONG BUY(+75 raw, +45 after deadbands) on 2026-07-30 with a 0.09% MA gap and MACD hist 0.0001 - flagged then as noise, not conviction, and explicitly NOT recommended. Today it fell -3.5%, lost its 50-day and dropped to SELL (-25), a 75-point reversal. Its H1 results (Aug 5) were actually solid: revenue +11% to AED1.5bn, recurring net profit +9% to AED805m, 97% occupancy, AED440m interim dividend - so this is positioning/valuation, not deterioration.",
+   "outcome": "no exposure taken; deadband fix prevented a false top-pick recommendation"
+  },
+  {
+   "date": "2026-08-07",
+   "ticker": "EMAAR",
+   "action": "post-reversal caution vindicated",
+   "price": 11.46,
+   "rationale": "Flagged on 2026-08-05 that EMAAR's +6.9% flip to BUY sat one week ahead of Aug-12 earnings and should not be chased. Today -4.2%, back below its 50-day, BUY->SELL.",
+   "outcome": "no exposure taken"
+  },
+  {
+   "date": "2026-08-07",
+   "ticker": "ADAUSDT",
+   "action": "missed-entry tally update",
+   "price": 0.2025,
+   "advised_entry_on_aug1": 0.17,
+   "rationale": "ADA now $0.2025, +19% above the Aug-1 satellite quote I told the user to skip; +7.4% today. However RSI is now 70.9 (overbought), so chasing here is worse risk than ever. Cumulative cost of the wait call on a 100 AED position ~$5.21.",
+   "outcome": "still not taken; do not chase at overbought RSI - wait for a pullback or use a different name"
   }
  ]
 }

@@ -1,14 +1,6 @@
 {
- "updated": "2026-08-06T07:16+00:00",
+ "updated": "2026-08-07T07:13+00:00",
  "market_notes": [
-  {
-   "market": "Altcoins",
-   "note": "ADA +8.7% on the day (~$0.186), extending its run: whales bought 30M+ ADA in a week, tokenized RWA ecosystem grew to $55.3M, and futures history may qualify it for spot-ETF eligibility around Aug 9. Note ADA has now run well past our Aug-1 quoted entry of $0.17 - chasing it here means a much wider stop."
-  },
-  {
-   "market": "DFM property",
-   "note": "Sharp risk-on reversal 2026-08-05: EMAAR +6.9% flipped STRONG SELL->BUY and reclaimed its 50-day; AIRARABIA +4.7% SELL->STRONG BUY; ADNOCGAS STRONG SELL->BUY. This is consistent with the geopolitical-discount thesis unwinding (UAE bourses had already hit 3-month highs on US-Iran peace optimism, and Emaar had rebounded ~20% from the March low). CAUTION: Emaar reports earnings 2026-08-12 - a one-week event risk sitting directly under a fresh signal."
-  },
   {
    "market": "Crypto macro",
    "note": "BTC third day above its 50-day ($64,893) with a MACD bullish cross - the confirmed 2-day-rule deploy is +1.1%. ETH +2.5% to ~$1,914 on reported institutional buying (Arthur Hayes +3,298 ETH ~$6.32M; Bitmine +7,500 ETH ~$14.61M). Analysts frame $2,200-2,500 as a realistic August range if seasonality repeats. Breadth: 7 of 11 crypto BUY+; only DOGE and XRP negative."
@@ -16,6 +8,14 @@
   {
    "market": "UAE banks",
    "note": "Bank rally now extended rather than early: FAB RSI 75.6, ADCB 69.9, ADIB 72.5 (ADIB downgraded STRONG BUY->BUY on that). EMIRATESNBD and DEWA lead at +75. ADPORTS upgraded to STRONG BUY (+50). Buying this cluster today means buying after a multi-day run - wait for pullbacks rather than chasing."
+  },
+  {
+   "market": "DFM property",
+   "note": "The Aug-5 risk-on pop reversed within two days: EMAAR -4.2% BUY->SELL and back below its 50-day (earnings still ahead on Aug 12), AIRARABIA -3.0%, EMAARDEV -3.6%. Treat the property bounce as unconfirmed. TECOM -3.5% STRONG BUY->SELL despite solid H1 (revenue +11% to AED1.5bn, recurring net profit +9% to AED805m, 97% occupancy, AED440m interim dividend) - a positioning unwind after results, not a fundamental break."
+  },
+  {
+   "market": "Altcoins",
+   "note": "ADA +7.4% to ~$0.2025 with RSI 70.9 - now overbought after a ~19% run from the $0.17 level. AVAX round-tripped: BUY->HOLD, back below its 50-day after last week's flip. BNB holds STRONG BUY (~$587). The alt tape is choppy - single-day flips in both directions are common, which is why satellite entries need a stop and a non-extended entry."
   }
  ],
  "asset_notes": {
