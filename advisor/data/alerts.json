@@ -1,47 +1,95 @@
 {
- "generated_at_utc": "2026-08-06T07:14:48+00:00",
+ "generated_at_utc": "2026-08-07T07:12:01+00:00",
  "alerts": [
   {
-   "ticker": "BTCUSDT",
-   "severity": "info",
-   "type": "macd",
-   "msg": "BTCUSDT: MACD bullish cross"
-  },
-  {
-   "ticker": "SOLUSDT",
+   "ticker": "AVAXUSDT",
    "severity": "info",
    "type": "signal_change",
-   "msg": "SOLUSDT: SELL -> HOLD (score -30 -> -15)"
+   "msg": "AVAXUSDT: BUY -> HOLD (score 30 -> -20)"
   },
   {
-   "ticker": "TALABAT",
+   "ticker": "AVAXUSDT",
    "severity": "actionable",
-   "type": "signal_change",
-   "msg": "TALABAT: HOLD -> SELL (score -15 -> -45)"
+   "type": "trend",
+   "msg": "AVAXUSDT: price crossed below its 50-day average \u2014 trend change"
   },
   {
-   "ticker": "IHC",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "IHC: STRONG SELL -> SELL (score -50 -> -40)"
+   "ticker": "ADAUSDT",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "ADAUSDT moved +7.4% in the last day (now 0.2025 USD)"
   },
   {
-   "ticker": "ADIB",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "ADIB: STRONG BUY -> BUY (score 55 -> 35)"
-  },
-  {
-   "ticker": "ADIB",
+   "ticker": "ADAUSDT",
    "severity": "info",
    "type": "rsi",
-   "msg": "ADIB: RSI crossed above 70 (now 72.5)"
+   "msg": "ADAUSDT: RSI crossed above 70 (now 70.9)"
   },
   {
-   "ticker": "ADPORTS",
+   "ticker": "EMAAR",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "EMAAR moved -4.2% in the last day (now 11.46 AED)"
+  },
+  {
+   "ticker": "EMAAR",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "ADPORTS: BUY -> STRONG BUY (score 35 -> 50)"
+   "msg": "EMAAR: BUY -> SELL (score 25 -> -35)"
+  },
+  {
+   "ticker": "EMAAR",
+   "severity": "actionable",
+   "type": "trend",
+   "msg": "EMAAR: price crossed below its 50-day average \u2014 trend change"
+  },
+  {
+   "ticker": "AIRARABIA",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "AIRARABIA moved -3.0% in the last day (now 5.19 AED)"
+  },
+  {
+   "ticker": "EMAARDEV",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "EMAARDEV moved -3.6% in the last day (now 13.3 AED)"
+  },
+  {
+   "ticker": "TECOM",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "TECOM moved -3.5% in the last day (now 3.33 AED)"
+  },
+  {
+   "ticker": "TECOM",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "TECOM: STRONG BUY -> SELL (score 50 -> -25)"
+  },
+  {
+   "ticker": "TECOM",
+   "severity": "info",
+   "type": "macd",
+   "msg": "TECOM: MACD bearish cross"
+  },
+  {
+   "ticker": "TECOM",
+   "severity": "actionable",
+   "type": "trend",
+   "msg": "TECOM: price crossed below its 50-day average \u2014 trend change"
+  },
+  {
+   "ticker": "ADNOCGAS",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ADNOCGAS: STRONG SELL -> SELL (score -50 -> -40)"
+  },
+  {
+   "ticker": "ADNOCDRILL",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ADNOCDRILL: BUY -> STRONG BUY (score 25 -> 50)"
   }
  ]
 }
