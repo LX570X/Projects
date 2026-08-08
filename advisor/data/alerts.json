@@ -1,95 +1,47 @@
 {
- "generated_at_utc": "2026-08-07T07:12:01+00:00",
+ "generated_at_utc": "2026-08-08T07:11:33+00:00",
  "alerts": [
   {
-   "ticker": "AVAXUSDT",
-   "severity": "info",
-   "type": "signal_change",
-   "msg": "AVAXUSDT: BUY -> HOLD (score 30 -> -20)"
-  },
-  {
-   "ticker": "AVAXUSDT",
-   "severity": "actionable",
-   "type": "trend",
-   "msg": "AVAXUSDT: price crossed below its 50-day average \u2014 trend change"
-  },
-  {
-   "ticker": "ADAUSDT",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "ADAUSDT moved +7.4% in the last day (now 0.2025 USD)"
-  },
-  {
-   "ticker": "ADAUSDT",
-   "severity": "info",
-   "type": "rsi",
-   "msg": "ADAUSDT: RSI crossed above 70 (now 70.9)"
-  },
-  {
-   "ticker": "EMAAR",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "EMAAR moved -4.2% in the last day (now 11.46 AED)"
-  },
-  {
-   "ticker": "EMAAR",
+   "ticker": "ETHUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "EMAAR: BUY -> SELL (score 25 -> -35)"
+   "msg": "ETHUSDT: BUY -> STRONG BUY (score 35 -> 50)"
   },
   {
-   "ticker": "EMAAR",
-   "severity": "actionable",
-   "type": "trend",
-   "msg": "EMAAR: price crossed below its 50-day average \u2014 trend change"
-  },
-  {
-   "ticker": "AIRARABIA",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "AIRARABIA moved -3.0% in the last day (now 5.19 AED)"
-  },
-  {
-   "ticker": "EMAARDEV",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "EMAARDEV moved -3.6% in the last day (now 13.3 AED)"
-  },
-  {
-   "ticker": "TECOM",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "TECOM moved -3.5% in the last day (now 3.33 AED)"
-  },
-  {
-   "ticker": "TECOM",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "TECOM: STRONG BUY -> SELL (score 50 -> -25)"
-  },
-  {
-   "ticker": "TECOM",
+   "ticker": "SOLUSDT",
    "severity": "info",
    "type": "macd",
-   "msg": "TECOM: MACD bearish cross"
+   "msg": "SOLUSDT: MACD bullish cross"
+  },
+  {
+   "ticker": "AVAXUSDT",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "AVAXUSDT: HOLD -> SELL (score -20 -> -35)"
+  },
+  {
+   "ticker": "LTCUSDT",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "LTCUSDT: BUY -> STRONG BUY (score 35 -> 50)"
   },
   {
    "ticker": "TECOM",
-   "severity": "actionable",
-   "type": "trend",
-   "msg": "TECOM: price crossed below its 50-day average \u2014 trend change"
+   "severity": "info",
+   "type": "signal_change",
+   "msg": "TECOM: SELL -> HOLD (score -25 -> -15)"
   },
   {
    "ticker": "ADNOCGAS",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "ADNOCGAS: STRONG SELL -> SELL (score -50 -> -40)"
+   "msg": "ADNOCGAS: SELL -> BUY (score -40 -> 35)"
   },
   {
-   "ticker": "ADNOCDRILL",
+   "ticker": "ADNOCGAS",
    "severity": "actionable",
-   "type": "signal_change",
-   "msg": "ADNOCDRILL: BUY -> STRONG BUY (score 25 -> 50)"
+   "type": "trend",
+   "msg": "ADNOCGAS: price crossed above its 50-day average \u2014 trend change"
   }
  ]
 }
