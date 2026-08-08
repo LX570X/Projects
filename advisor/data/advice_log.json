@@ -137,6 +137,16 @@
    "advised_entry_on_aug1": 0.17,
    "rationale": "ADA now $0.2025, +19% above the Aug-1 satellite quote I told the user to skip; +7.4% today. However RSI is now 70.9 (overbought), so chasing here is worse risk than ever. Cumulative cost of the wait call on a 100 AED position ~$5.21.",
    "outcome": "still not taken; do not chase at overbought RSI - wait for a pullback or use a different name"
+  },
+  {
+   "date": "2026-08-08",
+   "ticker": "ETHUSDT",
+   "action": "upgraded to STRONG BUY - hold, target still ahead",
+   "price": 1916.02,
+   "target1": 1964.0,
+   "distance_pct": 2.5,
+   "rationale": "ETH BUY->STRONG BUY (+50). Aug-7 intraday high 1943.02 came within 1.1% of target 1 but did not touch it. Backdrop: US spot ETH ETFs +$60.8M net inflows (BlackRock clients ~$50.3M), a whale pulled 10,500 ETH (~$20.06M) off OKX in an hour, and Glamsterdam/Hegota upgrades are pending.",
+   "status": "open, +4.7%; plan unchanged - half out at 1964, stop to 1830"
   }
  ]
 }
