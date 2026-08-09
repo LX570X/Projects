@@ -147,6 +147,18 @@
    "distance_pct": 2.5,
    "rationale": "ETH BUY->STRONG BUY (+50). Aug-7 intraday high 1943.02 came within 1.1% of target 1 but did not touch it. Backdrop: US spot ETH ETFs +$60.8M net inflows (BlackRock clients ~$50.3M), a whale pulled 10,500 ETH (~$20.06M) off OKX in an hour, and Glamsterdam/Hegota upgrades are pending.",
    "status": "open, +4.7%; plan unchanged - half out at 1964, stop to 1830"
+  },
+  {
+   "date": "2026-08-09",
+   "ticker": "SOLUSDT",
+   "action": "new satellite candidate - fresh breakout",
+   "price": 76.36,
+   "stop": 71.92857142857143,
+   "target1": 80.79142857142857,
+   "sizing": "100 AED ($27.23) -> 0.357 SOL; max loss $1.58 (5.8%)",
+   "rationale": "SOL HOLD->STRONG BUY (+45), reclaimed its 50-day on +2.1% after weeks in a falling channel. Catalysts: Grayscale staking-ETF filing with periodic reward distribution, Alpenglow consensus upgrade due late August targeting ~150ms finality, strong DEX volume. Unlike ADA (RSI 71, +19% run) SOL is only now breaking out - entry is not extended.",
+   "caveat": "Spot SOL ETF inflows have slowed in August despite the technical setup - institutional demand is mixed.",
+   "status": "offered - user decision"
   }
  ]
 }
