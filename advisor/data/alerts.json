@@ -1,47 +1,29 @@
 {
- "generated_at_utc": "2026-08-08T07:11:33+00:00",
+ "generated_at_utc": "2026-08-09T07:11:45+00:00",
  "alerts": [
   {
-   "ticker": "ETHUSDT",
+   "ticker": "SOLUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "ETHUSDT: BUY -> STRONG BUY (score 35 -> 50)"
+   "msg": "SOLUSDT: HOLD -> STRONG BUY (score -20 -> 45)"
   },
   {
    "ticker": "SOLUSDT",
-   "severity": "info",
-   "type": "macd",
-   "msg": "SOLUSDT: MACD bullish cross"
+   "severity": "actionable",
+   "type": "trend",
+   "msg": "SOLUSDT: price crossed above its 50-day average \u2014 trend change"
   },
   {
    "ticker": "AVAXUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "AVAXUSDT: HOLD -> SELL (score -20 -> -35)"
+   "msg": "AVAXUSDT: SELL -> STRONG SELL (score -35 -> -50)"
   },
   {
    "ticker": "LTCUSDT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "LTCUSDT: BUY -> STRONG BUY (score 35 -> 50)"
-  },
-  {
-   "ticker": "TECOM",
    "severity": "info",
-   "type": "signal_change",
-   "msg": "TECOM: SELL -> HOLD (score -25 -> -15)"
-  },
-  {
-   "ticker": "ADNOCGAS",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "ADNOCGAS: SELL -> BUY (score -40 -> 35)"
-  },
-  {
-   "ticker": "ADNOCGAS",
-   "severity": "actionable",
-   "type": "trend",
-   "msg": "ADNOCGAS: price crossed above its 50-day average \u2014 trend change"
+   "type": "macd",
+   "msg": "LTCUSDT: MACD bullish cross"
   }
  ]
 }
