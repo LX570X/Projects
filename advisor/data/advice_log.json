@@ -159,6 +159,17 @@
    "rationale": "SOL HOLD->STRONG BUY (+45), reclaimed its 50-day on +2.1% after weeks in a falling channel. Catalysts: Grayscale staking-ETF filing with periodic reward distribution, Alpenglow consensus upgrade due late August targeting ~150ms finality, strong DEX volume. Unlike ADA (RSI 71, +19% run) SOL is only now breaking out - entry is not extended.",
    "caveat": "Spot SOL ETF inflows have slowed in August despite the technical setup - institutional demand is mixed.",
    "status": "offered - user decision"
+  },
+  {
+   "date": "2026-08-10",
+   "ticker": "BTCUSDT",
+   "action": "upgraded to STRONG BUY - deploy thesis confirmed",
+   "price": 65278.0,
+   "entry": 64180.84,
+   "stop": 62823.64,
+   "target1": 67726.20571428571,
+   "rationale": "BTC BUY->STRONG BUY (+45), eighth day above its 50-day; +1.7% since the 2-day-confirmed deploy. The Aug-3 whipsaw lesson (require 2 closes) has now paid twice: it avoided the false start and the confirmed entry is in profit.",
+   "status": "open, +1.7%"
   }
  ]
 }
