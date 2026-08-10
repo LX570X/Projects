@@ -1,29 +1,53 @@
 {
- "generated_at_utc": "2026-08-09T07:11:45+00:00",
+ "generated_at_utc": "2026-08-10T07:12:53+00:00",
  "alerts": [
   {
-   "ticker": "SOLUSDT",
+   "ticker": "BTCUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "SOLUSDT: HOLD -> STRONG BUY (score -20 -> 45)"
+   "msg": "BTCUSDT: BUY -> STRONG BUY (score 30 -> 45)"
   },
   {
-   "ticker": "SOLUSDT",
-   "severity": "actionable",
-   "type": "trend",
-   "msg": "SOLUSDT: price crossed above its 50-day average \u2014 trend change"
-  },
-  {
-   "ticker": "AVAXUSDT",
+   "ticker": "DIB",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "AVAXUSDT: SELL -> STRONG SELL (score -35 -> -50)"
+   "msg": "DIB: STRONG BUY -> BUY (score 50 -> 35)"
   },
   {
-   "ticker": "LTCUSDT",
+   "ticker": "EMAARDEV",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "EMAARDEV moved -2.5% in the last day (now 13.26 AED)"
+  },
+  {
+   "ticker": "TECOM",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "TECOM: HOLD -> SELL (score -15 -> -25)"
+  },
+  {
+   "ticker": "TECOM",
    "severity": "info",
    "type": "macd",
-   "msg": "LTCUSDT: MACD bullish cross"
+   "msg": "TECOM: MACD bearish cross"
+  },
+  {
+   "ticker": "IHC",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "IHC: SELL -> STRONG SELL (score -40 -> -50)"
+  },
+  {
+   "ticker": "ADIB",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ADIB: BUY -> STRONG BUY (score 35 -> 55)"
+  },
+  {
+   "ticker": "ADNOCDRILL",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ADNOCDRILL: STRONG BUY -> BUY (score 50 -> 40)"
   }
  ]
 }
