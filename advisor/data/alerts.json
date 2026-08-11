@@ -1,53 +1,59 @@
 {
- "generated_at_utc": "2026-08-10T07:12:53+00:00",
+ "generated_at_utc": "2026-08-11T07:11:13+00:00",
  "alerts": [
   {
    "ticker": "BTCUSDT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "BTCUSDT: BUY -> STRONG BUY (score 30 -> 45)"
-  },
-  {
-   "ticker": "DIB",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "DIB: STRONG BUY -> BUY (score 50 -> 35)"
-  },
-  {
-   "ticker": "EMAARDEV",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "EMAARDEV moved -2.5% in the last day (now 13.26 AED)"
-  },
-  {
-   "ticker": "TECOM",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "TECOM: HOLD -> SELL (score -15 -> -25)"
-  },
-  {
-   "ticker": "TECOM",
    "severity": "info",
    "type": "macd",
-   "msg": "TECOM: MACD bearish cross"
+   "msg": "BTCUSDT: MACD bearish cross"
   },
   {
-   "ticker": "IHC",
+   "ticker": "ETHUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "IHC: SELL -> STRONG SELL (score -40 -> -50)"
+   "msg": "ETHUSDT: STRONG BUY -> BUY (score 50 -> 35)"
   },
   {
-   "ticker": "ADIB",
+   "ticker": "SOLUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "ADIB: BUY -> STRONG BUY (score 35 -> 55)"
+   "msg": "SOLUSDT: STRONG BUY -> BUY (score 45 -> 35)"
   },
   {
-   "ticker": "ADNOCDRILL",
+   "ticker": "LINKUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "ADNOCDRILL: STRONG BUY -> BUY (score 50 -> 40)"
+   "msg": "LINKUSDT: BUY -> STRONG BUY (score 35 -> 50)"
+  },
+  {
+   "ticker": "AVAXUSDT",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "AVAXUSDT: STRONG SELL -> SELL (score -50 -> -30)"
+  },
+  {
+   "ticker": "ADAUSDT",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "ADAUSDT moved -4.8% in the last day (now 0.1888 USD)"
+  },
+  {
+   "ticker": "EMAAR",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "EMAAR moved -4.1% in the last day (now 11.12 AED)"
+  },
+  {
+   "ticker": "EMAAR",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "EMAAR: SELL -> STRONG SELL (score -35 -> -50)"
+  },
+  {
+   "ticker": "AIRARABIA",
+   "severity": "info",
+   "type": "signal_change",
+   "msg": "AIRARABIA: STRONG BUY -> HOLD (score 50 -> 0)"
   }
  ]
 }
