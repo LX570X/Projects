@@ -170,6 +170,36 @@
    "target1": 67726.20571428571,
    "rationale": "BTC BUY->STRONG BUY (+45), eighth day above its 50-day; +1.7% since the 2-day-confirmed deploy. The Aug-3 whipsaw lesson (require 2 closes) has now paid twice: it avoided the false start and the confirmed entry is in profit.",
    "status": "open, +1.7%"
+  },
+  {
+   "date": "2026-08-11",
+   "ticker": "ETHUSDT",
+   "action": "downgraded STRONG BUY -> BUY; hold, no action",
+   "price": 1874.55,
+   "entry": 1829.7,
+   "stop": 1572.0,
+   "target1": 1964.0,
+   "rationale": "Second failed approach to target 1: Aug-7 high 1943, Aug-10 high 1932, now 1874.55 and 4.8% from 1964 (was 1.9% yesterday). Score 50->35 on MACD turning negative; trend intact (price 1874.55 vs 50-day 1810). Broad macro pullback, not an ETH-specific break - BTC -2.0%, SOL -1.5%, ADA -4.8% on the same day. No stop threat (1572 is 16% below). Holding.",
+   "status": "open, +2.5%"
+  },
+  {
+   "date": "2026-08-11",
+   "ticker": "BTCUSDT",
+   "action": "gave back the deploy gain - watch, no action",
+   "price": 63984.0,
+   "entry": 64180.84,
+   "stop": 62823.64,
+   "target1": 67726.21,
+   "rationale": "BTC -2.0% to 63,984, now -0.3% vs the Aug-5 confirmed deploy entry. Fresh MACD bearish cross; still BUY (+40) and above the 50-day (63,411). The 50-day is the line that matters: two closes below it would invalidate the deploy thesis the same way the Aug-1 break did.",
+   "status": "open, -0.3%"
+  },
+  {
+   "date": "2026-08-11",
+   "ticker": "SOLUSDT",
+   "action": "satellite candidate downgraded STRONG BUY -> BUY; offer still standing",
+   "price": 75.77,
+   "rationale": "SOL -1.5% to 75.77, -0.8% below the 76.36 satellite offer. Score 45->35: 20-day (74.38) still below the 50-day (75.52), so the breakout is not confirmed by structure. Satellite bucket (100 AED) remains uncommitted. Alpenglow upgrade due late August is still the catalyst.",
+   "status": "not taken"
   }
  ]
 }

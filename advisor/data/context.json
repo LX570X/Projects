@@ -1,21 +1,21 @@
 {
- "updated": "2026-08-10T07:13+00:00",
+ "updated": "2026-08-11T07:15+00:00",
  "market_notes": [
   {
-   "market": "UAE banks",
-   "note": "Bank rally now extended rather than early: FAB RSI 75.6, ADCB 69.9, ADIB 72.5 (ADIB downgraded STRONG BUY->BUY on that). EMIRATESNBD and DEWA lead at +75. ADPORTS upgraded to STRONG BUY (+50). Buying this cluster today means buying after a multi-day run - wait for pullbacks rather than chasing."
+   "market": "Crypto macro",
+   "note": "Broad, macro-driven pullback - not asset-specific. BTC -2.0%, ETH -2.7%, SOL -1.5%, ADA -4.8% on the same session. Drivers: crypto's correlation to the S&P 500 is back near ~96%, the US-Iran escalation is suppressing rate-cut expectations, MicroStrategy disclosed its first-ever bitcoin sale, and spot-ETF flows plus large holders turned net sellers. Senate odds on the CLARITY Act have been cut to ~13%, removing a catalyst the market had partly priced. Six STRONG BUYs yesterday, three today. Trends are not broken: BTC 63,984 vs 50-day 63,411, ETH 1,874 vs 1,810."
   },
   {
-   "market": "DFM property",
-   "note": "The Aug-5 risk-on pop reversed within two days: EMAAR -4.2% BUY->SELL and back below its 50-day (earnings still ahead on Aug 12), AIRARABIA -3.0%, EMAARDEV -3.6%. Treat the property bounce as unconfirmed. TECOM -3.5% STRONG BUY->SELL despite solid H1 (revenue +11% to AED1.5bn, recurring net profit +9% to AED805m, 97% occupancy, AED440m interim dividend) - a positioning unwind after results, not a fundamental break."
+   "market": "Portfolio",
+   "note": "ETH has now failed twice at its target: Aug-7 high 1,943 and Aug-10 high 1,932, both short of 1,964. It sits +2.5% ($68.23) and 4.8% from target 1, versus 1.9% yesterday. BTC has given back the whole deploy gain, -0.3% vs the Aug-5 entry, with a fresh MACD bearish cross. Neither is near a stop (ETH stop 1,572 is 16% below). No action - the plan levels do the work."
   },
   {
    "market": "Altcoins",
-   "note": "SOL broke out of a multi-week falling channel (+2.1%, reclaimed 50-day, HOLD->STRONG BUY) on Grayscale's staking-ETF filing and the Alpenglow upgrade due late August (~150ms finality target); caveat is that spot SOL ETF inflows have actually slowed in August. Five alts now STRONG BUY (ADA, LTC, ETH, BNB, SOL) - the broadest alt strength since this advisor started. AVAX cut to STRONG SELL, XRP still weakest."
+   "note": "Leadership rotated rather than collapsed: LINK upgraded BUY->STRONG BUY (+50) and was the only green watchlist crypto (+2.5%); AVAX improved STRONG SELL->SELL. ADA is still STRONG BUY (+65) despite the -4.8% day - the biggest single-day drop in the watchlist, and it remains the running miss (declined at 0.17 on Aug 1, still ~11% above that quote). SOL slipped to BUY: its 20-day (74.38) is still under its 50-day (75.52), so the channel breakout is unconfirmed."
   },
   {
-   "market": "Crypto macro",
-   "note": "Broadest crypto strength of this advisor's run: six STRONG BUYs (ADA, ETH, LTC, BTC, BNB, SOL). BTC upgraded to STRONG BUY on its eighth day above the 50-day, +1.7% since the confirmed deploy. ETH within 2% of its target-1 (1964) after three sessions coiling in a 1906-1938 range. Only DOGE, AVAX and XRP remain negative."
+   "market": "UAE equities",
+   "note": "DFM property rolled over again: EMAAR -4.1% and downgraded SELL->STRONG SELL the day before its Aug-12 earnings; AIRARABIA fell from STRONG BUY to HOLD. The bank cluster (FAB, ADCB, ADIB, EMIRATESNBD) stays extended after its run. With Al Ramz still not open and the stock bucket at 400/1,200 AED, none of this is actionable yet - and the property weakness argues for the wait."
   }
  ],
  "asset_notes": {
@@ -67,6 +67,24 @@
     "impact": "bullish",
     "date": "2026-07-16",
     "source": "cryptonews.com"
+   },
+   {
+    "headline": "MicroStrategy discloses its first-ever bitcoin sale; ETF and whale flows turn net negative",
+    "impact": "bearish",
+    "date": "2026-08-11",
+    "source": "news research pass"
+   },
+   {
+    "headline": "Crypto-equity correlation back to ~96% with the S&P 500; US-Iran conflict pushes back rate-cut odds",
+    "impact": "bearish",
+    "date": "2026-08-11",
+    "source": "news research pass"
+   },
+   {
+    "headline": "CLARITY Act Senate passage odds cut to ~13%, removing a priced-in regulatory catalyst",
+    "impact": "bearish",
+    "date": "2026-08-11",
+    "source": "news research pass"
    }
   ],
   "ETHUSDT": [
@@ -111,6 +129,12 @@
     "impact": "bullish",
     "date": "2026-07-16",
     "source": "cryptonews.com"
+   },
+   {
+    "headline": "ETH turned back below $1,964 for a second time (Aug-7 high 1,943, Aug-10 high 1,932) in a market-wide risk-off session",
+    "impact": "bearish",
+    "date": "2026-08-11",
+    "source": "advisor price data"
    }
   ],
   "BNBUSDT": [
@@ -151,6 +175,12 @@
     "impact": "bearish",
     "date": "2026-07-09",
     "source": "Blockchain.News, MetaMask price data, Motley Fool (Jul 2026)"
+   },
+   {
+    "headline": "Alpenglow upgrade still due late August (~150ms finality); SOL pulled back to 75.77 with the broad market",
+    "impact": "neutral",
+    "date": "2026-08-11",
+    "source": "news research pass"
    }
   ],
   "XRPUSDT": [
@@ -341,6 +371,14 @@
     "impact": "neutral",
     "date": "2026-07-10",
     "source": "ADIB news (Jul 2026), Zawya, Gulf Business, ADIB Q1 2026 MD&A"
+   }
+  ],
+  "LINKUSDT": [
+   {
+    "headline": "LINK +2.5% - the only green watchlist crypto - upgraded BUY -> STRONG BUY",
+    "impact": "bullish",
+    "date": "2026-08-11",
+    "source": "advisor price data"
    }
   ]
  },
