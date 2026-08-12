@@ -1,59 +1,41 @@
 {
- "generated_at_utc": "2026-08-11T07:11:13+00:00",
+ "generated_at_utc": "2026-08-12T07:11:35+00:00",
  "alerts": [
   {
-   "ticker": "BTCUSDT",
+   "ticker": "LINKUSDT",
    "severity": "info",
    "type": "macd",
-   "msg": "BTCUSDT: MACD bearish cross"
-  },
-  {
-   "ticker": "ETHUSDT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "ETHUSDT: STRONG BUY -> BUY (score 50 -> 35)"
-  },
-  {
-   "ticker": "SOLUSDT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "SOLUSDT: STRONG BUY -> BUY (score 45 -> 35)"
-  },
-  {
-   "ticker": "LINKUSDT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "LINKUSDT: BUY -> STRONG BUY (score 35 -> 50)"
+   "msg": "LINKUSDT: MACD bullish cross"
   },
   {
    "ticker": "AVAXUSDT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "AVAXUSDT: STRONG SELL -> SELL (score -50 -> -30)"
+   "severity": "info",
+   "type": "macd",
+   "msg": "AVAXUSDT: MACD bearish cross"
   },
   {
-   "ticker": "ADAUSDT",
+   "ticker": "EMIRATESNBD",
    "severity": "info",
    "type": "big_move",
-   "msg": "ADAUSDT moved -4.8% in the last day (now 0.1888 USD)"
-  },
-  {
-   "ticker": "EMAAR",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "EMAAR moved -4.1% in the last day (now 11.12 AED)"
-  },
-  {
-   "ticker": "EMAAR",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "EMAAR: SELL -> STRONG SELL (score -35 -> -50)"
+   "msg": "EMIRATESNBD moved -2.5% in the last day (now 31.2 AED)"
   },
   {
    "ticker": "AIRARABIA",
-   "severity": "info",
+   "severity": "actionable",
+   "type": "trend",
+   "msg": "AIRARABIA: price crossed below its 50-day average \u2014 trend change"
+  },
+  {
+   "ticker": "EMAARDEV",
+   "severity": "actionable",
    "type": "signal_change",
-   "msg": "AIRARABIA: STRONG BUY -> HOLD (score 50 -> 0)"
+   "msg": "EMAARDEV: SELL -> STRONG SELL (score -35 -> -50)"
+  },
+  {
+   "ticker": "ADNOCGAS",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ADNOCGAS: BUY -> SELL (score 35 -> -25)"
   }
  ]
 }
