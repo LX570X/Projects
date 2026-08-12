@@ -200,6 +200,43 @@
    "price": 75.77,
    "rationale": "SOL -1.5% to 75.77, -0.8% below the 76.36 satellite offer. Score 45->35: 20-day (74.38) still below the 50-day (75.52), so the breakout is not confirmed by structure. Satellite bucket (100 AED) remains uncommitted. Alpenglow upgrade due late August is still the catalyst.",
    "status": "not taken"
+  },
+  {
+   "date": "2026-08-12",
+   "ticker": "LINKUSDT",
+   "action": "NEW satellite candidate - replaces the standing SOL offer",
+   "price": 8.742,
+   "stop": 8.068,
+   "target1": 9.3,
+   "size": "100 AED satellite bucket = $27.23 = 3.115 LINK; max loss $2.10 if stopped",
+   "rationale": "Highest score in the watchlist (+75) with a fresh MACD bullish cross, +3.6% on a flat day, above both averages and 20-day above 50-day. Unlike SOL (BUY +35, 20-day still under its 50-day) the structure is confirmed. Real catalyst, not just a chart: Standard Chartered initiated coverage Aug 10 with a $200 target on the tokenization thesis, Figure/HastraFi went live on Kamino, Syntetika launched a tokenization hub on Chainlink Proof of Reserve, oracle volume past $33tn.",
+   "status": "offered, awaiting user decision"
+  },
+  {
+   "date": "2026-08-12",
+   "ticker": "BTCUSDT",
+   "action": "deploy thesis weakening - watch the 50-day",
+   "price": 63775.64,
+   "entry": 64180.84,
+   "stop": 61350.73,
+   "rationale": "Score halved 40 -> 20 (bottom of the BUY band). The 50-day has now turned DOWN (was sloping up yesterday) while price at 63,776 sits only 0.6% above it (63,399). -0.6% vs the Aug-5 confirmed deploy. July CPI released today is the near-term swing factor; ETF flows were actually the strongest since April last week ($853m), so this is chop, not a break - but two closes below 63,399 ends the thesis.",
+   "status": "open, -0.6%"
+  },
+  {
+   "date": "2026-08-12",
+   "ticker": "ADNOCGAS",
+   "action": "downgraded BUY -> SELL; do not buy",
+   "price": 3.38,
+   "rationale": "Lost its 50-day (3.383). Fundamentally backed, not a technical artifact: Q1 missed on EPS and revenue with sales volumes down 15% YoY from the Strait of Hormuz closure and the Habshan facility attacks - the same US-Iran escalation weighing on crypto. 7.9% dividend yield is the offset, but the trend is down. Off the stock shortlist until it reclaims 3.383.",
+   "status": "advice only - no position, Al Ramz not open"
+  },
+  {
+   "date": "2026-08-12",
+   "ticker": "EMAAR/EMAARDEV",
+   "action": "both STRONG SELL despite strong H1 - fundamentals/price divergence",
+   "price": 11.1,
+   "rationale": "Emaar H1: revenue +21% to AED23.9bn, pre-tax profit +23% to AED12.8bn, backlog +13% to AED164.9bn; Emaar Development net profit +43% to AED6.7bn. The businesses are fine - the price is not, and EMAARDEV was downgraded SELL -> STRONG SELL on results day. Good company, wrong moment: wait for the downtrend to stabilise rather than catching it.",
+   "status": "advice only - no position"
   }
  ]
 }

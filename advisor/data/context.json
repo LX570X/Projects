@@ -1,21 +1,21 @@
 {
- "updated": "2026-08-11T07:15+00:00",
+ "updated": "2026-08-12T07:20+00:00",
  "market_notes": [
   {
    "market": "Crypto macro",
-   "note": "Broad, macro-driven pullback - not asset-specific. BTC -2.0%, ETH -2.7%, SOL -1.5%, ADA -4.8% on the same session. Drivers: crypto's correlation to the S&P 500 is back near ~96%, the US-Iran escalation is suppressing rate-cut expectations, MicroStrategy disclosed its first-ever bitcoin sale, and spot-ETF flows plus large holders turned net sellers. Senate odds on the CLARITY Act have been cut to ~13%, removing a catalyst the market had partly priced. Six STRONG BUYs yesterday, three today. Trends are not broken: BTC 63,984 vs 50-day 63,411, ETH 1,874 vs 1,810."
+   "note": "Yesterday's pullback stabilised - most of the watchlist is flat to slightly green. July US CPI lands today and is the near-term swing factor. Counterpoint to yesterday's flow story: spot BTC ETFs took in $853m last week, the strongest since April, led by IBIT - so institutional demand is returning even if it has not fully recovered. Seasonality is the caution: August is historically one of bitcoin's weakest months (median -7.5%)."
   },
   {
    "market": "Portfolio",
-   "note": "ETH has now failed twice at its target: Aug-7 high 1,943 and Aug-10 high 1,932, both short of 1,964. It sits +2.5% ($68.23) and 4.8% from target 1, versus 1.9% yesterday. BTC has given back the whole deploy gain, -0.3% vs the Aug-5 entry, with a fresh MACD bearish cross. Neither is near a stop (ETH stop 1,572 is 16% below). No action - the plan levels do the work."
+   "note": "ETH 1,889.89 (+0.8%), +3.3% at $68.79, target 1 now 3.9% away. BTC is the concern: score halved 40 -> 20, its 50-day has turned DOWN, and price sits just 0.6% above it at 63,776 (-0.6% vs the Aug-5 deploy). Neither position is near a stop. No action."
   },
   {
    "market": "Altcoins",
-   "note": "Leadership rotated rather than collapsed: LINK upgraded BUY->STRONG BUY (+50) and was the only green watchlist crypto (+2.5%); AVAX improved STRONG SELL->SELL. ADA is still STRONG BUY (+65) despite the -4.8% day - the biggest single-day drop in the watchlist, and it remains the running miss (declined at 0.17 on Aug 1, still ~11% above that quote). SOL slipped to BUY: its 20-day (74.38) is still under its 50-day (75.52), so the channel breakout is unconfirmed."
+   "note": "LINK is the standout: +3.6%, score +75 (highest in the watchlist), fresh MACD bullish cross, and a genuine institutional catalyst - Standard Chartered initiated coverage Aug 10 with a $200 target on the tokenization thesis, plus Figure/HastraFi on Kamino and Syntetika's Proof-of-Reserve hub; oracle volume past $33tn. It now clearly outranks SOL (BUY +35, 20-day still below its 50-day) as the satellite candidate. BNB +2.2% to 612 also STRONG BUY (+65). AVAX cut deeper on a fresh bearish cross; XRP still the weakest at -65."
   },
   {
    "market": "UAE equities",
-   "note": "DFM property rolled over again: EMAAR -4.1% and downgraded SELL->STRONG SELL the day before its Aug-12 earnings; AIRARABIA fell from STRONG BUY to HOLD. The bank cluster (FAB, ADCB, ADIB, EMIRATESNBD) stays extended after its run. With Al Ramz still not open and the stock bucket at 400/1,200 AED, none of this is actionable yet - and the property weakness argues for the wait."
+   "note": "Divergence day. ADNOCGAS BUY -> SELL, and it is fundamentally backed: Q1 missed on volumes down 15% YoY from the Strait of Hormuz closure and Habshan attacks. Emaar is the mirror image - H1 revenue +21%, pre-tax profit +23%, backlog AED164.9bn, and Emaar Development profit +43%, yet EMAARDEV was downgraded SELL -> STRONG SELL on results day and EMAAR stays STRONG SELL. Good businesses, wrong moment. AIRARABIA lost its 50-day. Banks still lead (EMIRATESNBD +65 even after a -2.5% day, ADCB and ADIB +65). Stock bucket is at 400/1,200 AED and Al Ramz is still not open, so none of this is actionable yet."
   }
  ],
  "asset_notes": {
@@ -84,6 +84,18 @@
     "headline": "CLARITY Act Senate passage odds cut to ~13%, removing a priced-in regulatory catalyst",
     "impact": "bearish",
     "date": "2026-08-11",
+    "source": "news research pass"
+   },
+   {
+    "headline": "Spot BTC ETFs post $853m weekly inflows, strongest since April, led by BlackRock IBIT",
+    "impact": "bullish",
+    "date": "2026-08-12",
+    "source": "news research pass"
+   },
+   {
+    "headline": "July US CPI released Aug 12 is the near-term catalyst; August is historically bitcoin's weakest month (median -7.5%)",
+    "impact": "neutral",
+    "date": "2026-08-12",
     "source": "news research pass"
    }
   ],
@@ -265,6 +277,12 @@
     "impact": "bullish",
     "date": "2026-07-05",
     "source": "Arabian Business, Economy Middle East, Dubai Chronicle (early Jul 2026)"
+   },
+   {
+    "headline": "H1 2026: revenue +21% to AED23.9bn, EBITDA +24% to AED12.9bn, pre-tax profit +23% to AED12.8bn, backlog +13% to AED164.9bn",
+    "impact": "bullish",
+    "date": "2026-08-12",
+    "source": "news research pass"
    }
   ],
   "SALIK": [
@@ -317,6 +335,12 @@
     "impact": "bullish",
     "date": "2026-07-07",
     "source": "ADNOC press release (Jul 7, 2026), Energy Connects, Rigzone (Jul 9, 2026)"
+   },
+   {
+    "headline": "Q1 2026 missed EPS and revenue: sales volumes -15% YoY on the Strait of Hormuz closure and Habshan facility attacks; 2026 net income guided $3.5-4bn; interim dividend +5% to $941m (7.9% yield)",
+    "impact": "bearish",
+    "date": "2026-08-12",
+    "source": "news research pass"
    }
   ],
   "ALDAR": [
@@ -379,6 +403,20 @@
     "impact": "bullish",
     "date": "2026-08-11",
     "source": "advisor price data"
+   },
+   {
+    "headline": "Standard Chartered initiates coverage with a $200 target (25x by 2030) on the tokenization thesis; Figure/HastraFi live on Kamino, Syntetika hub on Chainlink Proof of Reserve; oracle volume past $33tn",
+    "impact": "bullish",
+    "date": "2026-08-12",
+    "source": "news research pass"
+   }
+  ],
+  "EMAARDEV": [
+   {
+    "headline": "H1 2026: property sales AED22.4bn, revenue +34% to AED13.3bn, net profit +43% to AED6.7bn - yet downgraded SELL -> STRONG SELL on results day",
+    "impact": "bullish",
+    "date": "2026-08-12",
+    "source": "news research pass"
    }
   ]
  },
