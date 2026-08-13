@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-12T07:20+00:00",
+ "updated": "2026-08-13T07:20+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": 0
@@ -88,17 +88,18 @@
    }
   ],
   "satellite_candidate": {
-   "as_of": "2026-08-12",
+   "as_of": "2026-08-13",
    "ticker": "LINKUSDT",
-   "price": 8.742,
-   "qty": 3.115,
+   "price": 8.767,
+   "qty": 3.106,
    "aed": 100,
    "usd": 27.23,
    "stop": 8.068,
-   "target1": 9.3,
-   "max_loss_usd": 2.1,
+   "target1": 9.33,
+   "max_loss_usd": 2.17,
    "replaces": "SOLUSDT offer at 76.36 (SOL downgraded to BUY; its 20-day is still below its 50-day)",
-   "reason": "Highest watchlist score (+75), fresh MACD bullish cross, confirmed structure, and a real institutional catalyst (Standard Chartered $200 target, Figure/HastraFi, Syntetika)."
+   "reason": "Highest watchlist score (+75), fresh MACD bullish cross, confirmed structure, and a real institutional catalyst (Standard Chartered $200 target, Figure/HastraFi, Syntetika).",
+   "status": "still standing - LINK held +75 and moved only +0.3% since offered, so the entry is effectively unchanged"
   }
  }
 }

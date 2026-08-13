@@ -237,6 +237,39 @@
    "price": 11.1,
    "rationale": "Emaar H1: revenue +21% to AED23.9bn, pre-tax profit +23% to AED12.8bn, backlog +13% to AED164.9bn; Emaar Development net profit +43% to AED6.7bn. The businesses are fine - the price is not, and EMAARDEV was downgraded SELL -> STRONG SELL on results day. Good company, wrong moment: wait for the downtrend to stabilise rather than catching it.",
    "status": "advice only - no position"
+  },
+  {
+   "date": "2026-08-13",
+   "ticker": "ADAUSDT",
+   "action": "downgraded STRONG BUY -> BUY - the running miss finally cools",
+   "price": 0.1842,
+   "rationale": "Score 50 -> 25 on a fresh MACD bearish cross; still above its 50-day (0.1713) so the uptrend holds, but momentum has rolled over. Closing the loop on the running miss: first declined at 0.17 on Aug 1, peaked around 0.1983 on Aug 10 (+16%), now 0.1842 (+8.4%). The miss was real but it has more than halved. Analyst consensus for August is a 0.181-0.192 range - i.e. roughly where it already is - so the easy part of the move is behind it. Not chasing at BUY (+25).",
+   "status": "not taken - miss narrowed to +8.4%"
+  },
+  {
+   "date": "2026-08-13",
+   "ticker": "AVAXUSDT",
+   "action": "+5.0% bounce, STRONG SELL -> HOLD - not a buy",
+   "price": 6.543,
+   "rationale": "Biggest watchlist move (+5.0%) with a fresh MACD bullish cross, but price 6.543 is STILL below its 50-day (6.565) and the 20-day is below the 50-day. No asset-specific catalyst found - a technical bounce inside a downtrend, and one indicator survey has 30 bearish signals against 1 bullish. HOLD means watch, not buy. It would need to reclaim 6.565 and hold it for two closes before it is a candidate.",
+   "status": "no action"
+  },
+  {
+   "date": "2026-08-13",
+   "ticker": "BTCUSDT",
+   "action": "yesterday's 50-day slope warning reversed - back to BUY (+40)",
+   "price": 63878.0,
+   "entry": 64180.84,
+   "rationale": "The 50-day is sloping UP again today after one day pointing down, and the score recovered 20 -> 40. Honest read: a one-day slope flip is noise, not a signal - I flagged it yesterday and it reverted within a session. The level that actually matters is unchanged: 63,449. Price 63,878 is 0.7% above it, -0.5% vs the Aug-5 deploy. Two closes below 63,449 still ends the thesis.",
+   "status": "open, -0.5%"
+  },
+  {
+   "date": "2026-08-13",
+   "ticker": "UAE-broad",
+   "action": "market-wide bounce lifted four names - low conviction, no chase",
+   "price": null,
+   "rationale": "TECOM SELL -> BUY, AIRARABIA HOLD -> BUY, TALABAT SELL -> HOLD, EMAAR STRONG SELL -> SELL, IHC STRONG SELL -> SELL. This is the index, not the companies: DFM +0.69% and ADX +0.05% on Aug 12 as markets rebounded ahead of US inflation data. Two tells that these are weak upgrades: TECOM's 20-day and 50-day are within 0.09% (no structural edge) and it carries a fresh MACD BEARISH cross despite the BUY score; AIRARABIA's 20-day is still below its 50-day. Treat as unconfirmed until they hold a few sessions.",
+   "status": "advice only - no position, Al Ramz not open"
   }
  ]
 }
