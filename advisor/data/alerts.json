@@ -1,41 +1,77 @@
 {
- "generated_at_utc": "2026-08-12T07:11:35+00:00",
+ "generated_at_utc": "2026-08-13T07:11:44+00:00",
  "alerts": [
   {
-   "ticker": "LINKUSDT",
+   "ticker": "AVAXUSDT",
    "severity": "info",
-   "type": "macd",
-   "msg": "LINKUSDT: MACD bullish cross"
+   "type": "big_move",
+   "msg": "AVAXUSDT moved +5.0% in the last day (now 6.543 USD)"
+  },
+  {
+   "ticker": "AVAXUSDT",
+   "severity": "info",
+   "type": "signal_change",
+   "msg": "AVAXUSDT: STRONG SELL -> HOLD (score -55 -> -20)"
   },
   {
    "ticker": "AVAXUSDT",
    "severity": "info",
    "type": "macd",
-   "msg": "AVAXUSDT: MACD bearish cross"
+   "msg": "AVAXUSDT: MACD bullish cross"
   },
   {
-   "ticker": "EMIRATESNBD",
+   "ticker": "ADAUSDT",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ADAUSDT: STRONG BUY -> BUY (score 50 -> 25)"
+  },
+  {
+   "ticker": "ADAUSDT",
    "severity": "info",
-   "type": "big_move",
-   "msg": "EMIRATESNBD moved -2.5% in the last day (now 31.2 AED)"
+   "type": "macd",
+   "msg": "ADAUSDT: MACD bearish cross"
+  },
+  {
+   "ticker": "EMAAR",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "EMAAR: STRONG SELL -> SELL (score -50 -> -35)"
+  },
+  {
+   "ticker": "TALABAT",
+   "severity": "info",
+   "type": "signal_change",
+   "msg": "TALABAT: SELL -> HOLD (score -30 -> -5)"
+  },
+  {
+   "ticker": "TALABAT",
+   "severity": "info",
+   "type": "macd",
+   "msg": "TALABAT: MACD bullish cross"
   },
   {
    "ticker": "AIRARABIA",
    "severity": "actionable",
-   "type": "trend",
-   "msg": "AIRARABIA: price crossed below its 50-day average \u2014 trend change"
+   "type": "signal_change",
+   "msg": "AIRARABIA: HOLD -> BUY (score -15 -> 35)"
   },
   {
-   "ticker": "EMAARDEV",
+   "ticker": "TECOM",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "EMAARDEV: SELL -> STRONG SELL (score -35 -> -50)"
+   "msg": "TECOM: SELL -> BUY (score -25 -> 25)"
   },
   {
-   "ticker": "ADNOCGAS",
+   "ticker": "IHC",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "ADNOCGAS: BUY -> SELL (score 35 -> -25)"
+   "msg": "IHC: STRONG SELL -> SELL (score -50 -> -40)"
+  },
+  {
+   "ticker": "EAND",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "EAND: STRONG BUY -> BUY (score 50 -> 40)"
   }
  ]
 }
