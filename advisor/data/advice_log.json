@@ -270,6 +270,37 @@
    "price": null,
    "rationale": "TECOM SELL -> BUY, AIRARABIA HOLD -> BUY, TALABAT SELL -> HOLD, EMAAR STRONG SELL -> SELL, IHC STRONG SELL -> SELL. This is the index, not the companies: DFM +0.69% and ADX +0.05% on Aug 12 as markets rebounded ahead of US inflation data. Two tells that these are weak upgrades: TECOM's 20-day and 50-day are within 0.09% (no structural edge) and it carries a fresh MACD BEARISH cross despite the BUY score; AIRARABIA's 20-day is still below its 50-day. Treat as unconfirmed until they hold a few sessions.",
    "status": "advice only - no position, Al Ramz not open"
+  },
+  {
+   "date": "2026-08-14",
+   "ticker": "BTCUSDT",
+   "action": "CLOSED BELOW ITS 50-DAY - close 1 of 2; thesis decides tomorrow",
+   "price": 63088.0,
+   "entry": 64180.84,
+   "rationale": "BUY -> HOLD (40 -> -15). Price 63,088 is 0.75% below the 50-day (63,567), the first genuine trend break since the Aug-5 deploy. Per the 2-day confirmation rule adopted after the Aug-3 whipsaw, one close is not the exit - tomorrow's close decides. What raises the odds it confirms: July CPI came in SOFT (headline 3.4% from 3.5%, core 2.5%) - exactly the news BTC wanted - and it fell anyway, from an intraday 65,234 to ~63,300. Bullish news failing to lift price is the bearish tell. Analysts flag crowded longs, the quietest tape since 2019, liquidation clusters putting 62,000 support in focus, and a 63,000-68,700 range.",
+   "status": "trend broken, awaiting confirmation"
+  },
+  {
+   "date": "2026-08-14",
+   "ticker": "BTCUSDT-bookkeeping",
+   "action": "CORRECTION to my own log: the Aug-5 opportunity deploy was never confirmed executed",
+   "rationale": "The Aug-5 entry reads 'advised - awaiting user execution' and the bucket still shows opportunity_usdt_aed = 250, yet my Aug 10-13 entries tracked it as an open position ('open, +1.7%', 'open, -0.5%'). I do not actually know whether the user bought. Both cases handled: if they did NOT deploy, nothing to exit - the 250 AED stays in USDT and the trigger re-arms at a reclaim of 63,567. If they DID deploy at ~64,181, they are -1.7% and the exit rule is a second close below the 50-day.",
+   "status": "needs user confirmation"
+  },
+  {
+   "date": "2026-08-14",
+   "ticker": "crypto-breadth",
+   "action": "breadth deteriorating again - satellite deploy put on hold",
+   "rationale": "Same pattern as Aug 1: BTC HOLD, SOL BUY -> HOLD, LTC STRONG BUY -> HOLD and below its 50-day, AVAX HOLD -> SELL. Only LINK (+65) and BNB (+65) still STRONG BUY. LINK's own setup is intact - 8.772, above both averages, structure confirmed - but deploying an alt satellite the day BTC loses its trend repeats the exact mistake I avoided on Aug 1. Offer stands, deploy waits one day for the BTC verdict.",
+   "status": "LINK offer held, not withdrawn"
+  },
+  {
+   "date": "2026-08-14",
+   "ticker": "AIRARABIA",
+   "action": "yesterday's upgrade reversed in one session - caution vindicated",
+   "price": 4.99,
+   "rationale": "BUY -> SELL (35 -> -40) with a fresh MACD bearish cross, -2.7%, back below its 50-day. Yesterday I called the UAE upgrades 'an index bounce, not company news' and 'unconfirmed until they hold a few sessions' - this one lasted a single session. Results were due Aug 12 and the market's verdict was negative; Q1 profit had already fallen 22% YoY on regional conflict and airspace closures. ADNOCGAS and ALDAR also cut to STRONG SELL. Only TECOM's upgrade survived, and its two averages are 0.08% apart with a bearish MACD cross underneath.",
+   "status": "advice only - no position"
   }
  ]
 }

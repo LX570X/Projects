@@ -1,21 +1,21 @@
 {
- "updated": "2026-08-13T07:20+00:00",
+ "updated": "2026-08-14T07:25+00:00",
  "market_notes": [
   {
    "market": "Crypto macro",
-   "note": "A quiet, mixed session - the whole watchlist moved less than 1.3% except AVAX. BTC recovered to BUY (+40) with its 50-day sloping up again after one day pointing down; that flip was noise. Leadership is narrowing rather than broadening: LINK (+75), BNB (+65) and LTC (+50) hold STRONG BUY while ADA dropped out of it on a MACD bearish cross. XRP remains the weakest asset tracked (-65)."
+   "note": "The macro trade stopped working. July CPI landed soft - headline 3.4% from 3.5%, core 2.5% - and bitcoin sold off anyway, from an intraday 65,234 to ~63,300. Bullish news that fails to lift price is a bearish tell, and it is why today's 50-day break should not be waved off as noise. Analysts describe crowded longs, the quietest tape since 2019, liquidation clusters putting 62,000 in focus, and a 63,000-68,700 range. Weekly ETF inflows of ~$850m were inconsistent rather than accelerating."
   },
   {
    "market": "Portfolio",
-   "note": "ETH 1,897.44 (+0.4%), +3.7% at $69.07 - the best mark since entry - with target 1 (1,964) now 3.5% away. BTC 63,878, -0.5% vs the Aug-5 deploy and 0.7% above the 63,449 line that defines the thesis. Both stops far away. No action for a fourth straight day; the plan levels are doing the work."
+   "note": "ETH 1,876.94 (-1.0%), still BUY (+35) and still above its 50-day (1,826) - the only major holding whose trend is intact. +2.6% at $68.32, target 1 (1,964) 4.6% away, stop 1,572 far below. Holding. BTC is the open question: it closed 0.75% below its 50-day, which is close 1 of the 2 that would end the deploy thesis."
   },
   {
    "market": "Altcoins",
-   "note": "AVAX +5.0% was the biggest move but is a bounce inside a downtrend - price 6.543 is still under its 50-day (6.565), the 20-day is below the 50-day, and no catalyst turned up in the news pass. ADA cooled to BUY (+25): the running-miss story is closing, from 0.17 when first declined to a 0.1983 peak (+16%) and back to 0.1842 (+8.4%), with analysts calling a 0.181-0.192 August range - roughly where it already trades. LINK is unchanged at 8.767 (+0.3%) and still the cleanest setup in the book."
+   "note": "Breadth broke down the same way it did on Aug 1: SOL BUY -> HOLD, LTC STRONG BUY -> HOLD and through its 50-day, AVAX HOLD -> SELL, ADA holding BUY (+25), XRP still worst at -65. Only LINK (+65) and BNB (+65) remain STRONG BUY. LINK's setup itself has not degraded - 8.772, above both averages with confirmed structure - but deploying an alt satellite on the day BTC loses its trend is the mistake avoided on Aug 1, so the offer stands and the deploy waits."
   },
   {
    "market": "UAE equities",
-   "note": "Broad bounce rather than company news: DFM closed +0.69% and ADX +0.05% on Aug 12 as Gulf markets rebounded ahead of US inflation data. TECOM SELL -> BUY, AIRARABIA HOLD -> BUY, TALABAT SELL -> HOLD, EMAAR and IHC both climbed out of STRONG SELL. Low conviction: TECOM's averages are within 0.09% of each other AND it has a fresh MACD bearish cross under a BUY score, and AIRARABIA's 20-day is still below its 50-day. The genuinely strong names are unchanged - EMIRATESNBD, ADCB, ADIB, DEWA (+65) and ADPORTS (+55, now above its upper Bollinger band, i.e. stretched). TAQA's mandatory acquisition was implemented today. Still nothing to buy: Al Ramz is not open and the bucket is at 400/1,200 AED."
+   "note": "Yesterday's index bounce unwound almost entirely, which is why it was flagged as low conviction. AIRARABIA went BUY -> SELL in a single session (-2.7%, MACD bearish cross, back under its 50-day) after Aug-12 results; ADNOCGAS and ALDAR both cut to STRONG SELL, with ADNOCGAS losing its 50-day; DEWA STRONG BUY -> BUY; DIB BUY -> HOLD. Only TECOM's upgrade survived and it is fragile (averages 0.08% apart, bearish MACD cross). The bank block is what is actually holding: ADCB and ADIB (+65), FAB, EMIRATESNBD, EAND (+50) and ADPORTS (+65). TALABAT +3.6% was the day's biggest gainer. Still not actionable - Al Ramz not open, bucket at 400/1,200 AED."
   }
  ],
  "asset_notes": {
@@ -96,6 +96,18 @@
     "headline": "July US CPI released Aug 12 is the near-term catalyst; August is historically bitcoin's weakest month (median -7.5%)",
     "impact": "neutral",
     "date": "2026-08-12",
+    "source": "news research pass"
+   },
+   {
+    "headline": "July CPI soft (headline 3.4%, core 2.5%) yet BTC fell from an intraday 65,234 to ~63,300 - the macro trade has stopped working",
+    "impact": "bearish",
+    "date": "2026-08-14",
+    "source": "news research pass"
+   },
+   {
+    "headline": "Crowded longs and the quietest tape since 2019; liquidation clusters put 62,000 support in focus within a 63,000-68,700 range",
+    "impact": "bearish",
+    "date": "2026-08-14",
     "source": "news research pass"
    }
   ],
@@ -319,6 +331,12 @@
     "impact": "bearish",
     "date": "2026-05-12",
     "source": "Gulf News, Air Arabia press release, Zawya (May 2026)"
+   },
+   {
+    "headline": "Results released Aug 12 met a negative market verdict: -2.7%, BUY -> SELL, back below the 50-day; Q1 profit had already fallen 22% YoY on regional conflict and airspace closures",
+    "impact": "bearish",
+    "date": "2026-08-14",
+    "source": "news research pass"
    }
   ],
   "EAND": [
