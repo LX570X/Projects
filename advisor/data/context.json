@@ -1,21 +1,21 @@
 {
- "updated": "2026-08-14T07:25+00:00",
+ "updated": "2026-08-15T07:15+00:00",
  "market_notes": [
   {
    "market": "Crypto macro",
-   "note": "The macro trade stopped working. July CPI landed soft - headline 3.4% from 3.5%, core 2.5% - and bitcoin sold off anyway, from an intraday 65,234 to ~63,300. Bullish news that fails to lift price is a bearish tell, and it is why today's 50-day break should not be waved off as noise. Analysts describe crowded longs, the quietest tape since 2019, liquidation clusters putting 62,000 in focus, and a 63,000-68,700 range. Weekly ETF inflows of ~$850m were inconsistent rather than accelerating."
+   "note": "BTC put in a second consecutive close below its 50-day (63,077 vs 63,566), which by the rule set on Aug 12 ends the Aug-5 deploy thesis. It is a stall rather than a crash - flat on the day, 20-day still above the 50-day - but after soft CPI failed to lift it, the burden of proof has flipped. Meanwhile the leadership has rotated hard into two names: LINK +7.3% and AVAX +4.2% while BTC, SOL, LTC and XRP all sit at HOLD or worse. Money is moving into specific stories rather than the asset class."
   },
   {
    "market": "Portfolio",
-   "note": "ETH 1,876.94 (-1.0%), still BUY (+35) and still above its 50-day (1,826) - the only major holding whose trend is intact. +2.6% at $68.32, target 1 (1,964) 4.6% away, stop 1,572 far below. Holding. BTC is the open question: it closed 0.75% below its 50-day, which is close 1 of the 2 that would end the deploy thesis."
+   "note": "ETH 1,881.56 (+0.3%) is now the only major holding with an intact trend - BUY (+35), above its 50-day (1,832), +2.8% at $68.49. Target 1 (1,964) is 4.4% away and the stop (1,572) is 16% below. Hold. The open question is the opportunity bucket: whether the Aug-5 BTC deploy was ever executed, since the log says 'awaiting user execution' and the bucket still shows 250 AED in USDT."
   },
   {
    "market": "Altcoins",
-   "note": "Breadth broke down the same way it did on Aug 1: SOL BUY -> HOLD, LTC STRONG BUY -> HOLD and through its 50-day, AVAX HOLD -> SELL, ADA holding BUY (+25), XRP still worst at -65. Only LINK (+65) and BNB (+65) remain STRONG BUY. LINK's setup itself has not degraded - 8.772, above both averages with confirmed structure - but deploying an alt satellite on the day BTC loses its trend is the mistake avoided on Aug 1, so the offer stands and the deploy waits."
+   "note": "LINK ran +7.3% to 9.406 on real institutional news - Standard Chartered's $200 target, prediction markets crossing $40bn with Chainlink oracles as the core engine, treasury purchases and ETF anticipation - but is now stretched: RSI 70.8 and above the upper Bollinger band, which is why the signal itself cut to BUY. AVAX reclaimed its 50-day (+4.2%) with no fresh catalyst behind it; Grayscale's Aug-6 rebalance actually cut its weighting and analysts still see a 5.89-7.00 range. SOL lost its 50-day and LTC fell to SELL, so the breadth story keeps narrowing."
   },
   {
    "market": "UAE equities",
-   "note": "Yesterday's index bounce unwound almost entirely, which is why it was flagged as low conviction. AIRARABIA went BUY -> SELL in a single session (-2.7%, MACD bearish cross, back under its 50-day) after Aug-12 results; ADNOCGAS and ALDAR both cut to STRONG SELL, with ADNOCGAS losing its 50-day; DEWA STRONG BUY -> BUY; DIB BUY -> HOLD. Only TECOM's upgrade survived and it is fragile (averages 0.08% apart, bearish MACD cross). The bank block is what is actually holding: ADCB and ADIB (+65), FAB, EMIRATESNBD, EAND (+50) and ADPORTS (+65). TALABAT +3.6% was the day's biggest gainer. Still not actionable - Al Ramz not open, bucket at 400/1,200 AED."
+   "note": "Weekend - markets shut, this is preparation for Monday. Friday was broadly negative: DEWA and DIB both lost their 50-day and fell to SELL, AIRARABIA -4.1% to STRONG SELL, EMAARDEV to STRONG SELL, ADNOCDRILL cut to BUY, ADPORTS -2.5% though still +65. TECOM completed a full SELL -> BUY -> HOLD round trip in three sessions. The bank block is the only cluster still standing: EMIRATESNBD, ADCB and ADIB at +65, FAB and EAND at +50. Bucket still 400/1,200 AED with Al Ramz unopened."
   }
  ],
  "asset_notes": {
@@ -108,6 +108,12 @@
     "headline": "Crowded longs and the quietest tape since 2019; liquidation clusters put 62,000 support in focus within a 63,000-68,700 range",
     "impact": "bearish",
     "date": "2026-08-14",
+    "source": "news research pass"
+   },
+   {
+    "headline": "Second consecutive close below the 50-day average confirms the trend break that began Aug 14",
+    "impact": "bearish",
+    "date": "2026-08-15",
     "source": "news research pass"
    }
   ],
@@ -439,6 +445,18 @@
     "impact": "bullish",
     "date": "2026-08-12",
     "source": "news research pass"
+   },
+   {
+    "headline": "Prediction markets hit a $40bn milestone Aug 13 with Chainlink oracles as the core engine; treasury purchase and ETF anticipation add to the Standard Chartered $200 call",
+    "impact": "bullish",
+    "date": "2026-08-15",
+    "source": "news research pass"
+   },
+   {
+    "headline": "+13.7% over seven days leaves RSI at 70.8 and price above the upper Bollinger band - stretched, pullback risk",
+    "impact": "neutral",
+    "date": "2026-08-15",
+    "source": "news research pass"
    }
   ],
   "EMAARDEV": [
@@ -454,6 +472,18 @@
     "headline": "+5.0% bounce with a MACD bullish cross but no identifiable catalyst; still below the 50-day, indicator surveys ~30 bearish vs 1 bullish",
     "impact": "neutral",
     "date": "2026-08-13",
+    "source": "news research pass"
+   },
+   {
+    "headline": "No fresh Aug-14 catalyst: Securitize $1bn RWA and Dinari tokenized equities were Aug 5, and Grayscale's Aug-6 rebalance CUT AVAX's weighting; analysts still model a 5.89-7.00 range",
+    "impact": "neutral",
+    "date": "2026-08-15",
+    "source": "news research pass"
+   },
+   {
+    "headline": "FIFA runs 2026 World Cup ticketing, loyalty and collectibles on a custom Avalanche chain - long-term adoption, not a near-term driver",
+    "impact": "bullish",
+    "date": "2026-08-15",
     "source": "news research pass"
    }
   ],

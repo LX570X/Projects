@@ -301,6 +301,48 @@
    "price": 4.99,
    "rationale": "BUY -> SELL (35 -> -40) with a fresh MACD bearish cross, -2.7%, back below its 50-day. Yesterday I called the UAE upgrades 'an index bounce, not company news' and 'unconfirmed until they hold a few sessions' - this one lasted a single session. Results were due Aug 12 and the market's verdict was negative; Q1 profit had already fallen 22% YoY on regional conflict and airspace closures. ADNOCGAS and ALDAR also cut to STRONG SELL. Only TECOM's upgrade survived, and its two averages are 0.08% apart with a bearish MACD cross underneath.",
    "status": "advice only - no position"
+  },
+  {
+   "date": "2026-08-15",
+   "ticker": "BTCUSDT",
+   "action": "SECOND close below the 50-day - DEPLOY THESIS INVALIDATED",
+   "price": 63077.25,
+   "entry": 64180.84,
+   "rationale": "63,077 vs a 50-day of 63,566: two consecutive closes below, which is the exact condition set on Aug 12-14. Still HOLD (-15). The rule that protected against the Aug-3 whipsaw now works in the other direction and says the Aug-5 trend thesis is done. Two paths: if the opportunity bucket was NEVER deployed (the log says 'awaiting user execution' and the bucket still reads 250 AED USDT), there is nothing to sell - the money stays in USDT and the trigger re-arms at a reclaim of 63,566. If it WAS deployed at ~64,181, the position is -1.7% and the rule says exit to USDT rather than hope. Not a crash - price is flat on the day and 20-day still above 50-day - but the edge is gone.",
+   "status": "thesis closed, awaiting user confirmation of whether it was ever executed"
+  },
+  {
+   "date": "2026-08-15",
+   "ticker": "LINKUSDT",
+   "action": "MISS - held the deploy one day and LINK ran +7.3%",
+   "price": 9.406,
+   "rationale": "Offered at 8.742 on Aug 12, still 8.772 when I put the deploy ON HOLD yesterday because BTC had just lost its 50-day. It closed +7.3% at 9.406, so the hold cost about +7.6% on the offer price - roughly $2.07 on a $27 satellite. The reasoning was not unsound (alts usually follow BTC down) but it was wrong here: LINK moved on its own catalysts, not BTC's. Real drivers - Standard Chartered's Aug-10 $200 target, prediction markets hitting a $40bn milestone on Aug 13 with Chainlink oracles as the core engine, plus treasury-purchase and ETF anticipation.",
+   "status": "missed +7.6%"
+  },
+  {
+   "date": "2026-08-15",
+   "ticker": "LINKUSDT",
+   "action": "do NOT chase here - wait for a pullback",
+   "price": 9.406,
+   "stop": 8.3,
+   "target1": 10.01,
+   "rationale": "The signal itself downgraded STRONG BUY -> BUY (65 -> 35) precisely because the move went too far too fast: RSI 70.8 and price above the upper Bollinger band. Buying an extended move with a 13.6%-away stop is the worst risk/reward this book has offered. The thesis is a multi-month tokenization story, not a three-day trade, so there is no urgency. Plan: buy 100 AED of LINK on a pullback into 8.80-9.05 that holds above the rising 20-day (8.43), stop 8.30, target 10.01. If it never pulls back, let it go.",
+   "status": "conditional order - awaiting pullback"
+  },
+  {
+   "date": "2026-08-15",
+   "ticker": "AVAXUSDT",
+   "action": "reclaimed its 50-day - close 1 of 2, no action yet",
+   "price": 6.649,
+   "rationale": "SELL -> STRONG BUY (+45), +4.2%, above the 50-day (6.562) with a fresh MACD bullish cross. On Aug 13 the condition set was 'reclaim 6.565 and hold it for two closes' - this is close one. The news pass found no fresh Aug-14 catalyst: the Securitize $1bn RWA and Dinari tokenized-equity news was Aug 5, FIFA World Cup adoption is a long-term story, and Grayscale's Aug-6 rebalance actually CUT AVAX's weighting. Analysts still expect a 5.89-7.00 range, and 6.649 sits in the upper half of it - a range trade, not a breakout. Its 20-day is also still below its 50-day.",
+   "status": "watching, close 2 needed"
+  },
+  {
+   "date": "2026-08-15",
+   "ticker": "UAE-broad",
+   "action": "Friday session broadly negative - three more names lost their 50-day",
+   "rationale": "DEWA BUY -> SELL and below its 50-day, DIB HOLD -> SELL and below its 50-day, AIRARABIA -4.1% to STRONG SELL, EMAARDEV to STRONG SELL, ADNOCDRILL STRONG BUY -> BUY, ADPORTS -2.5% (still +65). TECOM completed its round trip SELL -> BUY -> HOLD in three sessions, which is what 'averages 0.08% apart' looks like in practice. The bank block is the only thing holding: EMIRATESNBD, ADCB, ADIB (+65), FAB and EAND (+50). Markets are shut for the weekend - this is preparation for Monday's open, not an order.",
+   "status": "advice only - no position, Al Ramz not open"
   }
  ]
 }
