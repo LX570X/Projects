@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-15T07:15+00:00",
+ "updated": "2026-08-16T07:20+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": 0
@@ -88,11 +88,11 @@
    }
   ],
   "satellite_candidate": {
-   "as_of": "2026-08-15",
+   "as_of": "2026-08-16",
    "ticker": "LINKUSDT",
    "type": "conditional - pullback entry",
    "trigger": "price pulls back into 8.80-9.05 and holds above the 20-day (8.43)",
-   "price_now": 9.406,
+   "price_now": 9.351,
    "entry_zone": [
     8.8,
     9.05
@@ -103,11 +103,11 @@
    "usd": 27.23,
    "qty_at_entry_mid": 3.05,
    "max_loss_usd": 1.86,
-   "note": "Do NOT chase at 9.406 - RSI 70.8 and above the upper Bollinger band. Offered at 8.742 Aug 12, held Aug 14 on the BTC break, ran +7.6% without us. Thesis is multi-month tokenization, so there is no urgency; if it never pulls back, skip it."
+   "note": "Unchanged: do NOT chase. Back to STRONG BUY (+55) as RSI cooled to 68.1, but still above the upper Bollinger band and outside the 8.80-9.05 entry zone. Buy only on a pullback that holds above the 20-day (8.483); stop 8.30, target 10.01."
   },
   "opportunity_status": {
-   "as_of": "2026-08-15",
-   "note": "BTC deploy thesis INVALIDATED on a second close below the 50-day. If never executed: 250 AED remains USDT, re-arm trigger = BTC reclaims 63,566 and holds two closes. If executed at ~64,181: -1.7%, rule says convert back to USDT."
+   "as_of": "2026-08-16",
+   "note": "BTC downgraded HOLD -> SELL on a third close below the 50-day. Opportunity money stays in USDT. Re-arm trigger: BTC back above 63,627 for two consecutive closes."
   }
  }
 }

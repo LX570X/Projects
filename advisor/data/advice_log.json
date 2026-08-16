@@ -343,6 +343,31 @@
    "action": "Friday session broadly negative - three more names lost their 50-day",
    "rationale": "DEWA BUY -> SELL and below its 50-day, DIB HOLD -> SELL and below its 50-day, AIRARABIA -4.1% to STRONG SELL, EMAARDEV to STRONG SELL, ADNOCDRILL STRONG BUY -> BUY, ADPORTS -2.5% (still +65). TECOM completed its round trip SELL -> BUY -> HOLD in three sessions, which is what 'averages 0.08% apart' looks like in practice. The bank block is the only thing holding: EMIRATESNBD, ADCB, ADIB (+65), FAB and EAND (+50). Markets are shut for the weekend - this is preparation for Monday's open, not an order.",
    "status": "advice only - no position, Al Ramz not open"
+  },
+  {
+   "date": "2026-08-16",
+   "ticker": "AVAXUSDT",
+   "action": "WIN for the 2-close rule - yesterday's reclaim fully reversed",
+   "price": 6.328,
+   "rationale": "Yesterday AVAX reclaimed its 50-day at 6.649 (+4.2%) and jumped to STRONG BUY; the call was 'close 1 of 2, no action'. Today it fell -4.9% to 6.328, back below the 50-day (6.554) and down to HOLD. Waiting for the second close avoided buying the exact high of a one-day spike - about -4.9% saved. The news pass was the tell: no fresh catalyst, Grayscale had cut AVAX's weighting, and analysts modelled a 5.89-7.00 range with 6.649 in its upper half.",
+   "status": "avoided - no action taken"
+  },
+  {
+   "date": "2026-08-16",
+   "ticker": "BTCUSDT",
+   "action": "HOLD -> SELL, third close below the 50-day",
+   "price": 63054.84,
+   "entry": 64180.84,
+   "rationale": "Score -15 -> -30. Price 63,055 against a 50-day of 63,627 that is still creeping up, so the gap is widening from below; the 20-day has now converged to within 0.36% of the 50-day, i.e. the bullish structure that survived the first break is gone too. The thesis was already closed yesterday - this is confirmation, not new information. Analysts frame 65,000-70,000 as the zone BTC must reclaim to break the downtrend, with the branch points being Fed policy, ETF flows and leveraged futures positioning (downside ~57,000, upside ~75,000).",
+   "status": "thesis closed - stay in USDT"
+  },
+  {
+   "date": "2026-08-16",
+   "ticker": "LINKUSDT",
+   "action": "back to STRONG BUY (+55) but the pullback order is unchanged",
+   "price": 9.351,
+   "rationale": "-0.5% today and RSI cooled 70.8 -> 68.1, which lifted the score back to +55, but price is still above the upper Bollinger band and nowhere near the 8.80-9.05 entry zone. Nothing about being 'back to STRONG BUY' justifies chasing an extended move; the conditional order stands unchanged - buy on a pullback into 8.80-9.05 that holds above the 20-day (8.483), stop 8.30, target 10.01.",
+   "status": "conditional order still open"
   }
  ]
 }

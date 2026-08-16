@@ -1,21 +1,21 @@
 {
- "updated": "2026-08-15T07:15+00:00",
+ "updated": "2026-08-16T07:20+00:00",
  "market_notes": [
   {
    "market": "Crypto macro",
-   "note": "BTC put in a second consecutive close below its 50-day (63,077 vs 63,566), which by the rule set on Aug 12 ends the Aug-5 deploy thesis. It is a stall rather than a crash - flat on the day, 20-day still above the 50-day - but after soft CPI failed to lift it, the burden of proof has flipped. Meanwhile the leadership has rotated hard into two names: LINK +7.3% and AVAX +4.2% while BTC, SOL, LTC and XRP all sit at HOLD or worse. Money is moving into specific stories rather than the asset class."
+   "note": "A third close below the 50-day took BTC from HOLD to SELL (-30) at 63,055, and the 20-day has now converged to within 0.36% of the 50-day - the bullish structure that outlived the first break is gone. Analysts put the reclaim zone at 65,000-70,000, with Fed policy, ETF flows and leveraged futures positioning deciding between roughly 57,000 and 75,000. Note a data discrepancy worth flagging: several aggregator pages quote BTC near 64,999 and ETH near 1,912 today, while our own Binance-sourced feed reads 63,055 and 1,880; the advisor acts on its own feed, which has been internally consistent all week."
   },
   {
    "market": "Portfolio",
-   "note": "ETH 1,881.56 (+0.3%) is now the only major holding with an intact trend - BUY (+35), above its 50-day (1,832), +2.8% at $68.49. Target 1 (1,964) is 4.4% away and the stop (1,572) is 16% below. Hold. The open question is the opportunity bucket: whether the Aug-5 BTC deploy was ever executed, since the log says 'awaiting user execution' and the bucket still shows 250 AED in USDT."
+   "note": "ETH 1,880.23 (-0.1%), BUY (+35), still above its 50-day (1,844) and now the only major in the book with an intact uptrend. +2.8% at $68.44, target 1 4.5% away, stop 16% below. Hold. The opportunity bucket stays in USDT - the BTC thesis closed on Aug 15 and today's downgrade to SELL confirms it. Re-arm needs BTC back above 63,627 for two closes."
   },
   {
    "market": "Altcoins",
-   "note": "LINK ran +7.3% to 9.406 on real institutional news - Standard Chartered's $200 target, prediction markets crossing $40bn with Chainlink oracles as the core engine, treasury purchases and ETF anticipation - but is now stretched: RSI 70.8 and above the upper Bollinger band, which is why the signal itself cut to BUY. AVAX reclaimed its 50-day (+4.2%) with no fresh catalyst behind it; Grayscale's Aug-6 rebalance actually cut its weighting and analysts still see a 5.89-7.00 range. SOL lost its 50-day and LTC fell to SELL, so the breadth story keeps narrowing."
+   "note": "AVAX round-tripped: after reclaiming its 50-day on Friday it fell -4.9% to 6.328 and dropped back to HOLD, which is exactly what the two-close rule exists to catch. LINK held its gains best (-0.5% to 9.351, back to STRONG BUY +55 as RSI cooled to 68.1) but remains above its upper Bollinger band and outside the 8.80-9.05 buy zone. ADA -1.5%, LTC and DOGE at SELL, XRP still worst at -65. BNB (+65) and LINK are the only STRONG BUYs left in crypto."
   },
   {
    "market": "UAE equities",
-   "note": "Weekend - markets shut, this is preparation for Monday. Friday was broadly negative: DEWA and DIB both lost their 50-day and fell to SELL, AIRARABIA -4.1% to STRONG SELL, EMAARDEV to STRONG SELL, ADNOCDRILL cut to BUY, ADPORTS -2.5% though still +65. TECOM completed a full SELL -> BUY -> HOLD round trip in three sessions. The bank block is the only cluster still standing: EMIRATESNBD, ADCB and ADIB at +65, FAB and EAND at +50. Bucket still 400/1,200 AED with Al Ramz unopened."
+   "note": "Weekend - DFM and ADX are closed and today's stock prices are Friday's close repeated unchanged, so there is no new information on any UAE name. The Monday-open picture is the one described Friday: only the bank block holds (EMIRATESNBD, ADCB, ADIB at +65, FAB and EAND at +50, ADPORTS +65), while DEWA, DIB, SALIK, ALDAR and IHC sit at SELL and EMAAR, AIRARABIA, EMAARDEV and ADNOCGAS at STRONG SELL. Bucket unchanged at 400/1,200 AED with Al Ramz still unopened."
   }
  ],
  "asset_notes": {
@@ -114,6 +114,12 @@
     "headline": "Second consecutive close below the 50-day average confirms the trend break that began Aug 14",
     "impact": "bearish",
     "date": "2026-08-15",
+    "source": "news research pass"
+   },
+   {
+    "headline": "Analysts frame 65,000-70,000 as the zone BTC must reclaim to break the downtrend; Fed policy, ETF flows and leveraged futures positioning split the outcome between ~57,000 and ~75,000",
+    "impact": "bearish",
+    "date": "2026-08-16",
     "source": "news research pass"
    }
   ],
@@ -484,6 +490,12 @@
     "headline": "FIFA runs 2026 World Cup ticketing, loyalty and collectibles on a custom Avalanche chain - long-term adoption, not a near-term driver",
     "impact": "bullish",
     "date": "2026-08-15",
+    "source": "news research pass"
+   },
+   {
+    "headline": "-4.9% round trip back below the 50-day one day after reclaiming it, confirming the reclaim had no catalyst behind it",
+    "impact": "bearish",
+    "date": "2026-08-16",
     "source": "news research pass"
    }
   ],
