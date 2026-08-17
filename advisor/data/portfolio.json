@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-16T07:20+00:00",
+ "updated": "2026-08-17T07:25+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": 0
@@ -88,11 +88,11 @@
    }
   ],
   "satellite_candidate": {
-   "as_of": "2026-08-16",
+   "as_of": "2026-08-17",
    "ticker": "LINKUSDT",
    "type": "conditional - pullback entry",
    "trigger": "price pulls back into 8.80-9.05 and holds above the 20-day (8.43)",
-   "price_now": 9.351,
+   "price_now": 9.493,
    "entry_zone": [
     8.8,
     9.05
@@ -103,11 +103,16 @@
    "usd": 27.23,
    "qty_at_entry_mid": 3.05,
    "max_loss_usd": 1.86,
-   "note": "Unchanged: do NOT chase. Back to STRONG BUY (+55) as RSI cooled to 68.1, but still above the upper Bollinger band and outside the 8.80-9.05 entry zone. Buy only on a pullback that holds above the 20-day (8.483); stop 8.30, target 10.01."
+   "note": "Unchanged and unfilled. RSI 70.5, still above the upper Bollinger band; the 8.80-9.05 zone has not traded since the order was set. Miss now +8.6% from the 8.742 offer. Do not chase - stop would be 12.6% away."
   },
   "opportunity_status": {
    "as_of": "2026-08-16",
    "note": "BTC downgraded HOLD -> SELL on a third close below the 50-day. Opportunity money stays in USDT. Re-arm trigger: BTC back above 63,627 for two consecutive closes."
+  },
+  "stock_shortlist_note": {
+   "as_of": "2026-08-17",
+   "note": "ADPORTS REMOVED from the core UAE stock shortlist - it is now a cash-takeover/merger-arb situation at AED 6.25 heading to a delisting, not a dividend blue chip to hold. Shortlist for when Al Ramz opens: the bank block (ADCB, ADIB +65; FAB, EAND, EMIRATESNBD +50), plus new watches TALABAT (+45, fresh 50-day cross) and ADNOCDRILL (+65).",
+   "cost_of_delay": "ADPORTS was STRONG BUY for 11 straight sessions from 5.03 (Aug 6) and is 5.86 today, +16.5%. A 1,200 AED tranche would have been ~238 shares, now ~1,397 AED (+197 AED)."
   }
  }
 }

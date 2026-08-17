@@ -1,21 +1,21 @@
 {
- "updated": "2026-08-16T07:20+00:00",
+ "updated": "2026-08-17T07:25+00:00",
  "market_notes": [
   {
-   "market": "Crypto macro",
-   "note": "A third close below the 50-day took BTC from HOLD to SELL (-30) at 63,055, and the 20-day has now converged to within 0.36% of the 50-day - the bullish structure that outlived the first break is gone. Analysts put the reclaim zone at 65,000-70,000, with Fed policy, ETF flows and leveraged futures positioning deciding between roughly 57,000 and 75,000. Note a data discrepancy worth flagging: several aggregator pages quote BTC near 64,999 and ETH near 1,912 today, while our own Binance-sourced feed reads 63,055 and 1,880; the advisor acts on its own feed, which has been internally consistent all week."
+   "market": "UAE equities - TAKEOVER",
+   "note": "AD Ports Group is being taken private. L'imad, via its wholly owned subsidiary ADQ which already holds 75.42%, announced a voluntary conditional cash offer of AED 6.25 per share for the remainder - a 23% premium to Friday's 5.10 close, 25% and 31% over the 1-month and 3-month VWAPs, and 95% above the 2022 IPO price of 3.20. ADPORTS jumped 14.9% to 5.86, a new 52-week high, on 1.5m AED of early-session turnover. The engine's downgrade to BUY on 'RSI 78, above the upper Bollinger band' is a structural blind spot: momentum penalties do not apply to a fixed cash offer. Roughly 6.7% of spread remains, against deal risk and an eventual delisting - merger arbitrage, not an investment."
   },
   {
    "market": "Portfolio",
-   "note": "ETH 1,880.23 (-0.1%), BUY (+35), still above its 50-day (1,844) and now the only major in the book with an intact uptrend. +2.8% at $68.44, target 1 4.5% away, stop 16% below. Hold. The opportunity bucket stays in USDT - the BTC thesis closed on Aug 15 and today's downgrade to SELL confirms it. Re-arm needs BTC back above 63,627 for two closes."
+   "note": "ETH 1,906.77 (+1.4%) is the best mark since the July-17 entry: +4.2% at $69.41, above its 50-day (1,845), and the only major in the book with an intact uptrend. Target 1 (1,964) is 3.0% away and this would be the third approach after failures at 1,943 (Aug 7) and 1,932 (Aug 10). BTC recovered to HOLD at 63,601 but is still below its 50-day (63,771) - not a reclaim, and the 20-day has collapsed to within 0.06% of the 50-day. Opportunity money stays in USDT."
   },
   {
    "market": "Altcoins",
-   "note": "AVAX round-tripped: after reclaiming its 50-day on Friday it fell -4.9% to 6.328 and dropped back to HOLD, which is exactly what the two-close rule exists to catch. LINK held its gains best (-0.5% to 9.351, back to STRONG BUY +55 as RSI cooled to 68.1) but remains above its upper Bollinger band and outside the 8.80-9.05 buy zone. ADA -1.5%, LTC and DOGE at SELL, XRP still worst at -65. BNB (+65) and LINK are the only STRONG BUYs left in crypto."
+   "note": "LINK keeps running without us: +1.5% to 9.493, RSI back above 70, still above its upper Bollinger band, score cut to BUY on the stretch penalty. The 8.80-9.05 entry zone has never traded since it was set, so the miss is now +8.6% from the 8.742 offer. AVAX completed its round trip in the opposite direction - 6.649 STRONG BUY Friday, SELL (-40) today with a bearish cross - and is off the candidate list. BNB is the only STRONG BUY left in crypto (+50)."
   },
   {
-   "market": "UAE equities",
-   "note": "Weekend - DFM and ADX are closed and today's stock prices are Friday's close repeated unchanged, so there is no new information on any UAE name. The Monday-open picture is the one described Friday: only the bank block holds (EMIRATESNBD, ADCB, ADIB at +65, FAB and EAND at +50, ADPORTS +65), while DEWA, DIB, SALIK, ALDAR and IHC sit at SELL and EMAAR, AIRARABIA, EMAARDEV and ADNOCGAS at STRONG SELL. Bucket unchanged at 400/1,200 AED with Al Ramz still unopened."
+   "market": "UAE equities - the rest",
+   "note": "Monday's open was mixed beneath the ADPORTS story. TALABAT was the real upgrade: HOLD -> STRONG BUY (+45) on a 50-day cross with a fresh MACD bullish cross. ADNOCDRILL BUY -> STRONG BUY (+65). TECOM went HOLD -> BUY, its third band change in five sessions - noise, not signal. ALDAR and IHC both cut to STRONG SELL. The bank block still anchors the shortlist: ADCB and ADIB (+65), FAB, EAND and EMIRATESNBD (+50). ADPORTS coming out of the shortlist on the takeover leaves TALABAT and ADNOCDRILL as the fresh names to watch for Monday-next."
   }
  ],
  "asset_notes": {
@@ -287,6 +287,12 @@
     "impact": "bearish",
     "date": "2026-06-30",
     "source": "Communicate Online, Momentum Works, zone/market comparisons (Jun-Jul 2026)"
+   },
+   {
+    "headline": "Crossed above its 50-day with a fresh MACD bullish cross: HOLD -> STRONG BUY (+45)",
+    "impact": "bullish",
+    "date": "2026-08-17",
+    "source": "news research pass"
    }
   ],
   "EMAAR": [
@@ -463,6 +469,12 @@
     "impact": "neutral",
     "date": "2026-08-15",
     "source": "news research pass"
+   },
+   {
+    "headline": "Extends to 9.493 (+1.5%), RSI back above 70 and still above the upper Bollinger band - the 8.80-9.05 pullback zone has never traded",
+    "impact": "neutral",
+    "date": "2026-08-17",
+    "source": "news research pass"
    }
   ],
   "EMAARDEV": [
@@ -504,6 +516,20 @@
     "headline": "MACD bearish cross ends the STRONG BUY run; analyst August range 0.181-0.192 implies limited upside from 0.1842; Fear & Greed at 29 (Fear)",
     "impact": "bearish",
     "date": "2026-08-13",
+    "source": "news research pass"
+   }
+  ],
+  "ADPORTS": [
+   {
+    "headline": "L'imad/ADQ (75.42% holder) makes a voluntary conditional cash offer of AED 6.25/share for the rest of AD Ports Group - 23% over the 5.10 close, 95% over the 3.20 IPO price",
+    "impact": "bullish",
+    "date": "2026-08-17",
+    "source": "news research pass"
+   },
+   {
+    "headline": "Shares +14.9% to 5.86, a new 52-week high; ~6.7% spread left to the offer, then a delisting",
+    "impact": "neutral",
+    "date": "2026-08-17",
     "source": "news research pass"
    }
   ]
