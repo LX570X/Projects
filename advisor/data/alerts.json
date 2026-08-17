@@ -1,17 +1,83 @@
 {
- "generated_at_utc": "2026-08-16T07:12:05+00:00",
+ "generated_at_utc": "2026-08-17T07:11:30+00:00",
  "alerts": [
   {
-   "ticker": "BTCUSDT",
+   "ticker": "LINKUSDT",
+   "severity": "info",
+   "type": "rsi",
+   "msg": "LINKUSDT: RSI crossed above 70 (now 70.5)"
+  },
+  {
+   "ticker": "AVAXUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "BTCUSDT: HOLD -> SELL (score -15 -> -30)"
+   "msg": "AVAXUSDT: HOLD -> SELL (score -20 -> -40)"
   },
   {
    "ticker": "AVAXUSDT",
    "severity": "info",
+   "type": "macd",
+   "msg": "AVAXUSDT: MACD bearish cross"
+  },
+  {
+   "ticker": "DIB",
+   "severity": "info",
    "type": "signal_change",
-   "msg": "AVAXUSDT: STRONG BUY -> HOLD (score 45 -> -20)"
+   "msg": "DIB: SELL -> HOLD (score -25 -> -15)"
+  },
+  {
+   "ticker": "TALABAT",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "TALABAT: HOLD -> STRONG BUY (score -5 -> 45)"
+  },
+  {
+   "ticker": "TALABAT",
+   "severity": "actionable",
+   "type": "trend",
+   "msg": "TALABAT: price crossed above its 50-day average \u2014 trend change"
+  },
+  {
+   "ticker": "TECOM",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "TECOM: HOLD -> BUY (score -15 -> 35)"
+  },
+  {
+   "ticker": "ALDAR",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ALDAR: SELL -> STRONG SELL (score -35 -> -50)"
+  },
+  {
+   "ticker": "IHC",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "IHC: SELL -> STRONG SELL (score -40 -> -50)"
+  },
+  {
+   "ticker": "ADPORTS",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "ADPORTS moved +14.9% in the last day (now 5.86 AED)"
+  },
+  {
+   "ticker": "ADPORTS",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ADPORTS: STRONG BUY -> BUY (score 65 -> 35)"
+  },
+  {
+   "ticker": "ADPORTS",
+   "severity": "info",
+   "type": "rsi",
+   "msg": "ADPORTS: RSI crossed above 70 (now 77.6)"
+  },
+  {
+   "ticker": "ADNOCDRILL",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ADNOCDRILL: BUY -> STRONG BUY (score 35 -> 65)"
   }
  ]
 }
