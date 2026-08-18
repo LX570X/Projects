@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-17T07:25+00:00",
+ "updated": "2026-08-18T07:25+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": 0
@@ -88,11 +88,11 @@
    }
   ],
   "satellite_candidate": {
-   "as_of": "2026-08-17",
+   "as_of": "2026-08-18",
    "ticker": "LINKUSDT",
    "type": "conditional - pullback entry",
-   "trigger": "price pulls back into 8.80-9.05 and holds above the 20-day (8.43)",
-   "price_now": 9.493,
+   "trigger": "EITHER a pullback into 8.80-9.05 holding above the 20-day (8.594), stop 8.30; OR three consecutive closes >= 9.20 with RSI < 70 and price inside the Bollinger bands, stop 8.85",
+   "price_now": 9.417,
    "entry_zone": [
     8.8,
     9.05
@@ -103,11 +103,12 @@
    "usd": 27.23,
    "qty_at_entry_mid": 3.05,
    "max_loss_usd": 1.86,
-   "note": "Unchanged and unfilled. RSI 70.5, still above the upper Bollinger band; the 8.80-9.05 zone has not traded since the order was set. Miss now +8.6% from the 8.742 offer. Do not chase - stop would be 12.6% away."
+   "note": "Stretch has normalised without a price drop, so the setup can reset through time. Still not a chase - the overextension must fully resolve before either trigger fires.",
+   "alt_trigger_progress": "day 1 of 3 (Aug 18: close 9.417, RSI 67.3, inside bands)"
   },
   "opportunity_status": {
-   "as_of": "2026-08-16",
-   "note": "BTC downgraded HOLD -> SELL on a third close below the 50-day. Opportunity money stays in USDT. Re-arm trigger: BTC back above 63,627 for two consecutive closes."
+   "as_of": "2026-08-18",
+   "note": "ARMED. BTC closed back above its 50-day (64,322 vs 63,804) - close 1 of 2. If it closes above the 50-day again tomorrow, deploy the 250 AED opportunity bucket into BTC with a stop below the 50-day. Moderate conviction: 20-day and 50-day within 0.14%, so this is a flat trend reclaimed, not an uptrend resumed."
   },
   "stock_shortlist_note": {
    "as_of": "2026-08-17",

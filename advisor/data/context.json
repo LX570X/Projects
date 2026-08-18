@@ -1,21 +1,21 @@
 {
- "updated": "2026-08-17T07:25+00:00",
+ "updated": "2026-08-18T07:25+00:00",
  "market_notes": [
   {
-   "market": "UAE equities - TAKEOVER",
-   "note": "AD Ports Group is being taken private. L'imad, via its wholly owned subsidiary ADQ which already holds 75.42%, announced a voluntary conditional cash offer of AED 6.25 per share for the remainder - a 23% premium to Friday's 5.10 close, 25% and 31% over the 1-month and 3-month VWAPs, and 95% above the 2022 IPO price of 3.20. ADPORTS jumped 14.9% to 5.86, a new 52-week high, on 1.5m AED of early-session turnover. The engine's downgrade to BUY on 'RSI 78, above the upper Bollinger band' is a structural blind spot: momentum penalties do not apply to a fixed cash offer. Roughly 6.7% of spread remains, against deal risk and an eventual delisting - merger arbitrage, not an investment."
+   "market": "Crypto macro",
+   "note": "BTC reclaimed its 50-day at 64,322 (+1.2%), the first close back above it after four below, which arms the opportunity-bucket deploy for tomorrow under the two-close rule. Conviction is moderate rather than high: the 20-day and 50-day are within 0.14% of each other, so this is a reclaim of a flat trend, not the resumption of an uptrend. Breadth is still poor beneath the surface - ADA fell out of BUY to HOLD, AVAX to STRONG SELL, LTC to -45, XRP to -65 - so ETH and LINK are carrying the whole book."
   },
   {
    "market": "Portfolio",
-   "note": "ETH 1,906.77 (+1.4%) is the best mark since the July-17 entry: +4.2% at $69.41, above its 50-day (1,845), and the only major in the book with an intact uptrend. Target 1 (1,964) is 3.0% away and this would be the third approach after failures at 1,943 (Aug 7) and 1,932 (Aug 10). BTC recovered to HOLD at 63,601 but is still below its 50-day (63,771) - not a reclaim, and the 20-day has collapsed to within 0.06% of the 50-day. Opportunity money stays in USDT."
+   "note": "ETH upgraded BUY -> STRONG BUY (+50) at 1,902.01 on structure rather than price: the 50-day rose to 1,850 and MACD stopped dragging even as the price slipped -0.2%. +4.0% at $69.23 and target 1 (1,964) is 3.3% away, the third approach after failures at 1,943 and 1,932. At target: convert half to USDT and raise the stop to 1,830, which makes the remainder risk-free. Opportunity bucket still USDT, deploy pending BTC's second close."
   },
   {
    "market": "Altcoins",
-   "note": "LINK keeps running without us: +1.5% to 9.493, RSI back above 70, still above its upper Bollinger band, score cut to BUY on the stretch penalty. The 8.80-9.05 entry zone has never traded since it was set, so the miss is now +8.6% from the 8.742 offer. AVAX completed its round trip in the opposite direction - 6.649 STRONG BUY Friday, SELL (-40) today with a bearish cross - and is off the candidate list. BNB is the only STRONG BUY left in crypto (+50)."
+   "note": "LINK's overextension resolved without a price drop: RSI cooled 70.5 -> 67.3 and it fell back inside the Bollinger bands while holding 9.417, restoring STRONG BUY (+65). Because the 20-day is climbing fast (8.483 -> 8.594) the setup can now reset through time, so a second entry trigger was added alongside the 8.80-9.05 pullback zone - three consecutive closes at or above 9.20 with RSI under 70 and inside the bands, stop 8.85. Today is day 1. Elsewhere the alt tape is ugly: AVAX STRONG SELL, LTC -45, ADA down to HOLD."
   },
   {
-   "market": "UAE equities - the rest",
-   "note": "Monday's open was mixed beneath the ADPORTS story. TALABAT was the real upgrade: HOLD -> STRONG BUY (+45) on a 50-day cross with a fresh MACD bullish cross. ADNOCDRILL BUY -> STRONG BUY (+65). TECOM went HOLD -> BUY, its third band change in five sessions - noise, not signal. ALDAR and IHC both cut to STRONG SELL. The bank block still anchors the shortlist: ADCB and ADIB (+65), FAB, EAND and EMIRATESNBD (+50). ADPORTS coming out of the shortlist on the takeover leaves TALABAT and ADNOCDRILL as the fresh names to watch for Monday-next."
+   "market": "UAE equities",
+   "note": "A bad session on the DFM. AIRARABIA -5.6% to 4.90 with H1 profit down 51% to AED 374m (Q2 alone -77%), revenue -1% to AED 3.48bn and passengers -14% on conflict-driven capacity cuts and record fuel costs - the STRONG SELL is fundamentally earned. DU fell -5.5% through its 50-day with no explanation the news pass could find, and it is not the dividend (ex-date was July 31, worth only ~2.2%). EMAAR hit -75, the deepest score this book has recorded, and SALIK cut to -65. The bank rally is cooling too: FAB and EMIRATESNBD both downgraded to BUY on MACD bearish crosses, leaving ADCB, ADIB and EAND (+65) as the anchors alongside TALABAT (+45). ADPORTS at 6.03 is now 3.6% under the 6.25 takeover price."
   }
  ],
  "asset_notes": {
@@ -120,6 +120,12 @@
     "headline": "Analysts frame 65,000-70,000 as the zone BTC must reclaim to break the downtrend; Fed policy, ETF flows and leveraged futures positioning split the outcome between ~57,000 and ~75,000",
     "impact": "bearish",
     "date": "2026-08-16",
+    "source": "news research pass"
+   },
+   {
+    "headline": "First close back above the 50-day after four below - re-arms the opportunity deploy pending a second confirming close",
+    "impact": "bullish",
+    "date": "2026-08-18",
     "source": "news research pass"
    }
   ],
@@ -355,6 +361,12 @@
     "impact": "bearish",
     "date": "2026-08-14",
     "source": "news research pass"
+   },
+   {
+    "headline": "H1 2026 net profit AED 374m, -51% YoY; Q2 AED 96m, -77%; revenue -1% to AED 3.48bn; passengers -14% to 8.7m on regional conflict and record fuel; load factor held at 83%",
+    "impact": "bearish",
+    "date": "2026-08-18",
+    "source": "news research pass"
    }
   ],
   "EAND": [
@@ -530,6 +542,20 @@
     "headline": "Shares +14.9% to 5.86, a new 52-week high; ~6.7% spread left to the offer, then a delisting",
     "impact": "neutral",
     "date": "2026-08-17",
+    "source": "news research pass"
+   },
+   {
+    "headline": "Trades to 6.03, narrowing the spread to the AED 6.25 cash offer from 6.7% to 3.6%",
+    "impact": "neutral",
+    "date": "2026-08-18",
+    "source": "news research pass"
+   }
+  ],
+  "DU": [
+   {
+    "headline": "-5.5% through the 50-day with no company announcement found; July 31 ex-dividend of AED 0.26 (~2.2%) does not explain it",
+    "impact": "bearish",
+    "date": "2026-08-18",
     "source": "news research pass"
    }
   ]

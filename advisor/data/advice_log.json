@@ -410,6 +410,57 @@
    "stop": 1572.0,
    "rationale": "+1.4% to 1,906.77, +4.2% at $69.41 - the highest since the July 17 entry. Above its 50-day (1,845) with the 20-day above the 50-day; the only major in the book with an intact uptrend while BTC sits below its 50-day and SOL, LTC, AVAX, XRP and DOGE are all HOLD or worse. Plan unchanged: at 1,964 convert half to USDT and raise the stop to 1,830. Two prior approaches failed at 1,943 and 1,932, so the third attempt is the one to watch.",
    "status": "open, +4.2%"
+  },
+  {
+   "date": "2026-08-18",
+   "ticker": "BTCUSDT",
+   "action": "RECLAIMED the 50-day - close 1 of 2, opportunity deploy pending",
+   "price": 64322.25,
+   "rationale": "+1.2% to 64,322, back above the 50-day (63,804) after four closes below it; HOLD -> BUY (+35). This is exactly the re-arm condition set on Aug 15-16, and exactly the situation the 2-day rule exists for - the Aug-2/3 whipsaw and the AVAX round trip both started as a single reclaim close. No deploy today. If BTC closes above 63,804 again tomorrow, the 250 AED opportunity bucket deploys. Caveat that keeps conviction moderate: the 20-day and 50-day are within 0.14% of each other, so the engine scores no structural edge - this is a reclaim of a flat trend, not a resumption of an uptrend.",
+   "status": "trigger armed - awaiting close 2"
+  },
+  {
+   "date": "2026-08-18",
+   "ticker": "ETHUSDT",
+   "action": "upgraded BUY -> STRONG BUY (+50) - hold, target 1 is 3.3% away",
+   "price": 1902.01,
+   "entry": 1829.7,
+   "target1": 1964.0,
+   "stop": 1572.0,
+   "rationale": "Score 35 -> 50 even though price slipped -0.2%: the upgrade came from structure, not price - the 50-day rose to 1,850 and MACD stopped dragging. +4.0% at $69.23. The best-positioned asset in the book by a distance while BTC only just reclaimed its own 50-day and ADA, SOL, LTC, AVAX, XRP and DOGE sit at HOLD or worse. Plan unchanged and now close: at 1,964 convert half to USDT and raise the stop to 1,830 (entry, making the remainder risk-free).",
+   "status": "open, +4.0%"
+  },
+  {
+   "date": "2026-08-18",
+   "ticker": "LINKUSDT",
+   "action": "stretch has normalised - adding a second, time-based entry trigger",
+   "price": 9.417,
+   "rationale": "Back to STRONG BUY (+65): RSI cooled 70.5 -> 67.3 and price is no longer above the upper Bollinger band, while holding 9.42. That is consolidation rather than reversal, and it changes the problem - the 20-day is rising fast (8.483 -> 8.594), so the setup can reset through time instead of through a price drop. The 8.80-9.05 pullback zone stays live, but a second trigger is added: three consecutive closes at or above 9.20 with RSI below 70 and price inside the Bollinger bands, then buy with a stop at 8.85 (about 6% risk) and target 10.01. Today is day 1 of 3. This is deliberately NOT a chase - it requires the overextension to resolve first.",
+   "status": "two conditional triggers open, day 1 of 3"
+  },
+  {
+   "date": "2026-08-18",
+   "ticker": "AIRARABIA",
+   "action": "-5.6% to 4.90 - STRONG SELL is fundamentally justified",
+   "price": 4.9,
+   "rationale": "H1 2026 net profit AED 374m, down 51% YoY; Q2 alone AED 96m, down 77%; revenue -1% to AED 3.48bn; passengers -14% to 8.7m on reduced capacity from the regional conflict, with record fuel prices compounding it. Load factor held at 83%, which is the one bright spot. Results landed Aug 13 and the shares have ground lower since, -5.6% today. The technical STRONG SELL (-55) and the fundamentals agree, which is not always the case - compare EMAAR, where the business is growing and only the price is broken. Stay away.",
+   "status": "advice only - no position"
+  },
+  {
+   "date": "2026-08-18",
+   "ticker": "DU",
+   "action": "-5.5% and lost its 50-day - unexplained, flagging rather than concluding",
+   "price": 11.34,
+   "rationale": "BUY -> HOLD, below the 50-day (11.85), RSI 35 and below the lower Bollinger band. Checked and ruled out the obvious innocent explanation: du's AED 0.26 dividend went ex on July 31, not today, and 0.26 on ~12 AED is ~2.2%, nowhere near 5.5%. The news pass found no company announcement to explain it. Reporting it as an unexplained break to watch rather than claiming a cause - if a reason surfaces tomorrow it may reframe this, but for now it comes off the watchlist's buy side.",
+   "status": "advice only - no position"
+  },
+  {
+   "date": "2026-08-18",
+   "ticker": "ADPORTS",
+   "action": "spread narrowing as expected - 6.03 vs the 6.25 offer",
+   "price": 6.03,
+   "rationale": "+2.9% today, now 3.6% below the AED 6.25 cash offer, down from 6.7% yesterday. Behaving exactly like a takeover should. RSI 79.8 remains a meaningless reading here. Nothing to do - it stays off the core shortlist.",
+   "status": "tracking only"
   }
  ]
 }
