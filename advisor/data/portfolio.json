@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-18T07:25+00:00",
+ "updated": "2026-08-19T07:25+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": 0
@@ -88,27 +88,39 @@
    }
   ],
   "satellite_candidate": {
-   "as_of": "2026-08-18",
+   "as_of": "2026-08-19",
    "ticker": "LINKUSDT",
-   "type": "conditional - pullback entry",
-   "trigger": "EITHER a pullback into 8.80-9.05 holding above the 20-day (8.594), stop 8.30; OR three consecutive closes >= 9.20 with RSI < 70 and price inside the Bollinger bands, stop 8.85",
-   "price_now": 9.417,
-   "entry_zone": [
-    8.8,
-    9.05
-   ],
-   "stop": 8.3,
-   "target1": 10.01,
-   "aed": 100,
-   "usd": 27.23,
-   "qty_at_entry_mid": 3.05,
-   "max_loss_usd": 1.86,
-   "note": "Stretch has normalised without a price drop, so the setup can reset through time. Still not a chase - the overextension must fully resolve before either trigger fires.",
-   "alt_trigger_progress": "day 1 of 3 (Aug 18: close 9.417, RSI 67.3, inside bands)"
+   "state": "HALF DEPLOY ADVISED - not yet confirmed executed",
+   "order": {
+    "aed": 50,
+    "usd": 13.61,
+    "qty": 1.406,
+    "price": 9.681,
+    "stop": 8.85,
+    "target1": 10.28,
+    "max_loss_usd": 1.17
+   },
+   "remaining": {
+    "aed": 50,
+    "trigger": "pullback into 9.00-9.39 (61.8% Fib), same stop 8.85"
+   },
+   "note": "Rule changed after three cycles of missing a +10.7% move: pullback-only entries are miscalibrated for a sustained uptrend. Splitting the entry caps regret both ways. LINK is at its 200-day EMA (9.56) with RSI 72.9, so half-size here is a deliberate compromise."
   },
   "opportunity_status": {
-   "as_of": "2026-08-18",
-   "note": "ARMED. BTC closed back above its 50-day (64,322 vs 63,804) - close 1 of 2. If it closes above the 50-day again tomorrow, deploy the 250 AED opportunity bucket into BTC with a stop below the 50-day. Moderate conviction: 20-day and 50-day within 0.14%, so this is a flat trend reclaimed, not an uptrend resumed."
+   "as_of": "2026-08-19",
+   "state": "DEPLOY ADVISED - not yet confirmed executed",
+   "order": {
+    "ticker": "BTCUSDT",
+    "aed": 250,
+    "usd": 68.07,
+    "qty": 0.001058,
+    "price": 64347.38,
+    "stop": 62354.7,
+    "target1": 66340.06,
+    "max_loss_usd": 2.11,
+    "early_exit": "two closes below the 50-day (63,927) - convert to USDT without waiting for the hard stop"
+   },
+   "note": "Fired on the second consecutive close above the 50-day. Bucket stays recorded as 250 AED USDT until the user confirms execution."
   },
   "stock_shortlist_note": {
    "as_of": "2026-08-17",
