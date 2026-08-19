@@ -1,95 +1,71 @@
 {
- "generated_at_utc": "2026-08-18T07:12:48+00:00",
+ "generated_at_utc": "2026-08-19T07:11:42+00:00",
  "alerts": [
   {
    "ticker": "BTCUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "BTCUSDT: HOLD -> BUY (score -15 -> 35)"
+   "msg": "BTCUSDT: BUY -> STRONG BUY (score 35 -> 45)"
   },
   {
    "ticker": "BTCUSDT",
+   "severity": "info",
+   "type": "macd",
+   "msg": "BTCUSDT: MACD bullish cross"
+  },
+  {
+   "ticker": "SOLUSDT",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "SOLUSDT: HOLD -> BUY (score -15 -> 35)"
+  },
+  {
+   "ticker": "SOLUSDT",
    "severity": "actionable",
    "type": "trend",
-   "msg": "BTCUSDT: price crossed above its 50-day average \u2014 trend change"
+   "msg": "SOLUSDT: price crossed above its 50-day average \u2014 trend change"
   },
   {
-   "ticker": "ETHUSDT",
+   "ticker": "XRPUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "ETHUSDT: BUY -> STRONG BUY (score 35 -> 50)"
+   "msg": "XRPUSDT: STRONG SELL -> SELL (score -65 -> -40)"
   },
   {
-   "ticker": "BNBUSDT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "BNBUSDT: STRONG BUY -> BUY (score 50 -> 40)"
-  },
-  {
-   "ticker": "BNBUSDT",
+   "ticker": "XRPUSDT",
    "severity": "info",
    "type": "macd",
-   "msg": "BNBUSDT: MACD bearish cross"
+   "msg": "XRPUSDT: MACD bullish cross"
   },
   {
-   "ticker": "AVAXUSDT",
+   "ticker": "LINKUSDT",
+   "severity": "info",
+   "type": "rsi",
+   "msg": "LINKUSDT: RSI crossed above 70 (now 72.9)"
+  },
+  {
+   "ticker": "TALABAT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "AVAXUSDT: SELL -> STRONG SELL (score -40 -> -50)"
+   "msg": "TALABAT: STRONG BUY -> BUY (score 45 -> 35)"
   },
   {
-   "ticker": "ADAUSDT",
-   "severity": "info",
-   "type": "signal_change",
-   "msg": "ADAUSDT: BUY -> HOLD (score 35 -> -15)"
-  },
-  {
-   "ticker": "EMIRATESNBD",
+   "ticker": "ADCB",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "EMIRATESNBD: STRONG BUY -> BUY (score 50 -> 40)"
+   "msg": "ADCB: STRONG BUY -> BUY (score 65 -> 40)"
   },
   {
-   "ticker": "EMIRATESNBD",
-   "severity": "info",
-   "type": "macd",
-   "msg": "EMIRATESNBD: MACD bearish cross"
-  },
-  {
-   "ticker": "DIB",
-   "severity": "info",
-   "type": "macd",
-   "msg": "DIB: MACD bearish cross"
-  },
-  {
-   "ticker": "SALIK",
+   "ticker": "IHC",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "SALIK: SELL -> STRONG SELL (score -40 -> -65)"
+   "msg": "IHC: STRONG SELL -> SELL (score -50 -> -35)"
   },
   {
-   "ticker": "DU",
+   "ticker": "IHC",
    "severity": "info",
-   "type": "big_move",
-   "msg": "DU moved -5.5% in the last day (now 11.34 AED)"
-  },
-  {
-   "ticker": "DU",
-   "severity": "info",
-   "type": "signal_change",
-   "msg": "DU: BUY -> HOLD (score 35 -> -5)"
-  },
-  {
-   "ticker": "DU",
-   "severity": "actionable",
-   "type": "trend",
-   "msg": "DU: price crossed below its 50-day average \u2014 trend change"
-  },
-  {
-   "ticker": "FAB",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "FAB: STRONG BUY -> BUY (score 50 -> 40)"
+   "type": "rsi",
+   "msg": "IHC: RSI crossed below 30 (now 26.7)"
   }
  ]
 }
