@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-19T07:25+00:00",
+ "updated": "2026-08-20T07:25+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": 0
@@ -15,7 +15,14 @@
    "stop": 1572.0,
    "target1": 1964.0,
    "target2": 2105.0,
-   "plan": "Hold. If price closes below the stop, convert ALL to USDT (not another coin). At target 1, convert half to USDT and raise the stop to 1830 (entry). At target 2, take the rest."
+   "plan": "Hold. If price closes below the stop, convert ALL to USDT (not another coin). At target 1, convert half to USDT and raise the stop to 1830 (entry). At target 2, take the rest.",
+   "action_required": {
+    "as_of": "2026-08-20",
+    "event": "target1 AND target2 both hit at 2,258",
+    "recommended": "convert 0.0273 ETH (~$61.64) to USDT now; keep 0.0091 ETH (~$20.55) with a hard stop at 2,105",
+    "alternative": "convert all 0.0364 ETH (~$82.19) to USDT - zero-regret and fully supported",
+    "note": "Deviates from the written plan's 'take the rest at target 2'. Reason: the catalyst is partly real (SEC framework, Treasury buybacks, ETF inflows), not purely a squeeze - but RSI 82.4 means the majority still comes off."
+   }
   }
  ],
  "monthly_plan": {
@@ -88,7 +95,7 @@
    }
   ],
   "satellite_candidate": {
-   "as_of": "2026-08-19",
+   "as_of": "2026-08-20",
    "ticker": "LINKUSDT",
    "state": "HALF DEPLOY ADVISED - not yet confirmed executed",
    "order": {
@@ -104,10 +111,10 @@
     "aed": 50,
     "trigger": "pullback into 9.00-9.39 (61.8% Fib), same stop 8.85"
    },
-   "note": "Rule changed after three cycles of missing a +10.7% move: pullback-only entries are miscalibrated for a sustained uptrend. Splitting the entry caps regret both ways. LINK is at its 200-day EMA (9.56) with RSI 72.9, so half-size here is a deliberate compromise."
+   "note": "Half deployed at 9.681 is +9.1% (spot 10.558). Stop RAISED from 8.85 to 9.80, locking ~+1.2%. Second-half order at 9.00-9.39 stays live but is 12% below spot. Still awaiting user confirmation that the half was executed."
   },
   "opportunity_status": {
-   "as_of": "2026-08-19",
+   "as_of": "2026-08-20",
    "state": "DEPLOY ADVISED - not yet confirmed executed",
    "order": {
     "ticker": "BTCUSDT",
@@ -120,7 +127,7 @@
     "max_loss_usd": 2.11,
     "early_exit": "two closes below the 50-day (63,927) - convert to USDT without waiting for the hard stop"
    },
-   "note": "Fired on the second consecutive close above the 50-day. Bucket stays recorded as 250 AED USDT until the user confirms execution."
+   "note": "BTC deploy at 64,347 is +8.5% (spot 69,823). Stop RAISED from 62,355 to 67,000, locking ~+4.1%. No adding - RSI 74.6, above the upper Bollinger band. Still awaiting user confirmation that the deploy was executed."
   },
   "stock_shortlist_note": {
    "as_of": "2026-08-17",

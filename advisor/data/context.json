@@ -1,21 +1,21 @@
 {
- "updated": "2026-08-19T07:25+00:00",
+ "updated": "2026-08-20T07:25+00:00",
  "market_notes": [
   {
-   "market": "Crypto macro",
-   "note": "BTC confirmed its reclaim with a second close above the 50-day (64,347 vs 63,927) and upgraded to STRONG BUY (+45) on a fresh MACD bullish cross, firing the opportunity deploy. The move's quality is mixed and worth holding in mind: it liquidated $57.4m of shorts and ~$220m across crypto, so a large part was mechanical, though spot ETF inflows did return on Monday and whales accumulated - against $385m of ETF outflows the prior week. Breadth improved with it: SOL reclaimed its own 50-day, XRP climbed out of STRONG SELL, ADA back to BUY. AVAX and LTC are the laggards."
+   "market": "Crypto macro - BREAKOUT",
+   "note": "The biggest single session of this advisor's run. Total crypto market cap added $113bn. Real catalysts: the SEC proposed a framework letting crypto companies raise capital, the US Treasury doubled long-end buybacks (pushing yields down and the dollar weaker), and spot ETFs took $487m over two days. Those were then amplified into a cascade by $1.44bn of forced short covering, roughly $1bn of it in ETH after months of heavy bearish positioning. BTC +8.5% to 69,823, ETH +17.7% to 2,258, SOL +11.4%, XRP +10.4%, LINK +9.1%. XRP, DOGE, AVAX and LTC all reclaimed their 50-days at once - breadth that signals a squeeze rather than nine independent theses. Everything is now overbought."
   },
   {
-   "market": "Portfolio",
-   "note": "ETH 1,918.70 (+0.9%) is the best mark of the entire holding period: +4.9% at $69.84, STRONG BUY (+50), above a rising 50-day at 1,858. Target 1 (1,964) is 2.4% away - the third approach after 1,943 and 1,932 failed, and the first one made while BTC's trend is also intact. Two deploys advised today totalling 300 AED (~$82): 250 AED opportunity into BTC and 50 AED - half the satellite - into LINK, both awaiting user execution."
+   "market": "Portfolio - TARGETS HIT",
+   "note": "ETH cleared BOTH targets in one move: 1,964 and 2,105 blown through to 2,258. The position is $82.19, +23.4% (+$15.59) from the July-17 entry at 1,829.7. Recommendation: convert 75% (0.0273 ETH, ~$61.64) to USDT and keep a 25% runner with a hard stop at 2,105, which guarantees at least +15% on that portion. This deviates from the written 'take the rest at target 2' and the deviation is deliberate and flagged. Yesterday's two deploys both worked immediately: BTC +8.5% (+$5.79) with the stop raised to 67,000, LINK's half +9.1% (+$1.23) with the stop raised to 9.80."
   },
   {
    "market": "Altcoins",
-   "note": "LINK +2.7% to 9.681, stalling right at its 200-day EMA (9.56) with the 61.8% Fib at 9.39 beneath it. Supports: futures volume +123% on Aug 15, a $2.07m spot ETF inflow (largest since July 22), and the Chainlink Reserve holding ~5.35m LINK from protocol-revenue buybacks. Caution: RSI 72.9 and weakening derivatives metrics. The entry rule was changed today after three cycles of missing a +10.7% move - half the satellite deploys now, half waits for 9.00-9.39. SOL reclaimed its 50-day but its 20-day is still below, so it stays a watch, not a candidate."
+   "note": "LINK 10.558 (+9.1%), RSI 80.7, above its upper Bollinger band and now only 13.6% off its 52-week high - the second-half order at 9.00-9.39 stays live but sits 12% below spot and will only fill on a genuine reset. The full accounting on LINK: offered at 8.742 on Aug 12, now 10.558, so the pullback-only rule cost 20.8% on the half never bought while yesterday's correction captured 9.1% on the half that was. Late, but right. No new alt positions - the two-close rule applies to every one of today's reclaims."
   },
   {
    "market": "UAE equities",
-   "note": "The bank rally is unwinding: ADCB STRONG BUY -> BUY, FAB down to +25, ADIB to +50, leaving EAND (+65) as the only strong name in the cluster. TALABAT also cut to BUY. DU fell another -2.6% to 11.30, roughly -8% in two sessions, RSI 34 and below its lower Bollinger band, and the news pass still finds no explanation. IHC is deeply oversold (RSI 26.7) but stays SELL - oversold inside a downtrend is not a buy. Almost the entire DFM side of the book is SELL or STRONG SELL, so even with Al Ramz open there would be nothing worth buying at the next session."
+   "note": "UAE sat out the crypto move entirely, which is the diversification working. TECOM leapt HOLD -> STRONG BUY (+60) - its fourth band change in eight sessions, from the same name whose averages were 0.08% apart last week, so it stays untrusted until it holds a band for a full week. DEWA reclaimed its 50-day (SELL -> BUY), ALDAR and AIRARABIA climbed out of STRONG SELL, EMIRATESNBD fell -2.7%, ADNOCGAS deepened to -65. EAND (+65), ADNOCDRILL (+55) and ADIB (+50) remain the strongest. Al Ramz still unopened, bucket still 400/1,200 AED."
   }
  ],
  "asset_notes": {
@@ -133,6 +133,12 @@
     "impact": "neutral",
     "date": "2026-08-19",
     "source": "news research pass"
+   },
+   {
+    "headline": "SEC proposes a framework for crypto companies to raise capital; US Treasury doubles long-end buybacks; $487m of two-day ETF inflows; $1.44bn of shorts liquidated market-wide",
+    "impact": "bullish",
+    "date": "2026-08-20",
+    "source": "news research pass"
    }
   ],
   "ETHUSDT": [
@@ -183,6 +189,12 @@
     "impact": "bearish",
     "date": "2026-08-11",
     "source": "advisor price data"
+   },
+   {
+    "headline": "+17.7% to $2,258 clearing both plan targets, driven by a ~$1bn short squeeze on top of the SEC and Treasury catalysts",
+    "impact": "bullish",
+    "date": "2026-08-20",
+    "source": "news research pass"
    }
   ],
   "BNBUSDT": [
@@ -510,6 +522,12 @@
     "headline": "Chainlink Reserve, funded by protocol revenue, held ~5.35m LINK as of Aug 7 through continuous open-market buybacks",
     "impact": "bullish",
     "date": "2026-08-19",
+    "source": "news research pass"
+   },
+   {
+    "headline": "+9.1% to $10.558, now 13.6% off its 52-week high with RSI 80.7",
+    "impact": "bullish",
+    "date": "2026-08-20",
     "source": "news research pass"
    }
   ],

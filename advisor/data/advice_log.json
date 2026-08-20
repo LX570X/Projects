@@ -509,6 +509,50 @@
    "action": "bank rally cooling, DU still falling - nothing to buy",
    "rationale": "ADCB STRONG BUY -> BUY, FAB down to +25, ADIB to +50, TALABAT STRONG BUY -> BUY. EAND (+65) is now the only strong bank-adjacent name left. DU fell another -2.6% to 11.30, about -8% over two sessions, RSI 34 and below its lower Bollinger band, still with no explanation from the news pass. IHC is technically oversold (RSI 26.7, below the lower band) but remains SELL - oversold in a downtrend is not a buy signal. The DFM side of the book is now almost entirely SELL or STRONG SELL. Nothing on the stock shortlist is worth chasing at Monday's open even if Al Ramz were open.",
    "status": "advice only - no position"
+  },
+  {
+   "date": "2026-08-20",
+   "ticker": "ETHUSDT",
+   "action": "BOTH TARGETS HIT - take profit. Recommend 75% out, 25% runner with a stop at target 2",
+   "price": 2258.0,
+   "entry": 1829.7,
+   "target1": 1964.0,
+   "target2": 2105.0,
+   "size": "Position 0.0364 ETH = $82.19, +23.4% (+$15.59). Recommended: convert 0.0273 ETH (~$61.64) to USDT now; keep 0.0091 ETH (~$20.55) with a hard stop at 2,105.",
+   "rationale": "ETH gapped +17.7% through BOTH targets in one session - 1,964 and 2,105 were cleared in a single move to 2,258. The profit-taking condition is fully satisfied and the majority must come off; RSI 82.4 and price above the upper Bollinger band say the odds of a near-term give-back are high. DEVIATION FROM THE WRITTEN PLAN, stated openly: the plan says 'at target 2, take the rest', and I am recommending keeping a 25% runner instead. The reason is that the driver is partly real rather than purely mechanical - the SEC proposed a framework for crypto companies to raise capital, the US Treasury doubled long-end buybacks (lower yields, weaker dollar), and ETFs took $487m over two days - though it was amplified by $1.44bn of forced short covering, roughly $1bn of it in ETH after months of heavy bearish positioning. Squeezes usually retrace part of the move, which is why 75% comes off. The 2,105 stop on the runner guarantees at least +15% on that portion, so it cannot turn into a loss. Taking 100% off is the zero-regret alternative and is fully supported.",
+   "status": "ACTION REQUIRED - awaiting user execution"
+  },
+  {
+   "date": "2026-08-20",
+   "ticker": "BTCUSDT",
+   "action": "deploy is +8.5% one day in - raise the stop to 67,000",
+   "price": 69823.39,
+   "entry": 64347.38,
+   "rationale": "Yesterday's 250 AED deploy at 64,347 is worth +8.51% (+$5.79 on $68.07) after BTC ran to 69,823. The rule-following deploy paid immediately, though honesty requires noting the reason was luck of timing rather than foresight: the catalyst was the SEC announcement and Treasury buybacks, neither of which was in the thesis - the thesis was simply 'two closes above the 50-day'. Raise the stop from 62,355 to 67,000 (2x ATR below spot, locking about +4.1% versus entry). RSI 74.6 and above the upper Bollinger band, so no adding here.",
+   "status": "open, +8.5% - stop raised"
+  },
+  {
+   "date": "2026-08-20",
+   "ticker": "LINKUSDT",
+   "action": "half-deploy is +9.1% - raise stop to 9.80; keep the second-half order unchanged",
+   "price": 10.558,
+   "entry": 9.681,
+   "rationale": "The half deployed yesterday at 9.681 is +9.06% (+$1.23 on $13.61). Full accounting of the entry discipline on this name: offered at 8.742 on Aug 12, now 10.558 - the caution cost 20.8% on the half that was never bought, and the rule change made one day ago captured 9.06% on the half that was. The correction was right and it was late. Raise the stop on the deployed half from 8.85 to 9.80 (2x ATR below spot, locking about +1.2%). The second-half order at 9.00-9.39 stays live but is now 12% below spot with RSI at 80.7 - it will only fill on a real reset, which is exactly what it is for.",
+   "status": "open, +9.1% - stop raised"
+  },
+  {
+   "date": "2026-08-20",
+   "ticker": "crypto-broad",
+   "action": "market-wide breakout - do NOT chase anything new",
+   "rationale": "Everything moved at once: BTC +8.5%, ETH +17.7%, SOL +11.4%, XRP +10.4%, LINK +9.1%, DOGE +7.3%, AVAX +6.7%, LTC +5.5%, ADA +4.7%. XRP, DOGE, AVAX and LTC all reclaimed their 50-day averages on the same day. That breadth is the signature of a liquidation cascade ($1.44bn of shorts), not of nine independent theses, and every one of those names is now overbought. The book already has exposure through ETH, BTC and LINK. No new positions today at any price - the two-close rule applies to all of these reclaims, and the honest read is that the easy part happened while we were positioned, which is the whole point of having been positioned.",
+   "status": "no action"
+  },
+  {
+   "date": "2026-08-20",
+   "ticker": "UAE-broad",
+   "action": "UAE did not participate - TECOM upgrade still untrustworthy",
+   "rationale": "The DFM and ADX barely moved while crypto exploded, which is the diversification working as intended. TECOM jumped HOLD -> STRONG BUY (+60), its FOURTH band change in eight sessions - the same name whose averages sat 0.08% apart last week. Treat it as noise until it holds a band for a full week. DEWA reclaimed its 50-day (SELL -> BUY) and ALDAR and AIRARABIA climbed out of STRONG SELL. EMIRATESNBD fell -2.7%. ADNOCGAS deepened to -65. Nothing here is actionable and Al Ramz remains unopened.",
+   "status": "advice only - no position"
   }
  ]
 }
