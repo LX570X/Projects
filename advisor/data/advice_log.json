@@ -553,6 +553,55 @@
    "action": "UAE did not participate - TECOM upgrade still untrustworthy",
    "rationale": "The DFM and ADX barely moved while crypto exploded, which is the diversification working as intended. TECOM jumped HOLD -> STRONG BUY (+60), its FOURTH band change in eight sessions - the same name whose averages sat 0.08% apart last week. Treat it as noise until it holds a band for a full week. DEWA reclaimed its 50-day (SELL -> BUY) and ALDAR and AIRARABIA climbed out of STRONG SELL. EMIRATESNBD fell -2.7%. ADNOCGAS deepened to -65. Nothing here is actionable and Al Ramz remains unopened.",
    "status": "advice only - no position"
+  },
+  {
+   "date": "2026-08-21",
+   "ticker": "ETHUSDT",
+   "action": "NO NEW ETH DECISION - execute or hold yesterday's instruction; stop stays 2,105",
+   "price": 2380.75,
+   "entry": 1829.7,
+   "rationale": "ETH rose another 5.4% after yesterday's advice to sell 75% at 2,258. Scorecard: the 0.0273 ETH raised ~$61.64 then and would raise ~$64.99 now, so the advice cost $3.35 - 1.8% of the book. Ex ante it was still right (RSI 84 after a 17.7% day driven by ~$1bn of forced ETH short covering). The genuine failure was mine and it is procedural: I never confirmed the fill, so a day passed with the largest position in an unknown state. Refusing to re-cut the position today: three different plans on one asset in three sessions is how discipline dies. Declining to tighten the stop to 2,300 as well - that is only 1.1x ATR below spot (an ordinary day's range) and sits on a documented liquidation cluster, so it converts a tail-capture stub into a coin flip on one wick. 2,105 also happens to sit within 1% of the 200-day EMA (2,128). Added instead: a close-based exit - two consecutive daily CLOSES below 2,300 and the runner is sold at market. Next resistance overhead is a tight band at 2,431 / 2,438 / 2,500.",
+   "status": "awaiting fill confirmation - no new instruction"
+  },
+  {
+   "date": "2026-08-21",
+   "ticker": "BTCUSDT",
+   "action": "RAISE STOP 67,000 -> 70,700 (rule restoration, not a change of view)",
+   "price": 75997.39,
+   "entry": 64347.38,
+   "stop": 70700,
+   "rationale": "BTC +8.9% to 75,997, the deploy now +18.1% (+$12.32 on $68.07). The old 67,000 stop is 5.1x ATR14 below spot, which was never compliant with the standing ATR-stop rule - price outran the stop, the rule did not change. 70,700 is exactly spot minus 3x ATR14 (75,997.39 - 5,278) and sits about 1,000 below the reclaimed 200-day average (~71,700), so an ordinary retest does not stop us out while a decisive failure does. Locked profit rises from $2.81 to $6.72. The genuinely new structural fact: BTC reclaimed its 200-day MA after 270 consecutive closes below it, the first trend-structure change in nine months and the only element of this move that satisfies the 2-closes rule; Standard Chartered's Kendrick sees $100k by year-end on it.",
+   "status": "open, +18.1% - stop raised"
+  },
+  {
+   "date": "2026-08-21",
+   "ticker": "LINKUSDT",
+   "action": "no change - stop stays 9.80, second-half order stays live",
+   "price": 11.074,
+   "entry": 9.681,
+   "rationale": "+4.8% to 11.074, the half-deploy now +14.4% (+$1.96). The same 3x ATR rule that moved BTC produces 9.84 here versus the existing 9.80 - an improvement of 0.11 ATR, far below the action threshold, so nothing to do. Keeping the 9.00-9.39 second-half order standing: cancelling a pre-committed scale-in because price ran 15-19% above it is the identical error as re-cutting ETH. Written down rather than traded on: if it ever fills, BTC and ETH will be under stress at the same moment, so it is a correlated add, not a diversifier.",
+   "status": "open, +14.4% - no change"
+  },
+  {
+   "date": "2026-08-21",
+   "ticker": "SYSTEM",
+   "action": "BUG FIXED - the '% below 52-week high' field was never a 52-week figure",
+   "rationale": "The adversarial review caught a real defect in my own engine, and I have been quoting the bad number to the user (for example 'LINK only 9.2% below its 52-week high' on Aug 20). The engine computed hi52 as max(closes[-260:]) while the fetcher only ever downloaded 210 bars - so it was a ~10-month high taken from closing prices, not a 52-week high from intraday highs, and it understated the real peak. Fixed three ways: HISTORY_DAYS raised 210 -> 400 so the window genuinely spans 52 weeks; hi52/lo52 now use true bar highs/lows when the source supplies OHLC; and off_52w_high_pct is set to null unless at least 250 bars are present, with an honestly named off_window_high_pct alongside it. Verified against the current snapshot: scores and signals are unchanged, and the 52-week field correctly reports null today because only 210 bars exist. The real figure arrives with tomorrow's 400-bar fetch. Until then no position may be sized off any 52-week number.",
+   "status": "fixed and verified"
+  },
+  {
+   "date": "2026-08-21",
+   "ticker": "RULES",
+   "action": "new mechanical trailing-stop rule to stop re-arguing stops daily",
+   "rationale": "Stops have been re-derived from scratch every session, which is the actual source of the drift. From today the trail is computed, not judged: stop = max(existing stop, daily close - 3 x ATR14), never lowered, and acted on ONLY when the improvement exceeds 1 x ATR14. Applied today it produces exactly the decisions above and shows its work - BTC improvement 2.12 ATR so ACT; ETH 2,105 -> 2,164 is 0.82 ATR so SKIP (declined openly, not silently); LINK 0.11 ATR so SKIP. The threshold is the specific fix for flip-flopping: it makes 'leave it alone' a calculation rather than a daily temptation.",
+   "status": "adopted"
+  },
+  {
+   "date": "2026-08-21",
+   "ticker": "crypto-broad",
+   "action": "ADD NOTHING - and pre-commit to no discretionary action across Jackson Hole",
+   "rationale": "Every crypto in the book except GRAM is overbought: BTC 83.9, ETH 85.7, LINK 83.8, SOL 80.7, BNB 80.4, XRP 79.9, DOGE 77.3, AVAX 72.2, ADA 70.2, LTC 70.2. The move's own trigger has already reversed - the Treasury announced doubling long-end buybacks from $2bn to $4bn+ per operation on Aug 19, but the 30-year yield has round-tripped back ABOVE its pre-announcement level (5.248% vs 5.196%) while crypto kept climbing. Mechanics dominated: $2.99bn of total liquidations on Aug 19, the 8th largest day in history, 91.6% of them shorts, plus another ~$1.23bn within an hour of Bessent's Aug-20 remarks. Real money is present too and larger than I reported yesterday - BTC spot ETFs took $517m on Aug 19 alone and ETH ETFs $189m, with August ETH inflows at $534m, the strongest month of 2026. But this is NOT a rate-cut trade: the Warsh Fed is ~64% priced for no change in September with year-end HIKE odds elevated. Warsh delivers his first Jackson Hole keynote on Friday Aug 28, on a symposium topic titled 'Financial Innovation: Implications for Payments and Policy' - a binary event inside the holding period of every position here. Pre-committing now to no discretionary action across it in either direction; the stops already express the risk. XRP and ADA were pure beta with no asset-specific catalyst, and ADA carries a governance-freeze risk on Sept 1.",
+   "status": "no action"
   }
  ]
 }

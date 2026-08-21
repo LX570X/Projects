@@ -1,21 +1,25 @@
 {
- "updated": "2026-08-20T07:25+00:00",
+ "updated": "2026-08-21T07:40+00:00",
  "market_notes": [
   {
-   "market": "Crypto macro - BREAKOUT",
-   "note": "The biggest single session of this advisor's run. Total crypto market cap added $113bn. Real catalysts: the SEC proposed a framework letting crypto companies raise capital, the US Treasury doubled long-end buybacks (pushing yields down and the dollar weaker), and spot ETFs took $487m over two days. Those were then amplified into a cascade by $1.44bn of forced short covering, roughly $1bn of it in ETH after months of heavy bearish positioning. BTC +8.5% to 69,823, ETH +17.7% to 2,258, SOL +11.4%, XRP +10.4%, LINK +9.1%. XRP, DOGE, AVAX and LTC all reclaimed their 50-days at once - breadth that signals a squeeze rather than nine independent theses. Everything is now overbought."
+   "market": "Crypto macro",
+   "note": "Second parabolic session: BTC +8.9% to 75,997, ETH +5.4% to 2,380.75, XRP +17.9%, ADA +13.6%. The move's own trigger has already reversed - the Treasury's Aug-19 decision to at least double long-end buybacks from $2bn to $4bn+ per operation (running Sept 9 to Nov 4) knocked the 30-year yield to 5.196%, but it has since rebounded ABOVE its pre-announcement level to 5.248% while crypto kept climbing. Mechanics did the heavy lifting: $2.99bn of liquidations on Aug 19, the 8th largest day on record, 91.6% of them shorts, plus ~$1.23bn more within an hour of Bessent's Aug-20 'could blow past $4bn' remarks. Real flows are also present and bigger than first reported - $517m into spot BTC ETFs on Aug 19 alone (largest since May 4) and $189m into ETH ETFs (largest since Oct 2025), with August ETH inflows at $534m, the strongest month of 2026. Crucially this is NOT a rate-cut repricing: the Warsh Fed is ~64% priced for no change in September with year-end hike odds elevated."
   },
   {
-   "market": "Portfolio - TARGETS HIT",
-   "note": "ETH cleared BOTH targets in one move: 1,964 and 2,105 blown through to 2,258. The position is $82.19, +23.4% (+$15.59) from the July-17 entry at 1,829.7. Recommendation: convert 75% (0.0273 ETH, ~$61.64) to USDT and keep a 25% runner with a hard stop at 2,105, which guarantees at least +15% on that portion. This deviates from the written 'take the rest at target 2' and the deviation is deliberate and flagged. Yesterday's two deploys both worked immediately: BTC +8.5% (+$5.79) with the stop raised to 67,000, LINK's half +9.1% (+$1.23) with the stop raised to 9.80."
+   "market": "Portfolio",
+   "note": "ETH 2,380.75, +30.1% at $86.66 if untouched. No new ETH decision today - either execute yesterday's unfilled instruction (sell 0.0273, keep 0.0091) or hold the runner; the stop stays 2,105 and a close-based exit is added at two consecutive daily closes below 2,300. BTC deploy +18.1% (+$12.32) with the stop RAISED 67,000 -> 70,700, which is rule restoration rather than a change of view: the old stop was 5.1x ATR below spot and had simply been outrun. LINK half +14.4% (+$1.96), no change at 9.80. Nothing added."
   },
   {
-   "market": "Altcoins",
-   "note": "LINK 10.558 (+9.1%), RSI 80.7, above its upper Bollinger band and now only 13.6% off its 52-week high - the second-half order at 9.00-9.39 stays live but sits 12% below spot and will only fill on a genuine reset. The full accounting on LINK: offered at 8.742 on Aug 12, now 10.558, so the pullback-only rule cost 20.8% on the half never bought while yesterday's correction captured 9.1% on the half that was. Late, but right. No new alt positions - the two-close rule applies to every one of today's reclaims."
+   "market": "Structural",
+   "note": "The one genuinely new fact in this move is BTC reclaiming its 200-day moving average after 270 consecutive closes below it - the first trend-structure change in nine months and the only element that satisfies the standing 2-closes rule; Standard Chartered's Geoff Kendrick reads it as a path toward $100k by year-end. ETH's supply side corroborates: staking at an all-time-high 33.98% of supply, an entry queue of 2,229,411 ETH against an exit queue of 64, and a ~39-day wait to get in - supply locked for 39 days cannot be sold into a drawdown. Set against that, every crypto in the book except GRAM is overbought, and Warsh's first Jackson Hole keynote lands Friday Aug 28 on a symposium topic titled 'Financial Innovation: Implications for Payments and Policy'."
   },
   {
    "market": "UAE equities",
-   "note": "UAE sat out the crypto move entirely, which is the diversification working. TECOM leapt HOLD -> STRONG BUY (+60) - its fourth band change in eight sessions, from the same name whose averages were 0.08% apart last week, so it stays untrusted until it holds a band for a full week. DEWA reclaimed its 50-day (SELL -> BUY), ALDAR and AIRARABIA climbed out of STRONG SELL, EMIRATESNBD fell -2.7%, ADNOCGAS deepened to -65. EAND (+65), ADNOCDRILL (+55) and ADIB (+50) remain the strongest. Al Ramz still unopened, bucket still 400/1,200 AED."
+   "note": "UAE again sat out the crypto move entirely. IHC deepened to STRONG SELL (-55, RSI 36), ADNOCGAS to -65 and EMAARDEV to -60; ADIB was cut STRONG BUY -> BUY and TECOM gave back its one-day STRONG BUY to BUY, its fifth band change in nine sessions. EAND and ADNOCDRILL (+65) are the only strong names left, with ADPORTS at +45 but purely a merger-arb at 6.03 against the AED 6.25 offer (3.65% spread). On a book this size a single UAE share purchase would be swamped by FX and brokerage friction even if Al Ramz were open, so the bucket stays at 400/1,200 AED."
+  },
+  {
+   "market": "Data quality",
+   "note": "A real defect was found in this advisor's own engine and fixed today: hi52/lo52 were computed as the max/min of the last 260 CLOSES while the fetcher only ever downloaded 210 bars, so the '% below 52-week high' figure quoted in past reports (for example LINK 'only 9.2% below its 52-week high' on Aug 20) was a ~10-month close-based number that understated the true peak. HISTORY_DAYS raised 210 -> 400, hi52/lo52 now use true intraday highs and lows, and the 52-week field returns null unless at least 250 bars exist. Verified against the current snapshot: signals and scores unchanged. No position may be sized off a 52-week number until tomorrow's 400-bar fetch lands."
   }
  ],
  "asset_notes": {
@@ -139,6 +143,30 @@
     "impact": "bullish",
     "date": "2026-08-20",
     "source": "news research pass"
+   },
+   {
+    "headline": "Reclaims its 200-day moving average after 270 consecutive closes below it - first trend-structure change in nine months; Standard Chartered sees a path to $100k by year-end",
+    "impact": "bullish",
+    "date": "2026-08-21",
+    "source": "news research pass"
+   },
+   {
+    "headline": "Spot BTC ETFs took $517.19m on Aug 19, the largest single day since May 4 (IBIT +$284.7m, ARKB +$77.7m, FBTC +$62.4m)",
+    "impact": "bullish",
+    "date": "2026-08-21",
+    "source": "news research pass"
+   },
+   {
+    "headline": "The Treasury buyback trigger has round-tripped: the 30y yield is back above its pre-announcement level (5.248% vs 5.196%) while crypto kept rallying",
+    "impact": "bearish",
+    "date": "2026-08-21",
+    "source": "news research pass"
+   },
+   {
+    "headline": "$2.99bn liquidated Aug 19 (8th largest day ever), 91.6% shorts; a further ~$1.23bn within an hour of Bessent's Aug-20 remarks",
+    "impact": "bearish",
+    "date": "2026-08-21",
+    "source": "news research pass"
    }
   ],
   "ETHUSDT": [
@@ -194,6 +222,24 @@
     "headline": "+17.7% to $2,258 clearing both plan targets, driven by a ~$1bn short squeeze on top of the SEC and Treasury catalysts",
     "impact": "bullish",
     "date": "2026-08-20",
+    "source": "news research pass"
+   },
+   {
+    "headline": "Spot ETH ETFs took $189.15m on Aug 19, the largest single day since Oct 2025; August MTD $534.2m is the strongest month of 2026",
+    "impact": "bullish",
+    "date": "2026-08-21",
+    "source": "news research pass"
+   },
+   {
+    "headline": "Staking at an all-time-high 33.98% of supply; entry queue 2,229,411 ETH vs an exit queue of 64 ETH and a ~39-day wait",
+    "impact": "bullish",
+    "date": "2026-08-21",
+    "source": "news research pass"
+   },
+   {
+    "headline": "Next named resistance is a tight band at 2,431 / 2,438 / 2,500; documented liquidation clusters sit at 2,300 and 2,200",
+    "impact": "neutral",
+    "date": "2026-08-21",
     "source": "news research pass"
    }
   ],
@@ -267,6 +313,12 @@
     "impact": "bullish",
     "date": "2026-07-16",
     "source": "TheCryptoBasic (Jul 14), BanklessTimes (Jul 3), CoinMarketCap AI updates"
+   },
+   {
+    "headline": "+17.9% is beta to the squeeze, not news: spot XRP ETFs were approved in March 2026 and are five months old",
+    "impact": "neutral",
+    "date": "2026-08-21",
+    "source": "news research pass"
    }
   ],
   "DOGEUSDT": [
@@ -570,6 +622,12 @@
     "headline": "MACD bearish cross ends the STRONG BUY run; analyst August range 0.181-0.192 implies limited upside from 0.1842; Fear & Greed at 29 (Fear)",
     "impact": "bearish",
     "date": "2026-08-13",
+    "source": "news research pass"
+   },
+   {
+    "headline": "+13.6% with no fresh catalyst, and a governance-freeze risk lands Sept 1",
+    "impact": "bearish",
+    "date": "2026-08-21",
     "source": "news research pass"
    }
   ],

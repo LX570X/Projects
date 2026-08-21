@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-20T07:25+00:00",
+ "updated": "2026-08-21T07:40+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": 0
@@ -17,11 +17,13 @@
    "target2": 2105.0,
    "plan": "Hold. If price closes below the stop, convert ALL to USDT (not another coin). At target 1, convert half to USDT and raise the stop to 1830 (entry). At target 2, take the rest.",
    "action_required": {
-    "as_of": "2026-08-20",
-    "event": "target1 AND target2 both hit at 2,258",
-    "recommended": "convert 0.0273 ETH (~$61.64) to USDT now; keep 0.0091 ETH (~$20.55) with a hard stop at 2,105",
-    "alternative": "convert all 0.0364 ETH (~$82.19) to USDT - zero-regret and fully supported",
-    "note": "Deviates from the written plan's 'take the rest at target 2'. Reason: the catalyst is partly real (SEC framework, Treasury buybacks, ETF inflows), not purely a squeeze - but RSI 82.4 means the majority still comes off."
+    "as_of": "2026-08-21",
+    "state": "UNCONFIRMED - fill status of the Aug-20 75% sale is still unknown",
+    "if_not_executed": "execute the Aug-20 instruction at market: sell 0.0273 ETH (~$65.00 at spot), keep 0.0091. Do NOT re-optimise the percentage because the price improved.",
+    "if_executed": "hold the 0.0091 runner (~$21.66). Nothing further.",
+    "stop": 2105,
+    "added_exit": "two consecutive daily CLOSES below 2,300 -> sell the runner at market",
+    "declined": "tightening the stop to 2,300 - only 1.1x ATR below spot and sitting on a documented liquidation cluster"
    }
   }
  ],
@@ -95,7 +97,7 @@
    }
   ],
   "satellite_candidate": {
-   "as_of": "2026-08-20",
+   "as_of": "2026-08-21",
    "ticker": "LINKUSDT",
    "state": "HALF DEPLOY ADVISED - not yet confirmed executed",
    "order": {
@@ -111,10 +113,10 @@
     "aed": 50,
     "trigger": "pullback into 9.00-9.39 (61.8% Fib), same stop 8.85"
    },
-   "note": "Half deployed at 9.681 is +9.1% (spot 10.558). Stop RAISED from 8.85 to 9.80, locking ~+1.2%. Second-half order at 9.00-9.39 stays live but is 12% below spot. Still awaiting user confirmation that the half was executed."
+   "note": "Half at 9.681 is +14.4% (spot 11.074). No change: 3x ATR gives 9.84 versus the existing 9.80, an improvement of 0.11 ATR, below the 1-ATR action threshold. Second-half order at 9.00-9.39 stays live. Its '9.2% below the 52-week high' framing came from the field fixed today and must not be relied on."
   },
   "opportunity_status": {
-   "as_of": "2026-08-20",
+   "as_of": "2026-08-21",
    "state": "DEPLOY ADVISED - not yet confirmed executed",
    "order": {
     "ticker": "BTCUSDT",
@@ -127,12 +129,22 @@
     "max_loss_usd": 2.11,
     "early_exit": "two closes below the 50-day (63,927) - convert to USDT without waiting for the hard stop"
    },
-   "note": "BTC deploy at 64,347 is +8.5% (spot 69,823). Stop RAISED from 62,355 to 67,000, locking ~+4.1%. No adding - RSI 74.6, above the upper Bollinger band. Still awaiting user confirmation that the deploy was executed."
+   "note": "BTC deploy at 64,347 is +18.1% (spot 75,997). Stop RAISED 67,000 -> 70,700 = spot - 3x ATR14, ~1,000 below the reclaimed 200-day MA, locking ~+9.9% (+$6.72). Rule restoration: the old stop was 5.1x ATR below spot and never compliant. Still awaiting confirmation the deploy was executed."
   },
   "stock_shortlist_note": {
    "as_of": "2026-08-17",
    "note": "ADPORTS REMOVED from the core UAE stock shortlist - it is now a cash-takeover/merger-arb situation at AED 6.25 heading to a delisting, not a dividend blue chip to hold. Shortlist for when Al Ramz opens: the bank block (ADCB, ADIB +65; FAB, EAND, EMIRATESNBD +50), plus new watches TALABAT (+45, fresh 50-day cross) and ADNOCDRILL (+65).",
    "cost_of_delay": "ADPORTS was STRONG BUY for 11 straight sessions from 5.03 (Aug 6) and is 5.86 today, +16.5%. A 1,200 AED tranche would have been ~238 shares, now ~1,397 AED (+197 AED)."
   }
+ },
+ "trailing_stop_rule": {
+  "adopted": "2026-08-21",
+  "rule": "stop = max(existing stop, daily close - 3 x ATR14); never lowered; acted on ONLY when the improvement exceeds 1 x ATR14",
+  "why": "stops were being re-derived from scratch every session, which was the real source of plan drift; this makes 'leave it alone' a computed output rather than a daily judgement call"
+ },
+ "event_risk": {
+  "date": "2026-08-28",
+  "event": "Kevin Warsh's first Jackson Hole keynote as Fed chair; symposium topic 'Financial Innovation: Implications for Payments and Policy'",
+  "policy": "pre-committed: no discretionary action across it in either direction. The stops already express the risk."
  }
 }

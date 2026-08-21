@@ -22,7 +22,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(HERE, "data")
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36")
-HISTORY_DAYS = 210
+HISTORY_DAYS = 400  # >=260 so hi52/lo52 really cover 52 weeks
 MAX_SANE_STOCK_PRICE = 10000.0  # AED; anything above is a bad symbol (bond/index)
 
 

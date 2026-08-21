@@ -228,8 +228,17 @@ def analyze(ticker, a):
     bb_sd = stdev(bb_win)
     bb_up, bb_lo = bb_mid + 2 * bb_sd, bb_mid - 2 * bb_sd
     pct_b = (last - bb_lo) / (bb_up - bb_lo) if bb_up > bb_lo else 0.5
-    hi52 = max(c for c in closes[-260:])
-    lo52 = min(c for c in closes[-260:])
+    win = bars[-260:]
+    hi52_bars = len(win)
+    # use true intraday highs/lows when the source gives OHLC; fall back to closes
+    if win and win[0].get("h") is not None and win[0].get("l") is not None:
+        hi52 = max(b["h"] for b in win)
+        lo52 = min(b["l"] for b in win)
+    else:
+        hi52 = max(closes[-260:])
+        lo52 = min(closes[-260:])
+    hi52 = max(hi52, last)
+    lo52 = min(lo52, last)
     hi20 = max(closes[-20:])
     lo20 = min(closes[-20:])
 
@@ -309,7 +318,11 @@ def analyze(ticker, a):
         "atr14": atr14, "stop_suggest": stop,
         "target1": target1, "target2": target2,
         "hi52": hi52, "lo52": lo52, "hi20": hi20, "lo20": lo20,
-        "off_52w_high_pct": round((last / hi52 - 1) * 100, 2) if hi52 else None,
+        "hi52_bars": hi52_bars,
+        # Do NOT call it a 52-week high unless the window really spans ~52 weeks.
+        "off_52w_high_pct": (round((last / hi52 - 1) * 100, 2)
+                             if hi52 and hi52_bars >= 250 else None),
+        "off_window_high_pct": round((last / hi52 - 1) * 100, 2) if hi52 else None,
     }
 
 
