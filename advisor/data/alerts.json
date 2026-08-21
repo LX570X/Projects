@@ -1,227 +1,101 @@
 {
- "generated_at_utc": "2026-08-20T07:11:51+00:00",
+ "generated_at_utc": "2026-08-21T07:12:26+00:00",
  "alerts": [
   {
    "ticker": "ETHUSDT",
    "severity": "actionable",
-   "type": "target_hit",
-   "msg": "YOUR POSITION ETHUSDT: TARGET 1 reached (1964) \u2014 plan says take half off, stop to entry"
-  },
-  {
-   "ticker": "ETHUSDT",
-   "severity": "actionable",
-   "type": "target_hit",
-   "msg": "YOUR POSITION ETHUSDT: TARGET 2 reached (2105) \u2014 plan says take remaining profit"
-  },
-  {
-   "ticker": "BTCUSDT",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "BTCUSDT moved +8.5% in the last day (now 69823.4 USD)"
-  },
-  {
-   "ticker": "BTCUSDT",
-   "severity": "info",
-   "type": "rsi",
-   "msg": "BTCUSDT: RSI crossed above 70 (now 74.6)"
-  },
-  {
-   "ticker": "ETHUSDT",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "ETHUSDT moved +17.7% in the last day (now 2258 USD)"
-  },
-  {
-   "ticker": "ETHUSDT",
-   "severity": "info",
-   "type": "rsi",
-   "msg": "ETHUSDT: RSI crossed above 70 (now 82.4)"
-  },
-  {
-   "ticker": "ETHUSDT",
-   "severity": "info",
-   "type": "macd",
-   "msg": "ETHUSDT: MACD bullish cross"
-  },
-  {
-   "ticker": "BNBUSDT",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "BNBUSDT moved +4.8% in the last day (now 631.35 USD)"
-  },
-  {
-   "ticker": "BNBUSDT",
-   "severity": "actionable",
    "type": "signal_change",
-   "msg": "BNBUSDT: BUY -> STRONG BUY (score 40 -> 45)"
-  },
-  {
-   "ticker": "BNBUSDT",
-   "severity": "info",
-   "type": "rsi",
-   "msg": "BNBUSDT: RSI crossed above 70 (now 70.9)"
-  },
-  {
-   "ticker": "BNBUSDT",
-   "severity": "info",
-   "type": "macd",
-   "msg": "BNBUSDT: MACD bullish cross"
-  },
-  {
-   "ticker": "SOLUSDT",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "SOLUSDT moved +11.4% in the last day (now 85.84 USD)"
-  },
-  {
-   "ticker": "SOLUSDT",
-   "severity": "info",
-   "type": "rsi",
-   "msg": "SOLUSDT: RSI crossed above 70 (now 75.6)"
+   "msg": "ETHUSDT: STRONG BUY -> BUY (score 45 -> 35)"
   },
   {
    "ticker": "XRPUSDT",
    "severity": "info",
-   "type": "big_move",
-   "msg": "XRPUSDT moved +10.4% in the last day (now 1.1093 USD)"
+   "type": "signal_change",
+   "msg": "XRPUSDT: BUY -> HOLD (score 25 -> 5)"
   },
   {
    "ticker": "XRPUSDT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "XRPUSDT: SELL -> BUY (score -40 -> 25)"
-  },
-  {
-   "ticker": "XRPUSDT",
-   "severity": "actionable",
-   "type": "trend",
-   "msg": "XRPUSDT: price crossed above its 50-day average \u2014 trend change"
+   "severity": "info",
+   "type": "rsi",
+   "msg": "XRPUSDT: RSI crossed above 70 (now 79.9)"
   },
   {
    "ticker": "DOGEUSDT",
    "severity": "info",
-   "type": "big_move",
-   "msg": "DOGEUSDT moved +7.3% in the last day (now 0.07524 USD)"
-  },
-  {
-   "ticker": "DOGEUSDT",
-   "severity": "info",
-   "type": "signal_change",
-   "msg": "DOGEUSDT: SELL -> HOLD (score -35 -> 5)"
-  },
-  {
-   "ticker": "DOGEUSDT",
-   "severity": "actionable",
-   "type": "trend",
-   "msg": "DOGEUSDT: price crossed above its 50-day average \u2014 trend change"
-  },
-  {
-   "ticker": "LINKUSDT",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "LINKUSDT moved +9.1% in the last day (now 10.558 USD)"
-  },
-  {
-   "ticker": "LINKUSDT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "LINKUSDT: STRONG BUY -> BUY (score 45 -> 35)"
-  },
-  {
-   "ticker": "AVAXUSDT",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "AVAXUSDT moved +6.7% in the last day (now 6.79 USD)"
-  },
-  {
-   "ticker": "AVAXUSDT",
-   "severity": "info",
-   "type": "signal_change",
-   "msg": "AVAXUSDT: STRONG SELL -> HOLD (score -50 -> 15)"
-  },
-  {
-   "ticker": "AVAXUSDT",
-   "severity": "info",
-   "type": "macd",
-   "msg": "AVAXUSDT: MACD bullish cross"
+   "type": "rsi",
+   "msg": "DOGEUSDT: RSI crossed above 70 (now 77.3)"
   },
   {
    "ticker": "AVAXUSDT",
    "severity": "actionable",
-   "type": "trend",
-   "msg": "AVAXUSDT: price crossed above its 50-day average \u2014 trend change"
+   "type": "signal_change",
+   "msg": "AVAXUSDT: HOLD -> BUY (score 15 -> 30)"
+  },
+  {
+   "ticker": "AVAXUSDT",
+   "severity": "info",
+   "type": "rsi",
+   "msg": "AVAXUSDT: RSI crossed above 70 (now 72.2)"
+  },
+  {
+   "ticker": "ADAUSDT",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ADAUSDT: BUY -> STRONG BUY (score 35 -> 45)"
   },
   {
    "ticker": "ADAUSDT",
    "severity": "info",
-   "type": "big_move",
-   "msg": "ADAUSDT moved +4.7% in the last day (now 0.1842 USD)"
+   "type": "rsi",
+   "msg": "ADAUSDT: RSI crossed above 70 (now 70.2)"
   },
   {
-   "ticker": "LTCUSDT",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "LTCUSDT moved +5.5% in the last day (now 46.95 USD)"
-  },
-  {
-   "ticker": "LTCUSDT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "LTCUSDT: SELL -> BUY (score -45 -> 35)"
-  },
-  {
-   "ticker": "LTCUSDT",
+   "ticker": "ADAUSDT",
    "severity": "info",
    "type": "macd",
-   "msg": "LTCUSDT: MACD bullish cross"
+   "msg": "ADAUSDT: MACD bullish cross"
   },
   {
    "ticker": "LTCUSDT",
-   "severity": "actionable",
-   "type": "trend",
-   "msg": "LTCUSDT: price crossed above its 50-day average \u2014 trend change"
-  },
-  {
-   "ticker": "EMIRATESNBD",
    "severity": "info",
-   "type": "big_move",
-   "msg": "EMIRATESNBD moved -2.7% in the last day (now 31 AED)"
+   "type": "rsi",
+   "msg": "LTCUSDT: RSI crossed above 70 (now 70.2)"
   },
   {
-   "ticker": "DEWA",
-   "severity": "actionable",
+   "ticker": "DIB",
+   "severity": "info",
    "type": "signal_change",
-   "msg": "DEWA: SELL -> BUY (score -40 -> 35)"
+   "msg": "DIB: SELL -> HOLD (score -25 -> -15)"
   },
   {
-   "ticker": "DEWA",
-   "severity": "actionable",
-   "type": "trend",
-   "msg": "DEWA: price crossed above its 50-day average \u2014 trend change"
-  },
-  {
-   "ticker": "AIRARABIA",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "AIRARABIA: STRONG SELL -> SELL (score -55 -> -45)"
+   "ticker": "EMAARDEV",
+   "severity": "info",
+   "type": "macd",
+   "msg": "EMAARDEV: MACD bearish cross"
   },
   {
    "ticker": "TECOM",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "TECOM: HOLD -> STRONG BUY (score -15 -> 60)"
+   "msg": "TECOM: STRONG BUY -> BUY (score 60 -> 35)"
   },
   {
-   "ticker": "TECOM",
-   "severity": "info",
-   "type": "macd",
-   "msg": "TECOM: MACD bullish cross"
-  },
-  {
-   "ticker": "ALDAR",
+   "ticker": "IHC",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "ALDAR: STRONG SELL -> SELL (score -50 -> -25)"
+   "msg": "IHC: SELL -> STRONG SELL (score -35 -> -55)"
+  },
+  {
+   "ticker": "ADIB",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ADIB: STRONG BUY -> BUY (score 50 -> 25)"
+  },
+  {
+   "ticker": "ADPORTS",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ADPORTS: BUY -> STRONG BUY (score 35 -> 45)"
   }
  ]
 }
