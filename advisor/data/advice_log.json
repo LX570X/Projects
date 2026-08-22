@@ -602,6 +602,73 @@
    "action": "ADD NOTHING - and pre-commit to no discretionary action across Jackson Hole",
    "rationale": "Every crypto in the book except GRAM is overbought: BTC 83.9, ETH 85.7, LINK 83.8, SOL 80.7, BNB 80.4, XRP 79.9, DOGE 77.3, AVAX 72.2, ADA 70.2, LTC 70.2. The move's own trigger has already reversed - the Treasury announced doubling long-end buybacks from $2bn to $4bn+ per operation on Aug 19, but the 30-year yield has round-tripped back ABOVE its pre-announcement level (5.248% vs 5.196%) while crypto kept climbing. Mechanics dominated: $2.99bn of total liquidations on Aug 19, the 8th largest day in history, 91.6% of them shorts, plus another ~$1.23bn within an hour of Bessent's Aug-20 remarks. Real money is present too and larger than I reported yesterday - BTC spot ETFs took $517m on Aug 19 alone and ETH ETFs $189m, with August ETH inflows at $534m, the strongest month of 2026. But this is NOT a rate-cut trade: the Warsh Fed is ~64% priced for no change in September with year-end HIKE odds elevated. Warsh delivers his first Jackson Hole keynote on Friday Aug 28, on a symposium topic titled 'Financial Innovation: Implications for Payments and Policy' - a binary event inside the holding period of every position here. Pre-committing now to no discretionary action across it in either direction; the stops already express the risk. XRP and ADA were pure beta with no asset-specific catalyst, and ADA carries a governance-freeze risk on Sept 1.",
    "status": "no action"
+  },
+  {
+   "date": "2026-08-22",
+   "ticker": "BOOKKEEPING",
+   "action": "CORRECTION - I have been reporting P&L on positions my own ledger says were never executed",
+   "rationale": "An audit of this repo found that across 67 log entries and 36 days, not one instruction has ever been confirmed filled. Worse, two of the three 'positions' I have been quoting daily are not in holdings at all: BTC sits in monthly_plan.opportunity_status marked 'DEPLOY ADVISED - not yet confirmed executed' and LINK in satellite_candidate marked the same, while cash.USDT reads 0 and accumulations.opportunity_usdt_aed still reads 250 AED. The ledger itself asserts those deploys never happened. So the '+$13.98 on BTC' and '+$3.09 on LINK' I reported were profit on positions that may not exist - about $17 of a claimed ~$180 book. From today the book is reported in two separate sections that are never summed: CONFIRMED (ETH only) and ADVISED-UNCONFIRMED (BTC, LINK). No percentage or dollar P&L will be attached to anything whose fill state is not confirmed.",
+   "status": "correction logged"
+  },
+  {
+   "date": "2026-08-22",
+   "ticker": "PROCESS",
+   "action": "instructions switch to TARGET END STATE - the structural fix for the fill problem",
+   "rationale": "Repeating 'sell 0.0273 ETH' a fourth time is now actively dangerous, not merely useless: spot 2,443.91 is 8.2% through the 2,258 level it referenced, and if the user already sold, executing it again would leave them with 0.0023 ETH. The root cause is that I have been issuing DELTAS (sell X) to a user whose fill state I cannot observe. From today every instruction is expressed as an end state, which is idempotent and safe under both branches: 'hold 0.0091 ETH - if you are already there, do nothing.' Also replacing the failed question. 'Did you execute?' asks the user to recall an action and admit an omission; it has failed eleven times. Replacing it with a state read: send four numbers from the Binance wallet overview - ETH, BTC, LINK, USDT. Twenty seconds, no memory required, resolves all three positions and the cash line at once. Silence default declared in advance: no answer by Monday 2026-08-24 and the canonical book becomes ETH 0.0364 confirmed, BTC and LINK unconfirmed, with the $17 of reported P&L struck.",
+   "status": "adopted"
+  },
+  {
+   "date": "2026-08-22",
+   "ticker": "ETHUSDT",
+   "action": "END STATE: hold 0.0091 ETH. The 2,258 sell order is cancelled.",
+   "price": 2443.91,
+   "stop": 2105.0,
+   "rationale": "ETH 2,443.91 (+2.8%), 0.0364 untouched is $88.96 (+33.6%). Not re-optimising the size because the price improved - 0.0091 was the number set on Aug 20 and it stays the number, which is also the only instruction that is identical whether or not the trim already happened. Cancelling the 2,258 order because spot is 8.2% through it. Live rules unchanged: stop 2,105 (-13.9% from spot) and the close-confirmed exit at two consecutive daily closes below 2,300 (-5.9%). No new ETH decision before Warsh on Aug 28.",
+   "status": "instruction reissued in idempotent form"
+  },
+  {
+   "date": "2026-08-22",
+   "ticker": "RULES",
+   "action": "3xATR trail says SKIP on all three - honoured, but a design defect found on day one",
+   "rationale": "BTC 3xATR gives 71,112 vs the standing 70,700 (+0.19 ATR); ETH 2,165 vs 2,105 (+0.64); LINK 10.05 vs 9.80 (+0.41). Nothing clears the 1-ATR gate, so nothing moves. Honouring the rule rather than overriding it the first day it produces an uncomfortable answer. But the defect is real and I found it while checking: because the trigger threshold and the proposed stop are BOTH scaled by ATR, the rule can only tighten on a close above stop + 4x ATR - which is 79,287 on BTC, a price the market tagged on Aug 21 and rejected. The rule is therefore structurally silent during exactly the parabolic phase it exists to protect. ATR expanded 22% in a day (BTC 1,759 -> 2,147; ETH 72 -> 93; LINK 0.41 -> 0.61), which is what suppressed the trigger. Amendment to be written this weekend and switched on at a stated future close, NOT retrofitted to fire today: a smaller multiplier when RSI is above 80 and ATR has expanded sharply, plus a floor that no position gives back more than half its peak open gain. Amending a rule prospectively is discipline; amending it to fire today is the drift.",
+   "status": "rule honoured, amendment pending"
+  },
+  {
+   "date": "2026-08-22",
+   "ticker": "crypto-broad",
+   "action": "LEADERSHIP INVERTED - the character of the move changed in the last 24 hours",
+   "rationale": "Through Aug 20 this was BTC-led on real ETF money. As of Aug 21-22 the ranking is upside down: XRP +21.8%, ADA +12.2%, DOGE +11.5% against BTC +2.26% - the junk outrunning quality roughly 10 to 1. XRP's catalyst is real but thin: Trump publicly urged Congress to pass the CLARITY Act on Aug 20 with Ripple's CEO beside him, yet the Senate adjourned Aug 8 without a vote, Sept 15 is only a cloture motion on the motion to proceed, and market-implied passage odds are 16-24%. The flow test fails by three orders of magnitude - XRP added roughly $17bn of market cap on $11-13m of ETF inflow. It is leverage, not money: Binance XRP funding hit its highest since Oct 2025 and perp OI reached a two-month high. And this is not an alt season by the standard measure - the Altcoin Season Index reads 37 (Bitcoin Season is below 75) while BTC dominance broke OUT upward to 60.88%. Other fresh cracks: the hourly liquidation ledger flipped to 98.2% LONGS, the first flip of this move; BTC tagged 80,556 on Aug 21 and failed it; open interest hit $56.43bn, 2026's largest build; and ETF inflows continued but halved, $606m to $307.5m. Also worth knowing: the Treasury buyback operations that triggered all of this do not begin until Sept 9 - the market has front-run the mechanical flow by three weeks. Nothing to buy. The LINK 9.00-9.39 second-half order stays standing 21% below spot; do not chase it up.",
+   "status": "no action"
+  },
+  {
+   "date": "2026-08-22",
+   "ticker": "UAE-GEOPOLITICS",
+   "action": "MISSED FOR FOUR DAYS - Iran missiles and a UAE trade embargo explain the DU mystery",
+   "rationale": "On Aug 18 the UAE's Ministry of Defence said its air defences detected two ballistic missiles launched from Iran, one falling inside UAE territorial waters; Iran denies firing them. It was the first such strike on the UAE since May and came days after Abu Dhabi accused Tehran of attacking two ADNOC vessels in the Strait of Hormuz. On Aug 19 the UAE halted ALL trade, commercial exchange and financial transactions with Iran indefinitely - stripping Iran of a partner that supplied more than 30% of its imports. I flagged DU's ~8% fall twice as 'unexplained' while this was the explanation: du fell 3.1% on the missile day and the DFM fell again on the embargo, with EMIRATESNBD -3%. It was market-wide geopolitics landing on a stock that had already run hot, not a company event. Two positives had pushed du up beforehand: TDRA renewed du's and e&'s telecom licences for 20 years on Aug 12, and MSCI added du to its UAE Standard and EM indices on Aug 13, effective at the close of Aug 31 - a dated, mechanical passive buy. Lesson recorded: the news pass was searching stock tickers, not the country. Country-level geopolitical risk now gets its own query every cycle.",
+   "status": "root cause found - no position"
+  },
+  {
+   "date": "2026-08-22",
+   "ticker": "ADPORTS",
+   "action": "the 3.5% spread is priced risk, not free money - and there is no EGM to wait for",
+   "price": 6.04,
+   "rationale": "The L'IMAD/ADQ offer at AED 6.25 opened Aug 18 and closes at 3pm UAE time on Sept 15 unless extended. It is a tender offer, not a scheme of arrangement, so there is no EGM and no shareholder vote - stop looking for one. The board appointed HSBC Bank Middle East as financial adviser on Aug 21. Critically, the offer carries NO automatic minimum acceptance threshold, it is not established that crossing 90% permits compulsory acquisition of minorities, and acquiring them would not automatically delist the shares from ADX. A holder who does not tender can be left in an illiquid stub with no exit. That is what the persistent 3.5% spread is paying for. Separately AD Ports reported Q2 net profit of AED 836m, +88% YoY. Confirms the earlier call to take it off the core shortlist.",
+   "status": "tracking only"
+  },
+  {
+   "date": "2026-08-22",
+   "ticker": "DEWA",
+   "action": "engine says SELL -30, fundamentals say record results - divergence noted",
+   "price": 2.7,
+   "rationale": "DEWA lost its 50-day today, yet it reported RECORD H1 2026 net profit of AED 3.33bn, +15.0% YoY, on revenue of AED 14.86bn with EBITDA of AED 7.32bn, and plans a further AED 3.1bn dividend in October pending regulatory approval. Same pattern as EMAAR: a growing business with a broken chart. The technical signal is a statement about price, not about the company, and neither is actionable while Al Ramz is unopened. Recording it so the shortlist is not built on price alone when the account finally opens.",
+   "status": "advice only - no position"
+  },
+  {
+   "date": "2026-08-22",
+   "ticker": "CADENCE",
+   "action": "cutting the review cadence - the daily brief is over-servicing a book this size",
+   "rationale": "The log's own histogram runs from 3 entries a day in mid-July to 5-6 a day this week, a run rate near 160 instructions a month against a confirmed book of one ETH line. Manufacturing more decisions than the user can execute is what produced the backlog of eleven unconfirmed instructions in the first place. The 3xATR rule was adopted precisely so 'leave it alone' is a computed output - but reviewing daily guarantees eventually overriding it, because a daily review exists to find something to do. Moving to a weekly full review plus event triggers: a stop or close-exit actually firing, or a dated event. Next dated events: Bessent presser Aug 24, US July PCE Wednesday Aug 26 (not Friday), Warsh's Jackson Hole keynote Friday Aug 28, du's MSCI inclusion at the close Aug 31, monthly DCA Sept 1, and the triple of CLARITY cloture, AD Ports offer close and FOMC on Sept 15-16.",
+   "status": "adopted"
   }
  ]
 }

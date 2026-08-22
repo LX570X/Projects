@@ -1,8 +1,13 @@
 {
- "updated": "2026-08-21T07:40+00:00",
+ "updated": "2026-08-22T07:45+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
-  "USDT": 0
+  "USDT": 0,
+  "fill": {
+   "state": "unconfirmed",
+   "as_of": "2026-08-22",
+   "evidence": "never reconciled against the exchange"
+  }
  },
  "holdings": [
   {
@@ -17,13 +22,17 @@
    "target2": 2105.0,
    "plan": "Hold. If price closes below the stop, convert ALL to USDT (not another coin). At target 1, convert half to USDT and raise the stop to 1830 (entry). At target 2, take the rest.",
    "action_required": {
-    "as_of": "2026-08-21",
-    "state": "UNCONFIRMED - fill status of the Aug-20 75% sale is still unknown",
-    "if_not_executed": "execute the Aug-20 instruction at market: sell 0.0273 ETH (~$65.00 at spot), keep 0.0091. Do NOT re-optimise the percentage because the price improved.",
-    "if_executed": "hold the 0.0091 runner (~$21.66). Nothing further.",
-    "stop": 2105,
-    "added_exit": "two consecutive daily CLOSES below 2,300 -> sell the runner at market",
-    "declined": "tightening the stop to 2,300 - only 1.1x ATR below spot and sitting on a documented liquidation cluster"
+    "as_of": "2026-08-22",
+    "end_state": "hold 0.0091 ETH - if you are already there, do nothing",
+    "cancelled": "the 2026-08-20 order to sell 0.0273 ETH at 2,258 is CANCELLED (spot 2,443.91 is 8.2% through it; repeating a delta risks double execution)",
+    "stop": 2105.0,
+    "close_exit": "two consecutive daily CLOSES below 2,300 -> exit the remainder at market",
+    "note": "Size not re-optimised for the better price. 0.0091 was set on Aug 20 and stays, and it is the only instruction identical under both fill branches."
+   },
+   "fill": {
+    "state": "position confirmed by user 2026-07-17; the 2026-08-20 trim is UNCONFIRMED",
+    "as_of": "2026-08-22",
+    "evidence": "user stated 0.0364 ETH on 2026-07-17; no fill confirmation since"
    }
   }
  ],
@@ -97,39 +106,45 @@
    }
   ],
   "satellite_candidate": {
-   "as_of": "2026-08-21",
+   "as_of": "2026-08-22",
    "ticker": "LINKUSDT",
-   "state": "HALF DEPLOY ADVISED - not yet confirmed executed",
-   "order": {
+   "fill": {
+    "state": "unconfirmed",
+    "as_of": "2026-08-22",
+    "evidence": "never reconciled against the exchange"
+   },
+   "advised_order": {
     "aed": 50,
-    "usd": 13.61,
+    "usd_cost": 13.61,
     "qty": 1.406,
-    "price": 9.681,
-    "stop": 8.85,
-    "target1": 10.28,
-    "max_loss_usd": 1.17
+    "entry": 9.681,
+    "stop": 9.8
    },
-   "remaining": {
+   "notional_now_usd": 16.7,
+   "second_half": {
     "aed": 50,
-    "trigger": "pullback into 9.00-9.39 (61.8% Fib), same stop 8.85"
+    "trigger": "pullback into 9.00-9.39",
+    "status": "standing, ~21% below spot - leave it, do not chase"
    },
-   "note": "Half at 9.681 is +14.4% (spot 11.074). No change: 3x ATR gives 9.84 versus the existing 9.80, an improvement of 0.11 ATR, below the 1-ATR action threshold. Second-half order at 9.00-9.39 stays live. Its '9.2% below the 52-week high' framing came from the field fixed today and must not be relied on."
+   "note": "P&L deliberately NOT reported - fill unconfirmed. 3xATR gives 10.05 vs the standing 9.80, an improvement of 0.41 ATR, below the gate. The earlier '9.2% below its 52-week high' framing was WRONG - the true figure is -20.9%."
   },
   "opportunity_status": {
-   "as_of": "2026-08-21",
-   "state": "DEPLOY ADVISED - not yet confirmed executed",
-   "order": {
+   "as_of": "2026-08-22",
+   "fill": {
+    "state": "unconfirmed",
+    "as_of": "2026-08-22",
+    "evidence": "accumulations.opportunity_usdt_aed still reads 250 AED and cash.USDT reads 0 - the ledger asserts this deploy never happened"
+   },
+   "advised_order": {
     "ticker": "BTCUSDT",
     "aed": 250,
-    "usd": 68.07,
+    "usd_cost": 68.07,
     "qty": 0.001058,
-    "price": 64347.38,
-    "stop": 62354.7,
-    "target1": 66340.06,
-    "max_loss_usd": 2.11,
-    "early_exit": "two closes below the 50-day (63,927) - convert to USDT without waiting for the hard stop"
+    "entry": 64347.38,
+    "stop": 70700
    },
-   "note": "BTC deploy at 64,347 is +18.1% (spot 75,997). Stop RAISED 67,000 -> 70,700 = spot - 3x ATR14, ~1,000 below the reclaimed 200-day MA, locking ~+9.9% (+$6.72). Rule restoration: the old stop was 5.1x ATR below spot and never compliant. Still awaiting confirmation the deploy was executed."
+   "notional_now_usd": 82.05,
+   "note": "P&L deliberately NOT reported - fill unconfirmed. 3xATR trail gives 71,112 vs the standing 70,700, an improvement of 0.19 ATR, below the 1-ATR gate, so the stop does not move. IF THIS WAS NEVER EXECUTED: the 64,347 entry is 17% below spot - the trigger is dead, do NOT chase at 77,552."
   },
   "stock_shortlist_note": {
    "as_of": "2026-08-17",
@@ -146,5 +161,57 @@
   "date": "2026-08-28",
   "event": "Kevin Warsh's first Jackson Hole keynote as Fed chair; symposium topic 'Financial Innovation: Implications for Payments and Policy'",
   "policy": "pre-committed: no discretionary action across it in either direction. The stops already express the risk."
+ },
+ "reporting_rule": {
+  "adopted": "2026-08-22",
+  "rule": "The book is reported in two sections that are NEVER summed: CONFIRMED (fill.state == 'confirmed') and ADVISED-UNCONFIRMED. No dollar or percentage P&L may be attached to any line whose fill.state is not 'confirmed'.",
+  "why": "67 log entries over 36 days contained zero confirmed fills, yet BTC and LINK P&L was being reported daily as if the positions existed - about $17 of a claimed ~$180 book."
+ },
+ "instruction_format": {
+  "adopted": "2026-08-22",
+  "rule": "Every instruction is expressed as a TARGET END STATE ('hold 0.0091 ETH'), never as a delta ('sell 0.0273 ETH'). End states are idempotent: safe to act on whether or not a previous instruction was executed.",
+  "why": "Repeating a delta into an unknown fill state risks double execution - repeating 'sell 0.0273' to a user who had already sold would have left 0.0023 ETH."
+ },
+ "reconciliation_request": {
+  "as_of": "2026-08-22",
+  "ask": "Open Binance -> Wallet -> Overview and send four numbers: ETH quantity, BTC quantity, LINK quantity, USDT balance.",
+  "why": "A state read, not an action recall. Resolves all three positions and the cash line at once.",
+  "silence_default": "No answer by Monday 2026-08-24: the canonical book becomes ETH 0.0364 CONFIRMED, BTC UNCONFIRMED, LINK UNCONFIRMED, and the ~$17 of reported BTC/LINK P&L is struck from the record."
+ },
+ "event_calendar": [
+  {
+   "date": "2026-08-24",
+   "event": "Bessent press conference"
+  },
+  {
+   "date": "2026-08-26",
+   "event": "US July PCE (corrected - Wednesday, not Friday)"
+  },
+  {
+   "date": "2026-08-28",
+   "event": "Warsh's first Jackson Hole keynote; topic 'Financial Innovation: Implications for Payments and Policy'",
+   "policy": "pre-committed: no discretionary action across it. Only stops and close-exits fire."
+  },
+  {
+   "date": "2026-08-31",
+   "event": "du enters the MSCI UAE Standard / EM indices at the close - dated mechanical passive buy"
+  },
+  {
+   "date": "2026-09-01",
+   "event": "monthly 1,000 AED DCA"
+  },
+  {
+   "date": "2026-09-09",
+   "event": "Treasury long-end buyback operations actually BEGIN (the market front-ran this by three weeks)"
+  },
+  {
+   "date": "2026-09-15",
+   "event": "CLARITY Act cloture motion + AD Ports offer closes 3pm UAE + FOMC 09-15/16"
+  }
+ ],
+ "review_cadence": {
+  "adopted": "2026-08-22",
+  "rule": "weekly full review plus event triggers only (a stop or close-exit firing, or a dated calendar event)",
+  "why": "a daily review of a one-line confirmed book manufactures more instructions than the user can execute - which is what created eleven unconfirmed instructions"
  }
 }

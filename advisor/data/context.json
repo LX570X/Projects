@@ -1,25 +1,25 @@
 {
- "updated": "2026-08-21T07:40+00:00",
+ "updated": "2026-08-22T07:45+00:00",
  "market_notes": [
   {
-   "market": "Crypto macro",
-   "note": "Second parabolic session: BTC +8.9% to 75,997, ETH +5.4% to 2,380.75, XRP +17.9%, ADA +13.6%. The move's own trigger has already reversed - the Treasury's Aug-19 decision to at least double long-end buybacks from $2bn to $4bn+ per operation (running Sept 9 to Nov 4) knocked the 30-year yield to 5.196%, but it has since rebounded ABOVE its pre-announcement level to 5.248% while crypto kept climbing. Mechanics did the heavy lifting: $2.99bn of liquidations on Aug 19, the 8th largest day on record, 91.6% of them shorts, plus ~$1.23bn more within an hour of Bessent's Aug-20 'could blow past $4bn' remarks. Real flows are also present and bigger than first reported - $517m into spot BTC ETFs on Aug 19 alone (largest since May 4) and $189m into ETH ETFs (largest since Oct 2025), with August ETH inflows at $534m, the strongest month of 2026. Crucially this is NOT a rate-cut repricing: the Warsh Fed is ~64% priced for no change in September with year-end hike odds elevated."
+   "market": "Crypto - CHARACTER CHANGE",
+   "note": "Day 4, and the leadership inverted. Through Aug 20 this was BTC-led on real ETF money; on Aug 21-22 it is XRP +21.8%, ADA +12.2%, DOGE +11.5% against BTC +2.26% - junk outrunning quality about 10 to 1. XRP's catalyst is real but thin: Trump urged Congress to pass the CLARITY Act on Aug 20 with Ripple's CEO beside him, but the Senate adjourned Aug 8 without a vote, Sept 15 is only a cloture motion, and implied passage odds are 16-24%. The flow test fails by three orders of magnitude - roughly $17bn of XRP market cap added on $11-13m of ETF inflow. It is leverage: Binance XRP funding is the highest since Oct 2025 and perp OI a two-month high. And it is not an alt season by the standard measure - the Altcoin Season Index reads 37 while BTC dominance broke out upward to 60.88%. Fresh cracks: the hourly liquidation ledger flipped to 98.2% LONGS (first flip of this move), BTC tagged 80,556 on Aug 21 and failed it, open interest hit $56.43bn (2026's largest build), and ETF inflows halved from $606m to $307.5m. The Treasury buybacks that triggered everything do not begin until Sept 9."
   },
   {
-   "market": "Portfolio",
-   "note": "ETH 2,380.75, +30.1% at $86.66 if untouched. No new ETH decision today - either execute yesterday's unfilled instruction (sell 0.0273, keep 0.0091) or hold the runner; the stop stays 2,105 and a close-based exit is added at two consecutive daily closes below 2,300. BTC deploy +18.1% (+$12.32) with the stop RAISED 67,000 -> 70,700, which is rule restoration rather than a change of view: the old stop was 5.1x ATR below spot and had simply been outrun. LINK half +14.4% (+$1.96), no change at 9.80. Nothing added."
+   "market": "Book - reporting correction",
+   "note": "An audit found that across 67 log entries and 36 days not one instruction has ever been confirmed filled, and that BTC and LINK are not in holdings at all - they sit in monthly_plan marked 'ADVISED - not yet confirmed executed', while cash.USDT reads 0 and the opportunity bucket still reads 250 AED. The ledger asserts those deploys never happened, yet their P&L (about $17) has been reported daily as if real. From today the book is split into CONFIRMED (ETH only, $88.96) and ADVISED-UNCONFIRMED (BTC, LINK), never summed, and no P&L attaches to an unconfirmed line. Instructions also change form: target end states, never deltas, because repeating 'sell 0.0273 ETH' into an unknown fill state risks double execution."
   },
   {
-   "market": "Structural",
-   "note": "The one genuinely new fact in this move is BTC reclaiming its 200-day moving average after 270 consecutive closes below it - the first trend-structure change in nine months and the only element that satisfies the standing 2-closes rule; Standard Chartered's Geoff Kendrick reads it as a path toward $100k by year-end. ETH's supply side corroborates: staking at an all-time-high 33.98% of supply, an entry queue of 2,229,411 ETH against an exit queue of 64, and a ~39-day wait to get in - supply locked for 39 days cannot be sold into a drawdown. Set against that, every crypto in the book except GRAM is overbought, and Warsh's first Jackson Hole keynote lands Friday Aug 28 on a symposium topic titled 'Financial Innovation: Implications for Payments and Policy'."
+   "market": "UAE - GEOPOLITICS (missed for four days)",
+   "note": "On Aug 18 the UAE Ministry of Defence said its air defences detected two ballistic missiles launched from Iran, one landing inside UAE territorial waters; Iran denies firing them. It followed accusations that Tehran attacked two ADNOC vessels in the Strait of Hormuz. On Aug 19 the UAE halted ALL trade, commercial exchange and financial transactions with Iran indefinitely, stripping Iran of a partner supplying over 30% of its imports. This is the explanation for DU's ~8% fall that was twice flagged as unexplained: du fell 3.1% on the missile day and the DFM fell again on the embargo, with EMIRATESNBD -3%. Market-wide geopolitics on a stock that had already run hot after TDRA renewed du's and e&'s telecom licences for 20 years (Aug 12) and MSCI added du to its UAE Standard and EM indices (Aug 13, effective at the close of Aug 31). Process fix: the news pass was querying tickers, not the country - country-level geopolitical risk now gets its own query each cycle."
   },
   {
-   "market": "UAE equities",
-   "note": "UAE again sat out the crypto move entirely. IHC deepened to STRONG SELL (-55, RSI 36), ADNOCGAS to -65 and EMAARDEV to -60; ADIB was cut STRONG BUY -> BUY and TECOM gave back its one-day STRONG BUY to BUY, its fifth band change in nine sessions. EAND and ADNOCDRILL (+65) are the only strong names left, with ADPORTS at +45 but purely a merger-arb at 6.03 against the AED 6.25 offer (3.65% spread). On a book this size a single UAE share purchase would be swamped by FX and brokerage friction even if Al Ramz were open, so the bucket stays at 400/1,200 AED."
+   "market": "UAE - single names",
+   "note": "ADPORTS: the L'IMAD/ADQ offer at AED 6.25 opened Aug 18 and closes 3pm UAE on Sept 15; it is a tender offer, so there is no EGM and no shareholder vote. The board appointed HSBC Bank Middle East as adviser on Aug 21. The persistent 3.5% spread is priced risk, not free money - there is no automatic minimum acceptance threshold, no established squeeze-out at 90%, and no automatic delisting, so a non-tendering holder can be left in an illiquid stub. AD Ports Q2 net profit was AED 836m, +88% YoY. DEWA lost its 50-day (SELL -30) despite record H1 net profit of AED 3.33bn, +15.0%, and a planned AED 3.1bn October dividend - the same growing-business/broken-chart divergence as EMAAR. ADNOCGAS Q2 net income fell 52% to $664.65m on the Hormuz closure but beat its own guidance, and the board took FID on an $8.2bn gas project."
   },
   {
-   "market": "Data quality",
-   "note": "A real defect was found in this advisor's own engine and fixed today: hi52/lo52 were computed as the max/min of the last 260 CLOSES while the fetcher only ever downloaded 210 bars, so the '% below 52-week high' figure quoted in past reports (for example LINK 'only 9.2% below its 52-week high' on Aug 20) was a ~10-month close-based number that understated the true peak. HISTORY_DAYS raised 210 -> 400, hi52/lo52 now use true intraday highs and lows, and the 52-week field returns null unless at least 250 bars exist. Verified against the current snapshot: signals and scores unchanged. No position may be sized off a 52-week number until tomorrow's 400-bar fetch lands."
+   "market": "Rules",
+   "note": "The 3xATR trail adopted yesterday says SKIP on all three stops today and it was honoured rather than overridden on its first uncomfortable day. But checking it exposed a design defect: because the trigger threshold and the proposed stop are both scaled by ATR, the rule can only tighten on a close above stop + 4x ATR - 79,287 on BTC, a level tagged and rejected on Aug 21 - so it is structurally silent during exactly the parabolic phase it exists for. ATR expanded about 22% in a day across all three names, which is what suppressed the trigger. An amendment (smaller multiplier when RSI is above 80 with ATR expanding, plus a floor that no position gives back more than half its peak open gain) will be written and switched on at a stated future close, not retrofitted to fire today. Cadence also cut from daily to weekly plus event triggers - a daily review of a one-line confirmed book manufactures more instructions than can be executed."
   }
  ],
  "asset_notes": {
@@ -166,6 +166,18 @@
     "headline": "$2.99bn liquidated Aug 19 (8th largest day ever), 91.6% shorts; a further ~$1.23bn within an hour of Bessent's Aug-20 remarks",
     "impact": "bearish",
     "date": "2026-08-21",
+    "source": "news research pass"
+   },
+   {
+    "headline": "Hourly liquidation ledger flipped to 98.2% longs, the first flip of this move; BTC tagged 80,556 on Aug 21 and failed it; open interest $56.43bn, 2026's largest build; ETF inflows halved $606m to $307.5m",
+    "impact": "bearish",
+    "date": "2026-08-22",
+    "source": "news research pass"
+   },
+   {
+    "headline": "Altcoin Season Index at 37 with BTC dominance breaking out to 60.88% - a junk-led spike inside a rising-dominance regime is a leverage event, not a rotation",
+    "impact": "bearish",
+    "date": "2026-08-22",
     "source": "news research pass"
    }
   ],
@@ -319,6 +331,18 @@
     "impact": "neutral",
     "date": "2026-08-21",
     "source": "news research pass"
+   },
+   {
+    "headline": "Trump urged Congress to pass the CLARITY Act on Aug 20 with Ripple's CEO present, but the Senate adjourned Aug 8 without a vote and Sept 15 is only a cloture motion; implied passage odds 16-24%",
+    "impact": "neutral",
+    "date": "2026-08-22",
+    "source": "news research pass"
+   },
+   {
+    "headline": "~$17bn of market cap added on $11-13m of ETF inflow; Binance funding highest since Oct 2025 and perp OI at a two-month high - leverage, not money",
+    "impact": "bearish",
+    "date": "2026-08-22",
+    "source": "news research pass"
    }
   ],
   "DOGEUSDT": [
@@ -417,6 +441,12 @@
     "impact": "bullish",
     "date": "2026-07-09",
     "source": "DEWA media center / Emirates 24/7 (9 Jul 2026), Gulf Today (10 Jun 2026), DEWA Q1 release (May 2026)"
+   },
+   {
+    "headline": "Record H1 2026: net profit AED 3.33bn (+15.0%), revenue AED 14.86bn, EBITDA AED 7.32bn; further AED 3.1bn dividend planned for October pending approval - contradicts the engine's SELL",
+    "impact": "bullish",
+    "date": "2026-08-22",
+    "source": "news research pass"
    }
   ],
   "AIRARABIA": [
@@ -470,6 +500,12 @@
     "headline": "Q1 2026 missed EPS and revenue: sales volumes -15% YoY on the Strait of Hormuz closure and Habshan facility attacks; 2026 net income guided $3.5-4bn; interim dividend +5% to $941m (7.9% yield)",
     "impact": "bearish",
     "date": "2026-08-12",
+    "source": "news research pass"
+   },
+   {
+    "headline": "Q2 2026 net income $664.65m, -52% YoY on the Hormuz closure, but ahead of its own $400-600m guidance; board took FID on an $8.2bn gas project",
+    "impact": "neutral",
+    "date": "2026-08-22",
     "source": "news research pass"
    }
   ],
@@ -649,6 +685,18 @@
     "impact": "neutral",
     "date": "2026-08-18",
     "source": "news research pass"
+   },
+   {
+    "headline": "L'IMAD/ADQ offer opened Aug 18 and closes 3pm UAE Sept 15; tender offer so no EGM; board appointed HSBC Bank Middle East as adviser Aug 21; no minimum acceptance threshold and no automatic delisting, so non-tendering holders risk an illiquid stub",
+    "impact": "neutral",
+    "date": "2026-08-22",
+    "source": "news research pass"
+   },
+   {
+    "headline": "Q2 2026 net profit AED 836m, +88% YoY",
+    "impact": "bullish",
+    "date": "2026-08-22",
+    "source": "news research pass"
    }
   ],
   "DU": [
@@ -656,6 +704,24 @@
     "headline": "-5.5% through the 50-day with no company announcement found; July 31 ex-dividend of AED 0.26 (~2.2%) does not explain it",
     "impact": "bearish",
     "date": "2026-08-18",
+    "source": "news research pass"
+   },
+   {
+    "headline": "Explained: fell 3.1% on Aug 18 as Iran fired two ballistic missiles at the UAE, then the DFM fell again on Aug 19 when the UAE halted all trade with Iran; not company-specific",
+    "impact": "bearish",
+    "date": "2026-08-22",
+    "source": "news research pass"
+   },
+   {
+    "headline": "Added to the MSCI UAE Standard and Emerging Markets indices in the August review, effective at the close of Aug 31 - a dated mechanical passive buy",
+    "impact": "bullish",
+    "date": "2026-08-22",
+    "source": "news research pass"
+   },
+   {
+    "headline": "TDRA renewed du's and e&'s public telecom licences for 20 years from Aug 9, 2026 to Aug 8, 2046, with no disclosed change to the royalty structure",
+    "impact": "bullish",
+    "date": "2026-08-22",
     "source": "news research pass"
    }
   ]
