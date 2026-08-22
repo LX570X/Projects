@@ -1,101 +1,23 @@
 {
- "generated_at_utc": "2026-08-21T07:12:26+00:00",
+ "generated_at_utc": "2026-08-22T07:08:53+00:00",
  "alerts": [
   {
-   "ticker": "ETHUSDT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "ETHUSDT: STRONG BUY -> BUY (score 45 -> 35)"
-  },
-  {
-   "ticker": "XRPUSDT",
-   "severity": "info",
-   "type": "signal_change",
-   "msg": "XRPUSDT: BUY -> HOLD (score 25 -> 5)"
-  },
-  {
-   "ticker": "XRPUSDT",
-   "severity": "info",
-   "type": "rsi",
-   "msg": "XRPUSDT: RSI crossed above 70 (now 79.9)"
-  },
-  {
    "ticker": "DOGEUSDT",
-   "severity": "info",
-   "type": "rsi",
-   "msg": "DOGEUSDT: RSI crossed above 70 (now 77.3)"
-  },
-  {
-   "ticker": "AVAXUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "AVAXUSDT: HOLD -> BUY (score 15 -> 30)"
+   "msg": "DOGEUSDT: HOLD -> BUY (score -15 -> 35)"
   },
   {
-   "ticker": "AVAXUSDT",
-   "severity": "info",
-   "type": "rsi",
-   "msg": "AVAXUSDT: RSI crossed above 70 (now 72.2)"
-  },
-  {
-   "ticker": "ADAUSDT",
+   "ticker": "DEWA",
    "severity": "actionable",
-   "type": "signal_change",
-   "msg": "ADAUSDT: BUY -> STRONG BUY (score 35 -> 45)"
+   "type": "trend",
+   "msg": "DEWA: price crossed below its 50-day average \u2014 trend change"
   },
   {
-   "ticker": "ADAUSDT",
+   "ticker": "DU",
    "severity": "info",
-   "type": "rsi",
-   "msg": "ADAUSDT: RSI crossed above 70 (now 70.2)"
-  },
-  {
-   "ticker": "ADAUSDT",
-   "severity": "info",
-   "type": "macd",
-   "msg": "ADAUSDT: MACD bullish cross"
-  },
-  {
-   "ticker": "LTCUSDT",
-   "severity": "info",
-   "type": "rsi",
-   "msg": "LTCUSDT: RSI crossed above 70 (now 70.2)"
-  },
-  {
-   "ticker": "DIB",
-   "severity": "info",
-   "type": "signal_change",
-   "msg": "DIB: SELL -> HOLD (score -25 -> -15)"
-  },
-  {
-   "ticker": "EMAARDEV",
-   "severity": "info",
-   "type": "macd",
-   "msg": "EMAARDEV: MACD bearish cross"
-  },
-  {
-   "ticker": "TECOM",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "TECOM: STRONG BUY -> BUY (score 60 -> 35)"
-  },
-  {
-   "ticker": "IHC",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "IHC: SELL -> STRONG SELL (score -35 -> -55)"
-  },
-  {
-   "ticker": "ADIB",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "ADIB: STRONG BUY -> BUY (score 50 -> 25)"
-  },
-  {
-   "ticker": "ADPORTS",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "ADPORTS: BUY -> STRONG BUY (score 35 -> 45)"
+   "type": "big_move",
+   "msg": "DU moved +3.0% in the last day (now 11.5 AED)"
   }
  ]
 }
