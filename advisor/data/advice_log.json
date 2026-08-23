@@ -669,6 +669,34 @@
    "action": "cutting the review cadence - the daily brief is over-servicing a book this size",
    "rationale": "The log's own histogram runs from 3 entries a day in mid-July to 5-6 a day this week, a run rate near 160 instructions a month against a confirmed book of one ETH line. Manufacturing more decisions than the user can execute is what produced the backlog of eleven unconfirmed instructions in the first place. The 3xATR rule was adopted precisely so 'leave it alone' is a computed output - but reviewing daily guarantees eventually overriding it, because a daily review exists to find something to do. Moving to a weekly full review plus event triggers: a stop or close-exit actually firing, or a dated event. Next dated events: Bessent presser Aug 24, US July PCE Wednesday Aug 26 (not Friday), Warsh's Jackson Hole keynote Friday Aug 28, du's MSCI inclusion at the close Aug 31, monthly DCA Sept 1, and the triple of CLARITY cloture, AD Ports offer close and FOMC on Sept 15-16.",
    "status": "adopted"
+  },
+  {
+   "date": "2026-08-23",
+   "ticker": "ENGINE",
+   "action": "BUG FIXED - a red day produced seven 'upgrades' to STRONG BUY",
+   "rationale": "Every crypto fell today, and the engine responded by upgrading five of them. The cause is mechanical: the score carries an RSI-overbought penalty (-20) and an above-upper-Bollinger penalty (-10), and a pullback relieves both without the trend, structure or momentum changing at all. Verified precisely - BTC, ETH and LINK all went BUY(35) -> STRONG BUY(45) while their core score, excluding stretch terms, stayed pinned at 65. ADA fell 7.7% and its score ROSE from 45 to 75, the highest in the book; AVAX fell 4.2% and rose from 35 to 65. Anyone reading the dashboard cold would have taken a seven-name upgrade sweep as new strength on a day the whole complex was red. Fix: the engine now tracks the stretch component separately and emits core_score alongside score, and any band change where the score moves but core_score does not is labelled in the alert itself - 'penalty relief only, trend/momentum unchanged'. Verified against today's data: the label fires correctly on all five.",
+   "status": "fixed and verified"
+  },
+  {
+   "date": "2026-08-23",
+   "ticker": "crypto-broad",
+   "action": "the unwind arrived, led by exactly what led the rally",
+   "rationale": "XRP -8.8%, ADA -7.7%, LINK -5.3%, AVAX -4.2%, DOGE -3.2%, SOL -2.6%, BNB -2.2%, ETH -2.0%, BTC -1.7%. The ranking is the mirror image of Friday: the junk that outran quality 10 to 1 on the way up gave back the most on the way down, which is the signature of a leverage unwind rather than a change in fundamentals - exactly what the leadership inversion flagged yesterday predicted. Nothing here is a reversal of trend: every one of these is still above its 50-day. No action, no new positions.",
+   "status": "no action"
+  },
+  {
+   "date": "2026-08-23",
+   "ticker": "RULES",
+   "action": "trail says SKIP on all three, and today the 'never lowered' clause is what matters",
+   "rationale": "ATR expanded again (ETH 93.13 -> 96.64, BTC 2,146.64 -> 2,225.92, LINK 0.61 -> 0.65), so with price down the raw 3xATR levels now sit BELOW the standing stops: ETH 2,102 vs 2,105, BTC 69,552 vs 70,700, LINK 9.30 vs 9.80. The rule's never-lowered clause holds all three where they are. This is the same defect noted yesterday seen from the other side - a volatility-scaled trail goes slack in both directions when ATR expands - and it reinforces that the amendment (a tighter multiplier when RSI is above 80 with ATR expanding, plus a give-back floor) is needed. It will still be switched on at a stated future close rather than retrofitted.",
+   "status": "no stop moved"
+  },
+  {
+   "date": "2026-08-23",
+   "ticker": "POSITIONS",
+   "action": "nothing triggered - all levels intact",
+   "rationale": "ETH 2,392.22 (+30.7% at $87.08 if untouched) is 12.0% above its 2,105 stop and above the 2,300 close-exit, so no count has begun. BTC 76,230 is 7.3% above 70,700. LINK 11.241 is 12.8% above 9.80. The end-state instruction stands unchanged: hold 0.0091 ETH - if you are already there, do nothing. Reconciliation still outstanding: four numbers from the Binance wallet overview (ETH, BTC, LINK, USDT). The declared default takes effect tomorrow, Monday Aug 24 - absent an answer the book is marked ETH 0.0364 confirmed, BTC and LINK unconfirmed, and the roughly $17 of previously reported BTC/LINK P&L is struck.",
+   "status": "awaiting reconciliation"
   }
  ]
 }

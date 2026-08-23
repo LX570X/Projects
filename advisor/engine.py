@@ -142,7 +142,8 @@ def analyze_precomputed(ticker, a):
     hi20, lo20 = p.get("hi20"), p.get("lo20")
 
     score = 0
-    why = []
+    stretch = 0   # RSI-extreme + Bollinger components, tracked so a band
+    why = []      # change caused only by stretch relief can be labelled
     if s50 is not None:
         if last > s50:
             score += 25; why.append(f"price above 50-day average ({s50:.4g}) — uptrend")
@@ -165,15 +166,15 @@ def analyze_precomputed(ticker, a):
             score -= 15; why.append("MACD momentum negative")
     if rsi is not None:
         if rsi < 30:
-            score += 20; why.append(f"RSI {rsi:.0f} oversold — bounce candidate")
+            score += 20; stretch += 20; why.append(f"RSI {rsi:.0f} oversold — bounce candidate")
         elif rsi > 70:
-            score -= 20; why.append(f"RSI {rsi:.0f} overbought — pullback risk")
+            score -= 20; stretch -= 20; why.append(f"RSI {rsi:.0f} overbought — pullback risk")
         else:
             why.append(f"RSI {rsi:.0f} neutral")
     if pct_b < 0:
-        score += 10; why.append("price below lower Bollinger band (stretched down)")
+        score += 10; stretch += 10; why.append("price below lower Bollinger band (stretched down)")
     elif pct_b > 1:
-        score -= 10; why.append("price above upper Bollinger band (stretched up)")
+        score -= 10; stretch -= 10; why.append("price above upper Bollinger band (stretched up)")
     tvr = p.get("tv_recommend")
     if tvr is not None:
         if tvr >= 0.3:
@@ -203,6 +204,7 @@ def analyze_precomputed(ticker, a):
         "atr14": atr14, "stop_suggest": stop,
         "target1": target1, "target2": target2,
         "hi52": hi52, "lo52": lo52, "hi20": hi20, "lo20": lo20,
+        "core_score": score - stretch,  # score excluding stretch penalties/bonuses
         "off_52w_high_pct": round((last / hi52 - 1) * 100, 2) if hi52 else None,
     }
 
@@ -243,7 +245,8 @@ def analyze(ticker, a):
     lo20 = min(closes[-20:])
 
     score = 0
-    why = []
+    stretch = 0   # RSI-extreme + Bollinger components, tracked so a band
+    why = []      # change caused only by stretch relief can be labelled
     if s50 is not None:
         if last > s50:
             score += 25; why.append(f"price above 50-day average ({s50:.4g}) — uptrend")
@@ -277,15 +280,15 @@ def analyze(ticker, a):
         score -= 10; why.append("fresh MACD bearish cross (last 3 days)")
     if rsi is not None:
         if rsi < 30:
-            score += 20; why.append(f"RSI {rsi:.0f} oversold — bounce candidate")
+            score += 20; stretch += 20; why.append(f"RSI {rsi:.0f} oversold — bounce candidate")
         elif rsi > 70:
-            score -= 20; why.append(f"RSI {rsi:.0f} overbought — pullback risk")
+            score -= 20; stretch -= 20; why.append(f"RSI {rsi:.0f} overbought — pullback risk")
         else:
             why.append(f"RSI {rsi:.0f} neutral")
     if pct_b < 0:
-        score += 10; why.append("price below lower Bollinger band (stretched down)")
+        score += 10; stretch += 10; why.append("price below lower Bollinger band (stretched down)")
     elif pct_b > 1:
-        score -= 10; why.append("price above upper Bollinger band (stretched up)")
+        score -= 10; stretch -= 10; why.append("price above upper Bollinger band (stretched up)")
 
     # Insufficient history => the trend components silently score nothing and the
     # asset lands on 0 = "HOLD", which reads as a confident neutral call. It isn't:
@@ -318,6 +321,7 @@ def analyze(ticker, a):
         "atr14": atr14, "stop_suggest": stop,
         "target1": target1, "target2": target2,
         "hi52": hi52, "lo52": lo52, "hi20": hi20, "lo20": lo20,
+        "core_score": score - stretch,  # score excluding stretch penalties/bonuses
         "hi52_bars": hi52_bars,
         # Do NOT call it a 52-week high unless the window really spans ~52 weeks.
         "off_52w_high_pct": (round((last / hi52 - 1) * 100, 2)
@@ -325,6 +329,24 @@ def analyze(ticker, a):
         "off_window_high_pct": round((last / hi52 - 1) * 100, 2) if hi52 else None,
     }
 
+
+
+def _stretch_note(prev, cur):
+    """Label an upgrade that is only the overbought penalty falling away.
+
+    A pullback from a stretched condition mechanically raises the score without
+    the trend, structure or momentum having improved at all — on 2026-08-23 a
+    red day across the board produced seven 'upgrades'. Say so in the alert
+    rather than letting it read as new strength.
+    """
+    pc, cc = prev.get("core_score"), cur.get("core_score")
+    if pc is None or cc is None:
+        return ""
+    if cur["score"] > prev["score"] and cc <= pc:
+        return " — penalty relief only, trend/momentum unchanged"
+    if cur["score"] < prev["score"] and cc >= pc:
+        return " — stretch penalty applied, trend/momentum unchanged"
+    return ""
 
 def resolve_states(prev_signals, signals):
     """Annotate signals with debounce state: trend_state uses a 0.5% buffer
@@ -366,7 +388,8 @@ def diff_alerts(prev_signals, signals):
             sev = "actionable" if ("BUY" in s["signal"] or "SELL" in s["signal"]) else "info"
             alerts.append({"ticker": s["ticker"], "severity": sev,
                            "type": "signal_change",
-                           "msg": f"{s['ticker']}: {p['signal']} -> {s['signal']} (score {p['score']} -> {s['score']})"})
+                           "msg": f"{s['ticker']}: {p['signal']} -> {s['signal']} (score {p['score']} -> {s['score']})"
+                                  + _stretch_note(p, s)})
         if p.get("rsi") is not None and s.get("rsi") is not None:
             for level, direction in [(30, "below"), (70, "above")]:
                 was = p["rsi"] < level if direction == "below" else p["rsi"] > level
