@@ -1,23 +1,47 @@
 {
- "generated_at_utc": "2026-08-22T07:08:53+00:00",
+ "generated_at_utc": "2026-08-23T07:09:15+00:00",
  "alerts": [
   {
-   "ticker": "DOGEUSDT",
+   "ticker": "BTCUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "DOGEUSDT: HOLD -> BUY (score -15 -> 35)"
+   "msg": "BTCUSDT: BUY -> STRONG BUY (score 35 -> 45)"
   },
   {
-   "ticker": "DEWA",
+   "ticker": "ETHUSDT",
    "severity": "actionable",
-   "type": "trend",
-   "msg": "DEWA: price crossed below its 50-day average \u2014 trend change"
+   "type": "signal_change",
+   "msg": "ETHUSDT: BUY -> STRONG BUY (score 35 -> 45)"
   },
   {
-   "ticker": "DU",
+   "ticker": "SOLUSDT",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "SOLUSDT: BUY -> STRONG BUY (score 35 -> 45)"
+  },
+  {
+   "ticker": "LINKUSDT",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "LINKUSDT: BUY -> STRONG BUY (score 35 -> 45)"
+  },
+  {
+   "ticker": "AVAXUSDT",
    "severity": "info",
    "type": "big_move",
-   "msg": "DU moved +3.0% in the last day (now 11.5 AED)"
+   "msg": "AVAXUSDT moved -4.2% in the last day (now 7.359 USD)"
+  },
+  {
+   "ticker": "AVAXUSDT",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "AVAXUSDT: BUY -> STRONG BUY (score 35 -> 65)"
+  },
+  {
+   "ticker": "LTCUSDT",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "LTCUSDT: BUY -> STRONG BUY (score 35 -> 65)"
   }
  ]
 }
