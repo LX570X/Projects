@@ -1,21 +1,21 @@
 {
- "updated": "2026-08-23T07:30+00:00",
+ "updated": "2026-08-24T07:50+00:00",
  "market_notes": [
   {
-   "market": "Crypto - the unwind",
-   "note": "The give-back arrived and it was led by exactly what led the advance: XRP -8.8%, ADA -7.7%, LINK -5.3%, AVAX -4.2%, DOGE -3.2%, against BTC -1.7% and ETH -2.0%. A mirror image of Friday's ranking is the signature of a leverage unwind, not a fundamental change, and it is what the leadership inversion flagged yesterday implied. Nothing broke: every watchlist crypto is still above its 50-day. BTC 76,230, ETH 2,392.22."
-  },
-  {
-   "market": "Engine correction",
-   "note": "IMPORTANT for reading the dashboard today: the engine upgraded five cryptos to STRONG BUY on a day when all of them fell. That is an artifact, not a signal. The score carries an RSI-overbought penalty of -20 and an above-upper-Bollinger penalty of -10; a pullback relieves both without trend, structure or momentum improving. BTC, ETH and LINK each went BUY(35) to STRONG BUY(45) while their core score excluding stretch terms stayed at 65; ADA fell 7.7% and its score rose 45 to 75. Fixed today: the engine now emits core_score alongside score, and any band change where score moves while core_score does not is labelled in the alert as 'penalty relief only, trend/momentum unchanged'."
+   "market": "Crypto - corrected causal picture",
+   "note": "The melt-up had THREE catalysts inside 24 hours, not one: the SEC proposed 'Regulation Crypto Assets' on Aug 18 (its first bespoke crypto offering regime after a decade of enforcement-by-guidance), the Treasury doubled long-end buybacks on Aug 19, and Trump pressed Congress on the CLARITY Act the same day. They have since diverged - the SEC rule is a live proposal, while CLARITY stalled with cloture deferred to September over ethics provisions, so part of the repricing discounts a bill that has not advanced. Flow correction: inflows did NOT simply halve - Aug 20 ($606m BTC / $221m ETH) was LARGER than Aug 19, only Aug 21 decelerated, and that print is disputed roughly 2:1. The week to Aug 21 was the largest weekly ETF inflow of 2026 at $2.6bn combined, the biggest BTC week since Oct 2025, with volume tripling to $22.1bn - though BTC ETFs remain about -$2.9bn net YTD, so one week clawed back two thirds of the year rather than reversing it."
   },
   {
    "market": "Positions",
-   "note": "Nothing triggered. ETH 2,392.22 is 12.0% above its 2,105 stop and above the 2,300 close-exit, so no exit count has begun; BTC 76,230 is 7.3% above 70,700; LINK 11.241 is 12.8% above 9.80. The 3xATR trail says SKIP on all three - and today the never-lowered clause is what matters, because ATR expanded again while price fell, putting the raw 3xATR levels BELOW the standing stops (ETH 2,102, BTC 69,552, LINK 9.30). The end-state instruction is unchanged: hold 0.0091 ETH. Reconciliation is still outstanding and the declared default takes effect Monday."
+   "note": "ETH 2,463.06 (+2.78%), $89.66, +34.6% - a new closing high for the holding period, though the move's intraday peak was nearer 2,520. It is 14.5% above the 2,105 stop and 7.1% above the 2,300 close-exit; note 2,300 is also the published analyst support, so that exit sits on a crowded level and would slip if it breaks. The 3xATR trail says SKIP on all three (BTC +0.10 ATR, ETH +0.61, LINK -0.28). BTC at 77,642 is NOT at a new high - it printed 79,200 and was rejected at 80,000 on Friday. Sunday's dip was bought fast because it was a long flush (~$400m, ~$220m of it longs) then a short squeeze in thin weekend liquidity: positioning, not information. Book reconciliation default applied today - CONFIRMED $89.66 (ETH), ADVISED-UNCONFIRMED $98.46 notional (BTC, LINK), never summed, ~$17 of previously reported P&L struck."
   },
   {
-   "market": "UAE equities",
-   "note": "Weekend - DFM and ADX are closed and today's stock prices repeat Friday's close, so there is no new information on any UAE name. The live items for the week ahead are dated rather than technical: du enters the MSCI UAE Standard and Emerging Markets indices at the close of Aug 31, and the L'IMAD/ADQ tender for AD Ports at AED 6.25 closes 3pm UAE on Sept 15 with no EGM in between. The Iran trade embargo imposed Aug 19 remains the dominant risk over Dubai trade and logistics names."
+   "market": "Week ahead - risk in a 72-hour window",
+   "note": "Bessent today is pre-trailed as a FISCAL CONSOLIDATION announcement rather than another buyback increase, and separately as further US measures against Iran and 'entities with commercial ties to Iran' - which makes it a UAE secondary-sanctions event as well as a macro one. Wednesday Aug 26 is four releases in one session: PCE plus personal income/spending, the Q2 GDP second estimate, preliminary July durable goods and August consumer confidence, into coupon supply. Consensus is headline 3.6% and core 3.3% unchanged - no disinflation progress at all - with a hot channel already flagged via July core PPI's 6.5% jump in portfolio management fees. Thursday: 7-year auction, symposium opens. Friday ~10:00 ET: Warsh's first keynote, base case deliberate non-delivery given he has curtailed forward guidance and has five internal task teams running a framework review. What supports crypto now is dollar weakness (DXY ~98.8, three-month low), not easing hope - the 30-year closed Friday at 5.273%, still above its pre-buyback level. The threatening scenario is a hot core plus a firm Warsh pushing yields and the dollar the same way. Caveat: open sources disagree violently on September FOMC pricing (85% cut vs 65% hike published days apart), so the '~64% no-change' figure reported here on Aug 21 is uncorroborated and should not carry weight."
+  },
+  {
+   "market": "UAE",
+   "note": "DU downgraded HOLD -> SELL despite rising 3.9%: price is still below its 50-day (11.87) and the 20-day converged to within 0.47%, withdrawing the structure score. The rise is explained by front-running of its MSCI UAE Standard and EM inclusion at the CLOSE of Aug 31 - a single closing-auction print, not sustained demand. Derived scale (not a broker estimate): free float ~27.7% of ~4.53bn shares, float cap ~$3.9bn, implying roughly $200-400m of mechanical demand, or 65-130m shares. The usual pattern is appreciation into the date then give-back, so the SELL is early rather than wrong. TECOM is DROPPED from the shortlist: sixth band change in twelve sessions is explained by a 13.5% free float (Dubai Holding holds 86.5%) plus an Aug 10 ex-dividend date that mechanically gapped the price - the indicator is measuring order flow, not information. The Iran embargo has neither been eased nor extended - it was indefinite by construction - and no UAE-listed issuer has yet filed a disclosure naming Iran exposure."
   }
  ],
  "asset_notes": {
@@ -175,6 +175,18 @@
     "impact": "bearish",
     "date": "2026-08-22",
     "source": "news research pass"
+   },
+   {
+    "headline": "Week to Aug 21 was 2026's largest ETF inflow week - $1.9bn BTC + $697m ETH, biggest BTC week since Oct 2025, volume tripled to $22.1bn - but BTC ETFs remain ~-$2.9bn net YTD",
+    "impact": "bullish",
+    "date": "2026-08-24",
+    "source": "news research pass"
+   },
+   {
+    "headline": "Rejected at $80,000 on Aug 21 after printing $79,200; $81-83k is the historical supply zone and a weekly close above $83k is the cited trigger for $90-95k",
+    "impact": "neutral",
+    "date": "2026-08-24",
+    "source": "news research pass"
    }
   ],
   "ETHUSDT": [
@@ -248,6 +260,12 @@
     "headline": "Next named resistance is a tight band at 2,431 / 2,438 / 2,500; documented liquidation clusters sit at 2,300 and 2,200",
     "impact": "neutral",
     "date": "2026-08-21",
+    "source": "news research pass"
+   },
+   {
+    "headline": "Resistance $2,500-2,520 then $2,600-2,700; support is the $2,300-2,350 breakout zone - the same level as the standing close-exit, making it a crowded stop",
+    "impact": "neutral",
+    "date": "2026-08-24",
     "source": "news research pass"
    }
   ],
@@ -338,6 +356,12 @@
     "headline": "~$17bn of market cap added on $11-13m of ETF inflow; Binance funding highest since Oct 2025 and perp OI at a two-month high - leverage, not money",
     "impact": "bearish",
     "date": "2026-08-22",
+    "source": "news research pass"
+   },
+   {
+    "headline": "CLARITY Act stalled: no Senate vote before recess, cloture deferred to September, blocked on government-ethics provisions and short of 60 votes",
+    "impact": "bearish",
+    "date": "2026-08-24",
     "source": "news research pass"
    }
   ],
@@ -718,6 +742,20 @@
     "headline": "TDRA renewed du's and e&'s public telecom licences for 20 years from Aug 9, 2026 to Aug 8, 2046, with no disclosed change to the royalty structure",
     "impact": "bullish",
     "date": "2026-08-22",
+    "source": "news research pass"
+   },
+   {
+    "headline": "MSCI UAE Standard / EM inclusion implements at the CLOSE of Aug 31; derived passive demand ~$200-400m (~65-130m shares) as a single auction print; front-running already visible",
+    "impact": "neutral",
+    "date": "2026-08-24",
+    "source": "news research pass"
+   }
+  ],
+  "TECOM": [
+   {
+    "headline": "Free float only 13.5% (Dubai Holding 86.5%) and an Aug 10 ex-dividend of AED 0.08 inside the window - the band churn is mechanical, not informational",
+    "impact": "neutral",
+    "date": "2026-08-24",
     "source": "news research pass"
    }
   ]

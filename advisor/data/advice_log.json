@@ -697,6 +697,51 @@
    "action": "nothing triggered - all levels intact",
    "rationale": "ETH 2,392.22 (+30.7% at $87.08 if untouched) is 12.0% above its 2,105 stop and above the 2,300 close-exit, so no count has begun. BTC 76,230 is 7.3% above 70,700. LINK 11.241 is 12.8% above 9.80. The end-state instruction stands unchanged: hold 0.0091 ETH - if you are already there, do nothing. Reconciliation still outstanding: four numbers from the Binance wallet overview (ETH, BTC, LINK, USDT). The declared default takes effect tomorrow, Monday Aug 24 - absent an answer the book is marked ETH 0.0364 confirmed, BTC and LINK unconfirmed, and the roughly $17 of previously reported BTC/LINK P&L is struck.",
    "status": "awaiting reconciliation"
+  },
+  {
+   "date": "2026-08-24",
+   "ticker": "BOOKKEEPING",
+   "action": "DEFAULT APPLIED - BTC and LINK marked unconfirmed, ~$17 of reported P&L struck",
+   "rationale": "The default declared on Aug 22 said that absent a reconciliation by Monday, the canonical book becomes ETH 0.0364 CONFIRMED with BTC and LINK UNCONFIRMED. No answer arrived, so it is applied as promised. The book now reads: CONFIRMED $89.66 (ETH only, +34.6%); ADVISED-UNCONFIRMED $98.46 notional (BTC 0.001058, LINK 1.406) with no P&L attached and never summed with the confirmed line. The previously reported BTC +$13.98 and LINK +$3.09 are struck from the record. The four numbers are still wanted whenever convenient - ETH, BTC, LINK, USDT from the Binance wallet overview - but nothing is now blocked on them, because every live rule is scale-invariant: 'stop at 2,105' and 'two closes below 2,300' mean the same thing at any position size, and a stop on a position that does not exist is a harmless no-op.",
+   "status": "default applied as declared"
+  },
+  {
+   "date": "2026-08-24",
+   "ticker": "CORRECTIONS",
+   "action": "three corrections to my own reporting from the past week",
+   "rationale": "(1) I said on Aug 22 that ETF inflows 'halved from $606m to $307.5m'. That was one-sided. The Aug 20 print of $606m BTC / $221m ETH was LARGER than Aug 19's $517m/$189m; only Aug 21 decelerated, and that figure is disputed roughly 2:1 - SoSoValue shows $307m while Lookonchain shows about $684m. More importantly the week to Aug 21 was the largest weekly ETF inflow of 2026: $1.9bn BTC plus $697m ETH, $2.6bn combined, the biggest BTC week since October 2025, with volume tripling to $22.1bn. The honest counterweight is that BTC ETFs are still about -$2.9bn in net outflows year to date, so one strong week has clawed back roughly two thirds of the year, not reversed it. (2) I attributed the melt-up mainly to the Treasury buyback. There were three catalysts inside 24 hours: the SEC proposed 'Regulation Crypto Assets' on Aug 18 - its first bespoke crypto offering regime after a decade of enforcement-by-guidance - the Treasury doubled buybacks on Aug 19, and Trump pressed Congress on the CLARITY Act the same day. Those legs have since diverged: the SEC rule is a live proposal, while CLARITY stalled with cloture deferred to September and ethics provisions blocking it. Part of the repricing is discounting a bill that has not advanced. (3) I wrote on Aug 21 that the September FOMC was '~64% priced no-change with year-end hike odds elevated'. That could not be corroborated - open sources published 85% cut, one-in-three hike and 65% hike within days of each other. No decision should lean on any of those numbers, including mine.",
+   "status": "corrections logged"
+  },
+  {
+   "date": "2026-08-24",
+   "ticker": "POSITIONS",
+   "action": "nothing changes - no stop moves, nothing bought",
+   "price": 2463.06,
+   "rationale": "ETH 2,463.06 (+2.78%), $89.66, +34.6% - a new high on a closing basis, though the move's intraday peak was nearer 2,520. It sits 14.5% above the 2,105 stop and 7.1% above the 2,300 close-exit. Worth knowing: 2,300 is also the published analyst support level for this move, so the exit sits on a crowded stop - if it breaks, expect slippage. The 3xATR trail says SKIP on all three: BTC +0.10 ATR, ETH +0.61, LINK -0.28, none clearing the 1-ATR gate. Instruction unchanged: hold 0.0091 ETH. Also correcting a detail: BTC at 77,642 is NOT at a new high - it printed 79,200 and was rejected at 80,000 on Friday. Sunday's dip was bought fast because it was a long flush (~$400m liquidated, ~$220m of it longs) followed by shorts re-entering thin weekend liquidity and being squeezed again. Positioning, not information.",
+   "status": "no action"
+  },
+  {
+   "date": "2026-08-24",
+   "ticker": "DU",
+   "action": "downgraded HOLD -> SELL despite rising 3.9% - keep the SELL, but know why",
+   "price": 11.6,
+   "rationale": "The downgrade looks contradictory and is not: price rose to 11.60 but the 20-day average converged to within 0.47% of the 50-day, so the +15 for bullish structure was withdrawn, and price is still below the 50-day (11.87). The rise itself is explained - du enters the MSCI UAE Standard and Emerging Markets indices at the close of Aug 31, and front-running is already visible. That inflow is a SINGLE CLOSING-AUCTION PRINT, not sustained demand. Derived scale, not a broker estimate: free float about 27.7% on roughly 4.53bn shares, float market cap near $3.9bn, implying $200-400m of mechanical demand, or roughly 65-130m shares. The standard pattern in these events is appreciation into the date and give-back after it, because the index funds buy on the day and the pre-positioners become the sellers from Sept 1. So the SELL rating is early rather than wrong. Not actionable either way - Al Ramz is still unopened.",
+   "status": "advice only - no position"
+  },
+  {
+   "date": "2026-08-24",
+   "ticker": "TECOM",
+   "action": "DROPPED from consideration - the indicator is measuring float, not information",
+   "price": 3.35,
+   "rationale": "Sixth signal-band change in twelve sessions, crossing below its 50-day today. The explanation is structural: TECOM's free float is 13.5%, with Dubai Holding Asset Management holding 86.5%. A name with that float will cross and re-cross a 50-day average on order flow that carries no information. On top of that, its ex-dividend date of Aug 10 (AED 0.08 per share, part of a pre-committed AED 880m two-instalment policy) falls inside the twelve-session window and mechanically gapped the price down - that alone can produce a 50-day cross with zero news content. There has been no company news since the Aug 5 H1 results. Removing TECOM from the UAE shortlist and from signal-driven consideration; it will still be tracked but its band changes will not be reported as signals.",
+   "status": "dropped from shortlist"
+  },
+  {
+   "date": "2026-08-24",
+   "ticker": "WEEK-AHEAD",
+   "action": "the week's risk is concentrated in a 72-hour window",
+   "rationale": "Today's Bessent press conference is pre-trailed as a FISCAL CONSOLIDATION announcement rather than another buyback increase - a different lever that cuts partly against the debasement bid driving this trade. It also carries a UAE angle: he said the US would announce further measures against Iran and against entities with commercial ties to Iran today, which makes it a secondary-sanctions event for Dubai trade, logistics and financial-intermediary names. Wednesday Aug 26 is not just PCE: it is PCE plus personal income and spending, the Q2 GDP second estimate, preliminary July durable goods and August consumer confidence, all in one session, into coupon supply. Consensus is headline 3.6% YoY and core 3.3% unchanged - i.e. no disinflation progress at all - and July core PPI already flagged a hot channel via a 6.5% jump in portfolio management fees. Thursday brings the 7-year auction and the symposium opening. Warsh speaks Friday around 10:00 ET, and the preview consensus is deliberate non-delivery: he has curtailed forward guidance, said the speech frames big questions rather than signalling, and has five internal task teams running a framework review. The scenario that would actually threaten the position is a hot core print plus a firm Warsh, pushing yields AND the dollar the same way - because what is currently supporting crypto is dollar weakness (DXY near 98.8, a three-month low) rather than easing hope, with the 30-year at 5.273%, still above its pre-buyback level. The pre-commitment stands: no discretionary action across Jackson Hole. Only the stops and the close-exit fire.",
+   "status": "no action"
   }
  ]
 }

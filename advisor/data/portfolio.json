@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-22T07:45+00:00",
+ "updated": "2026-08-24T07:35+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": 0,
@@ -22,12 +22,13 @@
    "target2": 2105.0,
    "plan": "Hold. If price closes below the stop, convert ALL to USDT (not another coin). At target 1, convert half to USDT and raise the stop to 1830 (entry). At target 2, take the rest.",
    "action_required": {
-    "as_of": "2026-08-22",
+    "as_of": "2026-08-24",
     "end_state": "hold 0.0091 ETH - if you are already there, do nothing",
     "cancelled": "the 2026-08-20 order to sell 0.0273 ETH at 2,258 is CANCELLED (spot 2,443.91 is 8.2% through it; repeating a delta risks double execution)",
     "stop": 2105.0,
     "close_exit": "two consecutive daily CLOSES below 2,300 -> exit the remainder at market",
-    "note": "Size not re-optimised for the better price. 0.0091 was set on Aug 20 and stays, and it is the only instruction identical under both fill branches."
+    "note": "ETH 2,463.06 is a new high for the holding period, 14.5% above the stop and 7.1% above the close-exit level. Size deliberately not re-optimised for the higher price.",
+    "unchanged_since": "2026-08-22"
    },
    "fill": {
     "state": "position confirmed by user 2026-07-17; the 2026-08-20 trim is UNCONFIRMED",
@@ -106,12 +107,12 @@
    }
   ],
   "satellite_candidate": {
-   "as_of": "2026-08-22",
+   "as_of": "2026-08-24",
    "ticker": "LINKUSDT",
    "fill": {
-    "state": "unconfirmed",
-    "as_of": "2026-08-22",
-    "evidence": "never reconciled against the exchange"
+    "state": "UNCONFIRMED - default applied 2026-08-24",
+    "as_of": "2026-08-24",
+    "evidence": "no reconciliation received"
    },
    "advised_order": {
     "aed": 50,
@@ -126,14 +127,14 @@
     "trigger": "pullback into 9.00-9.39",
     "status": "standing, ~21% below spot - leave it, do not chase"
    },
-   "note": "P&L deliberately NOT reported - fill unconfirmed. 3xATR gives 10.05 vs the standing 9.80, an improvement of 0.41 ATR, below the gate. The earlier '9.2% below its 52-week high' framing was WRONG - the true figure is -20.9%."
+   "note": "Marked unconfirmed per the declared default. Stop stays 9.80 (3xATR gives 9.62, which is LOWER - the never-lowered clause holds it). Second-half order at 9.00-9.39 stands, ~20% below spot."
   },
   "opportunity_status": {
-   "as_of": "2026-08-22",
+   "as_of": "2026-08-24",
    "fill": {
-    "state": "unconfirmed",
-    "as_of": "2026-08-22",
-    "evidence": "accumulations.opportunity_usdt_aed still reads 250 AED and cash.USDT reads 0 - the ledger asserts this deploy never happened"
+    "state": "UNCONFIRMED - default applied 2026-08-24",
+    "as_of": "2026-08-24",
+    "evidence": "no reconciliation received; accumulations.opportunity_usdt_aed still reads 250 AED and cash.USDT reads 0"
    },
    "advised_order": {
     "ticker": "BTCUSDT",
@@ -144,12 +145,15 @@
     "stop": 70700
    },
    "notional_now_usd": 82.05,
-   "note": "P&L deliberately NOT reported - fill unconfirmed. 3xATR trail gives 71,112 vs the standing 70,700, an improvement of 0.19 ATR, below the 1-ATR gate, so the stop does not move. IF THIS WAS NEVER EXECUTED: the 64,347 entry is 17% below spot - the trigger is dead, do NOT chase at 77,552."
+   "note": "Marked unconfirmed per the declared default. Stop stays 70,700 (3xATR gives 70,924, an improvement of 0.10 ATR - below the 1-ATR gate). IF NEVER EXECUTED: the 64,347 entry is 17% below spot; the trigger is dead, do NOT chase at 77,642."
   },
   "stock_shortlist_note": {
-   "as_of": "2026-08-17",
-   "note": "ADPORTS REMOVED from the core UAE stock shortlist - it is now a cash-takeover/merger-arb situation at AED 6.25 heading to a delisting, not a dividend blue chip to hold. Shortlist for when Al Ramz opens: the bank block (ADCB, ADIB +65; FAB, EAND, EMIRATESNBD +50), plus new watches TALABAT (+45, fresh 50-day cross) and ADNOCDRILL (+65).",
-   "cost_of_delay": "ADPORTS was STRONG BUY for 11 straight sessions from 5.03 (Aug 6) and is 5.86 today, +16.5%. A 1,200 AED tranche would have been ~238 shares, now ~1,397 AED (+197 AED)."
+   "as_of": "2026-08-24",
+   "note": "ADPORTS removed Aug 17 (merger-arb at AED 6.25, offer closes 3pm UAE Sept 15). TECOM removed Aug 24 - 13.5% free float makes its 50-day crosses order-flow noise, not information. Remaining shortlist for when Al Ramz opens: EAND (+65), ADNOCDRILL (+65), then the bank block (FAB, ADCB at +25, EMIRATESNBD +35, ADIB +25 - all cooling). DU is a SELL on structure but has a dated MSCI closing-auction bid on Aug 31.",
+   "dropped": [
+    "ADPORTS (takeover)",
+    "TECOM (float-driven noise)"
+   ]
   }
  },
  "trailing_stop_rule": {
@@ -173,10 +177,11 @@
   "why": "Repeating a delta into an unknown fill state risks double execution - repeating 'sell 0.0273' to a user who had already sold would have left 0.0023 ETH."
  },
  "reconciliation_request": {
-  "as_of": "2026-08-22",
-  "ask": "Open Binance -> Wallet -> Overview and send four numbers: ETH quantity, BTC quantity, LINK quantity, USDT balance.",
-  "why": "A state read, not an action recall. Resolves all three positions and the cash line at once.",
-  "silence_default": "No answer by Monday 2026-08-24: the canonical book becomes ETH 0.0364 CONFIRMED, BTC UNCONFIRMED, LINK UNCONFIRMED, and the ~$17 of reported BTC/LINK P&L is struck from the record."
+  "as_of": "2026-08-24",
+  "state": "DEFAULT APPLIED - no answer received by the declared Monday deadline",
+  "ask": "Still open: Binance -> Wallet -> Overview, send four numbers - ETH qty, BTC qty, LINK qty, USDT balance.",
+  "applied": "Canonical book is now ETH 0.0364 CONFIRMED; BTC and LINK UNCONFIRMED. The ~$17 of previously reported BTC/LINK P&L is struck from the record.",
+  "note": "The default was declared in advance on 2026-08-22 precisely so silence would resolve to a defined state instead of leaving the book ambiguous. Applying it as promised."
  },
  "event_calendar": [
   {
@@ -213,5 +218,36 @@
   "adopted": "2026-08-22",
   "rule": "weekly full review plus event triggers only (a stop or close-exit firing, or a dated calendar event)",
   "why": "a daily review of a one-line confirmed book manufactures more instructions than the user can execute - which is what created eleven unconfirmed instructions"
+ },
+ "book_summary": {
+  "as_of": "2026-08-24",
+  "confirmed": {
+   "lines": [
+    {
+     "ticker": "ETHUSDT",
+     "qty": 0.0364,
+     "value_usd": 89.66,
+     "pnl_pct": 34.6
+    }
+   ],
+   "total_usd": 89.66
+  },
+  "advised_unconfirmed": {
+   "lines": [
+    {
+     "ticker": "BTCUSDT",
+     "qty": 0.001058,
+     "notional_usd": 82.15
+    },
+    {
+     "ticker": "LINKUSDT",
+     "qty": 1.406,
+     "notional_usd": 16.31
+    }
+   ],
+   "total_notional_usd": 98.46,
+   "note": "NOTIONAL ONLY - no P&L is reported on these and they are never added to the confirmed total"
+  },
+  "struck": "BTC +$13.98 and LINK +$3.09 of previously reported P&L (about $17) removed from the record on 2026-08-24"
  }
 }
