@@ -1,47 +1,59 @@
 {
- "generated_at_utc": "2026-08-23T07:09:15+00:00",
+ "generated_at_utc": "2026-08-24T07:20:36+00:00",
  "alerts": [
   {
-   "ticker": "BTCUSDT",
+   "ticker": "BNBUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "BTCUSDT: BUY -> STRONG BUY (score 35 -> 45)"
+   "msg": "BNBUSDT: BUY -> STRONG BUY (score 35 -> 45)"
   },
   {
-   "ticker": "ETHUSDT",
+   "ticker": "XRPUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "ETHUSDT: BUY -> STRONG BUY (score 35 -> 45)"
+   "msg": "XRPUSDT: BUY -> STRONG BUY (score 20 -> 45)"
   },
   {
-   "ticker": "SOLUSDT",
+   "ticker": "DOGEUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "SOLUSDT: BUY -> STRONG BUY (score 35 -> 45)"
-  },
-  {
-   "ticker": "LINKUSDT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "LINKUSDT: BUY -> STRONG BUY (score 35 -> 45)"
-  },
-  {
-   "ticker": "AVAXUSDT",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "AVAXUSDT moved -4.2% in the last day (now 7.359 USD)"
-  },
-  {
-   "ticker": "AVAXUSDT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "AVAXUSDT: BUY -> STRONG BUY (score 35 -> 65)"
+   "msg": "DOGEUSDT: BUY -> STRONG BUY (score 35 -> 45)"
   },
   {
    "ticker": "LTCUSDT",
+   "severity": "info",
+   "type": "rsi",
+   "msg": "LTCUSDT: RSI crossed above 70 (now 74.3)"
+  },
+  {
+   "ticker": "DU",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "LTCUSDT: BUY -> STRONG BUY (score 35 -> 65)"
+   "msg": "DU: HOLD -> SELL (score -15 -> -30)"
+  },
+  {
+   "ticker": "TECOM",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "TECOM: BUY -> SELL (score 35 -> -25)"
+  },
+  {
+   "ticker": "TECOM",
+   "severity": "info",
+   "type": "macd",
+   "msg": "TECOM: MACD bearish cross"
+  },
+  {
+   "ticker": "TECOM",
+   "severity": "actionable",
+   "type": "trend",
+   "msg": "TECOM: price crossed below its 50-day average \u2014 trend change"
+  },
+  {
+   "ticker": "ADIB",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ADIB: STRONG BUY -> BUY (score 50 -> 25)"
   }
  ]
 }
