@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-24T07:35+00:00",
+ "updated": "2026-08-25T07:45+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": 0,
@@ -22,12 +22,12 @@
    "target2": 2105.0,
    "plan": "Hold. If price closes below the stop, convert ALL to USDT (not another coin). At target 1, convert half to USDT and raise the stop to 1830 (entry). At target 2, take the rest.",
    "action_required": {
-    "as_of": "2026-08-24",
+    "as_of": "2026-08-25",
     "end_state": "hold 0.0091 ETH - if you are already there, do nothing",
     "cancelled": "the 2026-08-20 order to sell 0.0273 ETH at 2,258 is CANCELLED (spot 2,443.91 is 8.2% through it; repeating a delta risks double execution)",
     "stop": 2105.0,
     "close_exit": "two consecutive daily CLOSES below 2,300 -> exit the remainder at market",
-    "note": "ETH 2,463.06 is a new high for the holding period, 14.5% above the stop and 7.1% above the close-exit level. Size deliberately not re-optimised for the higher price.",
+    "note": "ETH 2,508.37, +37.1%. 3xATR gives 2,194.90 - an improvement of +0.86 ATR, BELOW the 1-ATR gate, so the stop is deliberately NOT moved. The 2,300 close-exit is 8.3% away and fires before the stop; it is also the published breakout-zone floor.",
     "unchanged_since": "2026-08-22"
    },
    "fill": {
@@ -107,7 +107,7 @@
    }
   ],
   "satellite_candidate": {
-   "as_of": "2026-08-24",
+   "as_of": "2026-08-25",
    "ticker": "LINKUSDT",
    "fill": {
     "state": "UNCONFIRMED - default applied 2026-08-24",
@@ -121,16 +121,16 @@
     "entry": 9.681,
     "stop": 9.8
    },
-   "notional_now_usd": 16.7,
+   "notional_now_usd": 16.56,
    "second_half": {
     "aed": 50,
     "trigger": "pullback into 9.00-9.39",
     "status": "standing, ~21% below spot - leave it, do not chase"
    },
-   "note": "Marked unconfirmed per the declared default. Stop stays 9.80 (3xATR gives 9.62, which is LOWER - the never-lowered clause holds it). Second-half order at 9.00-9.39 stands, ~20% below spot."
+   "note": "No change: 3xATR improvement is -0.01 ATR. Since Aug 19 LINK is +21.6% against SOL's +33.4% - the choice cost 11.8pp and a stop-ratchet, and bought 1.19x beta versus SOL's 1.84x into two binary events. Second-half order at 9.00-9.39 still standing, ~21% below spot. Fill UNCONFIRMED."
   },
   "opportunity_status": {
-   "as_of": "2026-08-24",
+   "as_of": "2026-08-25",
    "fill": {
     "state": "UNCONFIRMED - default applied 2026-08-24",
     "as_of": "2026-08-24",
@@ -142,10 +142,10 @@
     "usd_cost": 68.07,
     "qty": 0.001058,
     "entry": 64347.38,
-    "stop": 70700
+    "stop": 73289.0
    },
-   "notional_now_usd": 82.05,
-   "note": "Marked unconfirmed per the declared default. Stop stays 70,700 (3xATR gives 70,924, an improvement of 0.10 ATR - below the 1-ATR gate). IF NEVER EXECUTED: the 64,347 entry is 17% below spot; the trigger is dead, do NOT chase at 77,642."
+   "notional_now_usd": 85.44,
+   "note": "STOP RAISED 70,700 -> 73,289 - the 3xATR rule fired on its own (+1.04 ATR, first trigger since adoption). Locks +13.90% vs entry, ~9.2% below spot, above the filled 70,000 gap and the 200-day MA near 69,000. Limit stated: 73,289 is below the 77,000 pivot and the True Market Mean ~75,800. Fill still UNCONFIRMED - no P&L reported."
   },
   "stock_shortlist_note": {
    "as_of": "2026-08-24",

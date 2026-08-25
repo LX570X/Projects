@@ -742,6 +742,54 @@
    "action": "the week's risk is concentrated in a 72-hour window",
    "rationale": "Today's Bessent press conference is pre-trailed as a FISCAL CONSOLIDATION announcement rather than another buyback increase - a different lever that cuts partly against the debasement bid driving this trade. It also carries a UAE angle: he said the US would announce further measures against Iran and against entities with commercial ties to Iran today, which makes it a secondary-sanctions event for Dubai trade, logistics and financial-intermediary names. Wednesday Aug 26 is not just PCE: it is PCE plus personal income and spending, the Q2 GDP second estimate, preliminary July durable goods and August consumer confidence, all in one session, into coupon supply. Consensus is headline 3.6% YoY and core 3.3% unchanged - i.e. no disinflation progress at all - and July core PPI already flagged a hot channel via a 6.5% jump in portfolio management fees. Thursday brings the 7-year auction and the symposium opening. Warsh speaks Friday around 10:00 ET, and the preview consensus is deliberate non-delivery: he has curtailed forward guidance, said the speech frames big questions rather than signalling, and has five internal task teams running a framework review. The scenario that would actually threaten the position is a hot core print plus a firm Warsh, pushing yields AND the dollar the same way - because what is currently supporting crypto is dollar weakness (DXY near 98.8, a three-month low) rather than easing hope, with the 30-year at 5.273%, still above its pre-buyback level. The pre-commitment stands: no discretionary action across Jackson Hole. Only the stops and the close-exit fire.",
    "status": "no action"
+  },
+  {
+   "date": "2026-08-25",
+   "ticker": "BTCUSDT",
+   "action": "STOP RAISED 70,700 -> 73,289 - the trailing rule fired on its own for the first time",
+   "price": 80754.84,
+   "entry": 64347.38,
+   "stop": 73289.0,
+   "rationale": "BTC +4.09% to 80,754.84 produced a 3xATR improvement of +1.04 ATR, just clearing the 1-ATR gate, so the stop ratchets to spot minus 3x ATR14 (80,754.84 - 7,465.80). This is the point of writing the rule down: it fired without me overriding anything, five days after I declined to override it when it produced an uncomfortable answer. Locked level rises from +9.87% to +13.90% above the 64,347 entry, roughly 9.2% below spot, and it sits above the filled 70,000 gap and the reclaimed 200-day MA near 69,000. Stated limit: 73,289 is BELOW the 77,000 pivot and the True Market Mean near 75,800, so losing either of those does not stop us out - that is the cost of a volatility-scaled trail and it is accepted deliberately.",
+   "status": "unconfirmed position - stop level updated"
+  },
+  {
+   "date": "2026-08-25",
+   "ticker": "ETHUSDT",
+   "action": "stop does NOT move - declining the ratchet openly",
+   "price": 2508.37,
+   "stop": 2105.0,
+   "rationale": "ETH 2,508.37 (+1.86%), $91.30, +37.1% - through the published 2,500-2,520 resistance on a sixth consecutive ETF inflow day. The 3xATR level is 2,194.90, an improvement of +0.86 ATR, below the 1-ATR gate, so 2,105 stands. Declining it openly rather than hand-tuning the only confirmed position because the tape feels good. The operative trigger is not the stop anyway: two consecutive daily closes below 2,300 is 8.3% away and fires well before 2,105 - and 2,300 is also the published breakout-zone floor, so rule and tape invalidate together. Note the flow caveat: ETH ETF inflows are decelerating, $116m on Aug 24 against $221m on Aug 20, and a net OUTFLOW day would be the first real warning.",
+   "status": "open, +37.1% - no change"
+  },
+  {
+   "date": "2026-08-25",
+   "ticker": "BTCUSDT-analysis",
+   "action": "the $80,000 break is a genuine reclaim, not a confirmed breakout",
+   "rationale": "Real enough not to fade, unconfirmed enough not to add. FOR: spot CVD swung from -$12.8m to +$275.5m and spot volume rose 154%, so there is a genuine spot bid rather than pure derivatives; BTC reclaimed the 200-day EMA and now trades above both the short-term-holder cost basis (~68,500) and the True Market Mean (~75,800), exiting the capitulation regime it was in all month; the week to Aug 24 drew $1.92bn of ETF inflows, the largest since October 2025. AGAINST: this is the third or fourth assault on 80,000 in five sessions and every prior one was faded, with still no DAILY close above it; the liquidation profile has flipped from short-driven to long-driven (65.8% of BTC futures liquidations are now longs); open interest rebuilt from ~$49bn to ~$58bn, an 18% leverage build into the highs, with funding positive in 88 of the last 90 windows; RSI 83.9 is the most overbought in nearly two years; and ETF flow is decelerating ($337.6m on Aug 24 versus $606.3m on Aug 20). No new catalyst since Aug 19 - and the Treasury buybacks that started this do not actually begin until Sept 9. One structural detail worth holding: 80,000-90,000 is a documented low-volume node, so travel is fast in BOTH directions and there is no shelf on the way back down.",
+   "status": "no action"
+  },
+  {
+   "date": "2026-08-25",
+   "ticker": "SOLUSDT",
+   "action": "honest accounting of declining SOL for LINK on Aug 19",
+   "price": 101.53,
+   "rationale": "SOL +6.97% through $100 to 101.53. Since the Aug 19 satellite decision SOL is +33.4% against LINK's +21.6% - the choice cost 11.8 percentage points, or about $1.61 on the advised (and still unconfirmed) 1.406 LINK notional. There is a second-order cost too: LINK's 3xATR improvement today is -0.01 ATR so its stop has never ratcheted, while SOL's higher beta would have cleared the gate comfortably. The choice cost a stop-ratchet as well as return. What it bought: LINK's RSI is 79.4 against SOL's 87.7, and its period beta is 1.19x against SOL's 1.84x - going into two binary events I have pre-committed not to react to, that is a defensible trade of upside for a third less downside beta. Also worth recording: SOL tagged 102.7 on Aug 22 and failed to hold, closing back near 94, so this is a second attempt at a zone that has rejected it repeatedly through 2026, and its futures tape is fragile - $5.25-5.8bn of open interest against only $1.88bn of spot volume.",
+   "status": "not taken - cost recorded"
+  },
+  {
+   "date": "2026-08-25",
+   "ticker": "UAE",
+   "action": "Iran sanctions landed and were absorbed; the du and AD Ports dates are unchanged",
+   "rationale": "Monday's Bessent announcement was 'Operation Economic Outcast' - roughly 60 entities, vessels and individuals designated across the UAE, Hong Kong, China, Singapore, Switzerland and Europe, with an explicit secondary-sanctions threat. Three UAE names were designated: Unique Oasis Shipping Services, Target Horizon Shipping and Good Luck Shipping - shipping and bunkering intermediaries, NOT banks, sovereigns or listed blue chips. The design was deliberately calibrated: major Chinese banks were spared and no UAE financial institution was designated. The bourses absorbed it rather than breaking. Two things to carry forward: this is explicitly a first tranche with more promised, so a later designation naming a UAE bank or a listed entity would flip the read-across hard; and there is precedent for the UAE regulator force-closing BOTH exchanges - it did so on March 2 and 3 this year after Iranian strikes - which is the single highest-impact tail risk over the du rebalance (Aug 31) and AD Ports tender (Sept 15) windows. NEW DETAIL on du: the MSCI deletions are in the SMALL CAP tier, not Standard - Taaleem Holdings and Deyaar Development both exit at the same Aug 31 close that du enters, so the DFM gets offsetting passive selling on the identical date. Still no published broker estimate of du's inflow exists; the Etisalat precedent of $360-460m is an analogy, not a du number, and must not be quoted as one. AD Ports: nothing new since Aug 21. The offer document still awaits final written SCA approval and the board circular recommending for or against has not been issued - minorities are being asked to tender into an offer their own board has not yet endorsed, which is part of what the ~3.6% spread is paying for.",
+   "status": "advice only - no position"
+  },
+  {
+   "date": "2026-08-25",
+   "ticker": "ENGINE",
+   "action": "the new stretch label worked in production, and GRAM became rateable",
+   "rationale": "Yesterday's fix produced its first live label: 'SOLUSDT: STRONG BUY -> BUY (score 45 -> 35) - stretch penalty applied, trend/momentum unchanged'. SOL rose 6.97% and was DOWNGRADED purely because RSI climbing to 87.7 applied the overbought penalty; its core score stayed at 65 throughout. Without the label that reads as deterioration on a +7% day. Separately, raising HISTORY_DAYS from 210 to 400 gave GRAM enough history to clear the 55-bar minimum, so it moved from INSUFFICIENT DATA to a rated BUY (+25) - it has been unrateable since the watchlist was built.",
+   "status": "working as intended"
   }
  ]
 }
