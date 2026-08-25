@@ -1,59 +1,41 @@
 {
- "generated_at_utc": "2026-08-24T07:20:36+00:00",
+ "generated_at_utc": "2026-08-25T07:10:37+00:00",
  "alerts": [
   {
-   "ticker": "BNBUSDT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "BNBUSDT: BUY -> STRONG BUY (score 35 -> 45)"
+   "ticker": "BTCUSDT",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "BTCUSDT moved +4.1% in the last day (now 80754.8 USD)"
   },
   {
-   "ticker": "XRPUSDT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "XRPUSDT: BUY -> STRONG BUY (score 20 -> 45)"
+   "ticker": "SOLUSDT",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "SOLUSDT moved +7.0% in the last day (now 101.53 USD)"
   },
   {
-   "ticker": "DOGEUSDT",
+   "ticker": "SOLUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "DOGEUSDT: BUY -> STRONG BUY (score 35 -> 45)"
+   "msg": "SOLUSDT: STRONG BUY -> BUY (score 45 -> 35) \u2014 stretch penalty applied, trend/momentum unchanged"
   },
   {
-   "ticker": "LTCUSDT",
+   "ticker": "ADAUSDT",
    "severity": "info",
    "type": "rsi",
-   "msg": "LTCUSDT: RSI crossed above 70 (now 74.3)"
+   "msg": "ADAUSDT: RSI crossed above 70 (now 70.7)"
   },
   {
-   "ticker": "DU",
+   "ticker": "GRAMUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "DU: HOLD -> SELL (score -15 -> -30)"
+   "msg": "GRAMUSDT: INSUFFICIENT DATA -> BUY (score 0 -> 25)"
   },
   {
-   "ticker": "TECOM",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "TECOM: BUY -> SELL (score 35 -> -25)"
-  },
-  {
-   "ticker": "TECOM",
+   "ticker": "EMIRATESNBD",
    "severity": "info",
    "type": "macd",
-   "msg": "TECOM: MACD bearish cross"
-  },
-  {
-   "ticker": "TECOM",
-   "severity": "actionable",
-   "type": "trend",
-   "msg": "TECOM: price crossed below its 50-day average \u2014 trend change"
-  },
-  {
-   "ticker": "ADIB",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "ADIB: STRONG BUY -> BUY (score 50 -> 25)"
+   "msg": "EMIRATESNBD: MACD bearish cross"
   }
  ]
 }
