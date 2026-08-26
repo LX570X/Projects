@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-25T07:45+00:00",
+ "updated": "2026-08-26T07:45+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": 0,
@@ -185,21 +185,17 @@
  },
  "event_calendar": [
   {
-   "date": "2026-08-24",
-   "event": "Bessent press conference"
-  },
-  {
    "date": "2026-08-26",
-   "event": "US July PCE (corrected - Wednesday, not Friday)"
+   "event": "US July PCE + Q2 GDP 2nd estimate + durable goods + consumer confidence (8:30am ET, after today's snapshot)"
   },
   {
    "date": "2026-08-28",
-   "event": "Warsh's first Jackson Hole keynote; topic 'Financial Innovation: Implications for Payments and Policy'",
-   "policy": "pre-committed: no discretionary action across it. Only stops and close-exits fire."
+   "event": "Warsh's first Jackson Hole keynote ~10:00 ET; symposium theme 'Financial Innovation: Implications for Payments and Policy' carries crypto-specific headline risk",
+   "note": "UAE markets are CLOSED - Mawlid holiday moved to this date"
   },
   {
    "date": "2026-08-31",
-   "event": "du enters the MSCI UAE Standard / EM indices at the close - dated mechanical passive buy"
+   "event": "UAE reopens after a two-day gap AND du enters the MSCI UAE Standard / EM indices at the close; Taaleem and Deyaar exit the small-cap index same day"
   },
   {
    "date": "2026-09-01",
@@ -207,11 +203,11 @@
   },
   {
    "date": "2026-09-09",
-   "event": "Treasury long-end buyback operations actually BEGIN (the market front-ran this by three weeks)"
+   "event": "Treasury long-end buyback doubling actually takes effect - the flow the market front-ran"
   },
   {
    "date": "2026-09-15",
-   "event": "CLARITY Act cloture motion + AD Ports offer closes 3pm UAE + FOMC 09-15/16"
+   "event": "AD Ports tender closes 3pm UAE; CLARITY cloture motion; FOMC 09-15/16 with a live HIKE debate (~33-40% odds)"
   }
  ],
  "review_cadence": {

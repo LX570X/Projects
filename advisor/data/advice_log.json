@@ -790,6 +790,58 @@
    "action": "the new stretch label worked in production, and GRAM became rateable",
    "rationale": "Yesterday's fix produced its first live label: 'SOLUSDT: STRONG BUY -> BUY (score 45 -> 35) - stretch penalty applied, trend/momentum unchanged'. SOL rose 6.97% and was DOWNGRADED purely because RSI climbing to 87.7 applied the overbought penalty; its core score stayed at 65 throughout. Without the label that reads as deterioration on a +7% day. Separately, raising HISTORY_DAYS from 210 to 400 gave GRAM enough history to clear the 55-bar minimum, so it moved from INSUFFICIENT DATA to a rated BUY (+25) - it has been unrateable since the watchlist was built.",
    "status": "working as intended"
+  },
+  {
+   "date": "2026-08-26",
+   "ticker": "POSITIONS",
+   "action": "nothing triggered, no stop moves, no action",
+   "price": 2465.05,
+   "rationale": "ETH 2,465.05 (-1.71%), $89.73, +34.7% - stop 2,105 is 14.6% below spot and locks +15.05%; the 2,300 close-exit is 7.2% below and has not begun a count. BTC 78,998.72 (-2.14%), stop 73,289, 7.2% below spot, locking +13.90%. LINK 11.364 (-3.47%), stop 9.80, 13.8% below spot, locking only +1.23%. All three 3xATR candidates were negative or inside the 1-ATR gate (ETH +0.35, BTC -0.75, LINK -0.73), so none were eligible - the never-lowered clause holds all three where they are.",
+   "status": "no action"
+  },
+  {
+   "date": "2026-08-26",
+   "ticker": "BTCUSDT",
+   "action": "CORRECTING YESTERDAY - the leverage read was backwards",
+   "price": 78998.72,
+   "rationale": "Yesterday I said open interest had 'rebuilt from ~$49bn to ~$58bn, an 18% leverage build into the highs' and treated that as a crowded long about to be flushed. That was a USD-notional artifact: notional rose because price rose about 25%. Coin-denominated BTC futures open interest actually FELL to a five-month low of 587,584 BTC on Aug 25, down from 645,760 on Aug 14. Real leveraged exposure collapsed - the move from 62k to 81k was short covering and forced liquidation, not new long leverage. Funding corroborates: a 20-month high in relative terms but only ~+0.0089% per 8h (~9.7% annualised) against a ~0.03% crowding threshold, so 'positive in 88 of 90 windows' is true and magnitude-trivial. Today's $620m of liquidations had longs only slightly exceeding shorts, versus a 65.8% long share yesterday - a two-way trim, not a capitulation. Second correction: the ceiling is not the round number. Tuesday's ~81,250 peak landed almost exactly on the 50-week moving average at ~81,085, and the 50-week EMA support sits at ~78,000, essentially at spot. BTC is pinned between two real technical levels into the data, not failing a psychological one. Net effect: yesterday's conclusion ('a reclaim, not a breakout') was right, but partly for the wrong reason. The caution still stands - the reason to hold it is now Friday's event risk, not positioning.",
+   "status": "correction logged"
+  },
+  {
+   "date": "2026-08-26",
+   "ticker": "crypto-broad",
+   "action": "the decline is ranked by quality - give-back, not distribution",
+   "rationale": "ADA -6.44%, DOGE -6.11%, XRP -4.70%, SOL -4.61%, LTC -3.87%, LINK -3.47%, AVAX -2.86%, BTC -2.14%, BNB -2.05%, ETH -1.71%. That ordering is almost exactly the ranking of the week's winners in reverse, and weekly gains remain intact (BTC +23%, ETH +29%, XRP +45%). Profit-taking and de-risking into a data day, not distribution - distribution usually hits the majors hardest. Two genuinely new datapoints cut opposite ways: CryptoQuant's Bull Score jumped 30 to 80, its highest since October 2025, with spot and futures demand expanding together for the first time in ten months; against that, new whales realised over $1.2bn of profit in three days - the largest ever for that cohort - and CryptoQuant flags little whale participation above $80,000, meaning the marginal buyer up here is the ETF alone. ETF flows did NOT confirm the deceleration thesis: BTC took $314.3m on Aug 25 against $337.6m on Aug 24, flat rather than fading, with IBIT at 90% of net.",
+   "status": "no action"
+  },
+  {
+   "date": "2026-08-26",
+   "ticker": "MACRO",
+   "action": "the asymmetry is hawkish and the buyback has not happened yet",
+   "rationale": "Two things worth holding through Friday. First, the September FOMC debate is about a HIKE, not a cut - roughly 33-40% odds on CME FedWatch, with three regional presidents (Hammack, Kashkari, Logan) having already dissented in favour of one, the most hawkish split since September 2016, and the 30-year at a 19-year high above 5.3%, meaning the buyback failed at its own stated objective of taming yields. Second, and this is the durability caveat: the buyback doubling that caused this entire rally is not effective until SEPTEMBER 9. The market has front-run a flow that has not yet occurred. On Warsh, nothing has leaked and no advance text exists; 69% of fund managers expect a neutral tone, which is precisely what makes any surprise expensive. One channel that is easy to miss: the symposium theme is 'Financial Innovation: Implications for Payments and Policy', with scheduled sessions on stablecoin systemic risk and programmable money - so Friday carries crypto-specific headline risk independent of the rates message.",
+   "status": "no action - pre-commitment holds"
+  },
+  {
+   "date": "2026-08-26",
+   "ticker": "UAE-CALENDAR",
+   "action": "the UAE is SHUT on Warsh day and reopens straight into the MSCI rebalance",
+   "rationale": "The UAE moved the Mawlid Al Nabawi public holiday off its religious date of Aug 25 onto FRIDAY Aug 28. DFM and ADX therefore trade today and tomorrow, are closed for Warsh's keynote, and reopen only on Monday Aug 31 - which is also the MSCI implementation close. One UAE session has to absorb both a two-day Warsh and PCE reaction gap and the index rebalance. Correcting yesterday's framing on the deletions: Taaleem Holdings and Deyaar Development do both exit at the same Aug 31 close, but from the SMALL CAP index, not as offsetting Standard-index deletions against du - so du's Standard-index demand is unoffset one-way, and the Taaleem/Deyaar flow is a separate, smaller small-cap outflow. Still no published broker estimate of du's inflow exists; any specific figure should be treated as fabricated until a primary research note appears.",
+   "status": "advice only - no position"
+  },
+  {
+   "date": "2026-08-26",
+   "ticker": "ADPORTS",
+   "action": "the regulatory gate is already cleared - the missing piece is the board circular",
+   "price": 6.04,
+   "rationale": "Correcting an open question I had been carrying: the SCA issued its no-objection on Aug 12 and approved the offer document, which was published Aug 18 when the offer period opened. That gate is closed, not pending. What is still outstanding is the board circular carrying a for-or-against recommendation and a fairness opinion - the board met Aug 21 and appointed HSBC Bank Middle East as financial adviser, but five days later no recommendation has been published, with 20 days left on the clock to the 3pm Sept 15 close. Minorities are still being asked to tender into an offer their own board has not endorsed, and that is a material part of what the ~3.5% spread is paying for.",
+   "status": "tracking only"
+  },
+  {
+   "date": "2026-08-26",
+   "ticker": "SANCTIONS-CRYPTO",
+   "action": "digital assets named a sanctionable Iranian sector - a structural headline risk for the crypto book",
+   "rationale": "Monday's 'Operation Economic Outcast' did something that reaches the crypto side of this book, not just the UAE side: it designated DIGITAL ASSETS as a sanctionable sector of the Iranian economy under EO 13902 for the first time - one of five sectoral determinations alongside technology, gold, aviation and shipping - and OFAC listed specific crypto wallet addresses tied to the IRGC-Qods Force. UAE entities were named too: Tiany Technology Limited (DMCC Dubai) and Ivan Obukhov, a UAE-based broker who processed over $100m in crypto payments for Iranian oil sales since 2023. No new tranche has landed since Monday, but Treasury has said every country has been given a defined timeline, so further tranches should be treated as scheduled rather than speculative. This does not change any position or level; it is recorded as a standing headline risk that was not previously in the frame.",
+   "status": "no action - risk recorded"
   }
  ]
 }

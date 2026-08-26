@@ -1,21 +1,25 @@
 {
- "updated": "2026-08-25T07:45+00:00",
+ "updated": "2026-08-26T07:45+00:00",
  "market_notes": [
   {
-   "market": "Crypto - the $80,000 break",
-   "note": "BTC +4.09% to 80,754.84, above $80,000 for the first time since mid-May (~113 days). A genuine reclaim but NOT a confirmed breakout: it is the third or fourth assault on the level in five sessions and every prior one was faded, with still no DAILY close above it. For the break: spot CVD swung from -$12.8m to +$275.5m with spot volume +154%, so there is a real spot bid; BTC reclaimed the 200-day EMA and trades above both the short-term-holder cost basis (~68,500) and the True Market Mean (~75,800), exiting the capitulation regime it sat in all month; the week to Aug 24 drew $1.92bn of ETF inflows, the largest since Oct 2025. Against it: the liquidation profile has FLIPPED from short-driven to long-driven (65.8% of BTC futures liquidations are longs), open interest rebuilt ~$49bn to ~$58bn, funding has been positive in 88 of the last 90 windows, RSI 83.9 is the most overbought in nearly two years, and ETF flow is decelerating ($337.6m Aug 24 vs $606.3m Aug 20). No new catalyst since Aug 19, and the Treasury buybacks that started this do not begin until Sept 9. Structural note: 80,000-90,000 is a documented low-volume node, so travel is fast in both directions with no shelf on the way back down."
+   "market": "Crypto - the leverage read inverted",
+   "note": "Correcting yesterday: the '$49bn -> $58bn open-interest rebuild' was a USD-notional artifact of a 25% price rise. Coin-denominated BTC futures open interest actually FELL to a five-month low of 587,584 BTC on Aug 25, from 645,760 on Aug 14 - real leveraged exposure collapsed, so the 62k-to-81k move was short covering, not new long leverage. Funding is at a 20-month relative high but only ~+0.0089%/8h (~9.7% annualised) against a ~0.03% crowding threshold. Today's $620m of liquidations split roughly evenly, versus 65.8% long share yesterday. Also: the ceiling is the 50-week moving average at ~81,085, which Tuesday's ~81,250 peak hit almost exactly - not the round number - with 50-week EMA support at ~78,000, essentially at spot 78,998.72. Yesterday's conclusion (a reclaim, not a breakout) was right; the reason to stay cautious is now Friday's event risk rather than positioning."
   },
   {
    "market": "Positions",
-   "note": "The 3xATR trailing rule fired for the first time since adoption: BTC's stop ratchets 70,700 to 73,289 on a +1.04 ATR improvement, locking +13.90% versus the 64,347 entry. It fired on its own, five days after it was honoured when it produced an uncomfortable answer. ETH's stop deliberately does NOT move - +0.86 ATR is below the gate - and that is being declined openly rather than hand-tuned. ETH 2,508.37, $91.30, +37.1%, through the published 2,500-2,520 resistance on a sixth straight ETF inflow day, though ETH flows are decelerating ($116m Aug 24 vs $221m Aug 20). The operative ETH trigger remains two consecutive daily closes below 2,300, 8.3% away, which fires before the 2,105 stop and coincides with the published breakout-zone floor."
+   "note": "Nothing triggered, no stop moves, no action. ETH 2,465.05, $89.73, +34.7%; stop 2,105 is 14.6% below spot locking +15.05%, and the 2,300 close-exit is 7.2% below with no count begun. BTC 78,998.72, stop 73,289, 7.2% below spot, locking +13.90% - correctly placed BELOW the dense 75,000-76,500 confluence (200-day EMA and True Market Mean ~75,800, range low 76,000, hawkish-Warsh target 75,500) and just under 73,500. LINK 11.364, stop 9.80, locking only +1.23% - the weakest leg on merits but the smallest notional. All three 3xATR candidates were negative or inside the gate (ETH +0.35, BTC -0.75, LINK -0.73)."
   },
   {
-   "market": "Satellite - the SOL cost",
-   "note": "SOL +6.97% through $100 to 101.53 with RSI 87.7. Since the Aug 19 satellite decision SOL is +33.4% against LINK's +21.6%: the choice cost 11.8 percentage points, about $1.61 on the unconfirmed 1.406 LINK notional, plus a stop-ratchet LINK's -0.01 ATR never earned. What it bought is 1.19x beta against SOL's 1.84x into two binary events we have pre-committed not to react to. Worth noting SOL tagged 102.7 on Aug 22 and failed to hold it, closing back near 94 - this is a second attempt at a zone that rejected it repeatedly through 2026, on a fragile futures-led tape ($5.25-5.8bn open interest against $1.88bn of spot volume)."
+   "market": "Macro - hawkish asymmetry",
+   "note": "The September FOMC debate is about a HIKE, not a cut: roughly 33-40% odds on CME FedWatch, with Hammack, Kashkari and Logan having already dissented in favour of one - the most hawkish split since September 2016 - and the 30-year at a 19-year high above 5.3%, meaning the buyback failed at its stated objective. The durability caveat: the buyback doubling that caused this rally is not effective until SEPTEMBER 9, so the market has front-run a flow that has not occurred. Nothing has leaked on Warsh and no advance text exists; 69% of fund managers expect a neutral tone, which is what makes a surprise expensive. And the symposium theme - 'Financial Innovation: Implications for Payments and Policy', with sessions on stablecoin systemic risk - means Friday carries crypto-specific headline risk independent of rates."
   },
   {
-   "market": "UAE",
-   "note": "Monday's US action was 'Operation Economic Outcast' - roughly 60 entities, vessels and individuals designated across the UAE, Hong Kong, China, Singapore, Switzerland and Europe, with an explicit secondary-sanctions threat. Three UAE names were hit - Unique Oasis Shipping Services, Target Horizon Shipping and Good Luck Shipping - all shipping and bunkering intermediaries, not banks, sovereigns or listed blue chips. Major Chinese banks were spared and no UAE financial institution was designated, and the bourses absorbed it. Two forward risks: this is explicitly a first tranche, so a later designation naming a UAE bank or listed entity would flip the read-across; and there is precedent for the regulator force-closing BOTH exchanges (March 2-3 this year), which is the highest-impact tail over the du rebalance and AD Ports tender windows. New detail on du: the MSCI deletions sit in the SMALL CAP tier - Taaleem Holdings and Deyaar Development both exit at the same Aug 31 close du enters, so the DFM gets offsetting passive selling that day. No published broker estimate of du's inflow exists; the Etisalat precedent of $360-460m is an analogy, not a du figure. AD Ports: nothing new since Aug 21 - the offer document still awaits final written SCA approval and the board circular has not been issued, which is part of what the ~3.6% spread pays for."
+   "market": "UAE - calendar and dates",
+   "note": "The UAE moved the Mawlid holiday off Aug 25 onto FRIDAY Aug 28, so DFM and ADX are CLOSED for Warsh's keynote and reopen only on Monday Aug 31 - the same session as the MSCI implementation close. One session must absorb both a two-day event gap and the rebalance. Correction: Taaleem and Deyaar are deletions from the SMALL CAP index, not offsetting Standard-index deletions, so du's Standard addition is unoffset one-way demand. No published broker estimate of du's inflow exists. AD Ports: the SCA gate is already CLEARED (no-objection Aug 12, offer document published Aug 18) - what is still missing is the board circular with a for/against recommendation, five days after the board met and appointed HSBC, with 20 days to the 3pm Sept 15 close."
+  },
+  {
+   "market": "Sanctions - now touches the crypto book",
+   "note": "Monday's Operation Economic Outcast designated DIGITAL ASSETS as a sanctionable sector of the Iranian economy under EO 13902 for the first time - one of five sectoral determinations - and OFAC listed IRGC-Qods Force-linked crypto wallet addresses. UAE entities named included Tiany Technology Limited (DMCC Dubai) and Ivan Obukhov, a UAE-based broker who processed over $100m in crypto payments for Iranian oil since 2023. No new tranche since Monday, but Treasury says every country has a defined timeline, so further tranches are scheduled rather than speculative. Standing headline risk; no position or level changes."
   }
  ],
  "asset_notes": {
@@ -205,6 +209,30 @@
     "impact": "bullish",
     "date": "2026-08-25",
     "source": "news research pass"
+   },
+   {
+    "headline": "Coin-denominated futures open interest fell to a 5-month low of 587,584 BTC - the rally was short covering, not long building; yesterday's USD-notional 'leverage rebuild' read was an artifact",
+    "impact": "bullish",
+    "date": "2026-08-26",
+    "source": "news research pass"
+   },
+   {
+    "headline": "Rejected at the 50-week moving average (~81,085), not the round $80,000; 50-week EMA support ~78,000 sits essentially at spot",
+    "impact": "neutral",
+    "date": "2026-08-26",
+    "source": "news research pass"
+   },
+   {
+    "headline": "New whales realised >$1.2bn of profit in three days, the largest ever for that cohort, with little whale participation above $80,000 - the marginal buyer is the ETF alone",
+    "impact": "bearish",
+    "date": "2026-08-26",
+    "source": "news research pass"
+   },
+   {
+    "headline": "CryptoQuant Bull Score jumped 30 to 80, highest since Oct 2025, with spot and futures demand expanding together for the first time in ten months",
+    "impact": "bullish",
+    "date": "2026-08-26",
+    "source": "news research pass"
    }
   ],
   "ETHUSDT": [
@@ -290,6 +318,12 @@
     "headline": "Through the published 2,500-2,520 resistance on a sixth straight ETF inflow day, though flows are decelerating ($116m Aug 24 vs $221m Aug 20)",
     "impact": "neutral",
     "date": "2026-08-25",
+    "source": "news research pass"
+   },
+   {
+    "headline": "ETH ETFs took $697.2m in the week to Aug 21, 2026's largest weekly intake; level geography is first support 2,356, 200-day EMA 2,136 - the 2,300 exit fires before structure breaks",
+    "impact": "neutral",
+    "date": "2026-08-26",
     "source": "news research pass"
    }
   ],
@@ -753,6 +787,12 @@
     "impact": "neutral",
     "date": "2026-08-25",
     "source": "news research pass"
+   },
+   {
+    "headline": "SCA no-objection issued Aug 12 and offer document published Aug 18 - the regulatory gate is cleared; the board circular with a for/against recommendation is still outstanding",
+    "impact": "neutral",
+    "date": "2026-08-26",
+    "source": "news research pass"
    }
   ],
   "DU": [
@@ -790,6 +830,12 @@
     "headline": "MSCI deletions are in the SMALL CAP tier: Taaleem Holdings and Deyaar Development both exit at the same Aug 31 close du enters",
     "impact": "neutral",
     "date": "2026-08-25",
+    "source": "news research pass"
+   },
+   {
+    "headline": "Taaleem and Deyaar are SMALL CAP index deletions, not offsetting Standard-index deletions - du's addition is unoffset one-way passive demand",
+    "impact": "bullish",
+    "date": "2026-08-26",
     "source": "news research pass"
    }
   ],
