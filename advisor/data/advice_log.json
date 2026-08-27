@@ -842,6 +842,51 @@
    "action": "digital assets named a sanctionable Iranian sector - a structural headline risk for the crypto book",
    "rationale": "Monday's 'Operation Economic Outcast' did something that reaches the crypto side of this book, not just the UAE side: it designated DIGITAL ASSETS as a sanctionable sector of the Iranian economy under EO 13902 for the first time - one of five sectoral determinations alongside technology, gold, aviation and shipping - and OFAC listed specific crypto wallet addresses tied to the IRGC-Qods Force. UAE entities were named too: Tiany Technology Limited (DMCC Dubai) and Ivan Obukhov, a UAE-based broker who processed over $100m in crypto payments for Iranian oil sales since 2023. No new tranche has landed since Monday, but Treasury has said every country has been given a defined timeline, so further tranches should be treated as scheduled rather than speculative. This does not change any position or level; it is recorded as a standing headline risk that was not previously in the frame.",
    "status": "no action - risk recorded"
+  },
+  {
+   "date": "2026-08-27",
+   "ticker": "POSITIONS",
+   "action": "nothing triggered, no stop moves, no action",
+   "price": 2491.44,
+   "rationale": "ETH 2,491.44 (+1.07%), $90.69, +36.2% - stop 2,105 is 15.5% below spot and locks +15.05%; the 2,300 close-exit is 8.3% below with no count begun. BTC 78,790.59 (-0.27%), stop 73,289, 7.0% below spot, locking +13.90%. LINK 11.623 (+2.28%), stop 9.80, 15.7% below, locking +1.23%. All three 3xATR candidates were inside the gate (ETH +0.50, BTC -0.82, LINK -0.42), so nothing was eligible. Last full session before Warsh; UAE markets are shut tomorrow.",
+   "status": "no action"
+  },
+  {
+   "date": "2026-08-27",
+   "ticker": "MACRO",
+   "action": "July PCE printed and it SPLIT - it did not decide September, which raises the stakes for tomorrow",
+   "rationale": "Core PCE landed exactly in line: +0.2% MoM, 3.3% YoY, unchanged from June - no core upside surprise, which removes the catalyst that would have forced a September hike into the price. Headline was the hot half: +0.2% MoM against +0.1% expected and 3.7% YoY against 3.6%. CORRECTION TO MY OWN BRIEF: I carried consensus core at ~0.3% MoM; sources put both consensus and print at 0.2%, so this reads as in line rather than a downside surprise. One outlier source says 0.3% against five saying 0.2% - about 85% confidence on the figure. Also correcting a date: consumer confidence printed Tuesday Aug 25, not Wednesday, and it was weak - 89.4, a seven-month low, with the Expectations Index at 68.2, below the 80 level historically associated with recession within a year. The growth side deteriorated on the same slate: income +0.4% but spending only +0.2%, goods spending outright negative at -$49.9bn, and the saving rate up to 3.0% from 2.6%. September hike odds barely moved, ~40% to ~38% - inside noise. Markets shrugged: S&P -0.04%, 2-year +4bp to 4.23%, 10-year +1.7bp to 4.67%, dollar firm, gold sharply lower. BTC closed -0.6% and HELD its 50-week EMA at ~78,000 through the print, which was the specific level at risk. ETH decoupled upward, +2.5%.",
+   "status": "no action"
+  },
+  {
+   "date": "2026-08-27",
+   "ticker": "WARSH",
+   "action": "the question changed shape - it is now about the long end, not hike-or-hold",
+   "rationale": "Because the data decided nothing, tomorrow carries more weight, not less. The sell-side framing shifted this week from 'what does he say about rates' to 'does he acknowledge the long end and the Bessent intervention at all'. The tell: if he discusses government borrowing costs or term premium, the bond selloff has his attention; if he stays purely on short rates, he is treating the long end as Treasury's problem. A new hawkish tail has appeared that was not in the frame - the argument that the Fed leans MORE hawkish to help contain the 30-year, given 77% of surveyed respondents think Bessent's yield suppression fails. Positioning remains overwhelmingly for neutral: 69% of fund managers expect a neutral tone and 45% expect no rate guidance at all, which is exactly what makes either tail expensive. And the crypto-specific channel is now concrete rather than hypothetical: Monday's sanctions action included OFAC's first-ever sectoral determination targeting Iran's DIGITAL ASSETS sector, three days before a symposium themed 'Financial Innovation: Implications for Payments and Policy' with stablecoin systemic-risk sessions. The keynote can move crypto on policy content alone. Pre-commitment unchanged: no discretionary action tomorrow. The only trigger is two consecutive daily CLOSES below 2,300 in ETH - not an intraday wick, not a headline, not a gap.",
+   "status": "pre-commitment holds"
+  },
+  {
+   "date": "2026-08-27",
+   "ticker": "ADPORTS",
+   "action": "RESOLVED - the board circular is out and recommends ACCEPT at AED 6.25",
+   "price": 6.04,
+   "rationale": "The open question I had been carrying is closed. Following a board meeting on Aug 26, AD Ports disclosed to ADX that directors reviewed HSBC Bank Middle East's fairness opinion - which concluded AED 6.25 per share is fair from a financial point of view - and resolved to recommend that holders ACCEPT, approving the shareholder circular. That removes the single largest piece of deal risk in the spread. ADPORTS should now trade as a deal stub pinned near 6.25 rather than as a beta name, including across tomorrow's four-day gap. The offer runs to 3pm UAE on Sept 15. Still off the core shortlist - a merger-arb stub heading to a delisting is not what the stock bucket is for - but the risk characterisation has improved materially.",
+   "status": "tracking only"
+  },
+  {
+   "date": "2026-08-27",
+   "ticker": "DU",
+   "action": "fourth straight up session into Monday's rebalance - and it is a recovery, not a breakout",
+   "price": 11.78,
+   "rationale": "+2.61% to 11.78, the fourth consecutive gain into the MSCI implementation at Monday's close. Useful context I did not have before: this is a RECOVERY rather than new-high momentum - the 52-week high is 12.46 and the stock traded near 12.04 in early July, so 11.78 sits roughly 5-6% below prior highs. That cuts both ways: less froth to unwind, but also no evidence that pre-positioning has run to an extreme. Still no published broker inflow estimate exists - coverage is uniformly qualitative, and the only calibration available is the Etisalat precedent where Arqaam modelled ~$460m and EFG ~$360m, which is an analogy and not a du number. Worth noting an asymmetry in the coverage: not one public source flags post-inclusion give-back risk. A uniformly positive narrative into a dated, one-off flow event is the classic setup for a sell-the-implementation unwind - and UAE traders cannot react until Monday because of the holiday, which is also the session that must absorb the Warsh reaction. Not actionable: Al Ramz is still closed.",
+   "status": "advice only - no position"
+  },
+  {
+   "date": "2026-08-27",
+   "ticker": "SANCTIONS",
+   "action": "no new tranche since Aug 24 - but the UAE channel is under active policy pressure",
+   "rationale": "Checked specifically: no new Iran sanctions tranche naming UAE entities has landed since Aug 24. OFAC's Aug 26 action was counter-terrorism designations plus a Russia-related general licence, and the Aug 26-27 Federal Register items merely publish the Aug 24 action rather than adding designations. The Aug 24 tranche remains the live one: roughly 60 entities, individuals and vessels, with named UAE parties including a Dubai-based shadow-fleet broker and his ship-management company, plus a UAE-based individual who processed over $100m in crypto payments for IRGC-linked oil sales. No DFM- or ADX-listed company was named - the exposure sits in private shipping and trading networks, not index constituents. Standing tail risk over the four-day gap: policy institutes published pieces this week arguing specifically for shutting the Emirati channel, and cumulatively the US has now sanctioned 353 UAE-linked entities for Iran-related illicit finance, nearly a quarter of all such designations worldwide. Any follow-on tranche would land while DFM and ADX cannot trade.",
+   "status": "risk recorded - no action"
   }
  ]
 }

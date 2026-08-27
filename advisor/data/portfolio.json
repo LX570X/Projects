@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-26T07:45+00:00",
+ "updated": "2026-08-27T07:40+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": 0,
@@ -153,7 +153,8 @@
    "dropped": [
     "ADPORTS (takeover)",
     "TECOM (float-driven noise)"
-   ]
+   ],
+   "adports_status": "Board recommends ACCEPT at AED 6.25 following HSBC's fairness opinion (Aug 26). Deal risk materially reduced; trades as a stub to the Sept 15 3pm close. Remains OFF the core shortlist - a merger-arb stub heading to a delisting is not what the stock bucket is for."
   }
  },
  "trailing_stop_rule": {
