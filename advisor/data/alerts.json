@@ -1,47 +1,35 @@
 {
- "generated_at_utc": "2026-08-26T07:11:51+00:00",
+ "generated_at_utc": "2026-08-27T07:11:10+00:00",
  "alerts": [
   {
-   "ticker": "XRPUSDT",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "XRPUSDT moved -4.7% in the last day (now 1.4389 USD)"
-  },
-  {
-   "ticker": "DOGEUSDT",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "DOGEUSDT moved -6.1% in the last day (now 0.08673 USD)"
-  },
-  {
-   "ticker": "ADAUSDT",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "ADAUSDT moved -6.4% in the last day (now 0.2108 USD)"
-  },
-  {
-   "ticker": "GRAMUSDT",
+   "ticker": "SALIK",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "GRAMUSDT: BUY -> SELL (score 25 -> -25)"
+   "msg": "SALIK: STRONG SELL -> SELL (score -50 -> -25)"
   },
   {
-   "ticker": "GRAMUSDT",
-   "severity": "actionable",
-   "type": "trend",
-   "msg": "GRAMUSDT: price crossed below its 50-day average \u2014 trend change"
+   "ticker": "SALIK",
+   "severity": "info",
+   "type": "macd",
+   "msg": "SALIK: MACD bullish cross"
   },
   {
-   "ticker": "DIB",
+   "ticker": "DU",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "DU moved +2.6% in the last day (now 11.78 AED)"
+  },
+  {
+   "ticker": "TECOM",
+   "severity": "info",
+   "type": "signal_change",
+   "msg": "TECOM: SELL -> HOLD (score -40 -> -15)"
+  },
+  {
+   "ticker": "ADNOCDRILL",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "DIB: HOLD -> SELL (score -15 -> -30)"
-  },
-  {
-   "ticker": "ADPORTS",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "ADPORTS: STRONG BUY -> BUY (score 45 -> 35)"
+   "msg": "ADNOCDRILL: STRONG BUY -> BUY (score 65 -> 40)"
   }
  ]
 }
