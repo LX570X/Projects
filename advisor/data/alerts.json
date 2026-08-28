@@ -1,35 +1,29 @@
 {
- "generated_at_utc": "2026-08-27T07:11:10+00:00",
+ "generated_at_utc": "2026-08-28T07:09:51+00:00",
  "alerts": [
   {
    "ticker": "SALIK",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "SALIK: STRONG SELL -> SELL (score -50 -> -25)"
-  },
-  {
-   "ticker": "SALIK",
-   "severity": "info",
-   "type": "macd",
-   "msg": "SALIK: MACD bullish cross"
-  },
-  {
-   "ticker": "DU",
    "severity": "info",
    "type": "big_move",
-   "msg": "DU moved +2.6% in the last day (now 11.78 AED)"
+   "msg": "SALIK moved +3.3% in the last day (now 5.37 AED)"
   },
   {
-   "ticker": "TECOM",
-   "severity": "info",
-   "type": "signal_change",
-   "msg": "TECOM: SELL -> HOLD (score -40 -> -15)"
-  },
-  {
-   "ticker": "ADNOCDRILL",
+   "ticker": "ADNOCGAS",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "ADNOCDRILL: STRONG BUY -> BUY (score 65 -> 40)"
+   "msg": "ADNOCGAS: STRONG SELL -> SELL (score -55 -> -35) \u2014 penalty relief only, trend/momentum unchanged"
+  },
+  {
+   "ticker": "ADNOCGAS",
+   "severity": "info",
+   "type": "rsi",
+   "msg": "ADNOCGAS: RSI crossed below 30 (now 29.1)"
+  },
+  {
+   "ticker": "ADIB",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ADIB: BUY -> STRONG BUY (score 35 -> 50)"
   }
  ]
 }
