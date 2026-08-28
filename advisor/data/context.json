@@ -1,21 +1,21 @@
 {
- "updated": "2026-08-27T07:40+00:00",
+ "updated": "2026-08-28T07:25+00:00",
  "market_notes": [
   {
-   "market": "Macro - PCE resolved into a split",
-   "note": "July core PCE landed exactly in line at +0.2% MoM and 3.3% YoY, unchanged from June - no core upside surprise, which removed the catalyst that would have forced a September hike into the price. Headline was the hot half: +0.2% MoM against +0.1% expected and 3.7% YoY against 3.6%. Correcting my own brief: I carried consensus core at ~0.3% MoM, but sources put both consensus and print at 0.2%, so this reads in line rather than as a downside surprise (85% confidence - one outlier source says 0.3%). Consumer confidence printed Tuesday not Wednesday, at 89.4, a seven-month low, with Expectations at 68.2, below the recession threshold. The growth side deteriorated on the same slate: income +0.4% but spending only +0.2%, goods spending negative at -$49.9bn, saving rate up to 3.0%. September hike odds moved only ~40% to ~38% - inside noise. Markets shrugged (S&P -0.04%, 2y +4bp to 4.23%, 10y +1.7bp to 4.67%, dollar firm, gold sharply lower). BTC closed -0.6% and HELD its 50-week EMA at ~78,000, the specific level at risk. ETH decoupled upward, +2.5%."
+   "market": "Positions - pre-event",
+   "note": "Nothing triggered, no stop moves. ETH 2,494.10, $90.79, +36.3%; stop 2,105 is 15.6% below spot locking +15.05%, and the 2,300 close-exit is 8.4% below with no count begun. BTC 79,662.14, stop 73,289, 8.0% below, locking +13.90%. LINK 11.74, stop 9.80, 16.5% below. All three 3xATR candidates inside the gate (ETH +0.34, BTC -0.66, LINK -0.37). Warsh speaks at roughly 10:00 ET, after this snapshot, so all of today's data is pre-event."
   },
   {
-   "market": "Warsh - the question changed shape",
-   "note": "Because the data decided nothing, tomorrow carries more weight rather than less. The framing shifted from 'hike or hold' to 'does he acknowledge the long end and the Bessent intervention at all'. The tell: discussing government borrowing costs or term premium means the bond selloff has his attention; staying purely on short rates means he treats the long end as Treasury's problem. A new hawkish tail has appeared - the argument that the Fed leans MORE hawkish to help contain the 30-year, with 77% of surveyed respondents expecting Bessent's yield suppression to fail. Positioning is overwhelmingly for neutral (69% of fund managers, 45% expecting no rate guidance), which is what makes either tail expensive. The crypto-specific channel is now concrete: Monday's sanctions action included OFAC's first-ever sectoral determination targeting Iran's DIGITAL ASSETS sector, three days before a symposium themed 'Financial Innovation: Implications for Payments and Policy' with stablecoin systemic-risk sessions."
+   "market": "Warsh - scenario levels",
+   "note": "The scenario analysis circulating into the keynote puts a dovish outcome above $80,000 for BTC and a hawkish outcome back toward $73,000 - which is essentially where the BTC stop sits at 73,289. A hawkish Warsh could therefore plausibly take that stop out. That does not change the plan, but the risk is live rather than theoretical. Traders are pricing September hike odds at roughly one-in-three going in. The symposium theme puts digital payments at its organizing centre for the first time, so the stance on stablecoins and tokenisation could matter more for the alts than the rates message does."
   },
   {
-   "market": "Positions",
-   "note": "Nothing triggered, no stop moves. ETH 2,491.44, $90.69, +36.2%; stop 2,105 is 15.5% below spot locking +15.05%, and the 2,300 close-exit is 8.3% below with no count begun. BTC 78,790.59, stop 73,289, 7.0% below, locking +13.90%. LINK 11.623, stop 9.80, 15.7% below, locking +1.23%. All three 3xATR candidates inside the gate (ETH +0.50, BTC -0.82, LINK -0.42). Pre-commitment holds through tomorrow: the only trigger that changes the book is two consecutive daily CLOSES below 2,300 in ETH - not an intraday wick, not a headline, not a gap."
+   "market": "Engine",
+   "note": "The stretch label caught its second production case, and the first on the oversold side: ADNOCGAS STRONG SELL -> SELL (-55 to -35) labelled 'penalty relief only, trend/momentum unchanged'. Its RSI fell below 30 (29.1), applying the +20 oversold bonus while the core score stayed pinned at -65. Without the label it reads as improvement; in fact the stock fell another 1.2% and is simply more oversold."
   },
   {
    "market": "UAE",
-   "note": "AD Ports is RESOLVED: after an Aug 26 board meeting the directors reviewed HSBC's fairness opinion - AED 6.25 is fair from a financial point of view - and resolved to recommend that holders ACCEPT, approving the shareholder circular. That removes the largest piece of deal risk; ADPORTS should now trade as a stub pinned near 6.25 through the four-day gap, with the offer running to 3pm UAE on Sept 15. DU rose a fourth straight session to 11.78 into Monday's MSCI implementation, but the useful context is that this is a RECOVERY not a breakout - the 52-week high is 12.46 and it traded near 12.04 in early July. Still no published broker inflow estimate; the Etisalat precedent (~$360-460m) is an analogy, not a du figure. Notable asymmetry: not one public source flags post-inclusion give-back risk, which is the classic setup for a sell-the-implementation unwind - and UAE traders cannot react until Monday, the same session that must absorb the Warsh reaction. No new Iran tranche since Aug 24; OFAC's Aug 26 action was counter-terrorism plus a Russia licence."
+   "note": "Markets are CLOSED today for the transferred Mawlid holiday and reopen Monday Aug 31 - the same session as the MSCI implementation close, which must therefore absorb the Warsh reaction, the weekend, and the rebalance flow at once. Thursday's session had SALIK +3.3%, EMIRATESNBD +1.6%, TALABAT +1.6% and ADIB upgraded to STRONG BUY, with DU easing back to 11.54 after four up sessions. AD Ports at 6.09 continues to converge on the AED 6.25 offer now that the board has recommended acceptance."
   }
  ],
  "asset_notes": {
@@ -234,6 +234,18 @@
     "headline": "Held its 50-week EMA (~78,000) through the PCE print, closing -0.6%; the level that was specifically at risk survived",
     "impact": "bullish",
     "date": "2026-08-27",
+    "source": "news research pass"
+   },
+   {
+    "headline": "Scenario analysis into the keynote: dovish takes BTC above $80,000, hawkish sends it back toward $73,000 - essentially the level of our stop at 73,289",
+    "impact": "neutral",
+    "date": "2026-08-28",
+    "source": "news research pass"
+   },
+   {
+    "headline": "September hike odds priced at roughly one-in-three going into the keynote",
+    "impact": "neutral",
+    "date": "2026-08-28",
     "source": "news research pass"
    }
   ],

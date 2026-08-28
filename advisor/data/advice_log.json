@@ -887,6 +887,37 @@
    "action": "no new tranche since Aug 24 - but the UAE channel is under active policy pressure",
    "rationale": "Checked specifically: no new Iran sanctions tranche naming UAE entities has landed since Aug 24. OFAC's Aug 26 action was counter-terrorism designations plus a Russia-related general licence, and the Aug 26-27 Federal Register items merely publish the Aug 24 action rather than adding designations. The Aug 24 tranche remains the live one: roughly 60 entities, individuals and vessels, with named UAE parties including a Dubai-based shadow-fleet broker and his ship-management company, plus a UAE-based individual who processed over $100m in crypto payments for IRGC-linked oil sales. No DFM- or ADX-listed company was named - the exposure sits in private shipping and trading networks, not index constituents. Standing tail risk over the four-day gap: policy institutes published pieces this week arguing specifically for shutting the Emirati channel, and cumulatively the US has now sanctioned 353 UAE-linked entities for Iran-related illicit finance, nearly a quarter of all such designations worldwide. Any follow-on tranche would land while DFM and ADX cannot trade.",
    "status": "risk recorded - no action"
+  },
+  {
+   "date": "2026-08-28",
+   "ticker": "POSITIONS",
+   "action": "nothing triggered, no stop moves, no action - holding through the keynote as pre-committed",
+   "price": 2494.1,
+   "rationale": "ETH 2,494.10 (+0.12%), $90.79, +36.3% - stop 2,105 is 15.6% below spot locking +15.05%, and the 2,300 close-exit is 8.4% below with no count begun. BTC 79,662.14 (+1.12%), stop 73,289, 8.0% below spot, locking +13.90%. LINK 11.74 (+1.07%), stop 9.80, 16.5% below. All three 3xATR candidates inside the gate (ETH +0.34, BTC -0.66, LINK -0.37). Warsh speaks at roughly 10:00 ET, after this snapshot, so today's data is entirely pre-event. UAE markets are closed for the transferred Mawlid holiday and reopen Monday straight into the MSCI implementation close.",
+   "status": "no action"
+  },
+  {
+   "date": "2026-08-28",
+   "ticker": "BTCUSDT",
+   "action": "RISK FLAG - the published hawkish scenario lands on our stop",
+   "price": 79662.14,
+   "stop": 73289.0,
+   "rationale": "Worth stating plainly rather than discovering it after the fact: the scenario analysis circulating into the keynote puts a dovish outcome above $80,000 and a HAWKISH outcome back toward $73,000 - which is essentially where the BTC stop sits at 73,289. So a hawkish Warsh could plausibly take that stop out. That does not change the plan: the stop is the stop, it locks +13.90% versus the 64,347 entry, and it was placed below the dense 75,000-76,500 support confluence precisely so it would not be hit by an ordinary retest. But the risk is live rather than theoretical, and if it fires it will be because the event went the way the stop was designed for, not because the stop was wrong. Traders are pricing September hike odds at roughly one-in-three going in.",
+   "status": "risk flagged - no action"
+  },
+  {
+   "date": "2026-08-28",
+   "ticker": "ENGINE",
+   "action": "the stretch label fired again and correctly - ADNOCGAS 'upgrade' is an artifact",
+   "rationale": "ADNOCGAS: STRONG SELL -> SELL (score -55 -> -35) - penalty relief only, trend/momentum unchanged. Its RSI fell below 30 (29.1), which applies the oversold BONUS of +20, while the core score stayed pinned at -65. Without the label this reads as a stock improving; in fact it fell another 1.2% and is simply more oversold. This is the second production catch since the fix, and the first on the oversold side rather than the overbought side.",
+   "status": "working as intended"
+  },
+  {
+   "date": "2026-08-28",
+   "ticker": "CADENCE",
+   "action": "deliberately sending NO push notification today",
+   "rationale": "SALIK +3.27% clears the stock threshold and SOL +5.55% clears the crypto threshold, so the alert rules technically fired - but neither is a position, nothing in the book changed, and yesterday's notification already pre-armed the user for today's keynote with the one trigger that matters. Sending a second message with no new information would be exactly the noise the cadence change was meant to stop. Recording the decision so the silence is visible as a choice rather than an omission.",
+   "status": "silent by design"
   }
  ]
 }
