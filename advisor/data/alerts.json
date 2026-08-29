@@ -1,29 +1,23 @@
 {
- "generated_at_utc": "2026-08-28T07:09:51+00:00",
+ "generated_at_utc": "2026-08-29T07:09:55+00:00",
  "alerts": [
   {
-   "ticker": "SALIK",
+   "ticker": "ADAUSDT",
    "severity": "info",
    "type": "big_move",
-   "msg": "SALIK moved +3.3% in the last day (now 5.37 AED)"
+   "msg": "ADAUSDT moved -4.4% in the last day (now 0.2003 USD)"
   },
   {
-   "ticker": "ADNOCGAS",
+   "ticker": "ADAUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "ADNOCGAS: STRONG SELL -> SELL (score -55 -> -35) \u2014 penalty relief only, trend/momentum unchanged"
+   "msg": "ADAUSDT: STRONG BUY -> BUY (score 65 -> 25)"
   },
   {
-   "ticker": "ADNOCGAS",
+   "ticker": "ADAUSDT",
    "severity": "info",
-   "type": "rsi",
-   "msg": "ADNOCGAS: RSI crossed below 30 (now 29.1)"
-  },
-  {
-   "ticker": "ADIB",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "ADIB: BUY -> STRONG BUY (score 35 -> 50)"
+   "type": "macd",
+   "msg": "ADAUSDT: MACD bearish cross"
   }
  ]
 }
