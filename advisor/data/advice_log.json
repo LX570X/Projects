@@ -918,6 +918,50 @@
    "action": "deliberately sending NO push notification today",
    "rationale": "SALIK +3.27% clears the stock threshold and SOL +5.55% clears the crypto threshold, so the alert rules technically fired - but neither is a position, nothing in the book changed, and yesterday's notification already pre-armed the user for today's keynote with the one trigger that matters. Sending a second message with no new information would be exactly the noise the cadence change was meant to stop. Recording the decision so the silence is visible as a choice rather than an omission.",
    "status": "silent by design"
+  },
+  {
+   "date": "2026-08-29",
+   "ticker": "POSITIONS",
+   "action": "pre-commitment honoured in full - the event passed and nothing triggered",
+   "price": 2434.17,
+   "rationale": "ETH 2,434.17 (-2.41%), $88.60, +33.0% - stop 2,105 is 13.5% below spot and the 2,300 close-exit is 5.8% below with NO count begun. BTC 77,441.66 (-2.79%), stop 73,289, 5.4% below spot and never approached; the intraday low was ~76,877. LINK 11.334 (-3.48%), stop 9.80, 13.5% below. All three 3xATR candidates negative (ETH -0.30, BTC -1.58, LINK -0.89). This is the clean outcome the discipline was for: a genuinely hawkish surprise, a 2-3.5% decline, and not one rule fired.",
+   "status": "no action"
+  },
+  {
+   "date": "2026-08-29",
+   "ticker": "WARSH",
+   "action": "hawkish in substance, guidance-free in form - and the scenario map was wrong",
+   "rationale": "The keynote, titled 'In Our Time', was delivered on Warsh's 100th day as chair. Verbatim on inflation: 'While this summer's PCE and CPI readings were better than expected, they do not tell me that underlying trends have meaningfully improved,' and 'Otherwise, we have work to do.' He formally retired forward guidance - 'You can call it an outline, you can call it a trail map, just don't call it forward guidance' - saying it 'has overstayed its welcome', and called for a 'quieter Fed'. He also said the balance sheet is 'trillions larger than it needs to be'. He did NOT mention Bessent's buybacks, term premium or government borrowing costs, which reads as an independence signal rather than accommodation. THE BIG REPRICING: September hike odds went from about one-in-three to a coin flip (CME ~54-59%, Kalshi 48%). But the curve BEAR-FLATTENED - 2-year +6bp to 4.298%, 30-year MINUS 2bp to 5.168% - so the long end, the epicentre of all the pre-symposium anxiety, actually rallied on a hawkish speech. That prices Fed credibility, not fiscal dominance, and it materially de-risks the Sept 9 buyback doubling as a disorder catalyst. Equities barely moved (S&P -0.25%, still a winning week); the dollar rose 0.41% and gold fell about 2.5% - crypto fell almost exactly in line with gold, i.e. a shared real-rate shock, not a crypto-specific one. LESSON WORTH KEEPING: the published scenario map said a hawkish outcome meant ~$73,000 BTC, essentially our stop. The content WAS hawkish and BTC fell 2.8%. The mapping was wrong because August's rally was driven by the Treasury buyback, not by Fed easing expectations, so a hawkish Fed had little of the right kind of length to liquidate. I will discount similarly-constructed event scenarios for Sept 15-16. VERIFICATION LIMITS, stated plainly: federalreserve.gov was unreachable from this session, so every quote above is press-corroborated across two or more outlets rather than read from the transcript; the widely circulating line that he called the 2% target 'unwavering and non-negotiable' is NOT corroborated and I am not attributing it to him; and he appears to have said nothing at all on stablecoins or the symposium's own payments theme - strongly indicated by the absence of any such reporting, but not proven.",
+   "status": "logged"
+  },
+  {
+   "date": "2026-08-29",
+   "ticker": "crypto-structure",
+   "action": "the froth is gone and the setup is cleaner at a lower price",
+   "rationale": "Three things improved rather than deteriorated through the event. RSI is back in the 55-75 band across the complex for the first time in over a week, and the scores now EQUAL the core scores again - last week's stretch distortion is out of the rankings entirely, so the numbers on the dashboard are clean for the first time since Aug 20. Funding fell to roughly 0.0024% per 8h (~2.6% annualised), down from 8-15% annualised the prior week, so the $488m of liquidations was macro repricing rather than a leveraged long unwind. And the overbought condition resolved through time and a shallow decline rather than through a break. Independent corroboration of the exit rules, worth knowing without acting on: published ETH work puts the structural break at 2,300, identical to our two-close trigger, and published BTC work treats the whole 70,000-90,000 band as positioning noise, so our 73,289 stop sits inside noise rather than at a break. Nothing here argues for moving anything.",
+   "status": "no action"
+  },
+  {
+   "date": "2026-08-29",
+   "ticker": "ADAUSDT",
+   "action": "the downgrade has a real, dated cause - stay away",
+   "price": 0.2003,
+   "rationale": "ADA fell 4.39%, more than any other name in the feed, and dropped STRONG BUY -> BUY on a MACD bearish cross. This is not just complex-wide beta: Cardano's constitutional-committee renewal expires on September 1, two days away. Four of seven seats lapse at epoch 653, and the renewal action needs 67% DRep support against 51.68% currently (up from 37% on Aug 21), with SPO support far worse at roughly 8-15% against a 51% bar. That is failing, not close. Failure drops the committee below its five-member minimum, freezing hard forks, parameter changes, constitutional amendments and treasury spending. We hold none and this is a reason to keep it that way - it also retrospectively vindicates declining ADA as a satellite candidate back on Aug 13.",
+   "status": "no position - avoided"
+  },
+  {
+   "date": "2026-08-29",
+   "ticker": "UAE-MONDAY",
+   "action": "new sanctions landed inside the market closure - Monday absorbs four days at once",
+   "rationale": "On Aug 28, while DFM and ADX were shut, Treasury moved to revoke Banque Misr's UAE branch access to US financial institutions over Iran ties - the branch reportedly processed about $1.8bn over two years for roughly 100 companies tied to Iran's shadow banking network - and OFAC designated Reza Mohammad Taeedi, the regional manager of Bank Melli Dubai. THE DISTINCTION THAT MATTERS: no UAE-LISTED bank has been named in any tranche. Banque Misr is Egyptian state-owned and this targets its UAE branch; Bank Melli is Iranian. So this is banking-sector sentiment risk on Monday's reopen, not index or constituent risk. Cutting the other way, the UAE's own suspension of Iran trade ties lowers the odds a listed entity appears later, and ADX has been reacting more than DFM to these headlines - du is DFM-listed, which is the less sensitive exchange. Monday stacks three things in one session: a four-day-gap reopen absorbing accumulated sanctions news, the MSCI implementation close with mechanical buying in du and small-cap exits in Taaleem and Deyaar, and the resulting volume. Expect a flow-driven close rather than an information-driven one. Bessent has promised more detail during the week, so this is live rather than closed.",
+   "status": "advice only - no position"
+  },
+  {
+   "date": "2026-08-29",
+   "ticker": "DCA-REMINDER",
+   "action": "monthly 1,000 AED DCA is due Tuesday Sept 1",
+   "rationale": "Two days out. Buckets as set: core UAE stocks 400 AED (accumulating - still cannot deploy, Al Ramz unopened, bucket would reach 800 of the 1,200 needed for a first order), core crypto 250 AED (BTC/ETH split to be decided from Monday's signals), opportunity 250 AED, satellite 100 AED. Note the reconciliation is still outstanding, so the September split will be advised against the same CONFIRMED/UNCONFIRMED split the book now uses. Also note the macro backdrop has changed since the August DCA: September is now a coin flip for a HIKE rather than one-in-three, so the crypto DCA lands into a materially more hawkish setup than last month's did.",
+   "status": "scheduled"
   }
  ]
 }

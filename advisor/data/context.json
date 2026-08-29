@@ -1,21 +1,25 @@
 {
- "updated": "2026-08-28T07:25+00:00",
+ "updated": "2026-08-29T07:35+00:00",
  "market_notes": [
   {
-   "market": "Positions - pre-event",
-   "note": "Nothing triggered, no stop moves. ETH 2,494.10, $90.79, +36.3%; stop 2,105 is 15.6% below spot locking +15.05%, and the 2,300 close-exit is 8.4% below with no count begun. BTC 79,662.14, stop 73,289, 8.0% below, locking +13.90%. LINK 11.74, stop 9.80, 16.5% below. All three 3xATR candidates inside the gate (ETH +0.34, BTC -0.66, LINK -0.37). Warsh speaks at roughly 10:00 ET, after this snapshot, so all of today's data is pre-event."
+   "market": "Warsh - the event resolved",
+   "note": "The keynote, 'In Our Time', was hawkish in substance and guidance-free in form. Verbatim: this summer's better PCE and CPI readings 'do not tell me that underlying trends have meaningfully improved'; otherwise 'we have work to do'. He retired forward guidance outright - it 'has overstayed its welcome' - and called the balance sheet 'trillions larger than it needs to be'. He did NOT mention Bessent's buybacks or term premium, which reads as independence rather than accommodation. September hike odds repriced from about one-in-three to a coin flip (CME ~54-59%, Kalshi 48%). But the curve BEAR-FLATTENED - 2-year +6bp to 4.298%, 30-year MINUS 2bp to 5.168% - so the long end rallied on a hawkish speech, pricing Fed credibility rather than fiscal dominance, which de-risks the Sept 9 buyback doubling as a disorder catalyst. Equities barely moved (S&P -0.25%, still a winning week); the dollar rose 0.41% and gold fell about 2.5%, with crypto falling almost exactly in line with gold - a shared real-rate shock, not a crypto-specific one. Verification limits: the Fed site was unreachable, so all quotes are press-corroborated across outlets rather than read from the transcript; the circulating '2% is unwavering and non-negotiable' line is uncorroborated and is not attributed to him here; and he appears to have said nothing on stablecoins or the symposium's own payments theme."
   },
   {
-   "market": "Warsh - scenario levels",
-   "note": "The scenario analysis circulating into the keynote puts a dovish outcome above $80,000 for BTC and a hawkish outcome back toward $73,000 - which is essentially where the BTC stop sits at 73,289. A hawkish Warsh could therefore plausibly take that stop out. That does not change the plan, but the risk is live rather than theoretical. Traders are pricing September hike odds at roughly one-in-three going in. The symposium theme puts digital payments at its organizing centre for the first time, so the stance on stablecoins and tokenisation could matter more for the alts than the rates message does."
+   "market": "Positions",
+   "note": "The pre-commitment was honoured in full and nothing triggered. ETH 2,434.17, $88.60, +33.0%; stop 2,105 is 13.5% below spot and the 2,300 close-exit 5.8% below with no count begun. BTC 77,441.66, stop 73,289, 5.4% below and never approached (intraday low ~76,877). LINK 11.334, stop 9.80, 13.5% below. All three 3xATR candidates negative. LESSON: the published scenario map put a hawkish outcome at ~$73,000 BTC, essentially our stop. The content WAS hawkish and BTC fell 2.8% - the mapping was wrong because August's rally came from the Treasury buyback rather than Fed easing hopes, so a hawkish Fed had little of the right kind of length to liquidate. Similarly-constructed scenarios for Sept 15-16 will be discounted."
   },
   {
-   "market": "Engine",
-   "note": "The stretch label caught its second production case, and the first on the oversold side: ADNOCGAS STRONG SELL -> SELL (-55 to -35) labelled 'penalty relief only, trend/momentum unchanged'. Its RSI fell below 30 (29.1), applying the +20 oversold bonus while the core score stayed pinned at -65. Without the label it reads as improvement; in fact the stock fell another 1.2% and is simply more oversold."
+   "market": "Crypto structure - cleaner at a lower price",
+   "note": "Three things improved through the event. RSI is back in the 55-75 band across the complex for the first time in over a week, and scores now EQUAL core scores again, so last week's stretch distortion is out of the rankings entirely. Funding fell to about 0.0024% per 8h (~2.6% annualised) from 8-15% the prior week, so the $488m of liquidations was macro repricing rather than a leveraged unwind. And the overbought condition resolved through time and a shallow decline rather than a break. Independent corroboration worth knowing without acting on: published ETH work puts the structural break at 2,300, identical to our two-close trigger, and published BTC work treats the whole 70,000-90,000 band as positioning noise, so the 73,289 stop sits inside noise rather than at a break."
   },
   {
-   "market": "UAE",
-   "note": "Markets are CLOSED today for the transferred Mawlid holiday and reopen Monday Aug 31 - the same session as the MSCI implementation close, which must therefore absorb the Warsh reaction, the weekend, and the rebalance flow at once. Thursday's session had SALIK +3.3%, EMIRATESNBD +1.6%, TALABAT +1.6% and ADIB upgraded to STRONG BUY, with DU easing back to 11.54 after four up sessions. AD Ports at 6.09 continues to converge on the AED 6.25 offer now that the board has recommended acceptance."
+   "market": "UAE - Monday absorbs four days at once",
+   "note": "On Aug 28, while DFM and ADX were shut, Treasury moved to revoke Banque Misr's UAE branch access to US financial institutions over Iran ties - roughly $1.8bn processed over two years for about 100 companies tied to Iran's shadow banking network - and OFAC designated the regional manager of Bank Melli Dubai. The distinction that matters: no UAE-LISTED bank has been named in any tranche; Banque Misr is Egyptian state-owned and Bank Melli is Iranian, so this is sector sentiment risk rather than index or constituent risk. Cutting the other way, the UAE's own suspension of Iran trade ties lowers the odds a listed entity appears later, and ADX has been reacting more than DFM - du is DFM-listed. Monday stacks a four-day-gap reopen, the MSCI implementation close (du in; Taaleem and Deyaar out of small-cap), and the resulting volume into one flow-driven session. Bessent promised more detail during the week, so this is live."
+  },
+  {
+   "market": "ADA - a dated idiosyncratic risk",
+   "note": "ADA fell 4.39%, more than any name in the feed, and lost STRONG BUY on a MACD bearish cross. The cause is dated and specific: Cardano's constitutional-committee renewal expires September 1. Four of seven seats lapse at epoch 653 and the renewal needs 67% DRep support against 51.68% currently, with SPO support at roughly 8-15% against a 51% bar - failing, not close. Failure drops the committee below its five-member minimum, freezing hard forks, parameter changes, constitutional amendments and treasury spending. No position held, and this is a reason to keep it that way."
   }
  ],
  "asset_notes": {
@@ -246,6 +250,24 @@
     "headline": "September hike odds priced at roughly one-in-three going into the keynote",
     "impact": "neutral",
     "date": "2026-08-28",
+    "source": "news research pass"
+   },
+   {
+    "headline": "Warsh hawkish but the curve bear-flattened - 2y +6bp to 4.298%, 30y -2bp to 5.168%; September hike odds repriced from ~one-in-three to a coin flip",
+    "impact": "bearish",
+    "date": "2026-08-29",
+    "source": "news research pass"
+   },
+   {
+    "headline": "The published hawkish scenario of ~$73,000 did not print - BTC's intraday low was ~76,877; August's rally came from the Treasury buyback, not Fed easing hopes, so there was little of the right length to liquidate",
+    "impact": "bullish",
+    "date": "2026-08-29",
+    "source": "news research pass"
+   },
+   {
+    "headline": "Funding fell to ~0.0024%/8h (~2.6% annualised) from 8-15% the prior week; the $488m of liquidations was macro repricing, not a leveraged unwind",
+    "impact": "bullish",
+    "date": "2026-08-29",
     "source": "news research pass"
    }
   ],
@@ -483,6 +505,12 @@
     "impact": "bullish",
     "date": "2026-04-23",
     "source": "Emirates NBD media center (23 Apr 2026)"
+   },
+   {
+    "headline": "OFAC moved Aug 28 to revoke Banque Misr's UAE branch access over Iran ties and designated a Bank Melli Dubai manager - no UAE-LISTED bank named in any tranche",
+    "impact": "neutral",
+    "date": "2026-08-29",
+    "source": "news research pass"
    }
   ],
   "TALABAT": [
@@ -768,6 +796,12 @@
     "headline": "+13.6% with no fresh catalyst, and a governance-freeze risk lands Sept 1",
     "impact": "bearish",
     "date": "2026-08-21",
+    "source": "news research pass"
+   },
+   {
+    "headline": "Constitutional-committee renewal expires Sept 1 with DRep support at 51.68% against a 67% bar and SPOs at ~8-15% against 51% - failure freezes hard forks, parameter changes and treasury spending",
+    "impact": "bearish",
+    "date": "2026-08-29",
     "source": "news research pass"
    }
   ],
