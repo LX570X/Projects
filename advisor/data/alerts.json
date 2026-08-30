@@ -1,23 +1,35 @@
 {
- "generated_at_utc": "2026-08-29T07:09:55+00:00",
+ "generated_at_utc": "2026-08-30T07:09:48+00:00",
  "alerts": [
   {
-   "ticker": "ADAUSDT",
+   "ticker": "BTCUSDT",
    "severity": "info",
-   "type": "big_move",
-   "msg": "ADAUSDT moved -4.4% in the last day (now 0.2003 USD)"
+   "type": "rsi",
+   "msg": "BTCUSDT: RSI crossed above 70 (now 71.5)"
   },
   {
-   "ticker": "ADAUSDT",
+   "ticker": "ETHUSDT",
+   "severity": "info",
+   "type": "rsi",
+   "msg": "ETHUSDT: RSI crossed above 70 (now 70.8)"
+  },
+  {
+   "ticker": "GRAMUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "ADAUSDT: STRONG BUY -> BUY (score 65 -> 25)"
+   "msg": "GRAMUSDT: SELL -> STRONG SELL (score -25 -> -50)"
   },
   {
-   "ticker": "ADAUSDT",
+   "ticker": "LTCUSDT",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "LTCUSDT: STRONG BUY -> BUY (score 65 -> 40)"
+  },
+  {
+   "ticker": "LTCUSDT",
    "severity": "info",
    "type": "macd",
-   "msg": "ADAUSDT: MACD bearish cross"
+   "msg": "LTCUSDT: MACD bearish cross"
   }
  ]
 }
