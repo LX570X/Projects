@@ -962,6 +962,36 @@
    "action": "monthly 1,000 AED DCA is due Tuesday Sept 1",
    "rationale": "Two days out. Buckets as set: core UAE stocks 400 AED (accumulating - still cannot deploy, Al Ramz unopened, bucket would reach 800 of the 1,200 needed for a first order), core crypto 250 AED (BTC/ETH split to be decided from Monday's signals), opportunity 250 AED, satellite 100 AED. Note the reconciliation is still outstanding, so the September split will be advised against the same CONFIRMED/UNCONFIRMED split the book now uses. Also note the macro backdrop has changed since the August DCA: September is now a coin flip for a HIKE rather than one-in-three, so the crypto DCA lands into a materially more hawkish setup than last month's did.",
    "status": "scheduled"
+  },
+  {
+   "date": "2026-08-30",
+   "ticker": "POSITIONS",
+   "action": "quiet Sunday - nothing triggered, no stop moves, no action",
+   "price": 2458.78,
+   "rationale": "Everything recovered about 1% of Friday's decline. ETH 2,458.78 (+0.99%), $89.50, +34.4% - stop 2,105 is 14.4% below spot and the 2,300 close-exit is 6.9% below with no count begun. BTC 78,256.01 (+1.05%), stop 73,289, 6.3% below. LINK 11.431 (+0.85%), stop 9.80, 14.3% below. All three 3xATR candidates negative (ETH -0.11, BTC -1.31, LINK -0.74). UAE prices are the weekend repeat of Thursday's close, so there is no new UAE information today. Deliberately sending no push notification: nothing in the book changed and no action is due.",
+   "status": "no action"
+  },
+  {
+   "date": "2026-08-30",
+   "ticker": "crypto-broad",
+   "action": "the hawkish repricing is holding, but the transmission channel matters",
+   "rationale": "Rate markets have settled around a 60% chance of a September HIKE, from roughly the inverse before the keynote. The framing worth carrying into the week: bitcoin does not respond much to the September decision itself - it responds to global liquidity and to where the LONG END settles, which is the same channel that drives gold. That is exactly what Friday demonstrated, when the 30-year rallied 2bp on a hawkish speech while the 2-year rose 6bp. So the thing to watch through September is the long end and the Sept 9 buyback start, not the FOMC odds headline. One claim I am NOT repeating as fact: some coverage says the record $2.6bn ETF inflow week has 'now reversed' post-Warsh, but the sourcing is ambiguous and one headline appears to be from an older article. The Friday flow print is the datapoint that would settle it and it was not yet published at snapshot time.",
+   "status": "no action"
+  },
+  {
+   "date": "2026-08-30",
+   "ticker": "LTCUSDT",
+   "action": "STRONG BUY -> BUY on a MACD bearish cross - not held, noted only",
+   "price": 48.95,
+   "rationale": "LTC was the only watchlist crypto to fall on a broadly green day (-0.63%) and lost STRONG BUY on a fresh MACD bearish cross, score 65 -> 40. GRAM also deepened SELL -> STRONG SELL at -50. Neither is held and neither is a candidate: GRAM has been rated barely a week and is already the weakest name in the book, and LTC's downgrade is momentum rolling over rather than a trend break. No action.",
+   "status": "no position"
+  },
+  {
+   "date": "2026-08-30",
+   "ticker": "DCA-PREP",
+   "action": "provisional read for Tuesday's 1,000 AED - final split comes from Monday's signals as promised",
+   "rationale": "Two days out. The provisional relative-strength read, to be re-derived tomorrow: BTC sits +15.7% above its 50-day at RSI 71.5, ETH +21.8% above its 50-day at RSI 70.8. Both are stretched and both are STRONG BUY with identical core scores of 65, but ETH is the more extended of the two by about six percentage points of distance from trend. That inverts last month's logic - on Aug 1 the split went 65/35 to ETH because ETH held its 50-day while BTC had just lost it. On the same reasoning applied to today's data, the tilt this month should favour BTC as the relatively less extended leg. The DCA rule itself is unchanged: buy both regardless of price, because the point of dollar-cost averaging is that it does not require the entry to be good. Bucket status for Tuesday: core UAE stocks 400 AED accumulates to 800, still short of the 1,200 needed for a first order and still blocked by Al Ramz; core crypto 250 AED to split; opportunity 250 AED, which is separate from the advised-but-unconfirmed BTC deploy; satellite 100 AED, separate from the advised-but-unconfirmed LINK half and the 50 AED still reserved for the 9.00-9.39 second-half order. The reconciliation remains outstanding, so Tuesday's plan will be stated against the same CONFIRMED versus ADVISED-UNCONFIRMED split the book now uses.",
+   "status": "queued for Monday"
   }
  ]
 }
