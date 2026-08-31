@@ -1,35 +1,77 @@
 {
- "generated_at_utc": "2026-08-30T07:09:48+00:00",
+ "generated_at_utc": "2026-08-31T07:11:38+00:00",
  "alerts": [
   {
-   "ticker": "BTCUSDT",
-   "severity": "info",
-   "type": "rsi",
-   "msg": "BTCUSDT: RSI crossed above 70 (now 71.5)"
+   "ticker": "BNBUSDT",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "BNBUSDT: STRONG BUY -> BUY (score 65 -> 40)"
   },
   {
-   "ticker": "ETHUSDT",
+   "ticker": "BNBUSDT",
    "severity": "info",
-   "type": "rsi",
-   "msg": "ETHUSDT: RSI crossed above 70 (now 70.8)"
+   "type": "macd",
+   "msg": "BNBUSDT: MACD bearish cross"
+  },
+  {
+   "ticker": "DOGEUSDT",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "DOGEUSDT: STRONG BUY -> BUY (score 65 -> 25)"
+  },
+  {
+   "ticker": "DOGEUSDT",
+   "severity": "info",
+   "type": "macd",
+   "msg": "DOGEUSDT: MACD bearish cross"
+  },
+  {
+   "ticker": "LINKUSDT",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "LINKUSDT: STRONG BUY -> BUY (score 65 -> 25)"
+  },
+  {
+   "ticker": "LINKUSDT",
+   "severity": "info",
+   "type": "macd",
+   "msg": "LINKUSDT: MACD bearish cross"
+  },
+  {
+   "ticker": "AVAXUSDT",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "AVAXUSDT: STRONG BUY -> BUY (score 65 -> 40)"
+  },
+  {
+   "ticker": "AVAXUSDT",
+   "severity": "info",
+   "type": "macd",
+   "msg": "AVAXUSDT: MACD bearish cross"
   },
   {
    "ticker": "GRAMUSDT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "GRAMUSDT: SELL -> STRONG SELL (score -25 -> -50)"
-  },
-  {
-   "ticker": "LTCUSDT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "LTCUSDT: STRONG BUY -> BUY (score 65 -> 40)"
-  },
-  {
-   "ticker": "LTCUSDT",
    "severity": "info",
    "type": "macd",
-   "msg": "LTCUSDT: MACD bearish cross"
+   "msg": "GRAMUSDT: MACD bearish cross"
+  },
+  {
+   "ticker": "EAND",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "EAND: STRONG BUY -> BUY (score 50 -> 40)"
+  },
+  {
+   "ticker": "ADNOCGAS",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ADNOCGAS: SELL -> STRONG SELL (score -35 -> -65) \u2014 stretch penalty applied, trend/momentum unchanged"
+  },
+  {
+   "ticker": "ADIB",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ADIB: STRONG BUY -> BUY (score 50 -> 35)"
   }
  ]
 }
