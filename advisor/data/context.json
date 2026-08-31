@@ -1,21 +1,25 @@
 {
- "updated": "2026-08-30T07:30+00:00",
+ "updated": "2026-08-31T07:45+00:00",
  "market_notes": [
   {
+   "market": "DCA decision - the flow data overrode the extension read",
+   "note": "Tomorrow's core-crypto 250 AED splits 60% ETH / 40% BTC, reversing Sunday's provisional call. The weekend published the post-Warsh ETF prints: on Aug 28, the same session, US spot BITCOIN ETFs took -$201.8m - their first outflow in nine days, snapping a ~$3bn streak - while US spot ETHER ETFs took +$102m, a tenth consecutive inflow day capping $1.42bn with BlackRock's ETHA at 72% of it. Same macro shock, opposite institutional response. That fresh, hard, non-price evidence outranks the distance-from-average comparison that favoured BTC. The tilt stops at 60/40 rather than last month's 65/35 because the two considerations offset - flow says ETH, extension still says BTC (ETH +20.2% above its 50-day against BTC's +15.6%). Honest caveat: adding to ETH adds to the position closest to its exit trigger - published structure puts 2,400-2,450 as THE pivot and losing 2,400 opens 2,300-2,350, exactly our two-close exit, and ETH at 2,440.87 is only 1.7% above it."
+  },
+  {
+   "market": "Alt roll - real regime, over-counted signal",
+   "note": "BNB, DOGE, LINK and AVAX all lost STRONG BUY on fresh MACD bearish crosses in one session while BTC and ETH held at 65. The regime is corroborated: Bitcoin dominance broke out to ~60.66% targeting 66%, the Altcoin Season Index sits in the low 30s, and alt open interest is down ~15% on the month with negative CVD named on AVAX, DOGE and XRP. But four crosses on one macro event is ONE observation through four correlated betas, and the causes are exogenous - Warsh repricing September hike odds to 57-60%, plus a Grayscale Q2 rebalance that cut AVAX below 2.1% to lift BNB to 30.6%. The tell: BNB was the BUY side of that rebalance and still fell 1.01%. Cutting against our own engine, an independent read of the same series has LINK's MACD still ABOVE signal (0.813 vs 0.777, histogram +0.036), so the cross behind the 65-to-25 downgrade is contested - and LINK's derivatives are the opposite signature, with open interest RISING 3.81% on 24% higher volume. No analyst frames this as an alt TOPPING pattern; the published view is that altseason never arrived, so this is relative underperformance inside an established drain."
+  },
+  {
    "market": "Positions",
-   "note": "Quiet Sunday, nothing triggered. Everything recovered about 1% of Friday's decline. ETH 2,458.78, $89.50, +34.4%; stop 2,105 is 14.4% below spot and the 2,300 close-exit 6.9% below with no count begun. BTC 78,256.01, stop 73,289, 6.3% below. LINK 11.431, stop 9.80, 14.3% below. All three 3xATR candidates negative (ETH -0.11, BTC -1.31, LINK -0.74). No push notification sent - nothing in the book changed and no action is due."
+   "note": "Nothing triggered, no stop moves. ETH 2,440.87, $88.85, +33.4%; stop 2,105 13.8% below, exit 2,300 6.1% below with no count. BTC 78,128.35, stop 73,289, 6.2% below - note published BTC structure has support at 77,000 then 75,568, and losing 77,000 opens 72,400 and the mid-70,000s, which BRACKETS our stop rather than sitting above it. LINK 11.28, stop 9.80, 13.1% below. All three 3xATR candidates negative. Positioning remains the quiet bull case: BTC funding is +0.0051%/8h (~5.5% annualised), far below crowded levels, and futures open interest is at a five-month low of 587,584 BTC despite the run from $62k to $80k - the August rally was short-covering, so there is no crowded long to flush."
   },
   {
-   "market": "Crypto - what actually matters into September",
-   "note": "Rate markets have settled around a 60% chance of a September HIKE, roughly the inverse of the pre-keynote setup. But the transmission channel is the thing to watch: bitcoin responds less to the FOMC decision itself than to global liquidity and where the LONG END settles - the same channel that drives gold. Friday demonstrated it, with the 30-year rallying 2bp on a hawkish speech while the 2-year rose 6bp. So through September the long end and the Sept 9 buyback start matter more than the headline hike odds. Not repeating as fact: some coverage claims the record $2.6bn ETF inflow week has 'now reversed' post-Warsh, but the sourcing is ambiguous and one headline appears to belong to an older article - the Friday flow print would settle it and was not published at snapshot time."
-  },
-  {
-   "market": "DCA - provisional read",
-   "note": "Tuesday's 1,000 AED is two days out; the final split comes from Monday's signals. Provisional relative-strength read: BTC is +15.7% above its 50-day at RSI 71.5, ETH +21.8% above its 50-day at RSI 70.8 - both stretched, both STRONG BUY with identical core scores of 65, but ETH the more extended by about six points of distance from trend. That inverts last month's logic, when the split went 65/35 to ETH because ETH held its 50-day while BTC had lost it. On the same reasoning the tilt this month should favour BTC as the less extended leg. The rule itself is unchanged: buy both regardless of price, because dollar-cost averaging does not require the entry to be good."
+   "market": "LINK order re-sited",
+   "note": "The 9.00-9.39 second-half order is CANCELLED and re-sited to 10.65-11.05, just above the 20-day at 10.634, stop 9.80, void below the 50-day (9.268). The original construction was 'a pullback holding above the rising 20-day'; the 20-day rose from 8.43 to 10.634, so the old zone came to sit ON the 50-day and would only have filled after the trend broke. Applying the original rule to current data is rule-consistent updating - the reference moved, not the price - and leaving it would have been the drift. Published structure corroborates: LINK support runs 11.33 (defended), then 11.50-11.75, then nothing until 8.50. There is no bid anywhere inside the old zone."
   },
   {
    "market": "UAE",
-   "note": "Weekend - today's stock prices repeat Thursday's close, so there is no new UAE information. Tomorrow is the session that matters: a four-day-gap reopen absorbing Friday's OFAC action against Banque Misr's UAE branch, plus the MSCI implementation close with du entering the Standard and EM indices and Taaleem and Deyaar exiting small-cap. Expect a flow-driven close. AD Ports at 6.09 continues to sit just under the AED 6.25 offer with the board recommending acceptance and the tender closing 3pm UAE on Sept 15."
+   "note": "Reopened broadly lower after the four-day gap with no published driver - ALDAR and DU both -1.54%, ADIB -1.44%, EMAARDEV -1.39%, DIB -1.09%, EMAAR -0.91%; EAND and ADIB cut STRONG BUY -> BUY. Reads as gap catch-up, not a news response. Two corrections: the Banque Misr action is a PROPOSED FinCEN Section 311 rule against five UAE BRANCHES of an EGYPTIAN state bank - not final, not a UAE institution - so the bank weakness has no sanctions driver behind it; and the du call was premature, because the MSCI trade executes in the 15:00 Dubai closing auction with effect Sept 1, four hours after our 11:11 Dubai snapshot, so its -1.54% precedes the flow entirely. Background correction: the opening Economic Outcast tranche was 78 designations, not ~60, with 10 UAE-registered entities - second or third heaviest jurisdiction, though still no UAE-LISTED entity named. AD Ports now has a named reason for its 2.7% gap: the offer carries no minimum acceptance threshold and squeeze-out authority above 90% is unclear, so it is a completion-risk premium, not a mispricing."
   }
  ],
  "asset_notes": {
@@ -265,6 +269,12 @@
     "impact": "bullish",
     "date": "2026-08-29",
     "source": "news research pass"
+   },
+   {
+    "headline": "Spot BTC ETFs took -$201.8m on Aug 28, the first outflow in nine days, snapping a ~$3bn streak (ARKB -$114.89m)",
+    "impact": "bearish",
+    "date": "2026-08-31",
+    "source": "news research pass"
    }
   ],
   "ETHUSDT": [
@@ -362,6 +372,18 @@
     "headline": "Decoupled upward on PCE day, +2.5% to ~2,502 after dipping to 2,444 on the print, while BTC fell and the dollar firmed",
     "impact": "bullish",
     "date": "2026-08-27",
+    "source": "news research pass"
+   },
+   {
+    "headline": "Spot ETH ETFs took +$102m on Aug 28, a tenth consecutive inflow day capping $1.42bn, BlackRock's ETHA at 72% of the streak",
+    "impact": "bullish",
+    "date": "2026-08-31",
+    "source": "news research pass"
+   },
+   {
+    "headline": "Published structure: 2,400-2,450 is THE pivot; losing 2,400 opens 2,300-2,350 - exactly the two-close exit level",
+    "impact": "neutral",
+    "date": "2026-08-31",
     "source": "news research pass"
    }
   ],
@@ -745,6 +767,18 @@
     "impact": "bullish",
     "date": "2026-08-20",
     "source": "news research pass"
+   },
+   {
+    "headline": "Independent read of the same daily series has MACD still above signal (0.813 vs 0.777, histogram +0.036) - the cross behind the downgrade is contested; LINK open interest RISING 3.81% on 24% higher volume",
+    "impact": "bullish",
+    "date": "2026-08-31",
+    "source": "news research pass"
+   },
+   {
+    "headline": "Circle's Arc mainnet launches Sept 16 with Chainlink as foundational oracle partner; validator cohort includes BlackRock, DTCC, ICE, Mastercard and Visa",
+    "impact": "bullish",
+    "date": "2026-08-31",
+    "source": "news research pass"
    }
   ],
   "EMAARDEV": [
@@ -778,6 +812,12 @@
     "headline": "-4.9% round trip back below the 50-day one day after reclaiming it, confirming the reclaim had no catalyst behind it",
     "impact": "bearish",
     "date": "2026-08-16",
+    "source": "news research pass"
+   },
+   {
+    "headline": "Grayscale Q2 Smart Contract Fund rebalance cut AVAX below 2.1% to lift BNB to 30.6% - a mechanical, already-executed flow event",
+    "impact": "bearish",
+    "date": "2026-08-31",
     "source": "news research pass"
    }
   ],
@@ -848,6 +888,12 @@
     "headline": "Board met Aug 26, reviewed HSBC's fairness opinion that AED 6.25 is fair, and resolved to recommend ACCEPT - the circular is approved and the largest piece of deal risk is removed",
     "impact": "bullish",
     "date": "2026-08-27",
+    "source": "news research pass"
+   },
+   {
+    "headline": "The AED 6.25 offer carries NO minimum acceptance threshold and squeeze-out authority above 90% is unclear - the 2.7% gap is a completion-risk premium, not a mispricing",
+    "impact": "neutral",
+    "date": "2026-08-31",
     "source": "news research pass"
    }
   ],

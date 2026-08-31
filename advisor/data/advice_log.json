@@ -992,6 +992,46 @@
    "action": "provisional read for Tuesday's 1,000 AED - final split comes from Monday's signals as promised",
    "rationale": "Two days out. The provisional relative-strength read, to be re-derived tomorrow: BTC sits +15.7% above its 50-day at RSI 71.5, ETH +21.8% above its 50-day at RSI 70.8. Both are stretched and both are STRONG BUY with identical core scores of 65, but ETH is the more extended of the two by about six percentage points of distance from trend. That inverts last month's logic - on Aug 1 the split went 65/35 to ETH because ETH held its 50-day while BTC had just lost it. On the same reasoning applied to today's data, the tilt this month should favour BTC as the relatively less extended leg. The DCA rule itself is unchanged: buy both regardless of price, because the point of dollar-cost averaging is that it does not require the entry to be good. Bucket status for Tuesday: core UAE stocks 400 AED accumulates to 800, still short of the 1,200 needed for a first order and still blocked by Al Ramz; core crypto 250 AED to split; opportunity 250 AED, which is separate from the advised-but-unconfirmed BTC deploy; satellite 100 AED, separate from the advised-but-unconfirmed LINK half and the 50 AED still reserved for the 9.00-9.39 second-half order. The reconciliation remains outstanding, so Tuesday's plan will be stated against the same CONFIRMED versus ADVISED-UNCONFIRMED split the book now uses.",
    "status": "queued for Monday"
+  },
+  {
+   "date": "2026-08-31",
+   "ticker": "POSITIONS",
+   "action": "nothing triggered, no stop moves, no action on existing positions",
+   "price": 2440.87,
+   "rationale": "ETH 2,440.87 (-0.73%), $88.85, +33.4% - stop 2,105 is 13.8% below spot, the 2,300 close-exit 6.1% below with no count begun. BTC 78,128.35 (-0.16%), stop 73,289, 6.2% below. LINK 11.28 (-1.34%), stop 9.80, 13.1% below. All three 3xATR candidates negative (ETH -0.45, BTC -1.39, LINK -1.10). BTC and ETH both held STRONG BUY at 65 with clean scores - the stretch penalty is fully gone for the first time since Aug 20.",
+   "status": "no action"
+  },
+  {
+   "date": "2026-09-01",
+   "ticker": "DCA",
+   "action": "MONTHLY 1,000 AED - core crypto splits 60% ETH / 40% BTC",
+   "size": "Core crypto 250 AED = $68.07. ETH: 150 AED = $40.84 = 0.016733 ETH @ 2,440.87. BTC: 100 AED = $27.23 = 0.000349 BTC @ 78,128.35. Core UAE stocks: 400 AED accumulates to 800 (still blocked, Al Ramz unopened). Opportunity: 250 AED. Satellite: 100 AED.",
+   "rationale": "I am reversing yesterday's provisional read and I want that on the record. Yesterday I said the tilt should favour BTC because ETH was the more extended leg (+20.2% above its 50-day against BTC's +15.6%), and on price extension alone that is still true. But the weekend published the post-Warsh ETF prints I did not have: on Aug 28, the SAME session, US spot BITCOIN ETFs took -$201.8m, their first outflow in nine days, snapping a roughly $3bn streak, while US spot ETHER ETFs took +$102m, a TENTH consecutive inflow day capping $1.42bn with BlackRock's ETHA at 72% of it. Same macro shock, opposite institutional response. That is fresh, hard, non-price evidence and it outranks a distance-from-average comparison, so the tilt goes to ETH. It does not go as far as last month's 65/35 because the two considerations partly offset - flow says ETH, extension says BTC. THE HONEST CAVEAT: adding to ETH means adding to the position whose exit trigger is closest to being armed. Published structure puts 2,400-2,450 as THE pivot, with the explicit call that losing 2,400 opens 2,300-2,350 - which is exactly our two-close exit. ETH at 2,440.87 is 1.7% above that pivot, so the exit is one failed pivot away, not the comfortable 6.1% the stop table implies. If that sits badly, an even 50/50 ($34.04 each) is entirely defensible and I would not argue against it. What I would not do is tilt past 60/40.",
+   "status": "ADVISED - awaiting user execution"
+  },
+  {
+   "date": "2026-08-31",
+   "ticker": "LINKUSDT",
+   "action": "CANCEL the 9.00-9.39 second-half order and RE-SITE to 10.65-11.05",
+   "price": 11.28,
+   "stop": 9.8,
+   "size": "Remaining 50 AED = $13.61. At a 10.85 midpoint that is about 1.25 LINK; stop 9.80 is 9.7% below, so max loss ~$1.32.",
+   "rationale": "The order has silently changed character and that has to be fixed. It was set on Aug 19 as 'a pullback that holds above the rising 20-day', when the 20-day was 8.43 and the zone 8.80-9.05 sat just above it. The 20-day has since risen to 10.634 and the 50-day to 9.268, so the 9.00-9.39 zone now sits ON the 50-day - a fill at 9.20 would be 0.7% BELOW it, meaning the trend would have broken by the time the order filled. That is a trend-break buy, not the trade that was intended. Applying the ORIGINAL construction to current data gives 10.65-11.05, just above the 20-day. This is rule-consistent updating rather than drift: the reference moved, not the price, and leaving the order where it is would be the actual drift. External structure corroborates and worsens the diagnosis - published LINK support runs 11.33 (defended, currently holding), then 11.50-11.75 as the range floor, then NOTHING until 8.50. There is no published bid anywhere inside 9.00-9.39; the old zone sits in a documented void with the next genuine support 7-9% further down and on the far side of the trend break. Order is explicitly VOID below the 50-day.",
+   "status": "order re-sited - awaiting fill"
+  },
+  {
+   "date": "2026-08-31",
+   "ticker": "crypto-broad",
+   "action": "the alt roll is real as a regime and over-counted as a signal",
+   "rationale": "Four watchlist alts - BNB, DOGE, LINK, AVAX - all lost STRONG BUY on fresh MACD bearish crosses in the same session, while BTC and ETH held at 65. The regime is corroborated by three independent prints: Bitcoin dominance broke out to about 60.66% with a 66% target, the Altcoin Season Index is pinned in the low 30s (deep Bitcoin season), and altcoin open interest is down roughly 15% on the month with negative cumulative volume delta named specifically on AVAX, DOGE and XRP. But four MACD crosses on one macro event is ONE observation refracted through four correlated betas, not four independent confirmations - the proximate causes are exogenous (Warsh repricing September hike odds to 57-60%, plus a Grayscale Q2 fund rebalance that cut AVAX below 2.1% to lift BNB to 30.6%). The tell that it is not fundamental deterioration: BNB was the BUY side of that rebalance and still fell 1.01% today. Also worth recording, because it cuts against my own engine: an independent read of the same daily series has LINK's MACD still ABOVE its signal line (0.813 vs 0.777) with a positive but shrinking histogram (+0.036) - so the cross that drove LINK from 65 to 25 is marginal and contested, and LINK's own derivatives are the opposite signature to the cohort, with open interest RISING 3.81% on 24% higher volume. Direction right, conviction over-counted. And no analyst in the window frames this as an alt TOPPING pattern - the published framing is that altseason never arrived, so this is relative underperformance inside an established drain rather than a breakdown from a high.",
+   "status": "no action"
+  },
+  {
+   "date": "2026-08-31",
+   "ticker": "UAE",
+   "action": "reopen broadly lower with no published driver; the du verdict is not in yet",
+   "rationale": "The DFM and ADX reopened after the four-day gap broadly lower - ALDAR and DU both -1.54%, ADIB -1.44%, EMAARDEV -1.39%, DIB -1.09%, EMAAR -0.91%, with EAND and ADIB both cut STRONG BUY -> BUY. No published session wrap was retrievable and no analyst commentary connects the weakness to sanctions, so this reads as four-day-gap catch-up rather than a news response. Two corrections worth logging. First, the Banque Misr action is weaker than it reads: it is a PROPOSED FinCEN Section 311 rule against five UAE BRANCHES of an EGYPTIAN state-owned bank, not a final action and not a UAE institution - so today's bank weakness has no sanctions-specific driver behind it. Second, my du framing was premature: the MSCI trade executes in the 15:00 Dubai CLOSING AUCTION with effect Sept 1, and our snapshot is 11:11 Dubai, so du's -1.54% happens strictly BEFORE the passive flow. Calling sell-the-news on an 11:11 print is reading the tape before the trade happens; the verdict needs the close and tomorrow's volume. Also correcting the sanctions background: the opening Operation Economic Outcast tranche was 78 designations, not the ~60 reported, with 10 UAE-registered entities - the second or third heaviest jurisdiction. No UAE-LISTED entity has been named in any tranche, and that conclusion holds, but the base rate for future tranches is higher than I logged. On AD Ports, the reason the 6.08 price will not close to 6.25 now has a name: the offer carries NO minimum acceptance threshold and squeeze-out authority above 90% is unclear, so the 2.7% gap is a completion-risk premium with a two-week clock, not a mispricing.",
+   "status": "advice only - no position"
   }
  ]
 }

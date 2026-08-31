@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-27T07:40+00:00",
+ "updated": "2026-08-31T07:45+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": 0,
@@ -107,7 +107,7 @@
    }
   ],
   "satellite_candidate": {
-   "as_of": "2026-08-25",
+   "as_of": "2026-08-31",
    "ticker": "LINKUSDT",
    "fill": {
     "state": "UNCONFIRMED - default applied 2026-08-24",
@@ -124,10 +124,15 @@
    "notional_now_usd": 16.56,
    "second_half": {
     "aed": 50,
-    "trigger": "pullback into 9.00-9.39",
-    "status": "standing, ~21% below spot - leave it, do not chase"
+    "usd": 13.61,
+    "old_zone": "9.00-9.39 - CANCELLED",
+    "new_zone": "10.65-11.05 (just above the 20-day at 10.634)",
+    "stop": 9.8,
+    "max_loss_usd": 1.32,
+    "void_if": "price closes below the 50-day (9.268) - the order is void, not filled",
+    "why_moved": "rule-consistent updating, not drift: the original construction was 'a pullback holding above the rising 20-day'. The 20-day rose 8.43 -> 10.634, so the old zone came to sit ON the 50-day and would have filled only after the trend broke. Published support corroborates: 11.33, then 11.50-11.75, then nothing until 8.50 - there is no bid inside 9.00-9.39."
    },
-   "note": "No change: 3xATR improvement is -0.01 ATR. Since Aug 19 LINK is +21.6% against SOL's +33.4% - the choice cost 11.8pp and a stop-ratchet, and bought 1.19x beta versus SOL's 1.84x into two binary events. Second-half order at 9.00-9.39 still standing, ~21% below spot. Fill UNCONFIRMED."
+   "note": "LINK downgraded STRONG BUY -> BUY (65 -> 25) on a MACD cross that an independent read of the same series says has NOT confirmed (MACD 0.813 vs signal 0.777, histogram +0.036). LINK derivatives are the opposite signature to the rolling alt cohort - open interest RISING 3.81% on 24% higher volume. Fill still UNCONFIRMED."
   },
   "opportunity_status": {
    "as_of": "2026-08-25",
@@ -155,6 +160,39 @@
     "TECOM (float-driven noise)"
    ],
    "adports_status": "Board recommends ACCEPT at AED 6.25 following HSBC's fairness opinion (Aug 26). Deal risk materially reduced; trades as a stub to the Sept 15 3pm close. Remains OFF the core shortlist - a merger-arb stub heading to a delisting is not what the stock bucket is for."
+  },
+  "next_dca": {
+   "date": "2026-09-01",
+   "amount_aed": 1000,
+   "core_crypto": {
+    "aed": 250,
+    "usd": 68.07,
+    "eth": {
+     "aed": 150,
+     "usd": 40.84,
+     "qty": 0.016733,
+     "price": 2440.87
+    },
+    "btc": {
+     "aed": 100,
+     "usd": 27.23,
+     "qty": 0.000349,
+     "price": 78128.35
+    },
+    "split_reason": "60/40 to ETH on the Aug-28 ETF flow divergence (BTC -$201.8m, first outflow in nine days; ETH +$102m, tenth consecutive inflow day). Reverses the provisional Aug-30 read, which favoured BTC on price extension alone - extension still favours BTC (ETH +20.2% vs BTC +15.6% above their 50-days), which is why the tilt is 60/40 rather than last month's 65/35.",
+    "caveat": "Adding to ETH adds to the position closest to its exit trigger: published structure puts 2,400-2,450 as THE pivot and losing 2,400 opens 2,300-2,350, which IS our two-close exit. ETH at 2,440.87 is 1.7% above it. An even 50/50 ($34.04 each) is defensible; do not tilt past 60/40."
+   },
+   "core_uae_stocks": {
+    "aed": 400,
+    "action": "accumulate to 800 AED - still blocked, Al Ramz unopened, 1,200 needed for a first order"
+   },
+   "opportunity": {
+    "aed": 250
+   },
+   "satellite": {
+    "aed": 100
+   },
+   "note": "To be stated against the CONFIRMED vs ADVISED-UNCONFIRMED split; reconciliation still outstanding."
   }
  },
  "trailing_stop_rule": {
