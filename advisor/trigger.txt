@@ -1,1 +1,1 @@
-cycle requested: 2026-09-01T05:48:12Z monthly DCA day
+cycle requested: 2026-09-01T07:12:02Z daily cycle
