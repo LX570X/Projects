@@ -1032,6 +1032,29 @@
    "action": "reopen broadly lower with no published driver; the du verdict is not in yet",
    "rationale": "The DFM and ADX reopened after the four-day gap broadly lower - ALDAR and DU both -1.54%, ADIB -1.44%, EMAARDEV -1.39%, DIB -1.09%, EMAAR -0.91%, with EAND and ADIB both cut STRONG BUY -> BUY. No published session wrap was retrievable and no analyst commentary connects the weakness to sanctions, so this reads as four-day-gap catch-up rather than a news response. Two corrections worth logging. First, the Banque Misr action is weaker than it reads: it is a PROPOSED FinCEN Section 311 rule against five UAE BRANCHES of an EGYPTIAN state-owned bank, not a final action and not a UAE institution - so today's bank weakness has no sanctions-specific driver behind it. Second, my du framing was premature: the MSCI trade executes in the 15:00 Dubai CLOSING AUCTION with effect Sept 1, and our snapshot is 11:11 Dubai, so du's -1.54% happens strictly BEFORE the passive flow. Calling sell-the-news on an 11:11 print is reading the tape before the trade happens; the verdict needs the close and tomorrow's volume. Also correcting the sanctions background: the opening Operation Economic Outcast tranche was 78 designations, not the ~60 reported, with 10 UAE-registered entities - the second or third heaviest jurisdiction. No UAE-LISTED entity has been named in any tranche, and that conclusion holds, but the base rate for future tranches is higher than I logged. On AD Ports, the reason the 6.08 price will not close to 6.25 now has a name: the offer carries NO minimum acceptance threshold and squeeze-out authority above 90% is unclear, so the 2.7% gap is a completion-risk premium with a two-week clock, not a mispricing.",
    "status": "advice only - no position"
+  },
+  {
+   "date": "2026-09-01",
+   "ticker": "DCA-EXECUTED-PLAN",
+   "action": "monthly 1,000 AED shopping list issued - core crypto 50/50, everything else accumulates",
+   "rationale": "Re-derived from live 05:48Z signals rather than carrying yesterday's numbers, as the DCA rule requires. The split moved from yesterday's 60/40 ETH to 50/50 because ETH picked up a FRESH MACD BEARISH CROSS overnight: its core score fell 65->40 while BTC's fell 65->50, BTC's MACD histogram is positive (+80.3) against ETH's negative (-2.4), and ETH remains the more extended (+20.5% above its 50-day vs BTC's +15.9%). Against that, the flow evidence still favours ETH (Aug-28 ETF divergence). Two criteria, opposite directions, small gap - so 50/50, which is also what the DCA rule prescribes when the trend read is not clean. Note this is a one-step convergence from 60/40 toward even, not a two-step flip to a BTC tilt; flipping would be the oscillation this book has been trying to stop.",
+   "size": "ETH 125 AED = $34.04 = 0.013724 ETH @ 2,480.10 | BTC 125 AED = $34.04 = 0.000430 BTC @ 79,095.50",
+   "status": "ADVISED - awaiting user execution"
+  },
+  {
+   "date": "2026-09-01",
+   "ticker": "POSITIONS",
+   "action": "BTC and ETH both lost STRONG BUY - no action, nothing triggered",
+   "price": 2480.1,
+   "rationale": "ETH 2,480.10 (+1.81%), $90.28, +35.5% - a new high for the holding period. STRONG BUY -> BUY (65 -> 40) on a fresh MACD bearish cross; stop 2,105 is 15.1% below spot and the 2,300 exit 7.8% below with no count begun. BTC 79,095.50 (+1.43%) STRONG BUY -> BUY (65 -> 30), though 20 of that is the RSI-71.8 stretch penalty, so its core is 50 - the higher of the two. Stop 73,289, 7.3% below. LINK 11.505 (+2.17%), stop 9.80, 14.8% below; still above the re-sited 10.65-11.05 order zone, which has not filled. All three 3xATR candidates negative (ETH -0.20, BTC -1.11, LINK -0.84).",
+   "status": "no action"
+  },
+  {
+   "date": "2026-09-01",
+   "ticker": "UAE",
+   "action": "board deteriorating - ADNOCDRILL lost its 50-day, and the du verdict is in",
+   "rationale": "ADNOCDRILL BUY -> SELL and crossed below its 50-day, ADIB -3.29%, DU -3.07%, DIB -2.31%, TALABAT -2.44%, EMAAR -1.82%. The strongest names left are ADPORTS (+45, but purely a merger-arb stub at 6.07 against the AED 6.25 tender closing Sept 15) and EAND (+40). On du: the MSCI implementation close has now passed and the stock fell another 3.07% to 11.36. That is the sell-the-implementation pattern completing - four sessions of front-running into the close, then a give-back once the passive print cleared. Worth recording as a resolved prediction: the pattern was flagged on Aug 27 as the classic setup, with the caveat on Aug 31 that the 11:11 print was too early to judge. The close settled it. Nothing was actionable either way because Al Ramz is still unopened, but it is a clean data point for how these index events trade.",
+   "status": "advice only - no position"
   }
  ]
 }

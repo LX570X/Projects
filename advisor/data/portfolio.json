@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-31T07:45+00:00",
+ "updated": "2026-09-01T05:55+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": 0,
@@ -64,8 +64,9 @@
   "started": "2026-07-17",
   "stocks_account": "Al Ramz - not opened yet, user will confirm",
   "accumulations": {
-   "core_uae_stocks_aed": 400,
-   "opportunity_usdt_aed": 250
+   "core_uae_stocks_aed": 800,
+   "opportunity_usdt_aed": 500,
+   "satellite_reserve_aed": 100
   },
   "dca_history": [
    {
@@ -103,6 +104,41 @@
      "stop": 0.15369,
      "max_loss_usd": 2.61,
      "reason": "Strongest non-BTC/ETH alt (+55) with real catalysts (RealFi testnet, van Rossem fork, Grayscale ETF filing, whale accumulation); but clears MA deadband by only 0.05pp and BTC breaking down is a headwind for alts."
+    }
+   },
+   {
+    "date": "2026-09-01",
+    "amount_aed": 1000,
+    "core_crypto": {
+     "aed": 250,
+     "usd": 68.07,
+     "eth_aed": 125,
+     "eth_usd": 34.04,
+     "eth_qty": 0.013724,
+     "eth_price": 2480.1,
+     "btc_aed": 125,
+     "btc_usd": 34.04,
+     "btc_qty": 0.00043,
+     "btc_price": 79095.5,
+     "split_reason": "50/50. The two criteria genuinely disagree and the gap is small. TREND HEALTH favours BTC today: its MACD histogram is positive (+80.3) with no cross while ETH has a FRESH BEARISH CROSS (-2.4), ETH's core score fell 65->40 against BTC's 65->50, and ETH is the more extended (+20.5% above its 50-day vs +15.9%). FLOW still favours ETH: the Aug-28 ETF divergence (BTC -$201.8m, first outflow in nine days; ETH +$102m, tenth consecutive inflow day). Yesterday I called 60/40 ETH on the flow; today's fresh cross moved the balance one step toward even, not two steps to a BTC tilt. Converging to 50/50 is the honest update - flipping to 40/60 would be the oscillation this book has been trying to stop."
+    },
+    "core_uae_stocks": {
+     "action": "accumulate",
+     "aed": 400,
+     "bucket_total_aed": 800,
+     "reason": "Al Ramz still not opened. 1,200 AED needed for a first order; the bucket reaches that next month. Nothing on the UAE board is worth chasing anyway - ADNOCDRILL fell out of BUY today and crossed below its 50-day, ADIB -3.3%, DU -3.1%."
+    },
+    "opportunity": {
+     "action": "hold as USDT",
+     "aed": 250,
+     "bucket_total_aed": 500,
+     "reason": "Three reasons not to deploy. (1) The Aug-19 BTC deploy from this same bucket is still ADVISED-UNCONFIRMED, so the bucket's true state is unknown - stacking a second deploy on an unresolved one recreates the bookkeeping problem just fixed. (2) The only STRONG BUY candidates are extended: SOL at RSI 70.0 after +37% since Aug 19, XRP after roughly +45% in a fortnight. (3) Breadth is deteriorating - BOTH BTC and ETH lost STRONG BUY today, which is the same condition that correctly kept this bucket in USDT on Aug 1. Deploy trigger unchanged: BTC reclaiming STRONG BUY, or a non-extended BUY+ setup."
+    },
+    "satellite": {
+     "action": "reserve - slot occupied",
+     "aed": 100,
+     "bucket_total_aed": 100,
+     "reason": "The satellite slot is held by LINK (half advised at 9.681, second half pending at 10.65-11.05) and the rule is one satellite position at a time. SOL now scores 65 against LINK's 25 and is the strongest non-BTC/ETH alt - but switching the satellite to whatever tops the table each month is exactly the churn the rule exists to prevent, and SOL is +37% since it was declined on Aug 19 at RSI 70.0. Chasing it now would be buying the outcome already missed. September's 100 AED accumulates as satellite reserve until the slot frees - either the 10.65-11.05 order fills or LINK is stopped out."
     }
    }
   ],
@@ -162,37 +198,8 @@
    "adports_status": "Board recommends ACCEPT at AED 6.25 following HSBC's fairness opinion (Aug 26). Deal risk materially reduced; trades as a stub to the Sept 15 3pm close. Remains OFF the core shortlist - a merger-arb stub heading to a delisting is not what the stock bucket is for."
   },
   "next_dca": {
-   "date": "2026-09-01",
-   "amount_aed": 1000,
-   "core_crypto": {
-    "aed": 250,
-    "usd": 68.07,
-    "eth": {
-     "aed": 150,
-     "usd": 40.84,
-     "qty": 0.016733,
-     "price": 2440.87
-    },
-    "btc": {
-     "aed": 100,
-     "usd": 27.23,
-     "qty": 0.000349,
-     "price": 78128.35
-    },
-    "split_reason": "60/40 to ETH on the Aug-28 ETF flow divergence (BTC -$201.8m, first outflow in nine days; ETH +$102m, tenth consecutive inflow day). Reverses the provisional Aug-30 read, which favoured BTC on price extension alone - extension still favours BTC (ETH +20.2% vs BTC +15.6% above their 50-days), which is why the tilt is 60/40 rather than last month's 65/35.",
-    "caveat": "Adding to ETH adds to the position closest to its exit trigger: published structure puts 2,400-2,450 as THE pivot and losing 2,400 opens 2,300-2,350, which IS our two-close exit. ETH at 2,440.87 is 1.7% above it. An even 50/50 ($34.04 each) is defensible; do not tilt past 60/40."
-   },
-   "core_uae_stocks": {
-    "aed": 400,
-    "action": "accumulate to 800 AED - still blocked, Al Ramz unopened, 1,200 needed for a first order"
-   },
-   "opportunity": {
-    "aed": 250
-   },
-   "satellite": {
-    "aed": 100
-   },
-   "note": "To be stated against the CONFIRMED vs ADVISED-UNCONFIRMED split; reconciliation still outstanding."
+   "date": "2026-10-01",
+   "note": "core_uae_stocks reaches 1,200 AED next month - the first stock order becomes possible IF Al Ramz is open by then."
   }
  },
  "trailing_stop_rule": {
