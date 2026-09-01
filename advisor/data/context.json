@@ -1,17 +1,21 @@
 {
- "updated": "2026-09-01T05:55+00:00",
+ "updated": "2026-09-01T07:20+00:00",
  "market_notes": [
   {
-   "market": "DCA - September",
-   "note": "Core crypto 250 AED splits 50/50: ETH 125 AED = $34.04 = 0.013724 @ 2,480.10; BTC 125 AED = $34.04 = 0.000430 @ 79,095.50. The split moved from yesterday's 60/40 ETH because ETH picked up a fresh MACD bearish cross overnight - its core score fell 65 to 40 against BTC's 65 to 50, BTC's MACD histogram is positive (+80.3) against ETH's negative (-2.4), and ETH is the more extended (+20.5% vs +15.9% above their 50-days). The Aug-28 ETF flow divergence still favours ETH, so two criteria now point opposite ways with a small gap - which is precisely the case the DCA rule settles at 50/50. This is a one-step convergence toward even, not a flip to a BTC tilt. Other buckets: UAE stocks accumulate to 800 AED (Al Ramz still closed, 1,200 needed - reachable next month); opportunity holds as USDT at 500 AED; satellite reserves 100 AED because the slot is occupied by LINK."
-  },
-  {
    "market": "Positions",
-   "note": "Both majors lost STRONG BUY and neither matters for action. ETH 2,480.10 (+1.81%), $90.28, +35.5% - a new high for the holding period - downgraded on a fresh MACD bearish cross; stop 2,105 is 15.1% below and the 2,300 exit 7.8% below with no count begun. BTC 79,095.50 (+1.43%) downgraded to 30, but 20 of that is the RSI-71.8 stretch penalty so its core is 50, the higher of the two. LINK 11.505 (+2.17%) still above the re-sited 10.65-11.05 order zone, which has not filled. All three 3xATR candidates negative."
+   "note": "Second cycle of the day, catching the live UAE session that the 05:48Z DCA snapshot missed (it ran at 09:48 Dubai, before the 10:00 open). Crypto barely moved: ETH 2,473.50, $90.04, +35.2%; stop 2,105 is 14.9% below and the 2,300 exit 7.5% below with no count. BTC 78,720.06, stop 73,289, 6.9% below. LINK 11.489, still above the 10.65-11.05 order zone, unfilled. All three 3xATR candidates negative. This morning's DCA advice stands unchanged at 50/50 - crypto moved less than 1% since it was priced."
   },
   {
-   "market": "UAE - du resolved",
-   "note": "The MSCI implementation close has passed and du fell another 3.07% to 11.36. That completes the sell-the-implementation pattern - four sessions of front-running into the close, then a give-back once the passive print cleared. It was flagged on Aug 27 as the classic setup and correctly left un-scored on Aug 31 when the 11:11 print was too early to judge. Elsewhere the board deteriorated: ADNOCDRILL fell out of BUY and crossed below its 50-day, ADIB -3.29%, DIB -2.31%, TALABAT -2.44%. The strongest names left are ADPORTS (+45, a merger-arb stub at 6.07 against the AED 6.25 tender closing Sept 15) and EAND (+40). Nothing actionable - Al Ramz remains unopened."
+   "market": "DU - the index-inclusion template",
+   "note": "DU is 10.94 with a session range of 11.40 to 10.88 - it opened up and sold off hard. The verifiable arc is 11.54 at the Aug-27 pre-holiday close, 11.36 at Monday's close, 10.94 now: about -5.2% across the MSCI implementation and -12.2% off the 12.46 fifty-two-week high. The feed's -6.66% headline is measured against a previous close near 11.72 that does not match Monday's 11.36, so the honest figures are roughly -3.7% on the session and -5.2% across the event. This completes the pattern flagged on Aug 27: four sessions of front-running into a dated one-off flow, then a give-back larger than the run-up once the passive print cleared. Keep as a template - index-inclusion demand is a single closing auction, not a persistent bid, and the pre-positioners become the next morning's sellers."
+  },
+  {
+   "market": "UAE - the rest",
+   "note": "A weak live session beneath the DU story: TALABAT -1.63%, FAB -1.52%, EMAARDEV -1.39%, DIB -1.22%, AIRARABIA -1.20%, EMIRATESNBD -1.05%. Green: TECOM +2.09%, SALIK +1.51%, ADNOCDRILL +1.21%. TECOM's HOLD -> STRONG BUY is its SEVENTH band change in about five weeks and is being logged as noise, not signal - it was dropped from the shortlist on Aug 24 because a 13.5% free float makes its moving-average crosses order-flow artefacts. ADPORTS holds at 6.08 against the AED 6.25 tender closing 3pm Sept 15. Data note: TAQA failed to fetch this cycle (30 of 31 assets), so its values are stale carry-forward."
+  },
+  {
+   "market": "Crypto",
+   "note": "Quiet: everything up between 0.4% and 3.1% with no band changes except XRP, which lost STRONG BUY on a fresh MACD bearish cross - the fifth watchlist alt to do so in four sessions, after BNB, DOGE, LINK and AVAX. SOL is now the only crypto rated STRONG BUY at 65. That continues the alt-momentum roll logged Aug 31: real as a regime (Bitcoin dominance above 60%, Altcoin Season Index in the low 30s), over-counted as a signal, since the crosses trace to one macro event refracted through correlated betas."
   }
  ],
  "asset_notes": {
@@ -491,6 +495,12 @@
     "impact": "bearish",
     "date": "2026-08-24",
     "source": "news research pass"
+   },
+   {
+    "headline": "Lost STRONG BUY on a fresh MACD bearish cross - the fifth watchlist alt to do so in four sessions",
+    "impact": "bearish",
+    "date": "2026-09-01",
+    "source": "advisor data"
    }
   ],
   "DOGEUSDT": [
@@ -955,6 +965,12 @@
     "impact": "bearish",
     "date": "2026-09-01",
     "source": "advisor data"
+   },
+   {
+    "headline": "Sold off to 10.94 (session range 11.40-10.88) after the MSCI implementation close - about -5.2% across the event, with the give-back larger than the four-session run-up",
+    "impact": "bearish",
+    "date": "2026-09-01",
+    "source": "advisor data"
    }
   ],
   "TECOM": [
@@ -963,6 +979,12 @@
     "impact": "neutral",
     "date": "2026-08-24",
     "source": "news research pass"
+   },
+   {
+    "headline": "Seventh band change in five weeks: HOLD -> STRONG BUY on a MACD bullish cross and 50-day crossing - logged as float-driven noise, not signal",
+    "impact": "neutral",
+    "date": "2026-09-01",
+    "source": "advisor data"
    }
   ],
   "ADNOCDRILL": [

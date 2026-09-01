@@ -1055,6 +1055,37 @@
    "action": "board deteriorating - ADNOCDRILL lost its 50-day, and the du verdict is in",
    "rationale": "ADNOCDRILL BUY -> SELL and crossed below its 50-day, ADIB -3.29%, DU -3.07%, DIB -2.31%, TALABAT -2.44%, EMAAR -1.82%. The strongest names left are ADPORTS (+45, but purely a merger-arb stub at 6.07 against the AED 6.25 tender closing Sept 15) and EAND (+40). On du: the MSCI implementation close has now passed and the stock fell another 3.07% to 11.36. That is the sell-the-implementation pattern completing - four sessions of front-running into the close, then a give-back once the passive print cleared. Worth recording as a resolved prediction: the pattern was flagged on Aug 27 as the classic setup, with the caveat on Aug 31 that the 11:11 print was too early to judge. The close settled it. Nothing was actionable either way because Al Ramz is still unopened, but it is a clean data point for how these index events trade.",
    "status": "advice only - no position"
+  },
+  {
+   "date": "2026-09-01",
+   "ticker": "POSITIONS",
+   "action": "second cycle of the day (live UAE session) - nothing triggered, no stop moves",
+   "price": 2473.5,
+   "rationale": "The DCA snapshot at 05:48Z was 09:48 Dubai, BEFORE the 10:00 UAE open, so its stock prices were Monday's close. This refresh at 07:12Z catches the live session. Crypto barely moved: ETH 2,473.50, $90.04, +35.2% - stop 2,105 is 14.9% below and the 2,300 exit 7.5% below with no count. BTC 78,720.06, stop 73,289, 6.9% below. LINK 11.489, stop 9.80, 14.7% below, still above the 10.65-11.05 order zone which has not filled. All three 3xATR candidates negative. The DCA advice issued this morning stands unchanged at 50/50 - crypto moved less than 1% since it was priced.",
+   "status": "no action"
+  },
+  {
+   "date": "2026-09-01",
+   "ticker": "DU",
+   "action": "the post-inclusion unwind is now emphatic",
+   "price": 10.94,
+   "rationale": "DU is 10.94 with a session range of 11.40 high to 10.88 low - it opened up and sold off hard. The verifiable arc: 11.54 at the Aug-27 close before the holiday, 11.36 at Monday's close, 10.94 now - about -5.2% across the MSCI implementation, and -12.2% from the 12.46 fifty-two-week high. A note on the number: the feed reports -6.66% today, but that is measured against a previous close near 11.72 which does not match Monday's 11.36, so the honest statement is roughly -3.7% on the session and -5.2% across the event, not -6.66%. This completes the pattern flagged on Aug 27 - four sessions of front-running into a dated one-off flow, then a give-back once the passive print cleared, with the give-back larger than the run-up. Worth keeping as a template: index-inclusion demand is a single closing auction, not a persistent bid, and the pre-positioners become the sellers the next morning.",
+   "status": "advice only - no position"
+  },
+  {
+   "date": "2026-09-01",
+   "ticker": "TECOM",
+   "action": "seventh band change - the decision to drop it is vindicated",
+   "price": 3.42,
+   "rationale": "TECOM went HOLD -> STRONG BUY (+45) today on a MACD bullish cross and a 50-day crossing, +2.09%. That is its SEVENTH signal-band change in roughly five weeks. It was removed from the shortlist on Aug 24 on the grounds that a 13.5% free float (Dubai Holding holds 86.5%) makes its moving-average crosses order-flow noise rather than information. Today is exactly that pattern again, and it is being logged rather than reported as a signal. TECOM remains tracked but its band changes will not be treated as actionable.",
+   "status": "dropped - noise, not signal"
+  },
+  {
+   "date": "2026-09-01",
+   "ticker": "DATA",
+   "action": "TAQA failed to fetch - 30 of 31 assets",
+   "rationale": "TAQA returned 'not in response' from the TradingView ADX scanner this cycle, so its displayed values are stale carry-forward from the prior snapshot rather than live. Not material - TAQA is a BUY(25) with no position and no pending decision attached to it - but recording it so a stale price is not mistaken for a flat session. If it fails again tomorrow it is worth checking whether the symbol has changed, which is what happened with TON/GRAM in July.",
+   "status": "noted - monitor"
   }
  ]
 }
