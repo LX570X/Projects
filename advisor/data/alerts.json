@@ -1,59 +1,35 @@
 {
- "generated_at_utc": "2026-09-01T05:48:51+00:00",
+ "generated_at_utc": "2026-09-01T07:12:41+00:00",
  "alerts": [
   {
-   "ticker": "BTCUSDT",
+   "ticker": "XRPUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "BTCUSDT: STRONG BUY -> BUY (score 65 -> 30)"
+   "msg": "XRPUSDT: STRONG BUY -> BUY (score 50 -> 40)"
   },
   {
-   "ticker": "BTCUSDT",
-   "severity": "info",
-   "type": "rsi",
-   "msg": "BTCUSDT: RSI crossed above 70 (now 71.8)"
-  },
-  {
-   "ticker": "ETHUSDT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "ETHUSDT: STRONG BUY -> BUY (score 65 -> 40)"
-  },
-  {
-   "ticker": "ETHUSDT",
+   "ticker": "XRPUSDT",
    "severity": "info",
    "type": "macd",
-   "msg": "ETHUSDT: MACD bearish cross"
+   "msg": "XRPUSDT: MACD bearish cross"
   },
   {
-   "ticker": "SALIK",
-   "severity": "info",
-   "type": "macd",
-   "msg": "SALIK: MACD bullish cross"
-  },
-  {
-   "ticker": "DU",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "DU moved -3.1% in the last day (now 11.36 AED)"
-  },
-  {
-   "ticker": "ADIB",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "ADIB moved -3.3% in the last day (now 22.9 AED)"
-  },
-  {
-   "ticker": "ADNOCDRILL",
+   "ticker": "TECOM",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "ADNOCDRILL: BUY -> SELL (score 25 -> -25)"
+   "msg": "TECOM: HOLD -> STRONG BUY (score -15 -> 45)"
   },
   {
-   "ticker": "ADNOCDRILL",
+   "ticker": "TECOM",
+   "severity": "info",
+   "type": "macd",
+   "msg": "TECOM: MACD bullish cross"
+  },
+  {
+   "ticker": "TECOM",
    "severity": "actionable",
    "type": "trend",
-   "msg": "ADNOCDRILL: price crossed below its 50-day average \u2014 trend change"
+   "msg": "TECOM: price crossed above its 50-day average \u2014 trend change"
   }
  ]
 }
