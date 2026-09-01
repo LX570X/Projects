@@ -1,77 +1,59 @@
 {
- "generated_at_utc": "2026-08-31T07:11:38+00:00",
+ "generated_at_utc": "2026-09-01T05:48:51+00:00",
  "alerts": [
   {
-   "ticker": "BNBUSDT",
+   "ticker": "BTCUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "BNBUSDT: STRONG BUY -> BUY (score 65 -> 40)"
+   "msg": "BTCUSDT: STRONG BUY -> BUY (score 65 -> 30)"
   },
   {
-   "ticker": "BNBUSDT",
+   "ticker": "BTCUSDT",
+   "severity": "info",
+   "type": "rsi",
+   "msg": "BTCUSDT: RSI crossed above 70 (now 71.8)"
+  },
+  {
+   "ticker": "ETHUSDT",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ETHUSDT: STRONG BUY -> BUY (score 65 -> 40)"
+  },
+  {
+   "ticker": "ETHUSDT",
    "severity": "info",
    "type": "macd",
-   "msg": "BNBUSDT: MACD bearish cross"
+   "msg": "ETHUSDT: MACD bearish cross"
   },
   {
-   "ticker": "DOGEUSDT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "DOGEUSDT: STRONG BUY -> BUY (score 65 -> 25)"
-  },
-  {
-   "ticker": "DOGEUSDT",
+   "ticker": "SALIK",
    "severity": "info",
    "type": "macd",
-   "msg": "DOGEUSDT: MACD bearish cross"
+   "msg": "SALIK: MACD bullish cross"
   },
   {
-   "ticker": "LINKUSDT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "LINKUSDT: STRONG BUY -> BUY (score 65 -> 25)"
-  },
-  {
-   "ticker": "LINKUSDT",
+   "ticker": "DU",
    "severity": "info",
-   "type": "macd",
-   "msg": "LINKUSDT: MACD bearish cross"
-  },
-  {
-   "ticker": "AVAXUSDT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "AVAXUSDT: STRONG BUY -> BUY (score 65 -> 40)"
-  },
-  {
-   "ticker": "AVAXUSDT",
-   "severity": "info",
-   "type": "macd",
-   "msg": "AVAXUSDT: MACD bearish cross"
-  },
-  {
-   "ticker": "GRAMUSDT",
-   "severity": "info",
-   "type": "macd",
-   "msg": "GRAMUSDT: MACD bearish cross"
-  },
-  {
-   "ticker": "EAND",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "EAND: STRONG BUY -> BUY (score 50 -> 40)"
-  },
-  {
-   "ticker": "ADNOCGAS",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "ADNOCGAS: SELL -> STRONG SELL (score -35 -> -65) \u2014 stretch penalty applied, trend/momentum unchanged"
+   "type": "big_move",
+   "msg": "DU moved -3.1% in the last day (now 11.36 AED)"
   },
   {
    "ticker": "ADIB",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "ADIB moved -3.3% in the last day (now 22.9 AED)"
+  },
+  {
+   "ticker": "ADNOCDRILL",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "ADIB: STRONG BUY -> BUY (score 50 -> 35)"
+   "msg": "ADNOCDRILL: BUY -> SELL (score 25 -> -25)"
+  },
+  {
+   "ticker": "ADNOCDRILL",
+   "severity": "actionable",
+   "type": "trend",
+   "msg": "ADNOCDRILL: price crossed below its 50-day average \u2014 trend change"
   }
  ]
 }
