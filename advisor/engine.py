@@ -28,6 +28,12 @@ BANDS = [(45, "STRONG BUY"), (20, "BUY"), (-20, "HOLD"), (-45, "SELL"), (-10**9,
 MA_DEADBAND = 0.005      # 0.5% min separation between the 20- and 50-day averages
 MACD_DEADBAND = 0.0015   # MACD histogram must exceed 0.15% of price to count
 MIN_BARS = 55            # below this the 50-day trend does not exist yet
+# Identical closes before a quote is treated as frozen. Calibrated from 30 runs of
+# real data: live UAE stocks legitimately repeat a close up to 7 times because our
+# daily snapshots repeat the last close over weekends and holidays, so the stock
+# threshold sits above that. Crypto trades 24/7, where three identical closes is
+# already unambiguous. (TAQA, delisted 2026-08-07, ran to 27.)
+STALE_RUNS = {"crypto": 3, "stock": 10}
 
 
 def sma(vals, n):
@@ -365,12 +371,29 @@ def resolve_states(prev_signals, signals):
                 raw = "below"
         s["trend_state"] = raw or p.get("trend_state")
 
+        # Frozen-quote detection. A source can keep returning a delisted or
+        # suspended instrument's last-ever print and the fetch still "succeeds",
+        # so a stale price is invisible in the fetch log. TAQA stopped trading on
+        # ADX on 2026-08-07 and was rated BUY(+25) on the same 2.66 print for
+        # 27 straight days before anyone noticed. Count identical closes and stop
+        # rating the asset once it is clearly not moving.
+        if p.get("last") is not None and s["last"] == p["last"]:
+            s["stale_runs"] = (p.get("stale_runs") or 0) + 1
+        else:
+            s["stale_runs"] = 0
+        limit = STALE_RUNS.get(s.get("kind"), 10)
+        if s["stale_runs"] >= limit and s["signal"] != "INSUFFICIENT DATA":
+            s["signal"] = "STALE DATA"
+            s["score"] = 0
+            s["reasons"] = [f"price unchanged at {s['last']:g} for {s['stale_runs']} "
+                            f"consecutive runs — quote looks frozen, not rated"] + s.get("reasons", [])
+
 
 def diff_alerts(prev_signals, signals):
     alerts = []
     prev = {s["ticker"]: s for s in (prev_signals or [])}
     for s in signals:
-        if s["signal"] == "INSUFFICIENT DATA":
+        if s["signal"] in ("INSUFFICIENT DATA", "STALE DATA"):
             continue  # never alert on an asset we cannot actually rate
         p = prev.get(s["ticker"])
         chg = s.get("change24h_pct")

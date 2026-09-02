@@ -1086,6 +1086,35 @@
    "action": "TAQA failed to fetch - 30 of 31 assets",
    "rationale": "TAQA returned 'not in response' from the TradingView ADX scanner this cycle, so its displayed values are stale carry-forward from the prior snapshot rather than live. Not material - TAQA is a BUY(25) with no position and no pending decision attached to it - but recording it so a stale price is not mistaken for a flat session. If it fails again tomorrow it is worth checking whether the symbol has changed, which is what happened with TON/GRAM in July.",
    "status": "noted - monitor"
+  },
+  {
+   "date": "2026-09-02",
+   "ticker": "TAQA",
+   "action": "SERIOUS DATA FAULT - I have been rating a DELISTED stock as a live BUY for four weeks",
+   "rationale": "TAQA stopped trading on ADX on August 7, 2026. August 6 was its last trading day. Abu Dhabi Power Corporation, which held 98.12%, compulsorily acquired the remaining shares; the Abu Dhabi Depository verified 100% ownership on August 13 and the board resolved to delist on August 25. The takeover was by L'imad - the same sovereign vehicle now bidding for AD Ports. My engine kept rating it BUY (+25) on the identical 2.66 print, with the identical -0.37% change, EVERY DAY from at least Aug 5 through Sept 1 - 27 consecutive runs - and it appeared on the UAE shortlist that whole time. The fetch log said OK every one of those days. That is the defect: my guards catch MISSING data and ABSURD data, but nothing caught FROZEN data, because the source kept serving a delisted instrument's last-ever print and the fetch genuinely succeeded. The failure that started Sept 1 was not the bug; it was the bug finally becoming visible. Had Al Ramz been open, TAQA would have been on the shortlist as a buy candidate for a stock that cannot be bought.",
+   "status": "fixed - removed from watchlist and a staleness guard added"
+  },
+  {
+   "date": "2026-09-02",
+   "ticker": "ENGINE",
+   "action": "frozen-quote guard added, calibrated from real data",
+   "rationale": "The engine now counts consecutive identical closes per asset and flips the signal to STALE DATA with a score of 0 once the count passes a threshold, suppressing its alerts the same way INSUFFICIENT DATA does. The thresholds are calibrated from 30 runs of this book's own history rather than guessed: live UAE stocks legitimately repeat a close up to SEVEN times, because the daily snapshots repeat the last close across weekends and holidays, so the stock threshold is 10. Crypto trades continuously, where three identical closes is already unambiguous, so that threshold is 3. Verified both ways - a stock with 8 identical closes stays rated, a stock with 12 flips to STALE DATA, crypto flips at 4, and any moving price resets the counter to zero. At a 10-run threshold TAQA would have been caught around Aug 16 rather than Sept 2. That is 17 days late in this instance, but it is the right threshold given the weekend-repeat noise, and the stale_runs count is now emitted so a rising number is visible before it trips.",
+   "status": "implemented and verified"
+  },
+  {
+   "date": "2026-09-02",
+   "ticker": "POSITIONS",
+   "action": "nothing triggered, no stop moves, no action",
+   "price": 2423.14,
+   "rationale": "Broad risk-off. ETH 2,423.14 (-2.02%), $88.20, +32.4% - stop 2,105 is 13.1% below and the 2,300 exit 5.4% below with no count begun. BTC 77,670 (-1.37%) with a fresh MACD bearish cross, stop 73,289, 5.6% below. LINK 11.276 (-1.91%), stop 9.80, 13.1% below, still above the 10.65-11.05 order zone. All three 3xATR candidates negative (ETH -0.15, BTC -1.47, LINK -0.96). Note how compressed the crypto board has become: BTC, ETH, BNB, XRP, DOGE, LINK and AVAX are ALL sitting at exactly BUY 25 with core 25 - the entire complex has lost its MACD momentum contribution at once. SOL is the lone STRONG BUY at 65.",
+   "status": "no action"
+  },
+  {
+   "date": "2026-09-02",
+   "ticker": "UAE",
+   "action": "broad deterioration - EMIRATESNBD lost its 50-day",
+   "rationale": "EMIRATESNBD crossed BELOW its 50-day and fell BUY -> HOLD, which matters because it was one of the anchor names on the shortlist. DIB and ALDAR both cut to STRONG SELL, AIRARABIA -3.22% to 4.81, DU -2.82% to 11.04 as the post-MSCI unwind continues, ADIB -2.09%, EMAAR now at -65 alongside EMAARDEV and ADNOCGAS. The board is now almost entirely SELL or worse: the only names rated BUY or better are ADPORTS (+45, a merger-arb stub), TECOM (+45, which is dropped as float noise), ADIB, TALABAT, FAB, ADCB and EAND, all at 25-35. With the stock bucket at 800 AED and Al Ramz still unopened, there is nothing here to prepare for - and given the state of the board, the delay has cost nothing this month.",
+   "status": "advice only - no position"
   }
  ]
 }
