@@ -1,35 +1,53 @@
 {
- "generated_at_utc": "2026-09-01T07:12:41+00:00",
+ "generated_at_utc": "2026-09-02T07:11:13+00:00",
  "alerts": [
   {
-   "ticker": "XRPUSDT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "XRPUSDT: STRONG BUY -> BUY (score 50 -> 40)"
-  },
-  {
-   "ticker": "XRPUSDT",
+   "ticker": "BTCUSDT",
    "severity": "info",
    "type": "macd",
-   "msg": "XRPUSDT: MACD bearish cross"
+   "msg": "BTCUSDT: MACD bearish cross"
   },
   {
-   "ticker": "TECOM",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "TECOM: HOLD -> STRONG BUY (score -15 -> 45)"
-  },
-  {
-   "ticker": "TECOM",
+   "ticker": "GRAMUSDT",
    "severity": "info",
-   "type": "macd",
-   "msg": "TECOM: MACD bullish cross"
+   "type": "big_move",
+   "msg": "GRAMUSDT moved -5.0% in the last day (now 1.324 USD)"
   },
   {
-   "ticker": "TECOM",
+   "ticker": "EMIRATESNBD",
+   "severity": "info",
+   "type": "signal_change",
+   "msg": "EMIRATESNBD: BUY -> HOLD (score 35 -> -15)"
+  },
+  {
+   "ticker": "EMIRATESNBD",
    "severity": "actionable",
    "type": "trend",
-   "msg": "TECOM: price crossed above its 50-day average \u2014 trend change"
+   "msg": "EMIRATESNBD: price crossed below its 50-day average \u2014 trend change"
+  },
+  {
+   "ticker": "DIB",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "DIB: SELL -> STRONG SELL (score -45 -> -55)"
+  },
+  {
+   "ticker": "DEWA",
+   "severity": "info",
+   "type": "signal_change",
+   "msg": "DEWA: SELL -> HOLD (score -30 -> -15)"
+  },
+  {
+   "ticker": "AIRARABIA",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "AIRARABIA moved -3.2% in the last day (now 4.81 AED)"
+  },
+  {
+   "ticker": "ALDAR",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ALDAR: SELL -> STRONG SELL (score -35 -> -50)"
   }
  ]
 }
