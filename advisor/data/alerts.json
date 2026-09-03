@@ -1,53 +1,59 @@
 {
- "generated_at_utc": "2026-09-02T07:11:13+00:00",
+ "generated_at_utc": "2026-09-03T07:11:52+00:00",
  "alerts": [
   {
-   "ticker": "BTCUSDT",
+   "ticker": "SOLUSDT",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "SOLUSDT: STRONG BUY -> BUY (score 65 -> 40)"
+  },
+  {
+   "ticker": "SOLUSDT",
    "severity": "info",
    "type": "macd",
-   "msg": "BTCUSDT: MACD bearish cross"
+   "msg": "SOLUSDT: MACD bearish cross"
   },
   {
-   "ticker": "GRAMUSDT",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "GRAMUSDT moved -5.0% in the last day (now 1.324 USD)"
-  },
-  {
-   "ticker": "EMIRATESNBD",
-   "severity": "info",
-   "type": "signal_change",
-   "msg": "EMIRATESNBD: BUY -> HOLD (score 35 -> -15)"
-  },
-  {
-   "ticker": "EMIRATESNBD",
-   "severity": "actionable",
-   "type": "trend",
-   "msg": "EMIRATESNBD: price crossed below its 50-day average \u2014 trend change"
-  },
-  {
-   "ticker": "DIB",
+   "ticker": "LTCUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "DIB: SELL -> STRONG SELL (score -45 -> -55)"
+   "msg": "LTCUSDT: BUY -> STRONG BUY (score 35 -> 50)"
+  },
+  {
+   "ticker": "DEWA",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "DEWA: HOLD -> STRONG BUY (score -15 -> 45)"
   },
   {
    "ticker": "DEWA",
    "severity": "info",
-   "type": "signal_change",
-   "msg": "DEWA: SELL -> HOLD (score -30 -> -15)"
+   "type": "macd",
+   "msg": "DEWA: MACD bullish cross"
   },
   {
-   "ticker": "AIRARABIA",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "AIRARABIA moved -3.2% in the last day (now 4.81 AED)"
-  },
-  {
-   "ticker": "ALDAR",
+   "ticker": "DU",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "ALDAR: SELL -> STRONG SELL (score -35 -> -50)"
+   "msg": "DU: SELL -> STRONG SELL (score -45 -> -65)"
+  },
+  {
+   "ticker": "TECOM",
+   "severity": "info",
+   "type": "signal_change",
+   "msg": "TECOM: STRONG BUY -> HOLD (score 45 -> -5)"
+  },
+  {
+   "ticker": "TECOM",
+   "severity": "actionable",
+   "type": "trend",
+   "msg": "TECOM: price crossed below its 50-day average \u2014 trend change"
+  },
+  {
+   "ticker": "ADPORTS",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ADPORTS: STRONG BUY -> BUY (score 45 -> 30)"
   }
  ]
 }
