@@ -1115,6 +1115,35 @@
    "action": "broad deterioration - EMIRATESNBD lost its 50-day",
    "rationale": "EMIRATESNBD crossed BELOW its 50-day and fell BUY -> HOLD, which matters because it was one of the anchor names on the shortlist. DIB and ALDAR both cut to STRONG SELL, AIRARABIA -3.22% to 4.81, DU -2.82% to 11.04 as the post-MSCI unwind continues, ADIB -2.09%, EMAAR now at -65 alongside EMAARDEV and ADNOCGAS. The board is now almost entirely SELL or worse: the only names rated BUY or better are ADPORTS (+45, a merger-arb stub), TECOM (+45, which is dropped as float noise), ADIB, TALABAT, FAB, ADCB and EAND, all at 25-35. With the stock bucket at 800 AED and Al Ramz still unopened, there is nothing here to prepare for - and given the state of the board, the delay has cost nothing this month.",
    "status": "advice only - no position"
+  },
+  {
+   "date": "2026-09-03",
+   "ticker": "ETHUSDT",
+   "action": "lost a published structural level - watch, but no rule triggered",
+   "price": 2410.64,
+   "rationale": "ETH 2,410.64 (-0.57%), $87.75, +31.8%. Its own signal actually IMPROVED today, 25 -> 35, but the more useful fact is external: published work puts the critical weekly level at 2,438 (the 0.618 Fibonacci retracement), and ETH is now BELOW it, with the stated consequence that losing 2,438 exposes the Supertrend near 2,220. Note where that sits relative to our own rule - 2,220 is BELOW the 2,300 two-close exit, so if that published path plays out our exit fires on the way down rather than at the destination. The cushion to the exit has narrowed three sessions running: 7.5%, then 5.4%, then 4.8% today. Nothing triggered and no action is due - the rule is two consecutive daily CLOSES below 2,300 and we are 4.8% above it. The strong counterweight is flow: spot ETH ETFs took inflows for a TWELFTH consecutive day on Sept 2, and July was ETH's best ETF month on record at $365m against Bitcoin's worst at $205m, with institutional money going into ETH products at more than twice the Bitcoin rate. Technicals deteriorating, flows still strongly supportive - the same tension that produced the 50/50 DCA split.",
+   "status": "open, +31.8% - watching"
+  },
+  {
+   "date": "2026-09-03",
+   "ticker": "crypto-broad",
+   "action": "SOL was the last holdout and it has now rolled too",
+   "rationale": "SOL lost STRONG BUY (65 -> 40) on a fresh MACD bearish cross, completing the sweep: BNB, DOGE, LINK and AVAX rolled on Aug 31, XRP on Sept 1, BTC on Sept 2, SOL today. Every major and every watchlist alt has now put in a bearish MACD cross inside four sessions. The odd exception is LTC, which went the other way - BUY -> STRONG BUY (+50) - and is now the only STRONG BUY crypto in the book. That is a single name moving against a complete cohort roll, which historically means noise rather than leadership, and LTC is not a candidate for anything: it is not held, not the satellite, and the satellite slot is occupied.",
+   "status": "no action"
+  },
+  {
+   "date": "2026-09-03",
+   "ticker": "ENGINE",
+   "action": "the stale guard is live and visible - working as designed",
+   "rationale": "First cycle running the new frozen-quote counter. Four UAE names show stale_runs of 1 - TALABAT, EAND, ADNOCGAS and ADPORTS each repeated a close once - and none is anywhere near the 10-run stock threshold. That is exactly the intended behaviour: the counter is visible and rising before it would ever trip, so a drift toward frozen is observable rather than silent. Asset count is now 30 with TAQA removed. No false positives on the first run.",
+   "status": "working"
+  },
+  {
+   "date": "2026-09-03",
+   "ticker": "UAE",
+   "action": "DEWA jumps to STRONG BUY, DU deepens, TECOM changes band for the EIGHTH time",
+   "rationale": "DEWA HOLD -> STRONG BUY (+45) on a MACD bullish cross, +1.48% to 2.74 - the first genuine UAE upgrade in a while and worth watching, since DEWA also posted record H1 net profit of AED 3.33bn (+15%) with a further AED 3.1bn dividend planned for October. It goes on the watch list for when Al Ramz opens, not the buy list, because one MACD cross after weeks at SELL is not confirmation. DU deepened SELL -> STRONG SELL (-65) even while rising 1.84%, the post-MSCI unwind still working through. TECOM went STRONG BUY -> HOLD and crossed BELOW its 50-day - its EIGHTH band change in about six weeks, and the third in three sessions. It stays dropped. ADPORTS eased to BUY (30) but 20 of that is the RSI-77.4 stretch penalty, so its core is 50; it remains a merger-arb stub at 6.07 against the AED 6.25 tender closing 3pm Sept 15.",
+   "status": "advice only - no position"
   }
  ]
 }

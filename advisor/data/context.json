@@ -1,21 +1,25 @@
 {
- "updated": "2026-09-02T07:25+00:00",
+ "updated": "2026-09-03T07:25+00:00",
  "market_notes": [
   {
-   "market": "DATA FAULT - TAQA",
-   "note": "TAQA stopped trading on ADX on August 7, 2026 - August 6 was its last session. Abu Dhabi Power Corporation, holding 98.12%, compulsorily acquired the rest; the Abu Dhabi Depository verified 100% ownership on August 13 and the board resolved to delist on August 25. The buyer was L'imad, the same sovereign vehicle bidding for AD Ports. This engine rated it BUY (+25) on the identical 2.66 print with the identical -0.37% change every day from at least Aug 5 to Sept 1 - 27 consecutive runs - and it sat on the UAE shortlist throughout, with the fetch log reporting OK every single day. The defect: guards existed for MISSING and ABSURD data but not for FROZEN data, because the source kept serving a delisted instrument's last-ever print and the fetch genuinely succeeded. FIXED: TAQA removed from the watchlist, and the engine now counts consecutive identical closes and flips to STALE DATA (score 0, alerts suppressed) past a threshold calibrated from this book's own history - 10 for stocks, because live UAE names legitimately repeat a close up to seven times over weekends and holidays, and 3 for crypto, which trades continuously."
+   "market": "ETH - a level lost, but no rule triggered",
+   "note": "ETH 2,410.64 (-0.57%), $87.75, +31.8%. Its own signal improved (25 -> 35), but published work puts the critical weekly level at 2,438 - the 0.618 Fibonacci retracement - and ETH is now below it, with the stated consequence that losing 2,438 exposes the Supertrend near 2,220. That matters for our rule because 2,220 sits BELOW the 2,300 two-close exit, so on that path the exit fires on the way down rather than at the destination. The cushion has narrowed three sessions running: 7.5%, 5.4%, 4.8%. No action - the rule needs two consecutive daily CLOSES below 2,300 and we are 4.8% above. Strong counterweight: spot ETH ETFs took inflows for a TWELFTH consecutive day on Sept 2, and July was ETH's best ETF month on record ($365m) against Bitcoin's worst ($205m), with institutional flow into ETH products running at more than twice the Bitcoin rate. Technicals deteriorating, flows supportive - the same tension behind the 50/50 DCA split."
   },
   {
-   "market": "Crypto - the whole board compressed",
-   "note": "Broad risk-off with an unusual signature: BTC, ETH, BNB, XRP, DOGE, LINK and AVAX are ALL sitting at exactly BUY 25 with core 25, meaning the entire complex lost its MACD momentum contribution in the same window. SOL is the lone STRONG BUY at 65. BTC 77,670 (-1.37%) added a fresh MACD bearish cross of its own, completing the sweep that started with BNB, DOGE, LINK and AVAX on Aug 31 and XRP on Sept 1. ETH 2,423.14 (-2.02%). GRAM -5.02%. This is the alt-momentum roll logged on Aug 31 now reaching the majors - still one macro impulse refracted through correlated betas rather than seven independent signals, but the breadth is now total."
+   "market": "Crypto - the roll is now complete",
+   "note": "SOL was the last holdout and lost STRONG BUY (65 -> 40) on a fresh MACD bearish cross. The full sequence: BNB, DOGE, LINK and AVAX on Aug 31, XRP on Sept 1, BTC on Sept 2, SOL today. Every major and every watchlist alt has printed a bearish MACD cross inside four sessions. The lone exception is LTC, which went the other way to STRONG BUY (+50) and is now the only one in the book - a single name moving against a complete cohort roll, which usually means noise rather than leadership. It is not held and not a candidate; the satellite slot is occupied by LINK."
   },
   {
    "market": "Positions",
-   "note": "Nothing triggered, no stop moves. ETH $88.20, +32.4%; stop 2,105 is 13.1% below and the 2,300 exit 5.4% below with no count begun - that cushion has narrowed from 7.5% yesterday. BTC stop 73,289, 5.6% below. LINK 11.276, stop 9.80, 13.1% below, still above the 10.65-11.05 order zone. All three 3xATR candidates negative."
+   "note": "Nothing triggered, no stop moves. ETH stop 2,105 is 12.7% below spot; BTC 78,030.67 (+0.46%), stop 73,289, 6.1% below; LINK 11.262, stop 9.80, 13.0% below and still above the 10.65-11.05 order zone. All three 3xATR candidates negative (ETH -0.16, BTC -1.22, LINK -0.97)."
   },
   {
    "market": "UAE",
-   "note": "Broad deterioration. EMIRATESNBD crossed BELOW its 50-day and fell BUY -> HOLD - it was an anchor name on the shortlist. DIB and ALDAR cut to STRONG SELL, AIRARABIA -3.22%, DU -2.82% as the post-MSCI unwind continues, ADIB -2.09%, EMAAR at -65 alongside EMAARDEV and ADNOCGAS. The only names rated BUY or better are ADPORTS (+45, a merger-arb stub), TECOM (+45, dropped as float noise), and ADIB, TALABAT, FAB, ADCB and EAND at 25-35. With the bucket at 800 AED and Al Ramz unopened, there is nothing to prepare for - and on this board the delay has cost nothing this month."
+   "note": "DEWA HOLD -> STRONG BUY (+45) on a MACD bullish cross, +1.48% to 2.74 - the first genuine upgrade in a while, and it sits on record H1 net profit of AED 3.33bn (+15%) with a further AED 3.1bn dividend planned for October. It goes on the watch list rather than the buy list: one cross after weeks at SELL is not confirmation. DU deepened to STRONG SELL (-65) even while rising 1.84%, the post-MSCI unwind still working through. TECOM went STRONG BUY -> HOLD and crossed below its 50-day - its EIGHTH band change in six weeks and the third in three sessions - and stays dropped. ADPORTS eased to BUY (30), though 20 of that is the RSI-77.4 stretch penalty so its core is 50; still a merger-arb stub at 6.07 against the AED 6.25 tender closing Sept 15."
+  },
+  {
+   "market": "Engine",
+   "note": "First cycle with the frozen-quote counter live. Four UAE names show stale_runs of 1 (TALABAT, EAND, ADNOCGAS, ADPORTS) - all far from the 10-run stock threshold, and no false positives. The counter is visible and rising before it could ever trip, so a drift toward frozen is now observable rather than silent. Asset count is 30 with TAQA removed."
   }
  ],
  "asset_notes": {
@@ -399,6 +403,18 @@
     "impact": "bearish",
     "date": "2026-09-01",
     "source": "advisor data"
+   },
+   {
+    "headline": "Below the critical 2,438 weekly level (0.618 Fib); losing it is published as exposing the Supertrend near 2,220 - which sits below our 2,300 exit",
+    "impact": "bearish",
+    "date": "2026-09-03",
+    "source": "news research pass"
+   },
+   {
+    "headline": "Spot ETH ETFs took inflows for a twelfth consecutive day on Sept 2; July was ETH's best ETF month on record ($365m) against Bitcoin's worst ($205m)",
+    "impact": "bullish",
+    "date": "2026-09-03",
+    "source": "news research pass"
    }
   ],
   "BNBUSDT": [
@@ -456,6 +472,12 @@
     "headline": "+6.97% through $100 at RSI 87.7, but it tagged 102.7 on Aug 22 and failed to hold; futures-led tape with $5.25-5.8bn OI against $1.88bn spot volume",
     "impact": "neutral",
     "date": "2026-08-25",
+    "source": "news research pass"
+   },
+   {
+    "headline": "Lost STRONG BUY on a fresh MACD bearish cross - the last watchlist holdout to roll, completing a four-session sweep of the entire complex",
+    "impact": "bearish",
+    "date": "2026-09-03",
     "source": "news research pass"
    }
   ],
@@ -622,6 +644,12 @@
     "headline": "Record H1 2026: net profit AED 3.33bn (+15.0%), revenue AED 14.86bn, EBITDA AED 7.32bn; further AED 3.1bn dividend planned for October pending approval - contradicts the engine's SELL",
     "impact": "bullish",
     "date": "2026-08-22",
+    "source": "news research pass"
+   },
+   {
+    "headline": "HOLD -> STRONG BUY on a MACD bullish cross, +1.48%; record H1 net profit AED 3.33bn (+15%) with a further AED 3.1bn dividend planned for October",
+    "impact": "bullish",
+    "date": "2026-09-03",
     "source": "news research pass"
    }
   ],
