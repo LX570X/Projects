@@ -1144,6 +1144,37 @@
    "action": "DEWA jumps to STRONG BUY, DU deepens, TECOM changes band for the EIGHTH time",
    "rationale": "DEWA HOLD -> STRONG BUY (+45) on a MACD bullish cross, +1.48% to 2.74 - the first genuine UAE upgrade in a while and worth watching, since DEWA also posted record H1 net profit of AED 3.33bn (+15%) with a further AED 3.1bn dividend planned for October. It goes on the watch list for when Al Ramz opens, not the buy list, because one MACD cross after weeks at SELL is not confirmation. DU deepened SELL -> STRONG SELL (-65) even while rising 1.84%, the post-MSCI unwind still working through. TECOM went STRONG BUY -> HOLD and crossed BELOW its 50-day - its EIGHTH band change in about six weeks, and the third in three sessions. It stays dropped. ADPORTS eased to BUY (30) but 20 of that is the RSI-77.4 stretch penalty, so its core is 50; it remains a merger-arb stub at 6.07 against the AED 6.25 tender closing 3pm Sept 15.",
    "status": "advice only - no position"
+  },
+  {
+   "date": "2026-09-04",
+   "ticker": "ETHUSDT",
+   "action": "STOP RAISED 2,105 -> 2,209 - the trail fired for the second time since adoption",
+   "price": 2514.78,
+   "stop": 2209.0,
+   "entry": 1829.7,
+   "rationale": "ETH +4.32% to 2,514.78, $91.54, +37.4% - a new high for the holding period. The mechanical trail produced 2,514.78 minus 3x ATR14 (101.78) = 2,209.44, an improvement of +1.03 ATR that just clears the 1-ATR gate, so the stop ratchets. It now locks +20.75% versus the 1,829.70 entry, up from +15.05%, putting a floor of about $80.42 under the position. This is the second trigger since the rule was adopted on Aug 21 (BTC was the first on Aug 25), and again it fired on its own with no override. Ordering preserved by design: the 2,300 two-close exit still fires BEFORE the 2,209 hard stop, so the confirmed-close rule stays the operative trigger and the hard stop is the backstop. Also worth closing out yesterday's concern - ETH is back ABOVE the published 2,438 weekly level, +3.1%, so the structural break flagged yesterday reversed within a session. That is a useful reminder that a single close through a Fibonacci level is not a regime change.",
+   "status": "open, +37.4% - stop raised"
+  },
+  {
+   "date": "2026-09-04",
+   "ticker": "crypto-broad",
+   "action": "the roll I called complete yesterday reversed in a day",
+   "rationale": "Yesterday I wrote that every major and every watchlist alt had printed a bearish MACD cross inside four sessions, describing it as a complete cohort roll. Today the complex is broadly higher: ADA +7.86%, LINK +6.20%, XRP +5.79%, DOGE +4.66%, ETH +4.32%, BTC +3.70%, BNB +3.38%. ADA jumped BUY -> STRONG BUY (60) on a MACD BULLISH cross, AVAX BUY -> STRONG BUY (50), and BNB and LTC both printed bullish crosses. So the roll lasted about two sessions. The honest lesson is the one already logged on Aug 31 - a synchronised MACD sweep across correlated assets is ONE macro observation, not seven independent ones, and it reverses as a block for the same reason. I described the breadth accurately but implied more durability than a single macro impulse warrants. Drivers per the news pass: US spot BTC ETFs took nearly $2bn on the week, their best of the year; ETH ETFs about $697m; the Treasury's long-end buyback operations begin Sept 9; and there is now a FIRM date for the CLARITY cloture vote.",
+   "status": "no action"
+  },
+  {
+   "date": "2026-09-04",
+   "ticker": "CALENDAR",
+   "action": "Sept 15 now stacks three binaries inside 48 hours",
+   "rationale": "Senate Majority Leader Thune has scheduled the CLARITY Act cloture vote for September 15 at 2:15pm ET - a firm date and time, upgrading the earlier 'deferred to September' note. That lands in the same 48 hours as the AD Ports tender close (3pm UAE, Sept 15) and the FOMC decision (Sept 15-16), where a hike is still a live debate after Warsh. Three dated binaries, one window. Applying the same pre-commitment that worked through Jackson Hole: no discretionary action across Sept 15-16. Only the written rules fire - the 2,209 ETH stop, the 2,300 two-close exit, the 73,289 BTC stop, the 9.80 LINK stop, and the LINK 10.65-11.05 order. That will be restated closer to the date.",
+   "status": "pre-commitment set"
+  },
+  {
+   "date": "2026-09-04",
+   "ticker": "UAE",
+   "action": "broad bounce off the lows - ADNOCDRILL reclaimed its 50-day",
+   "rationale": "ADNOCDRILL SELL -> BUY (+25) and crossed back above its 50-day, +2.07%. EMAAR, EMAARDEV and ALDAR all climbed out of STRONG SELL on MACD bullish crosses. DIB stays at -65 and DU at -65, still the two worst. DEWA gave back yesterday's upgrade, STRONG BUY -> HOLD in a single session, which is the second time in a week a UAE name has round-tripped a band - and the reason DEWA went on the watch list rather than the buy list yesterday. ADPORTS unchanged at 6.06 against the AED 6.25 tender, its RSI-76.5 stretch penalty still masking a core of 50. Nothing actionable: the bucket is at 800 AED and Al Ramz is unopened.",
+   "status": "advice only - no position"
   }
  ]
 }

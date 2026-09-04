@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-01T05:55+00:00",
+ "updated": "2026-09-04T07:25+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": 0,
@@ -17,18 +17,17 @@
    "ref_value_usd": 66.6,
    "added": "2026-07-17",
    "source": "converted from BTC on Binance",
-   "stop": 1572.0,
+   "stop": 2209.0,
    "target1": 1964.0,
    "target2": 2105.0,
    "plan": "Hold. If price closes below the stop, convert ALL to USDT (not another coin). At target 1, convert half to USDT and raise the stop to 1830 (entry). At target 2, take the rest.",
    "action_required": {
-    "as_of": "2026-08-25",
+    "as_of": "2026-09-04",
     "end_state": "hold 0.0091 ETH - if you are already there, do nothing",
-    "cancelled": "the 2026-08-20 order to sell 0.0273 ETH at 2,258 is CANCELLED (spot 2,443.91 is 8.2% through it; repeating a delta risks double execution)",
-    "stop": 2105.0,
+    "stop": 2209.0,
+    "stop_raised_from": 2105.0,
     "close_exit": "two consecutive daily CLOSES below 2,300 -> exit the remainder at market",
-    "note": "ETH 2,508.37, +37.1%. 3xATR gives 2,194.90 - an improvement of +0.86 ATR, BELOW the 1-ATR gate, so the stop is deliberately NOT moved. The 2,300 close-exit is 8.3% away and fires before the stop; it is also the published breakout-zone floor.",
-    "unchanged_since": "2026-08-22"
+    "note": "Stop RAISED 2,105 -> 2,209 by the mechanical trail: spot 2,514.78 minus 3x ATR14 (101.78) = 2,209.44, an improvement of +1.03 ATR, just clearing the 1-ATR gate. Locks +20.75% versus the 1,829.70 entry, up from +15.05%, putting a floor of about $80.42 under the position. The ordering is preserved and deliberate: the 2,300 close-exit still fires BEFORE the 2,209 hard stop, so the confirmed-close rule remains the operative trigger and the hard stop is the backstop."
    },
    "fill": {
     "state": "position confirmed by user 2026-07-17; the 2026-08-20 trim is UNCONFIRMED",

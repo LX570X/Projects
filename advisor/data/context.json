@@ -1,25 +1,21 @@
 {
- "updated": "2026-09-03T07:25+00:00",
+ "updated": "2026-09-04T07:25+00:00",
  "market_notes": [
   {
-   "market": "ETH - a level lost, but no rule triggered",
-   "note": "ETH 2,410.64 (-0.57%), $87.75, +31.8%. Its own signal improved (25 -> 35), but published work puts the critical weekly level at 2,438 - the 0.618 Fibonacci retracement - and ETH is now below it, with the stated consequence that losing 2,438 exposes the Supertrend near 2,220. That matters for our rule because 2,220 sits BELOW the 2,300 two-close exit, so on that path the exit fires on the way down rather than at the destination. The cushion has narrowed three sessions running: 7.5%, 5.4%, 4.8%. No action - the rule needs two consecutive daily CLOSES below 2,300 and we are 4.8% above. Strong counterweight: spot ETH ETFs took inflows for a TWELFTH consecutive day on Sept 2, and July was ETH's best ETF month on record ($365m) against Bitcoin's worst ($205m), with institutional flow into ETH products running at more than twice the Bitcoin rate. Technicals deteriorating, flows supportive - the same tension behind the 50/50 DCA split."
+   "market": "Positions - ETH stop raised",
+   "note": "ETH +4.32% to 2,514.78, $91.54, +37.4% - a new high for the holding period - and the mechanical trail FIRED: 2,514.78 minus 3x ATR14 (101.78) gives 2,209.44, an improvement of +1.03 ATR that just clears the 1-ATR gate. Stop moves 2,105 -> 2,209, locking +20.75% versus entry (was +15.05%) and putting a floor of about $80.42 under the position. Second trigger since the rule was adopted on Aug 21, and again it fired without an override. Ordering preserved: the 2,300 two-close exit still fires BEFORE the 2,209 hard stop. Yesterday's concern also closed out - ETH is back ABOVE the published 2,438 weekly level (+3.1%), so that break reversed within a session. BTC 80,917.72 (+3.70%), back above $80,000, stop 73,289 unchanged (-0.02 ATR, just inside the gate). LINK 11.96 (+6.20%), stop 9.80, now 18.1% below spot and above the 10.65-11.05 order zone."
   },
   {
-   "market": "Crypto - the roll is now complete",
-   "note": "SOL was the last holdout and lost STRONG BUY (65 -> 40) on a fresh MACD bearish cross. The full sequence: BNB, DOGE, LINK and AVAX on Aug 31, XRP on Sept 1, BTC on Sept 2, SOL today. Every major and every watchlist alt has printed a bearish MACD cross inside four sessions. The lone exception is LTC, which went the other way to STRONG BUY (+50) and is now the only one in the book - a single name moving against a complete cohort roll, which usually means noise rather than leadership. It is not held and not a candidate; the satellite slot is occupied by LINK."
+   "market": "Crypto - the roll reversed in two sessions",
+   "note": "Yesterday's 'complete cohort roll' lasted about two sessions. Today: ADA +7.86% (BUY -> STRONG BUY 60 on a MACD BULLISH cross), LINK +6.20%, XRP +5.79%, DOGE +4.66%, ETH +4.32%, BTC +3.70%, BNB +3.38%, with AVAX also upgraded to STRONG BUY and BNB and LTC printing bullish crosses. The lesson is the one logged on Aug 31: a synchronised MACD sweep across correlated assets is ONE macro observation, not seven independent ones, and it reverses as a block for the same reason. The breadth was described accurately but with more implied durability than a single macro impulse warrants. Drivers: US spot BTC ETFs took nearly $2bn on the week, their best of the year, ETH ETFs about $697m, the Treasury's long-end buyback operations begin Sept 9, and the CLARITY cloture vote now has a firm date."
   },
   {
-   "market": "Positions",
-   "note": "Nothing triggered, no stop moves. ETH stop 2,105 is 12.7% below spot; BTC 78,030.67 (+0.46%), stop 73,289, 6.1% below; LINK 11.262, stop 9.80, 13.0% below and still above the 10.65-11.05 order zone. All three 3xATR candidates negative (ETH -0.16, BTC -1.22, LINK -0.97)."
+   "market": "Calendar - three binaries in 48 hours",
+   "note": "Senate Majority Leader Thune has scheduled the CLARITY Act cloture vote for September 15 at 2:15pm ET - a firm date and time, upgrading the earlier 'deferred to September' note. It lands in the same window as the AD Ports tender close (3pm UAE, Sept 15) and the FOMC decision (Sept 15-16), where a hike remains a live debate after Warsh. Same pre-commitment as Jackson Hole: no discretionary action across Sept 15-16, only the written rules - the 2,209 ETH stop, the 2,300 two-close exit, the 73,289 BTC stop, the 9.80 LINK stop and the LINK 10.65-11.05 order."
   },
   {
    "market": "UAE",
-   "note": "DEWA HOLD -> STRONG BUY (+45) on a MACD bullish cross, +1.48% to 2.74 - the first genuine upgrade in a while, and it sits on record H1 net profit of AED 3.33bn (+15%) with a further AED 3.1bn dividend planned for October. It goes on the watch list rather than the buy list: one cross after weeks at SELL is not confirmation. DU deepened to STRONG SELL (-65) even while rising 1.84%, the post-MSCI unwind still working through. TECOM went STRONG BUY -> HOLD and crossed below its 50-day - its EIGHTH band change in six weeks and the third in three sessions - and stays dropped. ADPORTS eased to BUY (30), though 20 of that is the RSI-77.4 stretch penalty so its core is 50; still a merger-arb stub at 6.07 against the AED 6.25 tender closing Sept 15."
-  },
-  {
-   "market": "Engine",
-   "note": "First cycle with the frozen-quote counter live. Four UAE names show stale_runs of 1 (TALABAT, EAND, ADNOCGAS, ADPORTS) - all far from the 10-run stock threshold, and no false positives. The counter is visible and rising before it could ever trip, so a drift toward frozen is now observable rather than silent. Asset count is 30 with TAQA removed."
+   "note": "Broad bounce off the lows. ADNOCDRILL SELL -> BUY and back above its 50-day, +2.07%; EMAAR, EMAARDEV and ALDAR all out of STRONG SELL on MACD bullish crosses. DIB and DU stay at -65, the two worst. DEWA gave back yesterday's upgrade in a single session, STRONG BUY -> HOLD - the second UAE band round-trip in a week, and exactly why it went on the watch list rather than the buy list. ADPORTS unchanged at 6.06 against the AED 6.25 tender, its RSI-76.5 stretch penalty masking a core of 50. Nothing actionable with the bucket at 800 AED and Al Ramz unopened."
   }
  ],
  "asset_notes": {
@@ -287,6 +283,18 @@
     "impact": "bearish",
     "date": "2026-09-02",
     "source": "news research pass"
+   },
+   {
+    "headline": "US spot BTC ETFs took nearly $2bn on the week, their best of the year; BTC back above $80,000",
+    "impact": "bullish",
+    "date": "2026-09-04",
+    "source": "news research pass"
+   },
+   {
+    "headline": "CLARITY Act cloture vote scheduled by Senate Majority Leader Thune for Sept 15 at 2:15pm ET - a firm date, landing alongside FOMC on Sept 15-16",
+    "impact": "neutral",
+    "date": "2026-09-04",
+    "source": "news research pass"
    }
   ],
   "ETHUSDT": [
@@ -414,6 +422,12 @@
     "headline": "Spot ETH ETFs took inflows for a twelfth consecutive day on Sept 2; July was ETH's best ETF month on record ($365m) against Bitcoin's worst ($205m)",
     "impact": "bullish",
     "date": "2026-09-03",
+    "source": "news research pass"
+   },
+   {
+    "headline": "Back above the 2,438 weekly level after one session below it; ETH ETFs took about $697m on the week",
+    "impact": "bullish",
+    "date": "2026-09-04",
     "source": "news research pass"
    }
   ],
@@ -898,6 +912,12 @@
     "headline": "Constitutional-committee renewal expires Sept 1 with DRep support at 51.68% against a 67% bar and SPOs at ~8-15% against 51% - failure freezes hard forks, parameter changes and treasury spending",
     "impact": "bearish",
     "date": "2026-08-29",
+    "source": "news research pass"
+   },
+   {
+    "headline": "+7.86% with a MACD bullish cross, BUY -> STRONG BUY (60) - the strongest mover in the book",
+    "impact": "bullish",
+    "date": "2026-09-04",
     "source": "news research pass"
    }
   ],
