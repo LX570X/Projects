@@ -1175,6 +1175,40 @@
    "action": "broad bounce off the lows - ADNOCDRILL reclaimed its 50-day",
    "rationale": "ADNOCDRILL SELL -> BUY (+25) and crossed back above its 50-day, +2.07%. EMAAR, EMAARDEV and ALDAR all climbed out of STRONG SELL on MACD bullish crosses. DIB stays at -65 and DU at -65, still the two worst. DEWA gave back yesterday's upgrade, STRONG BUY -> HOLD in a single session, which is the second time in a week a UAE name has round-tripped a band - and the reason DEWA went on the watch list rather than the buy list yesterday. ADPORTS unchanged at 6.06 against the AED 6.25 tender, its RSI-76.5 stretch penalty still masking a core of 50. Nothing actionable: the bucket is at 800 AED and Al Ramz is unopened.",
    "status": "advice only - no position"
+  },
+  {
+   "date": "2026-09-05",
+   "ticker": "BTCUSDT",
+   "action": "OPPORTUNITY TRIGGER FIRED - armed, deploy on a second confirming close",
+   "price": 79676.32,
+   "stop": 74578.0,
+   "size": "IF CONFIRMED: end state is 500 AED of BTC in the opportunity bucket = $136.15 = 0.001709 BTC at this price. Idempotent under the unknown fill state - if the Aug-19 advice was executed, top up with the remaining 250 AED; if not, deploy the full 500. Stop 74,578 (2x ATR14), 6.4% risk, max loss $8.71.",
+   "rationale": "On Sept 1 I wrote the deploy trigger as 'BTC reclaiming STRONG BUY, or a non-extended BUY+ setup'. It has: BUY -> STRONG BUY (60, core 60) on a fresh MACD bullish cross, RSI 66.5 with no stretch penalty, above a rising 50-day with the 20-day above it. Not deploying when my own stated trigger fires would be the mirror image of moving stops arbitrarily, so I am not dodging it. But I am applying the 2-day confirmation rule that every prior deploy in this book used, because the cross is fresh and BTC FELL 1.54% on the day it upgraded - the Aug-3 whipsaw and the AVAX round trip both looked exactly like this on day one, and the Aug-5 deploy that waited for a second close is the one that worked. Deploy Monday if BTC still rates STRONG BUY. Three caveats to hold: BTC is +15.3% above its 50-day and +23.8% above the Aug-19 entry; futures shorts are crowded at 56.1% of accounts, so a push above 82k could be another squeeze rather than spot demand - the same quality question as Aug 25; and spot BTC ETFs took $236.46m of NET OUTFLOWS on Sept 1 (IBIT -$201.18m) after August's best month of 2026 at about $3.52bn. On the other side, BTC reclaimed its 200-day EMA for the first time since June with a golden cross developing, which is the first genuine structural improvement since the Aug-20 reclaim.",
+   "status": "ARMED - awaiting close 2"
+  },
+  {
+   "date": "2026-09-05",
+   "ticker": "POSITIONS",
+   "action": "nothing triggered, no stop moves",
+   "price": 2453.34,
+   "rationale": "ETH 2,453.34 (-2.43%), $89.30, +34.1% - the new 2,209 stop is 10.0% below spot and the 2,300 exit 6.7% below, with no count begun. BTC 79,676.32 (-1.54%), stop 73,289, 8.0% below. LINK 11.716 (-2.05%), stop 9.80, 16.4% below, still above the 10.65-11.05 order zone. All three 3xATR candidates below the gate (ETH -0.52, BTC -0.49, LINK +0.27). Note how much the ETH stop raise changed the shape of the position: yesterday the stop was 16.3% below spot, today 10.0%, because the stop moved up while price fell back. That is the trail working - it locks gains into a pullback rather than only into strength.",
+   "status": "no action"
+  },
+  {
+   "date": "2026-09-05",
+   "ticker": "LTCUSDT",
+   "action": "now the highest-scoring asset in the book - noted, not acted on",
+   "price": 53.63,
+   "rationale": "LTC +4.93% to 53.63, STRONG BUY at 75 with core 75, the top score across all 30 assets, on a fresh MACD bullish cross with RSI 68.2 and price 13.5% above a rising 50-day. Two days ago it was the lone STRONG BUY holding out against a full cohort roll, which I called probable noise; it has since been vindicated by the whole complex turning back up, so the read was wrong on that specific point - LTC led rather than lagged. Still not acted on, and the reason is structural rather than a view on LTC: the satellite slot is occupied by LINK under a one-position-at-a-time rule, the opportunity bucket is armed for BTC on a trigger I named in advance, and the core bucket is BTC/ETH only. There is no bucket LTC can go into without breaking a rule written before today.",
+   "status": "no position - no bucket available"
+  },
+  {
+   "date": "2026-09-05",
+   "ticker": "GRAMUSDT",
+   "action": "STRONG SELL -> BUY on a 50-day reclaim - watch only",
+   "price": 1.415,
+   "rationale": "GRAM +3.44% to 1.415, crossing above its 50-day with a MACD bullish cross, score -50 -> +25. Worth noting because GRAM has been the weakest asset in the book since it became rateable, bottoming at -75. It is not a candidate: it only cleared the 55-bar minimum a week ago, so its 50-day is built on the shortest history of anything tracked, and a first 50-day reclaim on thin history is the weakest form of signal this engine produces. Watch, no action.",
+   "status": "no position"
   }
  ]
 }

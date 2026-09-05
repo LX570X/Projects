@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-04T07:25+00:00",
+ "updated": "2026-09-05T07:25+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": 0,
@@ -170,22 +170,29 @@
    "note": "LINK downgraded STRONG BUY -> BUY (65 -> 25) on a MACD cross that an independent read of the same series says has NOT confirmed (MACD 0.813 vs signal 0.777, histogram +0.036). LINK derivatives are the opposite signature to the rolling alt cohort - open interest RISING 3.81% on 24% higher volume. Fill still UNCONFIRMED."
   },
   "opportunity_status": {
-   "as_of": "2026-08-25",
-   "fill": {
-    "state": "UNCONFIRMED - default applied 2026-08-24",
-    "as_of": "2026-08-24",
-    "evidence": "no reconciliation received; accumulations.opportunity_usdt_aed still reads 250 AED and cash.USDT reads 0"
+   "as_of": "2026-09-05",
+   "state": "TRIGGER FIRED - ARMED, awaiting a second confirming close",
+   "trigger_named": "On Sept 1 the stated deploy trigger was 'BTC reclaiming STRONG BUY, or a non-extended BUY+ setup'.",
+   "trigger_met": "BTC upgraded BUY -> STRONG BUY (60, core 60) on a fresh MACD bullish cross, RSI 66.5, above a rising 50-day with the 20-day above it.",
+   "why_not_today": "The 2-day confirmation rule applied to every prior deploy in this book. The cross is fresh (last 3 days) and BTC FELL 1.54% on the day it upgraded. The Aug-3 whipsaw and the AVAX round trip both looked exactly like this on day one; the Aug-5 deploy that waited for a second close was the one that worked.",
+   "if_confirmed": {
+    "end_state": "the opportunity bucket holds 500 AED of BTC",
+    "note": "Idempotent under the unknown fill state: if the Aug-19 advice (250 AED at 64,347) was executed, top up with the remaining 250 AED; if it was not, deploy the full 500 AED.",
+    "aed": 500,
+    "usd": 136.15,
+    "price_ref": 79676.32,
+    "qty_if_full": 0.001709,
+    "stop": 74578.0,
+    "stop_basis": "2x ATR14 (2,548.92) below spot",
+    "risk_pct": 6.4,
+    "max_loss_usd": 8.71
    },
-   "advised_order": {
-    "ticker": "BTCUSDT",
-    "aed": 250,
-    "usd_cost": 68.07,
-    "qty": 0.001058,
-    "entry": 64347.38,
-    "stop": 73289.0
-   },
-   "notional_now_usd": 85.44,
-   "note": "STOP RAISED 70,700 -> 73,289 - the 3xATR rule fired on its own (+1.04 ATR, first trigger since adoption). Locks +13.90% vs entry, ~9.2% below spot, above the filled 70,000 gap and the 200-day MA near 69,000. Limit stated: 73,289 is below the 77,000 pivot and the True Market Mean ~75,800. Fill still UNCONFIRMED - no P&L reported."
+   "caveats": [
+    "BTC is +15.3% above its 50-day and +23.8% above the Aug-19 entry - not cheap.",
+    "Futures shorts are crowded at 56.1% of accounts, so a push above 82k could be another short squeeze rather than spot demand - the same quality question raised on Aug 25.",
+    "Spot BTC ETFs took $236.46m of NET OUTFLOWS on Sept 1 (IBIT -$201.18m) after August's best month of 2026 at ~$3.52bn.",
+    "Sept 15-16 stacks three binaries: CLARITY cloture 2:15pm ET, FOMC with a live hike debate, and the AD Ports tender close."
+   ]
   },
   "stock_shortlist_note": {
    "as_of": "2026-08-24",
