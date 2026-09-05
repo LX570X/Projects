@@ -1,119 +1,47 @@
 {
- "generated_at_utc": "2026-09-04T07:11:57+00:00",
+ "generated_at_utc": "2026-09-05T07:10:53+00:00",
  "alerts": [
   {
    "ticker": "BTCUSDT",
-   "severity": "info",
-   "type": "rsi",
-   "msg": "BTCUSDT: RSI crossed above 70 (now 71.5)"
-  },
-  {
-   "ticker": "ETHUSDT",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "ETHUSDT moved +4.3% in the last day (now 2514.78 USD)"
-  },
-  {
-   "ticker": "BNBUSDT",
-   "severity": "info",
-   "type": "rsi",
-   "msg": "BNBUSDT: RSI crossed above 70 (now 71.0)"
-  },
-  {
-   "ticker": "BNBUSDT",
-   "severity": "info",
-   "type": "macd",
-   "msg": "BNBUSDT: MACD bullish cross"
-  },
-  {
-   "ticker": "XRPUSDT",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "XRPUSDT moved +5.8% in the last day (now 1.4518 USD)"
-  },
-  {
-   "ticker": "DOGEUSDT",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "DOGEUSDT moved +4.7% in the last day (now 0.08733 USD)"
-  },
-  {
-   "ticker": "LINKUSDT",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "LINKUSDT moved +6.2% in the last day (now 11.96 USD)"
-  },
-  {
-   "ticker": "AVAXUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "AVAXUSDT: BUY -> STRONG BUY (score 35 -> 50)"
+   "msg": "BTCUSDT: BUY -> STRONG BUY (score 20 -> 60)"
   },
   {
-   "ticker": "ADAUSDT",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "ADAUSDT moved +7.9% in the last day (now 0.2222 USD)"
-  },
-  {
-   "ticker": "ADAUSDT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "ADAUSDT: BUY -> STRONG BUY (score 35 -> 60)"
-  },
-  {
-   "ticker": "ADAUSDT",
+   "ticker": "BTCUSDT",
    "severity": "info",
    "type": "macd",
-   "msg": "ADAUSDT: MACD bullish cross"
+   "msg": "BTCUSDT: MACD bullish cross"
+  },
+  {
+   "ticker": "GRAMUSDT",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "GRAMUSDT: STRONG SELL -> BUY (score -50 -> 25)"
+  },
+  {
+   "ticker": "GRAMUSDT",
+   "severity": "info",
+   "type": "macd",
+   "msg": "GRAMUSDT: MACD bullish cross"
+  },
+  {
+   "ticker": "GRAMUSDT",
+   "severity": "actionable",
+   "type": "trend",
+   "msg": "GRAMUSDT: price crossed above its 50-day average \u2014 trend change"
   },
   {
    "ticker": "LTCUSDT",
    "severity": "info",
-   "type": "macd",
-   "msg": "LTCUSDT: MACD bullish cross"
+   "type": "big_move",
+   "msg": "LTCUSDT moved +4.9% in the last day (now 53.63 USD)"
   },
   {
-   "ticker": "EMAAR",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "EMAAR: STRONG SELL -> SELL (score -50 -> -40)"
-  },
-  {
-   "ticker": "EMAAR",
+   "ticker": "EMIRATESNBD",
    "severity": "info",
-   "type": "macd",
-   "msg": "EMAAR: MACD bullish cross"
-  },
-  {
-   "ticker": "EMAARDEV",
-   "severity": "actionable",
    "type": "signal_change",
-   "msg": "EMAARDEV: STRONG SELL -> SELL (score -50 -> -40)"
-  },
-  {
-   "ticker": "EMAARDEV",
-   "severity": "info",
-   "type": "macd",
-   "msg": "EMAARDEV: MACD bullish cross"
-  },
-  {
-   "ticker": "ALDAR",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "ALDAR: STRONG SELL -> SELL (score -50 -> -40)"
-  },
-  {
-   "ticker": "ADNOCDRILL",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "ADNOCDRILL: SELL -> BUY (score -35 -> 25)"
-  },
-  {
-   "ticker": "ADNOCDRILL",
-   "severity": "actionable",
-   "type": "trend",
-   "msg": "ADNOCDRILL: price crossed above its 50-day average \u2014 trend change"
+   "msg": "EMIRATESNBD: BUY -> HOLD (score 35 -> -15)"
   }
  ]
 }
