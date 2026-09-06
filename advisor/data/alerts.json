@@ -1,47 +1,59 @@
 {
- "generated_at_utc": "2026-09-05T07:10:53+00:00",
+ "generated_at_utc": "2026-09-06T07:09:44+00:00",
  "alerts": [
   {
-   "ticker": "BTCUSDT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "BTCUSDT: BUY -> STRONG BUY (score 20 -> 60)"
-  },
-  {
-   "ticker": "BTCUSDT",
-   "severity": "info",
-   "type": "macd",
-   "msg": "BTCUSDT: MACD bullish cross"
-  },
-  {
-   "ticker": "GRAMUSDT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "GRAMUSDT: STRONG SELL -> BUY (score -50 -> 25)"
-  },
-  {
-   "ticker": "GRAMUSDT",
-   "severity": "info",
-   "type": "macd",
-   "msg": "GRAMUSDT: MACD bullish cross"
-  },
-  {
-   "ticker": "GRAMUSDT",
-   "severity": "actionable",
-   "type": "trend",
-   "msg": "GRAMUSDT: price crossed above its 50-day average \u2014 trend change"
-  },
-  {
-   "ticker": "LTCUSDT",
+   "ticker": "BNBUSDT",
    "severity": "info",
    "type": "big_move",
-   "msg": "LTCUSDT moved +4.9% in the last day (now 53.63 USD)"
+   "msg": "BNBUSDT moved +4.5% in the last day (now 760.06 USD)"
   },
   {
-   "ticker": "EMIRATESNBD",
-   "severity": "info",
+   "ticker": "BNBUSDT",
+   "severity": "actionable",
    "type": "signal_change",
-   "msg": "EMIRATESNBD: BUY -> HOLD (score 35 -> -15)"
+   "msg": "BNBUSDT: BUY -> STRONG BUY (score 40 -> 55)"
+  },
+  {
+   "ticker": "DOGEUSDT",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "DOGEUSDT moved +6.2% in the last day (now 0.09097 USD)"
+  },
+  {
+   "ticker": "DOGEUSDT",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "DOGEUSDT: BUY -> STRONG BUY (score 35 -> 60)"
+  },
+  {
+   "ticker": "DOGEUSDT",
+   "severity": "info",
+   "type": "macd",
+   "msg": "DOGEUSDT: MACD bullish cross"
+  },
+  {
+   "ticker": "LINKUSDT",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "LINKUSDT moved +4.5% in the last day (now 12.25 USD)"
+  },
+  {
+   "ticker": "LINKUSDT",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "LINKUSDT: BUY -> STRONG BUY (score 35 -> 50)"
+  },
+  {
+   "ticker": "AVAXUSDT",
+   "severity": "info",
+   "type": "macd",
+   "msg": "AVAXUSDT: MACD bullish cross"
+  },
+  {
+   "ticker": "ADAUSDT",
+   "severity": "info",
+   "type": "macd",
+   "msg": "ADAUSDT: MACD bullish cross"
   }
  ]
 }
