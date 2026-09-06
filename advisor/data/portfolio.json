@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-05T07:25+00:00",
+ "updated": "2026-09-06T07:25+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": 0,
@@ -65,7 +65,7 @@
   "accumulations": {
    "core_uae_stocks_aed": 800,
    "opportunity_usdt_aed": 500,
-   "satellite_reserve_aed": 100
+   "satellite_reserve_aed": 150
   },
   "dca_history": [
    {
@@ -142,57 +142,39 @@
    }
   ],
   "satellite_candidate": {
-   "as_of": "2026-08-31",
+   "as_of": "2026-09-06",
    "ticker": "LINKUSDT",
    "fill": {
-    "state": "UNCONFIRMED - default applied 2026-08-24",
-    "as_of": "2026-08-24",
-    "evidence": "no reconciliation received"
+    "state": "unconfirmed",
+    "as_of": "2026-09-06",
+    "evidence": "never reconciled against the exchange"
    },
    "advised_order": {
     "aed": 50,
     "usd_cost": 13.61,
     "qty": 1.406,
     "entry": 9.681,
-    "stop": 9.8
+    "stop": 10.456
    },
-   "notional_now_usd": 16.56,
+   "notional_now_usd": 17.23,
+   "stop_raised_from": 9.8,
+   "stop_note": "RAISED 9.80 -> 10.456 by the mechanical trail: spot 12.25 minus 3x ATR14 (0.5981) = 10.456, an improvement of +1.10 ATR. Locks +8.00% versus the 9.681 entry, up from +1.23%. Third trail trigger since the rule was adopted (BTC Aug 25, ETH Sept 4, LINK today).",
    "second_half": {
     "aed": 50,
-    "usd": 13.61,
-    "old_zone": "9.00-9.39 - CANCELLED",
-    "new_zone": "10.65-11.05 (just above the 20-day at 10.634)",
-    "stop": 9.8,
-    "max_loss_usd": 1.32,
-    "void_if": "price closes below the 50-day (9.268) - the order is void, not filled",
-    "why_moved": "rule-consistent updating, not drift: the original construction was 'a pullback holding above the rising 20-day'. The 20-day rose 8.43 -> 10.634, so the old zone came to sit ON the 50-day and would have filled only after the trend broke. Published support corroborates: 11.33, then 11.50-11.75, then nothing until 8.50 - there is no bid inside 9.00-9.39."
+    "status": "CANCELLED - purpose expired",
+    "why": "The order was a scale-in for the initial entry window: buy half now, half on a pullback, to avoid chasing. That window has passed - LINK is +26.5% above the first tranche and the pullback never came. The 10.65-11.05 zone is now 11.4% below spot and 5.9% BELOW the rising 20-day (11.531), the same drift that forced the Aug-31 re-site. Re-siting a second time would turn a scale-in into a permanent trailing buy order, which is not what the satellite bucket is for. Worse, a fill at 10.85 against the new 10.456 stop leaves only 3.6% of room - well inside one ATR (0.598, about 4.9% of spot) - so the trade would not be viable even if it filled. Cancelling rather than chasing.",
+    "disposition": "the unspent 50 AED returns to satellite reserve"
    },
-   "note": "LINK downgraded STRONG BUY -> BUY (65 -> 25) on a MACD cross that an independent read of the same series says has NOT confirmed (MACD 0.813 vs signal 0.777, histogram +0.036). LINK derivatives are the opposite signature to the rolling alt cohort - open interest RISING 3.81% on 24% higher volume. Fill still UNCONFIRMED."
+   "note": "LINK also upgraded BUY -> STRONG BUY (50, core 50), +4.47% to 12.25."
   },
   "opportunity_status": {
-   "as_of": "2026-09-05",
-   "state": "TRIGGER FIRED - ARMED, awaiting a second confirming close",
-   "trigger_named": "On Sept 1 the stated deploy trigger was 'BTC reclaiming STRONG BUY, or a non-extended BUY+ setup'.",
-   "trigger_met": "BTC upgraded BUY -> STRONG BUY (60, core 60) on a fresh MACD bullish cross, RSI 66.5, above a rising 50-day with the 20-day above it.",
-   "why_not_today": "The 2-day confirmation rule applied to every prior deploy in this book. The cross is fresh (last 3 days) and BTC FELL 1.54% on the day it upgraded. The Aug-3 whipsaw and the AVAX round trip both looked exactly like this on day one; the Aug-5 deploy that waited for a second close was the one that worked.",
-   "if_confirmed": {
-    "end_state": "the opportunity bucket holds 500 AED of BTC",
-    "note": "Idempotent under the unknown fill state: if the Aug-19 advice (250 AED at 64,347) was executed, top up with the remaining 250 AED; if it was not, deploy the full 500 AED.",
-    "aed": 500,
-    "usd": 136.15,
-    "price_ref": 79676.32,
-    "qty_if_full": 0.001709,
-    "stop": 74578.0,
-    "stop_basis": "2x ATR14 (2,548.92) below spot",
-    "risk_pct": 6.4,
-    "max_loss_usd": 8.71
-   },
-   "caveats": [
-    "BTC is +15.3% above its 50-day and +23.8% above the Aug-19 entry - not cheap.",
-    "Futures shorts are crowded at 56.1% of accounts, so a push above 82k could be another short squeeze rather than spot demand - the same quality question raised on Aug 25.",
-    "Spot BTC ETFs took $236.46m of NET OUTFLOWS on Sept 1 (IBIT -$201.18m) after August's best month of 2026 at ~$3.52bn.",
-    "Sept 15-16 stacks three binaries: CLARITY cloture 2:15pm ET, FOMC with a live hike debate, and the AD Ports tender close."
-   ]
+   "as_of": "2026-09-06",
+   "state": "NOT CONFIRMED - deploy does NOT fire, trigger re-arms",
+   "what_happened": "Sept 5 BTC upgraded to STRONG BUY (60, core 60) - close 1. Sept 6 it fell back to BUY (35, core 35) as MACD momentum flipped negative again. The second confirming close did not happen, so under the 2-day rule the deploy does not fire.",
+   "bucket_aed": 500,
+   "held_as": "USDT",
+   "re_arm": "Same trigger as before: BTC rating STRONG BUY on two consecutive closes, or a non-extended BUY+ setup elsewhere.",
+   "note": "Third time this rule has prevented a whipsaw entry - Aug 3 on BTC, Aug 15 on AVAX, and now Sept 5-6 on BTC again. In all three cases the signal was a single-session flash that reversed the next day."
   },
   "stock_shortlist_note": {
    "as_of": "2026-08-24",

@@ -1209,6 +1209,46 @@
    "price": 1.415,
    "rationale": "GRAM +3.44% to 1.415, crossing above its 50-day with a MACD bullish cross, score -50 -> +25. Worth noting because GRAM has been the weakest asset in the book since it became rateable, bottoming at -75. It is not a candidate: it only cleared the 55-bar minimum a week ago, so its 50-day is built on the shortest history of anything tracked, and a first 50-day reclaim on thin history is the weakest form of signal this engine produces. Watch, no action.",
    "status": "no position"
+  },
+  {
+   "date": "2026-09-06",
+   "ticker": "BTCUSDT",
+   "action": "DEPLOY DOES NOT FIRE - the second confirming close did not come",
+   "price": 79757.14,
+   "rationale": "Yesterday BTC upgraded to STRONG BUY (60, core 60) and I armed the opportunity deploy pending one more confirming close. Today it fell straight back to BUY (35, core 35) - MACD momentum flipped negative again while price barely moved (+0.09%). So the deploy does NOT fire and the 500 AED stays in USDT. This is the third time the 2-day rule has prevented a whipsaw entry: Aug 3 on BTC, Aug 15 on AVAX, and now Sept 5-6 on BTC again. In all three cases the signal was a single-session flash that reversed within 24 hours, and in all three the rule cost nothing because the entry it blocked was worse than the one that came later. Trigger re-arms unchanged: BTC rating STRONG BUY on two consecutive closes, or a non-extended BUY+ setup elsewhere.",
+   "status": "re-armed - no action"
+  },
+  {
+   "date": "2026-09-06",
+   "ticker": "LINKUSDT",
+   "action": "STOP RAISED 9.80 -> 10.456 - third trail trigger since adoption",
+   "price": 12.25,
+   "stop": 10.456,
+   "entry": 9.681,
+   "rationale": "LINK +4.47% to 12.25 and upgraded BUY -> STRONG BUY (50, core 50). The mechanical trail produced 12.25 minus 3x ATR14 (0.5981) = 10.456, an improvement of +1.10 ATR that clears the gate. Locks +8.00% versus the 9.681 entry, up from a nearly worthless +1.23%, and sits 14.6% below spot. This is the third trail trigger since the rule was adopted on Aug 21 - BTC on Aug 25, ETH on Sept 4, LINK today - and all three fired on their own without an override. Worth noting because LINK's stop was the weakest in the book for two weeks, locking almost nothing; the trail has now fixed that without any discretionary intervention.",
+   "status": "open, +26.5% - stop raised"
+  },
+  {
+   "date": "2026-09-06",
+   "ticker": "LINKUSDT",
+   "action": "CANCEL the second-half order - its purpose has expired",
+   "rationale": "The 50 AED second-half order is cancelled rather than re-sited. Its purpose was a scale-in for the initial entry window - buy half now, half on a pullback, to avoid chasing. That window has passed: LINK is +26.5% above the first tranche and the pullback never came. The 10.65-11.05 zone now sits 11.4% below spot and 5.9% BELOW the rising 20-day (11.531), which is precisely the drift that forced the Aug-31 re-site. Re-siting a second time would convert a scale-in into a permanent trailing buy order, which is not what the satellite bucket is for. And the arithmetic kills it independently: a fill at 10.85 against the new 10.456 stop leaves 3.6% of room, well inside one ATR (0.598, about 4.9% of spot), so the trade would not be viable even if it filled. The unspent 50 AED returns to satellite reserve, which now stands at 150 AED with September's 100. Recording this as a deliberate cancellation, not a quiet lapse - the order was live for 18 days across two zone definitions and never filled.",
+   "status": "cancelled"
+  },
+  {
+   "date": "2026-09-06",
+   "ticker": "POSITIONS",
+   "action": "ETH at a fresh high, nothing else triggered",
+   "price": 2504.14,
+   "rationale": "ETH 2,504.14 (+2.04%), $91.15, +36.9%. Stop 2,209 is 11.8% below spot and the 2,300 exit 8.9% below, no count. Its 3xATR improvement was +0.10 ATR, below the gate, so the stop holds. BTC 79,757.14, stop 73,289, 8.1% below, also below the gate at -0.34. Broad alt strength: DOGE +6.21% to STRONG BUY (60), BNB +4.54% to STRONG BUY (55), LINK +4.47%, ADA +2.95% and now STRONG BUY at 75 alongside LTC at 75 - the two joint-highest scores in the book. Six of eleven cryptos now rate STRONG BUY, against one two days ago.",
+   "status": "no action"
+  },
+  {
+   "date": "2026-09-06",
+   "ticker": "ENGINE",
+   "action": "the stale guard is doing exactly what it was calibrated for",
+   "rationale": "Every UAE stock shows stale_runs of 1 today, and ADPORTS shows 2 - the weekend repeat of Friday's close, which is precisely the pattern that made a 3-run threshold unusable for stocks and drove the calibration to 10. Nothing has tripped and nothing should. This is the first weekend since the guard went in, so it is also the first confirmation that the stock threshold was set correctly rather than just plausibly.",
+   "status": "working as calibrated"
   }
  ]
 }

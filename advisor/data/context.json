@@ -1,21 +1,21 @@
 {
- "updated": "2026-09-05T07:25+00:00",
+ "updated": "2026-09-06T07:25+00:00",
  "market_notes": [
   {
-   "market": "Opportunity bucket - trigger fired, armed",
-   "note": "BTC upgraded BUY -> STRONG BUY (60, core 60) on a fresh MACD bullish cross, RSI 66.5 with no stretch penalty, above a rising 50-day. That is exactly the deploy trigger named on Sept 1 - 'BTC reclaiming STRONG BUY'. Not deploying today, but not dodging either: applying the 2-day confirmation rule every prior deploy used, because the cross is fresh and BTC FELL 1.54% on the day it upgraded - the Aug-3 whipsaw and the AVAX round trip both looked like this on day one, and the Aug-5 deploy that waited is the one that worked. If BTC still rates STRONG BUY on Monday: end state 500 AED of BTC in the bucket ($136.15, 0.001709 BTC at this price), stop 74,578 (2x ATR14, 6.4% risk, max loss $8.71) - idempotent under the unknown fill state, topping up if the Aug-19 advice was executed and deploying in full if not. Caveats: BTC is +15.3% above its 50-day and +23.8% above the Aug-19 entry; futures shorts are crowded at 56.1% of accounts so a push above 82k could be another squeeze rather than spot demand; and spot BTC ETFs took $236.46m of NET OUTFLOWS on Sept 1 (IBIT -$201.18m) after August's best month of 2026 at ~$3.52bn. On the other side, BTC reclaimed its 200-day EMA for the first time since June with a golden cross developing."
+   "market": "Opportunity deploy - did NOT fire",
+   "note": "Yesterday BTC upgraded to STRONG BUY (60) and the deploy was armed pending one confirming close. Today it fell straight back to BUY (35, core 35) as MACD momentum flipped negative again, while price barely moved (+0.09%). The deploy does NOT fire; the 500 AED stays in USDT and the trigger re-arms unchanged. Third time the 2-day rule has prevented a whipsaw entry - Aug 3 on BTC, Aug 15 on AVAX, Sept 5-6 on BTC again - and in all three the blocked entry was worse than what came later."
   },
   {
-   "market": "Positions",
-   "note": "Nothing triggered, no stop moves. ETH 2,453.34 (-2.43%), $89.30, +34.1%; the new 2,209 stop is 10.0% below spot and the 2,300 exit 6.7% below, no count. BTC stop 73,289, 8.0% below. LINK 11.716, stop 9.80, 16.4% below and still above the 10.65-11.05 order zone. All three 3xATR candidates below the gate. Worth noticing what the ETH stop raise did: yesterday the stop sat 16.3% below spot, today 10.0%, because the stop moved up while price fell back - the trail locking gains into a pullback rather than only into strength."
+   "market": "LINK - stop raised, second-half order cancelled",
+   "note": "LINK +4.47% to 12.25 and upgraded BUY -> STRONG BUY (50). The trail fired: stop 9.80 -> 10.456 (spot minus 3x ATR14 of 0.5981, an improvement of +1.10 ATR), locking +8.00% versus the 9.681 entry, up from a nearly worthless +1.23%. Third trail trigger since adoption - BTC Aug 25, ETH Sept 4, LINK today - all three firing without an override. Separately the 50 AED second-half order is CANCELLED rather than re-sited: its purpose was a scale-in for the initial entry window, LINK is now +26.5% above the first tranche, the pullback never came, and the zone has drifted 5.9% below the rising 20-day for the second time. Re-siting again would turn a scale-in into a permanent trailing buy order. The arithmetic also kills it - a fill at 10.85 against the new 10.456 stop leaves 3.6% of room, inside one ATR. The 50 AED returns to satellite reserve, now 150 AED."
   },
   {
-   "market": "Crypto",
-   "note": "Mixed and mostly lower after Thursday's surge: ADA -4.14%, XRP -3.31%, ETH -2.43%, DOGE -1.96%, SOL -1.64%, BTC -1.54%. The exception is LTC, +4.93% to 53.63 and now STRONG BUY at 75, the top score across all 30 assets on a fresh MACD bullish cross. Two days ago I called LTC's lone hold-out probable noise; the complex has since turned back up, so LTC led rather than lagged and that read was wrong. It is still not acted on, for a structural reason rather than a view: the satellite slot is occupied by LINK, the opportunity bucket is armed for BTC on a pre-named trigger, and the core bucket is BTC/ETH only - there is no bucket LTC fits without breaking a rule written before today. GRAM also reclaimed its 50-day (-50 to +25) but has the shortest history of anything tracked, so it stays a watch."
+   "market": "Crypto - breadth rebuilt fast",
+   "note": "Six of eleven cryptos now rate STRONG BUY against one two days ago. ADA and LTC are joint-highest at 75, then DOGE 60 (+6.21%, MACD bullish cross), AVAX 60, BNB 55 (+4.54%) and LINK 50 (+4.47%). BTC and ETH are the laggards at 35 apiece, both with negative MACD momentum - an unusual inversion where the majors trail the alts. ETH 2,504.14 (+2.04%), $91.15, +36.9%, stop 2,209 is 11.8% below and the 2,300 exit 8.9% below."
   },
   {
-   "market": "UAE",
-   "note": "Friday's close, markets shut for the weekend. A quiet green session under a weak surface: EMAAR +2.23%, AIRARABIA +2.08%, ALDAR +1.58%, FAB +1.47%, DU +1.26% - but EMIRATESNBD slipped BUY -> HOLD, and DIB (-65), DU (-65), ADNOCGAS (-65) and IHC (-50) remain the deep-negative cluster. ADPORTS unchanged at 6.06 against the AED 6.25 tender closing 3pm Sept 15, with one stale run recorded. Nothing actionable - the bucket is at 800 AED and Al Ramz is unopened."
+   "market": "Engine",
+   "note": "First weekend since the frozen-quote guard went in. Every UAE stock shows stale_runs of 1 and ADPORTS shows 2 - the weekend repeat of Friday's close, exactly the pattern that made a 3-run threshold unusable for stocks and drove the calibration to 10. Nothing tripped and nothing should have. This is the first live confirmation that the stock threshold was set correctly rather than just plausibly."
   }
  ],
  "asset_notes": {
@@ -313,6 +313,12 @@
     "impact": "neutral",
     "date": "2026-09-05",
     "source": "news research pass"
+   },
+   {
+    "headline": "Fell back to BUY (35) one day after upgrading to STRONG BUY - MACD momentum flipped negative again; the armed deploy does not fire",
+    "impact": "bearish",
+    "date": "2026-09-06",
+    "source": "advisor data"
    }
   ],
   "ETHUSDT": [
@@ -467,6 +473,12 @@
     "impact": "neutral",
     "date": "2026-07-15",
     "source": "TechBullion, InteractiveCrypto (mid-Jul 2026)"
+   },
+   {
+    "headline": "+4.54% to 760.06, BUY -> STRONG BUY (55); core score 75 with a 20-point RSI stretch penalty at 75.4",
+    "impact": "bullish",
+    "date": "2026-09-06",
+    "source": "advisor data"
    }
   ],
   "SOLUSDT": [
@@ -575,6 +587,12 @@
     "impact": "bullish",
     "date": "2026-07-10",
     "source": "TechBullion, MEXC News, CoinMarketCap AI updates (Jul 2026)"
+   },
+   {
+    "headline": "+6.21% with a MACD bullish cross, BUY -> STRONG BUY (60)",
+    "impact": "bullish",
+    "date": "2026-09-06",
+    "source": "advisor data"
    }
   ],
   "DIB": [
@@ -871,6 +889,12 @@
     "impact": "bullish",
     "date": "2026-08-31",
     "source": "news research pass"
+   },
+   {
+    "headline": "+4.47% to 12.25 and upgraded to STRONG BUY (50); trail raised the stop 9.80 -> 10.456, locking +8.00% versus entry",
+    "impact": "bullish",
+    "date": "2026-09-06",
+    "source": "advisor data"
    }
   ],
   "EMAARDEV": [
