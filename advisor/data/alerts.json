@@ -1,59 +1,59 @@
 {
- "generated_at_utc": "2026-09-06T07:09:44+00:00",
+ "generated_at_utc": "2026-09-07T07:10:58+00:00",
  "alerts": [
   {
-   "ticker": "BNBUSDT",
+   "ticker": "LINKUSDT",
    "severity": "info",
-   "type": "big_move",
-   "msg": "BNBUSDT moved +4.5% in the last day (now 760.06 USD)"
-  },
-  {
-   "ticker": "BNBUSDT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "BNBUSDT: BUY -> STRONG BUY (score 40 -> 55)"
-  },
-  {
-   "ticker": "DOGEUSDT",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "DOGEUSDT moved +6.2% in the last day (now 0.09097 USD)"
-  },
-  {
-   "ticker": "DOGEUSDT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "DOGEUSDT: BUY -> STRONG BUY (score 35 -> 60)"
-  },
-  {
-   "ticker": "DOGEUSDT",
-   "severity": "info",
-   "type": "macd",
-   "msg": "DOGEUSDT: MACD bullish cross"
+   "type": "rsi",
+   "msg": "LINKUSDT: RSI crossed above 70 (now 76.1)"
   },
   {
    "ticker": "LINKUSDT",
    "severity": "info",
-   "type": "big_move",
-   "msg": "LINKUSDT moved +4.5% in the last day (now 12.25 USD)"
+   "type": "macd",
+   "msg": "LINKUSDT: MACD bullish cross"
   },
   {
-   "ticker": "LINKUSDT",
+   "ticker": "DEWA",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "LINKUSDT: BUY -> STRONG BUY (score 35 -> 50)"
+   "msg": "DEWA: HOLD -> STRONG BUY (score -20 -> 45)"
   },
   {
-   "ticker": "AVAXUSDT",
-   "severity": "info",
-   "type": "macd",
-   "msg": "AVAXUSDT: MACD bullish cross"
+   "ticker": "DEWA",
+   "severity": "actionable",
+   "type": "trend",
+   "msg": "DEWA: price crossed above its 50-day average \u2014 trend change"
   },
   {
-   "ticker": "ADAUSDT",
+   "ticker": "TALABAT",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "TALABAT moved -2.5% in the last day (now 1.17 AED)"
+  },
+  {
+   "ticker": "TALABAT",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "TALABAT: BUY -> STRONG SELL (score 35 -> -55)"
+  },
+  {
+   "ticker": "TALABAT",
    "severity": "info",
    "type": "macd",
-   "msg": "ADAUSDT: MACD bullish cross"
+   "msg": "TALABAT: MACD bearish cross"
+  },
+  {
+   "ticker": "TALABAT",
+   "severity": "actionable",
+   "type": "trend",
+   "msg": "TALABAT: price crossed below its 50-day average \u2014 trend change"
+  },
+  {
+   "ticker": "ADPORTS",
+   "severity": "info",
+   "type": "signal_change",
+   "msg": "ADPORTS: BUY -> HOLD (score 30 -> 5)"
   }
  ]
 }
