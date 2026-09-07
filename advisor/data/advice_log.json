@@ -1249,6 +1249,62 @@
    "action": "the stale guard is doing exactly what it was calibrated for",
    "rationale": "Every UAE stock shows stale_runs of 1 today, and ADPORTS shows 2 - the weekend repeat of Friday's close, which is precisely the pattern that made a 3-run threshold unusable for stocks and drove the calibration to 10. Nothing has tripped and nothing should. This is the first weekend since the guard went in, so it is also the first confirmation that the stock threshold was set correctly rather than just plausibly.",
    "status": "working as calibrated"
+  },
+  {
+   "date": "2026-09-07",
+   "ticker": "LINKUSDT",
+   "action": "STOP RAISED 10.456 -> 11.337 - second consecutive day the trail has fired",
+   "price": 13.37,
+   "stop": 11.337,
+   "entry": 9.681,
+   "rationale": "LINK +9.28% to 13.37, the biggest single-day move in the book since ETH's Aug-20 gap. The trail produced 13.37 minus 3x ATR14 (0.6778) = 11.337, an improvement of +1.30 ATR. Locks +17.10% versus the 9.681 entry, up from +8.01% yesterday and +1.23% two days ago, and sits 15.2% below spot. The position is now +38.1% and the trail has done all of that work mechanically - fourth trigger since adoption, after BTC on Aug 25, ETH on Sept 4 and LINK yesterday. Note the score reads 45 while core reads 75: a 30-point stretch penalty from RSI 76.1 and price above the upper Bollinger band. The headline number is froth, not deterioration. THE CATALYSTS ARE REAL and worth recording because they are adoption rather than a squeeze: a Schwab listing giving retail brokerage clients direct LINK access, the Coinbase/Base tokenised-stocks integration putting Chainlink in the plumbing of a major on-chain equity push, Aave adopting CCIP as its default cross-chain infrastructure, and BitGo selecting CCIP as the exclusive provider for Wrapped Bitcoin - moving a $7.3bn ecosystem off LayerZero and taking announced CCIP migrations to roughly $14.6bn.",
+   "status": "open, +38.1% - stop raised"
+  },
+  {
+   "date": "2026-09-07",
+   "ticker": "LINKUSDT-order",
+   "action": "the cancelled second-half order, scored",
+   "rationale": "Yesterday I cancelled the 50 AED second-half order at 10.65-11.05 on the grounds that its purpose - a scale-in during the initial entry window - had expired, and that a fill there against the then-new 10.456 stop would have left only 3.6% of room. LINK is 13.37 today, 23.2% above that zone's midpoint. The cancellation was right, though not for the reason that mattered most: I argued it on stop geometry and order-drift, and what actually settled it was that the pullback was never coming. Recording the outcome rather than only the reasoning.",
+   "status": "closed - cancellation vindicated"
+  },
+  {
+   "date": "2026-09-07",
+   "ticker": "TALABAT",
+   "action": "BUY -> STRONG SELL, a 90-point swing on a 2.5% move",
+   "price": 1.17,
+   "rationale": "TALABAT fell 2.50% to 1.17 and the score went 35 to -55 in one session. That looks wildly disproportionate to the price move, and the mechanism is worth understanding: three separate penalties landed simultaneously. Price crossed BELOW the 50-day (1.184), flipping a +25 to a -25; the 20-day (1.177) fell below the 50-day, flipping +15 to -15; and a fresh MACD bearish cross added -10. Fifty points of that swing is the trend and structure terms inverting together, which is what happens when a stock is sitting almost exactly on both averages - the same knife-edge condition that made TECOM's band unusable. TALABAT's 20-day and 50-day are 0.6% apart. Treat this as a genuine trend break but expect it to be noisy while the averages stay this close, and do not read the -55 as five times worse than a -11 elsewhere.",
+   "status": "advice only - no position"
+  },
+  {
+   "date": "2026-09-07",
+   "ticker": "DEWA",
+   "action": "third band flip in five sessions - moving it to the same noise category as TECOM",
+   "price": 2.76,
+   "rationale": "DEWA HOLD -> STRONG BUY (+45) again on a 50-day crossing, having gone STRONG BUY on Sept 3, back to HOLD on Sept 4, and now STRONG BUY again today. That is three band changes in five sessions on a stock whose price has moved from 2.74 to 2.73 to 2.76 - a 1% range. This is the TECOM pattern: price oscillating across a flat 50-day produces band changes that carry no information. DEWA is not dropped from the watchlist, because unlike TECOM its fundamentals are strong - record H1 net profit of AED 3.33bn, +15%, with a further AED 3.1bn dividend planned for October - but its BAND CHANGES will no longer be reported as signals. If it becomes a buy candidate when Al Ramz opens, that will be on the fundamentals plus a sustained trend, not on a 50-day crossing.",
+   "status": "band changes muted - fundamentals still tracked"
+  },
+  {
+   "date": "2026-09-07",
+   "ticker": "ADPORTS",
+   "action": "stale counter at 3 - correctly NOT a data fault",
+   "price": 6.06,
+   "rationale": "ADPORTS has printed 6.06 for three consecutive runs and the stale counter is tracking it. This is the case the guard was designed to surface WITHOUT over-reacting to: a stock pinned near a fixed cash tender price genuinely stops moving, so a frozen quote here is real market behaviour rather than a broken feed. It is the opposite of TAQA, where the price froze because the instrument had stopped existing. The 10-run stock threshold means it will not be flagged before the Sept 15 tender close, which is the right outcome - and if it were still printing 6.06 twelve runs from now, that would itself be worth investigating. Its signal also fell BUY -> HOLD (5), but core is 25 with a 20-point RSI-76.5 stretch penalty; RSI is meaningless on a deal stub.",
+   "status": "tracking - no fault"
+  },
+  {
+   "date": "2026-09-07",
+   "ticker": "POSITIONS",
+   "action": "nothing else triggered",
+   "price": 2500.69,
+   "rationale": "ETH 2,500.69 (-0.13%), $91.03, +36.7%. Stop 2,209 is 11.7% below and the 2,300 exit 8.7% below, no count; its 3xATR improvement was +0.17, below the gate. BTC 79,679.49 (-0.11%), still BUY (35) so the opportunity deploy stays un-armed and the 500 AED stays in USDT. Breadth held: AVAX joined ADA and LTC at 75, the joint-highest scores, with BNB at 65 and DOGE at 60. BTC and ETH remain the laggards at 35 apiece - the majors have now trailed the alts for three straight sessions.",
+   "status": "no action"
+  },
+  {
+   "date": "2026-09-07",
+   "ticker": "ENGINE",
+   "action": "today's UAE stock band changes are INTRADAY prints, not closes",
+   "rationale": "Worth stating plainly because it changes how today's stock signals should be read. The snapshot is taken at 07:10 UTC, which is 11:10 in Dubai. DFM trades 10:00-14:45 and ADX 10:00-15:00 local, so on a normal trading day the snapshot lands roughly 70 minutes into the session and the 'last' price for every UAE stock is a live intraday print with three and a half hours of trading still ahead of it. On Saturdays and Sundays the same snapshot returns Friday's settled close, which is where the weekend stale_runs of 2 come from. The consequence: TALABAT's BUY -> STRONG SELL and DEWA's HOLD -> STRONG BUY are both provisional. Neither is a confirmed daily close below or above the 50-day, and the standing 2-day confirmation rule already requires two consecutive CLOSES before a trend change is acted on, so nothing needs changing in the rules - but the band labels printed at 11:10 Dubai should not be quoted as if the day were finished. This is the same error class as the Aug 31 du 'sell-the-news' call, which was made on an 11:11 snapshot four hours before the 15:00 closing auction that actually executed the MSCI trade.",
+   "status": "documented - no rule change needed"
   }
  ]
 }

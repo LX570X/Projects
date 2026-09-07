@@ -1,21 +1,29 @@
 {
- "updated": "2026-09-06T07:25+00:00",
+ "updated": "2026-09-07T07:30+00:00",
  "market_notes": [
   {
-   "market": "Opportunity deploy - did NOT fire",
-   "note": "Yesterday BTC upgraded to STRONG BUY (60) and the deploy was armed pending one confirming close. Today it fell straight back to BUY (35, core 35) as MACD momentum flipped negative again, while price barely moved (+0.09%). The deploy does NOT fire; the 500 AED stays in USDT and the trigger re-arms unchanged. Third time the 2-day rule has prevented a whipsaw entry - Aug 3 on BTC, Aug 15 on AVAX, Sept 5-6 on BTC again - and in all three the blocked entry was worse than what came later."
+   "market": "LINK - stop raised again, and this time on adoption news",
+   "note": "LINK +9.28% to 13.37, the biggest single-day move in the book since ETH's Aug-20 gap. The trail fired for the second consecutive day: stop 10.456 -> 11.337 (spot minus 3x ATR14 of 0.6778, an improvement of +1.30 ATR), locking +17.10% versus the 9.681 entry against +8.01% yesterday and +1.23% two days ago. Position +38.1%, notional about $18.80, stop 15.2% below spot. Fourth trail trigger since adoption - BTC Aug 25, ETH Sept 4, LINK Sept 6 and Sept 7 - all four mechanical, none overridden. The move has verified catalysts and they are adoption rather than a squeeze: a Schwab listing giving retail brokerage clients direct LINK access, the Coinbase/Base tokenised-stocks integration putting Chainlink in the plumbing of a major on-chain equity push, Aave adopting CCIP as its default cross-chain infrastructure, and BitGo making CCIP the exclusive provider for Wrapped Bitcoin, moving a $7.3bn ecosystem off LayerZero and taking announced CCIP migrations to roughly $14.6bn. Score reads 45 against core 75 - a 30-point stretch penalty from RSI 76.1 and price above the upper Bollinger band. The headline number is froth, not deterioration."
   },
   {
-   "market": "LINK - stop raised, second-half order cancelled",
-   "note": "LINK +4.47% to 12.25 and upgraded BUY -> STRONG BUY (50). The trail fired: stop 9.80 -> 10.456 (spot minus 3x ATR14 of 0.5981, an improvement of +1.10 ATR), locking +8.00% versus the 9.681 entry, up from a nearly worthless +1.23%. Third trail trigger since adoption - BTC Aug 25, ETH Sept 4, LINK today - all three firing without an override. Separately the 50 AED second-half order is CANCELLED rather than re-sited: its purpose was a scale-in for the initial entry window, LINK is now +26.5% above the first tranche, the pullback never came, and the zone has drifted 5.9% below the rising 20-day for the second time. Re-siting again would turn a scale-in into a permanent trailing buy order. The arithmetic also kills it - a fill at 10.85 against the new 10.456 stop leaves 3.6% of room, inside one ATR. The 50 AED returns to satellite reserve, now 150 AED."
+   "market": "UAE stocks - today's band changes are intraday, not closes",
+   "note": "The 07:10 UTC snapshot is 11:10 in Dubai, about 70 minutes into a DFM session that runs to 14:45 local. Every UAE stock price today is a live intraday print with three and a half hours left to trade, so TALABAT's BUY -> STRONG SELL and DEWA's HOLD -> STRONG BUY are both provisional. The standing 2-day rule already requires two consecutive daily CLOSES before a trend change is acted on, so no rule needs changing - but the labels should not be quoted as if the day were finished. Same error class as the Aug 31 du call, made four hours before the closing auction that actually executed the MSCI trade."
   },
   {
-   "market": "Crypto - breadth rebuilt fast",
-   "note": "Six of eleven cryptos now rate STRONG BUY against one two days ago. ADA and LTC are joint-highest at 75, then DOGE 60 (+6.21%, MACD bullish cross), AVAX 60, BNB 55 (+4.54%) and LINK 50 (+4.47%). BTC and ETH are the laggards at 35 apiece, both with negative MACD momentum - an unusual inversion where the majors trail the alts. ETH 2,504.14 (+2.04%), $91.15, +36.9%, stop 2,209 is 11.8% below and the 2,300 exit 8.9% below."
+   "market": "TALABAT - a 90-point swing on a 2.5% move",
+   "note": "Score 35 -> -55 in one session on a -2.50% intraday move to 1.17. Three penalties landed at once: price crossed below the 50-day (1.184), turning +25 into -25; the 20-day (1.177) fell below the 50-day, turning +15 into -15; and a fresh MACD bearish cross added -10. Fifty of the ninety points are the trend and structure terms inverting together, which is what happens when a stock sits almost exactly on both averages - the 20-day and 50-day are 0.6% apart. Treat it as a genuine trend break if it closes there, expect noise while the averages stay this close, and do not read -55 as five times worse than a -11 elsewhere. No company news: the Uber/Delivery Hero deal leaves Talabat's operations, strategy, leadership and DFM listing unchanged."
   },
   {
-   "market": "Engine",
-   "note": "First weekend since the frozen-quote guard went in. Every UAE stock shows stale_runs of 1 and ADPORTS shows 2 - the weekend repeat of Friday's close, exactly the pattern that made a 3-run threshold unusable for stocks and drove the calibration to 10. Nothing tripped and nothing should have. This is the first live confirmation that the stock threshold was set correctly rather than just plausibly."
+   "market": "DEWA - band changes muted, fundamentals still tracked",
+   "note": "Third band flip in five sessions - STRONG BUY Sept 3, HOLD Sept 4, STRONG BUY today - on a price that has gone 2.74, 2.73, 2.76, a 1% range. This is the TECOM pattern: price oscillating across a flat 50-day produces band changes that carry no information. DEWA is not dropped, because unlike TECOM its fundamentals are strong (record H1 net profit AED 3.33bn, +15%, with a further AED 3.1bn dividend planned for October), but its band changes will no longer be reported as signals. Any future buy case rests on fundamentals plus a sustained trend, not a 50-day crossing."
+  },
+  {
+   "market": "ADPORTS - the stale counter is right to be quiet",
+   "note": "Three consecutive runs at 6.06 and the counter is tracking it, but this is exactly the case the 10-run stock threshold was calibrated to tolerate: a stock pinned near a fixed AED 6.25 cash tender genuinely stops moving. The opposite of TAQA, where the quote froze because the instrument had ceased to exist. It will not be flagged before the Sept 15 tender close, which is correct. Its band fell BUY -> HOLD (5) but core is 25, the difference being a 20-point RSI-76.5 stretch penalty - RSI is meaningless on a deal stub."
+  },
+  {
+   "market": "Opportunity deploy - still un-armed",
+   "note": "BTC 79,679.49 (-0.11%), unchanged at BUY (35) with MACD momentum still negative, so the STRONG BUY trigger has not re-fired and the 500 AED stays in USDT. Breadth remains alt-led: AVAX joined ADA and LTC at 75, BNB 65, DOGE 60, while BTC and ETH sit at 35 apiece - the majors have now trailed the alts for three straight sessions. ETH 2,500.69 (-0.13%), $91.03, +36.7%; stop 2,209 is 11.7% below and the 2,300 close-exit 8.7% below with no count running; its trail improvement was +0.17 ATR, below the 1-ATR gate, so the stop holds."
   }
  ],
  "asset_notes": {
@@ -319,11 +327,17 @@
     "impact": "bearish",
     "date": "2026-09-06",
     "source": "advisor data"
+   },
+   {
+    "headline": "Unchanged at BUY (35) with MACD momentum still negative - the opportunity deploy stays un-armed for a second day and the majors trail the alts for a third straight session",
+    "impact": "neutral",
+    "date": "2026-09-07",
+    "source": "advisor data"
    }
   ],
   "ETHUSDT": [
    {
-    "headline": "Vitalik Buterin unveils 'Lean Ethereum' \u2014 biggest rebuild since the Merge",
+    "headline": "Vitalik Buterin unveils 'Lean Ethereum' — biggest rebuild since the Merge",
     "impact": "bullish",
     "date": "2026-07-05",
     "source": "CoinDesk, The Block, TechTimes, Bankless"
@@ -647,6 +661,12 @@
     "impact": "bullish",
     "date": "2026-08-17",
     "source": "news research pass"
+   },
+   {
+    "headline": "BUY -> STRONG SELL (35 to -55) on a -2.50% intraday move: 50-day cross, 20/50 inversion and a fresh MACD bearish cross landing together with the two averages only 0.6% apart; no company news, and the print is intraday not a close",
+    "impact": "bearish",
+    "date": "2026-09-07",
+    "source": "advisor data"
    }
   ],
   "EMAAR": [
@@ -657,7 +677,7 @@
     "source": "Gulf News, Khaleej Times, Emirates 24/7 (11 Jun 2026); Emaar press release / Economy Middle East (11 May 2026); stockanalysis.com"
    },
    {
-    "headline": "H1 2026 sales of AED 286bn ($77.9bn) \u2014 second-highest half-year on record; prices +6.7% YoY",
+    "headline": "H1 2026 sales of AED 286bn ($77.9bn) — second-highest half-year on record; prices +6.7% YoY",
     "impact": "bullish",
     "date": "2026-07-05",
     "source": "Arabian Business, Economy Middle East, Dubai Chronicle (early Jul 2026)"
@@ -701,6 +721,12 @@
     "impact": "bullish",
     "date": "2026-09-03",
     "source": "news research pass"
+   },
+   {
+    "headline": "Third band flip in five sessions (STRONG BUY / HOLD / STRONG BUY) on a 1% price range - band changes muted as noise; fundamentals unchanged and still strong",
+    "impact": "neutral",
+    "date": "2026-09-07",
+    "source": "advisor data"
    }
   ],
   "AIRARABIA": [
@@ -895,6 +921,12 @@
     "impact": "bullish",
     "date": "2026-09-06",
     "source": "advisor data"
+   },
+   {
+    "headline": "+9.28% to 13.37 on adoption news - Schwab listing, Coinbase/Base tokenised stocks, Aave adopting CCIP as default cross-chain infrastructure, and BitGo making CCIP exclusive for Wrapped Bitcoin (~$14.6bn of announced CCIP migrations); stop trailed 10.456 -> 11.337, locking +17.1%",
+    "impact": "bullish",
+    "date": "2026-09-07",
+    "source": "news research pass"
    }
   ],
   "EMAARDEV": [
@@ -935,6 +967,12 @@
     "impact": "bearish",
     "date": "2026-08-31",
     "source": "news research pass"
+   },
+   {
+    "headline": "+2.78% to 7.873, joining ADA and LTC at 75 - the joint-highest scores across all 30 tracked assets",
+    "impact": "bullish",
+    "date": "2026-09-07",
+    "source": "advisor data"
    }
   ],
   "ADAUSDT": [
@@ -1017,6 +1055,12 @@
     "impact": "neutral",
     "date": "2026-08-31",
     "source": "news research pass"
+   },
+   {
+    "headline": "Flat at 6.06 for a third consecutive run, 3.0% below the AED 6.25 tender that closes 3pm UAE Sept 15 - a pinned deal stub, correctly not flagged as a data fault",
+    "impact": "neutral",
+    "date": "2026-09-07",
+    "source": "advisor data"
    }
   ],
   "DU": [
@@ -1113,23 +1157,26 @@
   ]
  },
  "risk_flags": [
+  "EVENT CLUSTER Sept 15-16: CLARITY Act cloture vote (2:15pm ET Sept 15), AD Ports tender close (3pm UAE Sept 15) and FOMC (Sept 15-16) land inside 36 hours. Pre-commitment stands: no discretionary action across the window - only written rules fire.",
   "Geopolitics remains the dominant UAE equity driver: the March strike on Dubai repriced the whole property complex; renewed escalation would hit property and tourism-linked names (AIRARABIA already broke trend) again.",
-  "Crypto is in a fear regime (F&G 35) with the Fed on hold and hawkish - rallies may lack follow-through; BTC has printed a MACD bearish cross.",
-  "Property-sector signals (EMAAR, EMAARDEV, ALDAR, SALIK STRONG SELL) are trend-based; the underlying businesses are reportedly sound, so treat these as 'do not buy the dip yet', not 'the companies are failing'.",
-  "XRP and GRAM are the weakest names on the board (-75); GRAM additionally carries post-rebrand liquidity uncertainty."
+  "BTC and ETH both carry negative MACD momentum while six alts rate STRONG BUY - an inverted breadth structure. Alt-led rallies without major participation have historically been the shorter-lived kind, and LINK's RSI 76.1 and above-band stretch say the same thing about the single position that has run hardest.",
+  "Property-sector signals (EMAAR, EMAARDEV, ALDAR, SALIK SELL/STRONG SELL) are trend-based; the underlying businesses are reportedly sound, so treat these as 'do not buy the dip yet', not 'the companies are failing'.",
+  "UAE stock prices in the daily snapshot are intraday, not closes, on trading days - band changes printed at 11:10 Dubai are provisional until the 14:45 close."
  ],
  "corrections": [
   "Prior context.json was 13 days stale (2026-07-17) because daily cycles were skipped 2026-07-20..29; refreshed 2026-07-30."
  ],
  "missing": [
-  "GENIUS Act stablecoin final-rules deadline is July 18, 2026 \u2014 TOMORROW: six agencies (OCC, FDIC, NCUA, Treasury, FinCEN, OFAC) must finalize rules one year after enactment; comment periods closed June 9 and there is no statutory fallback if they miss. Direct near-term catalyst/risk for stablecoins (USDC/Coinbase economics \u2014 which the findings themselves cite in the CLARITY yield fight \u2014 and Tether) yet absent from all three crypto findings. (Kraken blog Jul 15, CryptoSlate, OCC Bulletin 2026-3, Chapman tracker.)",
-  "US Q2 earnings season is underway and clusters against the July FOMC: JPMorgan/BofA/Citi/Wells reported July 14-15 (same day as CPI); Alphabet July 22; Microsoft and Meta July 29 \u2014 the same day as the Fed decision; Apple and Amazon July 30; ~$725B of planned 2026 hyperscaler AI capex is the dominant theme. The findings cite 'AI-spending worries' as a crypto risk-off driver but omit the entire US earnings calendar that will set global risk sentiment during the plan's first two weeks. (VaaSBlock, IG, ClaritX previews.)",
-  "OPEC+ supply policy is absent from the UAE macro work: the July 5 virtual meeting approved a fifth consecutive monthly output increase (+188K b/d for August across Saudi/Russia/Iraq/Kuwait/Kazakhstan/Algeria/Oman), and the next meeting is August 2 \u2014 directly material to Brent (which the findings track closely), UAE fiscal backdrop, and ADX energy names. CNBC notes the hike came 'as Hormuz exports start to recover,' a nuance that cuts against the pure supply-fear narrative. (CNBC Jul 5, Bloomberg, Rigzone.)",
+  "GENIUS Act stablecoin final-rules deadline is July 18, 2026 — TOMORROW: six agencies (OCC, FDIC, NCUA, Treasury, FinCEN, OFAC) must finalize rules one year after enactment; comment periods closed June 9 and there is no statutory fallback if they miss. Direct near-term catalyst/risk for stablecoins (USDC/Coinbase economics — which the findings themselves cite in the CLARITY yield fight — and Tether) yet absent from all three crypto findings. (Kraken blog Jul 15, CryptoSlate, OCC Bulletin 2026-3, Chapman tracker.)",
+  "US Q2 earnings season is underway and clusters against the July FOMC: JPMorgan/BofA/Citi/Wells reported July 14-15 (same day as CPI); Alphabet July 22; Microsoft and Meta July 29 — the same day as the Fed decision; Apple and Amazon July 30; ~$725B of planned 2026 hyperscaler AI capex is the dominant theme. The findings cite 'AI-spending worries' as a crypto risk-off driver but omit the entire US earnings calendar that will set global risk sentiment during the plan's first two weeks. (VaaSBlock, IG, ClaritX previews.)",
+  "OPEC+ supply policy is absent from the UAE macro work: the July 5 virtual meeting approved a fifth consecutive monthly output increase (+188K b/d for August across Saudi/Russia/Iraq/Kuwait/Kazakhstan/Algeria/Oman), and the next meeting is August 2 — directly material to Brent (which the findings track closely), UAE fiscal backdrop, and ADX energy names. CNBC notes the hike came 'as Hormuz exports start to recover,' a nuance that cuts against the pure supply-fear narrative. (CNBC Jul 5, Bloomberg, Rigzone.)",
   "Fed HIKE risk is materially understated: post-June-SEP, the median 2026 dot was revised UP to 3.8% (from 3.4%), nine of eighteen members project at least one hike, and CNBC's June-CPI coverage says the Fed is 'broadly expected to raise its benchmark rate in September.' The findings frame July 28-29 almost entirely as hold-vs-cut; a hike-skewed Fed is a different regime for crypto beta and for dirham-pegged UAE funding costs. (CNBC Jul 14, Intellectia, NPR Jun 17.)",
-  "Iran succession is resolved, not open: Ali Khamenei was assassinated February 28, 2026 and Mojtaba Khamenei was announced as supreme leader on March 9 after an Assembly of Experts vote \u2014 important context for regime durability and war trajectory that the UAE findings present as unresolved 'succession uncertainty.' (Wikipedia, CNN, Washington Post, Carnegie.)",
-  "CLARITY Act floor-vote development: Senate Majority Leader Thune has pledged a floor vote before the August recess, with the week of July 20 under active discussion \u2014 a nearer and harder catalyst than the findings' 'no floor vote scheduled' framing. (Coinpedia, KuCoin/Lummis, PYMNTS.)"
+  "Iran succession is resolved, not open: Ali Khamenei was assassinated February 28, 2026 and Mojtaba Khamenei was announced as supreme leader on March 9 after an Assembly of Experts vote — important context for regime durability and war trajectory that the UAE findings present as unresolved 'succession uncertainty.' (Wikipedia, CNN, Washington Post, Carnegie.)",
+  "CLARITY Act floor-vote development: Senate Majority Leader Thune has pledged a floor vote before the August recess, with the week of July 20 under active discussion — a nearer and harder catalyst than the findings' 'no floor vote scheduled' framing. (Coinpedia, KuCoin/Lummis, PYMNTS.)"
  ],
  "data_notes": [
-  "GRAM (ex-Toncoin) has only 30 daily bars since its 2026-07-02 Binance relisting; it is rated INSUFFICIENT DATA until 55 bars exist (~mid-Sept 2026) and is excluded from ratings and alerts."
+  "GRAM (ex-Toncoin) crossed the 55-bar minimum on 2026-08-25 and has been rated since; it prints BUY (40) today.",
+  "ADPORTS has printed 6.06 for three consecutive runs. This is a pinned cash-tender stub, not a frozen feed; the 10-run stock threshold correctly leaves it unflagged through the Sept 15 tender close.",
+  "TAQA was removed from the watchlist on 2026-09-02 after delisting from ADX; the watchlist is 19 UAE stocks and 11 cryptos, 30 assets total."
  ]
 }
