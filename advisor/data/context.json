@@ -1,29 +1,33 @@
 {
- "updated": "2026-09-07T07:30+00:00",
+ "updated": "2026-09-10T07:35+00:00",
  "market_notes": [
   {
-   "market": "LINK - stop raised again, and this time on adoption news",
-   "note": "LINK +9.28% to 13.37, the biggest single-day move in the book since ETH's Aug-20 gap. The trail fired for the second consecutive day: stop 10.456 -> 11.337 (spot minus 3x ATR14 of 0.6778, an improvement of +1.30 ATR), locking +17.10% versus the 9.681 entry against +8.01% yesterday and +1.23% two days ago. Position +38.1%, notional about $18.80, stop 15.2% below spot. Fourth trail trigger since adoption - BTC Aug 25, ETH Sept 4, LINK Sept 6 and Sept 7 - all four mechanical, none overridden. The move has verified catalysts and they are adoption rather than a squeeze: a Schwab listing giving retail brokerage clients direct LINK access, the Coinbase/Base tokenised-stocks integration putting Chainlink in the plumbing of a major on-chain equity push, Aave adopting CCIP as its default cross-chain infrastructure, and BitGo making CCIP the exclusive provider for Wrapped Bitcoin, moving a $7.3bn ecosystem off LayerZero and taking announced CCIP migrations to roughly $14.6bn. Score reads 45 against core 75 - a 30-point stretch penalty from RSI 76.1 and price above the upper Bollinger band. The headline number is froth, not deterioration."
+   "market": "Two cycles missed - gap checked, nothing was hit",
+   "note": "Sept 8 and Sept 9 fired but the session was idle, leaving a 71.98-hour data gap. No tracked level was crossed. LINK's 11.337 stop saw a lowest print of 11.584 on Sept 9, 2.18% above - about one third of an ATR, the closest call since the trail was adopted. ETH's 2,209 hard stop saw 2,441.68 and its 2,300 close-exit a lowest daily close of 2,468.13, both comfortably clear with no count started."
   },
   {
-   "market": "UAE stocks - today's band changes are intraday, not closes",
-   "note": "The 07:10 UTC snapshot is 11:10 in Dubai, about 70 minutes into a DFM session that runs to 14:45 local. Every UAE stock price today is a live intraday print with three and a half hours left to trade, so TALABAT's BUY -> STRONG SELL and DEWA's HOLD -> STRONG BUY are both provisional. The standing 2-day rule already requires two consecutive daily CLOSES before a trend change is acted on, so no rule needs changing - but the labels should not be quoted as if the day were finished. Same error class as the Aug 31 du call, made four hours before the closing auction that actually executed the MSCI trade."
+   "market": "A real methodological error found and fixed",
+   "note": "The trailing-stop rule says 'daily close', but all four triggers to date - BTC Aug 25, ETH Sept 4, LINK Sept 6 and Sept 7 - were computed from the LIVE 07:10 UTC snapshot, which on crypto is about seven hours into an unfinished bar. Same error class documented for UAE stocks on Sept 7, noticed for crypto three days later. It bites when a coin spikes intraday: LINK printed 13.37 at snapshot time on Sept 7 and CLOSED at 12.748, so the rule applied properly gives a stop of 10.715 against the 11.337 actually set - 5.8% tighter than authorised, and above the $10.79 support analysts say has to hold. The method is corrected to use the last completed daily close. The LINK stop is NOT being loosened to match: 'never lowered' exists to prevent exactly that move, and three days into a drawdown is when it counts."
   },
   {
-   "market": "TALABAT - a 90-point swing on a 2.5% move",
-   "note": "Score 35 -> -55 in one session on a -2.50% intraday move to 1.17. Three penalties landed at once: price crossed below the 50-day (1.184), turning +25 into -25; the 20-day (1.177) fell below the 50-day, turning +15 into -15; and a fresh MACD bearish cross added -10. Fifty of the ninety points are the trend and structure terms inverting together, which is what happens when a stock sits almost exactly on both averages - the 20-day and 50-day are 0.6% apart. Treat it as a genuine trend break if it closes there, expect noise while the averages stay this close, and do not read -55 as five times worse than a -11 elsewhere. No company news: the Uber/Delivery Hero deal leaves Talabat's operations, strategy, leadership and DFM listing unchanged."
+   "market": "The alt-leverage unwind, forecast in advance",
+   "note": "LINK -6.33%, DOGE -5.86%, BNB -5.0%, XRP -3.73%, LTC -3.66%, ADA -3.43%, SOL -3.17% against BTC -1.4% and ETH -1.52%. Alts fell roughly four times as hard as the majors, which is a leverage unwind rather than broad selling. It was specifically flagged: reporting around Sept 8 had altcoin open interest above Bitcoin's for the first time since December 2024 and warned a failed breakout on that positioning would trigger a broad selloff. Four bands lost - BNB, DOGE, LINK and ADA all STRONG BUY -> BUY on MACD bearish crosses. AVAX (65) and LTC (50) are the only STRONG BUYs left, down from six on Sept 7."
   },
   {
-   "market": "DEWA - band changes muted, fundamentals still tracked",
-   "note": "Third band flip in five sessions - STRONG BUY Sept 3, HOLD Sept 4, STRONG BUY today - on a price that has gone 2.74, 2.73, 2.76, a 1% range. This is the TECOM pattern: price oscillating across a flat 50-day produces band changes that carry no information. DEWA is not dropped, because unlike TECOM its fundamentals are strong (record H1 net profit AED 3.33bn, +15%, with a further AED 3.1bn dividend planned for October), but its band changes will no longer be reported as signals. Any future buy case rests on fundamentals plus a sustained trend, not a 50-day crossing."
+   "market": "LINK - up 22.0%, down from 38.1%",
+   "note": "11.812 after a rejection at 13.60-13.62 and three sessions of profit-taking following the Schwab-listing rally. Downgraded STRONG BUY -> BUY on a fresh MACD bearish cross with core score also 25, so this is genuine momentum loss and not a stretch penalty. The adoption catalysts logged Sept 7 - Schwab, Coinbase/Base tokenised stocks, Aave CCIP, BitGo/WBTC - are structural and unaffected by a three-day pullback. Published setup: $10.79 must hold to keep $12.50 and $13 in range; recovery above $12.80-12.90 reopens a test of $13.50."
   },
   {
-   "market": "ADPORTS - the stale counter is right to be quiet",
-   "note": "Three consecutive runs at 6.06 and the counter is tracking it, but this is exactly the case the 10-run stock threshold was calibrated to tolerate: a stock pinned near a fixed AED 6.25 cash tender genuinely stops moving. The opposite of TAQA, where the quote froze because the instrument had ceased to exist. It will not be flagged before the Sept 15 tender close, which is correct. Its band fell BUY -> HOLD (5) but core is 25, the difference being a 20-point RSI-76.5 stretch penalty - RSI is meaningless on a deal stub."
+   "market": "AD Ports - completion risk substantially removed",
+   "note": "L'imad has confirmed all conditions of the AED 6.25 tender are satisfied bar routine CMA and ADX notifications. Price 6.06 -> 6.15, narrowing the discount from 3.0% to 1.6%. Offer closes 3pm UAE on Sept 15. Engine reads HOLD (15) against core 35 - the difference is an RSI stretch penalty, which is meaningless on a stock pinned to a fixed cash price. Not actionable: no position, no brokerage account, and a 1.6% spread five days out is an arbitrage needing execution we do not have."
   },
   {
-   "market": "Opportunity deploy - still un-armed",
-   "note": "BTC 79,679.49 (-0.11%), unchanged at BUY (35) with MACD momentum still negative, so the STRONG BUY trigger has not re-fired and the 500 AED stays in USDT. Breadth remains alt-led: AVAX joined ADA and LTC at 75, BNB 65, DOGE 60, while BTC and ETH sit at 35 apiece - the majors have now trailed the alts for three straight sessions. ETH 2,500.69 (-0.13%), $91.03, +36.7%; stop 2,209 is 11.7% below and the 2,300 close-exit 8.7% below with no count running; its trail improvement was +0.17 ATR, below the 1-ATR gate, so the stop holds."
+   "market": "UAE - four ADX upgrades that are really three days of drift",
+   "note": "ADCB and ADIB both BUY -> STRONG BUY, ALDAR and ADNOCDRILL both SELL -> BUY, with TECOM HOLD -> SELL and DEWA STRONG BUY -> HOLD alongside. The ADX names come from TradingView precomputed indicators with no bar history, so a three-day gap compresses three sessions into one apparent move; a news pass found no dated September catalyst for any of them. Direction informative, timing an artifact. DEWA's flip is its fourth in seven sessions and remains muted. Nothing actionable while Al Ramz is unopened - the stock bucket now stands at 800 of 1,200 AED."
+  },
+  {
+   "market": "Opportunity deploy - un-armed for a fourth session",
+   "note": "BTC 78,200.01 (-1.4%), still BUY (35), consolidating in a roughly 77.5k-82.2k range with resistance cited at 80,600-83,200. The STRONG BUY trigger has not re-fired, so the 500 AED stays in USDT. Pre-commitment for Sept 15-16 stands: no discretionary action across the CLARITY cloture vote, the AD Ports tender close and FOMC - only written rules fire."
   }
  ],
  "asset_notes": {
@@ -333,6 +337,12 @@
     "impact": "neutral",
     "date": "2026-09-07",
     "source": "advisor data"
+   },
+   {
+    "headline": "Consolidating 77.5k-82.2k with resistance at 80,600-83,200 and dominance near 57.6%; altcoin open interest rose above Bitcoin's for the first time since December 2024, and the failed breakout on that positioning drove the Sept 9-10 alt unwind",
+    "impact": "neutral",
+    "date": "2026-09-10",
+    "source": "news research pass"
    }
   ],
   "ETHUSDT": [
@@ -493,6 +503,12 @@
     "impact": "bullish",
     "date": "2026-09-06",
     "source": "advisor data"
+   },
+   {
+    "headline": "-5.0% to 718.58, STRONG BUY -> BUY on a MACD bearish cross",
+    "impact": "bearish",
+    "date": "2026-09-10",
+    "source": "advisor data"
    }
   ],
   "SOLUSDT": [
@@ -606,6 +622,12 @@
     "headline": "+6.21% with a MACD bullish cross, BUY -> STRONG BUY (60)",
     "impact": "bullish",
     "date": "2026-09-06",
+    "source": "advisor data"
+   },
+   {
+    "headline": "-5.86% to 0.08546, STRONG BUY -> BUY on a MACD bearish cross",
+    "impact": "bearish",
+    "date": "2026-09-10",
     "source": "advisor data"
    }
   ],
@@ -795,6 +817,12 @@
     "impact": "bullish",
     "date": "2026-07-10",
     "source": "The National (Jul 10, 2026), IndexBox, Yahoo Finance (Q1 earnings call), stockanalysis.com"
+   },
+   {
+    "headline": "SELL -> BUY (-40 -> 25), reclaiming trend after three unserviced sessions",
+    "impact": "bullish",
+    "date": "2026-09-10",
+    "source": "advisor data"
    }
   ],
   "FAB": [
@@ -845,6 +873,12 @@
     "impact": "neutral",
     "date": "2026-07-15",
     "source": "ADCB media centre (Jul 2026), Khaleej Times (Apr 2026), FAB Securities research (Apr 24, 2026)"
+   },
+   {
+    "headline": "BUY -> STRONG BUY (25 -> 50); no dated September catalyst found, and the move spans three unserviced sessions of precomputed-indicator drift",
+    "impact": "bullish",
+    "date": "2026-09-10",
+    "source": "advisor data"
    }
   ],
   "ADIB": [
@@ -853,6 +887,12 @@
     "impact": "neutral",
     "date": "2026-07-10",
     "source": "ADIB news (Jul 2026), Zawya, Gulf Business, ADIB Q1 2026 MD&A"
+   },
+   {
+    "headline": "BUY -> STRONG BUY (25 -> 50); no dated September catalyst found, same three-session compression as ADCB",
+    "impact": "bullish",
+    "date": "2026-09-10",
+    "source": "advisor data"
    }
   ],
   "LINKUSDT": [
@@ -927,6 +967,12 @@
     "impact": "bullish",
     "date": "2026-09-07",
     "source": "news research pass"
+   },
+   {
+    "headline": "-6.33% to 11.812 and STRONG BUY -> BUY on a fresh MACD bearish cross after rejection at $13.60-13.62; -11.7% from the Sept-7 high but still +22.0% from entry. Published support $10.79 must hold; recovery above $12.80-12.90 reopens $13.50",
+    "impact": "bearish",
+    "date": "2026-09-10",
+    "source": "news research pass"
    }
   ],
   "EMAARDEV": [
@@ -999,6 +1045,12 @@
     "impact": "bullish",
     "date": "2026-09-04",
     "source": "news research pass"
+   },
+   {
+    "headline": "-3.43% to 0.2137, STRONG BUY -> BUY on a MACD bearish cross",
+    "impact": "bearish",
+    "date": "2026-09-10",
+    "source": "advisor data"
    }
   ],
   "ADPORTS": [
@@ -1061,6 +1113,12 @@
     "impact": "neutral",
     "date": "2026-09-07",
     "source": "advisor data"
+   },
+   {
+    "headline": "L'imad confirms all tender conditions satisfied except routine CMA and ADX notifications; price 6.06 -> 6.15 narrows the discount to the AED 6.25 offer from 3.0% to 1.6%, with the offer closing 3pm UAE Sept 15",
+    "impact": "bullish",
+    "date": "2026-09-10",
+    "source": "news research pass"
    }
   ],
   "DU": [
@@ -1137,6 +1195,12 @@
     "impact": "neutral",
     "date": "2026-09-01",
     "source": "advisor data"
+   },
+   {
+    "headline": "HOLD -> SELL on a MACD bearish cross - eighth band change in seven weeks on a 13.5% free float; still logged as noise, not signal",
+    "impact": "neutral",
+    "date": "2026-09-10",
+    "source": "advisor data"
    }
   ],
   "ADNOCDRILL": [
@@ -1144,6 +1208,12 @@
     "headline": "BUY -> SELL and crossed below its 50-day average",
     "impact": "bearish",
     "date": "2026-09-01",
+    "source": "advisor data"
+   },
+   {
+    "headline": "SELL -> BUY (-25 -> 35), back above its 50-day",
+    "impact": "bullish",
+    "date": "2026-09-10",
     "source": "advisor data"
    }
   ],
@@ -1154,14 +1224,23 @@
     "date": "2026-09-05",
     "source": "news research pass"
    }
+  ],
+  "GRAMUSDT": [
+   {
+    "headline": "Crossed BELOW its 50-day average, BUY -> HOLD (40 -> -20) - the only watchlist trend break of the session",
+    "impact": "bearish",
+    "date": "2026-09-10",
+    "source": "advisor data"
+   }
   ]
  },
  "risk_flags": [
-  "EVENT CLUSTER Sept 15-16: CLARITY Act cloture vote (2:15pm ET Sept 15), AD Ports tender close (3pm UAE Sept 15) and FOMC (Sept 15-16) land inside 36 hours. Pre-commitment stands: no discretionary action across the window - only written rules fire.",
-  "Geopolitics remains the dominant UAE equity driver: the March strike on Dubai repriced the whole property complex; renewed escalation would hit property and tourism-linked names (AIRARABIA already broke trend) again.",
-  "BTC and ETH both carry negative MACD momentum while six alts rate STRONG BUY - an inverted breadth structure. Alt-led rallies without major participation have historically been the shorter-lived kind, and LINK's RSI 76.1 and above-band stretch say the same thing about the single position that has run hardest.",
-  "Property-sector signals (EMAAR, EMAARDEV, ALDAR, SALIK SELL/STRONG SELL) are trend-based; the underlying businesses are reportedly sound, so treat these as 'do not buy the dip yet', not 'the companies are failing'.",
-  "UAE stock prices in the daily snapshot are intraday, not closes, on trading days - band changes printed at 11:10 Dubai are provisional until the 14:45 close."
+  "EVENT CLUSTER Sept 15-16, now five days out: CLARITY Act cloture vote (2:15pm ET Sept 15), AD Ports tender close (3pm UAE Sept 15) and FOMC (Sept 15-16) land inside 36 hours. Pre-commitment stands - no discretionary action across the window, only written rules fire.",
+  "LINK's stop at 11.337 is 5.8% tighter than the trail rule authorises, sits 4.0% below spot, and is ABOVE the $10.79 support analysts say must hold. It is being kept rather than loosened, so an ordinary pullback exits the position at roughly +17%. Disclosed cost, not a hidden one.",
+  "Altcoin open interest above Bitcoin's for the first time since December 2024 means alt drawdowns will keep running four times the majors' size until that leverage clears. Two STRONG BUYs remain (AVAX, LTC) against six on Sept 7.",
+  "Geopolitics remains the dominant UAE equity driver: the March strike on Dubai repriced the whole property complex; renewed escalation would hit property and tourism-linked names again.",
+  "Cycles can be missed silently. Two were, and the gap check was the only thing that would have caught a stop hit. LINK came within 2.18% of exiting unattended.",
+  "UAE stock prices in the daily snapshot are intraday, not closes, on trading days; ADX names carry no bar history at all, so their band changes across a gap compress several sessions into one reading."
  ],
  "corrections": [
   "Prior context.json was 13 days stale (2026-07-17) because daily cycles were skipped 2026-07-20..29; refreshed 2026-07-30."

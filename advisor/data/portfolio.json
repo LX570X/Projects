@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-07T07:25+00:00",
+ "updated": "2026-09-10T07:30+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": 0,
@@ -22,12 +22,12 @@
    "target2": 2105.0,
    "plan": "Hold. If price closes below the stop, convert ALL to USDT (not another coin). At target 1, convert half to USDT and raise the stop to 1830 (entry). At target 2, take the rest.",
    "action_required": {
-    "as_of": "2026-09-04",
+    "as_of": "2026-09-10",
     "end_state": "hold 0.0091 ETH - if you are already there, do nothing",
     "stop": 2209.0,
     "stop_raised_from": 2105.0,
     "close_exit": "two consecutive daily CLOSES below 2,300 -> exit the remainder at market",
-    "note": "Stop RAISED 2,105 -> 2,209 by the mechanical trail: spot 2,514.78 minus 3x ATR14 (101.78) = 2,209.44, an improvement of +1.03 ATR, just clearing the 1-ATR gate. Locks +20.75% versus the 1,829.70 entry, up from +15.05%, putting a floor of about $80.42 under the position. The ordering is preserved and deliberate: the 2,300 close-exit still fires BEFORE the 2,209 hard stop, so the confirmed-close rule remains the operative trigger and the hard stop is the backstop."
+    "note": "Stop UNCHANGED at 2,209. The trail computed from the last completed daily close (2,468.13 - 3 x 86.1407) gives 2,209.71, an improvement of +0.71 in price terms or 0.008 ATR - far below the 1-ATR gate, so the stop holds. ETH 2,474.97 (-1.52%), $90.09, +35.3%. During the three-day gap the lowest close was 2,468.13 and the lowest intraday print 2,441.68, both well clear of the 2,300 close-exit (no count running) and the 2,209 hard stop. Ordering preserved: the 2,300 close-exit still fires before the 2,209 hard stop. Note the 2,209 level was itself set on Sept 4 from a live snapshot rather than a completed close - see trailing_stop_rule.clarification - but the difference there was immaterial and the stop is not being changed."
    },
    "fill": {
     "state": "position confirmed by user 2026-07-17; the 2026-08-20 trim is UNCONFIRMED",
@@ -142,7 +142,7 @@
    }
   ],
   "satellite_candidate": {
-   "as_of": "2026-09-07",
+   "as_of": "2026-09-10",
    "ticker": "LINKUSDT",
    "fill": {
     "state": "unconfirmed",
@@ -156,7 +156,7 @@
     "entry": 9.681,
     "stop": 11.337
    },
-   "notional_now_usd": 18.8,
+   "notional_now_usd": 16.61,
    "stop_raised_from": 10.456,
    "stop_note": "RAISED 10.456 -> 11.337, second consecutive day. Spot 13.37 minus 3x ATR14 (0.6778) = 11.337, an improvement of +1.30 ATR. Locks +17.10% versus the 9.681 entry, up from +8.01%, and sits 15.2% below spot. Fourth trail trigger since adoption (BTC Aug 25, ETH Sept 4, LINK Sept 6 and 7).",
    "second_half": {
@@ -165,7 +165,14 @@
     "why": "The order was a scale-in for the initial entry window: buy half now, half on a pullback, to avoid chasing. That window has passed - LINK is +26.5% above the first tranche and the pullback never came. The 10.65-11.05 zone is now 11.4% below spot and 5.9% BELOW the rising 20-day (11.531), the same drift that forced the Aug-31 re-site. Re-siting a second time would turn a scale-in into a permanent trailing buy order, which is not what the satellite bucket is for. Worse, a fill at 10.85 against the new 10.456 stop leaves only 3.6% of room - well inside one ATR (0.598, about 4.9% of spot) - so the trade would not be viable even if it filled. Cancelling rather than chasing.",
     "disposition": "the unspent 50 AED returns to satellite reserve"
    },
-   "note": "LINK +9.28% to 13.37, now +38.1% from the advised entry. Score 45 but core 75 - a 30-point stretch penalty (RSI 76.1 overbought and price above the upper Bollinger band), so the headline downgrade is froth, not deterioration. Catalysts are real institutional adoption rather than a squeeze: a Schwab listing giving retail brokerage access, the Coinbase/Base tokenised-stocks integration, Aave adopting CCIP as default cross-chain infrastructure, and BitGo making CCIP the exclusive provider for Wrapped Bitcoin - taking announced CCIP migrations to about $14.6bn. Fill still UNCONFIRMED."
+   "note": "LINK 11.812, -6.33% on the day and -11.7% from the Sept-7 snapshot high of 13.37. Downgraded STRONG BUY -> BUY (45 -> 25) on a fresh MACD bearish cross; core score also 25, so this is real momentum loss, not a stretch penalty. Position still +22.0% versus the 9.681 advised entry, notional about $16.61. The stop at 11.337 was NOT hit during the three-day gap - the lowest print was 11.584 on Sept 9, 2.18% above it. No trail action today: the rule-computed stop from the last completed close (11.804 - 3 x 0.6987) is 9.708, far below the existing 11.337, so max() leaves it unchanged. Fill still UNCONFIRMED.",
+   "stop_method_correction": {
+    "found": "2026-09-10",
+    "what": "The 11.337 stop set on Sept 7 was computed from the live 07:10 UTC snapshot price of 13.37. LINK's actual Sept 7 daily CLOSE was 12.748. Applying the written rule to the close gives 12.748 - 3 x 0.6778 = 10.715, so the stop in force is 5.8% TIGHTER than the rule authorises.",
+    "decision": "The stop STAYS at 11.337. The 'never lowered' half of the rule exists precisely to stop me loosening a stop after price moves against the position, and loosening it now - three days into a 11.7% drawdown, with price 4.0% above it - would be exactly that, however good the justification reads.",
+    "live_risk": "Published analyst support for LINK sits at $10.79, BELOW our stop. A routine pullback to that support would stop this position out on a level set in error. That is a real and disclosed cost of keeping the tighter stop.",
+    "fix": "Method corrected going forward: the trail now reads the last completed daily close."
+   }
   },
   "opportunity_status": {
    "as_of": "2026-09-06",
@@ -192,8 +199,10 @@
  },
  "trailing_stop_rule": {
   "adopted": "2026-08-21",
-  "rule": "stop = max(existing stop, daily close - 3 x ATR14); never lowered; acted on ONLY when the improvement exceeds 1 x ATR14",
-  "why": "stops were being re-derived from scratch every session, which was the real source of plan drift; this makes 'leave it alone' a computed output rather than a daily judgement call"
+  "rule": "stop = max(existing stop, LAST COMPLETED DAILY CLOSE - 3 x ATR14); never lowered; acted on ONLY when the improvement exceeds 1 x ATR14",
+  "why": "stops were being re-derived from scratch every session, which was the real source of plan drift; this makes 'leave it alone' a computed output rather than a daily judgement call",
+  "clarified": "2026-09-10",
+  "clarification": "The rule always said 'daily close', but in practice all four trail triggers to date (BTC Aug 25, ETH Sept 4, LINK Sept 6 and Sept 7) were computed from the LIVE 07:10 UTC snapshot price, not from the last completed daily close. Crypto daily bars close at 00:00 UTC, so the snapshot is roughly seven hours into an unfinished bar. From 2026-09-10 the trail uses the last COMPLETED daily close. Existing stops are NOT lowered to match - see stop_method_correction on the LINK position."
  },
  "event_risk": {
   "date": "2026-08-28",
@@ -279,5 +288,17 @@
    "note": "NOTIONAL ONLY - no P&L is reported on these and they are never added to the confirmed total"
   },
   "struck": "BTC +$13.98 and LINK +$3.09 of previously reported P&L (about $17) removed from the record on 2026-08-24"
+ },
+ "gap_check": {
+  "as_of": "2026-09-10",
+  "gap_hours": 71.98,
+  "why": "Daily cycles for Sept 8 and Sept 9 fired but were not serviced - the session was idle. Data ran from 2026-09-07T07:10:58Z to 2026-09-10T07:10:40Z with no reading in between.",
+  "result": "NO stop or target was crossed during the gap.",
+  "detail": [
+   "LINK stop 11.337 - lowest intraday print across Sept 7-10 was 11.584 (Sept 9), 2.18% above. Closest call of the four trail triggers to date.",
+   "ETH hard stop 2,209 - lowest intraday print 2,441.68 (Sept 8), 10.53% above.",
+   "ETH close-exit 2,300 - lowest daily CLOSE 2,468.13 (Sept 9), 6.16% above. No count started.",
+   "BTC opportunity deploy was never armed, so no BTC level was live."
+  ]
  }
 }

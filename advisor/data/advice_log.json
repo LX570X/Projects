@@ -1305,6 +1305,60 @@
    "action": "today's UAE stock band changes are INTRADAY prints, not closes",
    "rationale": "Worth stating plainly because it changes how today's stock signals should be read. The snapshot is taken at 07:10 UTC, which is 11:10 in Dubai. DFM trades 10:00-14:45 and ADX 10:00-15:00 local, so on a normal trading day the snapshot lands roughly 70 minutes into the session and the 'last' price for every UAE stock is a live intraday print with three and a half hours of trading still ahead of it. On Saturdays and Sundays the same snapshot returns Friday's settled close, which is where the weekend stale_runs of 2 come from. The consequence: TALABAT's BUY -> STRONG SELL and DEWA's HOLD -> STRONG BUY are both provisional. Neither is a confirmed daily close below or above the 50-day, and the standing 2-day confirmation rule already requires two consecutive CLOSES before a trend change is acted on, so nothing needs changing in the rules - but the band labels printed at 11:10 Dubai should not be quoted as if the day were finished. This is the same error class as the Aug 31 du 'sell-the-news' call, which was made on an 11:11 snapshot four hours before the 15:00 closing auction that actually executed the MSCI trade.",
    "status": "documented - no rule change needed"
+  },
+  {
+   "date": "2026-09-10",
+   "ticker": "CYCLE",
+   "action": "two cycles missed (Sept 8, Sept 9) - gap checked, nothing was hit",
+   "rationale": "The daily triggers for Sept 8 and Sept 9 fired but the session was idle, so no cycle ran. Data gap 71.98 hours. The standing instruction for a gap over ~26 hours is to check whether any tracked level was crossed while unattended, and the answer is no: LINK's 11.337 stop saw a lowest print of 11.584 on Sept 9 (2.18% above), ETH's 2,209 hard stop saw 2,441.68 (10.53% above), and ETH's 2,300 close-exit saw a lowest daily close of 2,468.13 (6.16% above, no count started). Reporting the near-miss on LINK explicitly rather than only the all-clear: 2.18% is one third of an ATR, and had the gap run one more day into a continued slide the position would have exited with nobody watching.",
+   "status": "no levels crossed - reported"
+  },
+  {
+   "date": "2026-09-10",
+   "ticker": "ENGINE",
+   "action": "FOUND A REAL ERROR: every trail stop to date was computed off a live snapshot, not a daily close",
+   "rationale": "The written trailing-stop rule is 'stop = max(existing stop, daily close - 3 x ATR14)'. In practice all four triggers to date - BTC Aug 25, ETH Sept 4, LINK Sept 6 and Sept 7 - were computed from the LIVE 07:10 UTC snapshot price. Crypto daily bars close at 00:00 UTC, so that snapshot is about seven hours into an unfinished bar; the same class of mistake I documented for UAE stocks on Sept 7, three days before noticing it applied to crypto too. It matters most when a coin spikes intraday. LINK on Sept 7 printed 13.37 at snapshot time and CLOSED at 12.748, so the rule applied to the close gives 12.748 - 3 x 0.6778 = 10.715, while the stop actually set was 11.337 - 5.8% tighter than authorised. Published analyst support for LINK is $10.79, which sits BELOW our stop, so a routine pullback to support now stops the position out on a level the rule never produced. Method corrected: the trail reads the last completed daily close from here on.",
+   "status": "method fixed - existing stops not retrofitted"
+  },
+  {
+   "date": "2026-09-10",
+   "ticker": "LINKUSDT",
+   "action": "stop HELD at 11.337 - not loosened, and the reasoning is uncomfortable",
+   "price": 11.812,
+   "stop": 11.337,
+   "entry": 9.681,
+   "rationale": "Having found that 11.337 was set 5.8% tighter than the rule authorises, the tempting move is to correct it down to 10.715 and give the position room. I am not doing that. The 'never lowered' half of the trail rule exists precisely to prevent loosening a stop after price moves against a position, and doing it now - three days into an 11.7% drawdown with price 4.0% above the stop - is that exact behaviour no matter how good the justification reads. A rule that bends when the reason is persuasive is not a rule. The cost is disclosed rather than hidden: the stop sits above the $10.79 support analysts say needs to hold, so a normal pullback exits us at roughly +17% instead of riding through. LINK is +22.0% from entry today, down from +38.1% on Sept 7. No trail action either way - the rule-computed stop from the last completed close (11.804 - 3 x 0.6987) is 9.708, far below the existing stop.",
+   "status": "open, +22.0% - stop unchanged"
+  },
+  {
+   "date": "2026-09-10",
+   "ticker": "crypto-broad",
+   "action": "the alt-leverage unwind that was flagged in advance",
+   "rationale": "Six of the eleven watchlist cryptos fell more than 3% and four lost a band: BNB -5.0% and DOGE -5.86% both STRONG BUY -> BUY on MACD bearish crosses, LINK -6.33% and ADA -3.43% the same. BTC fell only -1.4% and ETH -1.52%. That spread - alts down four times as hard as the majors - is the signature of leverage unwinding rather than broad selling, and it was specifically forecast: reporting around Sept 8 noted altcoin open interest had risen above Bitcoin's for the first time since December 2024 and warned that a failed breakout on that positioning would trigger a broad selloff. It failed and it did. Worth recording because on Sept 7 I described alt-led breadth as the notable feature of the tape without noting that alt-led breadth built on rising OI is a fragility, not a strength. The Sept-7 risk flag said alt-led rallies without major participation are historically the shorter-lived kind, which was right as far as it went, but I did not connect it to the open-interest data that made it measurable.",
+   "status": "logged - no position affected"
+  },
+  {
+   "date": "2026-09-10",
+   "ticker": "ADPORTS",
+   "action": "tender conditions satisfied - completion risk substantially gone",
+   "price": 6.15,
+   "rationale": "L'imad has stated that all conditions of the AED 6.25 voluntary tender offer are satisfied except routine notifications still to be filed with the CMA and ADX. That removes the largest remaining piece of deal risk, and the price has responded: 6.06 -> 6.15, narrowing the discount from 3.0% to 1.6%. The offer closes at 3pm UAE on Sept 15. The engine reads HOLD (15) with core 35 - the gap is a 20-point RSI stretch penalty, and RSI on a stock pinned to a fixed cash price is noise. Not actionable for us: no position, no brokerage account, and buying a 1.6% spread five days from close is an arbitrage trade requiring execution we do not have.",
+   "status": "tracked - not actionable"
+  },
+  {
+   "date": "2026-09-10",
+   "ticker": "UAE-stocks",
+   "action": "four ADX upgrades at once - read them as three days, not one session",
+   "rationale": "ADCB BUY -> STRONG BUY, ADIB BUY -> STRONG BUY, ALDAR SELL -> BUY and ADNOCDRILL SELL -> BUY all landed in the same reading, alongside TECOM HOLD -> SELL and DEWA STRONG BUY -> HOLD. This is not a single dramatic session. The ADX names are fetched as TradingView PRECOMPUTED indicators with no bar history, so a three-day gap in cycles compresses three sessions of drift into one apparent move. A news pass turned up no dated September catalyst for any of them. Treat the direction as informative and the timing as an artifact. DEWA's flip is its fourth in seven sessions and stays muted per the Sept-7 decision. Nothing here is actionable while the Al Ramz account remains unopened.",
+   "status": "advice only - no positions"
+  },
+  {
+   "date": "2026-09-10",
+   "ticker": "POSITIONS",
+   "action": "no action on either tracked level",
+   "price": 2474.97,
+   "rationale": "ETH 2,474.97 (-1.52%), $90.09, +35.3% from the 1,829.70 entry. The trail computed from the last completed close (2,468.13 - 3 x 86.1407 = 2,209.71) improves the 2,209 stop by 0.008 ATR, nowhere near the 1-ATR gate, so it holds. The 2,300 close-exit is 7.1% below with no count running. BTC 78,200.01 (-1.4%) is still BUY (35), so the opportunity deploy stays un-armed for a fourth consecutive session and the 500 AED remains in USDT. Standing pre-commitment for Sept 15-16 is unchanged: no discretionary action across the CLARITY cloture vote, the AD Ports tender close and FOMC - only written rules fire.",
+   "status": "no action"
   }
  ]
 }
