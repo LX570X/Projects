@@ -1,104 +1,104 @@
 {
- "generated_at_utc": "2026-09-10T07:10:40+00:00",
+ "generated_at_utc": "2026-09-11T07:10:20+00:00",
  "movers": [
   {
-   "symbol": "VTHOUSDT",
-   "last": 0.000636,
-   "change24h_pct": 40.708,
-   "quote_volume24h": 11756796.316104,
-   "rsi": 83.7,
+   "symbol": "RAYUSDT",
+   "last": 1.6509,
+   "change24h_pct": 23.886,
+   "quote_volume24h": 30495488.72199,
+   "rsi": 86.2,
    "above_sma20": true,
    "above_sma50": true,
    "setup": false
   },
   {
-   "symbol": "SOPHUSDT",
-   "last": 0.00419,
-   "change24h_pct": -22.551,
-   "quote_volume24h": 15713920.56456,
-   "rsi": 50.2,
+   "symbol": "VTHOUSDT",
+   "last": 0.000516,
+   "change24h_pct": -19.751,
+   "quote_volume24h": 12895109.030899,
+   "rsi": 65.9,
    "above_sma20": true,
    "above_sma50": true,
    "setup": false
+  },
+  {
+   "symbol": "FFUSDT",
+   "last": 0.16957,
+   "change24h_pct": 12.559,
+   "quote_volume24h": 6759017.58772,
+   "rsi": 87.9,
+   "above_sma20": true,
+   "above_sma50": true,
+   "setup": false
+  },
+  {
+   "symbol": "SAGAUSDT",
+   "last": 0.01624,
+   "change24h_pct": 12.0,
+   "quote_volume24h": 13470463.729478,
+   "rsi": 57.1,
+   "above_sma20": true,
+   "above_sma50": true,
+   "setup": true
   },
   {
    "symbol": "MARSCOINUSDT",
-   "last": 0.11,
-   "change24h_pct": -22.426,
-   "quote_volume24h": 44102199.24275,
+   "last": 0.1224,
+   "change24h_pct": 11.273,
+   "quote_volume24h": 36493482.87922,
    "rsi": null,
    "above_sma20": null,
    "above_sma50": null,
    "setup": false
   },
   {
-   "symbol": "TUTUSDT",
-   "last": 0.02057,
-   "change24h_pct": -14.256,
-   "quote_volume24h": 7447664.28588,
-   "rsi": 41.5,
+   "symbol": "REZUSDT",
+   "last": 0.003052,
+   "change24h_pct": -10.891,
+   "quote_volume24h": 5546283.3937973,
+   "rsi": 55.2,
+   "above_sma20": true,
+   "above_sma50": true,
+   "setup": false
+  },
+  {
+   "symbol": "IOSTUSDT",
+   "last": 0.000945,
+   "change24h_pct": -10.342,
+   "quote_volume24h": 11151060.939656,
+   "rsi": 54.3,
+   "above_sma20": true,
+   "above_sma50": true,
+   "setup": false
+  },
+  {
+   "symbol": "RUNEUSDT",
+   "last": 0.525,
+   "change24h_pct": 9.375,
+   "quote_volume24h": 5857696.4894,
+   "rsi": 68.0,
+   "above_sma20": true,
+   "above_sma50": true,
+   "setup": false
+  },
+  {
+   "symbol": "EGLDUSDT",
+   "last": 4.731,
+   "change24h_pct": -9.246,
+   "quote_volume24h": 6405786.168,
+   "rsi": 62.7,
+   "above_sma20": true,
+   "above_sma50": true,
+   "setup": false
+  },
+  {
+   "symbol": "BCHUSDT",
+   "last": 227.0,
+   "change24h_pct": -8.982,
+   "quote_volume24h": 34449019.2609,
+   "rsi": 40.7,
    "above_sma20": false,
    "above_sma50": false,
-   "setup": false
-  },
-  {
-   "symbol": "PUMPUSDT",
-   "last": 0.003982,
-   "change24h_pct": -12.847,
-   "quote_volume24h": 68977433.27587,
-   "rsi": 50.4,
-   "above_sma20": false,
-   "above_sma50": true,
-   "setup": false
-  },
-  {
-   "symbol": "UNIUSDT",
-   "last": 6.015,
-   "change24h_pct": -12.763,
-   "quote_volume24h": 64273565.33802,
-   "rsi": 59.1,
-   "above_sma20": true,
-   "above_sma50": true,
-   "setup": false
-  },
-  {
-   "symbol": "FORMUSDT",
-   "last": 0.2695,
-   "change24h_pct": -12.727,
-   "quote_volume24h": 6845130.95368,
-   "rsi": 53.7,
-   "above_sma20": true,
-   "above_sma50": true,
-   "setup": false
-  },
-  {
-   "symbol": "ARBUSDT",
-   "last": 0.1502,
-   "change24h_pct": -12.318,
-   "quote_volume24h": 55566017.91416,
-   "rsi": 61.8,
-   "above_sma20": true,
-   "above_sma50": true,
-   "setup": false
-  },
-  {
-   "symbol": "DASHUSDT",
-   "last": 57.25,
-   "change24h_pct": -12.193,
-   "quote_volume24h": 31999810.30532,
-   "rsi": 62.1,
-   "above_sma20": true,
-   "above_sma50": true,
-   "setup": false
-  },
-  {
-   "symbol": "TRUMPUSDT",
-   "last": 1.995,
-   "change24h_pct": -11.491,
-   "quote_volume24h": 31905839.45125,
-   "rsi": 45.5,
-   "above_sma20": false,
-   "above_sma50": true,
    "setup": false
   }
  ]
