@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-10T07:30+00:00",
+ "updated": "2026-09-11T07:30+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": 0,
@@ -22,12 +22,12 @@
    "target2": 2105.0,
    "plan": "Hold. If price closes below the stop, convert ALL to USDT (not another coin). At target 1, convert half to USDT and raise the stop to 1830 (entry). At target 2, take the rest.",
    "action_required": {
-    "as_of": "2026-09-10",
+    "as_of": "2026-09-11",
     "end_state": "hold 0.0091 ETH - if you are already there, do nothing",
     "stop": 2209.0,
     "stop_raised_from": 2105.0,
     "close_exit": "two consecutive daily CLOSES below 2,300 -> exit the remainder at market",
-    "note": "Stop UNCHANGED at 2,209. The trail computed from the last completed daily close (2,468.13 - 3 x 86.1407) gives 2,209.71, an improvement of +0.71 in price terms or 0.008 ATR - far below the 1-ATR gate, so the stop holds. ETH 2,474.97 (-1.52%), $90.09, +35.3%. During the three-day gap the lowest close was 2,468.13 and the lowest intraday print 2,441.68, both well clear of the 2,300 close-exit (no count running) and the 2,209 hard stop. Ordering preserved: the 2,300 close-exit still fires before the 2,209 hard stop. Note the 2,209 level was itself set on Sept 4 from a live snapshot rather than a completed close - see trailing_stop_rule.clarification - but the difference there was immaterial and the stop is not being changed."
+    "note": "Stop UNCHANGED at 2,209. Trail from the last completed close (2,438.27 - 3 x 82.8386) computes 2,189.75, BELOW the existing stop, so max() holds it - the corrected close-based method in action. ETH 2,469.98 (-0.20%), $89.91, +35.0%. The 2,300 close-exit is 6.88% below spot with no count: the last three daily closes were 2,485.06, 2,468.13 and 2,438.27, drifting down but nowhere near the trigger. Ordering preserved: the 2,300 close-exit still fires before the 2,209 hard stop."
    },
    "fill": {
     "state": "position confirmed by user 2026-07-17; the 2026-08-20 trim is UNCONFIRMED",
@@ -142,7 +142,7 @@
    }
   ],
   "satellite_candidate": {
-   "as_of": "2026-09-10",
+   "as_of": "2026-09-11",
    "ticker": "LINKUSDT",
    "fill": {
     "state": "unconfirmed",
@@ -156,7 +156,7 @@
     "entry": 9.681,
     "stop": 11.337
    },
-   "notional_now_usd": 16.61,
+   "notional_now_usd": 16.24,
    "stop_raised_from": 10.456,
    "stop_note": "RAISED 10.456 -> 11.337, second consecutive day. Spot 13.37 minus 3x ATR14 (0.6778) = 11.337, an improvement of +1.30 ATR. Locks +17.10% versus the 9.681 entry, up from +8.01%, and sits 15.2% below spot. Fourth trail trigger since adoption (BTC Aug 25, ETH Sept 4, LINK Sept 6 and 7).",
    "second_half": {
@@ -165,13 +165,26 @@
     "why": "The order was a scale-in for the initial entry window: buy half now, half on a pullback, to avoid chasing. That window has passed - LINK is +26.5% above the first tranche and the pullback never came. The 10.65-11.05 zone is now 11.4% below spot and 5.9% BELOW the rising 20-day (11.531), the same drift that forced the Aug-31 re-site. Re-siting a second time would turn a scale-in into a permanent trailing buy order, which is not what the satellite bucket is for. Worse, a fill at 10.85 against the new 10.456 stop leaves only 3.6% of room - well inside one ATR (0.598, about 4.9% of spot) - so the trade would not be viable even if it filled. Cancelling rather than chasing.",
     "disposition": "the unspent 50 AED returns to satellite reserve"
    },
-   "note": "LINK 11.812, -6.33% on the day and -11.7% from the Sept-7 snapshot high of 13.37. Downgraded STRONG BUY -> BUY (45 -> 25) on a fresh MACD bearish cross; core score also 25, so this is real momentum loss, not a stretch penalty. Position still +22.0% versus the 9.681 advised entry, notional about $16.61. The stop at 11.337 was NOT hit during the three-day gap - the lowest print was 11.584 on Sept 9, 2.18% above it. No trail action today: the rule-computed stop from the last completed close (11.804 - 3 x 0.6987) is 9.708, far below the existing 11.337, so max() leaves it unchanged. Fill still UNCONFIRMED.",
+   "note": "LINK 11.547, -2.24%, still BUY (25) with core also 25. Position +19.3% versus the 9.681 advised entry, notional about $16.24, down from +38.1% on Sept 7. No trail action: the rule-computed stop from the last completed close (11.454 - 3 x 0.6703) is 9.443, far below the existing 11.337, so max() leaves it alone. The stop now sits only 1.82% below spot - see stop_proximity. Fill still UNCONFIRMED.",
    "stop_method_correction": {
     "found": "2026-09-10",
     "what": "The 11.337 stop set on Sept 7 was computed from the live 07:10 UTC snapshot price of 13.37. LINK's actual Sept 7 daily CLOSE was 12.748. Applying the written rule to the close gives 12.748 - 3 x 0.6778 = 10.715, so the stop in force is 5.8% TIGHTER than the rule authorises.",
     "decision": "The stop STAYS at 11.337. The 'never lowered' half of the rule exists precisely to stop me loosening a stop after price moves against the position, and loosening it now - three days into a 11.7% drawdown, with price 4.0% above it - would be exactly that, however good the justification reads.",
     "live_risk": "Published analyst support for LINK sits at $10.79, BELOW our stop. A routine pullback to that support would stop this position out on a level set in error. That is a real and disclosed cost of keeping the tighter stop.",
     "fix": "Method corrected going forward: the trail now reads the last completed daily close."
+   },
+   "stop_proximity": {
+    "as_of": "2026-09-11",
+    "spot": 11.547,
+    "stop": 11.337,
+    "headroom_pct": -1.82,
+    "recent_lows": {
+     "2026-09-09": 11.584,
+     "2026-09-10": 11.433,
+     "2026-09-11 so far": 11.4
+    },
+    "note": "The stop disclosed yesterday as 5.8% tighter than the rule authorises is now the live issue. Yesterday's low came within 0.85% of it and today's within 0.56%. August CPI prints TODAY with CME FedWatch showing better than a 60% chance of a rate HIKE, after August PPI ran hot at 5.4% against 5.3% expected - a print in the wrong direction very plausibly moves alts 3-5% and fires this stop.",
+    "decision": "HOLD the stop. Widening it hours before a known binary event, with price 1.8% above it, is the exact behaviour the 'never lowered' rule exists to prevent, and the justification being genuine is what makes it dangerous rather than what makes it acceptable. If it fires it fires near +17.1%, which is a good outcome for a satellite trade even on a level set in error. No discretionary override, no early profit-take."
    }
   },
   "opportunity_status": {
@@ -205,9 +218,10 @@
   "clarification": "The rule always said 'daily close', but in practice all four trail triggers to date (BTC Aug 25, ETH Sept 4, LINK Sept 6 and Sept 7) were computed from the LIVE 07:10 UTC snapshot price, not from the last completed daily close. Crypto daily bars close at 00:00 UTC, so the snapshot is roughly seven hours into an unfinished bar. From 2026-09-10 the trail uses the last COMPLETED daily close. Existing stops are NOT lowered to match - see stop_method_correction on the LINK position."
  },
  "event_risk": {
-  "date": "2026-08-28",
-  "event": "Kevin Warsh's first Jackson Hole keynote as Fed chair; symposium topic 'Financial Innovation: Implications for Payments and Policy'",
-  "policy": "pre-committed: no discretionary action across it in either direction. The stops already express the risk."
+  "as_of": "2026-09-11",
+  "today": "August US CPI releases today (Fri Sept 11). CME FedWatch shows better than a 60% chance of a rate HIKE at the Sept 15-16 FOMC; August PPI already ran hot at 5.4% against 5.3% expected. A hot CPI raises real yields, which is the mechanism most directly against both crypto and the dirham-pegged UAE funding backdrop.",
+  "next": "Sept 15-16 cluster unchanged: CLARITY Act cloture vote 2:15pm ET Sept 15, AD Ports tender close 3pm UAE Sept 15, FOMC Sept 15-16.",
+  "stance": "No discretionary action today or across Sept 15-16. Only written rules fire. This explicitly includes NOT widening LINK's stop ahead of CPI and NOT taking an early discretionary profit to dodge it."
  },
  "reporting_rule": {
   "adopted": "2026-08-22",

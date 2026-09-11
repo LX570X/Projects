@@ -1359,6 +1359,46 @@
    "price": 2474.97,
    "rationale": "ETH 2,474.97 (-1.52%), $90.09, +35.3% from the 1,829.70 entry. The trail computed from the last completed close (2,468.13 - 3 x 86.1407 = 2,209.71) improves the 2,209 stop by 0.008 ATR, nowhere near the 1-ATR gate, so it holds. The 2,300 close-exit is 7.1% below with no count running. BTC 78,200.01 (-1.4%) is still BUY (35), so the opportunity deploy stays un-armed for a fourth consecutive session and the 500 AED remains in USDT. Standing pre-commitment for Sept 15-16 is unchanged: no discretionary action across the CLARITY cloture vote, the AD Ports tender close and FOMC - only written rules fire.",
    "status": "no action"
+  },
+  {
+   "date": "2026-09-11",
+   "ticker": "LINKUSDT",
+   "action": "stop now 1.82% below spot - holding it, into CPI",
+   "price": 11.547,
+   "stop": 11.337,
+   "entry": 9.681,
+   "rationale": "Yesterday I disclosed that the 11.337 stop was set 5.8% tighter than the trail rule authorises, because it was computed from an intraday snapshot rather than the daily close. Today that stops being a bookkeeping note and becomes the live position risk. LINK 11.547, -2.24%; yesterday's low was 11.433 and today's is 11.400, within 0.85% and 0.56% of the stop. August CPI releases TODAY with CME FedWatch pricing better than a 60% chance of a rate HIKE and August PPI already hot at 5.4% against 5.3% expected. A print in the wrong direction plausibly moves alts 3-5% and fires this stop. I am not widening it and I am not taking a discretionary profit to dodge the event. Both would be overriding a mechanical rule hours before a binary outcome, which is the single worst moment to start using judgement, and the fact that I have a genuinely good reason is what makes it dangerous rather than what makes it acceptable. If it fires it fires near +17.1% on a satellite position - a good outcome reached by a flawed route, and I would rather own that than quietly fix the number while nobody is looking. No trail action either way: the rule-computed stop from the last completed close (11.454 - 3 x 0.6703) is 9.443, far below the existing stop.",
+   "status": "open, +19.3% - stop held at 11.337"
+  },
+  {
+   "date": "2026-09-11",
+   "ticker": "crypto-broad",
+   "action": "the alt unwind continues - LTC is the last STRONG BUY standing",
+   "rationale": "AVAX STRONG BUY -> BUY on a fresh MACD bearish cross (-3.47%, core also 25, so genuine). That leaves LTC as the ONLY STRONG BUY across all eleven watchlist cryptos, against six on Sept 7 - the entire complex has rolled over in four sessions. GRAM went HOLD -> SELL (-20 -> -45). BTC 77,364.80 (-1.06%) has slipped below the 77,600-77,900 support band cited in this week's technical coverage and has failed the 80,000-82,000 resistance zone repeatedly. The macro read is coherent rather than mysterious: with a September hike better than a coin flip on FedWatch, the real-yield path is against non-yielding assets, and the leverage that built in alts through early September is being taken out first. None of this changes a position - it is the tape the two tracked positions have to survive.",
+   "status": "logged"
+  },
+  {
+   "date": "2026-09-11",
+   "ticker": "ADCB",
+   "action": "a textbook stretch-penalty downgrade - core score went UP",
+   "price": 16.22,
+   "rationale": "ADCB reads STRONG BUY -> BUY (50 -> 35), which looks like deterioration and is the opposite. Core score - the score with the RSI-extreme and Bollinger terms removed - rose from 50 to 65. The entire 30-point band drop is the stretch penalty arriving as RSI crossed above 70 (now 71.6) with price above the upper Bollinger band. The stock is +1.12% on the session, above a rising 50-day, 20-day above 50-day, MACD positive, TradingView consensus bullish. This is the cleanest example yet of why core_score was added on Aug 23: the headline band said sell-ish, the underlying trend strengthened. Report it as strength that has run hot, not as a downgrade.",
+   "status": "advice only - no position"
+  },
+  {
+   "date": "2026-09-11",
+   "ticker": "UAE-stocks",
+   "action": "three genuine ADX upgrades, one muted DFM flip",
+   "rationale": "FAB BUY -> STRONG BUY (35 -> 50), EAND BUY -> STRONG BUY (40 -> 50) and ADNOCDRILL BUY -> STRONG BUY (35 -> 50), all with core equal to score, so these are real trend and momentum improvements rather than penalty relief - and unlike yesterday's four-at-once they follow a serviced cycle, so the timing is honest. EMIRATESNBD went the other way, HOLD -> SELL. DEWA rose 2.57% to 2.79 and flipped HOLD -> BUY: the price move clears the 2.5% stock threshold and is reported, but the band change stays MUTED per the Sept-7 decision - that is its fifth flip in eight sessions. TALABAT fell 2.52% to 1.16, also above threshold, still SELL. A news pass found no dated September catalyst for any of the ADX names; the sources returned were undated portal pages, and one quoted an e& price of 18.56 against our 21.78, so I am treating that material as stale and not citing it as support. None of this is actionable while Al Ramz remains unopened.",
+   "status": "advice only - no positions"
+  },
+  {
+   "date": "2026-09-11",
+   "ticker": "POSITIONS",
+   "action": "no action; pre-commitment extended to cover today's CPI",
+   "price": 2469.98,
+   "rationale": "ETH 2,469.98 (-0.20%), $89.91, +35.0%. The trail computed from the last completed close (2,438.27 - 3 x 82.8386 = 2,189.75) falls BELOW the existing 2,209 stop, so max() holds it unchanged - the first run of the corrected close-based method, and it behaves exactly as intended. The 2,300 close-exit is 6.88% below with no count; the last three closes were 2,485.06, 2,468.13, 2,438.27, drifting down but well clear. BTC 77,364.80 (-1.06%) is still BUY (35), so the opportunity deploy stays un-armed for a fifth consecutive session and the 500 AED remains in USDT. The standing no-discretionary-action pre-commitment for Sept 15-16 is extended to today: August CPI is a binary event of the same kind and the same rule applies.",
+   "status": "no action"
   }
  ]
 }
