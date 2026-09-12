@@ -1,29 +1,25 @@
 {
- "updated": "2026-09-11T07:35+00:00",
+ "updated": "2026-09-12T07:35+00:00",
  "market_notes": [
   {
-   "market": "LINK - the stop I disclosed as too tight is now 1.82% away",
-   "note": "LINK 11.547 (-2.24%). The 11.337 stop, disclosed yesterday as 5.8% tighter than the trail rule authorises, is now the live position risk: yesterday's low was 11.433 and today's 11.400, within 0.85% and 0.56% of it. It is being HELD. Widening a stop hours before a known binary event, with price this close, is exactly what 'never lowered' exists to prevent - and having a genuinely good reason is what makes it dangerous, not what makes it acceptable. No discretionary profit-take either. If it fires it fires near +17.1%. Position +19.3% from entry, notional about $16.24, down from +38.1% on Sept 7."
+   "market": "LINK - the stop was breached intraday and survived on the close",
+   "note": "On CPI day LINK printed 11.253, which is 0.74% BELOW the 11.337 stop, then recovered to close 11.551 above it - an 8.57% range. Whether that counted as an exit turned on a rule that had never been written down. It is now: stops and targets trigger on a DAILY CLOSE, not an intraday print. Reasons that do not depend on today's outcome - ETH is the only written precedent in this book and it is close-based; the stop level is computed from daily closes, so triggering intraday is internally inconsistent; and this system observes prices once a day, so an intraday stop is not executable without claiming a fill nobody saw. Stated plainly: this was codified AFTER the ambiguous event and it favours keeping the position. It now binds both ways - a close below the stop exits even if price recovers afterwards."
   },
   {
-   "market": "August CPI lands TODAY with a hike better than a coin flip",
-   "note": "August CPI releases Friday Sept 11. CME FedWatch shows better than a 60% chance of a rate HIKE at the Sept 15-16 FOMC, and August PPI already came in hot at 5.4% against 5.3% expected. The transmission is real yields: higher yields raise the opportunity cost of non-yielding assets and firm the dollar. Published framing is that the constructive path for crypto needs a labour market soft enough to take the hike off the table while inflation cools on its own, keeping the 10-year real yield away from the 2.5% line flagged as the level that breaks the bitcoin case. Pre-commitment extended to cover today: no discretionary action, only written rules fire."
+   "market": "Correction - a stop-out does not fill at the stop",
+   "note": "I twice wrote 'if it fires it fires near +17.1%'. With a close-based stop and one observation a day, the exit happens at the next daily reading, not at the level. The realistic outcome of a stop-out is worse than the number quoted. Corrected."
   },
   {
-   "market": "Crypto - LTC is the last STRONG BUY standing",
-   "note": "AVAX STRONG BUY -> BUY on a fresh MACD bearish cross (-3.47%, core also 25). That leaves LTC as the only STRONG BUY of eleven watchlist cryptos, against six on Sept 7 - the whole complex has rolled over in four sessions. GRAM HOLD -> SELL (-20 -> -45). BTC 77,364.80 (-1.06%) has slipped below the 77,600-77,900 support cited this week after repeatedly failing 80,000-82,000."
+   "market": "CPI hot on core - the FOMC is now priced as a hike",
+   "note": "August CPI: headline +0.4% m/m and 3.4% y/y, both in line; CORE +0.3% m/m, 0.1 point above forecast. Next week's hike odds moved to about 69% and October's from 27% to 42%. The tape whipsawed rather than trended - BTC fell toward 76,000, recovered above 77,000, closed 77,225.70 on a 5.05% range; ETH swung 9.54% and closed UP at 2,516.43; LINK swung 8.57%. The Sept 15-16 FOMC is therefore a different regime from the coin-flip the book has been carrying, but the recoveries were real and the reflex is not obviously downward."
   },
   {
-   "market": "ADCB - a downgrade where the core score went UP",
-   "note": "STRONG BUY -> BUY (50 -> 35) while core score rose 50 -> 65. The whole 30-point drop is the stretch penalty arriving as RSI crossed above 70 (71.6) with price above the upper Bollinger band. Price +1.12%, above a rising 50-day, 20-day above 50-day, MACD positive. The cleanest example yet of why core_score exists: read it as strength that has run hot, not deterioration."
+   "market": "UAE - the intraday caveat earned its keep",
+   "note": "Saturday's snapshot returns Friday's SETTLED closes. Two of the three upgrades reported yesterday off an 11:10 Dubai intraday print did not survive the session: FAB STRONG BUY -> BUY (-1.52% into the close) and ADNOCDRILL STRONG BUY -> BUY. Only EAND held. First concrete confirmation that the Sept-7 intraday caveat was doing real work. The settled closes did produce a genuine signal: EMIRATESNBD SELL -> STRONG BUY (-30 -> 60), +4.23% to 31.56, MACD bullish cross plus a cross above the 50-day - a 90-point swing on a confirmed close, with no dated catalyst found. DIB STRONG SELL -> SELL, TECOM SELL -> BUY (still noise on a 13.5% float), ALDAR above its 50-day."
   },
   {
-   "market": "UAE - three real ADX upgrades this time",
-   "note": "FAB BUY -> STRONG BUY, EAND BUY -> STRONG BUY and ADNOCDRILL BUY -> STRONG BUY, all with core equal to score and all following a properly serviced cycle, so unlike yesterday's four-at-once the timing is honest. EMIRATESNBD went HOLD -> SELL. DEWA +2.57% to 2.79 and TALABAT -2.52% to 1.16 both clear the 2.5% stock threshold; DEWA's HOLD -> BUY stays muted, its fifth flip in eight sessions. No dated September catalyst found for any ADX name - the sources returned were undated portal pages, one quoting an e& price of 18.56 against our 21.78, so that material is treated as stale rather than cited."
-  },
-  {
-   "market": "Positions - no action, fifth session un-armed",
-   "note": "ETH 2,469.98 (-0.20%), $89.91, +35.0%. The corrected close-based trail computes 2,189.75, BELOW the existing 2,209 stop, so max() holds it - the fix working as intended on its first run. The 2,300 close-exit is 6.88% below, no count, last three closes 2,485.06 / 2,468.13 / 2,438.27. BTC still BUY (35): opportunity deploy un-armed for a fifth session, 500 AED in USDT. AD Ports holds 6.15, 1.6% under the AED 6.25 offer that closes 3pm UAE Tuesday Sept 15."
+   "market": "Positions - both stops hold, sixth session un-armed",
+   "note": "ETH 2,524.20 (+2.20%), $91.88, +38.0%, the highest the position has been worth. The close-based trail computes 2,228.23, a +0.20 ATR improvement - below the gate, so the 2,209 stop holds. The 2,300 close-exit is 8.88% below, no count. BTC 77,342.01 still BUY (35): the opportunity deploy stays un-armed for a sixth session and the 500 AED remains in USDT, which with a hike near 70% priced is the written rule getting the right answer rather than foresight. LTC is still the only STRONG BUY crypto. AD Ports 6.17, 1.3% under the AED 6.25 offer closing 3pm UAE Tuesday."
   }
  ],
  "asset_notes": {
@@ -345,6 +341,12 @@
     "impact": "bearish",
     "date": "2026-09-11",
     "source": "news research pass"
+   },
+   {
+    "headline": "August CPI headline in line at 3.4% y/y but core +0.3% m/m ran 0.1pp hot; next-week hike odds to ~69% and October's from 27% to 42%. BTC dipped toward 76,000, recovered above 77,000, closed 77,225.70 on a 5.05% range",
+    "impact": "bearish",
+    "date": "2026-09-12",
+    "source": "news research pass"
    }
   ],
   "ETHUSDT": [
@@ -479,6 +481,12 @@
     "impact": "bullish",
     "date": "2026-09-04",
     "source": "news research pass"
+   },
+   {
+    "headline": "Swung 9.54% on CPI day (2,433.77 to 2,665.99) and still closed UP at 2,516.43; position at a new high in value terms, +38.0%",
+    "impact": "bullish",
+    "date": "2026-09-12",
+    "source": "advisor data"
    }
   ],
   "BNBUSDT": [
@@ -639,6 +647,12 @@
     "impact": "bullish",
     "date": "2026-07-14",
     "source": "Zawya/TradingView, Khaleej Times, Investing.com earnings call transcript (14 Jul 2026)"
+   },
+   {
+    "headline": "STRONG SELL -> SELL on a MACD bullish cross, +1.24%",
+    "impact": "bullish",
+    "date": "2026-09-12",
+    "source": "advisor data"
    }
   ],
   "EMIRATESNBD": [
@@ -671,6 +685,12 @@
     "impact": "bearish",
     "date": "2026-09-11",
     "source": "advisor data"
+   },
+   {
+    "headline": "+4.23% to 31.56 on the settled Friday close: SELL -> STRONG BUY (-30 -> 60), MACD bullish cross and a cross above the 50-day. No dated catalyst found",
+    "impact": "bullish",
+    "date": "2026-09-12",
+    "source": "news research pass"
    }
   ],
   "TALABAT": [
@@ -869,6 +889,12 @@
     "impact": "bullish",
     "date": "2026-09-11",
     "source": "advisor data"
+   },
+   {
+    "headline": "STRONG BUY -> BUY: yesterday's upgrade came off an 11:10 Dubai intraday print and did not survive the session, closing -1.52%",
+    "impact": "bearish",
+    "date": "2026-09-12",
+    "source": "advisor data"
    }
   ],
   "IHC": [
@@ -1016,6 +1042,12 @@
     "headline": "-2.24% to 11.547, third straight down session; the 11.337 stop is now 1.82% below spot after lows of 11.433 (Sept 10) and 11.400 (Sept 11)",
     "impact": "bearish",
     "date": "2026-09-11",
+    "source": "advisor data"
+   },
+   {
+    "headline": "Intraday low of 11.253 went 0.74% through the 11.337 stop on the CPI dip, then closed back above at 11.551 - not an exit under the close-based rule now codified",
+    "impact": "neutral",
+    "date": "2026-09-12",
     "source": "advisor data"
    }
   ],
@@ -1271,6 +1303,12 @@
     "impact": "bullish",
     "date": "2026-09-11",
     "source": "advisor data"
+   },
+   {
+    "headline": "STRONG BUY -> BUY: same reversal as FAB, the intraday upgrade did not hold to the close",
+    "impact": "bearish",
+    "date": "2026-09-12",
+    "source": "advisor data"
    }
   ],
   "LTCUSDT": [
@@ -1297,12 +1335,12 @@
   ]
  },
  "risk_flags": [
-  "AUGUST CPI TODAY (Fri Sept 11), then the Sept 15-16 cluster: CLARITY cloture 2:15pm ET Sept 15, AD Ports tender close 3pm UAE Sept 15, FOMC Sept 15-16. CME FedWatch has a hike above 60%. Pre-commitment now covers today as well - no discretionary action, only written rules fire.",
-  "LINK's stop at 11.337 is 1.82% below spot and 5.8% tighter than the trail rule authorises. It is being held, not widened. A hot CPI plausibly fires it, exiting near +17.1%. Disclosed cost of a method error, accepted rather than papered over.",
-  "One STRONG BUY left across eleven cryptos (LTC), down from six on Sept 7. The alt-leverage unwind that began Sept 9 has not finished clearing.",
-  "BTC has lost the 77,600-77,900 support band and failed 80,000-82,000 repeatedly; the real-yield path is the binding constraint, with 2.5% on the 10-year real yield flagged as the level that breaks the bitcoin case.",
+  "FOMC Sept 15-16 is now priced as a HIKE (~69% next week, October 42% from 27%) after core CPI ran hot. Alongside CLARITY cloture 2:15pm ET Sept 15 and the AD Ports tender close 3pm UAE Sept 15. Pre-commitment stands - no discretionary action, only written rules fire.",
+  "LINK's stop at 11.337 is 1.75% below spot and was breached intraday on Sept 11 before closing above. It stands under the close-based rule. A close below it exits at the NEXT daily reading, not at the level - the realistic fill is worse than 11.337.",
+  "Stops and targets in this book trigger on a daily CLOSE. That rule was codified 2026-09-12, after an ambiguous event, in the direction that favoured the open position - recorded rather than glossed, and it binds in both directions from here.",
+  "One STRONG BUY left across eleven cryptos (LTC). The alt-leverage unwind has stopped accelerating but has not reversed.",
   "Geopolitics remains the dominant UAE equity driver: the March strike on Dubai repriced the whole property complex; renewed escalation would hit property and tourism-linked names again.",
-  "UAE stock prices in the daily snapshot are intraday, not closes, on trading days; ADX names carry no bar history at all, so their band changes across a missed cycle compress several sessions into one reading."
+  "UAE band changes read at 11:10 Dubai are provisional. Two of three upgrades reported Sept 11 reversed by the settled close - treat weekday labels as drafts and Saturday/Sunday readings as the confirmed record."
  ],
  "corrections": [
   "Prior context.json was 13 days stale (2026-07-17) because daily cycles were skipped 2026-07-20..29; refreshed 2026-07-30."

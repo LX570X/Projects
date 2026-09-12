@@ -1399,6 +1399,45 @@
    "price": 2469.98,
    "rationale": "ETH 2,469.98 (-0.20%), $89.91, +35.0%. The trail computed from the last completed close (2,438.27 - 3 x 82.8386 = 2,189.75) falls BELOW the existing 2,209 stop, so max() holds it unchanged - the first run of the corrected close-based method, and it behaves exactly as intended. The 2,300 close-exit is 6.88% below with no count; the last three closes were 2,485.06, 2,468.13, 2,438.27, drifting down but well clear. BTC 77,364.80 (-1.06%) is still BUY (35), so the opportunity deploy stays un-armed for a fifth consecutive session and the 500 AED remains in USDT. The standing no-discretionary-action pre-commitment for Sept 15-16 is extended to today: August CPI is a binary event of the same kind and the same rule applies.",
    "status": "no action"
+  },
+  {
+   "date": "2026-09-12",
+   "ticker": "LINKUSDT",
+   "action": "the stop was breached INTRADAY and survived on the close - and I had never written down which one counts",
+   "price": 11.539,
+   "stop": 11.337,
+   "entry": 9.681,
+   "rationale": "On CPI day LINK printed a low of 11.253, which is 0.74% BELOW the 11.337 stop, then recovered to close at 11.551 above it - an 8.57% range. Whether that is an exit depends on a rule I never wrote down. ETH's plan says 'if price CLOSES below the stop, convert ALL to USDT'; LINK's stop was created by the same trailing mechanism and was never given its own trigger condition. I am codifying CLOSE-based triggering for both stops and targets, so the position stands. Three reasons, none of which depend on today's outcome: ETH is the only written precedent in this book and it is close-based; the stop LEVEL is computed from daily closes, so triggering it intraday is internally inconsistent; and decisively, this system observes prices once a day at 07:10 UTC, so an intraday stop is not executable - claiming an exit at 11.337 would be claiming a fill at a price nobody observed and nobody could have acted on, which is the August bookkeeping failure repeating. What I want on the record: I am writing this rule down AFTER the ambiguous event and it resolves in the direction that keeps the position alive. That is uncomfortable. The mitigation is that it now binds in both directions - a close below the stop exits even if price recovers afterwards - and that I am saying so rather than letting it pass as a technicality.",
+   "status": "open, +19.2% - NOT stopped out, rule codified"
+  },
+  {
+   "date": "2026-09-12",
+   "ticker": "CORRECTION",
+   "action": "'if it fires it fires near +17.1%' was imprecise",
+   "rationale": "I said that on both Sept 10 and Sept 11. With a close-based stop and one observation a day, an exit does NOT happen at the stop level: it happens at the next daily reading, which can be materially below it. Yesterday is the illustration - a close below 11.337 would have been actioned at whatever LINK was trading at 07:10 the following morning, not at 11.337. The realistic outcome of a stop-out is worse than the level, and quoting the level as the exit price overstates what this system can deliver. Corrected in the portfolio record.",
+   "status": "correction logged"
+  },
+  {
+   "date": "2026-09-12",
+   "ticker": "MACRO",
+   "action": "CPI came in hot on core - hike odds now near 70%",
+   "rationale": "August CPI: headline +0.4% m/m and 3.4% y/y, both in line with consensus, but CORE ran +0.3% m/m, 0.1 point above forecast. That was enough to move next week's hike odds to about 69% and October's from 27% to 42%. The tape whipsawed rather than trended: BTC fell toward 76,000, recovered above 77,000 and closed 77,225.70 on a 5.05% daily range; ETH swung 9.54% between 2,433.77 and 2,665.99 and closed UP at 2,516.43; LINK swung 8.57%. Two things follow. First, the FOMC on Sept 15-16 is now priced as a hike rather than a coin flip, which is a different regime from the one the book has been carrying. Second, the recoveries were real - ETH closed at a level that puts the position at a new high in value terms - so the reflex is not obviously downward. The pre-commitment for Sept 15-16 stands unchanged.",
+   "status": "logged"
+  },
+  {
+   "date": "2026-09-12",
+   "ticker": "UAE-stocks",
+   "action": "yesterday's intraday upgrades partly reversed on the settled closes - the caveat earned its keep",
+   "rationale": "Today is Saturday, so the snapshot returns Friday's SETTLED closes rather than an 11:10 Dubai intraday print. Two of the three upgrades I reported yesterday did not survive the session: FAB STRONG BUY -> BUY (-1.52% into the close) and ADNOCDRILL STRONG BUY -> BUY. Only EAND held its STRONG BUY. This is the first direct, concrete vindication of the intraday caveat documented on Sept 7 - the 11:10 labels were provisional and two of them were wrong by 14:45. I reported them as real trend improvements yesterday, with the caveat attached, and the caveat was the part that mattered. Meanwhile the settled closes produced a genuine one: EMIRATESNBD SELL -> STRONG BUY (-30 -> 60), +4.23% to 31.56, MACD bullish cross AND a cross above the 50-day - a 90-point swing and a real trend change on a confirmed close. A news pass found no dated catalyst; the most recent independent quote I could verify was a 30.200 close on Sept 9, consistent with our data, so the move is real but unexplained. Also DIB STRONG SELL -> SELL, TECOM SELL -> BUY (still noise, 13.5% free float), ALDAR crossed above its 50-day.",
+   "status": "advice only - no positions"
+  },
+  {
+   "date": "2026-09-12",
+   "ticker": "POSITIONS",
+   "action": "no action - both stops hold",
+   "price": 2524.2,
+   "rationale": "ETH 2,524.20 (+2.20%), $91.88, +38.0% - the highest the position has been worth. The close-based trail (2,516.43 - 3 x 96.0657 = 2,228.23) improves the 2,209 stop by only +0.20 ATR, below the gate, so it holds. The 2,300 close-exit is 8.88% below, no count. LINK 11.539, stop 11.337 held on the close as described above. BTC 77,342.01, still BUY (35), so the opportunity deploy stays un-armed for a sixth session and the 500 AED remains in USDT - and with a hike now near 70% priced for next week, leaving it in USDT through the FOMC is the written rule doing the right thing by accident rather than by foresight. LTC remains the only STRONG BUY crypto.",
+   "status": "no action"
   }
  ]
 }
