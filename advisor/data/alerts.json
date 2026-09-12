@@ -1,77 +1,59 @@
 {
- "generated_at_utc": "2026-09-11T07:10:21+00:00",
+ "generated_at_utc": "2026-09-12T07:09:25+00:00",
  "alerts": [
   {
-   "ticker": "AVAXUSDT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "AVAXUSDT: STRONG BUY -> BUY (score 65 -> 25)"
-  },
-  {
-   "ticker": "AVAXUSDT",
+   "ticker": "EMIRATESNBD",
    "severity": "info",
-   "type": "macd",
-   "msg": "AVAXUSDT: MACD bearish cross"
-  },
-  {
-   "ticker": "GRAMUSDT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "GRAMUSDT: HOLD -> SELL (score -20 -> -45)"
-  },
-  {
-   "ticker": "GRAMUSDT",
-   "severity": "info",
-   "type": "macd",
-   "msg": "GRAMUSDT: MACD bearish cross"
+   "type": "big_move",
+   "msg": "EMIRATESNBD moved +4.2% in the last day (now 31.56 AED)"
   },
   {
    "ticker": "EMIRATESNBD",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "EMIRATESNBD: HOLD -> SELL (score -15 -> -30)"
+   "msg": "EMIRATESNBD: SELL -> STRONG BUY (score -30 -> 60)"
   },
   {
-   "ticker": "DEWA",
+   "ticker": "EMIRATESNBD",
    "severity": "info",
-   "type": "big_move",
-   "msg": "DEWA moved +2.6% in the last day (now 2.79 AED)"
+   "type": "macd",
+   "msg": "EMIRATESNBD: MACD bullish cross"
   },
   {
-   "ticker": "DEWA",
+   "ticker": "EMIRATESNBD",
+   "severity": "actionable",
+   "type": "trend",
+   "msg": "EMIRATESNBD: price crossed above its 50-day average \u2014 trend change"
+  },
+  {
+   "ticker": "DIB",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "DEWA: HOLD -> BUY (score -15 -> 35)"
+   "msg": "DIB: STRONG SELL -> SELL (score -50 -> -40)"
   },
   {
-   "ticker": "TALABAT",
+   "ticker": "DIB",
    "severity": "info",
-   "type": "big_move",
-   "msg": "TALABAT moved -2.5% in the last day (now 1.16 AED)"
+   "type": "macd",
+   "msg": "DIB: MACD bullish cross"
   },
   {
-   "ticker": "FAB",
+   "ticker": "TECOM",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "FAB: BUY -> STRONG BUY (score 35 -> 50)"
+   "msg": "TECOM: SELL -> BUY (score -40 -> 30)"
   },
   {
-   "ticker": "ADCB",
+   "ticker": "TECOM",
    "severity": "info",
-   "type": "rsi",
-   "msg": "ADCB: RSI crossed above 70 (now 71.6)"
+   "type": "macd",
+   "msg": "TECOM: MACD bullish cross"
   },
   {
-   "ticker": "EAND",
+   "ticker": "ALDAR",
    "severity": "actionable",
-   "type": "signal_change",
-   "msg": "EAND: BUY -> STRONG BUY (score 40 -> 50)"
-  },
-  {
-   "ticker": "ADNOCDRILL",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "ADNOCDRILL: BUY -> STRONG BUY (score 35 -> 50)"
+   "type": "trend",
+   "msg": "ALDAR: price crossed above its 50-day average \u2014 trend change"
   }
  ]
 }
