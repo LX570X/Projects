@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-12T07:30+00:00",
+ "updated": "2026-09-13T07:25+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": 0,
@@ -22,12 +22,12 @@
    "target2": 2105.0,
    "plan": "Hold. If price closes below the stop, convert ALL to USDT (not another coin). At target 1, convert half to USDT and raise the stop to 1830 (entry). At target 2, take the rest.",
    "action_required": {
-    "as_of": "2026-09-12",
+    "as_of": "2026-09-13",
     "end_state": "hold 0.0091 ETH - if you are already there, do nothing",
     "stop": 2209.0,
     "stop_raised_from": 2105.0,
     "close_exit": "two consecutive daily CLOSES below 2,300 -> exit the remainder at market",
-    "note": "Stop UNCHANGED at 2,209. The close-based trail (2,516.43 - 3 x 96.0657) computes 2,228.23, an improvement of +0.20 ATR - well below the 1-ATR gate, so it holds. ETH 2,524.20 (+2.20%), $91.88, +38.0% - a new holding-period high in value terms. On CPI day ETH ranged 2,433.77 to 2,665.99, a 9.54% swing, and still closed up at 2,516.43. The 2,300 close-exit is 8.88% below with no count; last three closes 2,468.13 / 2,438.27 / 2,516.43."
+    "note": "Stop UNCHANGED at 2,209. The close-based trail (2,525.93 - 3 x 88.3371) computes 2,260.92, an improvement of +0.59 ATR - the closest the ETH trail has come to the 1-ATR gate without clearing it. ETH 2,514.88 (-0.34%), $91.54, +37.4%. The 2,300 close-exit is 8.55% below with no count; last three closes 2,516.43 / 2,525.93 / holding near 2,515."
    },
    "fill": {
     "state": "position confirmed by user 2026-07-17; the 2026-08-20 trim is UNCONFIRMED",
@@ -142,7 +142,7 @@
    }
   ],
   "satellite_candidate": {
-   "as_of": "2026-09-12",
+   "as_of": "2026-09-13",
    "ticker": "LINKUSDT",
    "fill": {
     "state": "unconfirmed",
@@ -156,7 +156,7 @@
     "entry": 9.681,
     "stop": 11.337
    },
-   "notional_now_usd": 16.22,
+   "notional_now_usd": 16.11,
    "stop_raised_from": 10.456,
    "stop_note": "RAISED 10.456 -> 11.337, second consecutive day. Spot 13.37 minus 3x ATR14 (0.6778) = 11.337, an improvement of +1.30 ATR. Locks +17.10% versus the 9.681 entry, up from +8.01%, and sits 15.2% below spot. Fourth trail trigger since adoption (BTC Aug 25, ETH Sept 4, LINK Sept 6 and 7).",
    "second_half": {
@@ -165,7 +165,7 @@
     "why": "The order was a scale-in for the initial entry window: buy half now, half on a pullback, to avoid chasing. That window has passed - LINK is +26.5% above the first tranche and the pullback never came. The 10.65-11.05 zone is now 11.4% below spot and 5.9% BELOW the rising 20-day (11.531), the same drift that forced the Aug-31 re-site. Re-siting a second time would turn a scale-in into a permanent trailing buy order, which is not what the satellite bucket is for. Worse, a fill at 10.85 against the new 10.456 stop leaves only 3.6% of room - well inside one ATR (0.598, about 4.9% of spot) - so the trade would not be viable even if it filled. Cancelling rather than chasing.",
     "disposition": "the unspent 50 AED returns to satellite reserve"
    },
-   "note": "LINK 11.539, flat on the day, BUY (35, core 35 - the stretch penalty has fully unwound). Position +19.2% versus the 9.681 advised entry, notional about $16.22. The stop survived its first real test: Sept 11's low of 11.253 went through it intraday on the CPI dip and closed back above at 11.551. No trail action - the rule-computed stop from the last completed close (11.551 - 3 x 0.7161) is 9.403, far below the existing 11.337. Fill still UNCONFIRMED.",
+   "note": "LINK 11.455 (-0.64%), BUY (35). Position +18.3% versus the 9.681 entry, notional about $16.11. Stop 11.337 now only 1.03% below spot. No trail action - the close-based computation (11.508 - 3 x 0.6723) gives 9.491, far below the existing stop. Fill still UNCONFIRMED.",
    "stop_method_correction": {
     "found": "2026-09-10",
     "what": "The 11.337 stop set on Sept 7 was computed from the live 07:10 UTC snapshot price of 13.37. LINK's actual Sept 7 daily CLOSE was 12.748. Applying the written rule to the close gives 12.748 - 3 x 0.6778 = 10.715, so the stop in force is 5.8% TIGHTER than the rule authorises.",
@@ -174,18 +174,12 @@
     "fix": "Method corrected going forward: the trail now reads the last completed daily close."
    },
    "stop_proximity": {
-    "as_of": "2026-09-12",
-    "spot": 11.539,
+    "as_of": "2026-09-13",
+    "spot": 11.455,
     "stop": 11.337,
-    "headroom_pct": -1.75,
-    "cpi_day": "On Sept 11 LINK traded a low of 11.253 - 0.74% BELOW the stop - on the CPI dip, then recovered to close at 11.551, ABOVE it. The range was 11.253 to 12.217, 8.57%.",
-    "verdict": "NOT stopped out. Under the close-based rule now codified, the Sept 11 close of 11.551 is above 11.337 and the position stands. Under an intraday reading it would have exited. See stop_trigger_rule for why close-based is the right reading and for the fact that this was written down after the event.",
-    "recent_lows": {
-     "2026-09-09": 11.584,
-     "2026-09-10": 11.433,
-     "2026-09-11": 11.253,
-     "2026-09-12 so far": 11.457
-    }
+    "headroom_pct": -1.03,
+    "note": "Tightest the stop has been. Three sessions of grinding lows: 11.253 (Sept 11, below the stop, closed above), 11.453 (Sept 12), 11.433 (Sept 13 so far). Under the close-based rule the relevant number is the daily close, and those have been 11.551, 11.508, 11.455 - stepping down about 0.4% a day. At that pace a close below 11.337 is two to three sessions away, which puts it inside the FOMC window.",
+    "decision": "No action. The rule exits on a close below 11.337 and nothing else. Not tightening, not loosening, not pre-empting."
    }
   },
   "opportunity_status": {
@@ -219,10 +213,10 @@
   "clarification": "The rule always said 'daily close', but in practice all four trail triggers to date (BTC Aug 25, ETH Sept 4, LINK Sept 6 and Sept 7) were computed from the LIVE 07:10 UTC snapshot price, not from the last completed daily close. Crypto daily bars close at 00:00 UTC, so the snapshot is roughly seven hours into an unfinished bar. From 2026-09-10 the trail uses the last COMPLETED daily close. Existing stops are NOT lowered to match - see stop_method_correction on the LINK position."
  },
  "event_risk": {
-  "as_of": "2026-09-12",
-  "resolved": "August CPI landed Sept 11: headline +0.4% m/m and 3.4% y/y, both in line, but CORE ran +0.3% m/m, 0.1pp above forecast. Hike odds for next week rose to about 69%, and October hike odds jumped from 27% to 42%. Crypto whipsawed - BTC fell toward 76,000 then recovered above 77,000, closing 77,225.70 after a 5.05% daily range.",
-  "next": "Sept 15-16 cluster: CLARITY Act cloture 2:15pm ET Sept 15, AD Ports tender close 3pm UAE Sept 15, FOMC Sept 15-16 - now with a hike near 70% priced rather than a coin flip.",
-  "stance": "No discretionary action across Sept 15-16. Only written rules fire."
+  "as_of": "2026-09-13",
+  "escalation": "CME FedWatch hike odds for the Sept 16 FOMC have risen to about 87.3%, from roughly 69% a day earlier and a coin flip two weeks ago. A 25bp hike would take the target range from 3.50-3.75% to 3.75-4.00%. Because the hike is now largely priced, the market reaction is expected to hinge on forward guidance rather than the decision: one-off framing limits the downside, a signal of several more increases pressures yields, the dollar and crypto.",
+  "cluster": "CLARITY Act cloture 2:15pm ET Sept 15, AD Ports tender close 3pm UAE Sept 15, FOMC decision Sept 16.",
+  "stance": "No discretionary action across the window. Only written rules fire - for LINK that means a daily CLOSE below 11.337, for ETH two consecutive closes below 2,300 or a close below 2,209."
  },
  "reporting_rule": {
   "adopted": "2026-08-22",

@@ -1438,6 +1438,29 @@
    "price": 2524.2,
    "rationale": "ETH 2,524.20 (+2.20%), $91.88, +38.0% - the highest the position has been worth. The close-based trail (2,516.43 - 3 x 96.0657 = 2,228.23) improves the 2,209 stop by only +0.20 ATR, below the gate, so it holds. The 2,300 close-exit is 8.88% below, no count. LINK 11.539, stop 11.337 held on the close as described above. BTC 77,342.01, still BUY (35), so the opportunity deploy stays un-armed for a sixth session and the 500 AED remains in USDT - and with a hike now near 70% priced for next week, leaving it in USDT through the FOMC is the written rule doing the right thing by accident rather than by foresight. LTC remains the only STRONG BUY crypto.",
    "status": "no action"
+  },
+  {
+   "date": "2026-09-13",
+   "ticker": "MACRO",
+   "action": "hike odds jumped 69% -> 87% in a day",
+   "rationale": "CME FedWatch now prices about 87.3% for a 25bp hike at the Sept 16 FOMC, against roughly 69% yesterday and a coin flip two weeks ago - the range would go from 3.50-3.75% to 3.75-4.00%. The useful consequence is that the decision itself is largely priced, so the reaction should hinge on guidance: framing it as a one-off limits the downside, signalling several more increases pressures yields, the dollar and crypto together. BTC is sitting near 77,200 having given back the 79,890 spike, with traders cutting risk into the meeting. Nothing in this is actionable under the written rules, and that is the point of having them - the 500 AED sitting in USDT through an 87% hike is the un-armed deploy trigger getting the right answer without me having to forecast.",
+   "status": "logged - no action"
+  },
+  {
+   "date": "2026-09-13",
+   "ticker": "LINKUSDT",
+   "action": "closes stepping down ~0.4% a day toward the stop",
+   "price": 11.455,
+   "stop": 11.337,
+   "rationale": "Under the close-based rule codified yesterday, the number that matters is the daily close, and those have gone 11.551, 11.508, 11.455 - down about 0.4% a session. Extrapolating that pace naively puts a close below 11.337 two to three sessions out, which lands inside the FOMC window. I am recording that because it is the likeliest action in the book right now, not because it changes anything: no tightening, no loosening, no pre-emptive exit. The position is +18.3% and the only thing that moves it is a close below 11.337. Worth adding that intraday lows have been through or near the stop on all three sessions (11.253, 11.453, 11.433) without a close below it - which is exactly the behaviour the close-based rule is designed to ignore.",
+   "status": "open, +18.3% - no action"
+  },
+  {
+   "date": "2026-09-13",
+   "ticker": "CYCLE",
+   "action": "quiet day - no notification sent",
+   "rationale": "One alert in the whole book: GRAM SELL -> STRONG SELL, which is a move within the sell side and not a band change to or from BUY/SELL, on an asset held only on the watchlist. No 50-day cross, no stop or target hit, no crypto move of 4% or more, and the UAE numbers are weekend repeats of Friday's settled closes rather than new moves - every UAE stock shows a stale counter of 1 or 2, exactly as it should on a Sunday. No material change under ADVISOR.md, so no push notification. Recording the non-event deliberately: the declared default is silence, and a day with nothing to act on should leave a log entry rather than a message.",
+   "status": "no material change - silent by rule"
   }
  ]
 }

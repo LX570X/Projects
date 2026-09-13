@@ -1,25 +1,17 @@
 {
- "updated": "2026-09-12T07:35+00:00",
+ "updated": "2026-09-13T07:30+00:00",
  "market_notes": [
   {
-   "market": "LINK - the stop was breached intraday and survived on the close",
-   "note": "On CPI day LINK printed 11.253, which is 0.74% BELOW the 11.337 stop, then recovered to close 11.551 above it - an 8.57% range. Whether that counted as an exit turned on a rule that had never been written down. It is now: stops and targets trigger on a DAILY CLOSE, not an intraday print. Reasons that do not depend on today's outcome - ETH is the only written precedent in this book and it is close-based; the stop level is computed from daily closes, so triggering intraday is internally inconsistent; and this system observes prices once a day, so an intraday stop is not executable without claiming a fill nobody saw. Stated plainly: this was codified AFTER the ambiguous event and it favours keeping the position. It now binds both ways - a close below the stop exits even if price recovers afterwards."
+   "market": "Hike odds 69% -> 87% in a day",
+   "note": "CME FedWatch prices about 87.3% for a 25bp hike on Sept 16, from roughly 69% yesterday and a coin flip two weeks ago; the range would move from 3.50-3.75% to 3.75-4.00%. With the hike largely priced, the reaction should hinge on guidance rather than the decision - one-off framing limits the downside, a signal of several more increases pressures yields, the dollar and crypto together. BTC near 77,200 having given back the 79,890 spike, with traders cutting risk into the meeting."
   },
   {
-   "market": "Correction - a stop-out does not fill at the stop",
-   "note": "I twice wrote 'if it fires it fires near +17.1%'. With a close-based stop and one observation a day, the exit happens at the next daily reading, not at the level. The realistic outcome of a stop-out is worse than the number quoted. Corrected."
+   "market": "LINK - closes stepping down toward the stop",
+   "note": "Daily closes 11.551, 11.508, 11.455, about -0.4% a session; intraday lows 11.253, 11.453, 11.433 have been through or near the 11.337 stop all three days without a close below it, which is precisely what the close-based rule ignores. Stop now 1.03% below spot, the tightest it has been. Naive extrapolation puts a close below it two to three sessions out, inside the FOMC window. No action: the rule exits on a close and nothing else."
   },
   {
-   "market": "CPI hot on core - the FOMC is now priced as a hike",
-   "note": "August CPI: headline +0.4% m/m and 3.4% y/y, both in line; CORE +0.3% m/m, 0.1 point above forecast. Next week's hike odds moved to about 69% and October's from 27% to 42%. The tape whipsawed rather than trended - BTC fell toward 76,000, recovered above 77,000, closed 77,225.70 on a 5.05% range; ETH swung 9.54% and closed UP at 2,516.43; LINK swung 8.57%. The Sept 15-16 FOMC is therefore a different regime from the coin-flip the book has been carrying, but the recoveries were real and the reflex is not obviously downward."
-  },
-  {
-   "market": "UAE - the intraday caveat earned its keep",
-   "note": "Saturday's snapshot returns Friday's SETTLED closes. Two of the three upgrades reported yesterday off an 11:10 Dubai intraday print did not survive the session: FAB STRONG BUY -> BUY (-1.52% into the close) and ADNOCDRILL STRONG BUY -> BUY. Only EAND held. First concrete confirmation that the Sept-7 intraday caveat was doing real work. The settled closes did produce a genuine signal: EMIRATESNBD SELL -> STRONG BUY (-30 -> 60), +4.23% to 31.56, MACD bullish cross plus a cross above the 50-day - a 90-point swing on a confirmed close, with no dated catalyst found. DIB STRONG SELL -> SELL, TECOM SELL -> BUY (still noise on a 13.5% float), ALDAR above its 50-day."
-  },
-  {
-   "market": "Positions - both stops hold, sixth session un-armed",
-   "note": "ETH 2,524.20 (+2.20%), $91.88, +38.0%, the highest the position has been worth. The close-based trail computes 2,228.23, a +0.20 ATR improvement - below the gate, so the 2,209 stop holds. The 2,300 close-exit is 8.88% below, no count. BTC 77,342.01 still BUY (35): the opportunity deploy stays un-armed for a sixth session and the 500 AED remains in USDT, which with a hike near 70% priced is the written rule getting the right answer rather than foresight. LTC is still the only STRONG BUY crypto. AD Ports 6.17, 1.3% under the AED 6.25 offer closing 3pm UAE Tuesday."
+   "market": "A genuinely quiet book",
+   "note": "One alert across 30 assets: GRAM SELL -> STRONG SELL, watchlist only. Every UAE stock shows a stale counter of 1 or 2 - the weekend repeat of Friday's settled closes, exactly as designed. No material change under ADVISOR.md, so no notification was sent. ETH 2,514.88 (-0.34%), $91.54, +37.4%; its close-based trail computed 2,260.92, a +0.59 ATR improvement - the closest the ETH trail has come to the 1-ATR gate without clearing it. BTC still BUY (35): deploy un-armed for a seventh session, 500 AED in USDT."
   }
  ],
  "asset_notes": {
@@ -346,6 +338,12 @@
     "headline": "August CPI headline in line at 3.4% y/y but core +0.3% m/m ran 0.1pp hot; next-week hike odds to ~69% and October's from 27% to 42%. BTC dipped toward 76,000, recovered above 77,000, closed 77,225.70 on a 5.05% range",
     "impact": "bearish",
     "date": "2026-09-12",
+    "source": "news research pass"
+   },
+   {
+    "headline": "CME FedWatch hike odds for the Sept 16 FOMC reach about 87.3% from roughly 69% a day earlier; a 25bp move takes the range to 3.75-4.00%. With the hike priced, guidance rather than the decision is expected to drive the reaction",
+    "impact": "bearish",
+    "date": "2026-09-13",
     "source": "news research pass"
    }
   ],
@@ -1331,12 +1329,18 @@
     "impact": "bearish",
     "date": "2026-09-11",
     "source": "advisor data"
+   },
+   {
+    "headline": "SELL -> STRONG SELL (-45 -> -60), third consecutive downgrade since losing its 50-day on Sept 10",
+    "impact": "bearish",
+    "date": "2026-09-13",
+    "source": "advisor data"
    }
   ]
  },
  "risk_flags": [
-  "FOMC Sept 15-16 is now priced as a HIKE (~69% next week, October 42% from 27%) after core CPI ran hot. Alongside CLARITY cloture 2:15pm ET Sept 15 and the AD Ports tender close 3pm UAE Sept 15. Pre-commitment stands - no discretionary action, only written rules fire.",
-  "LINK's stop at 11.337 is 1.75% below spot and was breached intraday on Sept 11 before closing above. It stands under the close-based rule. A close below it exits at the NEXT daily reading, not at the level - the realistic fill is worse than 11.337.",
+  "FOMC Sept 16 now carries ~87% hike odds (from ~69% on Sept 12), alongside CLARITY cloture 2:15pm ET Sept 15 and the AD Ports tender close 3pm UAE Sept 15. Because the hike is priced, guidance is the variable. Pre-commitment stands - no discretionary action, only written rules fire.",
+  "LINK's stop at 11.337 is 1.03% below spot, the tightest it has been, with daily closes stepping down about 0.4% a session. A close below it exits at the NEXT daily reading, not at the level.",
   "Stops and targets in this book trigger on a daily CLOSE. That rule was codified 2026-09-12, after an ambiguous event, in the direction that favoured the open position - recorded rather than glossed, and it binds in both directions from here.",
   "One STRONG BUY left across eleven cryptos (LTC). The alt-leverage unwind has stopped accelerating but has not reversed.",
   "Geopolitics remains the dominant UAE equity driver: the March strike on Dubai repriced the whole property complex; renewed escalation would hit property and tourism-linked names again.",
