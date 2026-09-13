@@ -1,59 +1,11 @@
 {
- "generated_at_utc": "2026-09-12T07:09:25+00:00",
+ "generated_at_utc": "2026-09-13T07:09:08+00:00",
  "alerts": [
   {
-   "ticker": "EMIRATESNBD",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "EMIRATESNBD moved +4.2% in the last day (now 31.56 AED)"
-  },
-  {
-   "ticker": "EMIRATESNBD",
+   "ticker": "GRAMUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "EMIRATESNBD: SELL -> STRONG BUY (score -30 -> 60)"
-  },
-  {
-   "ticker": "EMIRATESNBD",
-   "severity": "info",
-   "type": "macd",
-   "msg": "EMIRATESNBD: MACD bullish cross"
-  },
-  {
-   "ticker": "EMIRATESNBD",
-   "severity": "actionable",
-   "type": "trend",
-   "msg": "EMIRATESNBD: price crossed above its 50-day average \u2014 trend change"
-  },
-  {
-   "ticker": "DIB",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "DIB: STRONG SELL -> SELL (score -50 -> -40)"
-  },
-  {
-   "ticker": "DIB",
-   "severity": "info",
-   "type": "macd",
-   "msg": "DIB: MACD bullish cross"
-  },
-  {
-   "ticker": "TECOM",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "TECOM: SELL -> BUY (score -40 -> 30)"
-  },
-  {
-   "ticker": "TECOM",
-   "severity": "info",
-   "type": "macd",
-   "msg": "TECOM: MACD bullish cross"
-  },
-  {
-   "ticker": "ALDAR",
-   "severity": "actionable",
-   "type": "trend",
-   "msg": "ALDAR: price crossed above its 50-day average \u2014 trend change"
+   "msg": "GRAMUSDT: SELL -> STRONG SELL (score -45 -> -60)"
   }
  ]
 }
