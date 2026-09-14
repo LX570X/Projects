@@ -1,11 +1,65 @@
 {
- "generated_at_utc": "2026-09-13T07:09:08+00:00",
+ "generated_at_utc": "2026-09-14T07:10:04+00:00",
  "alerts": [
   {
    "ticker": "GRAMUSDT",
+   "severity": "info",
+   "type": "macd",
+   "msg": "GRAMUSDT: MACD bullish cross"
+  },
+  {
+   "ticker": "LTCUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "GRAMUSDT: SELL -> STRONG SELL (score -45 -> -60)"
+   "msg": "LTCUSDT: STRONG BUY -> BUY (score 50 -> 40)"
+  },
+  {
+   "ticker": "LTCUSDT",
+   "severity": "info",
+   "type": "macd",
+   "msg": "LTCUSDT: MACD bearish cross"
+  },
+  {
+   "ticker": "EMAAR",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "EMAAR moved +3.1% in the last day (now 11.28 AED)"
+  },
+  {
+   "ticker": "TALABAT",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "TALABAT moved -2.6% in the last day (now 1.14 AED)"
+  },
+  {
+   "ticker": "TECOM",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "TECOM: BUY -> SELL (score 30 -> -30)"
+  },
+  {
+   "ticker": "FAB",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "FAB: BUY -> STRONG BUY (score 25 -> 50)"
+  },
+  {
+   "ticker": "EAND",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "EAND: STRONG BUY -> BUY (score 50 -> 40) \u2014 stretch penalty applied, trend/momentum unchanged"
+  },
+  {
+   "ticker": "ADIB",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ADIB: STRONG BUY -> BUY (score 50 -> 40) \u2014 stretch penalty applied, trend/momentum unchanged"
+  },
+  {
+   "ticker": "ADPORTS",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ADPORTS: HOLD -> BUY (score 15 -> 25) \u2014 penalty relief only, trend/momentum unchanged"
   }
  ]
 }
