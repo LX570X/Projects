@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-13T07:25+00:00",
+ "updated": "2026-09-14T07:30+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": 0,
@@ -22,12 +22,12 @@
    "target2": 2105.0,
    "plan": "Hold. If price closes below the stop, convert ALL to USDT (not another coin). At target 1, convert half to USDT and raise the stop to 1830 (entry). At target 2, take the rest.",
    "action_required": {
-    "as_of": "2026-09-13",
+    "as_of": "2026-09-14",
     "end_state": "hold 0.0091 ETH - if you are already there, do nothing",
     "stop": 2209.0,
     "stop_raised_from": 2105.0,
     "close_exit": "two consecutive daily CLOSES below 2,300 -> exit the remainder at market",
-    "note": "Stop UNCHANGED at 2,209. The close-based trail (2,525.93 - 3 x 88.3371) computes 2,260.92, an improvement of +0.59 ATR - the closest the ETH trail has come to the 1-ATR gate without clearing it. ETH 2,514.88 (-0.34%), $91.54, +37.4%. The 2,300 close-exit is 8.55% below with no count; last three closes 2,516.43 / 2,525.93 / holding near 2,515."
+    "note": "Stop UNCHANGED at 2,209. The close-based trail (2,477.10 - 3 x 89.8671) computes 2,207.50, marginally BELOW the existing stop, so max() holds it. ETH 2,517.13 (+0.07%), $91.62, +37.6%. Sunday's close of 2,477.10 was the lowest since Sept 10 but the 2,300 close-exit is still 8.62% below with no count running."
    },
    "fill": {
     "state": "position confirmed by user 2026-07-17; the 2026-08-20 trim is UNCONFIRMED",
@@ -65,7 +65,7 @@
   "accumulations": {
    "core_uae_stocks_aed": 800,
    "opportunity_usdt_aed": 500,
-   "satellite_reserve_aed": 150
+   "satellite_reserve_aed": 209
   },
   "dca_history": [
    {
@@ -142,45 +142,34 @@
    }
   ],
   "satellite_candidate": {
-   "as_of": "2026-09-13",
+   "as_of": "2026-09-14",
    "ticker": "LINKUSDT",
-   "fill": {
-    "state": "unconfirmed",
-    "as_of": "2026-09-06",
-    "evidence": "never reconciled against the exchange"
-   },
-   "advised_order": {
-    "aed": 50,
-    "usd_cost": 13.61,
-    "qty": 1.406,
+   "status": "CLOSED - STOP FIRED",
+   "exit": {
+    "trigger": "Daily CLOSE of 11.203 on Sunday 2026-09-13, below the 11.337 stop. First stop-out in this book's history.",
+    "rule_applied": "stop_trigger_rule, codified 2026-09-12: stops trigger on a daily CLOSE, not an intraday print.",
+    "exit_price": 11.412,
+    "exit_basis": "The next daily observation after the triggering close, exactly as disclosed on 2026-09-12 ('a close-based stop does NOT fill at the stop level; the exit happens at the next daily reading'). Here the slip was FAVOURABLE - LINK recovered overnight, so 11.412 is 0.66% ABOVE the 11.337 stop.",
     "entry": 9.681,
-    "stop": 11.337
+    "qty": 1.406,
+    "cost_usd": 13.61,
+    "proceeds_usd": 16.05,
+    "result_pct": 17.88,
+    "result_usd": 2.44,
+    "peak": "Marked +38.1% at 13.37 on 2026-09-07; gave back roughly 20 points of that before the stop caught it."
    },
-   "notional_now_usd": 16.11,
-   "stop_raised_from": 10.456,
-   "stop_note": "RAISED 10.456 -> 11.337, second consecutive day. Spot 13.37 minus 3x ATR14 (0.6778) = 11.337, an improvement of +1.30 ATR. Locks +17.10% versus the 9.681 entry, up from +8.01%, and sits 15.2% below spot. Fourth trail trigger since adoption (BTC Aug 25, ETH Sept 4, LINK Sept 6 and 7).",
-   "second_half": {
-    "aed": 50,
-    "status": "CANCELLED - purpose expired",
-    "why": "The order was a scale-in for the initial entry window: buy half now, half on a pullback, to avoid chasing. That window has passed - LINK is +26.5% above the first tranche and the pullback never came. The 10.65-11.05 zone is now 11.4% below spot and 5.9% BELOW the rising 20-day (11.531), the same drift that forced the Aug-31 re-site. Re-siting a second time would turn a scale-in into a permanent trailing buy order, which is not what the satellite bucket is for. Worse, a fill at 10.85 against the new 10.456 stop leaves only 3.6% of room - well inside one ATR (0.598, about 4.9% of spot) - so the trade would not be viable even if it filled. Cancelling rather than chasing.",
-    "disposition": "the unspent 50 AED returns to satellite reserve"
+   "instruction": {
+    "end_state": "hold 0 LINK - if you never executed the original 50 AED buy, there is nothing to do",
+    "how": "Sell the full LINK position at market, proceeds to USDT.",
+    "fill_state": "The original entry was ADVISED-UNCONFIRMED and was never reconciled against the exchange, so this exit is an instruction, not a recorded trade."
    },
-   "note": "LINK 11.455 (-0.64%), BUY (35). Position +18.3% versus the 9.681 entry, notional about $16.11. Stop 11.337 now only 1.03% below spot. No trail action - the close-based computation (11.508 - 3 x 0.6723) gives 9.491, far below the existing stop. Fill still UNCONFIRMED.",
-   "stop_method_correction": {
-    "found": "2026-09-10",
-    "what": "The 11.337 stop set on Sept 7 was computed from the live 07:10 UTC snapshot price of 13.37. LINK's actual Sept 7 daily CLOSE was 12.748. Applying the written rule to the close gives 12.748 - 3 x 0.6778 = 10.715, so the stop in force is 5.8% TIGHTER than the rule authorises.",
-    "decision": "The stop STAYS at 11.337. The 'never lowered' half of the rule exists precisely to stop me loosening a stop after price moves against the position, and loosening it now - three days into a 11.7% drawdown, with price 4.0% above it - would be exactly that, however good the justification reads.",
-    "live_risk": "Published analyst support for LINK sits at $10.79, BELOW our stop. A routine pullback to that support would stop this position out on a level set in error. That is a real and disclosed cost of keeping the tighter stop.",
-    "fix": "Method corrected going forward: the trail now reads the last completed daily close."
+   "honest_accounting": {
+    "the_rule_bound_both_ways": "On 2026-09-12 I codified close-based triggering in a case where it kept this position alive, and said plainly that it was uncomfortable to write a rule after the event in my own favour. Two days later the same rule closed the position. That is the test it needed to pass.",
+    "the_method_error_forced_this": "The 11.337 stop was set on 2026-09-07 from a live snapshot price of 13.37 rather than that day's close of 12.748. The rule-correct stop was 10.715. LINK's lowest print since has been 11.121, so a correctly-computed stop would NOT have fired and the position would still be open.",
+    "what_it_cost_so_far": "Nothing realised. The forced exit is at 11.412 and an open position would be worth 11.412 - the same number. Whether the error proves costly depends entirely on LINK's path from here, which is unknown. I am not claiming it was harmless and I am not claiming it was expensive.",
+    "the_catalyst_i_am_exiting_into": "Circle's Arc mainnet launches 2026-09-16 with Chainlink as official oracle and connectivity partner, and published support at $10.79 still holds. There is a real chance this exit looks wrong within days. The pre-commitment for the Sept 15-16 window was that only written rules fire, and overriding a stop because a catalyst is coming is precisely the discretionary judgement that pre-commitment forbids."
    },
-   "stop_proximity": {
-    "as_of": "2026-09-13",
-    "spot": 11.455,
-    "stop": 11.337,
-    "headroom_pct": -1.03,
-    "note": "Tightest the stop has been. Three sessions of grinding lows: 11.253 (Sept 11, below the stop, closed above), 11.453 (Sept 12), 11.433 (Sept 13 so far). Under the close-based rule the relevant number is the daily close, and those have been 11.551, 11.508, 11.455 - stepping down about 0.4% a day. At that pace a close below 11.337 is two to three sessions away, which puts it inside the FOMC window.",
-    "decision": "No action. The rule exits on a close below 11.337 and nothing else. Not tightening, not loosening, not pre-empting."
-   }
+   "disposition": "Proceeds of about $16.05 (roughly 59 AED) return to satellite reserve, taking it from 150 to about 209 AED. No replacement satellite position is being opened: with zero STRONG BUY cryptos on the board and an 87% hike priced for Sept 16, there is no candidate that meets the bar."
   },
   "opportunity_status": {
    "as_of": "2026-09-06",
@@ -213,10 +202,9 @@
   "clarification": "The rule always said 'daily close', but in practice all four trail triggers to date (BTC Aug 25, ETH Sept 4, LINK Sept 6 and Sept 7) were computed from the LIVE 07:10 UTC snapshot price, not from the last completed daily close. Crypto daily bars close at 00:00 UTC, so the snapshot is roughly seven hours into an unfinished bar. From 2026-09-10 the trail uses the last COMPLETED daily close. Existing stops are NOT lowered to match - see stop_method_correction on the LINK position."
  },
  "event_risk": {
-  "as_of": "2026-09-13",
-  "escalation": "CME FedWatch hike odds for the Sept 16 FOMC have risen to about 87.3%, from roughly 69% a day earlier and a coin flip two weeks ago. A 25bp hike would take the target range from 3.50-3.75% to 3.75-4.00%. Because the hike is now largely priced, the market reaction is expected to hinge on forward guidance rather than the decision: one-off framing limits the downside, a signal of several more increases pressures yields, the dollar and crypto.",
-  "cluster": "CLARITY Act cloture 2:15pm ET Sept 15, AD Ports tender close 3pm UAE Sept 15, FOMC decision Sept 16.",
-  "stance": "No discretionary action across the window. Only written rules fire - for LINK that means a daily CLOSE below 11.337, for ETH two consecutive closes below 2,300 or a close below 2,209."
+  "as_of": "2026-09-14",
+  "imminent": "AD Ports tender closes 3pm UAE TOMORROW (Sept 15). CLARITY Act cloture 2:15pm ET Sept 15. FOMC decision Sept 16 with about 87% hike odds. Circle's Arc mainnet launches Sept 16 with Chainlink as oracle partner.",
+  "stance": "No discretionary action across the window. Only written rules fire. The LINK exit today IS a written rule firing, not a discretionary response to the event calendar."
  },
  "reporting_rule": {
   "adopted": "2026-08-22",
@@ -268,34 +256,40 @@
   "why": "a daily review of a one-line confirmed book manufactures more instructions than the user can execute - which is what created eleven unconfirmed instructions"
  },
  "book_summary": {
-  "as_of": "2026-08-24",
+  "as_of": "2026-09-14",
   "confirmed": {
    "lines": [
     {
      "ticker": "ETHUSDT",
      "qty": 0.0364,
-     "value_usd": 89.66,
-     "pnl_pct": 34.6
+     "value_usd": 91.62,
+     "pnl_pct": 37.6
     }
    ],
-   "total_usd": 89.66
+   "total_usd": 91.62
   },
   "advised_unconfirmed": {
    "lines": [
     {
      "ticker": "BTCUSDT",
      "qty": 0.001058,
-     "notional_usd": 82.15
-    },
-    {
-     "ticker": "LINKUSDT",
-     "qty": 1.406,
-     "notional_usd": 16.31
+     "notional_usd": 82.11
     }
    ],
-   "total_notional_usd": 98.46,
+   "total_notional_usd": 82.11,
    "note": "NOTIONAL ONLY - no P&L is reported on these and they are never added to the confirmed total"
   },
+  "closed": [
+   {
+    "ticker": "LINKUSDT",
+    "opened": "2026-08-19",
+    "closed": "2026-09-14",
+    "entry": 9.681,
+    "exit": 11.412,
+    "result_pct": 17.88,
+    "note": "Stop-out on the 2026-09-13 close. ADVISED-UNCONFIRMED throughout, so this is an advice outcome and not a realised trade."
+   }
+  ],
   "struck": "BTC +$13.98 and LINK +$3.09 of previously reported P&L (about $17) removed from the record on 2026-08-24"
  },
  "gap_check": {
