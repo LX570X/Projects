@@ -397,14 +397,30 @@ def diff_alerts(prev_signals, signals):
             continue  # never alert on an asset we cannot actually rate
         p = prev.get(s["ticker"])
         chg = s.get("change24h_pct")
+        # ADX names carry TradingView's own change field, which has been observed
+        # reading exactly 0.0 while our consecutive readings moved (ADNOCDRILL,
+        # 2026-09-15: 5.91 -> 5.82, a 1.5% move reported as 0.0%). Because the
+        # big_move alert keys off this field alone, a real move can pass unflagged.
+        # Fall back to the move between our own last two readings, which is what we
+        # can actually vouch for, and say so in the message.
+        derived = None
+        if p and p.get("last") and s.get("last") is not None:
+            try:
+                derived = (s["last"] / p["last"] - 1) * 100
+            except ZeroDivisionError:
+                derived = None
+        from_our_readings = False
+        if (chg is None or chg == 0) and derived is not None and abs(derived) > 0.005:
+            chg, from_our_readings = derived, True
         threshold = 4.0 if s["kind"] == "crypto" else 2.5
         big_move = chg is not None and abs(chg) >= threshold
         prev_chg = (p or {}).get("change24h_pct")
         was_big = prev_chg is not None and abs(prev_chg) >= threshold
         if big_move and not was_big:
+            span = "since the last reading" if from_our_readings else "in the last day"
             alerts.append({"ticker": s["ticker"], "severity": "info",
                            "type": "big_move",
-                           "msg": f"{s['ticker']} moved {chg:+.1f}% in the last day (now {s['last']:.6g} {s['currency']})"})
+                           "msg": f"{s['ticker']} moved {chg:+.1f}% {span} (now {s['last']:.6g} {s['currency']})"})
         if not p:
             continue
         if p["signal"] != s["signal"] and p.get("prev_band") != s["signal"]:

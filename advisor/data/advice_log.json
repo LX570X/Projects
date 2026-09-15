@@ -1493,6 +1493,45 @@
    "price": 6.11,
    "rationale": "Last full session before the AED 6.25 tender closes at 3pm UAE on Sept 15. Price 6.11, -0.97%, a 2.3% discount that has widened from 1.3% on Friday rather than converging - mildly odd this close to a deal where L'imad has said all conditions bar routine notifications are satisfied. Not actionable for us in any case: no position, no brokerage account, and a two-day arbitrage needs execution we do not have. Recording it because tomorrow the instrument becomes either a delisting candidate or an illiquid stub, and either way its signal stops meaning anything - the same end state as TAQA, which is worth watching for rather than being surprised by.",
    "status": "tracked - not actionable"
+  },
+  {
+   "date": "2026-09-15",
+   "ticker": "ENGINE",
+   "action": "FIXED: a real move could pass unflagged on ADX names",
+   "rationale": "ADNOCDRILL printed change24h_pct of exactly 0.0 today while our own consecutive readings went 5.91 -> 5.82, a 1.52% move. The big_move alert keys off that provider field alone, so for the ADX names - which carry TradingView's own change figure rather than one derived from bars - a genuine 3% session could pass without tripping the 2.5% stock threshold. Silent false negatives are worse than noisy false positives here, because nothing in the output tells you the alert did not fire. Fixed in engine.py: when the provider field is missing or exactly zero, fall back to the move between our own last two readings, and label the message 'since the last reading' rather than 'in the last day' so the two are never confused. Crypto is unaffected - Binance's 24h change is reliable and non-zero. Worth noting this did NOT cause a missed call today: ADNOCDRILL's 1.52% is below threshold either way, and its band change and 50-day cross both alerted normally. I found it by cross-checking prices against the reported change, not because something went wrong.",
+   "status": "fixed in engine.py"
+  },
+  {
+   "date": "2026-09-15",
+   "ticker": "ADNOCDRILL",
+   "action": "BUY -> SELL and below the 50-day - a 75-point swing on a 1.5% move",
+   "price": 5.82,
+   "rationale": "Score 40 -> -35 as price crossed below the 50-day on a 1.52% decline. Same mechanism as TALABAT on Sept 7: the trend term flips from +25 to -25 and the structure term follows, so fifty of the seventy-five points are two penalties inverting together while the stock sits on its averages. This name has now gone SELL -> BUY (Sept 10) -> STRONG BUY (Sept 11) -> BUY (Sept 12) -> BUY -> SELL in four sessions. That is not a signal, it is a stock oscillating across a flat 50-day, and it joins TECOM and DEWA in the muted category: fundamentals tracked, band changes no longer reported as signals.",
+   "status": "band changes muted - no position"
+  },
+  {
+   "date": "2026-09-15",
+   "ticker": "EMAAR",
+   "action": "+6.76% and back above its 50-day - the biggest UAE move in the book's history",
+   "price": 11.68,
+   "rationale": "EMAAR rose 6.76% to 11.68 and crossed above its 50-day, SELL -> HOLD (-35 -> 5, core 15). The property complex moved together - EMAARDEV +2.94% to 13.30, DU +1.21%, AIRARABIA +1.02% - which points at a sector bid rather than a company event, and a news pass found no dated Sept-15 catalyst. Two cautions before anyone reads this as a bottom. First, the price is Tuesday intraday at 11:10 Dubai with three and a half hours left to trade, and this book has now watched two separate days where an 11:10 print did not survive the close. Second, EMAAR needs a confirming CLOSE above the 50-day before the trend change counts under the 2-day rule, and a single 6.76% session after weeks of SELL is exactly the shape that rule exists to filter. Recording it as the largest single UAE move I have seen here, not as a buy signal - and in any case there is no Al Ramz account to act through.",
+   "status": "advice only - unconfirmed trend change"
+  },
+  {
+   "date": "2026-09-15",
+   "ticker": "EMIRATESNBD",
+   "action": "the intraday caveat catches another one",
+   "price": 31.28,
+   "rationale": "Yesterday I reported EMIRATESNBD at 31.76, +4.89%, a second consecutive big session. Today's reading is 31.28 with a +3.3% daily change, which means Monday's actual CLOSE was about 30.28 - the stock gave back roughly 4.7% between the 11:10 print I quoted and the 14:45 close. The +4.89% I reported yesterday never settled. That is the third instance in eight days of an 11:10 Dubai label not surviving the session, after FAB and ADNOCDRILL on Sept 12. The caveat is attached to every UAE number I publish, but it is worth stating plainly that it keeps being the part that matters, and that a reader skimming the headline figure would have been misled three times.",
+   "status": "correction to yesterday's figure"
+  },
+  {
+   "date": "2026-09-15",
+   "ticker": "POSITIONS",
+   "action": "no action - ETH is the whole book now",
+   "price": 2481.24,
+   "rationale": "ETH 2,481.24 (-1.47%), $90.32, +35.6%, the only CONFIRMED line. The close-based trail computes 2,240.47 from Monday's 2,515.75 close, a +0.34 ATR improvement and below the gate, so the 2,209 stop holds; the 2,300 close-exit is 7.30% below with no count. Monday's bar ran to 2,615.00 intraday before closing 2,515.75, which is a useful reminder that the trail reads closes and would not have chased that spike even if I had been tempted. BTC 77,206.19 (-0.55%) still BUY (35): deploy un-armed for a ninth session, 500 AED in USDT, into a FOMC priced at about 87% for a hike. Both of today's scheduled events fall AFTER this snapshot - the AD Ports tender closes 11:00 UTC and the CLARITY cloture vote is 18:15 UTC - so nothing in today's data reflects either.",
+   "status": "no action"
   }
  ]
 }

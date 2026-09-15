@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-14T07:30+00:00",
+ "updated": "2026-09-15T07:30+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": 0,
@@ -22,12 +22,12 @@
    "target2": 2105.0,
    "plan": "Hold. If price closes below the stop, convert ALL to USDT (not another coin). At target 1, convert half to USDT and raise the stop to 1830 (entry). At target 2, take the rest.",
    "action_required": {
-    "as_of": "2026-09-14",
+    "as_of": "2026-09-15",
     "end_state": "hold 0.0091 ETH - if you are already there, do nothing",
     "stop": 2209.0,
     "stop_raised_from": 2105.0,
     "close_exit": "two consecutive daily CLOSES below 2,300 -> exit the remainder at market",
-    "note": "Stop UNCHANGED at 2,209. The close-based trail (2,477.10 - 3 x 89.8671) computes 2,207.50, marginally BELOW the existing stop, so max() holds it. ETH 2,517.13 (+0.07%), $91.62, +37.6%. Sunday's close of 2,477.10 was the lowest since Sept 10 but the 2,300 close-exit is still 8.62% below with no count running."
+    "note": "Stop UNCHANGED at 2,209. The close-based trail (2,515.75 - 3 x 91.7614) computes 2,240.47, a +0.34 ATR improvement - below the 1-ATR gate, so it holds. ETH 2,481.24 (-1.47%), $90.32, +35.6%. Monday's bar ran to 2,615.00 intraday before closing 2,515.75, so the trail was never close to clearing the gate on a close basis. The 2,300 close-exit is 7.30% below with no count running."
    },
    "fill": {
     "state": "position confirmed by user 2026-07-17; the 2026-08-20 trim is UNCONFIRMED",
@@ -169,7 +169,25 @@
     "what_it_cost_so_far": "Nothing realised. The forced exit is at 11.412 and an open position would be worth 11.412 - the same number. Whether the error proves costly depends entirely on LINK's path from here, which is unknown. I am not claiming it was harmless and I am not claiming it was expensive.",
     "the_catalyst_i_am_exiting_into": "Circle's Arc mainnet launches 2026-09-16 with Chainlink as official oracle and connectivity partner, and published support at $10.79 still holds. There is a real chance this exit looks wrong within days. The pre-commitment for the Sept 15-16 window was that only written rules fire, and overriding a stop because a catalyst is coming is precisely the discretionary judgement that pre-commitment forbids."
    },
-   "disposition": "Proceeds of about $16.05 (roughly 59 AED) return to satellite reserve, taking it from 150 to about 209 AED. No replacement satellite position is being opened: with zero STRONG BUY cryptos on the board and an 87% hike priced for Sept 16, there is no candidate that meets the bar."
+   "disposition": "Proceeds of about $16.05 (roughly 59 AED) return to satellite reserve, taking it from 150 to about 209 AED. No replacement satellite position is being opened: with zero STRONG BUY cryptos on the board and an 87% hike priced for Sept 16, there is no candidate that meets the bar.",
+   "post_exit_tracking": {
+    "purpose": "I said on Sept 14 that the LINK exit might look wrong within days. Tracking it rather than letting it fade.",
+    "exit": 11.412,
+    "since": [
+     {
+      "date": "2026-09-14",
+      "close": 11.518,
+      "intraday_high": 11.967,
+      "note": "After the 07:10 exit LINK ran to 11.967, 4.9% above the exit, then closed 11.518 - holding would have been 0.93% better on the close."
+     },
+     {
+      "date": "2026-09-15",
+      "last": 11.401,
+      "note": "Back to 11.401, marginally BELOW the exit. Two days in, the exit and the hold are within 0.1% of each other - a wash, neither vindicated nor punished."
+     }
+    ],
+    "pending": "Circle's Arc mainnet launches tomorrow (Sept 16) with Chainlink as oracle partner. That is the event most likely to settle whether the exit was costly."
+   }
   },
   "opportunity_status": {
    "as_of": "2026-09-06",
@@ -202,9 +220,10 @@
   "clarification": "The rule always said 'daily close', but in practice all four trail triggers to date (BTC Aug 25, ETH Sept 4, LINK Sept 6 and Sept 7) were computed from the LIVE 07:10 UTC snapshot price, not from the last completed daily close. Crypto daily bars close at 00:00 UTC, so the snapshot is roughly seven hours into an unfinished bar. From 2026-09-10 the trail uses the last COMPLETED daily close. Existing stops are NOT lowered to match - see stop_method_correction on the LINK position."
  },
  "event_risk": {
-  "as_of": "2026-09-14",
-  "imminent": "AD Ports tender closes 3pm UAE TOMORROW (Sept 15). CLARITY Act cloture 2:15pm ET Sept 15. FOMC decision Sept 16 with about 87% hike odds. Circle's Arc mainnet launches Sept 16 with Chainlink as oracle partner.",
-  "stance": "No discretionary action across the window. Only written rules fire. The LINK exit today IS a written rule firing, not a discretionary response to the event calendar."
+  "as_of": "2026-09-15",
+  "today_still_ahead": "Both of today's scheduled events are AFTER this snapshot: the AD Ports tender closes 3pm UAE (11:00 UTC) and the CLARITY Act cloture vote is 2:15pm ET (18:15 UTC), a 60-vote procedural test on the motion to proceed, not final passage. Nothing in today's data reflects either outcome.",
+  "tomorrow": "FOMC decision Sept 16 with roughly 87% hike odds; Circle Arc mainnet launch Sept 16.",
+  "stance": "No discretionary action across the window. Only written rules fire - for ETH that is a close below 2,209 or two consecutive closes below 2,300."
  },
  "reporting_rule": {
   "adopted": "2026-08-22",
