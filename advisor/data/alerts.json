@@ -1,59 +1,41 @@
 {
- "generated_at_utc": "2026-09-15T07:09:49+00:00",
+ "generated_at_utc": "2026-09-16T07:09:15+00:00",
  "alerts": [
   {
-   "ticker": "GRAMUSDT",
-   "severity": "info",
-   "type": "macd",
-   "msg": "GRAMUSDT: MACD bearish cross"
-  },
-  {
-   "ticker": "EMAAR",
-   "severity": "info",
-   "type": "signal_change",
-   "msg": "EMAAR: SELL -> HOLD (score -35 -> 5)"
-  },
-  {
-   "ticker": "EMAAR",
-   "severity": "actionable",
-   "type": "trend",
-   "msg": "EMAAR: price crossed above its 50-day average \u2014 trend change"
-  },
-  {
-   "ticker": "EMAARDEV",
+   "ticker": "XRPUSDT",
    "severity": "info",
    "type": "big_move",
-   "msg": "EMAARDEV moved +2.9% in the last day (now 13.3 AED)"
+   "msg": "XRPUSDT moved -7.4% in the last day (now 1.2951 USD)"
   },
   {
-   "ticker": "ADCB",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "ADCB: BUY -> STRONG BUY (score 35 -> 65) \u2014 penalty relief only, trend/momentum unchanged"
-  },
-  {
-   "ticker": "IHC",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "IHC: STRONG SELL -> SELL (score -50 -> -40)"
-  },
-  {
-   "ticker": "ADPORTS",
+   "ticker": "LINKUSDT",
    "severity": "info",
-   "type": "rsi",
-   "msg": "ADPORTS: RSI crossed above 70 (now 71.0)"
+   "type": "big_move",
+   "msg": "LINKUSDT moved -5.0% in the last day (now 10.829 USD)"
   },
   {
-   "ticker": "ADNOCDRILL",
-   "severity": "actionable",
+   "ticker": "ADAUSDT",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "ADAUSDT moved -4.2% in the last day (now 0.1957 USD)"
+  },
+  {
+   "ticker": "ADAUSDT",
+   "severity": "info",
    "type": "signal_change",
-   "msg": "ADNOCDRILL: BUY -> SELL (score 40 -> -35)"
+   "msg": "ADAUSDT: BUY -> HOLD (score 35 -> -15)"
   },
   {
-   "ticker": "ADNOCDRILL",
+   "ticker": "ADAUSDT",
    "severity": "actionable",
    "type": "trend",
-   "msg": "ADNOCDRILL: price crossed below its 50-day average \u2014 trend change"
+   "msg": "ADAUSDT: price crossed below its 50-day average \u2014 trend change"
+  },
+  {
+   "ticker": "AIRARABIA",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "AIRARABIA: HOLD -> STRONG SELL (score -5 -> -50)"
   }
  ]
 }
