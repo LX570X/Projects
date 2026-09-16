@@ -1,29 +1,29 @@
 {
- "updated": "2026-09-15T07:35+00:00",
+ "updated": "2026-09-16T07:35+00:00",
  "market_notes": [
   {
-   "market": "Engine fix - a real move could pass unflagged on ADX names",
-   "note": "ADNOCDRILL reported change24h_pct of exactly 0.0 while our own readings went 5.91 to 5.82, a 1.52% move. The big_move alert keys off that provider field alone, so on ADX names - which carry TradingView's own change figure rather than one derived from bars - a genuine 3% session could pass without tripping the 2.5% threshold. Silent false negatives are the worst kind because nothing in the output tells you the alert did not fire. Fixed: when the provider field is missing or exactly zero, the engine falls back to the move between our own last two readings and labels it 'since the last reading'. This did not cause a missed call today - 1.52% is below threshold either way - and was found by cross-checking prices against reported changes."
+   "market": "CLARITY Act cloture FAILED - dead for 2026",
+   "note": "The Senate fell short of the 60 votes needed to proceed, reported unofficially at 46-43 with another count at 49-50. XRP took the brunt at -7.35% to 1.2951, inside the 7-10% reaction band published in advance for this exact outcome, and the complex followed: LINK -5.01%, ADA -4.21%, SOL -3.35%, DOGE -2.94%, LTC -2.88%, BTC -1.53%. This book has tracked passage odds falling since July (43% in mid-July, roughly 13-24% through August, 19.5% this month) and flagged the removal of a priced-in catalyst as the risk. That call held up over two months."
   },
   {
-   "market": "EMAAR +6.76%, the largest UAE move this book has seen",
-   "note": "Back above its 50-day, SELL -> HOLD (-35 -> 5, core 15). The property complex moved together - EMAARDEV +2.94%, DU +1.21%, AIRARABIA +1.02% - which points at a sector bid rather than a company event, and no dated Sept-15 catalyst was findable. Two cautions: the price is Tuesday intraday at 11:10 Dubai with three and a half hours left to trade, and a confirming CLOSE above the 50-day is required before the trend change counts. A single 6.76% session after weeks of SELL is exactly the shape the 2-day rule exists to filter."
+   "market": "ETH's 2,300 exit is now the only live trigger in the book",
+   "note": "ETH -3.01% to 2,406.68, $87.60, +31.5%, down from +37.6% Monday. The 2,300 close-exit is 4.43% below spot, closest it has been since the level was set; Tuesday's low was 2,358.88 and its close 2,398.26. THE COUNT IS ZERO - the rule needs TWO consecutive daily CLOSES below 2,300. Ordering restated because it matters under pressure: the 2,300 close-exit fires BEFORE the 2,209 hard stop (8.21% below), and one close below 2,300 starts a count and nothing more. The trail computed 2,107.75, well below the existing stop, so it holds - the trail correctly refuses to move a stop in a falling market."
   },
   {
-   "market": "The intraday caveat catches a third one",
-   "note": "Yesterday's EMIRATESNBD figure of 31.76 (+4.89%) never settled. Today's reading of 31.28 with a +3.3% daily change implies Monday closed near 30.28 - the stock gave back about 4.7% between the 11:10 print and the 14:45 close. Third instance in eight days after FAB and ADNOCDRILL on Sept 12. The caveat is attached to every UAE number here, and it keeps being the part that matters."
+   "market": "LINK exit vindicated at -5.1%, and it was luck",
+   "note": "LINK 10.829, 5.1% below the 11.412 exit. On Sept 14 I wrote the exit might look wrong within days; it has looked right instead, and I am not taking credit. The stop that fired was 5.8% tighter than the rule authorised because of the Sept-7 snapshot-versus-close error, and the rule-correct stop of 10.715 has STILL not fired - Tuesday's low was 10.80. A system running the rule properly would be holding here, 5.1% worse off. A mistake that pays off is still a mistake; the same error nearly cut this position at +38.1% on Sept 7."
   },
   {
-   "market": "LINK exit - a wash after two days",
-   "note": "Exited at 11.412 on Sept 14. LINK then ran to 11.967 intraday, 4.9% above the exit, and closed 11.518 (holding would have been 0.93% better), and today sits at 11.401, marginally below the exit. Two days in, the exit and the hold are within 0.1% of each other. Circle's Arc mainnet launches tomorrow with Chainlink as oracle partner - that is the event most likely to settle whether the exit was costly."
+   "market": "EMAAR's 6.76% spike did not survive the close",
+   "note": "Back to 11.40 and SELL, with the 50-day cross unwound. Fourth intraday label in nine days to fail by the close, after FAB and ADNOCDRILL on Sept 12 and EMIRATESNBD on Sept 15. Consistent enough now to state as a rule rather than a caveat: a UAE band read at 11:10 Dubai is a draft, and the weekend reading is the confirmed record. The intraday numbers still get reported - they are the only same-day information - but the headline figure is not a fact until it settles."
   },
   {
-   "market": "ADNOCDRILL joins the muted list",
-   "note": "BUY -> SELL (40 -> -35) and below its 50-day on a 1.52% move - fifty of those seventy-five points are the trend and structure terms inverting together, the same mechanism as TALABAT on Sept 7. This name has gone SELL, BUY, STRONG BUY, BUY, SELL in four sessions. It joins TECOM and DEWA: fundamentals tracked, band changes no longer reported as signals."
+   "market": "ADA breaks trend, the first of the selloff",
+   "note": "ADA -4.21% and below its 50-day, BUY -> HOLD (35 -> -15) - the first trend break among eleven cryptos despite seven sessions of losses, which says the damage so far is momentum rather than structure. ADA was joint-highest on the board at 75 nine days ago. AIRARABIA HOLD -> STRONG SELL on the UAE side. Zero STRONG BUY cryptos for a third day; the satellite reserve of about 209 AED stays uninvested."
   },
   {
-   "market": "Positions and today's pending events",
-   "note": "ETH 2,481.24 (-1.47%), $90.32, +35.6%, the only CONFIRMED line. Trail computes 2,240.47 from Monday's close, a +0.34 ATR improvement, below the gate, so the 2,209 stop holds; the 2,300 close-exit is 7.30% below, no count. Monday ran to 2,615.00 intraday before closing 2,515.75 - the trail reads closes and would not have chased it. BTC 77,206.19 still BUY (35): deploy un-armed for a ninth session. BOTH of today's scheduled events fall AFTER this snapshot - AD Ports tender closes 11:00 UTC, CLARITY cloture 18:15 UTC - so nothing in today's data reflects either outcome."
+   "market": "Still ahead today",
+   "note": "The FOMC decision lands 2:00pm ET (18:00 UTC) with about 87% hike odds priced, and Circle's Arc mainnet launches today with Chainlink as oracle partner. Neither is reflected in this data. BTC 76,012.40 (-1.53%) still BUY (35), with Tuesday's low at 74,967.97 - the deploy stays un-armed for a tenth session and the 500 AED remains in USDT."
   }
  ],
  "asset_notes": {
@@ -357,6 +357,12 @@
     "impact": "bearish",
     "date": "2026-09-13",
     "source": "news research pass"
+   },
+   {
+    "headline": "-1.53% to 76,012.40 with a Tuesday low of 74,967.97 after the CLARITY failure; FOMC decision lands 18:00 UTC today with ~87% hike odds priced",
+    "impact": "bearish",
+    "date": "2026-09-16",
+    "source": "news research pass"
    }
   ],
   "ETHUSDT": [
@@ -497,6 +503,12 @@
     "impact": "bullish",
     "date": "2026-09-12",
     "source": "advisor data"
+   },
+   {
+    "headline": "-3.01% to 2,406.68; the 2,300 two-close exit is now 4.43% below spot, the closest since the level was set, with the count at zero",
+    "impact": "bearish",
+    "date": "2026-09-16",
+    "source": "advisor data"
    }
   ],
   "BNBUSDT": [
@@ -623,6 +635,12 @@
     "impact": "bearish",
     "date": "2026-09-01",
     "source": "advisor data"
+   },
+   {
+    "headline": "-7.35% to 1.2951 after the CLARITY Act cloture vote failed in the Senate (unofficially 46-43; another count 49-50), short of the 60 needed. The move landed inside the 7-10% reaction band published in advance for this outcome; the bill is widely described as dead for 2026",
+    "impact": "bearish",
+    "date": "2026-09-16",
+    "source": "news research pass"
    }
   ],
   "DOGEUSDT": [
@@ -777,6 +795,12 @@
     "impact": "bullish",
     "date": "2026-09-15",
     "source": "news research pass"
+   },
+   {
+    "headline": "Tuesday's +6.76% intraday spike to 11.68 did not survive the close: back to 11.40 and SELL, 50-day cross unwound",
+    "impact": "bearish",
+    "date": "2026-09-16",
+    "source": "advisor data"
    }
   ],
   "SALIK": [
@@ -843,6 +867,12 @@
     "impact": "bearish",
     "date": "2026-08-18",
     "source": "news research pass"
+   },
+   {
+    "headline": "HOLD -> STRONG SELL (-5 -> -50)",
+    "impact": "bearish",
+    "date": "2026-09-16",
+    "source": "advisor data"
    }
   ],
   "EAND": [
@@ -1095,6 +1125,12 @@
     "impact": "bearish",
     "date": "2026-09-14",
     "source": "advisor data + news research pass"
+   },
+   {
+    "headline": "-5.01% to 10.829, now 5.1% below the 11.412 exit; the rule-correct 10.715 stop has still not fired, so the tight stop helped by chance rather than judgement",
+    "impact": "bearish",
+    "date": "2026-09-16",
+    "source": "advisor data"
    }
   ],
   "EMAARDEV": [
@@ -1178,6 +1214,12 @@
     "headline": "-3.43% to 0.2137, STRONG BUY -> BUY on a MACD bearish cross",
     "impact": "bearish",
     "date": "2026-09-10",
+    "source": "advisor data"
+   },
+   {
+    "headline": "-4.21% and crossed BELOW its 50-day, BUY -> HOLD - the first crypto trend break of the drawdown, nine days after scoring joint-highest at 75",
+    "impact": "bearish",
+    "date": "2026-09-16",
     "source": "advisor data"
    }
   ],
@@ -1411,12 +1453,12 @@
   ]
  },
  "risk_flags": [
-  "TODAY, both after the 07:09 UTC snapshot: AD Ports tender closes 11:00 UTC and the CLARITY Act cloture vote is 18:15 UTC (a 60-vote procedural test on the motion to proceed, not final passage). TOMORROW: FOMC with ~87% hike odds, and Circle's Arc mainnet launch. Pre-commitment stands - only written rules fire.",
-  "ZERO STRONG BUYs across eleven cryptos for a second day. GRAM at -75 is the worst score on the board. No satellite candidate meets the bar; the reserve (about 209 AED) stays uninvested.",
-  "ETH is the only CONFIRMED line in the book at $90.32. BTC remains ADVISED-UNCONFIRMED notional only. Reconciliation is still outstanding and the book cannot be stated accurately without it.",
-  "UAE band changes read at 11:10 Dubai are provisional. Three separate labels have now failed to survive the close in eight days (FAB and ADNOCDRILL on Sept 12, EMIRATESNBD on Sept 15). Treat weekday figures as drafts.",
-  "Four UAE names now have band changes muted as noise - TECOM, DEWA, ADNOCDRILL and, in practice, any stock sitting on a flat 50-day. The scoring is not wrong; it is being asked a question the price action cannot answer.",
-  "Geopolitics remains the dominant UAE equity driver: the March strike on Dubai repriced the whole property complex; renewed escalation would hit property and tourism-linked names again."
+  "ETH's 2,300 two-close exit is the ONLY live trigger left in the book and sits 4.43% below spot, the closest since it was set. Count is ZERO. It fires BEFORE the 2,209 hard stop; one close below 2,300 starts a count and does nothing else.",
+  "TODAY 18:00 UTC: FOMC decision with ~87% hike odds, after this snapshot. Circle's Arc mainnet also launches today. Pre-commitment stands - no discretionary action, only written rules fire.",
+  "CLARITY Act is dead for 2026 after the Sept 15 cloture failure. A regulatory catalyst that had been priced into XRP and the broader complex since July is now removed rather than delayed.",
+  "ZERO STRONG BUYs across eleven cryptos for a third day, and ADA has broken its 50-day - the first structural break of the drawdown. Everything else remains above its 50-day, so the damage is momentum not structure, for now.",
+  "ETH is the only CONFIRMED line in the book at $87.60. BTC remains ADVISED-UNCONFIRMED notional only. Reconciliation is still outstanding and the book cannot be stated accurately without it.",
+  "UAE band changes read at 11:10 Dubai are DRAFTS, not facts. Four separate labels have now failed by the close in nine days (FAB, ADNOCDRILL, EMIRATESNBD, EMAAR). The weekend reading is the confirmed record."
  ],
  "corrections": [
   "Prior context.json was 13 days stale (2026-07-17) because daily cycles were skipped 2026-07-20..29; refreshed 2026-07-30."

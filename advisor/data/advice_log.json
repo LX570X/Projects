@@ -1532,6 +1532,44 @@
    "price": 2481.24,
    "rationale": "ETH 2,481.24 (-1.47%), $90.32, +35.6%, the only CONFIRMED line. The close-based trail computes 2,240.47 from Monday's 2,515.75 close, a +0.34 ATR improvement and below the gate, so the 2,209 stop holds; the 2,300 close-exit is 7.30% below with no count. Monday's bar ran to 2,615.00 intraday before closing 2,515.75, which is a useful reminder that the trail reads closes and would not have chased that spike even if I had been tempted. BTC 77,206.19 (-0.55%) still BUY (35): deploy un-armed for a ninth session, 500 AED in USDT, into a FOMC priced at about 87% for a hike. Both of today's scheduled events fall AFTER this snapshot - the AD Ports tender closes 11:00 UTC and the CLARITY cloture vote is 18:15 UTC - so nothing in today's data reflects either.",
    "status": "no action"
+  },
+  {
+   "date": "2026-09-16",
+   "ticker": "MACRO",
+   "action": "CLARITY Act cloture FAILED - dead for 2026",
+   "rationale": "The Senate failed to reach 60 votes on the motion to proceed, reported unofficially at 46-43 with another count at 49-50. Commentary treats the bill as dead for this session. XRP took the brunt at -7.35% to 1.2951, which lands inside the 7-10% reaction band published in advance for exactly this outcome, and the whole complex followed: LINK -5.01%, ADA -4.21%, SOL -3.35%, DOGE -2.94%, LTC -2.88%, BTC -1.53%. Worth noting the tracking held up. This book has recorded CLARITY odds falling since July - 43% in mid-July, roughly 13% then 16-24% through August, 19.5% this month - and flagged it as a priced-in catalyst whose removal was a risk. The context notes called this one correctly over two months, which is worth recording because most of what I log is errors.",
+   "status": "logged - catalyst removed"
+  },
+  {
+   "date": "2026-09-16",
+   "ticker": "LINKUSDT",
+   "action": "exit vindicated at -5.1% - and it was luck, not judgement",
+   "price": 10.829,
+   "rationale": "LINK is 10.829, 5.1% below the 11.412 exit. On Sept 14 I wrote that this exit might look wrong within days; it has looked right instead. I am not going to take credit for that. The stop that triggered was set 5.8% TIGHTER than the rule authorised because of the Sept-7 snapshot-versus-close error. The rule-correct stop of 10.715 has still NOT fired - Tuesday's low was 10.80 - so a system running the rule properly would be holding here, 5.1% worse off than us. The error helped by chance. The same error could as easily have cut a winner short, and it nearly did on Sept 7 when the position was at +38.1%. A mistake that pays off is still a mistake, and the method fix stands.",
+   "status": "closed +17.9% - tracking complete unless it reverses"
+  },
+  {
+   "date": "2026-09-16",
+   "ticker": "ETHUSDT",
+   "action": "the 2,300 exit is now the only live trigger in the book",
+   "price": 2406.68,
+   "rationale": "ETH -3.01% to 2,406.68, $87.60, +31.5%, down from +37.6% on Monday. The 2,300 close-exit is 4.43% below spot, the closest it has been since the level was set, with Tuesday's intraday low at 2,358.88 and Tuesday's close at 2,398.26. THE COUNT IS ZERO - the rule needs TWO consecutive daily CLOSES below 2,300, and no close has been below it. Restating the ordering deliberately because it will matter under pressure: the 2,300 close-exit fires BEFORE the 2,209 hard stop, a single close below 2,300 starts a count and does nothing else, and the hard stop is 8.21% below. The trail computed 2,107.75 today, well below the existing stop, so max() holds it - the trail correctly refuses to move a stop in a falling market. With LINK closed, ETH is the entire confirmed book and this is the only trigger that can fire.",
+   "status": "open, +31.5% - no action, count 0"
+  },
+  {
+   "date": "2026-09-16",
+   "ticker": "EMAAR",
+   "action": "the 6.76% spike did not survive the close - fourth in nine days",
+   "price": 11.4,
+   "rationale": "Yesterday I reported EMAAR +6.76% to 11.68 with a cross above its 50-day, SELL -> HOLD, and attached two cautions: that it was an 11:10 Dubai intraday print, and that it needed a confirming close before the trend change counted. Both cautions were the right ones. It is 11.40 today, back to SELL (-35), with the 50-day cross unwound. That is the fourth intraday label in nine days to fail by the close, after FAB and ADNOCDRILL on Sept 12 and EMIRATESNBD on Sept 15. The pattern is now consistent enough to state as a rule rather than a caveat: a UAE band change read at 11:10 Dubai is a draft, and the confirmed record is the weekend reading. I will keep reporting the intraday numbers because they are the only same-day information available, but the headline figure should not be quoted as a fact until it settles.",
+   "status": "advice only - trend change unconfirmed and now reversed"
+  },
+  {
+   "date": "2026-09-16",
+   "ticker": "crypto-broad",
+   "action": "ADA breaks trend - first crypto 50-day cross of the selloff",
+   "rationale": "ADA -4.21% to 0.1957 and crossed BELOW its 50-day, BUY -> HOLD (35 -> -15). That is the first trend break among the eleven cryptos in this drawdown; everything else is still above its 50-day despite seven sessions of losses, which says the damage so far is momentum rather than structure. ADA was one of the joint-highest scores on the board at 75 on Sept 7, nine days ago. AIRARABIA also went HOLD -> STRONG SELL (-5 -> -50) on the UAE side. Still zero STRONG BUY cryptos for a third day, and the satellite reserve of about 209 AED stays uninvested - there is no candidate and the FOMC lands in eleven hours.",
+   "status": "logged"
   }
  ]
 }
