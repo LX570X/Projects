@@ -1,29 +1,25 @@
 {
- "updated": "2026-09-16T07:35+00:00",
+ "updated": "2026-09-17T07:35+00:00",
  "market_notes": [
   {
-   "market": "CLARITY Act cloture FAILED - dead for 2026",
-   "note": "The Senate fell short of the 60 votes needed to proceed, reported unofficially at 46-43 with another count at 49-50. XRP took the brunt at -7.35% to 1.2951, inside the 7-10% reaction band published in advance for this exact outcome, and the complex followed: LINK -5.01%, ADA -4.21%, SOL -3.35%, DOGE -2.94%, LTC -2.88%, BTC -1.53%. This book has tracked passage odds falling since July (43% in mid-July, roughly 13-24% through August, 19.5% this month) and flagged the removal of a priced-in catalyst as the risk. That call held up over two months."
+   "market": "NEWS PASS FAILED - the FOMC outcome is unverified",
+   "note": "The decision landed 18:00 UTC yesterday with about 87% hike odds priced, and I cannot tell you what it was. The search tool returned 'unavailable' twice and, on a third attempt, only generic reference pages with no coverage of the meeting. The tape is a broad relief bounce - LINK +3.63%, AVAX +3.29%, SOL +2.88%, LTC +2.59%, ETH and BNB +1.94%, BTC +0.85% off Tuesday's 74,967.97 low - which is CONSISTENT WITH a dovish reception, either a hold or a hike framed as one-and-done. Consistent-with is not evidence. Reading a policy outcome backwards out of price action is the kind of confident-sounding guess this system exists to avoid, so it is recorded as unknown and owed next cycle."
   },
   {
-   "market": "ETH's 2,300 exit is now the only live trigger in the book",
-   "note": "ETH -3.01% to 2,406.68, $87.60, +31.5%, down from +37.6% Monday. The 2,300 close-exit is 4.43% below spot, closest it has been since the level was set; Tuesday's low was 2,358.88 and its close 2,398.26. THE COUNT IS ZERO - the rule needs TWO consecutive daily CLOSES below 2,300. Ordering restated because it matters under pressure: the 2,300 close-exit fires BEFORE the 2,209 hard stop (8.21% below), and one close below 2,300 starts a count and nothing more. The trail computed 2,107.75, well below the existing stop, so it holds - the trail correctly refuses to move a stop in a falling market."
+   "market": "ETH backs away from its exit level",
+   "note": "ETH +1.94% to 2,453.40, $89.30, +34.1%. The 2,300 two-close exit is 6.25% below spot, against 4.43% yesterday, and the COUNT REMAINS ZERO - no daily close has been below 2,300 at any point. Week's closes: 2,515.75 / 2,398.26 / 2,418.26 / 2,453.40. Tuesday's intraday low of 2,358.88 was the closest approach and never produced a qualifying close. The trail computed 2,145.08, below the existing stop, so 2,209 holds. Still the only live trigger in the book."
   },
   {
-   "market": "LINK exit vindicated at -5.1%, and it was luck",
-   "note": "LINK 10.829, 5.1% below the 11.412 exit. On Sept 14 I wrote the exit might look wrong within days; it has looked right instead, and I am not taking credit. The stop that fired was 5.8% tighter than the rule authorised because of the Sept-7 snapshot-versus-close error, and the rule-correct stop of 10.715 has STILL not fired - Tuesday's low was 10.80. A system running the rule properly would be holding here, 5.1% worse off. A mistake that pays off is still a mistake; the same error nearly cut this position at +38.1% on Sept 7."
+   "market": "LINK - the exit's edge has nearly evaporated",
+   "note": "LINK +3.63% to 11.222. The 11.412 exit is now only 1.7% ahead, against 5.1% yesterday. Wednesday's intraday low of 10.617 DID trade through the rule-correct 10.715 stop, but Wednesday's close was 11.057, so the correct stop has still not fired on a close basis and a properly-run system would still be holding. The scorecard has swung from a wash to +5.1% to +1.7% in three days, which is itself the lesson: three days is not long enough to grade an exit, and the Sept-7 method error remains an error whatever the market decides about it."
   },
   {
-   "market": "EMAAR's 6.76% spike did not survive the close",
-   "note": "Back to 11.40 and SELL, with the 50-day cross unwound. Fourth intraday label in nine days to fail by the close, after FAB and ADNOCDRILL on Sept 12 and EMIRATESNBD on Sept 15. Consistent enough now to state as a rule rather than a caveat: a UAE band read at 11:10 Dubai is a draft, and the weekend reading is the confirmed record. The intraday numbers still get reported - they are the only same-day information - but the headline figure is not a fact until it settles."
+   "market": "EMAAR's second run at the 50-day in three days",
+   "note": "+5.46% to 11.98, SELL -> HOLD, with EMAARDEV alongside at +3.38% to 13.46 and crossing above its own 50-day. Two 5%-plus sessions in three days on Dubai's largest developer, with the whole complex participating, is a genuine move rather than noise. The cautions are unchanged and not being softened because it repeated: this is an 11:10 Dubai intraday print, Tuesday's identical-looking print gave everything back by the close, no catalyst could be verified because the search tool failed, and the trend change needs a confirming CLOSE. Two unconfirmed 50-day crosses in three days is a reason to watch, not to act."
   },
   {
-   "market": "ADA breaks trend, the first of the selloff",
-   "note": "ADA -4.21% and below its 50-day, BUY -> HOLD (35 -> -15) - the first trend break among eleven cryptos despite seven sessions of losses, which says the damage so far is momentum rather than structure. ADA was joint-highest on the board at 75 nine days ago. AIRARABIA HOLD -> STRONG SELL on the UAE side. Zero STRONG BUY cryptos for a third day; the satellite reserve of about 209 AED stays uninvested."
-  },
-  {
-   "market": "Still ahead today",
-   "note": "The FOMC decision lands 2:00pm ET (18:00 UTC) with about 87% hike odds priced, and Circle's Arc mainnet launches today with Chainlink as oracle partner. Neither is reflected in this data. BTC 76,012.40 (-1.53%) still BUY (35), with Tuesday's low at 74,967.97 - the deploy stays un-armed for a tenth session and the 500 AED remains in USDT."
+   "market": "A bounce that moved no bands",
+   "note": "All eleven watchlist cryptos finished green, yet nine of them sit at exactly BUY 35, ADA is still HOLD below its 50-day, GRAM is still STRONG SELL at -65, and there are STILL zero STRONG BUYs - a fourth consecutive day. A rally that lifts prices without lifting a single band is momentum repair, not a trend change. BTC 76,664.01 (+0.85%) still BUY (35): deploy un-armed for an eleventh session, 500 AED in USDT. Elsewhere: DIB SELL -> STRONG SELL, AIRARABIA STRONG SELL -> SELL, IHC STRONG SELL -> SELL, ADCB score 45 against core 65 on an RSI-74 stretch penalty."
   }
  ],
  "asset_notes": {
@@ -509,6 +505,12 @@
     "impact": "bearish",
     "date": "2026-09-16",
     "source": "advisor data"
+   },
+   {
+    "headline": "+1.94% to 2,453.40; the 2,300 two-close exit backs away to 6.25% below spot with the count still at zero",
+    "impact": "bullish",
+    "date": "2026-09-17",
+    "source": "advisor data"
    }
   ],
   "BNBUSDT": [
@@ -681,6 +683,12 @@
     "impact": "bullish",
     "date": "2026-09-12",
     "source": "advisor data"
+   },
+   {
+    "headline": "SELL -> STRONG SELL (-40 -> -50)",
+    "impact": "bearish",
+    "date": "2026-09-17",
+    "source": "advisor data"
    }
   ],
   "EMIRATESNBD": [
@@ -800,6 +808,12 @@
     "headline": "Tuesday's +6.76% intraday spike to 11.68 did not survive the close: back to 11.40 and SELL, 50-day cross unwound",
     "impact": "bearish",
     "date": "2026-09-16",
+    "source": "advisor data"
+   },
+   {
+    "headline": "+5.46% to 11.98, SELL -> HOLD - a second run at the 50-day cross three days after the first one failed by the close; no catalyst verifiable, news pass failed",
+    "impact": "bullish",
+    "date": "2026-09-17",
     "source": "advisor data"
    }
   ],
@@ -1131,6 +1145,12 @@
     "impact": "bearish",
     "date": "2026-09-16",
     "source": "advisor data"
+   },
+   {
+    "headline": "+3.63% to 11.222, narrowing the gap to the 11.412 exit from 5.1% to 1.7%; Wednesday's low of 10.617 traded through the rule-correct 10.715 stop but closed at 11.057, so that stop has still not fired on a close basis",
+    "impact": "bullish",
+    "date": "2026-09-17",
+    "source": "advisor data"
    }
   ],
   "EMAARDEV": [
@@ -1139,6 +1159,12 @@
     "impact": "bullish",
     "date": "2026-08-12",
     "source": "news research pass"
+   },
+   {
+    "headline": "+3.38% to 13.46, SELL -> HOLD and crossed above its 50-day alongside EMAAR",
+    "impact": "bullish",
+    "date": "2026-09-17",
+    "source": "advisor data"
    }
   ],
   "AVAXUSDT": [
@@ -1453,12 +1479,12 @@
   ]
  },
  "risk_flags": [
-  "ETH's 2,300 two-close exit is the ONLY live trigger left in the book and sits 4.43% below spot, the closest since it was set. Count is ZERO. It fires BEFORE the 2,209 hard stop; one close below 2,300 starts a count and does nothing else.",
-  "TODAY 18:00 UTC: FOMC decision with ~87% hike odds, after this snapshot. Circle's Arc mainnet also launches today. Pre-commitment stands - no discretionary action, only written rules fire.",
-  "CLARITY Act is dead for 2026 after the Sept 15 cloture failure. A regulatory catalyst that had been priced into XRP and the broader complex since July is now removed rather than delayed.",
-  "ZERO STRONG BUYs across eleven cryptos for a third day, and ADA has broken its 50-day - the first structural break of the drawdown. Everything else remains above its 50-day, so the damage is momentum not structure, for now.",
-  "ETH is the only CONFIRMED line in the book at $87.60. BTC remains ADVISED-UNCONFIRMED notional only. Reconciliation is still outstanding and the book cannot be stated accurately without it.",
-  "UAE band changes read at 11:10 Dubai are DRAFTS, not facts. Four separate labels have now failed by the close in nine days (FAB, ADNOCDRILL, EMIRATESNBD, EMAAR). The weekend reading is the confirmed record."
+  "THE FOMC OUTCOME IS UNVERIFIED. The decision landed 18:00 UTC Sept 16 with ~87% hike odds priced and the news pass failed three times this cycle. The tape bounced, which is consistent with a dovish reception but is not evidence. Recorded as unknown and owed next cycle - do not let it quietly become an assumption.",
+  "ETH's 2,300 two-close exit remains the ONLY live trigger in the book, now 6.25% below spot (from 4.43%). Count is ZERO. It fires BEFORE the 2,209 hard stop.",
+  "CLARITY Act is dead for 2026 after the Sept 15 cloture failure - a catalyst removed rather than delayed.",
+  "ZERO STRONG BUYs across eleven cryptos for a fourth day, despite every one of them closing green today. A bounce that moves no bands is momentum repair, not a trend change. ADA remains the only 50-day break.",
+  "ETH is the only CONFIRMED line in the book at $89.30. BTC remains ADVISED-UNCONFIRMED notional only. Reconciliation is still outstanding and the book cannot be stated accurately without it.",
+  "UAE band changes read at 11:10 Dubai are DRAFTS. Four have failed by the close in ten days. EMAAR has now produced two unconfirmed 50-day crosses in three days - watch, do not act."
  ],
  "corrections": [
   "Prior context.json was 13 days stale (2026-07-17) because daily cycles were skipped 2026-07-20..29; refreshed 2026-07-30."
@@ -1472,6 +1498,7 @@
   "CLARITY Act floor-vote development: Senate Majority Leader Thune has pledged a floor vote before the August recess, with the week of July 20 under active discussion — a nearer and harder catalyst than the findings' 'no floor vote scheduled' framing. (Coinpedia, KuCoin/Lummis, PYMNTS.)"
  ],
  "data_notes": [
+  "2026-09-17: the news research pass could not complete - the search tool returned errors or generic pages on three attempts. The FOMC outcome and any UAE property catalyst are unverified for this cycle.",
   "GRAM (ex-Toncoin) crossed the 55-bar minimum on 2026-08-25 and has been rated since; it prints BUY (40) today.",
   "ADPORTS has printed 6.06 for three consecutive runs. This is a pinned cash-tender stub, not a frozen feed; the 10-run stock threshold correctly leaves it unflagged through the Sept 15 tender close.",
   "TAQA was removed from the watchlist on 2026-09-02 after delisting from ADX; the watchlist is 19 UAE stocks and 11 cryptos, 30 assets total."

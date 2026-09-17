@@ -1570,6 +1570,36 @@
    "action": "ADA breaks trend - first crypto 50-day cross of the selloff",
    "rationale": "ADA -4.21% to 0.1957 and crossed BELOW its 50-day, BUY -> HOLD (35 -> -15). That is the first trend break among the eleven cryptos in this drawdown; everything else is still above its 50-day despite seven sessions of losses, which says the damage so far is momentum rather than structure. ADA was one of the joint-highest scores on the board at 75 on Sept 7, nine days ago. AIRARABIA also went HOLD -> STRONG SELL (-5 -> -50) on the UAE side. Still zero STRONG BUY cryptos for a third day, and the satellite reserve of about 209 AED stays uninvested - there is no candidate and the FOMC lands in eleven hours.",
    "status": "logged"
+  },
+  {
+   "date": "2026-09-17",
+   "ticker": "DATA",
+   "action": "news research pass FAILED - FOMC outcome unverified",
+   "rationale": "The FOMC decision landed at 18:00 UTC yesterday with roughly 87% hike odds priced, and I cannot tell you what it was. The search tool returned 'unavailable' twice and, on a third attempt with different phrasing, only generic reference pages with no coverage of the meeting. The standing instruction is a news research pass every run, and when that pass fails the right move is to say so rather than let the absence pass unremarked. What I can describe is the tape: a broad relief bounce with LINK +3.63%, AVAX +3.29%, SOL +2.88%, LTC +2.59%, ETH and BNB +1.94%, BTC +0.85% off Tuesday's 74,967.97 low. That pattern is CONSISTENT WITH a dovish reception - either a hold, or a hike framed as one-and-done - but consistent-with is not evidence, and reading a policy outcome backwards out of price action is exactly the kind of confident-sounding guess this log exists to prevent. Recorded as unknown. I owe you the verified outcome next cycle.",
+   "status": "unverified - flagged, not inferred"
+  },
+  {
+   "date": "2026-09-17",
+   "ticker": "LINKUSDT",
+   "action": "the exit's edge has nearly evaporated",
+   "price": 11.222,
+   "rationale": "LINK +3.63% to 11.222. The exit at 11.412 is now only 1.7% ahead, against 5.1% yesterday. One more session like this and the exit is behind. Two details worth having straight. Wednesday's intraday low was 10.617, which DID trade through the rule-correct 10.715 stop - but Wednesday's CLOSE was 11.057, so under the close-based rule the correct stop has still not fired and a properly-run system would still be holding. And the swing in this scorecard over three days - a wash, then +5.1%, now +1.7% - is itself the lesson: three days is not long enough to grade an exit, and I should resist the pull to declare either way. The Sept-7 method error remains an error whatever the market decides about it.",
+   "status": "closed +17.9% - tracking continues"
+  },
+  {
+   "date": "2026-09-17",
+   "ticker": "EMAAR",
+   "action": "second run at the 50-day in three days - +5.46% to 11.98",
+   "price": 11.98,
+   "rationale": "EMAAR rose 5.46% to 11.98, SELL -> HOLD, and is having a second go at the 50-day cross that failed on Tuesday. EMAARDEV came with it, +3.38% to 13.46, SELL -> HOLD and crossing above its own 50-day. Two 5%+ sessions in three days on Dubai's largest developer, with the whole property complex participating, is a genuine move rather than noise - but the same two cautions apply and I am not softening them because the move repeated. This is an 11:10 Dubai intraday print with three and a half hours left, and Tuesday's identical-looking print gave the whole thing back by the close. No catalyst could be verified: the search tool failed this cycle. The trend change needs a confirming CLOSE, and the honest position is that EMAAR has now generated two unconfirmed 50-day crosses in three days, which is a reason to watch rather than a reason to act. Academic in any case while the Al Ramz account stays unopened.",
+   "status": "advice only - unconfirmed, second attempt"
+  },
+  {
+   "date": "2026-09-17",
+   "ticker": "crypto-broad",
+   "action": "relief bounce, no structural change",
+   "rationale": "Every watchlist crypto is green except none - all eleven up, led by LINK +3.63%, AVAX +3.29%, SOL +2.88%, LTC +2.59%. But the bands barely moved: nine of eleven sit at exactly BUY 35, ADA is still HOLD below its 50-day, GRAM is still STRONG SELL at -65, and there are STILL zero STRONG BUYs, now a fourth consecutive day. A bounce that lifts prices without lifting a single band is momentum repair, not a trend change - the 50-day structure that ADA broke on Tuesday has not been repaired, and nothing else has broken. The satellite reserve of about 209 AED stays uninvested: no candidate, and the one piece of macro information that would matter is the FOMC outcome I could not verify.",
+   "status": "logged"
   }
  ]
 }
