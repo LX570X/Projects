@@ -1,41 +1,47 @@
 {
- "generated_at_utc": "2026-09-16T07:09:15+00:00",
+ "generated_at_utc": "2026-09-17T07:09:08+00:00",
  "alerts": [
   {
-   "ticker": "XRPUSDT",
+   "ticker": "EMAAR",
    "severity": "info",
    "type": "big_move",
-   "msg": "XRPUSDT moved -7.4% in the last day (now 1.2951 USD)"
+   "msg": "EMAAR moved +5.5% in the last day (now 11.98 AED)"
   },
   {
-   "ticker": "LINKUSDT",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "LINKUSDT moved -5.0% in the last day (now 10.829 USD)"
-  },
-  {
-   "ticker": "ADAUSDT",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "ADAUSDT moved -4.2% in the last day (now 0.1957 USD)"
-  },
-  {
-   "ticker": "ADAUSDT",
-   "severity": "info",
-   "type": "signal_change",
-   "msg": "ADAUSDT: BUY -> HOLD (score 35 -> -15)"
-  },
-  {
-   "ticker": "ADAUSDT",
+   "ticker": "DIB",
    "severity": "actionable",
-   "type": "trend",
-   "msg": "ADAUSDT: price crossed below its 50-day average \u2014 trend change"
+   "type": "signal_change",
+   "msg": "DIB: SELL -> STRONG SELL (score -40 -> -50)"
   },
   {
    "ticker": "AIRARABIA",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "AIRARABIA: HOLD -> STRONG SELL (score -5 -> -50)"
+   "msg": "AIRARABIA: STRONG SELL -> SELL (score -50 -> -35)"
+  },
+  {
+   "ticker": "EMAARDEV",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "EMAARDEV moved +3.4% in the last day (now 13.46 AED)"
+  },
+  {
+   "ticker": "EMAARDEV",
+   "severity": "info",
+   "type": "signal_change",
+   "msg": "EMAARDEV: SELL -> HOLD (score -35 -> 5)"
+  },
+  {
+   "ticker": "EMAARDEV",
+   "severity": "actionable",
+   "type": "trend",
+   "msg": "EMAARDEV: price crossed above its 50-day average \u2014 trend change"
+  },
+  {
+   "ticker": "ADCB",
+   "severity": "info",
+   "type": "rsi",
+   "msg": "ADCB: RSI crossed above 70 (now 74.0)"
   }
  ]
 }
