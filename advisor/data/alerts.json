@@ -1,47 +1,107 @@
 {
- "generated_at_utc": "2026-09-17T07:09:08+00:00",
+ "generated_at_utc": "2026-09-18T07:09:49+00:00",
  "alerts": [
   {
-   "ticker": "EMAAR",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "EMAAR moved +5.5% in the last day (now 11.98 AED)"
-  },
-  {
-   "ticker": "DIB",
+   "ticker": "BNBUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "DIB: SELL -> STRONG SELL (score -40 -> -50)"
+   "msg": "BNBUSDT: BUY -> STRONG BUY (score 35 -> 50)"
   },
   {
-   "ticker": "AIRARABIA",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "AIRARABIA: STRONG SELL -> SELL (score -50 -> -35)"
-  },
-  {
-   "ticker": "EMAARDEV",
+   "ticker": "SOLUSDT",
    "severity": "info",
    "type": "big_move",
-   "msg": "EMAARDEV moved +3.4% in the last day (now 13.46 AED)"
+   "msg": "SOLUSDT moved +5.5% in the last day (now 105.7 USD)"
   },
   {
-   "ticker": "EMAARDEV",
+   "ticker": "LINKUSDT",
    "severity": "info",
-   "type": "signal_change",
-   "msg": "EMAARDEV: SELL -> HOLD (score -35 -> 5)"
+   "type": "big_move",
+   "msg": "LINKUSDT moved +5.3% in the last day (now 11.811 USD)"
   },
   {
-   "ticker": "EMAARDEV",
+   "ticker": "AVAXUSDT",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "AVAXUSDT moved +4.6% in the last day (now 7.908 USD)"
+  },
+  {
+   "ticker": "ADAUSDT",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "ADAUSDT moved +7.5% in the last day (now 0.2136 USD)"
+  },
+  {
+   "ticker": "ADAUSDT",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ADAUSDT: HOLD -> BUY (score -15 -> 35)"
+  },
+  {
+   "ticker": "ADAUSDT",
    "severity": "actionable",
    "type": "trend",
-   "msg": "EMAARDEV: price crossed above its 50-day average \u2014 trend change"
+   "msg": "ADAUSDT: price crossed above its 50-day average \u2014 trend change"
   },
   {
-   "ticker": "ADCB",
+   "ticker": "LTCUSDT",
    "severity": "info",
-   "type": "rsi",
-   "msg": "ADCB: RSI crossed above 70 (now 74.0)"
+   "type": "big_move",
+   "msg": "LTCUSDT moved +4.8% in the last day (now 55.1 USD)"
+  },
+  {
+   "ticker": "TALABAT",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "TALABAT moved +3.5% in the last day (now 1.18 AED)"
+  },
+  {
+   "ticker": "TALABAT",
+   "severity": "info",
+   "type": "signal_change",
+   "msg": "TALABAT: SELL -> HOLD (score -35 -> 15)"
+  },
+  {
+   "ticker": "TALABAT",
+   "severity": "actionable",
+   "type": "trend",
+   "msg": "TALABAT: price crossed above its 50-day average \u2014 trend change"
+  },
+  {
+   "ticker": "TECOM",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "TECOM: SELL -> BUY (score -35 -> 25)"
+  },
+  {
+   "ticker": "TECOM",
+   "severity": "info",
+   "type": "macd",
+   "msg": "TECOM: MACD bullish cross"
+  },
+  {
+   "ticker": "TECOM",
+   "severity": "actionable",
+   "type": "trend",
+   "msg": "TECOM: price crossed above its 50-day average \u2014 trend change"
+  },
+  {
+   "ticker": "ALDAR",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ALDAR: BUY -> STRONG BUY (score 40 -> 45)"
+  },
+  {
+   "ticker": "ADIB",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ADIB: STRONG BUY -> BUY (score 50 -> 25)"
+  },
+  {
+   "ticker": "ADNOCDRILL",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ADNOCDRILL: SELL -> STRONG SELL (score -35 -> -50)"
   }
  ]
 }
