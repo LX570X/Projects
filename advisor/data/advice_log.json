@@ -1600,6 +1600,35 @@
    "action": "relief bounce, no structural change",
    "rationale": "Every watchlist crypto is green except none - all eleven up, led by LINK +3.63%, AVAX +3.29%, SOL +2.88%, LTC +2.59%. But the bands barely moved: nine of eleven sit at exactly BUY 35, ADA is still HOLD below its 50-day, GRAM is still STRONG SELL at -65, and there are STILL zero STRONG BUYs, now a fourth consecutive day. A bounce that lifts prices without lifting a single band is momentum repair, not a trend change - the 50-day structure that ADA broke on Tuesday has not been repaired, and nothing else has broken. The satellite reserve of about 209 AED stays uninvested: no candidate, and the one piece of macro information that would matter is the FOMC outcome I could not verify.",
    "status": "logged"
+  },
+  {
+   "date": "2026-09-18",
+   "ticker": "MACRO",
+   "action": "FOMC verified - and my refusal to infer it was right",
+   "rationale": "The Fed raised rates 25bp to 3.75-4.00% on Sept 16, unanimously 12-0, the first hike since July 2023. Warsh framed it as the economy strengthening across labour, earnings and capital investment, and markets now price ONE MORE hike in 2026 with more into 2027. Yesterday I could not verify this and wrote that the relief bounce was 'consistent with a dovish reception - either a hold, or a hike framed as one-and-done'. Both of those readings were wrong. It was a hike, and the guidance points to a hiking CYCLE rather than one-and-done. Had I inferred the outcome from price action I would have told you something false and told it confidently. The rally happened because an 87%-priced hike arrived exactly as priced - sell the rumour, buy the news - not because the Fed was soft. This is the clearest justification yet for the rule that missing information gets recorded as missing. Counterweight worth carrying: CoinDesk observes that this post-Fed bounce 'echoes the start of the 2022 bear market'.",
+   "status": "verified - prior non-inference vindicated"
+  },
+  {
+   "date": "2026-09-18",
+   "ticker": "LINKUSDT",
+   "action": "the exit is now BEHIND - my error has cost about 3.5%",
+   "price": 11.811,
+   "rationale": "LINK +5.28% to 11.811, which is 3.5% ABOVE the 11.412 exit. Held, the position would be +22.0% instead of the realised +17.9%. The four-day scorecard reads wash, +5.1%, +1.7%, -3.5%. On Sept 14 I wrote that there was a real chance this exit would look wrong within days, and that is now what happened. The chain is worth stating end to end because it is the most instructive sequence in this log: on Sept 7 I computed the trail from a live 13.37 snapshot instead of that day's 12.748 close, which set the stop at 11.337 rather than the rule-correct 10.715; that stop fired on the Sept 13 close; the rule-correct stop never fired at all, not even at Wednesday's 10.617 low, because on a close basis Wednesday finished at 11.057. So a correctly-run system would still be holding and would be 3.5% better off. The cost is about $0.55 on a position this size, which is trivial in money and the entire point in method - the same error on a position twenty times larger would be twenty times the loss for identical reasoning. The fix is already in. What I am adding is the completed outcome rather than leaving the record at Tuesday's convenient '-5.1%, vindicated'.",
+   "status": "closed +17.9%, exit now 3.5% behind - tracking complete"
+  },
+  {
+   "date": "2026-09-18",
+   "ticker": "crypto-broad",
+   "action": "the drawdown's only trend break is repaired, and the first STRONG BUY returns",
+   "rationale": "ADA +7.5% and back ABOVE its 50-day, HOLD -> BUY - the single structural break of this drawdown, made on Sept 16, has been repaired in two sessions. BNB +3.9% to 755.23 and BUY -> STRONG BUY, the first STRONG BUY on the board since LTC lost it on Sept 14, ending a four-day streak of none. Broad participation: SOL +5.48%, LINK +5.28%, LTC +4.75%, AVAX +4.62%, DOGE +3.68%, and the Altcoin Season Index has gone 27 to 43 in seven days. Two things stop this being read as an all-clear. Nine of eleven still sit at exactly BUY 35, so one band changed on a session where everything rose 3-7%; and a $78,000 max-pain options expiry lands today with the support shelf cited at 75,000-77,000, so some of this is positioning rather than demand. BTC 77,608.00 (+1.28%) remains BUY (35), so the opportunity deploy is un-armed for a twelfth session and the 500 AED stays in USDT through a now-confirmed hiking cycle.",
+   "status": "logged"
+  },
+  {
+   "date": "2026-09-18",
+   "ticker": "UAE-stocks",
+   "action": "three 50-day crosses in one session, all unconfirmed",
+   "rationale": "TALABAT +3.51% to 1.18 crossed above its 50-day, SELL -> HOLD; TECOM SELL -> BUY on a MACD bullish cross and a 50-day cross; ALDAR BUY -> STRONG BUY with core 55. Against them, ADIB STRONG BUY -> BUY and ADNOCDRILL SELL -> STRONG SELL. Every one of these is a Friday 11:10 Dubai intraday print, and the record on those is now four failures by the close in eleven days. TALABAT is the one worth noting on its own terms: it went STRONG SELL on Sept 7 on the identical mechanism in reverse - trend and structure terms flipping together with the averages 0.6% apart - and it has now flipped back. That is not two signals, it is one stock oscillating on its 50-day, and TALABAT should join TECOM, DEWA and ADNOCDRILL in the muted set. EMAAR held Thursday's gain at 11.82 rather than giving it back, which is the first time one of these property prints has survived a session.",
+   "status": "advice only - TALABAT band changes now muted"
   }
  ]
 }
