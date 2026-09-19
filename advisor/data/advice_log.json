@@ -1629,6 +1629,47 @@
    "action": "three 50-day crosses in one session, all unconfirmed",
    "rationale": "TALABAT +3.51% to 1.18 crossed above its 50-day, SELL -> HOLD; TECOM SELL -> BUY on a MACD bullish cross and a 50-day cross; ALDAR BUY -> STRONG BUY with core 55. Against them, ADIB STRONG BUY -> BUY and ADNOCDRILL SELL -> STRONG SELL. Every one of these is a Friday 11:10 Dubai intraday print, and the record on those is now four failures by the close in eleven days. TALABAT is the one worth noting on its own terms: it went STRONG SELL on Sept 7 on the identical mechanism in reverse - trend and structure terms flipping together with the averages 0.6% apart - and it has now flipped back. That is not two signals, it is one stock oscillating on its 50-day, and TALABAT should join TECOM, DEWA and ADNOCDRILL in the muted set. EMAAR held Thursday's gain at 11.82 rather than giving it back, which is the first time one of these property prints has survived a session.",
    "status": "advice only - TALABAT band changes now muted"
+  },
+  {
+   "date": "2026-09-19",
+   "ticker": "ETHUSDT",
+   "action": "STOP RAISED 2,209 -> 2,316.48, and the 2,300 exit is RETIRED",
+   "price": 2626.56,
+   "stop": 2316.48,
+   "entry": 1829.7,
+   "rationale": "Friday's close of 2,612.14 minus 3 x ATR14 (98.5536) gives 2,316.48, an improvement of +1.09 ATR - the first time the ETH trail has cleared the 1-ATR gate since Sept 4, and the first stop in this book computed under the corrected close-based method. It locks +26.60% against the 1,829.70 entry, up from +20.75%, a floor of about $21.08 under a position now worth $95.61 at +43.6%, the highest it has ever been. The stop sits 11.80% below spot. THE PART THAT NEEDS SAYING OUT LOUD: the new stop is ABOVE the old 2,300 close-exit, so the ordering I have restated in almost every cycle - that the 2,300 exit fires BEFORE the hard stop - is now impossible. The trail overtook it. I am retiring the 2,300 level rather than leaving two conflicting triggers in the book to be misread in a fast market. The consequence is a genuine tightening in two directions at once: the level is 16.48 higher, and it now needs ONE closing break rather than two consecutive ones, because the hard stop has always been a single-close trigger while the 2,300 exit was a two-close trigger. That is both rules operating exactly as written, but it makes the position easier to exit than it was yesterday and I would rather flag that than let it pass as a routine stop raise. The compensation is real: 2,316.48 protects +26.6%, where 2,300 protected nothing by itself and 2,209 protected +20.75%. The 1,964 and 2,105 targets are retired too - price is 25% above the higher of them.",
+   "status": "open, +43.6% - stop raised, exit structure simplified"
+  },
+  {
+   "date": "2026-09-19",
+   "ticker": "BTCUSDT",
+   "action": "deploy ARMED - one confirming close needed, nothing bought today",
+   "price": 81081.58,
+   "rationale": "BTC +4.43% to 81,081.58 and upgraded BUY -> STRONG BUY (50, core 50). Under the 2-day rule this is close 1 of 2: if BTC still rates STRONG BUY at tomorrow's reading the 500 AED deploys, and if it falls back the trigger re-arms and nothing is bought. Drivers verified rather than assumed: US spot BTC ETFs took $433m on Sept 18 with FBTC at $311m and IBIT $108m, $238m of shorts were liquidated, the CFTC sent a crypto market-regulation proposal to OMB, and the dollar softened with Treasury yields cooling. The coherent framing across coverage is a relief rally - a fully-priced Fed hike, a failed CLARITY vote and BoJ tightening all failed to push price down, and shorts were squeezed once selling dried up. Two cautions I am attaching rather than suppressing. This is the FOURTH arming of this trigger and the previous three all failed to confirm (Aug 3 BTC, Aug 15 AVAX, Sept 5-6 BTC), which is the rule doing its job but also a reminder that one strong session is not an entry. And some coverage flags BTC as overbought on this breakout; at 81,081 it is still 17.2% below its 52-week high, so this is a recovery inside a larger drawdown rather than a breakout to new ground.",
+   "status": "armed - close 1 of 2, no action today"
+  },
+  {
+   "date": "2026-09-19",
+   "ticker": "LINKUSDT",
+   "action": "exit now 8.1% behind - final accounting on the method error",
+   "price": 12.333,
+   "rationale": "LINK +4.33% to 12.333, which is 8.07% above the 11.412 exit. Held, the position would be +27.4% against the realised +17.9% - about 9.5 percentage points of return given up, roughly $1.29 on a position this size. Five-day scorecard: wash, +5.1%, +1.7%, -3.5%, -8.1%. The rule-correct 10.715 stop has never once closed below on any day since it was miscomputed. I am closing the running tracker here rather than extending it indefinitely: the verdict is settled, the error cost real return, the fix went in on Sept 10, and today's ETH raise is the first stop this book has produced under the corrected method. Continuing to score it daily would turn a useful lesson into self-flagellation, and the useful part is already recorded.",
+   "status": "tracking closed - error cost ~9.5pp"
+  },
+  {
+   "date": "2026-09-19",
+   "ticker": "crypto-broad",
+   "action": "six STRONG BUYs, from zero two days ago",
+   "rationale": "BTC, BNB, SOL, AVAX, ADA and LTC all rate STRONG BUY, against zero on Sept 17. LTC leads at 75 with AVAX 65 and ADA 60. Every one of the eleven rose: AVAX +7.28%, XRP +6.95%, SOL +5.75%, ETH +5.47%, ADA +4.45%, BTC +4.43%, LINK +4.33%, LTC +4.03%. Four fresh MACD bullish crosses (SOL, AVAX, ADA, LTC) mean this is a signal recovery and not just a price recovery - the complaint I made on Sept 17, that the bounce had moved no bands, has been answered inside two sessions. GRAM even climbed STRONG SELL -> SELL. The honest caveat: two sessions ago the entire board sat at BUY 35, so the swing from zero STRONG BUYs to six in 48 hours is itself a sign of how sharply the scoring responds to MACD crosses clustering, and ETH's own score fell to BUY 25 against core 35 purely because it is now stretched above its upper Bollinger band.",
+   "status": "logged"
+  },
+  {
+   "date": "2026-09-19",
+   "ticker": "EMIRATESNBD",
+   "action": "the whole two-day surge round-tripped",
+   "price": 30.42,
+   "rationale": "Friday's settled close has EMIRATESNBD at 30.42, -2.5%, crossing BELOW its 50-day, STRONG BUY -> SELL on an 85-point swing with a MACD bearish cross. Sequence worth reading end to end: I reported +4.23% on Sept 12, then +4.89% on Sept 14 calling it a second consecutive big session, then corrected on Sept 15 that the Sept-14 print had faded about 4.7% into its close, and now the position is below where the run started. No catalyst was ever findable in four separate news passes. The stock added roughly 9% on intraday prints, none of which settled, and has now given all of it back. This is the strongest case yet for the standing rule that an 11:10 Dubai band read is a draft - and a reminder that I quoted the +4.89% figure in a report before it settled, which I should not have done as flatly as I did.",
+   "status": "advice only - no position"
   }
  ]
 }

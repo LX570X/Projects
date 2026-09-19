@@ -1,25 +1,29 @@
 {
- "updated": "2026-09-18T07:35+00:00",
+ "updated": "2026-09-19T07:35+00:00",
  "market_notes": [
   {
-   "market": "FOMC VERIFIED - a hike, and my refusal to infer it was right",
-   "note": "The Fed raised rates 25bp to 3.75-4.00% on Sept 16, unanimously 12-0, the first hike since July 2023. Warsh framed it as the economy strengthening across labour, earnings and capital investment, and markets now price ONE MORE hike in 2026 with more into 2027. Yesterday I wrote that the bounce was 'consistent with a dovish reception - either a hold, or a hike framed as one-and-done'. Both readings were wrong: it was a hike, and the guidance points to a hiking CYCLE. Had I inferred from price action I would have said something false, confidently. The rally happened because an 87%-priced hike arrived exactly as priced. Counterweight worth carrying: CoinDesk observes this post-Fed bounce 'echoes the start of the 2022 bear market'."
+   "market": "ETH stop raised to 2,316.48 - and the 2,300 exit is retired",
+   "note": "Friday's close of 2,612.14 minus 3 x ATR14 (98.5536) gives 2,316.48, a +1.09 ATR improvement that clears the gate - the first ETH raise since Sept 4 and the first stop in this book computed under the corrected close-based method. Locks +26.60% against the 1,829.70 entry, up from +20.75%, a floor of about $21.08 under a position worth $95.61 at +43.6%, its highest ever. THE ORDERING HAS CHANGED: the new stop sits ABOVE the old 2,300 close-exit, so the 'close-exit fires first' structure I have restated daily is no longer possible - the trail overtook it. The 2,300 level is retired rather than left as a conflicting second trigger. The exit is now tighter in two ways: the level is 16.48 higher, and it needs ONE closing break instead of two. Both rules working as written, but a real tightening and not a routine raise."
   },
   {
-   "market": "LINK - the exit is now BEHIND, and the error has a price",
-   "note": "LINK +5.28% to 11.811, 3.5% ABOVE the 11.412 exit. Held, the position would be +22.0% against the realised +17.9%. Four-day scorecard: wash, +5.1%, +1.7%, -3.5%. The full chain: on Sept 7 the trail was computed from a live 13.37 snapshot instead of that day's 12.748 close, setting the stop at 11.337 rather than the rule-correct 10.715; that stop fired on the Sept 13 close; the correct stop never fired at all, not even at Wednesday's 10.617 low, because Wednesday CLOSED at 11.057. A correctly-run system would still hold and be 3.5% better off. About $0.55 on a position this size - trivial in money, the entire point in method."
+   "market": "BTC deploy ARMED - one confirming close needed",
+   "note": "BTC +4.43% to 81,081.58, BUY -> STRONG BUY (50, core 50). Close 1 of 2 under the 2-day rule: if BTC still rates STRONG BUY tomorrow the 500 AED deploys, otherwise the trigger re-arms and nothing is bought. Verified drivers: US spot BTC ETFs took $433m on Sept 18 (FBTC $311m, IBIT $108m), $238m of shorts liquidated, the CFTC sent a crypto market-regulation proposal to OMB, dollar softer and Treasury yields cooling. Two cautions attached: this is the FOURTH arming and all three previous ones failed to confirm, and at 81,081 BTC is still 17.2% below its 52-week high - a recovery inside a drawdown, not new ground, with some coverage already flagging it overbought."
   },
   {
-   "market": "The drawdown's only trend break is repaired",
-   "note": "ADA +7.5% and back above its 50-day, HOLD -> BUY - the single structural break of this drawdown, made Sept 16, repaired in two sessions. BNB +3.9% to 755.23 and BUY -> STRONG BUY, the first on the board since Sept 14, ending a four-day drought. Broad participation: SOL +5.48%, LINK +5.28%, LTC +4.75%, AVAX +4.62%, DOGE +3.68%; Altcoin Season Index 27 to 43 in seven days. Two brakes on reading this as an all-clear: nine of eleven still sit at exactly BUY 35, so one band moved on a day everything rose 3-7%; and a $78,000 max-pain options expiry lands today with support cited at 75,000-77,000, so some of it is positioning rather than demand."
+   "market": "Six STRONG BUYs, from zero two days ago",
+   "note": "BTC, BNB, SOL, AVAX, ADA and LTC, with LTC leading at 75. All eleven cryptos rose: AVAX +7.28%, XRP +6.95%, SOL +5.75%, ETH +5.47%, ADA +4.45%, BTC +4.43%, LINK +4.33%, LTC +4.03%. Four fresh MACD bullish crosses mean this is signal recovery and not just price recovery - the Sept-17 complaint that the bounce moved no bands has been answered in two sessions. Caveat: the swing from zero to six in 48 hours also shows how sharply the scoring responds to MACD crosses clustering, and ETH's own score fell to BUY 25 against core 35 purely on Bollinger stretch."
   },
   {
-   "market": "UAE - three 50-day crosses in one session, all unconfirmed",
-   "note": "TALABAT +3.51% crossed above its 50-day (SELL -> HOLD); TECOM SELL -> BUY on a MACD bullish cross and a 50-day cross; ALDAR BUY -> STRONG BUY with core 55. Against them ADIB STRONG BUY -> BUY and ADNOCDRILL SELL -> STRONG SELL. All Friday 11:10 Dubai intraday prints, and four of those have failed by the close in eleven days. TALABAT is now muted alongside TECOM, DEWA and ADNOCDRILL: it went STRONG SELL on Sept 7 on the identical mechanism in reverse and has flipped back, which is one stock oscillating on its 50-day rather than two signals. EMAAR held Thursday's gain at 11.82 - the first property print to survive a session."
+   "market": "The relief-rally regime, stated plainly",
+   "note": "In four days crypto has absorbed a failed CLARITY cloture vote, the first Fed hike since July 2023 with more priced into 2027, and BoJ tightening - and rallied through all of it. The thing being traded is bad news failing to move price lower. That is a real regime and also a fragile one: it depends on positioning rather than on the news improving, and CoinDesk's observation that the post-Fed bounce 'echoes the start of the 2022 bear market' is worth keeping on the page while the tape is green."
   },
   {
-   "market": "Positions",
-   "note": "ETH 2,488.56 (+1.51%), $90.58, +36.0%. The 2,300 two-close exit is 7.58% below and the COUNT REMAINS ZERO; week's closes 2,515.75 / 2,398.26 / 2,418.26 / 2,447.28 / 2,488.56. Trail computed 2,179.65, below the existing stop, so 2,209 holds. BTC 77,608.00 (+1.28%) still BUY (35): deploy un-armed for a twelfth session, 500 AED in USDT through a now-confirmed hiking cycle - the written rule arriving at the right answer mechanically rather than by forecast."
+   "market": "EMIRATESNBD round-tripped the entire two-day surge",
+   "note": "Friday's settled close is 30.42, -2.5%, below its 50-day, STRONG BUY -> SELL on an 85-point swing. The sequence: +4.23% reported Sept 12, +4.89% reported Sept 14, corrected Sept 15 when that print faded about 4.7% into its close, and now below where the run began. No catalyst was findable in four separate news passes. Roughly 9% added on intraday prints, none of which settled. Strongest case yet for treating an 11:10 Dubai band read as a draft - and a note that I quoted the +4.89% too flatly at the time."
+  },
+  {
+   "market": "Other UAE",
+   "note": "On Friday's settled closes: IHC STRONG SELL -> BUY, +4.77% to 384.00 and above its 50-day; DU SELL -> HOLD, above its 50-day; DEWA BUY -> SELL below its 50-day (muted, sixth flip in three weeks); FAB STRONG BUY -> BUY; EAND STRONG BUY -> BUY; TECOM +3.24%; ALDAR holds STRONG BUY at 55. ADPORTS 6.05, now a post-tender stub with the offer closed."
   }
  ],
  "asset_notes": {
@@ -365,6 +369,12 @@
     "impact": "neutral",
     "date": "2026-09-18",
     "source": "news research pass"
+   },
+   {
+    "headline": "+4.43% to 81,081.58, BUY -> STRONG BUY, arming the deploy pending one confirming close. Drivers: $433m of spot ETF inflows Sept 18 (FBTC $311m, IBIT $108m), $238m of shorts liquidated, CFTC crypto market-regulation proposal sent to OMB, softer dollar and cooling yields. Still 17.2% below its 52-week high",
+    "impact": "bullish",
+    "date": "2026-09-19",
+    "source": "news research pass"
    }
   ],
   "ETHUSDT": [
@@ -516,6 +526,12 @@
     "headline": "+1.94% to 2,453.40; the 2,300 two-close exit backs away to 6.25% below spot with the count still at zero",
     "impact": "bullish",
     "date": "2026-09-17",
+    "source": "advisor data"
+   },
+   {
+    "headline": "+5.47% to 2,626.56, position +43.6% and its highest ever. Stop raised 2,209 -> 2,316.48 (+1.09 ATR), locking +26.6%; the 2,300 two-close exit is retired as superseded. Score BUY 25 against core 35 on Bollinger stretch",
+    "impact": "bullish",
+    "date": "2026-09-19",
     "source": "advisor data"
    }
   ],
@@ -750,6 +766,12 @@
     "headline": "Monday's +4.89% never settled: the 11:10 print of 31.76 faded roughly 4.7% into a close near 30.28. Today 31.28 (+3.3%), still STRONG BUY (45)",
     "impact": "neutral",
     "date": "2026-09-15",
+    "source": "advisor data"
+   },
+   {
+    "headline": "Friday's settled close 30.42 (-2.5%), below its 50-day, STRONG BUY -> SELL - the entire two-day intraday surge has round-tripped with no catalyst ever found",
+    "impact": "bearish",
+    "date": "2026-09-19",
     "source": "advisor data"
    }
   ],
@@ -1005,6 +1027,12 @@
     "impact": "bullish",
     "date": "2026-07-01",
     "source": "IHC/ADX press release (Jul 1, 2026), Khaleej Times, Economy Middle East, The National (Mar 9, 2026), AGBI"
+   },
+   {
+    "headline": "+4.77% to 384.00, STRONG SELL -> BUY and above its 50-day",
+    "impact": "bullish",
+    "date": "2026-09-19",
+    "source": "advisor data"
    }
   ],
   "TAQA": [
@@ -1238,6 +1266,12 @@
     "headline": "-3.47% to 7.544, STRONG BUY -> BUY on a fresh MACD bearish cross - leaves LTC as the only STRONG BUY crypto on the board",
     "impact": "bearish",
     "date": "2026-09-11",
+    "source": "advisor data"
+   },
+   {
+    "headline": "+7.28% to 8.485, the day's biggest mover, BUY -> STRONG BUY (65) on a MACD bullish cross",
+    "impact": "bullish",
+    "date": "2026-09-19",
     "source": "advisor data"
    }
   ],
@@ -1485,6 +1519,12 @@
     "impact": "bearish",
     "date": "2026-09-14",
     "source": "advisor data"
+   },
+   {
+    "headline": "+4.03% to 57.31, BUY -> STRONG BUY at 75 on a MACD bullish cross - the highest score on the board",
+    "impact": "bullish",
+    "date": "2026-09-19",
+    "source": "advisor data"
    }
   ],
   "GRAMUSDT": [
@@ -1515,13 +1555,13 @@
   ]
  },
  "risk_flags": [
-  "The Fed is in a HIKING CYCLE, verified: 25bp to 3.75-4.00% on Sept 16, unanimous, with one more priced for 2026 and more into 2027. Crypto rallied because the hike was fully priced, not because policy is soft. CoinDesk notes the post-Fed bounce echoes the start of the 2022 bear market.",
-  "ETH's 2,300 two-close exit remains the ONLY live trigger in the book, 7.58% below spot with the count at ZERO. It fires BEFORE the 2,209 hard stop.",
-  "A $78,000 max-pain options expiry lands today with the support shelf cited at 75,000-77,000 - part of this week's rally is positioning, not demand.",
-  "Today's rally moved exactly one crypto band (BNB to STRONG BUY) while everything rose 3-7%. Nine of eleven still sit at BUY 35. Price recovery has outrun signal recovery.",
-  "ETH is the only CONFIRMED line in the book at $90.58. BTC remains ADVISED-UNCONFIRMED notional only. Reconciliation is still outstanding and the book cannot be stated accurately without it.",
-  "UAE band changes read at 11:10 Dubai are DRAFTS - four have failed by the close in eleven days. TALABAT joins TECOM, DEWA and ADNOCDRILL with band changes muted as 50-day oscillation.",
-  "CLARITY Act is dead for 2026 after the Sept 15 cloture failure - a catalyst removed rather than delayed."
+  "ETH's exit is now ONE daily close below 2,316.48. The 2,300 two-close exit is RETIRED - the trail overtook it, so the old 'close-exit fires first' ordering no longer applies. The exit is tighter than yesterday in both level and trigger count.",
+  "BTC deploy is ARMED at close 1 of 2. It fires only on a second consecutive STRONG BUY close. Three of the three previous armings failed to confirm.",
+  "The Fed is in a HIKING CYCLE (3.75-4.00%, more priced into 2027) and crypto is rallying through it. The regime being traded is bad news failing to move price down - real, but positioning-dependent rather than news-improving. CoinDesk: the post-Fed bounce 'echoes the start of the 2022 bear market'.",
+  "BTC at 81,081 is still 17.2% below its 52-week high - a recovery inside a drawdown, not new ground, with some coverage already flagging it overbought.",
+  "ETH is the only CONFIRMED line in the book at $95.61. BTC remains ADVISED-UNCONFIRMED notional only. Reconciliation is still outstanding and the book cannot be stated accurately without it.",
+  "UAE band changes read at 11:10 Dubai are DRAFTS. EMIRATESNBD added ~9% across two intraday prints, neither of which settled, and has now given all of it back.",
+  "CLARITY Act is dead for 2026. The CFTC's own market-regulation proposal at OMB is now the live regulatory thread."
  ],
  "corrections": [
   "Prior context.json was 13 days stale (2026-07-17) because daily cycles were skipped 2026-07-20..29; refreshed 2026-07-30."
