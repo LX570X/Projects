@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-19T07:30+00:00",
+ "updated": "2026-09-20T07:30+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": 0,
@@ -20,12 +20,12 @@
    "stop": 2316.48,
    "plan": "Hold. ONE daily CLOSE below the stop (2,316.48) -> convert ALL to USDT, not another coin. The old 2,300 two-close exit and the 1,964 / 2,105 targets are retired: price is far above all of them and the trail now sits higher than any of them.",
    "action_required": {
-    "as_of": "2026-09-19",
+    "as_of": "2026-09-20",
     "end_state": "hold 0.0091 ETH - if you are already there, do nothing",
     "stop": 2316.48,
     "stop_raised_from": 2209.0,
     "trigger": "ONE daily CLOSE below 2,316.48 -> convert ALL to USDT",
-    "note": "STOP RAISED 2,209 -> 2,316.48 by the mechanical trail. Friday's close of 2,612.14 minus 3 x ATR14 (98.5536) = 2,316.48, an improvement of +1.09 ATR - the first time the ETH trail has cleared the 1-ATR gate since Sept 4, and the first raise computed under the corrected close-based method. Locks +26.60% versus the 1,829.70 entry, up from +20.75%, putting a floor of about $21.08 under the position. The stop sits 11.80% below spot. ETH 2,626.56 (+5.47%), $95.61, +43.6% - the highest this position has ever been worth.",
+    "note": "Stop UNCHANGED at 2,316.48. The close-based trail (2,632.69 - 3 x 101.2700) computes 2,328.88, an improvement of only +0.12 ATR - far below the 1-ATR gate, so it holds. ETH 2,575.80 (-1.93%), $93.76, +40.8%. Band improved BUY -> STRONG BUY (50) purely because the Bollinger stretch penalty unwound as price eased - core score was 35 yesterday and 50 today, so some of this is genuine and some is penalty relief. Stop is 10.07% below spot and locks +26.60%. Trigger unchanged: ONE daily CLOSE below 2,316.48 -> convert ALL to USDT.",
     "ORDERING_CHANGE": "THE 2,300 CLOSE-EXIT IS RETIRED, and this is a real change in how the position exits. The new stop of 2,316.48 sits ABOVE the old 2,300 level, so the ordering I have restated daily - 'the 2,300 close-exit fires BEFORE the 2,209 hard stop' - is no longer possible: the trail has simply overtaken it. Leaving both in the book would mean carrying two conflicting triggers, so the 2,300 level is retired as superseded rather than left to be misread under pressure. THE EXIT IS NOW TIGHTER IN TWO WAYS: the level is 16.48 higher, and it needs ONE closing break instead of two consecutive ones. That is the trail rule and the close-based stop rule operating exactly as written, but it is a meaningful tightening and should not slip past unremarked. The upside is that a stop at 2,316.48 protects +26.6% where 2,300 protected nothing on its own and 2,209 protected +20.75%."
    },
    "fill": {
@@ -141,83 +141,41 @@
    }
   ],
   "satellite_candidate": {
-   "as_of": "2026-09-14",
-   "ticker": "LINKUSDT",
-   "status": "CLOSED - STOP FIRED",
-   "exit": {
-    "trigger": "Daily CLOSE of 11.203 on Sunday 2026-09-13, below the 11.337 stop. First stop-out in this book's history.",
-    "rule_applied": "stop_trigger_rule, codified 2026-09-12: stops trigger on a daily CLOSE, not an intraday print.",
-    "exit_price": 11.412,
-    "exit_basis": "The next daily observation after the triggering close, exactly as disclosed on 2026-09-12 ('a close-based stop does NOT fill at the stop level; the exit happens at the next daily reading'). Here the slip was FAVOURABLE - LINK recovered overnight, so 11.412 is 0.66% ABOVE the 11.337 stop.",
-    "entry": 9.681,
-    "qty": 1.406,
-    "cost_usd": 13.61,
-    "proceeds_usd": 16.05,
-    "result_pct": 17.88,
-    "result_usd": 2.44,
-    "peak": "Marked +38.1% at 13.37 on 2026-09-07; gave back roughly 20 points of that before the stop caught it."
+   "as_of": "2026-09-20",
+   "ticker": "AVAXUSDT",
+   "status": "CANDIDATE - not deployed today",
+   "why": "Strongest satellite case on the board: STRONG BUY with core score 75, +15.4% today, +32.5% over a week, and verified institutional catalysts rather than a squeeze - a Paxos integration opening the network to over 650 financial institutions, New York Life Investment Management launching a tokenized fund on Avalanche, Janus Henderson becoming a validator, and the Helicon upgrade on Sept 22 cutting staking lock-up from two weeks to 48 hours.",
+   "why_not_today": "RSI 73.9 after a 15.4% session, which is why score reads 45 against core 75. Entering a satellite position into that, on the same day the 500 AED BTC deploy executes, is two entries in one session with one of them chasing. The reserve is 209 AED and does not need to be spent today.",
+   "BOUNDED_TRIGGER": {
+    "primary": "Deploy the 209 AED on the first daily CLOSE where AVAX still rates STRONG BUY and RSI has come back below 70.",
+    "backstop": "If RSI stays at or above 70 for FIVE consecutive sessions while the STRONG BUY holds, deploy anyway on the fifth.",
+    "why_the_backstop": "This is the direct fix for the LINK failure. The pullback-only rule there produced a watch that never acted while the coin ran 26% away, and re-siting the order twice turned a scale-in into a permanent trailing buy. Bounding the wait means the decision resolves either way inside a week instead of drifting.",
+    "expiry": "If AVAX loses STRONG BUY before either condition is met, the candidate lapses and the reserve stays uninvested."
    },
-   "instruction": {
-    "end_state": "hold 0 LINK - if you never executed the original 50 AED buy, there is nothing to do",
-    "how": "Sell the full LINK position at market, proceeds to USDT.",
-    "fill_state": "The original entry was ADVISED-UNCONFIRMED and was never reconciled against the exchange, so this exit is an instruction, not a recorded trade."
-   },
-   "honest_accounting": {
-    "the_rule_bound_both_ways": "On 2026-09-12 I codified close-based triggering in a case where it kept this position alive, and said plainly that it was uncomfortable to write a rule after the event in my own favour. Two days later the same rule closed the position. That is the test it needed to pass.",
-    "the_method_error_forced_this": "The 11.337 stop was set on 2026-09-07 from a live snapshot price of 13.37 rather than that day's close of 12.748. The rule-correct stop was 10.715. LINK's lowest print since has been 11.121, so a correctly-computed stop would NOT have fired and the position would still be open.",
-    "what_it_cost_so_far": "Nothing realised. The forced exit is at 11.412 and an open position would be worth 11.412 - the same number. Whether the error proves costly depends entirely on LINK's path from here, which is unknown. I am not claiming it was harmless and I am not claiming it was expensive.",
-    "the_catalyst_i_am_exiting_into": "Circle's Arc mainnet launches 2026-09-16 with Chainlink as official oracle and connectivity partner, and published support at $10.79 still holds. There is a real chance this exit looks wrong within days. The pre-commitment for the Sept 15-16 window was that only written rules fire, and overriding a stop because a catalyst is coming is precisely the discretionary judgement that pre-commitment forbids."
-   },
-   "disposition": "Proceeds of about $16.05 (roughly 59 AED) return to satellite reserve, taking it from 150 to about 209 AED. No replacement satellite position is being opened: with zero STRONG BUY cryptos on the board and an 87% hike priced for Sept 16, there is no candidate that meets the bar.",
-   "post_exit_tracking": {
-    "purpose": "I said on Sept 14 that the LINK exit might look wrong within days. Tracking it rather than letting it fade.",
-    "exit": 11.412,
-    "since": [
-     {
-      "date": "2026-09-14",
-      "close": 11.518,
-      "intraday_high": 11.967,
-      "note": "After the 07:10 exit LINK ran to 11.967, 4.9% above the exit, then closed 11.518 - holding would have been 0.93% better on the close."
-     },
-     {
-      "date": "2026-09-15",
-      "last": 11.401,
-      "note": "Back to 11.401, marginally BELOW the exit. Two days in, the exit and the hold are within 0.1% of each other - a wash, neither vindicated nor punished."
-     },
-     {
-      "date": "2026-09-16",
-      "last": 10.829,
-      "note": "LINK -5.01% to 10.829, now 5.1% BELOW the 11.412 exit. The exit is ahead. But the honest version: my stop was set too tight by error, the rule-correct stop of 10.715 has STILL not fired (Tuesday's low was 10.80), so a correctly-run system would be holding here and down 5.1% against us. The error helped, by chance, not by judgement."
-     },
-     {
-      "date": "2026-09-17",
-      "last": 11.222,
-      "note": "LINK +3.63% to 11.222, now only 1.7% below the 11.412 exit, against 5.1% yesterday. The exit's edge has mostly evaporated in one session. Note Wednesday's intraday low of 10.617 DID trade through the rule-correct 10.715 stop, but Wednesday's CLOSE was 11.057 - so under the close-based rule the correct stop still has not fired either, and a properly-run system would still be holding."
-     },
-     {
-      "date": "2026-09-18",
-      "last": 11.811,
-      "note": "LINK +5.28% to 11.811, now 3.5% ABOVE the 11.412 exit. The exit is BEHIND. Held, the position would be +22.0% against the realised +17.9%."
-     },
-     {
-      "date": "2026-09-19",
-      "last": 12.333,
-      "note": "LINK +4.33% to 12.333, now 8.07% ABOVE the 11.412 exit. Held, the position would be +27.4% against the realised +17.9%."
-     }
-    ],
-    "pending": "Circle's Arc mainnet launches tomorrow (Sept 16) with Chainlink as oracle partner. That is the event most likely to settle whether the exit was costly.",
-    "verdict": "EXIT IS CLEARLY BEHIND, by 8.07%. Five-day scorecard: wash, +5.1%, +1.7%, -3.5%, -8.1%. The Sept-7 snapshot-versus-close error set a stop 5.8% too tight, that stop fired on the Sept 13 close, and the rule-correct 10.715 stop has never come close to firing on a close basis at any point since. Cost so far about 9.5 percentage points of return, roughly $1.29 on this position. The method fix has been in since Sept 10 and today's ETH raise is the first stop computed under it."
-   }
+   "reserve_aed": 209
   },
   "opportunity_status": {
-   "as_of": "2026-09-19",
-   "state": "ARMED - one confirming close needed, deploy does NOT fire today",
-   "what_happened": "BTC +4.43% to 81,081.58 and upgraded BUY -> STRONG BUY (50, core 50). Under the 2-day rule this is close 1 of 2. If BTC still rates STRONG BUY at tomorrow's reading, the 500 AED deploys; if it falls back to BUY, the trigger re-arms unchanged and nothing is bought.",
+   "as_of": "2026-09-20",
+   "state": "CONFIRMED - DEPLOY FIRES",
+   "what_happened": "BTC rated STRONG BUY (50, core 50) on two consecutive readings - Friday's close of 80,883.87 and Saturday's 81,249.99. That satisfies the 2-day rule. First confirmation in FOUR armings of this trigger (Aug 3 BTC, Aug 15 AVAX, Sept 5-6 BTC all failed to confirm).",
+   "instruction": {
+    "end_state": "hold about $136 of BTC, funded from the 500 AED opportunity bucket held in USDT - if you are already there, do nothing",
+    "how": "Convert 500 AED of USDT (about $136.15 at the 3.6725 peg) into BTC at market.",
+    "indicative_qty": 0.00169464,
+    "indicative_price": 80340.01,
+    "stop": 74919.5,
+    "stop_basis": "Last completed daily close (81,249.99) minus 3 x ATR14 (2,110.16) = 74,919.50, straight off the trail rule with no existing stop to max() against.",
+    "trigger": "ONE daily CLOSE below 74,919.50 -> convert ALL back to USDT",
+    "risk": "6.75% to the stop, about $9.19 at risk. Against a total book of roughly $505 (ETH $93.76 plus 1,509 AED of buckets) that is 1.82%, inside the 1-2% per-idea limit in ADVISOR.md."
+   },
+   "cautions": [
+    "BTC's score of 50 sits barely above the STRONG BUY threshold of 45, and the whole of it is trend and structure - 25 for price above the 50-day, 15 for the 20-day above the 50-day, 10 for the 50-day sloping up. MACD momentum is FLAT and not scored, with the histogram slightly negative at -33.12. Any deterioration drops this straight back to BUY.",
+    "BTC is 17.96% below its 52-week high of 97,924.49. This is a recovery inside a drawdown, not a breakout to new ground.",
+    "The Fed is in a confirmed hiking cycle with more priced into 2027. The case for this entry is the relief-rally regime - bad news failing to move price down - which is positioning-dependent rather than fundamentals improving.",
+    "Today BTC is -0.92% at 80,340.01, below the 81,249.99 close that confirmed the trigger, so the entry is at a marginally better price than the signal."
+   ],
    "bucket_aed": 500,
-   "held_as": "USDT",
-   "verified_drivers": "US spot BTC ETFs took $433m on Sept 18 (FBTC $311m, IBIT $108m); $238m of shorts liquidated; the CFTC sent a crypto market-regulation proposal to OMB for review; a softer dollar and cooling Treasury yields. The framing across coverage is a relief rally - a fully-priced Fed hike, a failed CLARITY vote and BoJ tightening all failed to push price down, and sidelined shorts were squeezed once selling dried up.",
-   "caution": "This is the fourth time the trigger has armed (Aug 3, Aug 15 on AVAX, Sept 5-6, now). Three of the previous three did not confirm. Also note some coverage flags BTC as overbought on this breakout, and BTC is now 17.2% off its 52-week high rather than the 18.6% of two weeks ago - the rally is real but it is a recovery inside a larger drawdown, not a new high.",
-   "re_arm": "Same trigger: BTC rating STRONG BUY on two consecutive closes."
+   "held_as": "BTC once executed"
   },
   "stock_shortlist_note": {
    "as_of": "2026-08-24",
@@ -241,10 +199,10 @@
   "clarification": "The rule always said 'daily close', but in practice all four trail triggers to date (BTC Aug 25, ETH Sept 4, LINK Sept 6 and Sept 7) were computed from the LIVE 07:10 UTC snapshot price, not from the last completed daily close. Crypto daily bars close at 00:00 UTC, so the snapshot is roughly seven hours into an unfinished bar. From 2026-09-10 the trail uses the last COMPLETED daily close. Existing stops are NOT lowered to match - see stop_method_correction on the LINK position."
  },
  "event_risk": {
-  "as_of": "2026-09-19",
-  "resolved": "Fed hiked 25bp to 3.75-4.00% Sept 16 (unanimous, first since July 2023, more priced into 2027). CLARITY Act cloture failed Sept 15. AD Ports tender closed Sept 15. All three were bearish or neutral, and crypto rallied through every one of them.",
-  "current": "Relief-rally regime: bad news failing to move price lower is itself the signal being traded. CFTC crypto market-regulation proposal now at OMB.",
-  "stance": "No discretionary action. Two written rules are live: ETH exits on one close below 2,316.48, and the opportunity deploy fires only on a second consecutive BTC STRONG BUY close."
+  "as_of": "2026-09-20",
+  "regime": "Relief rally through uniformly bad news: a failed CLARITY cloture vote, the first Fed hike since July 2023 with more priced into 2027, and BoJ tightening. Six STRONG BUYs on the crypto board against zero on Sept 17.",
+  "next": "AVAX Helicon upgrade Sept 22.",
+  "stance": "Two written rules live after today's deploy: ETH exits on one close below 2,316.48, BTC exits on one close below 74,919.50. The AVAX candidate resolves on its own bounded trigger."
  },
  "reporting_rule": {
   "adopted": "2026-08-22",
@@ -356,17 +314,16 @@
   "cost_disclosed": "A close-based stop does NOT fill at the stop level. With one observation a day, the exit happens at the next daily reading, which can be well below the stop. Yesterday I wrote 'if it fires it fires near +17.1%' - that was imprecise, and the realistic fill is worse than the level."
  },
  "eth_stop_watch": {
-  "as_of": "2026-09-19",
+  "as_of": "2026-09-20",
   "stop": 2316.48,
   "trigger": "one daily CLOSE below 2,316.48",
-  "distance_pct": -11.8,
+  "distance_pct": -10.07,
   "locks_pct": 26.6,
   "recent_closes": [
-   2418.26,
    2447.28,
    2612.14,
-   2626.56
-  ],
-  "note": "Replaces eth_exit_watch. The 2,300 two-close exit is retired as superseded by the trail."
+   2632.69,
+   2575.8
+  ]
  }
 }
