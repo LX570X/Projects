@@ -1702,6 +1702,45 @@
    "action": "the book becomes two positions for the first time since Sept 14",
    "rationale": "After today's deploy the book is ETH at about $93.76 confirmed, plus roughly $136 of BTC advised, plus 209 AED of satellite reserve and 800 AED still waiting on the Al Ramz account that has not been opened. Total exposure near $230 of a roughly $505 pot. Two live exit rules, both single-close: ETH below 2,316.48, BTC below 74,919.50. Worth restating the standing caveat at a moment when the book is growing rather than only when it shrinks - NOTHING in this book has ever been reconciled against the exchange. The ETH quantity came from the user on 2026-07-17 and has never been re-confirmed; every instruction since, including today's, is advice whose execution is unknown to me. Four numbers from the Binance wallet overview - ETH, BTC, LINK, USDT - would turn a plausible book into an accurate one.",
    "status": "reconciliation still outstanding"
+  },
+  {
+   "date": "2026-09-21",
+   "ticker": "AVAXUSDT",
+   "action": "candidate LAPSES under yesterday's rule - reserve stays uninvested",
+   "price": 11.193,
+   "rationale": "AVAX rose another 14.32% to 11.193, a second consecutive double-digit session and +32% in two days, and in doing so fell out of STRONG BUY to BUY (45 -> 35). Yesterday's bounded trigger said the candidate lapses if AVAX loses STRONG BUY before either deployment condition is met. It did. The candidate is closed and the 209 AED stays uninvested. Two things worth being straight about. FIRST, the rule produced the right answer for a reason I had not anticipated. I wrote the lapse clause imagining DETERIORATION - a candidate rolling over before I bought it. What happened instead is OVER-EXTENSION: RSI is 81.9, the most stretched reading this book has ever recorded, while core score is still 65. The headline band fell while the underlying stayed strong. SECOND, I am honouring the rule as written rather than reinterpreting it one day after setting it. Rewriting a constraint the day after it fires against me is exactly the goalpost-moving I have spent this month being careful about, and it does not need a clever justification anyway: declining to buy a coin at RSI 81.9 after +32% in two sessions is correct on the merits. What I am changing is the WORDING for future candidates - the clause should have keyed off CORE score rather than the headline band, since conflating deterioration with over-extension is precisely what core_score exists to prevent. That fix is explicitly NOT retroactive; under it AVAX would not have lapsed, which is why it cannot be applied today.",
+   "status": "LAPSED - reserve 209 AED uninvested"
+  },
+  {
+   "date": "2026-09-21",
+   "ticker": "BTCUSDT",
+   "action": "yesterday's caution answered in one session",
+   "price": 81581.32,
+   "rationale": "BTC +1.54% to 81,581.32 and the score rose 50 -> 75 on a fresh MACD bullish cross. The main caution I attached to yesterday's deploy was that the entire score of 50 was trend and structure with MACD momentum FLAT and unscored, so any deterioration would drop it straight back to BUY. That momentum term has now turned positive and core equals score at 75. The deployed position - 0.00169464 BTC advised at 80,340.01 - is worth about $138.25, up 1.55%. The trail computes 74,921.85 from Sunday's 81,178.00 close, an improvement of +0.00 ATR over the existing 74,919.50, so the stop is effectively unchanged and stays put; it will start ratcheting once BTC closes meaningfully higher. Fill remains UNCONFIRMED. The other cautions still stand unchanged: BTC is 16.7% below its 52-week high, and the Fed is still in a hiking cycle.",
+   "status": "open, +1.55% - fill unconfirmed"
+  },
+  {
+   "date": "2026-09-21",
+   "ticker": "ETHUSDT",
+   "action": "new high, nothing to do",
+   "price": 2662.22,
+   "rationale": "ETH +3.36% to 2,662.22 on its own fresh MACD bullish cross, score 75 with core equal to score - a clean upgrade with no stretch component, unlike yesterday's half-relief version. Position $96.90, +45.5%, the highest it has ever been. The trail computes 2,339.20 from Sunday's 2,645.21 close, an improvement of +0.22 ATR against the 2,316.48 stop - below the gate, so the stop holds at 12.99% below spot, locking +26.60%. One daily close below 2,316.48 still converts everything to USDT.",
+   "status": "open, +45.5% - no action"
+  },
+  {
+   "date": "2026-09-21",
+   "ticker": "crypto-broad",
+   "action": "nine of eleven at STRONG BUY, four days after zero",
+   "rationale": "BTC, ETH, BNB, SOL, DOGE, LINK and ADA all rate 75, LTC 65 and XRP 50 - nine of eleven, against ZERO on Sept 17. Four fresh MACD bullish crosses today on top of four on Sept 19. Verified context: global crypto market cap toward $2.8tn, the 10-year Treasury yield back below 5%, post-Fed-hike nerves fading, heavy short liquidations, L2 and DeFi tokens leading with names like Starknet and Arbitrum up over 17%. The swing from zero to nine in four sessions is genuine breadth, and it is also a reminder of how fast this scoring flips when MACD crosses cluster - the same mechanism that produced zero STRONG BUYs is producing nine. Separately LINK is back to STRONG BUY at 75 and 10.0% above our 11.412 exit; I closed the daily scorecard on Sept 19 and am not reopening it, but the direction has not reversed.",
+   "status": "logged"
+  },
+  {
+   "date": "2026-09-21",
+   "ticker": "IHC",
+   "action": "Saturday's upgrade reversed - fifth intraday label to fail",
+   "price": 366.1,
+   "rationale": "IHC -4.66% to 366.10, BUY -> SELL, and back below the 50-day it crossed on Saturday. On Sept 19 I reported it STRONG SELL -> BUY on a +4.77% move above its 50-day, from Friday's settled close. It has given the whole move back in one session and is exactly where it was. That is the fifth UAE band label in twelve days to fail within a session or two, after FAB, ADNOCDRILL, EMIRATESNBD and EMAAR. Note this one failed from a SETTLED close rather than an intraday print, which is a different and slightly worse case: the draft-versus-record distinction does not protect against a genuine one-day round trip. IHC's free float and the 366.00-366.20 range it has sat in for most of September suggest the same thin-trading mechanism as TECOM. Adding it to the muted set.",
+   "status": "band changes muted - no position"
   }
  ]
 }

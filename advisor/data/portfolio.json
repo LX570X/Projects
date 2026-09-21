@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-20T07:30+00:00",
+ "updated": "2026-09-21T07:30+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": 0,
@@ -20,12 +20,12 @@
    "stop": 2316.48,
    "plan": "Hold. ONE daily CLOSE below the stop (2,316.48) -> convert ALL to USDT, not another coin. The old 2,300 two-close exit and the 1,964 / 2,105 targets are retired: price is far above all of them and the trail now sits higher than any of them.",
    "action_required": {
-    "as_of": "2026-09-20",
+    "as_of": "2026-09-21",
     "end_state": "hold 0.0091 ETH - if you are already there, do nothing",
     "stop": 2316.48,
     "stop_raised_from": 2209.0,
     "trigger": "ONE daily CLOSE below 2,316.48 -> convert ALL to USDT",
-    "note": "Stop UNCHANGED at 2,316.48. The close-based trail (2,632.69 - 3 x 101.2700) computes 2,328.88, an improvement of only +0.12 ATR - far below the 1-ATR gate, so it holds. ETH 2,575.80 (-1.93%), $93.76, +40.8%. Band improved BUY -> STRONG BUY (50) purely because the Bollinger stretch penalty unwound as price eased - core score was 35 yesterday and 50 today, so some of this is genuine and some is penalty relief. Stop is 10.07% below spot and locks +26.60%. Trigger unchanged: ONE daily CLOSE below 2,316.48 -> convert ALL to USDT.",
+    "note": "Stop UNCHANGED at 2,316.48. The close-based trail (2,645.21 - 3 x 102.0036) computes 2,339.20, an improvement of +0.22 ATR - below the 1-ATR gate, so it holds. ETH 2,662.22 (+3.36%), $96.90, +45.5% - a new high for the position, on a fresh MACD bullish cross that lifts the score to 75 with core equal to score. Stop is 12.99% below spot and locks +26.60%. Trigger unchanged: ONE daily CLOSE below 2,316.48 -> convert ALL to USDT.",
     "ORDERING_CHANGE": "THE 2,300 CLOSE-EXIT IS RETIRED, and this is a real change in how the position exits. The new stop of 2,316.48 sits ABOVE the old 2,300 level, so the ordering I have restated daily - 'the 2,300 close-exit fires BEFORE the 2,209 hard stop' - is no longer possible: the trail has simply overtaken it. Leaving both in the book would mean carrying two conflicting triggers, so the 2,300 level is retired as superseded rather than left to be misread under pressure. THE EXIT IS NOW TIGHTER IN TWO WAYS: the level is 16.48 higher, and it needs ONE closing break instead of two consecutive ones. That is the trail rule and the close-based stop rule operating exactly as written, but it is a meaningful tightening and should not slip past unremarked. The upside is that a stop at 2,316.48 protects +26.6% where 2,300 protected nothing on its own and 2,209 protected +20.75%."
    },
    "fill": {
@@ -141,22 +141,18 @@
    }
   ],
   "satellite_candidate": {
-   "as_of": "2026-09-20",
+   "as_of": "2026-09-21",
    "ticker": "AVAXUSDT",
-   "status": "CANDIDATE - not deployed today",
-   "why": "Strongest satellite case on the board: STRONG BUY with core score 75, +15.4% today, +32.5% over a week, and verified institutional catalysts rather than a squeeze - a Paxos integration opening the network to over 650 financial institutions, New York Life Investment Management launching a tokenized fund on Avalanche, Janus Henderson becoming a validator, and the Helicon upgrade on Sept 22 cutting staking lock-up from two weeks to 48 hours.",
-   "why_not_today": "RSI 73.9 after a 15.4% session, which is why score reads 45 against core 75. Entering a satellite position into that, on the same day the 500 AED BTC deploy executes, is two entries in one session with one of them chasing. The reserve is 209 AED and does not need to be spent today.",
-   "BOUNDED_TRIGGER": {
-    "primary": "Deploy the 209 AED on the first daily CLOSE where AVAX still rates STRONG BUY and RSI has come back below 70.",
-    "backstop": "If RSI stays at or above 70 for FIVE consecutive sessions while the STRONG BUY holds, deploy anyway on the fifth.",
-    "why_the_backstop": "This is the direct fix for the LINK failure. The pullback-only rule there produced a watch that never acted while the coin ran 26% away, and re-siting the order twice turned a scale-in into a permanent trailing buy. Bounding the wait means the decision resolves either way inside a week instead of drifting.",
-    "expiry": "If AVAX loses STRONG BUY before either condition is met, the candidate lapses and the reserve stays uninvested."
-   },
-   "reserve_aed": 209
+   "status": "LAPSED - candidate closed, reserve NOT deployed",
+   "what_happened": "AVAX rose another 14.32% to 11.193, a second consecutive double-digit session and +32% in two days, and in doing so fell out of STRONG BUY to BUY (45 -> 35). Under the bounded trigger written yesterday, 'if AVAX loses STRONG BUY before either condition is met, the candidate lapses and the reserve stays uninvested'. It lost STRONG BUY. The candidate lapses.",
+   "honest_note": "The rule produced the right answer for a different reason than I had in mind. I wrote the lapse clause imagining DETERIORATION - a candidate rolling over before I bought it. What actually happened is OVER-EXTENSION: RSI is 81.9, the most stretched reading this book has recorded, and core score is still 65. So the headline band fell while the underlying stayed strong. I am honouring the rule as written rather than reinterpreting it one day after setting it, which is exactly the goalpost-moving I have been disciplined about all month. It also happens to be correct on the merits: not buying a coin at RSI 81.9 after +32% in two sessions needs no clever justification.",
+   "wording_defect": "The clause should have keyed off CORE score, not the headline band - that is the entire purpose of core_score, and 'loses STRONG BUY' conflates deterioration with over-extension. Fixing the wording for future candidates: a candidate lapses when CORE score falls below 45, not when the headline band does. Stating plainly that I am NOT applying this fix retroactively to rescue today's decision - under the corrected wording AVAX would not have lapsed (core 65), and rewriting a rule the day after it fires against me is precisely what the rule exists to prevent.",
+   "reserve_aed": 209,
+   "reserve_status": "uninvested"
   },
   "opportunity_status": {
-   "as_of": "2026-09-20",
-   "state": "CONFIRMED - DEPLOY FIRES",
+   "as_of": "2026-09-21",
+   "state": "DEPLOYED (instruction issued 2026-09-20) - fill UNCONFIRMED",
    "what_happened": "BTC rated STRONG BUY (50, core 50) on two consecutive readings - Friday's close of 80,883.87 and Saturday's 81,249.99. That satisfies the 2-day rule. First confirmation in FOUR armings of this trigger (Aug 3 BTC, Aug 15 AVAX, Sept 5-6 BTC all failed to confirm).",
    "instruction": {
     "end_state": "hold about $136 of BTC, funded from the 500 AED opportunity bucket held in USDT - if you are already there, do nothing",
@@ -175,7 +171,18 @@
     "Today BTC is -0.92% at 80,340.01, below the 81,249.99 close that confirmed the trigger, so the entry is at a marginally better price than the signal."
    ],
    "bucket_aed": 500,
-   "held_as": "BTC once executed"
+   "held_as": "BTC once executed",
+   "position_now": {
+    "indicative_qty": 0.00169464,
+    "entry": 80340.01,
+    "last": 81581.32,
+    "value_usd": 138.25,
+    "pnl_pct": 1.55,
+    "stop": 74919.5,
+    "stop_distance_pct": -8.17,
+    "trail_note": "The close-based trail computes 74,921.85 from Sunday's 81,178.00 close - an improvement of +0.00 ATR over the existing 74,919.50, so the stop is effectively unchanged and stays put. It will start ratcheting once BTC closes meaningfully higher.",
+    "signal_note": "BTC score rose 50 -> 75 on a fresh MACD bullish cross, so the momentum term that was FLAT and unscored at entry has now turned positive. The caution attached yesterday - that the whole score was trend and structure with no momentum - is answered one session later. Core equals score at 75."
+   }
   },
   "stock_shortlist_note": {
    "as_of": "2026-08-24",
@@ -199,10 +206,10 @@
   "clarification": "The rule always said 'daily close', but in practice all four trail triggers to date (BTC Aug 25, ETH Sept 4, LINK Sept 6 and Sept 7) were computed from the LIVE 07:10 UTC snapshot price, not from the last completed daily close. Crypto daily bars close at 00:00 UTC, so the snapshot is roughly seven hours into an unfinished bar. From 2026-09-10 the trail uses the last COMPLETED daily close. Existing stops are NOT lowered to match - see stop_method_correction on the LINK position."
  },
  "event_risk": {
-  "as_of": "2026-09-20",
-  "regime": "Relief rally through uniformly bad news: a failed CLARITY cloture vote, the first Fed hike since July 2023 with more priced into 2027, and BoJ tightening. Six STRONG BUYs on the crypto board against zero on Sept 17.",
+  "as_of": "2026-09-21",
+  "regime": "Broad risk-on. Global crypto market cap toward $2.8tn, the 10-year Treasury yield back below 5%, post-Fed-hike nerves fading, heavy short liquidations and L2/DeFi tokens leading. Nine of eleven watchlist cryptos now rate STRONG BUY, against zero on Sept 17.",
   "next": "AVAX Helicon upgrade Sept 22.",
-  "stance": "Two written rules live after today's deploy: ETH exits on one close below 2,316.48, BTC exits on one close below 74,919.50. The AVAX candidate resolves on its own bounded trigger."
+  "stance": "Two live exit rules, both single-close: ETH below 2,316.48, BTC below 74,919.50. Satellite reserve uninvested."
  },
  "reporting_rule": {
   "adopted": "2026-08-22",
@@ -314,16 +321,22 @@
   "cost_disclosed": "A close-based stop does NOT fill at the stop level. With one observation a day, the exit happens at the next daily reading, which can be well below the stop. Yesterday I wrote 'if it fires it fires near +17.1%' - that was imprecise, and the realistic fill is worse than the level."
  },
  "eth_stop_watch": {
-  "as_of": "2026-09-20",
+  "as_of": "2026-09-21",
   "stop": 2316.48,
   "trigger": "one daily CLOSE below 2,316.48",
-  "distance_pct": -10.07,
+  "distance_pct": -12.99,
   "locks_pct": 26.6,
   "recent_closes": [
-   2447.28,
    2612.14,
    2632.69,
-   2575.8
+   2645.21,
+   2662.22
   ]
+ },
+ "satellite_rule_fix": {
+  "adopted": "2026-09-21",
+  "rule": "A satellite candidate lapses when its CORE score falls below 45, not when its headline band does. Headline-band moves caused only by stretch penalties do not lapse a candidate, and do not trigger one either.",
+  "why": "The 2026-09-21 AVAX lapse fired on over-extension rather than deterioration. The outcome was right, the wording was not.",
+  "not_retroactive": "Does not apply to the AVAX candidate that lapsed on 2026-09-21."
  }
 }
