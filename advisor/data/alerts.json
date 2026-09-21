@@ -1,41 +1,113 @@
 {
- "generated_at_utc": "2026-09-20T07:08:30+00:00",
+ "generated_at_utc": "2026-09-21T07:09:19+00:00",
  "alerts": [
   {
+   "ticker": "BTCUSDT",
+   "severity": "info",
+   "type": "macd",
+   "msg": "BTCUSDT: MACD bullish cross"
+  },
+  {
    "ticker": "ETHUSDT",
+   "severity": "info",
+   "type": "macd",
+   "msg": "ETHUSDT: MACD bullish cross"
+  },
+  {
+   "ticker": "BNBUSDT",
+   "severity": "info",
+   "type": "macd",
+   "msg": "BNBUSDT: MACD bullish cross"
+  },
+  {
+   "ticker": "XRPUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "ETHUSDT: BUY -> STRONG BUY (score 25 -> 50)"
+   "msg": "XRPUSDT: BUY -> STRONG BUY (score 35 -> 50)"
+  },
+  {
+   "ticker": "DOGEUSDT",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "DOGEUSDT moved +4.4% in the last day (now 0.08906 USD)"
+  },
+  {
+   "ticker": "DOGEUSDT",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "DOGEUSDT: BUY -> STRONG BUY (score 35 -> 75)"
+  },
+  {
+   "ticker": "DOGEUSDT",
+   "severity": "info",
+   "type": "macd",
+   "msg": "DOGEUSDT: MACD bullish cross"
+  },
+  {
+   "ticker": "LINKUSDT",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "LINKUSDT moved +4.6% in the last day (now 12.555 USD)"
+  },
+  {
+   "ticker": "LINKUSDT",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "LINKUSDT: BUY -> STRONG BUY (score 35 -> 75)"
+  },
+  {
+   "ticker": "LINKUSDT",
+   "severity": "info",
+   "type": "macd",
+   "msg": "LINKUSDT: MACD bullish cross"
   },
   {
    "ticker": "AVAXUSDT",
-   "severity": "info",
-   "type": "rsi",
-   "msg": "AVAXUSDT: RSI crossed above 70 (now 73.9)"
-  },
-  {
-   "ticker": "GRAMUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "GRAMUSDT: SELL -> BUY (score -40 -> 25)"
+   "msg": "AVAXUSDT: STRONG BUY -> BUY (score 45 -> 35)"
   },
   {
-   "ticker": "GRAMUSDT",
+   "ticker": "ADAUSDT",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "ADAUSDT moved +5.4% in the last day (now 0.2326 USD)"
+  },
+  {
+   "ticker": "EMIRATESNBD",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "EMIRATESNBD: HOLD -> BUY (score -5 -> 35)"
+  },
+  {
+   "ticker": "DEWA",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "DEWA: SELL -> BUY (score -25 -> 35)"
+  },
+  {
+   "ticker": "FAB",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "FAB: BUY -> STRONG BUY (score 40 -> 50)"
+  },
+  {
+   "ticker": "IHC",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "IHC: BUY -> SELL (score 25 -> -35)"
+  },
+  {
+   "ticker": "IHC",
    "severity": "actionable",
    "type": "trend",
-   "msg": "GRAMUSDT: price crossed above its 50-day average \u2014 trend change"
+   "msg": "IHC: price crossed below its 50-day average \u2014 trend change"
   },
   {
-   "ticker": "EMIRATESNBD",
-   "severity": "info",
+   "ticker": "ADNOCDRILL",
+   "severity": "actionable",
    "type": "signal_change",
-   "msg": "EMIRATESNBD: SELL -> HOLD (score -25 -> -5)"
-  },
-  {
-   "ticker": "EMIRATESNBD",
-   "severity": "info",
-   "type": "macd",
-   "msg": "EMIRATESNBD: MACD bullish cross"
+   "msg": "ADNOCDRILL: STRONG SELL -> SELL (score -50 -> -40)"
   }
  ]
 }
