@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-21T07:30+00:00",
+ "updated": "2026-09-22T07:30+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": 0,
@@ -17,16 +17,15 @@
    "ref_value_usd": 66.6,
    "added": "2026-07-17",
    "source": "converted from BTC on Binance",
-   "stop": 2316.48,
+   "stop": 2449.83,
    "plan": "Hold. ONE daily CLOSE below the stop (2,316.48) -> convert ALL to USDT, not another coin. The old 2,300 two-close exit and the 1,964 / 2,105 targets are retired: price is far above all of them and the trail now sits higher than any of them.",
    "action_required": {
-    "as_of": "2026-09-21",
+    "as_of": "2026-09-22",
     "end_state": "hold 0.0091 ETH - if you are already there, do nothing",
-    "stop": 2316.48,
-    "stop_raised_from": 2209.0,
-    "trigger": "ONE daily CLOSE below 2,316.48 -> convert ALL to USDT",
-    "note": "Stop UNCHANGED at 2,316.48. The close-based trail (2,645.21 - 3 x 102.0036) computes 2,339.20, an improvement of +0.22 ATR - below the 1-ATR gate, so it holds. ETH 2,662.22 (+3.36%), $96.90, +45.5% - a new high for the position, on a fresh MACD bullish cross that lifts the score to 75 with core equal to score. Stop is 12.99% below spot and locks +26.60%. Trigger unchanged: ONE daily CLOSE below 2,316.48 -> convert ALL to USDT.",
-    "ORDERING_CHANGE": "THE 2,300 CLOSE-EXIT IS RETIRED, and this is a real change in how the position exits. The new stop of 2,316.48 sits ABOVE the old 2,300 level, so the ordering I have restated daily - 'the 2,300 close-exit fires BEFORE the 2,209 hard stop' - is no longer possible: the trail has simply overtaken it. Leaving both in the book would mean carrying two conflicting triggers, so the 2,300 level is retired as superseded rather than left to be misread under pressure. THE EXIT IS NOW TIGHTER IN TWO WAYS: the level is 16.48 higher, and it needs ONE closing break instead of two consecutive ones. That is the trail rule and the close-based stop rule operating exactly as written, but it is a meaningful tightening and should not slip past unremarked. The upside is that a stop at 2,316.48 protects +26.6% where 2,300 protected nothing on its own and 2,209 protected +20.75%."
+    "stop": 2449.83,
+    "stop_raised_from": 2316.48,
+    "trigger": "ONE daily CLOSE below 2,449.83 -> convert ALL to USDT",
+    "note": "STOP RAISED 2,316.48 -> 2,449.83. Monday's close of 2,776.19 minus 3 x ATR14 (108.7871) = 2,449.83, an improvement of +1.23 ATR, clearing the gate. Locks +33.89% versus the 1,829.70 entry, up from +26.60%, putting a floor of about $22.29 under the position. Stop is 10.28% below spot. ETH 2,730.55 (+2.59%), $99.39, +49.2% - a new high again. Score 65 against core 75: a 10-point Bollinger stretch penalty, so the headline dip from 75 is froth rather than deterioration."
    },
    "fill": {
     "state": "position confirmed by user 2026-07-17; the 2026-08-20 trim is UNCONFIRMED",
@@ -141,17 +140,17 @@
    }
   ],
   "satellite_candidate": {
-   "as_of": "2026-09-21",
-   "ticker": "AVAXUSDT",
-   "status": "LAPSED - candidate closed, reserve NOT deployed",
-   "what_happened": "AVAX rose another 14.32% to 11.193, a second consecutive double-digit session and +32% in two days, and in doing so fell out of STRONG BUY to BUY (45 -> 35). Under the bounded trigger written yesterday, 'if AVAX loses STRONG BUY before either condition is met, the candidate lapses and the reserve stays uninvested'. It lost STRONG BUY. The candidate lapses.",
-   "honest_note": "The rule produced the right answer for a different reason than I had in mind. I wrote the lapse clause imagining DETERIORATION - a candidate rolling over before I bought it. What actually happened is OVER-EXTENSION: RSI is 81.9, the most stretched reading this book has recorded, and core score is still 65. So the headline band fell while the underlying stayed strong. I am honouring the rule as written rather than reinterpreting it one day after setting it, which is exactly the goalpost-moving I have been disciplined about all month. It also happens to be correct on the merits: not buying a coin at RSI 81.9 after +32% in two sessions needs no clever justification.",
-   "wording_defect": "The clause should have keyed off CORE score, not the headline band - that is the entire purpose of core_score, and 'loses STRONG BUY' conflates deterioration with over-extension. Fixing the wording for future candidates: a candidate lapses when CORE score falls below 45, not when the headline band does. Stating plainly that I am NOT applying this fix retroactively to rescue today's decision - under the corrected wording AVAX would not have lapsed (core 65), and rewriting a rule the day after it fires against me is precisely what the rule exists to prevent.",
-   "reserve_aed": 209,
-   "reserve_status": "uninvested"
+   "as_of": "2026-09-22",
+   "ticker": null,
+   "status": "NO CANDIDATE - reserve uninvested",
+   "avax_note": "AVAX fell 4.39% today to 10.699 and is back at STRONG BUY (45, core 65) after yesterday's lapse. The lapse was right: not buying at RSI 81.9 saved 4.39% in one session, and RSI is still 74.2. I am NOT resurrecting the candidate 24 hours after closing it. Re-opening a position decision the day after a rule closed it is the same flip-flop the rule exists to prevent, whichever direction it points. AVAX is excluded from satellite consideration until 2026-09-28 as a cooling-off.",
+   "selection_rule": "Any new satellite candidate must have CORE score at or above 45 AND RSI below 70 at the moment of selection - the corrected wording adopted 2026-09-21.",
+   "why_nothing_today": "Ten of eleven cryptos rate STRONG BUY, so the constraint is not a shortage of candidates - it is that every one of them is extended after a four-session vertical move, and the reserve is 209 AED (about $57). Adding a third small position at the top of a run, on the same day both existing stops ratchet, is activity rather than edge.",
+   "expiry": "If no candidate qualifies by the monthly review, the 209 AED rolls into the next monthly plan rather than sitting as a permanent open order.",
+   "reserve_aed": 209
   },
   "opportunity_status": {
-   "as_of": "2026-09-21",
+   "as_of": "2026-09-22",
    "state": "DEPLOYED (instruction issued 2026-09-20) - fill UNCONFIRMED",
    "what_happened": "BTC rated STRONG BUY (50, core 50) on two consecutive readings - Friday's close of 80,883.87 and Saturday's 81,249.99. That satisfies the 2-day rule. First confirmation in FOUR armings of this trigger (Aug 3 BTC, Aug 15 AVAX, Sept 5-6 BTC all failed to confirm).",
    "instruction": {
@@ -165,23 +164,26 @@
     "risk": "6.75% to the stop, about $9.19 at risk. Against a total book of roughly $505 (ETH $93.76 plus 1,509 AED of buckets) that is 1.82%, inside the 1-2% per-idea limit in ADVISOR.md."
    },
    "cautions": [
-    "BTC's score of 50 sits barely above the STRONG BUY threshold of 45, and the whole of it is trend and structure - 25 for price above the 50-day, 15 for the 20-day above the 50-day, 10 for the 50-day sloping up. MACD momentum is FLAT and not scored, with the histogram slightly negative at -33.12. Any deterioration drops this straight back to BUY.",
-    "BTC is 17.96% below its 52-week high of 97,924.49. This is a recovery inside a drawdown, not a breakout to new ground.",
-    "The Fed is in a confirmed hiking cycle with more priced into 2027. The case for this entry is the relief-rally regime - bad news failing to move price down - which is positioning-dependent rather than fundamentals improving.",
-    "Today BTC is -0.92% at 80,340.01, below the 81,249.99 close that confirmed the trigger, so the entry is at a marginally better price than the signal."
+    "Published resistance is the 85,000-87,000 band BTC is sitting in right now, with consolidation or profit-taking flagged if it fails to hold above it.",
+    "BTC is above every major moving average and OUTSIDE the upper Bollinger band on multiple timeframes - extended by the same measure our own engine uses.",
+    "Fear & Greed is at 71 (Greed), and a FuturesWire poll shows 82.5% bullish against 17.5% bearish. Crowded positioning into resistance.",
+    "Drivers are institutional demand, corporate treasury purchases and short covering, with US spot ETFs taking $159.5m on Sept 17 and $433.0m on Sept 18. Short covering is the part that does not repeat.",
+    "BTC is 12.8% below its 52-week high of 97,924.49 - still a recovery inside a drawdown."
    ],
    "bucket_aed": 500,
    "held_as": "BTC once executed",
    "position_now": {
     "indicative_qty": 0.00169464,
     "entry": 80340.01,
-    "last": 81581.32,
-    "value_usd": 138.25,
-    "pnl_pct": 1.55,
-    "stop": 74919.5,
-    "stop_distance_pct": -8.17,
-    "trail_note": "The close-based trail computes 74,921.85 from Sunday's 81,178.00 close - an improvement of +0.00 ATR over the existing 74,919.50, so the stop is effectively unchanged and stays put. It will start ratcheting once BTC closes meaningfully higher.",
-    "signal_note": "BTC score rose 50 -> 75 on a fresh MACD bullish cross, so the momentum term that was FLAT and unscored at entry has now turned positive. The caution attached yesterday - that the whole score was trend and structure with no momentum - is answered one session later. Core equals score at 75."
+    "last": 85386.59,
+    "value_usd": 144.7,
+    "pnl_pct": 6.28,
+    "stop": 79304.74,
+    "stop_raised_from": 74919.5,
+    "trigger": "ONE daily CLOSE below 79,304.74 -> convert ALL back to USDT",
+    "stop_note": "STOP RAISED 74,919.50 -> 79,304.74. Monday's close of 86,620.00 minus 3 x ATR14 (2,438.42) = 79,304.74, an improvement of +1.80 ATR, clearing the gate on the second day of the position. IMPORTANT AND EASY TO MISREAD: the new stop is still 1.29% BELOW the 80,340.01 entry, so it does NOT yet lock a gain. What it does is cut the risk on this position from about $9.19 to about $1.76. The trail will lock profit on the next qualifying raise, not this one.",
+    "stop_distance_pct": -7.12,
+    "signal_note": "BTC +4.69% to 85,386.59, still STRONG BUY at 75 with core equal to score. Monday's high was 87,395.67."
    }
   },
   "stock_shortlist_note": {
@@ -206,10 +208,9 @@
   "clarification": "The rule always said 'daily close', but in practice all four trail triggers to date (BTC Aug 25, ETH Sept 4, LINK Sept 6 and Sept 7) were computed from the LIVE 07:10 UTC snapshot price, not from the last completed daily close. Crypto daily bars close at 00:00 UTC, so the snapshot is roughly seven hours into an unfinished bar. From 2026-09-10 the trail uses the last COMPLETED daily close. Existing stops are NOT lowered to match - see stop_method_correction on the LINK position."
  },
  "event_risk": {
-  "as_of": "2026-09-21",
-  "regime": "Broad risk-on. Global crypto market cap toward $2.8tn, the 10-year Treasury yield back below 5%, post-Fed-hike nerves fading, heavy short liquidations and L2/DeFi tokens leading. Nine of eleven watchlist cryptos now rate STRONG BUY, against zero on Sept 17.",
-  "next": "AVAX Helicon upgrade Sept 22.",
-  "stance": "Two live exit rules, both single-close: ETH below 2,316.48, BTC below 74,919.50. Satellite reserve uninvested."
+  "as_of": "2026-09-22",
+  "regime": "Ten of eleven watchlist cryptos rate STRONG BUY, five days after ZERO did. BTC is testing published 85,000-87,000 resistance while outside its upper Bollinger band on multiple timeframes, with Fear & Greed at 71 and an 82.5% bullish poll. Extended and crowded, not broken.",
+  "stance": "Both live exits are single-close and both ratcheted today: ETH below 2,449.83, BTC below 79,304.74. No discretionary action."
  },
  "reporting_rule": {
   "adopted": "2026-08-22",
@@ -321,16 +322,16 @@
   "cost_disclosed": "A close-based stop does NOT fill at the stop level. With one observation a day, the exit happens at the next daily reading, which can be well below the stop. Yesterday I wrote 'if it fires it fires near +17.1%' - that was imprecise, and the realistic fill is worse than the level."
  },
  "eth_stop_watch": {
-  "as_of": "2026-09-21",
-  "stop": 2316.48,
-  "trigger": "one daily CLOSE below 2,316.48",
-  "distance_pct": -12.99,
-  "locks_pct": 26.6,
+  "as_of": "2026-09-22",
+  "stop": 2449.83,
+  "trigger": "one daily CLOSE below 2,449.83",
+  "distance_pct": -10.28,
+  "locks_pct": 33.89,
   "recent_closes": [
-   2612.14,
    2632.69,
    2645.21,
-   2662.22
+   2776.19,
+   2730.55
   ]
  },
  "satellite_rule_fix": {

@@ -1,25 +1,33 @@
 {
- "updated": "2026-09-21T07:35+00:00",
+ "updated": "2026-09-22T07:35+00:00",
  "market_notes": [
   {
-   "market": "AVAX candidate LAPSES - and I am not rewriting the rule to save it",
-   "note": "AVAX rose another 14.32% to 11.193, +32% in two days, and in doing so fell out of STRONG BUY to BUY (45 -> 35). Yesterday's bounded trigger said the candidate lapses if it loses STRONG BUY before either deployment condition is met. It did, so the candidate is closed and the 209 AED stays uninvested. The rule fired for a reason I had not anticipated: I wrote the lapse clause imagining DETERIORATION, and what happened was OVER-EXTENSION - RSI 81.9, the most stretched reading this book has recorded, with core score still 65. Honouring it as written rather than reinterpreting a constraint one day after setting it. It is also right on the merits: declining to buy at RSI 81.9 after +32% in two sessions needs no clever justification. The WORDING is fixed for future candidates - lapse on CORE score below 45, not the headline band - and that fix is explicitly NOT retroactive, because under it AVAX would not have lapsed."
+   "market": "BOTH stops ratchet - first time in this book",
+   "note": "ETH 2,316.48 -> 2,449.83 (+1.23 ATR), locking +33.89% and putting a floor of about $22.29 under a position worth $99.39 at +49.2%. BTC 74,919.50 -> 79,304.74 (+1.80 ATR) on the second day of the position. Both trigger on ONE daily close. Neither stop was a judgement call - both fell straight out of the close-based formula, which is the whole point of having it."
   },
   {
-   "market": "BTC - yesterday's caution answered in one session",
-   "note": "BTC +1.54% to 81,581.32 with the score rising 50 -> 75 on a fresh MACD bullish cross. The main caution attached to the deploy was that the whole score was trend and structure with MACD momentum FLAT and unscored; that term has now turned positive and core equals score at 75. The position - 0.00169464 advised at 80,340.01 - is worth about $138.25, up 1.55%. The trail computes 74,921.85 against the existing 74,919.50, an improvement of +0.00 ATR, so the stop is effectively unchanged and will only start ratcheting on a meaningfully higher close. Fill UNCONFIRMED. Other cautions stand: BTC is 16.7% below its 52-week high and the Fed is still hiking."
+   "market": "The BTC raise does NOT lock a gain - stated plainly because it is easy to misread",
+   "note": "The new 79,304.74 stop is still 1.29% BELOW the 80,340.01 entry. It cuts the risk on the position from about $9.19 to about $1.76; it does not bank profit. That happens on the NEXT qualifying raise. The position itself is worth $144.70, up 6.28%, with BTC +4.69% to 85,386.59 after a Monday high of 87,395.67."
   },
   {
-   "market": "ETH at a new high",
-   "note": "ETH +3.36% to 2,662.22 on its own fresh MACD bullish cross, score 75 with core equal to score - a clean upgrade with no stretch component, unlike yesterday's half-relief version. Position $96.90, +45.5%, the highest it has ever been. Trail computes 2,339.20, +0.22 ATR, below the gate, so the stop holds at 2,316.48 - 12.99% below spot, locking +26.60%. One close below it converts everything to USDT."
+   "market": "Extended and crowded, not broken",
+   "note": "Published resistance is the 85,000-87,000 band BTC is sitting in right now, with profit-taking flagged if it fails to hold above. BTC is above every major moving average and OUTSIDE its upper Bollinger band on multiple timeframes - extended by the same measure our own engine uses. Fear & Greed is 71 (Greed) and a FuturesWire poll shows 82.5% bullish against 17.5% bearish. Drivers are institutional demand, corporate treasury purchases and SHORT COVERING, with US spot ETFs taking $159.5m on Sept 17 and $433.0m on Sept 18 - short covering being the part that does not repeat. BTC remains 12.8% below its 52-week high."
   },
   {
-   "market": "Nine of eleven at STRONG BUY, four days after zero",
-   "note": "BTC, ETH, BNB, SOL, DOGE, LINK and ADA all at 75, LTC 65, XRP 50. Four fresh MACD bullish crosses today on top of four on Sept 19. Verified context: global crypto market cap toward $2.8tn, the 10-year Treasury yield back below 5%, post-Fed nerves fading, heavy short liquidations, L2 and DeFi leading with Starknet and Arbitrum up over 17%. Genuine breadth - and also a reminder how fast this scoring flips when MACD crosses cluster, since the same mechanism produced zero STRONG BUYs four sessions ago. LINK is back to STRONG BUY at 75 and 10.0% above our exit; the daily scorecard on that stays closed."
+   "market": "Ten of eleven cryptos at STRONG BUY, five days after zero",
+   "note": "Only GRAM (BUY 30) is outside. DOGE +11.44%, XRP +5.76% on a MACD bullish cross, ADA +5.16%, BTC +4.69%, SOL +4.00%, LTC +3.72%. AVAX was the single red name at -4.39%. Several now carry stretch penalties - ETH 65 against core 75, LTC 45 against core 65, ADA 55 against core 65 - which is the engine flagging extension across the board rather than one name."
   },
   {
-   "market": "IHC reverses Saturday's upgrade - and from a SETTLED close",
-   "note": "IHC -4.66% to 366.10, BUY -> SELL, back below the 50-day it crossed on Saturday, giving the whole +4.77% move back in one session. Fifth UAE band label in twelve days to fail, after FAB, ADNOCDRILL, EMIRATESNBD and EMAAR - but this one failed from a settled close rather than an intraday print, which the draft-versus-record distinction does not protect against. IHC has sat in a 366.00-366.20 range for most of September, suggesting the same thin-trading mechanism as TECOM. Added to the muted set. Elsewhere: EMIRATESNBD HOLD -> BUY, DEWA SELL -> BUY (muted), FAB BUY -> STRONG BUY, ADNOCDRILL STRONG SELL -> SELL."
+   "market": "AVAX lapse vindicated in a day, and still not resurrected",
+   "note": "AVAX -4.39% to 10.699, the only red crypto, back at STRONG BUY (45, core 65). Yesterday's lapse at RSI 81.9 saved 4.39% in one session and RSI is still 74.2. NOT re-opening the candidate 24 hours after a rule closed it - re-opening a decision the day after a constraint fires is the same flip-flop the constraint exists to prevent, whichever way it points. Excluded from satellite consideration until 2026-09-28."
+  },
+  {
+   "market": "No satellite candidate, and not for lack of names",
+   "note": "Ten STRONG BUYs means no shortage passes a screen. The constraint is that all of them are extended after a four-session vertical move and the reserve is 209 AED, about $57. Adding a third small position at the top of a run, on the day both existing stops ratchet, is activity rather than edge. Any new candidate must clear CORE score 45+ AND RSI below 70 at selection; if nothing qualifies by the monthly review the reserve rolls forward rather than sitting as a permanent open order - that expiry exists because the LINK second-half order drifted for three weeks without one."
+  },
+  {
+   "market": "UAE - the muted set keeps earning its name",
+   "note": "TECOM BUY -> SELL on a MACD bearish cross and 50-day crossing, its second full reversal in two sessions and roughly the thirteenth band change in ten weeks. DEWA BUY -> SELL, also two days after the opposite. Both muted, both behaved as muting predicted. Genuine: EMIRATESNBD BUY -> STRONG BUY (50) above its 50-day, its first constructive signal since the two-day surge round-tripped; DU HOLD -> BUY; SALIK SELL -> STRONG SELL; EMAARDEV HOLD -> SELL; ADNOCDRILL -55, weakest on the board. EMAAR -2.71%. All Tuesday intraday drafts."
   }
  ],
  "asset_notes": {
@@ -383,6 +391,12 @@
     "impact": "bullish",
     "date": "2026-09-21",
     "source": "news research pass"
+   },
+   {
+    "headline": "+4.69% to 85,386.59 (Monday high 87,395.67), stop trailed to 79,304.74. Sitting in published 85,000-87,000 resistance, above every major MA and outside the upper Bollinger on multiple timeframes; Fear & Greed 71, poll 82.5% bullish. Drivers: institutional demand, corporate treasury buying, short covering, ETF inflows of $159.5m (Sept 17) and $433.0m (Sept 18)",
+    "impact": "bullish",
+    "date": "2026-09-22",
+    "source": "news research pass"
    }
   ],
   "ETHUSDT": [
@@ -553,6 +567,12 @@
     "impact": "bullish",
     "date": "2026-09-21",
     "source": "advisor data"
+   },
+   {
+    "headline": "+2.59% to 2,730.55, position +49.2% and a new high; stop trailed 2,316.48 -> 2,449.83 (+1.23 ATR), locking +33.89%. Score 65 vs core 75 on Bollinger stretch",
+    "impact": "bullish",
+    "date": "2026-09-22",
+    "source": "advisor data"
    }
   ],
   "BNBUSDT": [
@@ -717,6 +737,12 @@
     "impact": "bearish",
     "date": "2026-09-10",
     "source": "advisor data"
+   },
+   {
+    "headline": "+11.44% to 0.09927, the day's biggest mover; STRONG BUY with core 75 against score 65",
+    "impact": "bullish",
+    "date": "2026-09-22",
+    "source": "advisor data"
    }
   ],
   "DIB": [
@@ -792,6 +818,12 @@
     "headline": "Friday's settled close 30.42 (-2.5%), below its 50-day, STRONG BUY -> SELL - the entire two-day intraday surge has round-tripped with no catalyst ever found",
     "impact": "bearish",
     "date": "2026-09-19",
+    "source": "advisor data"
+   },
+   {
+    "headline": "BUY -> STRONG BUY (50) and crossed above its 50-day - first constructive signal since the two-day surge round-tripped",
+    "impact": "bullish",
+    "date": "2026-09-22",
     "source": "advisor data"
    }
   ],
@@ -1317,6 +1349,12 @@
     "impact": "neutral",
     "date": "2026-09-21",
     "source": "advisor data"
+   },
+   {
+    "headline": "-4.39% to 10.699, the only red crypto on the board - yesterday's lapse at RSI 81.9 saved that move in a single session. RSI still 74.2; excluded from satellite consideration until Sept 28",
+    "impact": "neutral",
+    "date": "2026-09-22",
+    "source": "advisor data"
    }
   ],
   "ADAUSDT": [
@@ -1605,12 +1643,12 @@
   ]
  },
  "risk_flags": [
-  "TWO live exit rules, both single-close: ETH on one daily close below 2,316.48 (locks +26.6%), BTC on one daily close below 74,919.50 (risks ~$9.19).",
-  "AVAX at RSI 81.9 is the most stretched reading this book has recorded. The satellite candidate lapsed rather than chasing it, and the 209 AED reserve stays uninvested.",
-  "Nine of eleven cryptos rate STRONG BUY four days after ZERO did. Breadth is real, but the same MACD-cross clustering that produced the zero produced the nine - the scoring swings faster than the market does.",
-  "BTC is still 16.7% below its 52-week high and the Fed remains in a hiking cycle with more priced into 2027. The rally rests on post-hike nerves fading and short liquidations, not on the news improving.",
-  "NOTHING in this book has ever been reconciled against the exchange. ETH dates from 2026-07-17; the BTC deploy issued yesterday is advice of unknown execution. Four numbers - ETH, BTC, LINK, USDT - would fix it.",
-  "UAE: five band labels in twelve days have failed within a session or two. IHC joins TECOM, DEWA, ADNOCDRILL and TALABAT with band changes muted - and IHC failed from a SETTLED close, which the draft-versus-record rule does not protect against.",
+  "BOTH stops ratcheted today and both are single-close: ETH below 2,449.83 (locks +33.89%), BTC below 79,304.74 (cuts risk to ~$1.76 but does NOT yet lock a gain - it is still 1.29% below entry).",
+  "BTC is testing published 85,000-87,000 resistance while above every major MA and OUTSIDE its upper Bollinger band on multiple timeframes. Fear & Greed 71, poll 82.5% bullish. Extended and crowded, not broken.",
+  "Part of the BTC move is SHORT COVERING, which does not repeat. Institutional demand and ETF inflows are the parts that can.",
+  "Ten of eleven cryptos rate STRONG BUY five days after ZERO did, and several now carry stretch penalties (ETH, LTC, ADA). The engine is flagging extension across the board, not in one name.",
+  "No satellite candidate: not for lack of names but because all of them are extended and the reserve is ~$57. Expiry set so it cannot drift - rolls forward at the monthly review if nothing qualifies.",
+  "NOTHING in this book has ever been reconciled against the exchange. ETH dates from 2026-07-17 and the BTC deploy from 2026-09-20 is advice of unknown execution. Four numbers - ETH, BTC, LINK, USDT - would fix it.",
   "800 AED of the core bucket remains unusable while the Al Ramz brokerage account stays unopened."
  ],
  "corrections": [
