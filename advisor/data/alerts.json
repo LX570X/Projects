@@ -1,113 +1,95 @@
 {
- "generated_at_utc": "2026-09-21T07:09:19+00:00",
+ "generated_at_utc": "2026-09-22T07:09:04+00:00",
  "alerts": [
   {
    "ticker": "BTCUSDT",
    "severity": "info",
-   "type": "macd",
-   "msg": "BTCUSDT: MACD bullish cross"
+   "type": "big_move",
+   "msg": "BTCUSDT moved +4.7% in the last day (now 85386.6 USD)"
   },
   {
-   "ticker": "ETHUSDT",
+   "ticker": "SOLUSDT",
    "severity": "info",
-   "type": "macd",
-   "msg": "ETHUSDT: MACD bullish cross"
-  },
-  {
-   "ticker": "BNBUSDT",
-   "severity": "info",
-   "type": "macd",
-   "msg": "BNBUSDT: MACD bullish cross"
+   "type": "big_move",
+   "msg": "SOLUSDT moved +4.0% in the last day (now 116.61 USD)"
   },
   {
    "ticker": "XRPUSDT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "XRPUSDT: BUY -> STRONG BUY (score 35 -> 50)"
-  },
-  {
-   "ticker": "DOGEUSDT",
    "severity": "info",
    "type": "big_move",
-   "msg": "DOGEUSDT moved +4.4% in the last day (now 0.08906 USD)"
+   "msg": "XRPUSDT moved +5.8% in the last day (now 1.5192 USD)"
   },
   {
-   "ticker": "DOGEUSDT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "DOGEUSDT: BUY -> STRONG BUY (score 35 -> 75)"
-  },
-  {
-   "ticker": "DOGEUSDT",
+   "ticker": "XRPUSDT",
    "severity": "info",
    "type": "macd",
-   "msg": "DOGEUSDT: MACD bullish cross"
+   "msg": "XRPUSDT: MACD bullish cross"
   },
   {
-   "ticker": "LINKUSDT",
+   "ticker": "LTCUSDT",
+   "severity": "info",
+   "type": "rsi",
+   "msg": "LTCUSDT: RSI crossed above 70 (now 70.5)"
+  },
+  {
+   "ticker": "EMAAR",
    "severity": "info",
    "type": "big_move",
-   "msg": "LINKUSDT moved +4.6% in the last day (now 12.555 USD)"
-  },
-  {
-   "ticker": "LINKUSDT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "LINKUSDT: BUY -> STRONG BUY (score 35 -> 75)"
-  },
-  {
-   "ticker": "LINKUSDT",
-   "severity": "info",
-   "type": "macd",
-   "msg": "LINKUSDT: MACD bullish cross"
-  },
-  {
-   "ticker": "AVAXUSDT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "AVAXUSDT: STRONG BUY -> BUY (score 45 -> 35)"
-  },
-  {
-   "ticker": "ADAUSDT",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "ADAUSDT moved +5.4% in the last day (now 0.2326 USD)"
+   "msg": "EMAAR moved -2.7% in the last day (now 11.48 AED)"
   },
   {
    "ticker": "EMIRATESNBD",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "EMIRATESNBD: HOLD -> BUY (score -5 -> 35)"
+   "msg": "EMIRATESNBD: BUY -> STRONG BUY (score 35 -> 50)"
+  },
+  {
+   "ticker": "EMIRATESNBD",
+   "severity": "actionable",
+   "type": "trend",
+   "msg": "EMIRATESNBD: price crossed above its 50-day average \u2014 trend change"
+  },
+  {
+   "ticker": "SALIK",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "SALIK: SELL -> STRONG SELL (score -35 -> -50)"
   },
   {
    "ticker": "DEWA",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "DEWA: SELL -> BUY (score -25 -> 35)"
+   "severity": "info",
+   "type": "macd",
+   "msg": "DEWA: MACD bearish cross"
   },
   {
-   "ticker": "FAB",
+   "ticker": "EMAARDEV",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "FAB: BUY -> STRONG BUY (score 40 -> 50)"
+   "msg": "EMAARDEV: HOLD -> SELL (score 15 -> -35)"
   },
   {
-   "ticker": "IHC",
+   "ticker": "DU",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "IHC: BUY -> SELL (score 25 -> -35)"
+   "msg": "DU: HOLD -> BUY (score 15 -> 35)"
   },
   {
-   "ticker": "IHC",
+   "ticker": "TECOM",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "TECOM: BUY -> SELL (score 20 -> -45)"
+  },
+  {
+   "ticker": "TECOM",
+   "severity": "info",
+   "type": "macd",
+   "msg": "TECOM: MACD bearish cross"
+  },
+  {
+   "ticker": "TECOM",
    "severity": "actionable",
    "type": "trend",
-   "msg": "IHC: price crossed below its 50-day average \u2014 trend change"
-  },
-  {
-   "ticker": "ADNOCDRILL",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "ADNOCDRILL: STRONG SELL -> SELL (score -50 -> -40)"
+   "msg": "TECOM: price crossed below its 50-day average \u2014 trend change"
   }
  ]
 }
