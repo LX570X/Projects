@@ -1,95 +1,65 @@
 {
- "generated_at_utc": "2026-09-22T07:09:04+00:00",
+ "generated_at_utc": "2026-09-23T07:09:47+00:00",
  "alerts": [
   {
    "ticker": "BTCUSDT",
    "severity": "info",
-   "type": "big_move",
-   "msg": "BTCUSDT moved +4.7% in the last day (now 85386.6 USD)"
-  },
-  {
-   "ticker": "SOLUSDT",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "SOLUSDT moved +4.0% in the last day (now 116.61 USD)"
+   "type": "rsi",
+   "msg": "BTCUSDT: RSI crossed above 70 (now 72.6)"
   },
   {
    "ticker": "XRPUSDT",
    "severity": "info",
-   "type": "big_move",
-   "msg": "XRPUSDT moved +5.8% in the last day (now 1.5192 USD)"
+   "type": "rsi",
+   "msg": "XRPUSDT: RSI crossed above 70 (now 70.1)"
   },
   {
-   "ticker": "XRPUSDT",
+   "ticker": "DOGEUSDT",
    "severity": "info",
-   "type": "macd",
-   "msg": "XRPUSDT: MACD bullish cross"
+   "type": "rsi",
+   "msg": "DOGEUSDT: RSI crossed above 70 (now 72.2)"
+  },
+  {
+   "ticker": "ADAUSDT",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ADAUSDT: STRONG BUY -> BUY (score 55 -> 35) \u2014 stretch penalty applied, trend/momentum unchanged"
+  },
+  {
+   "ticker": "ADAUSDT",
+   "severity": "info",
+   "type": "rsi",
+   "msg": "ADAUSDT: RSI crossed above 70 (now 72.8)"
+  },
+  {
+   "ticker": "GRAMUSDT",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "GRAMUSDT: BUY -> STRONG BUY (score 30 -> 45)"
   },
   {
    "ticker": "LTCUSDT",
    "severity": "info",
-   "type": "rsi",
-   "msg": "LTCUSDT: RSI crossed above 70 (now 70.5)"
-  },
-  {
-   "ticker": "EMAAR",
-   "severity": "info",
    "type": "big_move",
-   "msg": "EMAAR moved -2.7% in the last day (now 11.48 AED)"
-  },
-  {
-   "ticker": "EMIRATESNBD",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "EMIRATESNBD: BUY -> STRONG BUY (score 35 -> 50)"
-  },
-  {
-   "ticker": "EMIRATESNBD",
-   "severity": "actionable",
-   "type": "trend",
-   "msg": "EMIRATESNBD: price crossed above its 50-day average \u2014 trend change"
+   "msg": "LTCUSDT moved +5.3% in the last day (now 64.05 USD)"
   },
   {
    "ticker": "SALIK",
-   "severity": "actionable",
+   "severity": "info",
    "type": "signal_change",
-   "msg": "SALIK: SELL -> STRONG SELL (score -35 -> -50)"
+   "msg": "SALIK: STRONG SELL -> HOLD (score -50 -> 15)"
   },
   {
    "ticker": "DEWA",
    "severity": "info",
-   "type": "macd",
-   "msg": "DEWA: MACD bearish cross"
-  },
-  {
-   "ticker": "EMAARDEV",
-   "severity": "actionable",
    "type": "signal_change",
-   "msg": "EMAARDEV: HOLD -> SELL (score 15 -> -35)"
-  },
-  {
-   "ticker": "DU",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "DU: HOLD -> BUY (score 15 -> 35)"
-  },
-  {
-   "ticker": "TECOM",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "TECOM: BUY -> SELL (score 20 -> -45)"
+   "msg": "DEWA: SELL -> HOLD (score -45 -> 5)"
   },
   {
    "ticker": "TECOM",
    "severity": "info",
-   "type": "macd",
-   "msg": "TECOM: MACD bearish cross"
-  },
-  {
-   "ticker": "TECOM",
-   "severity": "actionable",
-   "type": "trend",
-   "msg": "TECOM: price crossed below its 50-day average \u2014 trend change"
+   "type": "signal_change",
+   "msg": "TECOM: SELL -> HOLD (score -45 -> 15)"
   }
  ]
 }
