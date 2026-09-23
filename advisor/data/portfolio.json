@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-22T07:30+00:00",
+ "updated": "2026-09-23T07:30+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": 0,
@@ -20,12 +20,12 @@
    "stop": 2449.83,
    "plan": "Hold. ONE daily CLOSE below the stop (2,316.48) -> convert ALL to USDT, not another coin. The old 2,300 two-close exit and the 1,964 / 2,105 targets are retired: price is far above all of them and the trail now sits higher than any of them.",
    "action_required": {
-    "as_of": "2026-09-22",
+    "as_of": "2026-09-23",
     "end_state": "hold 0.0091 ETH - if you are already there, do nothing",
     "stop": 2449.83,
     "stop_raised_from": 2316.48,
     "trigger": "ONE daily CLOSE below 2,449.83 -> convert ALL to USDT",
-    "note": "STOP RAISED 2,316.48 -> 2,449.83. Monday's close of 2,776.19 minus 3 x ATR14 (108.7871) = 2,449.83, an improvement of +1.23 ATR, clearing the gate. Locks +33.89% versus the 1,829.70 entry, up from +26.60%, putting a floor of about $22.29 under the position. Stop is 10.28% below spot. ETH 2,730.55 (+2.59%), $99.39, +49.2% - a new high again. Score 65 against core 75: a 10-point Bollinger stretch penalty, so the headline dip from 75 is froth rather than deterioration."
+    "note": "Stop UNCHANGED at 2,449.83. The close-based trail (2,753.63 - 3 x 106.0836) computes 2,435.38, which is BELOW the existing stop, so max() holds it - the trail correctly refusing to loosen on a flat day. ETH 2,748.85 (+0.66%), $100.06, +50.2% - the position crosses $100 for the first time. Stop is 10.88% below spot and locks +33.89%. Score 65 against core 65, so today's reading carries no stretch penalty even with RSI at 69.3 - it is sitting just under the 70 line that is penalising most of the rest of the board."
    },
    "fill": {
     "state": "position confirmed by user 2026-07-17; the 2026-08-20 trim is UNCONFIRMED",
@@ -150,7 +150,7 @@
    "reserve_aed": 209
   },
   "opportunity_status": {
-   "as_of": "2026-09-22",
+   "as_of": "2026-09-23",
    "state": "DEPLOYED (instruction issued 2026-09-20) - fill UNCONFIRMED",
    "what_happened": "BTC rated STRONG BUY (50, core 50) on two consecutive readings - Friday's close of 80,883.87 and Saturday's 81,249.99. That satisfies the 2-day rule. First confirmation in FOUR armings of this trigger (Aug 3 BTC, Aug 15 AVAX, Sept 5-6 BTC all failed to confirm).",
    "instruction": {
@@ -175,15 +175,15 @@
    "position_now": {
     "indicative_qty": 0.00169464,
     "entry": 80340.01,
-    "last": 85386.59,
-    "value_usd": 144.7,
-    "pnl_pct": 6.28,
+    "last": 86403.37,
+    "value_usd": 146.42,
+    "pnl_pct": 7.55,
     "stop": 79304.74,
     "stop_raised_from": 74919.5,
     "trigger": "ONE daily CLOSE below 79,304.74 -> convert ALL back to USDT",
-    "stop_note": "STOP RAISED 74,919.50 -> 79,304.74. Monday's close of 86,620.00 minus 3 x ATR14 (2,438.42) = 79,304.74, an improvement of +1.80 ATR, clearing the gate on the second day of the position. IMPORTANT AND EASY TO MISREAD: the new stop is still 1.29% BELOW the 80,340.01 entry, so it does NOT yet lock a gain. What it does is cut the risk on this position from about $9.19 to about $1.76. The trail will lock profit on the next qualifying raise, not this one.",
-    "stop_distance_pct": -7.12,
-    "signal_note": "BTC +4.69% to 85,386.59, still STRONG BUY at 75 with core equal to score. Monday's high was 87,395.67."
+    "stop_note": "Stop UNCHANGED at 79,304.74. The trail computes 79,054.67 from Tuesday's 86,208.56 close, BELOW the existing stop, so it holds. Still 1.29% under the 80,340.01 entry, so it continues to cap the loss at about $1.76 rather than locking a gain.",
+    "stop_distance_pct": -8.22,
+    "signal_note": "BTC +1.20% to 86,403.37, still STRONG BUY but score 45 against core 65 - a 20-point RSI stretch penalty with RSI at 72.6, its first reading above 70 in this move."
    }
   },
   "stock_shortlist_note": {
@@ -322,16 +322,16 @@
   "cost_disclosed": "A close-based stop does NOT fill at the stop level. With one observation a day, the exit happens at the next daily reading, which can be well below the stop. Yesterday I wrote 'if it fires it fires near +17.1%' - that was imprecise, and the realistic fill is worse than the level."
  },
  "eth_stop_watch": {
-  "as_of": "2026-09-22",
+  "as_of": "2026-09-23",
   "stop": 2449.83,
   "trigger": "one daily CLOSE below 2,449.83",
-  "distance_pct": -10.28,
+  "distance_pct": -10.88,
   "locks_pct": 33.89,
   "recent_closes": [
-   2632.69,
    2645.21,
    2776.19,
-   2730.55
+   2753.63,
+   2748.85
   ]
  },
  "satellite_rule_fix": {
@@ -339,5 +339,11 @@
   "rule": "A satellite candidate lapses when its CORE score falls below 45, not when its headline band does. Headline-band moves caused only by stretch penalties do not lapse a candidate, and do not trigger one either.",
   "why": "The 2026-09-21 AVAX lapse fired on over-extension rather than deterioration. The outcome was right, the wording was not.",
   "not_retroactive": "Does not apply to the AVAX candidate that lapsed on 2026-09-21."
+ },
+ "stretch_watch": {
+  "as_of": "2026-09-23",
+  "note": "Six of eleven cryptos now carry stretch penalties, and the score-versus-core gaps are the widest this book has recorded: XRP 45 against core 75, ADA 35 against 65, BTC 45 against 65, DOGE 45 against 65, LTC 45 against 65, AVAX 45 against 65. Five separate RSI-above-70 crossings alerted in one session (BTC 72.6, XRP 70.1, DOGE 72.2, ADA 72.8, plus LTC at 78.8 and AVAX at 79.8 already above).",
+  "reading": "This is the engine saying the whole board is extended, not that anything has deteriorated - every single one of those names has core score 65 or better. The useful framing from coverage is that readings this stretched do not predict a top, but they do mean the easy part of the move has happened.",
+  "implication": "No action follows from it. Both stops are trailing mechanically and neither moved today. What it does change is the prior on any NEW entry: the satellite rule already requires RSI below 70 at selection, and on today's board that excludes six of the eleven."
  }
 }

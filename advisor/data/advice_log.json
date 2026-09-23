@@ -1783,6 +1783,28 @@
    "action": "the muted set keeps earning its name",
    "rationale": "TECOM BUY -> SELL on a MACD bearish cross and a 50-day crossing, its second full reversal in two sessions and roughly its thirteenth band change in ten weeks. DEWA BUY -> SELL on a MACD bearish cross, also two days after the opposite. Both are muted and both behaved exactly as muting predicted. Genuine moves elsewhere: EMIRATESNBD BUY -> STRONG BUY (50) crossing above its 50-day, its first constructive signal since the two-day surge round-tripped; DU HOLD -> BUY; SALIK SELL -> STRONG SELL; EMAARDEV HOLD -> SELL; ADNOCDRILL to -55, the weakest UAE score. EMAAR -2.71% clears the stock threshold. All Tuesday 11:10 Dubai intraday prints, so drafts.",
    "status": "advice only - no positions"
+  },
+  {
+   "date": "2026-09-23",
+   "ticker": "POSITIONS",
+   "action": "no action - both trails compute BELOW their existing stops",
+   "price": 2748.85,
+   "rationale": "ETH's trail computes 2,435.38 from Tuesday's 2,753.63 close and BTC's computes 79,054.67 from Tuesday's 86,208.56, both BELOW the stops raised yesterday, so max() holds each one unchanged. That is the trail refusing to loosen on a flat day, which is the half of the rule that never gets attention because nothing visible happens. ETH 2,748.85 (+0.66%), $100.06, +50.2% - the position crosses $100 for the first time since it was opened at $66.60 on 2026-07-17. BTC 86,403.37 (+1.20%), $146.42, +7.55%, stop still 1.29% under entry and capping the loss at about $1.76.",
+   "status": "no action"
+  },
+  {
+   "date": "2026-09-23",
+   "ticker": "crypto-broad",
+   "action": "the widest stretch readings this book has recorded",
+   "rationale": "Six of eleven cryptos carry stretch penalties and the score-versus-core gaps are the largest yet: XRP 45 against core 75, ADA 35 against 65, and BTC, DOGE, LTC and AVAX all 45 against 65. Five RSI-above-70 crossings alerted in a single session - BTC 72.6, XRP 70.1, DOGE 72.2, ADA 72.8 - with LTC at 78.8 and AVAX at 79.8 already there. ADA's downgrade came through correctly tagged 'stretch penalty applied, trend/momentum unchanged', which is exactly the case core_score was built for: a STRONG BUY -> BUY that would have read as deterioration and is nothing of the kind. GRAM BUY -> STRONG BUY completes the board - all eleven now rate STRONG BUY on core score. The honest reading is that the engine is flagging extension, not weakness, since every stretched name still has core 65 or better. Coverage frames it well: readings this stretched do not predict a top, but they do mean the easy part of the move has happened. Nothing follows for the two open positions - both stops trail mechanically - but it raises the bar on any new entry, and the satellite rule requiring RSI below 70 at selection now excludes six of the eleven.",
+   "status": "logged - no action"
+  },
+  {
+   "date": "2026-09-23",
+   "ticker": "UAE-stocks",
+   "action": "the SELL side lifts wholesale",
+   "rationale": "SALIK STRONG SELL -> HOLD (-50 to 15), DEWA SELL -> HOLD, TECOM SELL -> HOLD, EMAARDEV SELL -> HOLD. Four names out of the SELL bands in one session, on moves of 2.06%, 0.74%, 0.60% and -0.15% respectively - which is to say three of the four did not really move at all. That is the 50-day catching up to price rather than price doing anything, and it is why DEWA and TECOM are muted. SALIK is the only one with a real move behind it. Constructive elsewhere: EMIRATESNBD holds STRONG BUY at 50 with a second up session, ALDAR to 65, ADCB 65, FAB 50 - the ADX large-caps are the one genuinely consistent part of the UAE board. IHC -2.15%, still SELL, still muted. All Wednesday 11:10 Dubai intraday drafts.",
+   "status": "advice only - no positions"
   }
  ]
 }
