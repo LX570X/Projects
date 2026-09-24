@@ -1,21 +1,25 @@
 {
- "updated": "2026-09-23T07:35+00:00",
+ "updated": "2026-09-24T07:35+00:00",
  "market_notes": [
   {
-   "market": "No action - both trails computed BELOW their existing stops",
-   "note": "ETH's trail computes 2,435.38 from Tuesday's close and BTC's 79,054.67, both below the stops raised yesterday, so max() holds each unchanged. That is the trail refusing to loosen on a flat day - the half of the rule that never gets noticed because nothing visible happens. ETH 2,748.85 (+0.66%), $100.06, +50.2%, crossing $100 for the first time since the position opened at $66.60 on 2026-07-17. BTC 86,403.37 (+1.20%), $146.42, +7.55%, stop still 1.29% under entry and capping the loss at about $1.76."
+   "market": "The pullback arrived - and my stretch read was right directionally, wrong at the edges",
+   "note": "Ten of eleven cryptos fell: AVAX -8.40%, XRP -7.58%, DOGE -7.55%, ADA -6.78%, LINK -4.76%, SOL -3.35%, GRAM -3.06%, BTC -2.73%, ETH -2.40%, BNB -2.27%. Yesterday I flagged six stretch penalties and wrote that the easy part of the move had happened. The stretched alts did fall hardest and the extremes lined up. But the relationship is LOOSE and claiming otherwise would be the flattering mistake: BTC was stretched at RSI 72.6 and fell only 2.73%, LINK was least stretched of the heavy fallers at 64.3 and still lost 4.76%, and LTC - second most stretched at 78.8 - was the ONLY green name at +6.80%. Stretch ranked the downside directionally and missed the day's biggest single move entirely. One input among several, not a forecast."
   },
   {
-   "market": "The widest stretch readings this book has recorded",
-   "note": "Six of eleven cryptos carry stretch penalties and the score-versus-core gaps are the largest yet: XRP 45 against core 75, ADA 35 against 65, and BTC, DOGE, LTC and AVAX all 45 against 65. Five RSI-above-70 crossings alerted in one session - BTC 72.6, XRP 70.1, DOGE 72.2, ADA 72.8 - with LTC at 78.8 and AVAX at 79.8 already above. ADA's STRONG BUY -> BUY came through correctly tagged 'stretch penalty applied, trend/momentum unchanged', exactly the case core_score was built for. GRAM BUY -> STRONG BUY completes the board: all eleven now rate STRONG BUY on core score."
+   "market": "LTC's divergence has a catalyst",
+   "note": "LTC +6.80% to 68.36, alone against the board, driven by a Grayscale spot-Litecoin ETF filing on top of roughly +17% over the week and +22-23% over 30 days. Coverage notes LTCC has traded on Nasdaq as the first US spot Litecoin ETF since late October 2025 but that Litecoin ETF inflows have been minimal and lagging other altcoin funds - so this is anticipation of a new vehicle rather than money already arriving. Band fell STRONG BUY -> BUY, correctly tagged as stretch: score 35 against core 65. Not a satellite candidate - the rule requires RSI below 70 and LTC is at 80.3, the most extended reading on the board."
   },
   {
-   "market": "What the stretch does and does not mean",
-   "note": "The engine is flagging extension, not weakness - every stretched name still has core 65 or better. Coverage frames it usefully: readings this stretched do not predict a top, but they do mean the easy part of the move has happened. Nothing follows for the two open positions, since both stops trail mechanically and neither moved. What it does change is the bar on any NEW entry - the satellite rule already requires RSI below 70 at selection, and on today's board that excludes six of the eleven."
+   "market": "Positions - cushions narrowed, nothing actionable",
+   "note": "Both trails computed below their stops again (ETH 2,351.15 vs 2,449.83; BTC 76,968.83 vs 79,304.74), so both hold. ETH 2,684.58 (-2.40%), $97.72, +46.7% from +50.2%. BTC 84,084.01 (-2.73%), $142.49, +4.66% from +7.55%, back out of the 85,000-87,000 resistance band. The number worth watching: BTC's stop is now 5.68% below spot against 8.22% yesterday, and Wednesday's low was 83,500.01 - one more session of this size brings it into range. ETH's cushion went 10.88% to 8.74%. Triggers unchanged: single daily closes below 2,449.83 and 79,304.74."
   },
   {
-   "market": "UAE - the SELL side lifts wholesale, mostly without moving",
-   "note": "SALIK STRONG SELL -> HOLD (-50 to 15), DEWA SELL -> HOLD, TECOM SELL -> HOLD, EMAARDEV SELL -> HOLD. Four names out of the SELL bands on moves of +2.06%, +0.74%, +0.60% and -0.15% - three of the four barely moved at all. That is the 50-day catching up to price rather than price doing anything, which is precisely why DEWA and TECOM are muted. SALIK is the only one with a real move behind it. The ADX large-caps remain the one genuinely consistent part of the UAE board: EMIRATESNBD holds STRONG BUY at 50 on a second up session, ALDAR 65, ADCB 65, FAB 50. IHC -2.15%, still SELL, still muted."
+   "market": "Every stretch penalty has unwound",
+   "note": "Ten of the eleven now read score 65 with core 65 - the penalties that produced six 'downgrades' yesterday evaporated in a single down session, which is precisely why band changes driven by stretch are tagged rather than reported as signals. ADA went BUY -> STRONG BUY on penalty relief alone. Only LTC still carries a gap (35 against core 65) and only GRAM has genuinely weakened, to BUY 30 on core."
+  },
+  {
+   "market": "UAE - SALIK's turn is real, unlike most of this week's",
+   "note": "SALIK +4.46% to 5.62 and above its 50-day, a second consecutive session with a genuine move behind it, taking it from STRONG SELL -50 on Tuesday to HOLD 5 now. That is a different animal from yesterday's DEWA, TECOM and EMAARDEV exits from the SELL bands, which happened on sub-1% moves because the 50-day was catching up to a flat price. Also genuine: EAND BUY -> STRONG BUY (50), TALABAT HOLD -> BUY. ADNOCDRILL deteriorated to -65, the weakest score across all 30 assets."
   }
  ],
  "asset_notes": {
@@ -391,6 +395,12 @@
     "impact": "neutral",
     "date": "2026-09-23",
     "source": "advisor data"
+   },
+   {
+    "headline": "-2.73% to 84,084.01, back out of the 85,000-87,000 resistance band; RSI unwinds 72.6 to 64.4 and the stretch penalty disappears. Stop now 5.68% below spot against 8.22% yesterday",
+    "impact": "bearish",
+    "date": "2026-09-24",
+    "source": "advisor data"
    }
   ],
   "ETHUSDT": [
@@ -572,6 +582,12 @@
     "headline": "+0.66% to 2,748.85; position crosses $100 for the first time at $100.06, +50.2%. Score 65 with core 65 - no stretch penalty, RSI 69.3 sitting just under the line penalising most of the board",
     "impact": "bullish",
     "date": "2026-09-23",
+    "source": "advisor data"
+   },
+   {
+    "headline": "-2.40% to 2,684.58, position +46.7% from +50.2%; stop cushion narrows 10.88% to 8.74%",
+    "impact": "bearish",
+    "date": "2026-09-24",
     "source": "advisor data"
    }
   ],
@@ -926,6 +942,12 @@
     "headline": "+2.06% to 5.46, STRONG SELL -> HOLD (-50 to 15) - the only one of four UAE SELL-band exits today with a real move behind it",
     "impact": "bullish",
     "date": "2026-09-23",
+    "source": "advisor data"
+   },
+   {
+    "headline": "+4.46% to 5.62 and crossed above its 50-day - second consecutive session with a real move, taking it from STRONG SELL -50 on Tuesday to HOLD 5",
+    "impact": "bullish",
+    "date": "2026-09-24",
     "source": "advisor data"
    }
   ],
@@ -1367,6 +1389,12 @@
     "impact": "neutral",
     "date": "2026-09-22",
     "source": "advisor data"
+   },
+   {
+    "headline": "-8.40% to 10.213, the worst faller, having been the most stretched name at RSI 79.8 the day before",
+    "impact": "bearish",
+    "date": "2026-09-24",
+    "source": "advisor data"
    }
   ],
   "ADAUSDT": [
@@ -1599,6 +1627,12 @@
     "impact": "bearish",
     "date": "2026-09-15",
     "source": "advisor data"
+   },
+   {
+    "headline": "Deteriorates to -65, the weakest score across all 30 tracked assets",
+    "impact": "bearish",
+    "date": "2026-09-24",
+    "source": "advisor data"
    }
   ],
   "LTCUSDT": [
@@ -1624,6 +1658,12 @@
     "headline": "+5.34% to 64.05 with RSI 78.8; coverage flags it overbought and stalling at the band",
     "impact": "neutral",
     "date": "2026-09-23",
+    "source": "news research pass"
+   },
+   {
+    "headline": "+6.80% to 68.36, the only green crypto on a red board, on a Grayscale spot-Litecoin ETF filing; +17% on the week, RSI 80.3 - the most extended reading on the board. LTCC has traded on Nasdaq since late Oct 2025 but Litecoin ETF inflows have been minimal, so this is anticipation rather than money arriving",
+    "impact": "bullish",
+    "date": "2026-09-24",
     "source": "news research pass"
    }
   ],
@@ -1667,13 +1707,13 @@
   ]
  },
  "risk_flags": [
-  "SIX of eleven cryptos now carry RSI stretch penalties, the widest score-versus-core gaps this book has recorded. Extension, not weakness - every one still has core 65 or better - but the easy part of the move has happened.",
-  "Both stops are single-close and both HELD today (trails computed below them): ETH below 2,449.83 (locks +33.89%), BTC below 79,304.74 (caps loss at ~$1.76, still 1.29% under entry).",
-  "BTC's RSI crossed above 70 for the first time in this move. It remains in the published 85,000-87,000 resistance band.",
-  "Any NEW entry now faces a higher bar: the satellite rule requires RSI below 70 at selection, which excludes six of the eleven cryptos on today's board. AVAX stays excluded until Sept 28 regardless.",
+  "BTC's stop at 79,304.74 is now 5.68% below spot, against 8.22% yesterday. Wednesday's low was 83,500.01 - one more session of this size brings it into range. It caps the loss at ~$1.76 and does NOT yet lock a gain.",
+  "ETH's stop at 2,449.83 is 8.74% below spot, from 10.88% yesterday. It locks +33.89%. Both triggers are a SINGLE daily close.",
+  "Stretch penalties rank downside directionally but loosely - yesterday's six flagged names included BTC, which fell least among majors, and excluded nothing that explains LTC being the only green name while second-most stretched. Treat stretch as one input, not a forecast.",
+  "All stretch penalties unwound in one session, turning six of yesterday's 'downgrades' straight back into STRONG BUYs. This is exactly why stretch-driven band changes are tagged rather than reported as signals.",
   "NOTHING in this book has ever been reconciled against the exchange. ETH dates from 2026-07-17 and the BTC deploy from 2026-09-20 is advice of unknown execution. Four numbers - ETH, BTC, LINK, USDT - would fix it.",
-  "UAE band changes read at 11:10 Dubai are DRAFTS. Four names left the SELL bands today on moves of 2% or less, which is the 50-day catching up to price rather than price doing anything.",
-  "800 AED of the core bucket remains unusable while the Al Ramz brokerage account stays unopened."
+  "800 AED of the core bucket has been stuck since the plan began, waiting on an Al Ramz brokerage account that has not been opened.",
+  "UAE band changes read at 11:10 Dubai are DRAFTS. SALIK is this week's one UAE move with genuine price behind it; most of the others were the 50-day catching up to a flat price."
  ],
  "corrections": [
   "Prior context.json was 13 days stale (2026-07-17) because daily cycles were skipped 2026-07-20..29; refreshed 2026-07-30."

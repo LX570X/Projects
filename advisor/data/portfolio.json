@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-23T07:30+00:00",
+ "updated": "2026-09-24T07:30+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": 0,
@@ -20,12 +20,12 @@
    "stop": 2449.83,
    "plan": "Hold. ONE daily CLOSE below the stop (2,316.48) -> convert ALL to USDT, not another coin. The old 2,300 two-close exit and the 1,964 / 2,105 targets are retired: price is far above all of them and the trail now sits higher than any of them.",
    "action_required": {
-    "as_of": "2026-09-23",
+    "as_of": "2026-09-24",
     "end_state": "hold 0.0091 ETH - if you are already there, do nothing",
     "stop": 2449.83,
     "stop_raised_from": 2316.48,
     "trigger": "ONE daily CLOSE below 2,449.83 -> convert ALL to USDT",
-    "note": "Stop UNCHANGED at 2,449.83. The close-based trail (2,753.63 - 3 x 106.0836) computes 2,435.38, which is BELOW the existing stop, so max() holds it - the trail correctly refusing to loosen on a flat day. ETH 2,748.85 (+0.66%), $100.06, +50.2% - the position crosses $100 for the first time. Stop is 10.88% below spot and locks +33.89%. Score 65 against core 65, so today's reading carries no stretch penalty even with RSI at 69.3 - it is sitting just under the 70 line that is penalising most of the rest of the board."
+    "note": "Stop UNCHANGED at 2,449.83. The close-based trail computes 2,351.15 from Wednesday's 2,684.71 close, well BELOW the existing stop, so max() holds it. ETH 2,684.58 (-2.40%), $97.72, +46.7%, down from +50.2%. The stop is 8.74% below spot - it was 10.88% yesterday, so a 2.4% down day moved the cushion by 2.1 points. Band holds STRONG BUY at 65 with core equal to score; the stretch penalty that was absent yesterday is still absent, RSI now 63.2."
    },
    "fill": {
     "state": "position confirmed by user 2026-07-17; the 2026-08-20 trim is UNCONFIRMED",
@@ -150,7 +150,7 @@
    "reserve_aed": 209
   },
   "opportunity_status": {
-   "as_of": "2026-09-23",
+   "as_of": "2026-09-24",
    "state": "DEPLOYED (instruction issued 2026-09-20) - fill UNCONFIRMED",
    "what_happened": "BTC rated STRONG BUY (50, core 50) on two consecutive readings - Friday's close of 80,883.87 and Saturday's 81,249.99. That satisfies the 2-day rule. First confirmation in FOUR armings of this trigger (Aug 3 BTC, Aug 15 AVAX, Sept 5-6 BTC all failed to confirm).",
    "instruction": {
@@ -175,15 +175,15 @@
    "position_now": {
     "indicative_qty": 0.00169464,
     "entry": 80340.01,
-    "last": 86403.37,
-    "value_usd": 146.42,
-    "pnl_pct": 7.55,
+    "last": 84084.01,
+    "value_usd": 142.49,
+    "pnl_pct": 4.66,
     "stop": 79304.74,
     "stop_raised_from": 74919.5,
     "trigger": "ONE daily CLOSE below 79,304.74 -> convert ALL back to USDT",
-    "stop_note": "Stop UNCHANGED at 79,304.74. The trail computes 79,054.67 from Tuesday's 86,208.56 close, BELOW the existing stop, so it holds. Still 1.29% under the 80,340.01 entry, so it continues to cap the loss at about $1.76 rather than locking a gain.",
-    "stop_distance_pct": -8.22,
-    "signal_note": "BTC +1.20% to 86,403.37, still STRONG BUY but score 45 against core 65 - a 20-point RSI stretch penalty with RSI at 72.6, its first reading above 70 in this move."
+    "stop_note": "Stop UNCHANGED at 79,304.74. The trail computes 76,968.83 from Wednesday's 84,397.60 close, below the existing stop, so it holds. Still 1.29% under the 80,340.01 entry, capping the loss at about $1.76. WORTH WATCHING: the stop is now 5.68% below spot against 8.22% yesterday - Wednesday's low was 83,500.01, so one more session like this brings it into range.",
+    "stop_distance_pct": -5.68,
+    "signal_note": "BTC -2.73% to 84,084.01, back out of the 85,000-87,000 resistance band it was testing. Still STRONG BUY at 65 with core equal to score - the RSI stretch penalty flagged yesterday has already unwound, RSI 64.4 from 72.6."
    }
   },
   "stock_shortlist_note": {
@@ -322,16 +322,16 @@
   "cost_disclosed": "A close-based stop does NOT fill at the stop level. With one observation a day, the exit happens at the next daily reading, which can be well below the stop. Yesterday I wrote 'if it fires it fires near +17.1%' - that was imprecise, and the realistic fill is worse than the level."
  },
  "eth_stop_watch": {
-  "as_of": "2026-09-23",
+  "as_of": "2026-09-24",
   "stop": 2449.83,
   "trigger": "one daily CLOSE below 2,449.83",
-  "distance_pct": -10.88,
+  "distance_pct": -8.74,
   "locks_pct": 33.89,
   "recent_closes": [
-   2645.21,
    2776.19,
    2753.63,
-   2748.85
+   2684.71,
+   2684.58
   ]
  },
  "satellite_rule_fix": {
@@ -341,9 +341,8 @@
   "not_retroactive": "Does not apply to the AVAX candidate that lapsed on 2026-09-21."
  },
  "stretch_watch": {
-  "as_of": "2026-09-23",
-  "note": "Six of eleven cryptos now carry stretch penalties, and the score-versus-core gaps are the widest this book has recorded: XRP 45 against core 75, ADA 35 against 65, BTC 45 against 65, DOGE 45 against 65, LTC 45 against 65, AVAX 45 against 65. Five separate RSI-above-70 crossings alerted in one session (BTC 72.6, XRP 70.1, DOGE 72.2, ADA 72.8, plus LTC at 78.8 and AVAX at 79.8 already above).",
-  "reading": "This is the engine saying the whole board is extended, not that anything has deteriorated - every single one of those names has core score 65 or better. The useful framing from coverage is that readings this stretched do not predict a top, but they do mean the easy part of the move has happened.",
-  "implication": "No action follows from it. Both stops are trailing mechanically and neither moved today. What it does change is the prior on any NEW entry: the satellite rule already requires RSI below 70 at selection, and on today's board that excludes six of the eleven."
+  "as_of": "2026-09-24",
+  "outcome": "Yesterday six of eleven cryptos carried stretch penalties and I wrote that the engine was flagging extension rather than weakness, and that the easy part of the move had happened. Today the board fell and the stretched alts fell hardest - AVAX (RSI 79.8) -8.40%, XRP (70.1) -7.58%, DOGE (72.2) -7.55%, ADA (72.8) -6.78%. But the relationship is LOOSE, not clean, and overclaiming it would be the easy mistake: BTC was stretched at RSI 72.6 and fell only 2.73%, LINK was the least stretched of the big fallers at 64.3 and still fell 4.76%, and LTC - the second most stretched at 78.8 - was the ONLY green name on the board at +6.80%. Stretch ranked the downside directionally and got the extremes right, and it also completely missed the day's biggest single move. Treat it as one input among several, not a forecast.",
+  "now": "Every stretch penalty has unwound. All ten of the STRONG BUY names now read score 65 with core 65; only LTC still carries one (35 against core 65, RSI 80.3) and GRAM has genuinely weakened to BUY 30 on core."
  }
 }

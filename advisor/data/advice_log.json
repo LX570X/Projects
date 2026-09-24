@@ -1805,6 +1805,37 @@
    "action": "the SELL side lifts wholesale",
    "rationale": "SALIK STRONG SELL -> HOLD (-50 to 15), DEWA SELL -> HOLD, TECOM SELL -> HOLD, EMAARDEV SELL -> HOLD. Four names out of the SELL bands in one session, on moves of 2.06%, 0.74%, 0.60% and -0.15% respectively - which is to say three of the four did not really move at all. That is the 50-day catching up to price rather than price doing anything, and it is why DEWA and TECOM are muted. SALIK is the only one with a real move behind it. Constructive elsewhere: EMIRATESNBD holds STRONG BUY at 50 with a second up session, ALDAR to 65, ADCB 65, FAB 50 - the ADX large-caps are the one genuinely consistent part of the UAE board. IHC -2.15%, still SELL, still muted. All Wednesday 11:10 Dubai intraday drafts.",
    "status": "advice only - no positions"
+  },
+  {
+   "date": "2026-09-24",
+   "ticker": "crypto-broad",
+   "action": "the pullback arrived - and my stretch read was right directionally, wrong at the edges",
+   "rationale": "Ten of eleven cryptos fell: AVAX -8.40%, XRP -7.58%, DOGE -7.55%, ADA -6.78%, LINK -4.76%, SOL -3.35%, GRAM -3.06%, BTC -2.73%, ETH -2.40%, BNB -2.27%. Yesterday I recorded that six names carried stretch penalties, that the engine was flagging extension rather than weakness, and that the easy part of the move had happened. The stretched alts did fall hardest and the extremes lined up - AVAX at RSI 79.8 took the worst of it. But the relationship is LOOSE and claiming otherwise would be the easy, flattering mistake: BTC was stretched at RSI 72.6 and fell only 2.73%, LINK was the least stretched of the heavy fallers at 64.3 and still lost 4.76%, and LTC - the SECOND most stretched name on the board at RSI 78.8 - was the only green asset at +6.80%. Stretch ranked the downside directionally and completely missed the day's biggest single move. One input among several, not a forecast. Every penalty has now unwound: ten names read score 65 with core 65, LTC is the only one still carrying a stretch gap, and GRAM has genuinely weakened to BUY 30 on core.",
+   "status": "logged"
+  },
+  {
+   "date": "2026-09-24",
+   "ticker": "LTCUSDT",
+   "action": "the outlier has a catalyst - Grayscale ETF filing",
+   "price": 68.36,
+   "rationale": "LTC +6.80% to 68.36, the only green name on a board where everything else fell, and the second most overbought at RSI 80.3. A news pass gives it an asset-specific driver rather than beta: a Grayscale spot-Litecoin ETF filing, on top of a run of roughly 17% over the week and 22-23% over 30 days. Coverage notes that LTCC has been trading on Nasdaq as the first US spot Litecoin ETF since late October 2025 but that Litecoin ETF inflows have been minimal and lagging other altcoin funds - so this is anticipation of a new vehicle rather than money already arriving. Its band fell STRONG BUY -> BUY, correctly tagged 'stretch penalty applied, trend/momentum unchanged': score 35 against core 65. Not held and not a candidate - the satellite rule requires RSI below 70 at selection and LTC is at 80.3, the most extended reading on the board.",
+   "status": "advice only - not a candidate"
+  },
+  {
+   "date": "2026-09-24",
+   "ticker": "POSITIONS",
+   "action": "no action - both trails again computed below their stops",
+   "price": 2684.58,
+   "rationale": "ETH's trail computes 2,351.15 and BTC's 76,968.83, both below the stops set on Sept 22, so max() holds each. ETH 2,684.58 (-2.40%), $97.72, +46.7%, down from +50.2% yesterday. BTC 84,084.01 (-2.73%), $142.49, +4.66%, down from +7.55%, and back out of the 85,000-87,000 resistance band it was testing. The number worth watching: BTC's stop is now 5.68% below spot against 8.22% yesterday, and Wednesday's low was 83,500.01 - one more session of this size brings the stop into range. ETH's cushion narrowed from 10.88% to 8.74%. Neither is close enough to act on, and there is nothing to act on anyway: the rules are single daily closes below 2,449.83 and 79,304.74 respectively. No notification sent - both held assets moved less than the 4% crypto threshold, and the 4%-plus moves were all in names we do not own.",
+   "status": "no action"
+  },
+  {
+   "date": "2026-09-24",
+   "ticker": "UAE-stocks",
+   "action": "SALIK's turn is real, unlike most of this week's",
+   "price": 5.62,
+   "rationale": "SALIK +4.46% to 5.62 and crossed above its 50-day - the second consecutive session with a genuine move behind it after +2.06% yesterday, and a 10.2-point score improvement over two days from STRONG SELL -50 on Tuesday to HOLD 5 now. That is a different animal from the DEWA, TECOM and EMAARDEV exits from the SELL bands yesterday, which happened on moves of under 1% because the 50-day was catching up to a flat price. Also genuine: EAND BUY -> STRONG BUY (50) and TALABAT HOLD -> BUY. ADNOCDRILL deteriorated further to -65, now the weakest score on the entire board of 30 assets. Thursday 11:10 Dubai intraday drafts as always, and still nothing actionable while the Al Ramz account is unopened - the core bucket has been stuck at 800 AED since the plan began.",
+   "status": "advice only - no positions"
   }
  ]
 }
