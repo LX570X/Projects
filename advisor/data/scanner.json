@@ -1,102 +1,102 @@
 {
- "generated_at_utc": "2026-09-24T07:09:30+00:00",
+ "generated_at_utc": "2026-09-25T07:09:13+00:00",
  "movers": [
   {
-   "symbol": "NOMUSDT",
-   "last": 0.002631,
-   "change24h_pct": 49.659,
-   "quote_volume24h": 23207812.374759,
-   "rsi": 82.8,
+   "symbol": "QIUSDT",
+   "last": 0.002978,
+   "change24h_pct": 100.945,
+   "quote_volume24h": 9579679.285756,
+   "rsi": 89.2,
    "above_sma20": true,
    "above_sma50": true,
    "setup": false
   },
   {
-   "symbol": "MUBARAKUSDT",
-   "last": 0.05045,
-   "change24h_pct": -34.642,
-   "quote_volume24h": 34124605.837795,
-   "rsi": 60.9,
+   "symbol": "QNTUSDT",
+   "last": 103.65,
+   "change24h_pct": 44.601,
+   "quote_volume24h": 9085056.00506,
+   "rsi": 83.8,
+   "above_sma20": true,
+   "above_sma50": true,
+   "setup": false
+  },
+  {
+   "symbol": "XPLUSDT",
+   "last": 0.11804,
+   "change24h_pct": 30.85,
+   "quote_volume24h": 48314408.695335,
+   "rsi": 68.3,
+   "above_sma20": true,
+   "above_sma50": true,
+   "setup": true
+  },
+  {
+   "symbol": "SAGAUSDT",
+   "last": 0.03314,
+   "change24h_pct": -27.61,
+   "quote_volume24h": 74103466.553302,
+   "rsi": 53.0,
+   "above_sma20": true,
+   "above_sma50": true,
+   "setup": false
+  },
+  {
+   "symbol": "ONDOUSDT",
+   "last": 0.5483,
+   "change24h_pct": 26.833,
+   "quote_volume24h": 141338424.99276,
+   "rsi": 74.1,
+   "above_sma20": true,
+   "above_sma50": true,
+   "setup": false
+  },
+  {
+   "symbol": "PHAUSDT",
+   "last": 0.0569,
+   "change24h_pct": 22.103,
+   "quote_volume24h": 8180642.1693,
+   "rsi": 87.2,
+   "above_sma20": true,
+   "above_sma50": true,
+   "setup": false
+  },
+  {
+   "symbol": "BROCCOLI714USDT",
+   "last": 0.02999,
+   "change24h_pct": 20.104,
+   "quote_volume24h": 20861007.39423,
+   "rsi": 75.6,
+   "above_sma20": true,
+   "above_sma50": true,
+   "setup": false
+  },
+  {
+   "symbol": "NOMUSDT",
+   "last": 0.00216,
+   "change24h_pct": -18.398,
+   "quote_volume24h": 15692973.382855,
+   "rsi": 74.5,
+   "above_sma20": true,
+   "above_sma50": true,
+   "setup": false
+  },
+  {
+   "symbol": "ARKUSDT",
+   "last": 0.2008,
+   "change24h_pct": 17.91,
+   "quote_volume24h": 6821856.102,
+   "rsi": 78.9,
    "above_sma20": true,
    "above_sma50": true,
    "setup": false
   },
   {
    "symbol": "NILUSDT",
-   "last": 0.12841,
-   "change24h_pct": 26.775,
-   "quote_volume24h": 35652064.980825,
-   "rsi": 89.7,
-   "above_sma20": true,
-   "above_sma50": true,
-   "setup": false
-  },
-  {
-   "symbol": "LSKUSDT",
-   "last": 0.3888,
-   "change24h_pct": 24.655,
-   "quote_volume24h": 17382343.86779,
-   "rsi": 56.9,
-   "above_sma20": true,
-   "above_sma50": true,
-   "setup": true
-  },
-  {
-   "symbol": "RAYUSDT",
-   "last": 2.1123,
-   "change24h_pct": 16.87,
-   "quote_volume24h": 21003637.86681,
-   "rsi": 77.6,
-   "above_sma20": true,
-   "above_sma50": true,
-   "setup": false
-  },
-  {
-   "symbol": "ONEUSDT",
-   "last": 0.002487,
-   "change24h_pct": -16.291,
-   "quote_volume24h": 16637594.1441384,
-   "rsi": 58.7,
-   "above_sma20": true,
-   "above_sma50": true,
-   "setup": false
-  },
-  {
-   "symbol": "BONKUSDT",
-   "last": 3.58e-06,
-   "change24h_pct": -12.895,
-   "quote_volume24h": 16265170.15512369,
-   "rsi": 65.5,
-   "above_sma20": true,
-   "above_sma50": true,
-   "setup": false
-  },
-  {
-   "symbol": "ARBUSDT",
-   "last": 0.2169,
-   "change24h_pct": -12.328,
-   "quote_volume24h": 36653986.85054,
-   "rsi": 66.6,
-   "above_sma20": true,
-   "above_sma50": true,
-   "setup": false
-  },
-  {
-   "symbol": "PEPEUSDT",
-   "last": 4.39e-06,
-   "change24h_pct": -11.492,
-   "quote_volume24h": 76683225.51460125,
-   "rsi": 61.0,
-   "above_sma20": true,
-   "above_sma50": true,
-   "setup": false
-  },
-  {
-   "symbol": "UNIUSDT",
-   "last": 9.232,
-   "change24h_pct": -11.282,
-   "quote_volume24h": 143933480.01232,
-   "rsi": 68.6,
+   "last": 0.10716,
+   "change24h_pct": -16.575,
+   "quote_volume24h": 23268927.678789,
+   "rsi": 73.6,
    "above_sma20": true,
    "above_sma50": true,
    "setup": false

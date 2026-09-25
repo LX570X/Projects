@@ -1,47 +1,89 @@
 {
- "generated_at_utc": "2026-09-24T07:09:30+00:00",
+ "generated_at_utc": "2026-09-25T07:09:13+00:00",
  "alerts": [
   {
-   "ticker": "DOGEUSDT",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "DOGEUSDT moved -7.6% in the last day (now 0.09425 USD)"
-  },
-  {
-   "ticker": "LINKUSDT",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "LINKUSDT moved -4.8% in the last day (now 12.397 USD)"
-  },
-  {
-   "ticker": "LTCUSDT",
+   "ticker": "BNBUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "LTCUSDT: STRONG BUY -> BUY (score 45 -> 35) \u2014 stretch penalty applied, trend/momentum unchanged"
+   "msg": "BNBUSDT: STRONG BUY -> BUY (score 65 -> 40)"
   },
   {
-   "ticker": "SALIK",
+   "ticker": "BNBUSDT",
+   "severity": "info",
+   "type": "macd",
+   "msg": "BNBUSDT: MACD bearish cross"
+  },
+  {
+   "ticker": "EMIRATESNBD",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "EMIRATESNBD: STRONG BUY -> BUY (score 50 -> 35)"
+  },
+  {
+   "ticker": "DIB",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "DIB: STRONG SELL -> SELL (score -50 -> -35)"
+  },
+  {
+   "ticker": "DEWA",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "DEWA: HOLD -> SELL (score 5 -> -45)"
+  },
+  {
+   "ticker": "TALABAT",
    "severity": "info",
    "type": "big_move",
-   "msg": "SALIK moved +4.5% in the last day (now 5.62 AED)"
-  },
-  {
-   "ticker": "SALIK",
-   "severity": "actionable",
-   "type": "trend",
-   "msg": "SALIK: price crossed above its 50-day average \u2014 trend change"
+   "msg": "TALABAT moved -3.4% in the last day (now 1.15 AED)"
   },
   {
    "ticker": "TALABAT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "TALABAT: HOLD -> BUY (score 15 -> 30)"
+   "msg": "TALABAT: BUY -> SELL (score 30 -> -35)"
   },
   {
-   "ticker": "EAND",
+   "ticker": "TALABAT",
+   "severity": "actionable",
+   "type": "trend",
+   "msg": "TALABAT: price crossed below its 50-day average \u2014 trend change"
+  },
+  {
+   "ticker": "TECOM",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "EAND: BUY -> STRONG BUY (score 35 -> 50)"
+   "msg": "TECOM: HOLD -> SELL (score 15 -> -35)"
+  },
+  {
+   "ticker": "ADCB",
+   "severity": "info",
+   "type": "rsi",
+   "msg": "ADCB: RSI crossed above 70 (now 71.4)"
+  },
+  {
+   "ticker": "ADNOCGAS",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ADNOCGAS: SELL -> BUY (score -25 -> 25)"
+  },
+  {
+   "ticker": "ADNOCGAS",
+   "severity": "actionable",
+   "type": "trend",
+   "msg": "ADNOCGAS: price crossed above its 50-day average \u2014 trend change"
+  },
+  {
+   "ticker": "ADIB",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ADIB: BUY -> STRONG BUY (score 35 -> 50)"
+  },
+  {
+   "ticker": "ADNOCDRILL",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ADNOCDRILL: STRONG SELL -> SELL (score -65 -> -40)"
   }
  ]
 }
