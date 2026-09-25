@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-24T07:30+00:00",
+ "updated": "2026-09-25T07:30+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": 0,
@@ -20,12 +20,12 @@
    "stop": 2449.83,
    "plan": "Hold. ONE daily CLOSE below the stop (2,316.48) -> convert ALL to USDT, not another coin. The old 2,300 two-close exit and the 1,964 / 2,105 targets are retired: price is far above all of them and the trail now sits higher than any of them.",
    "action_required": {
-    "as_of": "2026-09-24",
+    "as_of": "2026-09-25",
     "end_state": "hold 0.0091 ETH - if you are already there, do nothing",
     "stop": 2449.83,
     "stop_raised_from": 2316.48,
     "trigger": "ONE daily CLOSE below 2,449.83 -> convert ALL to USDT",
-    "note": "Stop UNCHANGED at 2,449.83. The close-based trail computes 2,351.15 from Wednesday's 2,684.71 close, well BELOW the existing stop, so max() holds it. ETH 2,684.58 (-2.40%), $97.72, +46.7%, down from +50.2%. The stop is 8.74% below spot - it was 10.88% yesterday, so a 2.4% down day moved the cushion by 2.1 points. Band holds STRONG BUY at 65 with core equal to score; the stretch penalty that was absent yesterday is still absent, RSI now 63.2."
+    "note": "Stop UNCHANGED at 2,449.83. The trail computes 2,383.45 from Thursday's 2,688.05 close, below the existing stop, so max() holds it. ETH 2,668.58 (-0.61%), $97.14, +45.8%. Stop 8.20% below spot, locking +33.89%. Score fell 65 -> 50 with core equal to score, so this one is genuine rather than stretch: MACD momentum has gone FLAT (histogram +1.48, effectively zero) and stopped being scored. Trend and structure are untouched - price above a rising 50-day at 2,372, 20-day above 50-day. Still STRONG BUY."
    },
    "fill": {
     "state": "position confirmed by user 2026-07-17; the 2026-08-20 trim is UNCONFIRMED",
@@ -147,10 +147,21 @@
    "selection_rule": "Any new satellite candidate must have CORE score at or above 45 AND RSI below 70 at the moment of selection - the corrected wording adopted 2026-09-21.",
    "why_nothing_today": "Ten of eleven cryptos rate STRONG BUY, so the constraint is not a shortage of candidates - it is that every one of them is extended after a four-session vertical move, and the reserve is 209 AED (about $57). Adding a third small position at the top of a run, on the same day both existing stops ratchet, is activity rather than edge.",
    "expiry": "If no candidate qualifies by the monthly review, the 209 AED rolls into the next monthly plan rather than sitting as a permanent open order.",
-   "reserve_aed": 209
+   "reserve_aed": 209,
+   "link_final_note": {
+    "as_of": "2026-09-25",
+    "link_now": 13.344,
+    "exit_was": 11.412,
+    "exit_behind_pct": 16.93,
+    "would_be_pnl_pct": 37.84,
+    "realised_pnl_pct": 17.88,
+    "cost_pp": 19.96,
+    "cost_usd": 2.71,
+    "note": "I closed the daily scorecard on 2026-09-19 at 8.1% behind, on the grounds that the verdict was settled and extending it would be self-flagellation. The verdict has not changed direction but the number has roughly doubled: LINK is 13.344, the exit is 16.93% behind, and held the position would be +37.84% against the realised +17.88% - about 20 percentage points, or $2.71 on a position this size. Recording it once rather than reopening a daily tracker. Never mentioning a figure that has doubled would be the convenient kind of silence, and it may keep moving."
+   }
   },
   "opportunity_status": {
-   "as_of": "2026-09-24",
+   "as_of": "2026-09-25",
    "state": "DEPLOYED (instruction issued 2026-09-20) - fill UNCONFIRMED",
    "what_happened": "BTC rated STRONG BUY (50, core 50) on two consecutive readings - Friday's close of 80,883.87 and Saturday's 81,249.99. That satisfies the 2-day rule. First confirmation in FOUR armings of this trigger (Aug 3 BTC, Aug 15 AVAX, Sept 5-6 BTC all failed to confirm).",
    "instruction": {
@@ -175,15 +186,15 @@
    "position_now": {
     "indicative_qty": 0.00169464,
     "entry": 80340.01,
-    "last": 84084.01,
-    "value_usd": 142.49,
-    "pnl_pct": 4.66,
+    "last": 83807.51,
+    "value_usd": 142.02,
+    "pnl_pct": 4.32,
     "stop": 79304.74,
     "stop_raised_from": 74919.5,
     "trigger": "ONE daily CLOSE below 79,304.74 -> convert ALL back to USDT",
-    "stop_note": "Stop UNCHANGED at 79,304.74. The trail computes 76,968.83 from Wednesday's 84,397.60 close, below the existing stop, so it holds. Still 1.29% under the 80,340.01 entry, capping the loss at about $1.76. WORTH WATCHING: the stop is now 5.68% below spot against 8.22% yesterday - Wednesday's low was 83,500.01, so one more session like this brings it into range.",
-    "stop_distance_pct": -5.68,
-    "signal_note": "BTC -2.73% to 84,084.01, back out of the 85,000-87,000 resistance band it was testing. Still STRONG BUY at 65 with core equal to score - the RSI stretch penalty flagged yesterday has already unwound, RSI 64.4 from 72.6."
+    "stop_note": "Stop UNCHANGED at 79,304.74. The trail computes 77,291.15 from Thursday's 84,410.24 close, below the existing stop, so it holds. Still 1.29% under the 80,340.01 entry, capping the loss at about $1.76. Cushion is 5.37% against 5.68% yesterday - narrowing slowly rather than sharply, and Thursday's low of 82,874.93 is the closest the price has come.",
+    "stop_distance_pct": -5.37,
+    "signal_note": "BTC -0.34% to 83,807.51, holding STRONG BUY at 65 with core equal to score and MACD momentum still positive. It is the steadiest thing on the board this week."
    }
   },
   "stock_shortlist_note": {
@@ -322,16 +333,16 @@
   "cost_disclosed": "A close-based stop does NOT fill at the stop level. With one observation a day, the exit happens at the next daily reading, which can be well below the stop. Yesterday I wrote 'if it fires it fires near +17.1%' - that was imprecise, and the realistic fill is worse than the level."
  },
  "eth_stop_watch": {
-  "as_of": "2026-09-24",
+  "as_of": "2026-09-25",
   "stop": 2449.83,
   "trigger": "one daily CLOSE below 2,449.83",
-  "distance_pct": -8.74,
+  "distance_pct": -8.2,
   "locks_pct": 33.89,
   "recent_closes": [
-   2776.19,
    2753.63,
    2684.71,
-   2684.58
+   2688.05,
+   2668.58
   ]
  },
  "satellite_rule_fix": {

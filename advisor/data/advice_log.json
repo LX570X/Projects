@@ -1836,6 +1836,38 @@
    "price": 5.62,
    "rationale": "SALIK +4.46% to 5.62 and crossed above its 50-day - the second consecutive session with a genuine move behind it after +2.06% yesterday, and a 10.2-point score improvement over two days from STRONG SELL -50 on Tuesday to HOLD 5 now. That is a different animal from the DEWA, TECOM and EMAARDEV exits from the SELL bands yesterday, which happened on moves of under 1% because the 50-day was catching up to a flat price. Also genuine: EAND BUY -> STRONG BUY (50) and TALABAT HOLD -> BUY. ADNOCDRILL deteriorated further to -65, now the weakest score on the entire board of 30 assets. Thursday 11:10 Dubai intraday drafts as always, and still nothing actionable while the Al Ramz account is unopened - the core bucket has been stuck at 800 AED since the plan began.",
    "status": "advice only - no positions"
+  },
+  {
+   "date": "2026-09-25",
+   "ticker": "LINKUSDT",
+   "action": "the exit cost has roughly doubled - stated once, not re-tracked",
+   "price": 13.344,
+   "rationale": "LINK +7.62% to 13.344 on a dated catalyst: Chainlink co-founder Sergey Nazarov appearing on a 'Future of Blockchain in Traditional Finance' panel at the Philadelphia Fed's 10th Annual Fintech Conference on Sept 24-25 alongside BlackRock and Vanguard executives, on top of the Bottomline partnership announced Sept 3 enabling cross-chain payments for a top-three SWIFT service provider covering over 600 banks. The exit at 11.412 is now 16.93% behind. Held, the position would be +37.84% against the realised +17.88% - about 20 percentage points, or $2.71. I closed the daily scorecard on Sept 19 at 8.1% behind because the verdict was settled and extending it would be self-flagellation. That reasoning still holds, so I am not reopening the tracker. But the figure has roughly doubled since, and never mentioning a number that has doubled would be the convenient kind of silence. Stated once, and it may keep moving.",
+   "status": "closed position - final cost updated, tracker stays closed"
+  },
+  {
+   "date": "2026-09-25",
+   "ticker": "POSITIONS",
+   "action": "no action - and ETH's downgrade is genuine, not stretch",
+   "price": 2668.58,
+   "rationale": "Both trails computed below their stops again (ETH 2,383.45 vs 2,449.83; BTC 77,291.15 vs 79,304.74), so both hold. ETH 2,668.58 (-0.61%), $97.14, +45.8%. Its score fell 65 -> 50 and this one is NOT stretch - core equals score at 50. MACD momentum has gone flat, histogram +1.48 which is effectively zero, and stopped being scored. Trend and structure are untouched: price above a rising 50-day at 2,372 with the 20-day above the 50-day, still STRONG BUY. Worth distinguishing because six of the last ten band moves in this book have been stretch artefacts and this one is not. BTC 83,807.51 (-0.34%), $142.02, +4.32%, holding STRONG BUY 65 with momentum still positive - the steadiest thing on the board this week. Its stop cushion is 5.37% against 5.68% yesterday, narrowing slowly rather than sharply, with Thursday's 82,874.93 low the closest approach so far.",
+   "status": "no action"
+  },
+  {
+   "date": "2026-09-25",
+   "ticker": "BNBUSDT",
+   "action": "first genuine crypto downgrade of the week",
+   "price": 772.01,
+   "rationale": "BNB STRONG BUY -> BUY (65 -> 40) on a fresh MACD bearish cross, with core equal to score, so unlike almost everything else this week it is a real deterioration rather than a penalty artefact. Price is flat at -0.08% and still above a rising 50-day at 698.3, so this is momentum rolling over rather than trend breaking. Not held and not a candidate. Noting it because it is the first crypto band change in five sessions that the stretch machinery did not explain away, and if the complex is going to turn, momentum crosses on the majors is where it will show first.",
+   "status": "advice only"
+  },
+  {
+   "date": "2026-09-25",
+   "ticker": "UAE-stocks",
+   "action": "TALABAT completes its third full round trip of the month",
+   "price": 1.15,
+   "rationale": "TALABAT -3.36% to 1.15, BUY -> SELL, crossing below its 50-day. It went STRONG SELL on Sept 7 on the trend and structure terms inverting together, HOLD by Sept 12, BUY on Sept 18 crossing back above the 50-day, and now SELL again crossing back below. Three full reversals in eighteen sessions on a stock whose 20-day and 50-day have been within about 1% of each other throughout. It was added to the muted set on Sept 18 and has behaved exactly as muting predicts since. DEWA HOLD -> SELL and TECOM HOLD -> SELL are the same story, both muted. Genuine moves today: ADNOCGAS SELL -> BUY crossing above its 50-day, core 35 against score 25; ADIB BUY -> STRONG BUY (50); ADNOCDRILL improving to -40 from -65 in two sessions. EMIRATESNBD STRONG BUY -> BUY, its fourth band change in eight sessions - close to earning a mute of its own. ADCB RSI crossed 70 to 71.4, score 45 against core 65.",
+   "status": "advice only - no positions"
   }
  ]
 }

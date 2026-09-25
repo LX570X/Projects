@@ -1,25 +1,25 @@
 {
- "updated": "2026-09-24T07:35+00:00",
+ "updated": "2026-09-25T07:35+00:00",
  "market_notes": [
   {
-   "market": "The pullback arrived - and my stretch read was right directionally, wrong at the edges",
-   "note": "Ten of eleven cryptos fell: AVAX -8.40%, XRP -7.58%, DOGE -7.55%, ADA -6.78%, LINK -4.76%, SOL -3.35%, GRAM -3.06%, BTC -2.73%, ETH -2.40%, BNB -2.27%. Yesterday I flagged six stretch penalties and wrote that the easy part of the move had happened. The stretched alts did fall hardest and the extremes lined up. But the relationship is LOOSE and claiming otherwise would be the flattering mistake: BTC was stretched at RSI 72.6 and fell only 2.73%, LINK was least stretched of the heavy fallers at 64.3 and still lost 4.76%, and LTC - second most stretched at 78.8 - was the ONLY green name at +6.80%. Stretch ranked the downside directionally and missed the day's biggest single move entirely. One input among several, not a forecast."
+   "market": "LINK - the exit cost has roughly doubled, stated once",
+   "note": "LINK +7.62% to 13.344 on a dated catalyst: Sergey Nazarov on a 'Future of Blockchain in Traditional Finance' panel at the Philadelphia Fed's 10th Annual Fintech Conference Sept 24-25, alongside BlackRock and Vanguard executives, on top of the Sept-3 Bottomline partnership enabling cross-chain payments for a top-three SWIFT service provider covering 600+ banks. The 11.412 exit is now 16.93% behind. Held, the position would be +37.84% against the realised +17.88% - about 20 percentage points, or $2.71. The daily scorecard was closed on Sept 19 at 8.1% behind and stays closed; extending it would be self-flagellation. But the number has roughly doubled since, and never mentioning that would be the convenient kind of silence."
   },
   {
-   "market": "LTC's divergence has a catalyst",
-   "note": "LTC +6.80% to 68.36, alone against the board, driven by a Grayscale spot-Litecoin ETF filing on top of roughly +17% over the week and +22-23% over 30 days. Coverage notes LTCC has traded on Nasdaq as the first US spot Litecoin ETF since late October 2025 but that Litecoin ETF inflows have been minimal and lagging other altcoin funds - so this is anticipation of a new vehicle rather than money already arriving. Band fell STRONG BUY -> BUY, correctly tagged as stretch: score 35 against core 65. Not a satellite candidate - the rule requires RSI below 70 and LTC is at 80.3, the most extended reading on the board."
+   "market": "Positions - no action, and ETH's downgrade is genuine",
+   "note": "Both trails computed below their stops (ETH 2,383.45 vs 2,449.83; BTC 77,291.15 vs 79,304.74), so both hold. ETH 2,668.58 (-0.61%), $97.14, +45.8%; score fell 65 -> 50 with core EQUAL to score, so this is not stretch - MACD momentum has gone flat (histogram +1.48, effectively zero) and stopped being scored, while trend and structure are untouched. Worth distinguishing, because six of the last ten band moves here have been stretch artefacts and this one is not. BTC 83,807.51 (-0.34%), $142.02, +4.32%, holding STRONG BUY 65 with momentum still positive - the steadiest thing on the board this week. Its stop cushion is 5.37% against 5.68%, narrowing slowly; Thursday's 82,874.93 low is the closest approach so far."
   },
   {
-   "market": "Positions - cushions narrowed, nothing actionable",
-   "note": "Both trails computed below their stops again (ETH 2,351.15 vs 2,449.83; BTC 76,968.83 vs 79,304.74), so both hold. ETH 2,684.58 (-2.40%), $97.72, +46.7% from +50.2%. BTC 84,084.01 (-2.73%), $142.49, +4.66% from +7.55%, back out of the 85,000-87,000 resistance band. The number worth watching: BTC's stop is now 5.68% below spot against 8.22% yesterday, and Wednesday's low was 83,500.01 - one more session of this size brings it into range. ETH's cushion went 10.88% to 8.74%. Triggers unchanged: single daily closes below 2,449.83 and 79,304.74."
+   "market": "BNB - the first genuine crypto downgrade in five sessions",
+   "note": "STRONG BUY -> BUY (65 -> 40) on a fresh MACD bearish cross, core equal to score. Price is flat at -0.08% and still above a rising 50-day, so this is momentum rolling over rather than trend breaking. Noting it because it is the first crypto band change all week the stretch machinery did not explain away - and if this complex turns, momentum crosses on the majors is where it shows first."
   },
   {
-   "market": "Every stretch penalty has unwound",
-   "note": "Ten of the eleven now read score 65 with core 65 - the penalties that produced six 'downgrades' yesterday evaporated in a single down session, which is precisely why band changes driven by stretch are tagged rather than reported as signals. ADA went BUY -> STRONG BUY on penalty relief alone. Only LTC still carries a gap (35 against core 65) and only GRAM has genuinely weakened, to BUY 30 on core."
+   "market": "TALABAT completes a third full round trip this month",
+   "note": "-3.36% to 1.15, BUY -> SELL, back below its 50-day. It went STRONG SELL on Sept 7, HOLD by Sept 12, BUY on Sept 18 crossing above the 50-day, and SELL again today crossing below - three full reversals in eighteen sessions on a stock whose 20-day and 50-day have stayed within about 1% of each other throughout. Muted since Sept 18 and behaving exactly as muting predicts. DEWA HOLD -> SELL and TECOM HOLD -> SELL are the same story. EMIRATESNBD STRONG BUY -> BUY is its fourth band change in eight sessions and is close to earning a mute of its own."
   },
   {
-   "market": "UAE - SALIK's turn is real, unlike most of this week's",
-   "note": "SALIK +4.46% to 5.62 and above its 50-day, a second consecutive session with a genuine move behind it, taking it from STRONG SELL -50 on Tuesday to HOLD 5 now. That is a different animal from yesterday's DEWA, TECOM and EMAARDEV exits from the SELL bands, which happened on sub-1% moves because the 50-day was catching up to a flat price. Also genuine: EAND BUY -> STRONG BUY (50), TALABAT HOLD -> BUY. ADNOCDRILL deteriorated to -65, the weakest score across all 30 assets."
+   "market": "Genuine UAE moves under the noise",
+   "note": "ADNOCGAS SELL -> BUY crossing above its 50-day, core 35 against score 25. ADIB BUY -> STRONG BUY (50). ADNOCDRILL improving from -65 to -40 in two sessions after being the weakest of all 30 assets. ADCB RSI crossed 70 to 71.4, score 45 against core 65 - stretch, not deterioration. ALDAR holds STRONG BUY at 65 and FAB at 50; the ADX large-caps remain the only consistently readable part of the UAE board."
   }
  ],
  "asset_notes": {
@@ -589,6 +589,12 @@
     "impact": "bearish",
     "date": "2026-09-24",
     "source": "advisor data"
+   },
+   {
+    "headline": "-0.61% to 2,668.58; score 65 -> 50 with core equal to score - a GENUINE downgrade on MACD momentum going flat, not a stretch artefact. Trend and structure untouched, still STRONG BUY",
+    "impact": "neutral",
+    "date": "2026-09-25",
+    "source": "advisor data"
    }
   ],
   "BNBUSDT": [
@@ -626,6 +632,12 @@
     "headline": "+3.9% to 755.23, BUY -> STRONG BUY - the first STRONG BUY on the board since Sept 14, ending a four-day drought",
     "impact": "bullish",
     "date": "2026-09-18",
+    "source": "advisor data"
+   },
+   {
+    "headline": "STRONG BUY -> BUY (65 -> 40) on a fresh MACD bearish cross, core equal to score - the first genuine crypto downgrade in five sessions",
+    "impact": "bearish",
+    "date": "2026-09-25",
     "source": "advisor data"
    }
   ],
@@ -885,6 +897,12 @@
     "impact": "neutral",
     "date": "2026-09-18",
     "source": "advisor data"
+   },
+   {
+    "headline": "-3.36% to 1.15, BUY -> SELL below its 50-day - a third full band round trip in eighteen sessions with the 20-day and 50-day within ~1% throughout. Muted since Sept 18",
+    "impact": "neutral",
+    "date": "2026-09-25",
+    "source": "advisor data"
    }
   ],
   "EMAAR": [
@@ -1053,6 +1071,12 @@
     "impact": "neutral",
     "date": "2026-08-22",
     "source": "news research pass"
+   },
+   {
+    "headline": "SELL -> BUY and crossed above its 50-day, core 35 against score 25",
+    "impact": "bullish",
+    "date": "2026-09-25",
+    "source": "advisor data"
    }
   ],
   "ALDAR": [
@@ -1307,6 +1331,12 @@
     "impact": "bullish",
     "date": "2026-09-21",
     "source": "advisor data"
+   },
+   {
+    "headline": "+7.62% to 13.344; Sergey Nazarov on a blockchain-in-TradFi panel at the Philadelphia Fed's Fintech Conference Sept 24-25 with BlackRock and Vanguard, plus the Sept-3 Bottomline deal covering a top-three SWIFT provider and 600+ banks. Now 16.93% above our 11.412 exit",
+    "impact": "bullish",
+    "date": "2026-09-25",
+    "source": "news research pass"
    }
   ],
   "EMAARDEV": [
@@ -1707,13 +1737,13 @@
   ]
  },
  "risk_flags": [
-  "BTC's stop at 79,304.74 is now 5.68% below spot, against 8.22% yesterday. Wednesday's low was 83,500.01 - one more session of this size brings it into range. It caps the loss at ~$1.76 and does NOT yet lock a gain.",
-  "ETH's stop at 2,449.83 is 8.74% below spot, from 10.88% yesterday. It locks +33.89%. Both triggers are a SINGLE daily close.",
-  "Stretch penalties rank downside directionally but loosely - yesterday's six flagged names included BTC, which fell least among majors, and excluded nothing that explains LTC being the only green name while second-most stretched. Treat stretch as one input, not a forecast.",
-  "All stretch penalties unwound in one session, turning six of yesterday's 'downgrades' straight back into STRONG BUYs. This is exactly why stretch-driven band changes are tagged rather than reported as signals.",
+  "BTC's stop at 79,304.74 is 5.37% below spot (from 5.68%), narrowing slowly. Thursday's low of 82,874.93 is the closest approach so far. It caps the loss at ~$1.76 and does NOT yet lock a gain.",
+  "ETH's stop at 2,449.83 is 8.20% below spot and locks +33.89%. Both triggers are a SINGLE daily close.",
+  "ETH's score drop to 50 is GENUINE (core equals score) - MACD momentum has gone flat. Trend and structure are intact. Distinguished deliberately because most recent band moves here have been stretch artefacts.",
+  "BNB's MACD bearish cross is the first genuine crypto downgrade in five sessions. If this complex turns, momentum crosses on the majors is where it shows first.",
   "NOTHING in this book has ever been reconciled against the exchange. ETH dates from 2026-07-17 and the BTC deploy from 2026-09-20 is advice of unknown execution. Four numbers - ETH, BTC, LINK, USDT - would fix it.",
   "800 AED of the core bucket has been stuck since the plan began, waiting on an Al Ramz brokerage account that has not been opened.",
-  "UAE band changes read at 11:10 Dubai are DRAFTS. SALIK is this week's one UAE move with genuine price behind it; most of the others were the 50-day catching up to a flat price."
+  "EMIRATESNBD is on its fourth band change in eight sessions and is close to joining TALABAT, DEWA, TECOM, ADNOCDRILL and IHC in the muted set."
  ],
  "corrections": [
   "Prior context.json was 13 days stale (2026-07-17) because daily cycles were skipped 2026-07-20..29; refreshed 2026-07-30."
