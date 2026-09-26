@@ -1,25 +1,21 @@
 {
- "updated": "2026-09-25T07:35+00:00",
+ "updated": "2026-09-26T07:35+00:00",
  "market_notes": [
   {
-   "market": "LINK - the exit cost has roughly doubled, stated once",
-   "note": "LINK +7.62% to 13.344 on a dated catalyst: Sergey Nazarov on a 'Future of Blockchain in Traditional Finance' panel at the Philadelphia Fed's 10th Annual Fintech Conference Sept 24-25, alongside BlackRock and Vanguard executives, on top of the Sept-3 Bottomline partnership enabling cross-chain payments for a top-three SWIFT service provider covering 600+ banks. The 11.412 exit is now 16.93% behind. Held, the position would be +37.84% against the realised +17.88% - about 20 percentage points, or $2.71. The daily scorecard was closed on Sept 19 at 8.1% behind and stays closed; extending it would be self-flagellation. But the number has roughly doubled since, and never mentioning that would be the convenient kind of silence."
+   "market": "No action - seventh consecutive session, five straight trail holds",
+   "note": "Both trails computed below their stops again: ETH 2,382.13 against 2,449.83 (-0.66 ATR), BTC 76,789.58 against 79,304.74 (-1.03 ATR). ETH 2,690.23 (+0.80%), $97.92, +47.0%, stop 8.94% below spot. BTC 84,012.00 (+0.24%), $142.37, +4.57%, stop 5.60% below and still 1.29% under entry. The count is recorded deliberately: most of what this system produces is 'leave it alone', computed rather than decided, and the failure mode that guards against is the one this book actually had in August - stops re-derived from scratch each session and drifting unnoticed."
   },
   {
-   "market": "Positions - no action, and ETH's downgrade is genuine",
-   "note": "Both trails computed below their stops (ETH 2,383.45 vs 2,449.83; BTC 77,291.15 vs 79,304.74), so both hold. ETH 2,668.58 (-0.61%), $97.14, +45.8%; score fell 65 -> 50 with core EQUAL to score, so this is not stretch - MACD momentum has gone flat (histogram +1.48, effectively zero) and stopped being scored, while trend and structure are untouched. Worth distinguishing, because six of the last ten band moves here have been stretch artefacts and this one is not. BTC 83,807.51 (-0.34%), $142.02, +4.32%, holding STRONG BUY 65 with momentum still positive - the steadiest thing on the board this week. Its stop cushion is 5.37% against 5.68%, narrowing slowly; Thursday's 82,874.93 low is the closest approach so far."
+   "market": "Alts recover, greed intensifies, majors lag",
+   "note": "LINK +5.63%, AVAX +5.43%, SOL +3.87%, ADA +3.36%, GRAM +3.27% (BUY -> STRONG BUY), DOGE +3.31%, against BTC +0.24% and ETH +0.80%. Global market cap around $2.98tn with the Fear & Greed Index climbing 71 to 74 - greed intensifying while the largest assets cooled, which is an awkward combination: sentiment running ahead of the majors. BTC is consolidating near 84,000 after failing the 85,000-87,000 band."
   },
   {
-   "market": "BNB - the first genuine crypto downgrade in five sessions",
-   "note": "STRONG BUY -> BUY (65 -> 40) on a fresh MACD bearish cross, core equal to score. Price is flat at -0.08% and still above a rising 50-day, so this is momentum rolling over rather than trend breaking. Noting it because it is the first crypto band change all week the stretch machinery did not explain away - and if this complex turns, momentum crosses on the majors is where it shows first."
+   "market": "LTC is the risk on this board, not the opportunity",
+   "note": "+3.10% to 72.90 with RSI at 83.7 - the most extreme reading this book has recorded on any asset - score 35 against core 65, on a fifth session running off the Grayscale ETF filing. Nothing on the board is a satellite candidate today: the rule needs RSI below 70 at selection and the four biggest movers sit at 68.2, 69.5, 66.7 and 83.7."
   },
   {
-   "market": "TALABAT completes a third full round trip this month",
-   "note": "-3.36% to 1.15, BUY -> SELL, back below its 50-day. It went STRONG SELL on Sept 7, HOLD by Sept 12, BUY on Sept 18 crossing above the 50-day, and SELL again today crossing below - three full reversals in eighteen sessions on a stock whose 20-day and 50-day have stayed within about 1% of each other throughout. Muted since Sept 18 and behaving exactly as muting predicts. DEWA HOLD -> SELL and TECOM HOLD -> SELL are the same story. EMIRATESNBD STRONG BUY -> BUY is its fourth band change in eight sessions and is close to earning a mute of its own."
-  },
-  {
-   "market": "Genuine UAE moves under the noise",
-   "note": "ADNOCGAS SELL -> BUY crossing above its 50-day, core 35 against score 25. ADIB BUY -> STRONG BUY (50). ADNOCDRILL improving from -65 to -40 in two sessions after being the weakest of all 30 assets. ADCB RSI crossed 70 to 71.4, score 45 against core 65 - stretch, not deterioration. ALDAR holds STRONG BUY at 65 and FAB at 50; the ADX large-caps remain the only consistently readable part of the UAE board."
+   "market": "UAE - Saturday's numbers are the CONFIRMED record, and two upgrades survived",
+   "note": "Saturday's snapshot returns Friday's settled closes rather than an 11:10 Dubai draft, so these are the record. Two upgrades held through the close: EMAAR HOLD -> BUY and SALIK HOLD -> BUY. SALIK has gone STRONG SELL -50 on Tuesday to BUY 30 on Friday's close, an 80-point improvement over four sessions with real price behind it (+2.06% then +4.46%) - the one UAE name this month whose turn has been both large and confirmed. The muted set kept behaving: TECOM SELL -> STRONG SELL (-60) on a MACD bearish cross, its fourteenth band change in ten weeks, and DEWA SELL -> STRONG SELL. ADIB STRONG BUY -> BUY gives back yesterday's upgrade. ADCB's RSI sits at exactly 70.0, score 45 against core 65."
   }
  ],
  "asset_notes": {
@@ -401,6 +397,12 @@
     "impact": "bearish",
     "date": "2026-09-24",
     "source": "advisor data"
+   },
+   {
+    "headline": "+0.24% to 84,012.00, consolidating near 84,000 after failing the 85,000-87,000 band; global crypto market cap ~$2.98tn and Fear & Greed climbing 71 to 74",
+    "impact": "neutral",
+    "date": "2026-09-26",
+    "source": "news research pass"
    }
   ],
   "ETHUSDT": [
@@ -947,6 +949,12 @@
     "impact": "bullish",
     "date": "2026-09-17",
     "source": "advisor data"
+   },
+   {
+    "headline": "HOLD -> BUY (15 to 30) on Friday's settled close - an upgrade that survived to the close rather than fading like the Sept-15 and Sept-17 intraday spikes",
+    "impact": "bullish",
+    "date": "2026-09-26",
+    "source": "advisor data"
    }
   ],
   "SALIK": [
@@ -966,6 +974,12 @@
     "headline": "+4.46% to 5.62 and crossed above its 50-day - second consecutive session with a real move, taking it from STRONG SELL -50 on Tuesday to HOLD 5",
     "impact": "bullish",
     "date": "2026-09-24",
+    "source": "advisor data"
+   },
+   {
+    "headline": "HOLD -> BUY on Friday's settled close, completing an 80-point improvement from STRONG SELL -50 on Tuesday with real price behind it (+2.06% then +4.46%) - the one UAE turn this month that is both large and confirmed",
+    "impact": "bullish",
+    "date": "2026-09-26",
     "source": "advisor data"
    }
   ],
@@ -1625,6 +1639,12 @@
     "impact": "neutral",
     "date": "2026-09-10",
     "source": "advisor data"
+   },
+   {
+    "headline": "SELL -> STRONG SELL (-60) on a MACD bearish cross - fourteenth band change in ten weeks, still muted",
+    "impact": "bearish",
+    "date": "2026-09-26",
+    "source": "advisor data"
    }
   ],
   "ADNOCDRILL": [
@@ -1695,6 +1715,12 @@
     "impact": "bullish",
     "date": "2026-09-24",
     "source": "news research pass"
+   },
+   {
+    "headline": "+3.10% to 72.90 with RSI 83.7 - the most extreme reading this book has recorded on any asset; fifth session running off the Grayscale ETF filing. Score 35 against core 65",
+    "impact": "neutral",
+    "date": "2026-09-26",
+    "source": "advisor data"
    }
   ],
   "GRAMUSDT": [
@@ -1733,17 +1759,22 @@
     "impact": "bullish",
     "date": "2026-09-23",
     "source": "advisor data"
+   },
+   {
+    "headline": "+3.27%, BUY -> STRONG BUY (30 -> 50)",
+    "impact": "bullish",
+    "date": "2026-09-26",
+    "source": "advisor data"
    }
   ]
  },
  "risk_flags": [
-  "BTC's stop at 79,304.74 is 5.37% below spot (from 5.68%), narrowing slowly. Thursday's low of 82,874.93 is the closest approach so far. It caps the loss at ~$1.76 and does NOT yet lock a gain.",
-  "ETH's stop at 2,449.83 is 8.20% below spot and locks +33.89%. Both triggers are a SINGLE daily close.",
-  "ETH's score drop to 50 is GENUINE (core equals score) - MACD momentum has gone flat. Trend and structure are intact. Distinguished deliberately because most recent band moves here have been stretch artefacts.",
-  "BNB's MACD bearish cross is the first genuine crypto downgrade in five sessions. If this complex turns, momentum crosses on the majors is where it shows first.",
+  "Fear & Greed has climbed 71 to 74 while the majors cooled - sentiment running ahead of the largest assets. Global market cap ~$2.98tn with BTC consolidating near 84,000 after failing 85,000-87,000.",
+  "LTC's RSI of 83.7 is the most extreme reading this book has recorded on any asset. It is a risk marker, not an opportunity - and no asset on the board qualifies as a satellite candidate today under the RSI-below-70 rule.",
+  "BTC's stop at 79,304.74 is 5.60% below spot and still 1.29% under entry, capping the loss at ~$1.76. ETH's stop at 2,449.83 is 8.94% below and locks +33.89%. Both triggers are a SINGLE daily close.",
   "NOTHING in this book has ever been reconciled against the exchange. ETH dates from 2026-07-17 and the BTC deploy from 2026-09-20 is advice of unknown execution. Four numbers - ETH, BTC, LINK, USDT - would fix it.",
-  "800 AED of the core bucket has been stuck since the plan began, waiting on an Al Ramz brokerage account that has not been opened.",
-  "EMIRATESNBD is on its fourth band change in eight sessions and is close to joining TALABAT, DEWA, TECOM, ADNOCDRILL and IHC in the muted set."
+  "800 AED of the core bucket has been stuck since the plan began, waiting on an Al Ramz brokerage account that has not been opened. SALIK is now the one UAE name with a confirmed, large turn - and it remains unbuyable for that reason.",
+  "Six UAE names now have band changes muted as noise: TALABAT, DEWA, TECOM, ADNOCDRILL, IHC, and EMIRATESNBD is close. TECOM alone has changed band fourteen times in ten weeks."
  ],
  "corrections": [
   "Prior context.json was 13 days stale (2026-07-17) because daily cycles were skipped 2026-07-20..29; refreshed 2026-07-30."

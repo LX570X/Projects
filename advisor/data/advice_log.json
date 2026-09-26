@@ -1868,6 +1868,28 @@
    "price": 1.15,
    "rationale": "TALABAT -3.36% to 1.15, BUY -> SELL, crossing below its 50-day. It went STRONG SELL on Sept 7 on the trend and structure terms inverting together, HOLD by Sept 12, BUY on Sept 18 crossing back above the 50-day, and now SELL again crossing back below. Three full reversals in eighteen sessions on a stock whose 20-day and 50-day have been within about 1% of each other throughout. It was added to the muted set on Sept 18 and has behaved exactly as muting predicts since. DEWA HOLD -> SELL and TECOM HOLD -> SELL are the same story, both muted. Genuine moves today: ADNOCGAS SELL -> BUY crossing above its 50-day, core 35 against score 25; ADIB BUY -> STRONG BUY (50); ADNOCDRILL improving to -40 from -65 in two sessions. EMIRATESNBD STRONG BUY -> BUY, its fourth band change in eight sessions - close to earning a mute of its own. ADCB RSI crossed 70 to 71.4, score 45 against core 65.",
    "status": "advice only - no positions"
+  },
+  {
+   "date": "2026-09-26",
+   "ticker": "POSITIONS",
+   "action": "no action - seventh consecutive session, five straight trail holds",
+   "price": 2690.23,
+   "rationale": "Both trails computed below their stops again: ETH 2,382.13 against 2,449.83 (-0.66 ATR), BTC 76,789.58 against 79,304.74 (-1.03 ATR). ETH 2,690.23 (+0.80%), $97.92, +47.0%, stop 8.94% below spot. BTC 84,012.00 (+0.24%), $142.37, +4.57%, stop 5.60% below and still 1.29% under entry, capping the loss at about $1.76. Recording the count deliberately: this is the seventh consecutive session with no action and the fifth straight session the trail has held the stop after the two raises on Sept 22. Most of what this system produces is 'leave it alone', arrived at by computation rather than judgement, and the failure mode that guards against is the one this book actually had in August - stops re-derived from scratch every session, drifting without anyone noticing.",
+   "status": "no action"
+  },
+  {
+   "date": "2026-09-26",
+   "ticker": "crypto-broad",
+   "action": "alts recover, greed intensifies, LTC goes vertical",
+   "rationale": "Broad alt recovery on a quiet Saturday tape: LINK +5.63%, AVAX +5.43%, SOL +3.87%, ADA +3.36%, GRAM +3.27% (BUY -> STRONG BUY), DOGE +3.31%, while BTC managed +0.24% and ETH +0.80%. Global market cap around $2.98tn with the Fear & Greed Index climbing 71 to 74 - greed intensifying even as the majors cooled, which is a slightly awkward combination: sentiment is running ahead of the largest assets. LTC is the standout risk on the board rather than the opportunity: +3.10% to 72.90 with RSI at 83.7, the most extreme reading this book has recorded on any asset, score 35 against core 65. It has now run five sessions on the Grayscale ETF filing. Nothing here is a candidate - the satellite rule needs RSI below 70 at selection and the four biggest movers are at 68.2, 69.5, 66.7 and 83.7.",
+   "status": "logged"
+  },
+  {
+   "date": "2026-09-26",
+   "ticker": "UAE-stocks",
+   "action": "Saturday's numbers are the CONFIRMED record, and two upgrades survived",
+   "rationale": "Saturday's snapshot returns Friday's settled closes rather than an 11:10 Dubai draft, so today's UAE readings are the confirmed record. Two upgrades held through the close: EMAAR HOLD -> BUY (15 to 30) and SALIK HOLD -> BUY (5 to 30). SALIK in particular has now gone STRONG SELL -50 on Tuesday to BUY 30 on Friday's close, a 80-point improvement over four sessions with real price behind it - +2.06% then +4.46% - which makes it the one UAE name this month whose turn has been both large and confirmed. Against that, the muted set kept behaving: TECOM SELL -> STRONG SELL (-60) on a MACD bearish cross, its own fourteenth band change in ten weeks, and DEWA SELL -> STRONG SELL. ADIB STRONG BUY -> BUY gives back yesterday's upgrade. ADCB's RSI sits at exactly 70.0 with score 45 against core 65. TALABAT -2.56% continues down.",
+   "status": "advice only - no positions"
   }
  ]
 }
