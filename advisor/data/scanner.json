@@ -1,102 +1,102 @@
 {
- "generated_at_utc": "2026-09-25T07:09:13+00:00",
+ "generated_at_utc": "2026-09-26T07:09:11+00:00",
  "movers": [
   {
-   "symbol": "QIUSDT",
-   "last": 0.002978,
-   "change24h_pct": 100.945,
-   "quote_volume24h": 9579679.285756,
-   "rsi": 89.2,
-   "above_sma20": true,
-   "above_sma50": true,
-   "setup": false
-  },
-  {
-   "symbol": "QNTUSDT",
-   "last": 103.65,
-   "change24h_pct": 44.601,
-   "quote_volume24h": 9085056.00506,
-   "rsi": 83.8,
-   "above_sma20": true,
-   "above_sma50": true,
-   "setup": false
-  },
-  {
-   "symbol": "XPLUSDT",
-   "last": 0.11804,
-   "change24h_pct": 30.85,
-   "quote_volume24h": 48314408.695335,
-   "rsi": 68.3,
-   "above_sma20": true,
-   "above_sma50": true,
-   "setup": true
-  },
-  {
-   "symbol": "SAGAUSDT",
-   "last": 0.03314,
-   "change24h_pct": -27.61,
-   "quote_volume24h": 74103466.553302,
-   "rsi": 53.0,
-   "above_sma20": true,
-   "above_sma50": true,
-   "setup": false
-  },
-  {
-   "symbol": "ONDOUSDT",
-   "last": 0.5483,
-   "change24h_pct": 26.833,
-   "quote_volume24h": 141338424.99276,
-   "rsi": 74.1,
-   "above_sma20": true,
-   "above_sma50": true,
-   "setup": false
-  },
-  {
-   "symbol": "PHAUSDT",
-   "last": 0.0569,
-   "change24h_pct": 22.103,
-   "quote_volume24h": 8180642.1693,
-   "rsi": 87.2,
-   "above_sma20": true,
-   "above_sma50": true,
-   "setup": false
-  },
-  {
-   "symbol": "BROCCOLI714USDT",
-   "last": 0.02999,
-   "change24h_pct": 20.104,
-   "quote_volume24h": 20861007.39423,
-   "rsi": 75.6,
-   "above_sma20": true,
-   "above_sma50": true,
-   "setup": false
-  },
-  {
-   "symbol": "NOMUSDT",
-   "last": 0.00216,
-   "change24h_pct": -18.398,
-   "quote_volume24h": 15692973.382855,
-   "rsi": 74.5,
+   "symbol": "RAREUSDT",
+   "last": 0.02179,
+   "change24h_pct": 66.463,
+   "quote_volume24h": 15089191.050725,
+   "rsi": 85.4,
    "above_sma20": true,
    "above_sma50": true,
    "setup": false
   },
   {
    "symbol": "ARKUSDT",
-   "last": 0.2008,
-   "change24h_pct": 17.91,
-   "quote_volume24h": 6821856.102,
-   "rsi": 78.9,
+   "last": 0.2789,
+   "change24h_pct": 38.894,
+   "quote_volume24h": 14685794.875,
+   "rsi": 87.9,
    "above_sma20": true,
    "above_sma50": true,
    "setup": false
   },
   {
-   "symbol": "NILUSDT",
-   "last": 0.10716,
-   "change24h_pct": -16.575,
-   "quote_volume24h": 23268927.678789,
-   "rsi": 73.6,
+   "symbol": "PHAUSDT",
+   "last": 0.0785,
+   "change24h_pct": 37.961,
+   "quote_volume24h": 41785256.9158,
+   "rsi": 81.3,
+   "above_sma20": true,
+   "above_sma50": true,
+   "setup": false
+  },
+  {
+   "symbol": "2ZUSDT",
+   "last": 0.07353,
+   "change24h_pct": 35.764,
+   "quote_volume24h": 5764932.88517,
+   "rsi": 78.4,
+   "above_sma20": true,
+   "above_sma50": true,
+   "setup": false
+  },
+  {
+   "symbol": "AEROUSDT",
+   "last": 0.9134,
+   "change24h_pct": 27.356,
+   "quote_volume24h": 15539474.31002,
+   "rsi": 81.4,
+   "above_sma20": true,
+   "above_sma50": true,
+   "setup": false
+  },
+  {
+   "symbol": "MUBARAKUSDT",
+   "last": 0.05297,
+   "change24h_pct": 24.518,
+   "quote_volume24h": 36780663.729479,
+   "rsi": 59.9,
+   "above_sma20": true,
+   "above_sma50": true,
+   "setup": true
+  },
+  {
+   "symbol": "ENAUSDT",
+   "last": 0.2685,
+   "change24h_pct": 22.045,
+   "quote_volume24h": 132929032.570421,
+   "rsi": 79.0,
+   "above_sma20": true,
+   "above_sma50": true,
+   "setup": false
+  },
+  {
+   "symbol": "PUMPUSDT",
+   "last": 0.004562,
+   "change24h_pct": 18.248,
+   "quote_volume24h": 38786467.947825,
+   "rsi": 58.9,
+   "above_sma20": true,
+   "above_sma50": true,
+   "setup": true
+  },
+  {
+   "symbol": "JTOUSDT",
+   "last": 0.5816,
+   "change24h_pct": 16.647,
+   "quote_volume24h": 8711456.3602,
+   "rsi": 63.1,
+   "above_sma20": true,
+   "above_sma50": true,
+   "setup": false
+  },
+  {
+   "symbol": "PROMUSDT",
+   "last": 6.348,
+   "change24h_pct": 15.692,
+   "quote_volume24h": 6278380.57977,
+   "rsi": 66.9,
    "above_sma20": true,
    "above_sma50": true,
    "setup": false
