@@ -1,21 +1,25 @@
 {
- "updated": "2026-09-26T07:35+00:00",
+ "updated": "2026-09-27T07:35+00:00",
  "market_notes": [
   {
-   "market": "No action - seventh consecutive session, five straight trail holds",
-   "note": "Both trails computed below their stops again: ETH 2,382.13 against 2,449.83 (-0.66 ATR), BTC 76,789.58 against 79,304.74 (-1.03 ATR). ETH 2,690.23 (+0.80%), $97.92, +47.0%, stop 8.94% below spot. BTC 84,012.00 (+0.24%), $142.37, +4.57%, stop 5.60% below and still 1.29% under entry. The count is recorded deliberately: most of what this system produces is 'leave it alone', computed rather than decided, and the failure mode that guards against is the one this book actually had in August - stops re-derived from scratch each session and drifting unnoticed."
+   "market": "ETH - momentum turning while price holds",
+   "note": "STRONG BUY -> BUY (50 -> 40) on a fresh MACD bearish cross, with core EQUAL to score, so genuine and not a stretch artefact. Second real momentum downgrade in three sessions: Sept 25 momentum went flat and stopped being scored (65 -> 50), today it crossed bearish. Over those same three sessions price rose every day - +0.61%, +0.80%, +0.65%. That divergence is worth naming rather than smoothing: it is the shape that precedes a roll-over, and equally the shape of an ordinary consolidation inside an uptrend, and I cannot tell which from here. Trend and structure untouched - price above a rising 50-day, 20-day above 50-day. NOTHING discretionary follows: the exit is one daily close below 2,449.83, which is 9.48% away, on a position worth $98.51 at +47.9%. If momentum is genuinely turning, the trail stops ratcheting first and the stop does the rest."
   },
   {
-   "market": "Alts recover, greed intensifies, majors lag",
-   "note": "LINK +5.63%, AVAX +5.43%, SOL +3.87%, ADA +3.36%, GRAM +3.27% (BUY -> STRONG BUY), DOGE +3.31%, against BTC +0.24% and ETH +0.80%. Global market cap around $2.98tn with the Fear & Greed Index climbing 71 to 74 - greed intensifying while the largest assets cooled, which is an awkward combination: sentiment running ahead of the majors. BTC is consolidating near 84,000 after failing the 85,000-87,000 band."
+   "market": "Roles reversed between the two positions",
+   "note": "A week ago BTC's entire score was trend and structure with MACD flat, and that was the main caution attached to the deploy; ETH was the clean STRONG BUY at 75. Today BTC holds STRONG BUY 65 with core equal to score for a fifth session and momentum still positive, while ETH is the one with the bearish cross. BTC 84,540.65 (+0.67%), $143.27, +5.23%. Neither fact changes a rule."
   },
   {
-   "market": "LTC is the risk on this board, not the opportunity",
-   "note": "+3.10% to 72.90 with RSI at 83.7 - the most extreme reading this book has recorded on any asset - score 35 against core 65, on a fifth session running off the Grayscale ETF filing. Nothing on the board is a satellite candidate today: the rule needs RSI below 70 at selection and the four biggest movers sit at 68.2, 69.5, 66.7 and 83.7."
+   "market": "No action - eighth consecutive session",
+   "note": "Both trails computed below their stops: ETH 2,392.39 against 2,449.83 (-0.57 ATR), BTC 77,170.85 against 79,304.74 (-0.88 ATR). Sixth straight trail hold since the Sept-22 raises."
   },
   {
-   "market": "UAE - Saturday's numbers are the CONFIRMED record, and two upgrades survived",
-   "note": "Saturday's snapshot returns Friday's settled closes rather than an 11:10 Dubai draft, so these are the record. Two upgrades held through the close: EMAAR HOLD -> BUY and SALIK HOLD -> BUY. SALIK has gone STRONG SELL -50 on Tuesday to BUY 30 on Friday's close, an 80-point improvement over four sessions with real price behind it (+2.06% then +4.46%) - the one UAE name this month whose turn has been both large and confirmed. The muted set kept behaving: TECOM SELL -> STRONG SELL (-60) on a MACD bearish cross, its fourteenth band change in ten weeks, and DEWA SELL -> STRONG SELL. ADIB STRONG BUY -> BUY gives back yesterday's upgrade. ADCB's RSI sits at exactly 70.0, score 45 against core 65."
+   "market": "GRAM +9.58% - the laggard becomes the leader, on a real catalyst",
+   "note": "Telegram's native fee-free self-custodial Gram Wallet is rolling out progressively to its billion-plus user base, framing GRAM as Telegram's payment layer, with 24-hour volume up about 88.5%. Worth recording for where this asset has been: rated INSUFFICIENT DATA until Aug 25 for want of 55 bars, STRONG SELL at -75 on Sept 15 - the worst score on the board - and below its 50-day on Sept 10. Now STRONG BUY at 55 with core 65. Not a candidate today: RSI 67.4 passes the below-70 test but a 9.6% session straight after a 3.3% one is precisely the chase the satellite rule exists to prevent. If it consolidates and holds STRONG BUY it becomes the first genuine candidate since AVAX lapsed."
+  },
+  {
+   "market": "Elsewhere",
+   "note": "LTC BUY -> STRONG BUY came tagged 'penalty relief only, trend/momentum unchanged' - correct, its RSI is still 80.8 and nothing improved. AVAX RSI crossed above 70 to 71.1. Every UAE stock shows a stale counter of 1 or 2: Sunday's snapshot repeating Friday's settled closes, exactly as designed, with nothing changed."
   }
  ],
  "asset_notes": {
@@ -403,6 +407,12 @@
     "impact": "neutral",
     "date": "2026-09-26",
     "source": "news research pass"
+   },
+   {
+    "headline": "+0.67% to 84,540.65, holding STRONG BUY 65 with core equal to score for a fifth session and momentum still positive - now the stronger of the two held positions on signal",
+    "impact": "bullish",
+    "date": "2026-09-27",
+    "source": "advisor data"
    }
   ],
   "ETHUSDT": [
@@ -596,6 +606,12 @@
     "headline": "-0.61% to 2,668.58; score 65 -> 50 with core equal to score - a GENUINE downgrade on MACD momentum going flat, not a stretch artefact. Trend and structure untouched, still STRONG BUY",
     "impact": "neutral",
     "date": "2026-09-25",
+    "source": "advisor data"
+   },
+   {
+    "headline": "STRONG BUY -> BUY (50 -> 40) on a fresh MACD bearish cross with core equal to score - genuine deterioration, the second in three sessions, while price rose every one of those days",
+    "impact": "bearish",
+    "date": "2026-09-27",
     "source": "advisor data"
    }
   ],
@@ -1721,6 +1737,12 @@
     "impact": "neutral",
     "date": "2026-09-26",
     "source": "advisor data"
+   },
+   {
+    "headline": "BUY -> STRONG BUY tagged 'penalty relief only' - RSI still 80.8, nothing actually improved",
+    "impact": "neutral",
+    "date": "2026-09-27",
+    "source": "advisor data"
    }
   ],
   "GRAMUSDT": [
@@ -1765,16 +1787,22 @@
     "impact": "bullish",
     "date": "2026-09-26",
     "source": "advisor data"
+   },
+   {
+    "headline": "+9.58% to 1.59 on Telegram's fee-free self-custodial Gram Wallet rolling out to its 1bn+ user base, framing GRAM as Telegram's payment layer; 24h volume +88.5%. From STRONG SELL -75 on Sept 15 to STRONG BUY 55 today",
+    "impact": "bullish",
+    "date": "2026-09-27",
+    "source": "news research pass"
    }
   ]
  },
  "risk_flags": [
-  "Fear & Greed has climbed 71 to 74 while the majors cooled - sentiment running ahead of the largest assets. Global market cap ~$2.98tn with BTC consolidating near 84,000 after failing 85,000-87,000.",
-  "LTC's RSI of 83.7 is the most extreme reading this book has recorded on any asset. It is a risk marker, not an opportunity - and no asset on the board qualifies as a satellite candidate today under the RSI-below-70 rule.",
-  "BTC's stop at 79,304.74 is 5.60% below spot and still 1.29% under entry, capping the loss at ~$1.76. ETH's stop at 2,449.83 is 8.94% below and locks +33.89%. Both triggers are a SINGLE daily close.",
+  "ETH's momentum is deteriorating while price holds: two genuine (core-verified) downgrades in three sessions, now a MACD bearish cross. Trend and structure intact. No discretionary action - the exit is ONE daily close below 2,449.83, 9.48% away.",
+  "BTC is now the stronger held line on signal, reversing the position a week ago when its flat momentum was the main caution on the deploy. Stop 79,304.74, 6.19% below spot, still 1.29% under entry.",
+  "LTC's RSI is 80.8 and its upgrade today was pure penalty relief. AVAX crossed above 70 to 71.1. The board remains extended at the top end.",
+  "GRAM is the first potential satellite candidate since AVAX lapsed, but not today - a 9.6% session straight after a 3.3% one is the chase the rule exists to prevent. Needs to consolidate and hold STRONG BUY.",
   "NOTHING in this book has ever been reconciled against the exchange. ETH dates from 2026-07-17 and the BTC deploy from 2026-09-20 is advice of unknown execution. Four numbers - ETH, BTC, LINK, USDT - would fix it.",
-  "800 AED of the core bucket has been stuck since the plan began, waiting on an Al Ramz brokerage account that has not been opened. SALIK is now the one UAE name with a confirmed, large turn - and it remains unbuyable for that reason.",
-  "Six UAE names now have band changes muted as noise: TALABAT, DEWA, TECOM, ADNOCDRILL, IHC, and EMIRATESNBD is close. TECOM alone has changed band fourteen times in ten weeks."
+  "800 AED of the core bucket has been stuck since the plan began, waiting on an Al Ramz brokerage account that has not been opened."
  ],
  "corrections": [
   "Prior context.json was 13 days stale (2026-07-17) because daily cycles were skipped 2026-07-20..29; refreshed 2026-07-30."

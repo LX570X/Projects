@@ -1890,6 +1890,30 @@
    "action": "Saturday's numbers are the CONFIRMED record, and two upgrades survived",
    "rationale": "Saturday's snapshot returns Friday's settled closes rather than an 11:10 Dubai draft, so today's UAE readings are the confirmed record. Two upgrades held through the close: EMAAR HOLD -> BUY (15 to 30) and SALIK HOLD -> BUY (5 to 30). SALIK in particular has now gone STRONG SELL -50 on Tuesday to BUY 30 on Friday's close, a 80-point improvement over four sessions with real price behind it - +2.06% then +4.46% - which makes it the one UAE name this month whose turn has been both large and confirmed. Against that, the muted set kept behaving: TECOM SELL -> STRONG SELL (-60) on a MACD bearish cross, its own fourteenth band change in ten weeks, and DEWA SELL -> STRONG SELL. ADIB STRONG BUY -> BUY gives back yesterday's upgrade. ADCB's RSI sits at exactly 70.0 with score 45 against core 65. TALABAT -2.56% continues down.",
    "status": "advice only - no positions"
+  },
+  {
+   "date": "2026-09-27",
+   "ticker": "ETHUSDT",
+   "action": "STRONG BUY -> BUY on a real MACD bearish cross - momentum turning while price holds",
+   "price": 2706.33,
+   "rationale": "ETH fell to BUY (50 -> 40) on a fresh MACD bearish cross, with core EQUAL to score, so this is genuine deterioration and not a stretch artefact. It is the second real momentum downgrade in three sessions: on Sept 25 MACD went flat and stopped being scored (65 -> 50), today it has crossed bearish. Over the same three sessions price has risen every day - +0.61%, +0.80%, +0.65% - so momentum is deteriorating while price holds. That divergence deserves naming rather than smoothing: it is the shape that precedes a roll-over, and it is equally the shape of an ordinary consolidation inside an uptrend, and I cannot tell you which from here. What I can tell you is that trend and structure are untouched - price above a rising 50-day, 20-day above 50-day - and that NOTHING discretionary follows. The position exits on ONE daily close below 2,449.83, which is 9.48% away, and it is worth $98.51 at +47.9%. If momentum is genuinely turning, the trail stops ratcheting first and the stop does the rest; that sequencing is the whole reason the stop is mechanical. Notified because this is the first non-stretch deterioration on a held position in this run and the user should know the biggest line is weakening internally even as it prints gains.",
+   "status": "open, +47.9% - no action, momentum flagged"
+  },
+  {
+   "date": "2026-09-27",
+   "ticker": "POSITIONS",
+   "action": "no action - eighth consecutive session; BTC is now the stronger line on signal",
+   "price": 84540.65,
+   "rationale": "Both trails computed below their stops: ETH 2,392.39 against 2,449.83 (-0.57 ATR), BTC 77,170.85 against 79,304.74 (-0.88 ATR). Eighth consecutive session with no action, sixth straight trail hold since the Sept-22 raises. BTC 84,540.65 (+0.67%), $143.27, +5.23%, holding STRONG BUY 65 with core equal to score for a fifth session and momentum still positive. Worth noting the reversal of roles: a week ago BTC's whole score was trend and structure with MACD flat and I flagged that as the main caution on the deploy, while ETH was the clean STRONG BUY at 75. Today BTC is the stronger of the two on signal and ETH is the one with a bearish cross. Neither fact changes a rule.",
+   "status": "no action"
+  },
+  {
+   "date": "2026-09-27",
+   "ticker": "GRAMUSDT",
+   "action": "+9.58% on a real Telegram catalyst - the laggard becomes the leader",
+   "price": 1.59,
+   "rationale": "GRAM +9.58% to 1.59, the day's biggest move by a wide margin, on a verified catalyst: Telegram's native fee-free self-custodial Gram Wallet is rolling out progressively to its billion-plus user base, framing GRAM as Telegram's payment layer, with 24-hour volume up about 88.5%. Worth recording because of where this asset has been. GRAM was rated INSUFFICIENT DATA until Aug 25 for want of 55 bars, printed STRONG SELL at -75 on Sept 15 - the worst score on the board - and crossed below its 50-day on Sept 10. It is now STRONG BUY at 55 with core 65. Not held, and not a candidate today: RSI 67.4 passes the below-70 test but a 9.6% single session immediately after a 3.3% one is exactly the chase the satellite rule exists to prevent, and the reserve is 209 AED. If it consolidates and holds STRONG BUY it becomes the first genuine candidate since AVAX lapsed.",
+   "status": "advice only - watch, not a candidate yet"
   }
  ]
 }
