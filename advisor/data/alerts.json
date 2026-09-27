@@ -1,47 +1,35 @@
 {
- "generated_at_utc": "2026-09-26T07:09:11+00:00",
+ "generated_at_utc": "2026-09-27T07:10:14+00:00",
  "alerts": [
+  {
+   "ticker": "ETHUSDT",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ETHUSDT: STRONG BUY -> BUY (score 50 -> 40)"
+  },
+  {
+   "ticker": "ETHUSDT",
+   "severity": "info",
+   "type": "macd",
+   "msg": "ETHUSDT: MACD bearish cross"
+  },
   {
    "ticker": "AVAXUSDT",
    "severity": "info",
-   "type": "big_move",
-   "msg": "AVAXUSDT moved +5.4% in the last day (now 10.701 USD)"
+   "type": "rsi",
+   "msg": "AVAXUSDT: RSI crossed above 70 (now 71.1)"
   },
   {
    "ticker": "GRAMUSDT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "GRAMUSDT: BUY -> STRONG BUY (score 30 -> 50)"
-  },
-  {
-   "ticker": "EMAAR",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "EMAAR: HOLD -> BUY (score 15 -> 30)"
-  },
-  {
-   "ticker": "SALIK",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "SALIK: HOLD -> BUY (score 5 -> 30)"
-  },
-  {
-   "ticker": "DEWA",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "DEWA: SELL -> STRONG SELL (score -45 -> -50)"
-  },
-  {
-   "ticker": "TECOM",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "TECOM: SELL -> STRONG SELL (score -35 -> -60)"
-  },
-  {
-   "ticker": "TECOM",
    "severity": "info",
-   "type": "macd",
-   "msg": "TECOM: MACD bearish cross"
+   "type": "big_move",
+   "msg": "GRAMUSDT moved +9.6% in the last day (now 1.59 USD)"
+  },
+  {
+   "ticker": "LTCUSDT",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "LTCUSDT: BUY -> STRONG BUY (score 35 -> 45) \u2014 penalty relief only, trend/momentum unchanged"
   }
  ]
 }

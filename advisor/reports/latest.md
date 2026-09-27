@@ -1,7 +1,7 @@
 # Trading Advisor — Signal Report
 
-- Data fetched: 2026-09-26T07:09:11+00:00 UTC
-- Report time: 2026-09-26 11:09 Dubai time
+- Data fetched: 2026-09-27T07:10:14+00:00 UTC
+- Report time: 2026-09-27 11:10 Dubai time
 - UAE market (DFM/ADX): CLOSED (hours Mon–Fri 10:00–15:00 Dubai)
 
 > Educational, rules-based technical screen — not licensed financial advice. Markets can move against any signal; never risk money you cannot afford to lose.
@@ -10,29 +10,29 @@
 
 | Asset | Price | 24h/1d | Signal | Score | RSI | Stop | Target 1 | Target 2 |
 |---|---|---|---|---|---|---|---|---|
-| BTCUSDT (Bitcoin) | 84,012.00 USD | +0.2% | **STRONG BUY** | 65 | 64.0 | 75,644.48 | 88,885.61 | 93,759.21 |
-| SOLUSDT (Solana) | 120.45 USD | +3.9% | **STRONG BUY** | 65 | 66.7 | 96.88 | 131.68 | 142.90 |
-| XRPUSDT (XRP) | 1.552 USD | +1.7% | **STRONG BUY** | 65 | 62.4 | 1.283 | 1.758 | 1.963 |
-| DOGEUSDT (Dogecoin) | 0.09781 USD | +3.3% | **STRONG BUY** | 65 | 62.1 | 0.08008 | 0.1098 | 0.1219 |
-| AVAXUSDT (Avalanche) | 10.7 USD | +5.4% | **STRONG BUY** | 65 | 69.5 | 7.27 | 12.35 | 13.99 |
-| ADAUSDT (Cardano) | 0.2553 USD | +3.4% | **STRONG BUY** | 65 | 65.8 | 0.1954 | 0.2868 | 0.3183 |
-| LINKUSDT (Chainlink) | 14.1 USD | +5.6% | **STRONG BUY** | 55 | 68.2 | 10.89 | 15.61 | 17.12 |
-| ETHUSDT (Ethereum) | 2,690.23 USD | +0.8% | **STRONG BUY** | 50 | 63.5 | 2,398.26 | 2,896.55 | 3,102.87 |
-| GRAMUSDT (Gram (ex-Toncoin)) | 1.451 USD | +3.3% | **STRONG BUY** | 50 | 57.5 | 1.317 | 1.558 | 1.665 |
-| BNBUSDT (BNB) | 773.27 USD | +0.2% | **BUY** | 40 | 61.0 | 708.72 | 821.19 | 869.11 |
-| LTCUSDT (Litecoin) | 72.9 USD | +3.1% | **BUY** | 35 | 83.7 | 51.27 | 80.78 | 88.65 |
+| BTCUSDT (Bitcoin) | 84,540.65 USD | +0.7% | **STRONG BUY** | 65 | 65.3 | 75,644.48 | 89,382.15 | 94,223.66 |
+| SOLUSDT (Solana) | 121.44 USD | +0.9% | **STRONG BUY** | 65 | 68.2 | 96.88 | 132.49 | 143.54 |
+| XRPUSDT (XRP) | 1.522 USD | -1.9% | **STRONG BUY** | 65 | 59.2 | 1.283 | 1.732 | 1.941 |
+| DOGEUSDT (Dogecoin) | 0.09693 USD | -0.8% | **STRONG BUY** | 65 | 60.6 | 0.08008 | 0.1091 | 0.1212 |
+| LINKUSDT (Chainlink) | 14.28 USD | +1.5% | **STRONG BUY** | 65 | 69.2 | 10.89 | 15.83 | 17.37 |
+| ADAUSDT (Cardano) | 0.2554 USD | +0.1% | **STRONG BUY** | 65 | 65.5 | 0.1954 | 0.2876 | 0.3198 |
+| GRAMUSDT (Gram (ex-Toncoin)) | 1.59 USD | +9.6% | **STRONG BUY** | 55 | 67.4 | 1.317 | 1.726 | 1.862 |
+| AVAXUSDT (Avalanche) | 10.96 USD | +2.7% | **STRONG BUY** | 45 | 71.1 | 7.27 | 12.66 | 14.35 |
+| LTCUSDT (Litecoin) | 71.88 USD | -1.3% | **STRONG BUY** | 45 | 80.8 | 51.27 | 80 | 88.13 |
+| ETHUSDT (Ethereum) | 2,706.33 USD | +0.6% | **BUY** | 40 | 64.6 | 2,398.26 | 2,908.96 | 3,111.58 |
+| BNBUSDT (BNB) | 775.35 USD | +0.3% | **BUY** | 25 | 61.6 | 708.72 | 822.27 | 869.20 |
 
-**BTCUSDT** — STRONG BUY (score 65): price above 50-day average (7.611e+04) — uptrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping up; MACD momentum positive; RSI 64 neutral.
-**SOLUSDT** — STRONG BUY (score 65): price above 50-day average (97.72) — uptrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping up; MACD momentum positive; RSI 67 neutral.
-**XRPUSDT** — STRONG BUY (score 65): price above 50-day average (1.32) — uptrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping up; MACD momentum positive; RSI 62 neutral.
-**DOGEUSDT** — STRONG BUY (score 65): price above 50-day average (0.08368) — uptrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping up; MACD momentum positive; RSI 62 neutral.
-**AVAXUSDT** — STRONG BUY (score 65): price above 50-day average (7.766) — uptrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping up; MACD momentum positive; RSI 70 neutral.
-**ADAUSDT** — STRONG BUY (score 65): price above 50-day average (0.2093) — uptrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping up; MACD momentum positive; RSI 66 neutral.
-**LINKUSDT** — STRONG BUY (score 55): price above 50-day average (11.24) — uptrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping up; MACD momentum positive; RSI 68 neutral; price above upper Bollinger band (stretched up).
-**ETHUSDT** — STRONG BUY (score 50): price above 50-day average (2389) — uptrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping up; MACD momentum flat (not scored); RSI 63 neutral.
-**GRAMUSDT** — STRONG BUY (score 50): price above 50-day average (1.381) — uptrend; 20/50-day averages within 0.38% — no structural edge (not scored); 50-day average sloping up; MACD momentum positive; RSI 58 neutral.
-**BNBUSDT** — BUY (score 40): price above 50-day average (701.9) — uptrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping up; MACD momentum flat (not scored); fresh MACD bearish cross (last 3 days); RSI 61 neutral.
-**LTCUSDT** — BUY (score 35): price above 50-day average (52.37) — uptrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping up; MACD momentum positive; RSI 84 overbought — pullback risk; price above upper Bollinger band (stretched up).
+**BTCUSDT** — STRONG BUY (score 65): price above 50-day average (7.652e+04) — uptrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping up; MACD momentum positive; RSI 65 neutral.
+**SOLUSDT** — STRONG BUY (score 65): price above 50-day average (98.65) — uptrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping up; MACD momentum positive; RSI 68 neutral.
+**XRPUSDT** — STRONG BUY (score 65): price above 50-day average (1.33) — uptrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping up; MACD momentum positive; RSI 59 neutral.
+**DOGEUSDT** — STRONG BUY (score 65): price above 50-day average (0.08419) — uptrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping up; MACD momentum positive; RSI 61 neutral.
+**LINKUSDT** — STRONG BUY (score 65): price above 50-day average (11.36) — uptrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping up; MACD momentum positive; RSI 69 neutral.
+**ADAUSDT** — STRONG BUY (score 65): price above 50-day average (0.2104) — uptrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping up; MACD momentum positive; RSI 65 neutral.
+**GRAMUSDT** — STRONG BUY (score 55): price above 50-day average (1.389) — uptrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping up; MACD momentum positive; RSI 67 neutral; price above upper Bollinger band (stretched up).
+**AVAXUSDT** — STRONG BUY (score 45): price above 50-day average (7.858) — uptrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping up; MACD momentum positive; RSI 71 overbought — pullback risk.
+**LTCUSDT** — STRONG BUY (score 45): price above 50-day average (52.88) — uptrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping up; MACD momentum positive; RSI 81 overbought — pullback risk.
+**ETHUSDT** — BUY (score 40): price above 50-day average (2405) — uptrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping up; MACD momentum flat (not scored); fresh MACD bearish cross (last 3 days); RSI 65 neutral.
+**BNBUSDT** — BUY (score 25): price above 50-day average (705.4) — uptrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping up; MACD momentum negative; fresh MACD bearish cross (last 3 days); RSI 62 neutral.
 
 ## UAE Stocks (trade via Al Ramz)
 
@@ -79,13 +79,11 @@
 **TECOM** — STRONG SELL (score -60): price below 50-day average (3.36) — downtrend; 20/50-day averages within 0.36% — no structural edge (not scored); 50-day average sloping down; MACD momentum negative; fresh MACD bearish cross (last 3 days); RSI 40 neutral.
 
 ## Alerts (changes since previous run)
-- [info] AVAXUSDT moved +5.4% in the last day (now 10.701 USD)
-- [actionable] GRAMUSDT: BUY -> STRONG BUY (score 30 -> 50)
-- [actionable] EMAAR: HOLD -> BUY (score 15 -> 30)
-- [actionable] SALIK: HOLD -> BUY (score 5 -> 30)
-- [actionable] DEWA: SELL -> STRONG SELL (score -45 -> -50)
-- [actionable] TECOM: SELL -> STRONG SELL (score -35 -> -60)
-- [info] TECOM: MACD bearish cross
+- [actionable] ETHUSDT: STRONG BUY -> BUY (score 50 -> 40)
+- [info] ETHUSDT: MACD bearish cross
+- [info] AVAXUSDT: RSI crossed above 70 (now 71.1)
+- [info] GRAMUSDT moved +9.6% in the last day (now 1.59 USD)
+- [actionable] LTCUSDT: BUY -> STRONG BUY (score 35 -> 45) — penalty relief only, trend/momentum unchanged
 
 Position sizing: risk no more than 1–2% of capital per idea; the suggested stop defines the risk per unit.
 
