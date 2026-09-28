@@ -1,35 +1,47 @@
 {
- "generated_at_utc": "2026-09-27T07:10:14+00:00",
+ "generated_at_utc": "2026-09-28T07:09:33+00:00",
  "alerts": [
   {
-   "ticker": "ETHUSDT",
+   "ticker": "BTCUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "ETHUSDT: STRONG BUY -> BUY (score 50 -> 40)"
+   "msg": "BTCUSDT: STRONG BUY -> BUY (score 65 -> 40)"
   },
   {
-   "ticker": "ETHUSDT",
+   "ticker": "BTCUSDT",
    "severity": "info",
    "type": "macd",
-   "msg": "ETHUSDT: MACD bearish cross"
+   "msg": "BTCUSDT: MACD bearish cross"
   },
   {
-   "ticker": "AVAXUSDT",
-   "severity": "info",
-   "type": "rsi",
-   "msg": "AVAXUSDT: RSI crossed above 70 (now 71.1)"
-  },
-  {
-   "ticker": "GRAMUSDT",
+   "ticker": "DOGEUSDT",
    "severity": "info",
    "type": "big_move",
-   "msg": "GRAMUSDT moved +9.6% in the last day (now 1.59 USD)"
+   "msg": "DOGEUSDT moved -4.1% in the last day (now 0.09297 USD)"
   },
   {
-   "ticker": "LTCUSDT",
+   "ticker": "DEWA",
+   "severity": "info",
+   "type": "signal_change",
+   "msg": "DEWA: STRONG SELL -> HOLD (score -50 -> 15)"
+  },
+  {
+   "ticker": "TECOM",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "TECOM moved +3.1% in the last day (now 3.34 AED)"
+  },
+  {
+   "ticker": "TECOM",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "LTCUSDT: BUY -> STRONG BUY (score 35 -> 45) \u2014 penalty relief only, trend/momentum unchanged"
+   "msg": "TECOM: STRONG SELL -> SELL (score -60 -> -45)"
+  },
+  {
+   "ticker": "ADCB",
+   "severity": "info",
+   "type": "rsi",
+   "msg": "ADCB: RSI crossed above 70 (now 70.3)"
   }
  ]
 }
