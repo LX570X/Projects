@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-27T07:30+00:00",
+ "updated": "2026-09-28T07:30+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": 0,
@@ -20,12 +20,12 @@
    "stop": 2449.83,
    "plan": "Hold. ONE daily CLOSE below the stop (2,316.48) -> convert ALL to USDT, not another coin. The old 2,300 two-close exit and the 1,964 / 2,105 targets are retired: price is far above all of them and the trail now sits higher than any of them.",
    "action_required": {
-    "as_of": "2026-09-27",
+    "as_of": "2026-09-28",
     "end_state": "hold 0.0091 ETH - if you are already there, do nothing",
     "stop": 2449.83,
     "stop_raised_from": 2316.48,
     "trigger": "ONE daily CLOSE below 2,449.83 -> convert ALL to USDT",
-    "note": "Stop UNCHANGED at 2,449.83. The trail computes 2,392.39 from Saturday's 2,696.33 close, 0.57 ATR BELOW the existing stop, so max() holds it. ETH 2,706.33 (+0.65%), $98.51, +47.9%. Stop 9.48% below spot, locking +33.89%. NO ACTION - the rule is a single daily CLOSE below 2,449.83 and nothing is close to it."
+    "note": "Stop UNCHANGED at 2,449.83. The trail computes 2,395.48 from Sunday's 2,688.65 close, 0.56 ATR below the existing stop, so max() holds it. ETH 2,649.81 (-2.12%), $96.45, +44.8%. Stop 7.55% below spot, locking +33.89%. NO ACTION - the exit is one daily CLOSE below 2,449.83."
    },
    "fill": {
     "state": "position confirmed by user 2026-07-17; the 2026-08-20 trim is UNCONFIRMED",
@@ -33,11 +33,11 @@
     "evidence": "user stated 0.0364 ETH on 2026-07-17; no fill confirmation since"
    },
    "signal_deterioration": {
-    "as_of": "2026-09-27",
-    "what": "ETH STRONG BUY -> BUY (50 -> 40) on a fresh MACD bearish cross. Core equals score at 40, so this is GENUINE deterioration and not a stretch artefact.",
-    "sequence": "Second real momentum downgrade in three sessions: on Sept 25 MACD momentum went flat and stopped being scored (65 -> 50), and today it has crossed bearish (50 -> 40). Price has gone the other way over the same period, +0.61% then +0.80% then +0.65%.",
-    "reading": "Momentum is deteriorating while price holds. That divergence is worth naming rather than smoothing over - it is the shape that precedes a roll-over, and it is also the shape of an ordinary consolidation in an uptrend. Trend and structure are untouched: price above a rising 50-day, 20-day above 50-day.",
-    "what_would_change_it": "Nothing discretionary. The position exits on ONE daily close below 2,449.83, which is 9.48% away. If momentum is genuinely turning, the trail will stop ratcheting first and the stop will do the rest."
+    "as_of": "2026-09-28",
+    "sequence": "Score has fallen 65 -> 50 -> 50 -> 40 -> 25 across five sessions (Sept 24 to 28), with core EQUAL to score at every step, so every one of those downgrades is genuine rather than a stretch artefact. MACD went flat on Sept 25, crossed bearish on Sept 27, and the histogram is now -4.67.",
+    "what_is_intact": "Trend and structure are untouched throughout. Price 2,649.81 sits 10.2% above a rising 50-day at 2,403.44, and the 20-day (2,586.22) remains above the 50-day. All 25 remaining points come from those three terms; the momentum terms have gone from +25 to -10.",
+    "counterweight": "Flows have not confirmed the momentum picture. Spot ETH ETFs took about $86.95m on Sept 25, and spot BTC ETFs about $134m on their seventh consecutive inflow day. Fear & Greed has cooled 74 to 63 but is still Greed. Momentum indicators are rolling over while money is still arriving - those can stay divergent for weeks, and I am not going to pretend to know which resolves.",
+    "what_would_change_it": "Nothing discretionary. The exit is ONE daily close below 2,449.83. If this is a genuine turn, the trail stops ratcheting first (it has now held six sessions running) and the stop does the rest."
    }
   }
  ],
@@ -169,7 +169,7 @@
    }
   },
   "opportunity_status": {
-   "as_of": "2026-09-27",
+   "as_of": "2026-09-28",
    "state": "DEPLOYED (instruction issued 2026-09-20) - fill UNCONFIRMED",
    "what_happened": "BTC rated STRONG BUY (50, core 50) on two consecutive readings - Friday's close of 80,883.87 and Saturday's 81,249.99. That satisfies the 2-day rule. First confirmation in FOUR armings of this trigger (Aug 3 BTC, Aug 15 AVAX, Sept 5-6 BTC all failed to confirm).",
    "instruction": {
@@ -194,15 +194,15 @@
    "position_now": {
     "indicative_qty": 0.00169464,
     "entry": 80340.01,
-    "last": 84540.65,
-    "value_usd": 143.27,
-    "pnl_pct": 5.23,
+    "last": 83130.01,
+    "value_usd": 140.88,
+    "pnl_pct": 3.47,
     "stop": 79304.74,
     "stop_raised_from": 74919.5,
     "trigger": "ONE daily CLOSE below 79,304.74 -> convert ALL back to USDT",
-    "stop_note": "Stop UNCHANGED at 79,304.74. The trail computes 77,170.85 from Saturday's 84,433.10 close, 0.88 ATR below the existing stop, so it holds. Still 1.29% under entry, capping the loss at about $1.76.",
-    "stop_distance_pct": -6.19,
-    "signal_note": "BTC +0.67% to 84,540.65, holding STRONG BUY 65 with core equal to score for a fifth consecutive session and MACD momentum still positive. It is now the stronger of the two positions on signal, which was not true a week ago."
+    "stop_note": "Stop UNCHANGED at 79,304.74. The trail computes 77,271.29 from Sunday's 84,472.00 close, 0.85 ATR below the existing stop, so it holds. Still 1.29% under the 80,340.01 entry, capping the loss at about $1.76. The cushion is now 4.60% against 6.19% yesterday and Monday's low was 82,705.02 - the narrowest it has been.",
+    "stop_distance_pct": -4.6,
+    "signal_note": "BTC STRONG BUY -> BUY (65 -> 40) on a fresh MACD bearish cross, core EQUAL to score, so genuine. Yesterday I wrote that BTC was now the stronger of the two positions on signal; one session later it has the same bearish cross ETH had. Trend and structure intact: price 8.1% above a rising 50-day at 76,877, 20-day above 50-day. Histogram -81.36."
    }
   },
   "stock_shortlist_note": {
@@ -341,16 +341,16 @@
   "cost_disclosed": "A close-based stop does NOT fill at the stop level. With one observation a day, the exit happens at the next daily reading, which can be well below the stop. Yesterday I wrote 'if it fires it fires near +17.1%' - that was imprecise, and the realistic fill is worse than the level."
  },
  "eth_stop_watch": {
-  "as_of": "2026-09-27",
+  "as_of": "2026-09-28",
   "stop": 2449.83,
   "trigger": "one daily CLOSE below 2,449.83",
-  "distance_pct": -9.48,
+  "distance_pct": -7.55,
   "locks_pct": 33.89,
   "recent_closes": [
-   2688.05,
    2691.61,
    2696.33,
-   2706.33
+   2688.65,
+   2649.81
   ]
  },
  "satellite_rule_fix": {
@@ -368,5 +368,11 @@
   "as_of": "2026-09-27",
   "count": "Eighth consecutive session with no action. The trail has held the stop six times in a row since the two raises on Sept 22.",
   "why_it_matters": "Most of what this system produces is 'leave it alone', computed rather than decided. The failure mode it guards against is the one this book actually had in August, when stops were re-derived from scratch every session and drifted."
+ },
+ "book_signal_state": {
+  "as_of": "2026-09-28",
+  "summary": "BOTH held positions now carry fresh MACD bearish crosses with core equal to score - genuine momentum deterioration, not stretch. Neither has broken trend or structure: ETH is 10.2% above its rising 50-day, BTC 8.1% above its.",
+  "honest_reading": "This is the first time both lines have deteriorated together. It is a real change in the book's risk picture and is being reported as one. It is NOT a sell signal under any written rule, and I am not going to invent one - the exits are single daily closes below 2,449.83 and 79,304.74, which are 7.55% and 4.60% away.",
+  "counterweight": "ETF flows remain positive on both assets and Fear & Greed is still in Greed at 63. Momentum rolling over while money still arrives is a normal mid-trend divergence as often as it is a top."
  }
 }

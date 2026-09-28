@@ -1914,6 +1914,36 @@
    "price": 1.59,
    "rationale": "GRAM +9.58% to 1.59, the day's biggest move by a wide margin, on a verified catalyst: Telegram's native fee-free self-custodial Gram Wallet is rolling out progressively to its billion-plus user base, framing GRAM as Telegram's payment layer, with 24-hour volume up about 88.5%. Worth recording because of where this asset has been. GRAM was rated INSUFFICIENT DATA until Aug 25 for want of 55 bars, printed STRONG SELL at -75 on Sept 15 - the worst score on the board - and crossed below its 50-day on Sept 10. It is now STRONG BUY at 55 with core 65. Not held, and not a candidate today: RSI 67.4 passes the below-70 test but a 9.6% single session immediately after a 3.3% one is exactly the chase the satellite rule exists to prevent, and the reserve is 209 AED. If it consolidates and holds STRONG BUY it becomes the first genuine candidate since AVAX lapsed.",
    "status": "advice only - watch, not a candidate yet"
+  },
+  {
+   "date": "2026-09-28",
+   "ticker": "BTCUSDT",
+   "action": "STRONG BUY -> BUY on a fresh MACD bearish cross - yesterday's claim reversed in a session",
+   "price": 83130.01,
+   "rationale": "BTC fell 65 -> 40 on a fresh MACD bearish cross with core EQUAL to score, so genuine. Yesterday I wrote that BTC was 'now the stronger of the two positions on signal, which was not true a week ago'. One session later it carries the same bearish cross ETH had, and the observation has aged badly - which is worth recording rather than quietly dropping, because it was a characterisation of a two-day-old pattern presented with more solidity than two days earns. Trend and structure are intact: price 83,130.01 sits 8.1% above a rising 50-day at 76,877 with the 20-day above the 50-day, and the histogram is -81.36. The stop stays at 79,304.74 - the trail computed 77,271.29, 0.85 ATR below it - but the cushion is now 4.60% against 6.19% yesterday, the narrowest since the position opened, with Monday's low at 82,705.02. Position $140.88, +3.47%, down from +5.23%.",
+   "status": "open, +3.47% - no action, momentum flagged"
+  },
+  {
+   "date": "2026-09-28",
+   "ticker": "ETHUSDT",
+   "action": "fifth session of genuine deterioration - 65 to 25",
+   "price": 2649.81,
+   "rationale": "ETH -2.12% to 2,649.81 and the score is now BUY 25, having fallen 65 -> 50 -> 50 -> 40 -> 25 across five sessions with core EQUAL to score at every single step. Every one of those downgrades is genuine; none is a stretch artefact. MACD went flat on Sept 25, crossed bearish on Sept 27, and the histogram is -4.67. What has NOT changed is trend and structure: price sits 10.2% above a rising 50-day at 2,403.44 with the 20-day at 2,586.22 still above it. All 25 remaining points come from those three terms, while the momentum terms have swung from +25 to -10. Position $96.45, +44.8%, down from a peak of +50.2% on Sept 23. Stop 2,449.83 is 7.55% below spot and the trail has now held six sessions running, which is itself the signal that the ratchet has stopped - exactly the sequencing the mechanical stop exists to provide.",
+   "status": "open, +44.8% - no action"
+  },
+  {
+   "date": "2026-09-28",
+   "ticker": "BOOK",
+   "action": "both positions deteriorating together for the first time",
+   "rationale": "This is the first session in which both held lines carry fresh MACD bearish crosses with core equal to score. That is a real change in the book's risk picture and I am reporting it as one. It is NOT a sell signal under any written rule and I am not going to invent one: the exits are single daily closes below 2,449.83 and 79,304.74, which are 7.55% and 4.60% away, and neither position has broken trend or structure. The counterweight is genuine and worth stating alongside rather than after: US spot BTC ETFs took about $134m on Sept 25, their seventh consecutive inflow day, spot ETH ETFs about $86.95m, and Fear & Greed has cooled from 74 to 63 but remains in Greed with market cap around $2.94tn. Momentum rolling over while money still arrives is a normal mid-trend divergence at least as often as it is a top, and I cannot tell you which this is. What I can tell you is that the book is designed so I do not have to: the trail has stopped ratcheting, which is the first thing that happens in a genuine turn, and the stops handle the rest.",
+   "status": "logged - no action"
+  },
+  {
+   "date": "2026-09-28",
+   "ticker": "UAE-stocks",
+   "action": "the muted names keep proving the mute",
+   "rationale": "DEWA STRONG SELL -> HOLD, a 65-point swing on a +1.11% move, two sessions after going the other way. TECOM +3.09% STRONG SELL -> SELL, its own fifteenth band change in ten weeks. Both muted, both behaving exactly as muting predicts, and between them they have now produced roughly thirty band changes since mid-July without a single one being actionable. Genuine and quiet underneath: ALDAR holds STRONG BUY 65 with a seventh consecutive constructive session, FAB 50, ADCB 45 against core 65 with RSI at 70.3, ADIB and EAND both BUY 35, SALIK 20 against core 30 as its RSI reaches 69.1. The ADX large-caps remain the only consistently readable part of the UAE board, and all of it is academic while the Al Ramz account is unopened.",
+   "status": "advice only - no positions"
   }
  ]
 }
