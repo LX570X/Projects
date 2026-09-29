@@ -1944,6 +1944,43 @@
    "action": "the muted names keep proving the mute",
    "rationale": "DEWA STRONG SELL -> HOLD, a 65-point swing on a +1.11% move, two sessions after going the other way. TECOM +3.09% STRONG SELL -> SELL, its own fifteenth band change in ten weeks. Both muted, both behaving exactly as muting predicts, and between them they have now produced roughly thirty band changes since mid-July without a single one being actionable. Genuine and quiet underneath: ALDAR holds STRONG BUY 65 with a seventh consecutive constructive session, FAB 50, ADCB 45 against core 65 with RSI at 70.3, ADIB and EAND both BUY 35, SALIK 20 against core 30 as its RSI reaches 69.1. The ADX large-caps remain the only consistently readable part of the UAE board, and all of it is academic while the Al Ramz account is unopened.",
    "status": "advice only - no positions"
+  },
+  {
+   "date": "2026-09-29",
+   "ticker": "BOOKKEEPING",
+   "action": "FOUND: the opportunity bucket was double-counted for nine days",
+   "rationale": "monthly_plan.accumulations still listed opportunity_usdt_aed as 500 AED even though that bucket was DEPLOYED into BTC on Sept 20. For nine days the record showed the same 500 AED twice - once as idle USDT waiting for a trigger, and again as the roughly $136 BTC position that trigger bought. No instruction was ever wrong because of it: every BTC note referenced the position correctly and the deploy itself was properly recorded. But anyone reading the accumulations block on its own would have believed there was 500 AED of dry powder that does not exist, and that is precisely the class of quiet inconsistency that produced the August bookkeeping failure - where I reported P&L on positions the ledger said were never executed. Fixed: opportunity_usdt_aed set to 0, with the bucket now represented by the BTC position rather than a cash line. Found by reading the monthly plan ahead of Thursday's DCA rather than by anything going wrong, which is an argument for reading the whole record periodically instead of only the parts each cycle touches.",
+   "status": "corrected"
+  },
+  {
+   "date": "2026-09-29",
+   "ticker": "DCA",
+   "action": "Thursday's contribution makes the Al Ramz blocker binding",
+   "rationale": "The third 1,000 AED contribution lands Oct 1, two days away, splitting 400 core UAE stocks, 250 core crypto, 250 opportunity, 100 satellite. With it the UAE stock bucket reaches 1,200 AED - the threshold at which the first stock order becomes possible under the quarterly rule. Al Ramz is still not open. This has been the standing blocker since the plan began on July 17, and on Thursday it stops being theoretical: the bucket will hold enough to trade and there will be no account to trade it through. The arithmetic is worth stating plainly because it has crept up quietly - by Thursday 1,200 of the 3,000 AED contributed will be sitting in a bucket that cannot be spent, which is 40% of everything paid into this plan. Nothing breaks if the account is not open; the money accumulates and waits. But two days of notice is the last useful moment to say so. The core_crypto split is Thursday's call on Thursday's data: both BTC and ETH currently rate BUY with MACD bearish crosses in force, which argues for an even split rather than a tilt to either.",
+   "status": "flagged with two days notice"
+  },
+  {
+   "date": "2026-09-29",
+   "ticker": "POSITIONS",
+   "action": "price recovered, signal did NOT - recording the non-repair",
+   "price": 2709.42,
+   "rationale": "ETH +2.25% to 2,709.42 and BTC +1.09% to 84,026.41, both recovering most of yesterday's fall. ETH is $98.62 at +48.1% from +44.8%; BTC is $142.39 at +4.59% from +3.47%. But BOTH bands are unchanged - ETH still BUY 25, BTC still BUY 40, core equal to score in each case, MACD bearish crosses still in force on both. Recording that deliberately: yesterday I flagged deterioration on both lines, today price bounced, and the tempting read is that the warning has passed. It has not. One up day does not repair a momentum cross, and the scores are identical to yesterday's. Both stops hold - ETH's trail computed 2,413.76, 0.39 ATR below the 2,449.83 stop, the closest it has come to re-arming in seven sessions but still short; BTC's computed 76,704.30, 1.15 ATR below. BTC's cushion widened back to 5.62% from 4.60%.",
+   "status": "no action - ninth consecutive session"
+  },
+  {
+   "date": "2026-09-29",
+   "ticker": "LINKUSDT",
+   "action": "+9.3% to 15.10 on a dense run of institutional catalysts",
+   "price": 15.1,
+   "rationale": "LINK +9.3% to 15.10, a new high, with RSI crossing above 70 to 70.1 and four verified catalysts inside a week: CCIP 2.0 launched Sept 28 adding verifier, compliance and speed controls for institutions moving tokenized assets cross-chain; an Infosys partnership integrating CCIP across banking and payment platforms serving 600-plus banks globally; the Chainlink reserve passing 6 million LINK, around $87m, through continuous buybacks; and Sergey Nazarov speaking at SWIFT's Sibos 2026 in Miami Beach, running Sept 28 to Oct 1. Whale accumulation is reported at 2.5m LINK. This is the densest catalyst run any asset on this watchlist has had. Not held - the position was stopped out on Sept 14 at 11.412 - and not a candidate at RSI 70.1 under the satellite rule. The exit-cost figure is kept current in portfolio.json and goes into the monthly review rather than being re-narrated daily.",
+   "status": "advice only - not held"
+  },
+  {
+   "date": "2026-09-29",
+   "ticker": "UAE-stocks",
+   "action": "three ADX large-caps upgrade together, two days before the stock bucket matters",
+   "rationale": "EMIRATESNBD +2.93% BUY -> STRONG BUY (50), EAND BUY -> STRONG BUY (50), ADIB BUY -> STRONG BUY (50), joining ALDAR at 65 on a seventh constructive session and FAB at 50. That is five ADX large-caps rating STRONG BUY simultaneously, the strongest the UAE board has looked since this plan began - and it lands two days before the stock bucket reaches the 1,200 AED that would let it be acted on. The timing is coincidence, not signal, and all of today's UAE readings are Tuesday 11:10 Dubai intraday drafts that have failed by the close five times this month. Against them: IHC SELL -> STRONG SELL, TALABAT -3.85% to 1.125. The muted set performed as usual - DEWA HOLD -> SELL and TECOM +4.01% SELL -> HOLD, its sixteenth band change in ten weeks.",
+   "status": "advice only - no positions"
   }
  ]
 }
