@@ -1,47 +1,77 @@
 {
- "generated_at_utc": "2026-09-28T07:09:33+00:00",
+ "generated_at_utc": "2026-09-29T07:09:33+00:00",
  "alerts": [
   {
-   "ticker": "BTCUSDT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "BTCUSDT: STRONG BUY -> BUY (score 65 -> 40)"
-  },
-  {
-   "ticker": "BTCUSDT",
-   "severity": "info",
-   "type": "macd",
-   "msg": "BTCUSDT: MACD bearish cross"
-  },
-  {
-   "ticker": "DOGEUSDT",
+   "ticker": "LINKUSDT",
    "severity": "info",
    "type": "big_move",
-   "msg": "DOGEUSDT moved -4.1% in the last day (now 0.09297 USD)"
+   "msg": "LINKUSDT moved +9.3% in the last day (now 15.1 USD)"
+  },
+  {
+   "ticker": "LINKUSDT",
+   "severity": "info",
+   "type": "rsi",
+   "msg": "LINKUSDT: RSI crossed above 70 (now 70.1)"
+  },
+  {
+   "ticker": "AVAXUSDT",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "AVAXUSDT moved +5.7% in the last day (now 11.169 USD)"
+  },
+  {
+   "ticker": "AVAXUSDT",
+   "severity": "info",
+   "type": "rsi",
+   "msg": "AVAXUSDT: RSI crossed above 70 (now 70.2)"
+  },
+  {
+   "ticker": "EMIRATESNBD",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "EMIRATESNBD moved +2.9% in the last day (now 31.6 AED)"
+  },
+  {
+   "ticker": "EMIRATESNBD",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "EMIRATESNBD: BUY -> STRONG BUY (score 35 -> 50)"
   },
   {
    "ticker": "DEWA",
-   "severity": "info",
-   "type": "signal_change",
-   "msg": "DEWA: STRONG SELL -> HOLD (score -50 -> 15)"
-  },
-  {
-   "ticker": "TECOM",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "TECOM moved +3.1% in the last day (now 3.34 AED)"
-  },
-  {
-   "ticker": "TECOM",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "TECOM: STRONG SELL -> SELL (score -60 -> -45)"
+   "msg": "DEWA: HOLD -> SELL (score 15 -> -35)"
   },
   {
-   "ticker": "ADCB",
+   "ticker": "EMAARDEV",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "EMAARDEV: HOLD -> SELL (score 15 -> -35)"
+  },
+  {
+   "ticker": "TECOM",
    "severity": "info",
-   "type": "rsi",
-   "msg": "ADCB: RSI crossed above 70 (now 70.3)"
+   "type": "signal_change",
+   "msg": "TECOM: SELL -> HOLD (score -45 -> 5)"
+  },
+  {
+   "ticker": "IHC",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "IHC: SELL -> STRONG SELL (score -25 -> -50)"
+  },
+  {
+   "ticker": "EAND",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "EAND: BUY -> STRONG BUY (score 35 -> 50)"
+  },
+  {
+   "ticker": "ADIB",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ADIB: BUY -> STRONG BUY (score 35 -> 50)"
   }
  ]
 }
