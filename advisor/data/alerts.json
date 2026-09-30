@@ -1,77 +1,41 @@
 {
- "generated_at_utc": "2026-09-29T07:09:33+00:00",
+ "generated_at_utc": "2026-09-30T07:09:13+00:00",
  "alerts": [
   {
-   "ticker": "LINKUSDT",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "LINKUSDT moved +9.3% in the last day (now 15.1 USD)"
-  },
-  {
-   "ticker": "LINKUSDT",
-   "severity": "info",
-   "type": "rsi",
-   "msg": "LINKUSDT: RSI crossed above 70 (now 70.1)"
-  },
-  {
-   "ticker": "AVAXUSDT",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "AVAXUSDT moved +5.7% in the last day (now 11.169 USD)"
-  },
-  {
-   "ticker": "AVAXUSDT",
-   "severity": "info",
-   "type": "rsi",
-   "msg": "AVAXUSDT: RSI crossed above 70 (now 70.2)"
-  },
-  {
-   "ticker": "EMIRATESNBD",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "EMIRATESNBD moved +2.9% in the last day (now 31.6 AED)"
-  },
-  {
-   "ticker": "EMIRATESNBD",
+   "ticker": "XRPUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "EMIRATESNBD: BUY -> STRONG BUY (score 35 -> 50)"
+   "msg": "XRPUSDT: STRONG BUY -> BUY (score 50 -> 25)"
   },
   {
-   "ticker": "DEWA",
+   "ticker": "XRPUSDT",
+   "severity": "info",
+   "type": "macd",
+   "msg": "XRPUSDT: MACD bearish cross"
+  },
+  {
+   "ticker": "DOGEUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "DEWA: HOLD -> SELL (score 15 -> -35)"
+   "msg": "DOGEUSDT: STRONG BUY -> BUY (score 65 -> 40)"
+  },
+  {
+   "ticker": "DOGEUSDT",
+   "severity": "info",
+   "type": "macd",
+   "msg": "DOGEUSDT: MACD bearish cross"
+  },
+  {
+   "ticker": "GRAMUSDT",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "GRAMUSDT moved -7.0% in the last day (now 1.472 USD)"
   },
   {
    "ticker": "EMAARDEV",
    "severity": "actionable",
-   "type": "signal_change",
-   "msg": "EMAARDEV: HOLD -> SELL (score 15 -> -35)"
-  },
-  {
-   "ticker": "TECOM",
-   "severity": "info",
-   "type": "signal_change",
-   "msg": "TECOM: SELL -> HOLD (score -45 -> 5)"
-  },
-  {
-   "ticker": "IHC",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "IHC: SELL -> STRONG SELL (score -25 -> -50)"
-  },
-  {
-   "ticker": "EAND",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "EAND: BUY -> STRONG BUY (score 35 -> 50)"
-  },
-  {
-   "ticker": "ADIB",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "ADIB: BUY -> STRONG BUY (score 35 -> 50)"
+   "type": "trend",
+   "msg": "EMAARDEV: price crossed below its 50-day average \u2014 trend change"
   }
  ]
 }
