@@ -1981,6 +1981,28 @@
    "action": "three ADX large-caps upgrade together, two days before the stock bucket matters",
    "rationale": "EMIRATESNBD +2.93% BUY -> STRONG BUY (50), EAND BUY -> STRONG BUY (50), ADIB BUY -> STRONG BUY (50), joining ALDAR at 65 on a seventh constructive session and FAB at 50. That is five ADX large-caps rating STRONG BUY simultaneously, the strongest the UAE board has looked since this plan began - and it lands two days before the stock bucket reaches the 1,200 AED that would let it be acted on. The timing is coincidence, not signal, and all of today's UAE readings are Tuesday 11:10 Dubai intraday drafts that have failed by the close five times this month. Against them: IHC SELL -> STRONG SELL, TALABAT -3.85% to 1.125. The muted set performed as usual - DEWA HOLD -> SELL and TECOM +4.01% SELL -> HOLD, its sixteenth band change in ten weeks.",
    "status": "advice only - no positions"
+  },
+  {
+   "date": "2026-09-30",
+   "ticker": "SEPTEMBER-REVIEW",
+   "action": "month-end review - the month the rules were tested",
+   "rationale": "September in one line: the market went up, the book went up less than the market, and the reason is an error of mine that a rule then executed faithfully. BTC +5.67%, ETH +7.92%, LINK +26.15% over the month. The confirmed book - ETH alone - went from $89.66 at +34.6% to $96.94 at +45.5%. The BTC deploy opened Sept 20 and sits at +3.36% notional. LINK was stopped out on Sept 14 at +17.88% realised; held to today it would be +47.57%, so the exit gave up about 29.7 percentage points, and the cause was my Sept-7 mistake of computing the trail from a live 13.37 snapshot instead of that day's 12.748 close. That set the stop at 11.337 where the rule authorised 10.715, and the correct stop has never once closed below since. Five actions were taken all month: one erroneous stop raise, one stop-out, one deploy, and three legitimate stop raises. Seven errors were found and fixed, six of them by reading rather than by anything breaking. The judgement calls graded honestly: refusing to infer the FOMC outcome was right and would have been wrong the other way; lapsing the AVAX candidate at RSI 81.9 was right and AVAX fell the next day; claiming stretch had ranked the downside was too generous and was corrected the same day; and calling BTC the stronger position aged badly inside a session. Two cycles were missed, Sept 8 and 9, and the gap check found nothing crossed. The two things that have not moved all month are the two things only the user can move: no reconciliation has ever been done, and Al Ramz is still not open - which from tomorrow means 40% of everything contributed sits in a bucket that cannot be spent.",
+   "status": "month closed"
+  },
+  {
+   "date": "2026-09-30",
+   "ticker": "POSITIONS",
+   "action": "no action - BTC's cushion is the narrowest since it opened",
+   "price": 83038.79,
+   "rationale": "BTC -1.17% to 83,038.79, score falling 40 -> 25 with core equal to score on a fresh MACD bearish cross and the histogram deepening to -159.06. Trend and structure still intact - price 7.4% above a rising 50-day at 77,284, 20-day above 50-day - so all 25 points come from those three terms with momentum contributing nothing. The stop holds at 79,304.74 (trail computed 76,907.17, 1.06 ATR below) but the cushion is 4.50%, the narrowest since the position opened ten days ago. Position $140.72, +3.36%. ETH improved slightly, 25 -> 35, purely because the bearish CROSS aged out of the 3-day window; momentum is still negative at -11.39, so that is a bookkeeping improvement rather than a real one and should not be read as recovery. ETH 2,663.07 (-1.72%), $96.94, +45.5%, stop 8.01% below. Tenth consecutive session with no action.",
+   "status": "no action"
+  },
+  {
+   "date": "2026-09-30",
+   "ticker": "crypto-broad",
+   "action": "the momentum roll-over spreads to the majors' followers",
+   "rationale": "XRP STRONG BUY -> BUY (50 -> 25) and DOGE STRONG BUY -> BUY (65 -> 40), both on fresh MACD bearish crosses with core equal to score. That takes the count of genuine momentum crosses to four across the complex in four sessions - ETH Sept 27, BTC Sept 28, XRP and DOGE today - and every one of them has core equal to score, so none is a stretch artefact. GRAM -7.01% gave back most of its Telegram-wallet spike. What has NOT happened matters as much: not one of the eleven has lost its 50-day. Every single asset on the crypto board remains above a rising 50-day with its 20-day above its 50-day. This is momentum deteriorating inside an intact trend structure, which is the same thing I have been saying for four days, and the discipline is to keep saying it rather than escalating the language because it has gone on longer.",
+   "status": "logged"
   }
  ]
 }

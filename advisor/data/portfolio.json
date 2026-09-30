@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-29T07:30+00:00",
+ "updated": "2026-09-30T07:30+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": 0,
@@ -20,12 +20,12 @@
    "stop": 2449.83,
    "plan": "Hold. ONE daily CLOSE below the stop (2,316.48) -> convert ALL to USDT, not another coin. The old 2,300 two-close exit and the 1,964 / 2,105 targets are retired: price is far above all of them and the trail now sits higher than any of them.",
    "action_required": {
-    "as_of": "2026-09-29",
+    "as_of": "2026-09-30",
     "end_state": "hold 0.0091 ETH - if you are already there, do nothing",
     "stop": 2449.83,
     "stop_raised_from": 2316.48,
     "trigger": "ONE daily CLOSE below 2,449.83 -> convert ALL to USDT",
-    "note": "Stop UNCHANGED at 2,449.83. The trail computes 2,413.76 from Monday's 2,688.71 close, 0.39 ATR below the existing stop - the closest it has come to re-arming in seven sessions, but still short. ETH 2,709.42 (+2.25%), $98.62, +48.1%, recovered from +44.8%. Stop 9.58% below spot, locking +33.89%."
+    "note": "Stop UNCHANGED at 2,449.83. The trail computes 2,402.95 from Tuesday's 2,677.98 close, 0.51 ATR below the existing stop, so max() holds it. ETH 2,663.07 (-1.72%), $96.94, +45.5%. Stop 8.01% below spot, locking +33.89%. Score improved 25 -> 35 as the MACD bearish CROSS aged out of the 3-day window, though momentum is still negative (histogram -11.39)."
    },
    "fill": {
     "state": "position confirmed by user 2026-07-17; the 2026-08-20 trim is UNCONFIRMED",
@@ -168,7 +168,7 @@
    }
   },
   "opportunity_status": {
-   "as_of": "2026-09-29",
+   "as_of": "2026-09-30",
    "state": "DEPLOYED (instruction issued 2026-09-20) - fill UNCONFIRMED",
    "what_happened": "BTC rated STRONG BUY (50, core 50) on two consecutive readings - Friday's close of 80,883.87 and Saturday's 81,249.99. That satisfies the 2-day rule. First confirmation in FOUR armings of this trigger (Aug 3 BTC, Aug 15 AVAX, Sept 5-6 BTC all failed to confirm).",
    "instruction": {
@@ -193,15 +193,15 @@
    "position_now": {
     "indicative_qty": 0.00169464,
     "entry": 80340.01,
-    "last": 84026.41,
-    "value_usd": 142.39,
-    "pnl_pct": 4.59,
+    "last": 83038.79,
+    "value_usd": 140.72,
+    "pnl_pct": 3.36,
     "stop": 79304.74,
     "stop_raised_from": 74919.5,
     "trigger": "ONE daily CLOSE below 79,304.74 -> convert ALL back to USDT",
-    "stop_note": "Stop UNCHANGED at 79,304.74. The trail computes 76,704.30 from Monday's 83,500.01 close, 1.15 ATR below it, so it holds. Cushion back out to 5.62% from 4.60%.",
-    "stop_distance_pct": -5.62,
-    "signal_note": "BTC +1.09% to 84,026.41 but the band is unchanged at BUY 40 with core equal to score - same as ETH, price recovered and signal did not. The MACD bearish cross remains in force."
+    "stop_note": "Stop UNCHANGED at 79,304.74. The trail computes 76,907.17 from Tuesday's 83,663.66 close, 1.06 ATR below it, so it holds. Cushion 4.50% - the NARROWEST since the position opened.",
+    "stop_distance_pct": -4.5,
+    "signal_note": "BTC score fell 40 -> 25, core equal to score, on a fresh MACD bearish cross with the histogram deepening to -159.06. Trend and structure still intact: price 7.4% above a rising 50-day at 77,284, 20-day above 50-day. All 25 points are those three terms."
    }
   },
   "stock_shortlist_note": {
@@ -385,5 +385,75 @@
   "what": "monthly_plan.accumulations still listed opportunity_usdt_aed as 500 even though that bucket was DEPLOYED into BTC on 2026-09-20. The 500 AED has been double-counted for nine days - once as an idle USDT accumulation and again as the ~$136 BTC position.",
   "fix": "opportunity_usdt_aed set to 0. The bucket is now represented by the BTC position, not by a cash line.",
   "impact": "No instruction was ever wrong because of it - every BTC note referenced the position correctly. But a reader of the accumulations block alone would have thought there was 500 AED of dry powder that does not exist, and that is exactly the kind of quiet inconsistency that produced the August bookkeeping failure."
+ },
+ "september_review": {
+  "as_of": "2026-09-30",
+  "covers": "2026-09-01 to 2026-09-30",
+  "market": {
+   "BTC": "78,581.29 -> 83,038.79, +5.67%",
+   "ETH": "2,467.65 -> 2,663.07, +7.92%",
+   "LINK": "11.325 -> 14.286, +26.15%"
+  },
+  "book_at_month_end": {
+   "confirmed": [
+    {
+     "ticker": "ETHUSDT",
+     "qty": 0.0364,
+     "value_usd": 96.94,
+     "pnl_pct": 45.5,
+     "note": "was $89.66 / +34.6% at end-August"
+    }
+   ],
+   "advised_unconfirmed": [
+    {
+     "ticker": "BTCUSDT",
+     "qty": 0.00169464,
+     "notional_usd": 140.72,
+     "pnl_pct": 3.36,
+     "note": "opened 2026-09-20; NOTIONAL ONLY, no P&L is added to the confirmed total"
+    }
+   ],
+   "cash_buckets_aed": {
+    "core_uae_stocks": 800,
+    "opportunity": 0,
+    "satellite_reserve": 209
+   },
+   "closed_in_month": [
+    {
+     "ticker": "LINKUSDT",
+     "exit": "2026-09-14 at 11.412",
+     "realised_pct": 17.88,
+     "counterfactual": "held at today's 14.286 it would be +47.57%, so the exit gave up about 29.7 percentage points. The exit is 25.18% behind.",
+     "cause": "my Sept-7 error - the trail was computed from a live 13.37 snapshot instead of that day's 12.748 close, setting the stop 5.8% tighter than the rule authorised at 11.337 against a correct 10.715. The rule-correct stop never fired on a close at any point since."
+    }
+   ]
+  },
+  "actions_taken": [
+   "Sept 7: LINK stop raised to 11.337 (the erroneous one).",
+   "Sept 13-14: LINK stop fired on the Sept-13 close; SELL issued, realised +17.88%.",
+   "Sept 19: ETH stop raised to 2,316.48 (+1.09 ATR); BTC deploy ARMED.",
+   "Sept 20: BTC deploy CONFIRMED - 500 AED into BTC at 80,340.01, stop 74,919.50. First confirmation in four armings.",
+   "Sept 22: BOTH stops raised - ETH to 2,449.83, BTC to 79,304.74. First time both ratcheted in one cycle."
+  ],
+  "errors_found_and_fixed": [
+   "Sept 10: every trail stop to date had been computed from the live 07:10 snapshot rather than the daily CLOSE the rule specifies. Method corrected; existing stops not retrofitted.",
+   "Sept 12: stop TRIGGER semantics had never been written down. Codified as close-based - recorded that it was codified after an ambiguous event and in the direction that favoured the open position.",
+   "Sept 12: corrected 'if it fires it fires near +17.1%' - a close-based stop with one observation a day exits at the NEXT reading, not at the level.",
+   "Sept 15: the big_move alert keyed off a provider change field that reads 0.0 on ADX names even when price moved, so a genuine 3% session could pass unflagged. Engine now falls back to our own consecutive readings.",
+   "Sept 21: the satellite lapse clause keyed off the headline band instead of CORE score, conflating deterioration with over-extension. Wording fixed, explicitly NOT retroactively applied to the AVAX lapse it had just decided.",
+   "Sept 29: the opportunity bucket was double-counted for nine days - 500 AED shown as both idle USDT and the BTC position it bought. Corrected to 0."
+  ],
+  "judgement_calls_graded": [
+   "Sept 17: refused to infer the FOMC outcome from price action when the news pass failed. Verified Sept 18 as a 25bp HIKE with more priced into 2027 - the inference I declined to make ('a hold, or a hike framed as one-and-done') would have been wrong. The refusal was right.",
+   "Sept 14: exited LINK into a known catalyst (Circle Arc mainnet) rather than overriding the stop. Cost about 29.7pp. The rule was right to be obeyed and the level it fired at was mine to have got wrong.",
+   "Sept 21: AVAX satellite candidate lapsed at RSI 81.9 rather than being bought. AVAX fell 4.39% the next session. Right call.",
+   "Sept 24: claimed stretch penalties had ranked the downside; graded it honestly the same day as directionally right but loose, since BTC was stretched and fell least while LTC was second-most stretched and was the only green name.",
+   "Sept 28: wrote that BTC was 'now the stronger of the two positions on signal'. One session later it carried the same bearish cross. Recorded rather than dropped."
+  ],
+  "cycles": "28 of 30 serviced. Sept 8 and 9 were missed while the session was idle; the gap check on Sept 10 confirmed no level had been crossed, with LINK's worst print 2.18% above its stop.",
+  "still_outstanding": [
+   "RECONCILIATION: nothing in this book has ever been checked against the exchange. The ETH quantity dates from 2026-07-17. Four numbers - ETH, BTC, LINK, USDT - would turn a plausible book into an accurate one.",
+   "AL RAMZ: still not open. Tomorrow's contribution takes the UAE stock bucket to 1,200 AED, the threshold at which the first order becomes possible. 40% of everything contributed will then be sitting in a bucket that cannot be spent."
+  ]
  }
 }
