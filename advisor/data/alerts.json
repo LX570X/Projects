@@ -1,41 +1,71 @@
 {
- "generated_at_utc": "2026-09-30T07:09:13+00:00",
+ "generated_at_utc": "2026-10-01T05:49:21+00:00",
  "alerts": [
   {
-   "ticker": "XRPUSDT",
+   "ticker": "SOLUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "XRPUSDT: STRONG BUY -> BUY (score 50 -> 25)"
+   "msg": "SOLUSDT: STRONG BUY -> BUY (score 50 -> 40)"
   },
   {
-   "ticker": "XRPUSDT",
+   "ticker": "SOLUSDT",
    "severity": "info",
    "type": "macd",
-   "msg": "XRPUSDT: MACD bearish cross"
+   "msg": "SOLUSDT: MACD bearish cross"
   },
   {
-   "ticker": "DOGEUSDT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "DOGEUSDT: STRONG BUY -> BUY (score 65 -> 40)"
-  },
-  {
-   "ticker": "DOGEUSDT",
-   "severity": "info",
-   "type": "macd",
-   "msg": "DOGEUSDT: MACD bearish cross"
-  },
-  {
-   "ticker": "GRAMUSDT",
+   "ticker": "SALIK",
    "severity": "info",
    "type": "big_move",
-   "msg": "GRAMUSDT moved -7.0% in the last day (now 1.472 USD)"
+   "msg": "SALIK moved -3.6% in the last day (now 5.4 AED)"
+  },
+  {
+   "ticker": "SALIK",
+   "severity": "info",
+   "type": "signal_change",
+   "msg": "SALIK: BUY -> HOLD (score 30 -> -20)"
   },
   {
    "ticker": "EMAARDEV",
    "severity": "actionable",
+   "type": "signal_change",
+   "msg": "EMAARDEV: SELL -> STRONG SELL (score -35 -> -50)"
+  },
+  {
+   "ticker": "TECOM",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "TECOM: SELL -> BUY (score -35 -> 25)"
+  },
+  {
+   "ticker": "TECOM",
+   "severity": "info",
+   "type": "macd",
+   "msg": "TECOM: MACD bullish cross"
+  },
+  {
+   "ticker": "TECOM",
+   "severity": "actionable",
    "type": "trend",
-   "msg": "EMAARDEV: price crossed below its 50-day average \u2014 trend change"
+   "msg": "TECOM: price crossed above its 50-day average \u2014 trend change"
+  },
+  {
+   "ticker": "FAB",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "FAB: STRONG BUY -> BUY (score 50 -> 40)"
+  },
+  {
+   "ticker": "EAND",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "EAND: STRONG BUY -> BUY (score 50 -> 25)"
+  },
+  {
+   "ticker": "ADIB",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ADIB: STRONG BUY -> BUY (score 50 -> 40)"
   }
  ]
 }
