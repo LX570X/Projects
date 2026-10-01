@@ -1,25 +1,29 @@
 {
- "updated": "2026-09-30T07:35+00:00",
+ "updated": "2026-10-01T06:00+00:00",
  "market_notes": [
   {
-   "market": "SEPTEMBER REVIEW - the month the rules were tested",
-   "note": "The market went up, the book went up less than the market, and the reason is an error of mine that a rule then executed faithfully. BTC +5.67%, ETH +7.92%, LINK +26.15% over the month. The confirmed book - ETH alone - went from $89.66 at +34.6% to $96.94 at +45.5%. The BTC deploy opened Sept 20 and sits at +3.36% notional. LINK was stopped out Sept 14 at +17.88% realised; held to today it would be +47.57%, giving up about 29.7 percentage points, caused by the Sept-7 mistake of computing the trail from a live 13.37 snapshot rather than that day's 12.748 close."
+   "market": "OCTOBER DCA - 1,000 AED, and only one bucket actually buys",
+   "note": "core_crypto 250 AED buys 50/50: 125 AED (~$34.04) into ETH at 2,715.01 for 0.012537 ETH, 125 AED into BTC at 84,240.01 for 0.00040405 BTC. 50/50 because the scores are IDENTICAL (both BUY 35, core equal to score) and the secondary measures point one way each - ETH better on trend extension (+10.68% above its 50-day vs BTC's +7.83%), BTC better on momentum once the histogram is normalised by price (-0.2153% vs -0.2664%). August tilted 65/35 to ETH because the scores genuinely differed; this month they do not. DCA is signal-agnostic, so both get bought despite negative momentum on both."
   },
   {
-   "market": "What was fixed, and how it was found",
-   "note": "Seven errors corrected in September: the trail using live snapshots instead of closes (Sept 10); stop TRIGGER semantics never written down, codified close-based (Sept 12); the imprecise claim that a stop fills at its level (Sept 12); the big_move alert silently failing on ADX names whose provider change field reads 0.0 (Sept 15); the satellite lapse clause keyed off the headline band rather than core score (Sept 21, fixed non-retroactively); and the opportunity bucket double-counted for nine days (Sept 29). Six of the seven were found by reading the record rather than by anything breaking."
+   "market": "The UAE stock bucket is now deployable and cannot be deployed",
+   "note": "400 AED accumulates to 1,200 AED - the exact threshold at which the first order becomes possible under the quarterly rule. Al Ramz is still not open, so from today the blocker is binding rather than theoretical: enough money to trade, no account to trade through. 1,200 of the 4,000 AED contributed since July now sits in a bucket that cannot be spent. If it were open, only three UAE names hold STRONG BUY today: ADCB 65, ALDAR 55, EMIRATESNBD 50."
   },
   {
-   "market": "Judgement calls, graded",
-   "note": "Refusing to infer the FOMC outcome when the news pass failed (Sept 17) was right - the inference I declined would have been wrong, since it was a 25bp hike with more priced into 2027. Lapsing the AVAX candidate at RSI 81.9 (Sept 21) was right; AVAX fell 4.39% the next session. Claiming stretch penalties had ranked the downside (Sept 24) was too generous and was corrected the same day. Calling BTC 'the stronger of the two positions on signal' (Sept 28) aged badly inside one session. 28 of 30 cycles serviced; Sept 8-9 missed, gap check found nothing crossed."
+   "market": "Satellite: WAIT - and this is an override, not a screen result",
+   "note": "FIVE names qualify on the letter of the rule (LINK, AVAX, ADA, GRAM, LTC all core 65 with RSI below 70), so declining to deploy is a judgement call over a screen that says deploy. The reason is dated and specific: FIVE genuine MACD bearish crosses across the complex in five sessions - ETH Sept 27, BTC Sept 28, XRP and DOGE Sept 30, SOL today - every one with core equal to score. The roll-over is propagating down the market-cap ladder toward exactly the alts that still screen STRONG BUY, and those five are the ones that have not crossed YET. BOUNDED so it cannot repeat the LINK failure: deploy the full 309 AED into the strongest qualifying name on the first day either BTC or ETH prints a MACD BULLISH cross, or on Oct 15 regardless. Two weeks, resolves either way."
   },
   {
-   "market": "Positions - BTC's cushion is the narrowest since it opened",
-   "note": "BTC -1.17% to 83,038.79, score 40 -> 25 on a fresh MACD bearish cross with the histogram deepening to -159.06. Trend intact: 7.4% above a rising 50-day, 20-day above 50-day, so all 25 points are those three terms. Stop holds at 79,304.74 but the cushion is 4.50%, narrowest in the position's ten days. ETH improved 25 -> 35 purely because the bearish CROSS aged out of the 3-day window - momentum is still negative at -11.39, so that is bookkeeping, not recovery, and should not be read as a turn. ETH 2,663.07 (-1.72%), $96.94, +45.5%, stop 8.01% below. Tenth consecutive session with no action."
+   "market": "Opportunity: hold as USDT, for two reasons",
+   "note": "This bucket's existing position IS the Sept-20 BTC deploy, and its signal has gone from STRONG BUY 75 at entry to BUY 35 with a MACD bearish cross - adding 250 AED today would be averaging up into weakening momentum on the one thing the bucket owns. And neither BTC nor ETH offers a clean entry with momentum negative on both. The bucket rule says explicitly that no deploy is fine."
   },
   {
-   "market": "Four genuine momentum crosses in four sessions - and not one lost trend",
-   "note": "XRP STRONG BUY -> BUY and DOGE STRONG BUY -> BUY, both on fresh MACD bearish crosses with core equal to score, following ETH on Sept 27 and BTC on Sept 28. None is a stretch artefact. GRAM -7.01% gave back most of its Telegram-wallet spike. What has NOT happened matters as much: not one of the eleven has lost its 50-day - every asset remains above a rising 50-day with its 20-day above it. Momentum deteriorating inside intact trend structure, the same read as four days ago, and the discipline is to keep saying it rather than escalating the language because it has lasted longer."
+   "market": "Yesterday's five-STRONG-BUY UAE cluster has already dissolved to three",
+   "note": "FAB, EAND (50 to 25) and ADIB all slipped STRONG BUY -> BUY in one session. Yesterday I called five simultaneous large-cap STRONG BUYs the strongest the board had looked, with the caveat that they were Tuesday intraday drafts - and the caveat was the part that mattered. SALIK also gave back its turn, -3.57% to 5.40 and BUY -> HOLD, four days after I singled it out as the month's one large AND confirmed UAE move. That read was based on Friday's SETTLED close, the strongest evidence available here, and it still did not hold five sessions. Sixth UAE label to fail this month, second from a settled close."
+  },
+  {
+   "market": "Positions - eleventh consecutive session with no action",
+   "note": "ETH 2,715.01 (+1.45%), $98.83, +48.4%, trail 2,404.74 against the 2,449.83 stop, 9.77% below spot. BTC 84,240.01 (+0.97%), $142.76, +4.85%, trail 76,512.54 against 79,304.74, cushion back out to 5.86% from 4.50%. SOL joined the bearish-cross list. Nothing on the crypto board has lost its 50-day - all eleven above a rising 50-day with the 20-day above it. Momentum deteriorating inside intact trend structure, unchanged read from four days ago."
   }
  ],
  "asset_notes": {
@@ -737,6 +741,12 @@
     "impact": "bearish",
     "date": "2026-09-03",
     "source": "news research pass"
+   },
+   {
+    "headline": "STRONG BUY -> BUY (50 -> 40) on a fresh MACD bearish cross - the fifth genuine cross across the complex in five sessions",
+    "impact": "bearish",
+    "date": "2026-10-01",
+    "source": "advisor data"
    }
   ],
   "XRPUSDT": [
@@ -1051,6 +1061,12 @@
     "impact": "bullish",
     "date": "2026-09-26",
     "source": "advisor data"
+   },
+   {
+    "headline": "-3.57% to 5.40, BUY -> HOLD - gives back the turn singled out four days ago as the month's one large AND confirmed UAE move; it was based on a settled close and still failed in five sessions",
+    "impact": "bearish",
+    "date": "2026-10-01",
+    "source": "advisor data"
    }
   ],
   "DEWA": [
@@ -1134,6 +1150,12 @@
     "headline": "BUY -> STRONG BUY (40 -> 50), core equal to score",
     "impact": "bullish",
     "date": "2026-09-11",
+    "source": "advisor data"
+   },
+   {
+    "headline": "STRONG BUY -> BUY (50 -> 25), one of three ADX large-caps to slip in a single session after yesterday's five-STRONG-BUY cluster",
+    "impact": "bearish",
+    "date": "2026-10-01",
     "source": "advisor data"
    }
   ],
@@ -1745,6 +1767,12 @@
     "impact": "bearish",
     "date": "2026-09-26",
     "source": "advisor data"
+   },
+   {
+    "headline": "SELL -> BUY above its 50-day on a MACD bullish cross - seventeenth band change in eleven weeks, still muted",
+    "impact": "neutral",
+    "date": "2026-10-01",
+    "source": "advisor data"
    }
   ],
   "ADNOCDRILL": [
@@ -1887,13 +1915,12 @@
   ]
  },
  "risk_flags": [
-  "TOMORROW, OCT 1: the third 1,000 AED contribution takes the UAE stock bucket to 1,200 AED - the threshold at which the first stock order becomes possible. Al Ramz is STILL NOT OPEN. From tomorrow, 40% of everything contributed to this plan sits in a bucket that cannot be spent.",
-  "BTC's stop cushion is 4.50%, the narrowest since the position opened ten days ago. Exit is ONE daily close below 79,304.74; it caps the loss at ~$1.76 and does not lock a gain.",
-  "FOUR genuine momentum crosses across the crypto complex in four sessions (ETH, BTC, XRP, DOGE), all with core equal to score. But NOT ONE of the eleven has lost its 50-day - momentum deteriorating inside intact trend structure.",
-  "ETH's score improvement to 35 is the bearish CROSS aging out of its 3-day window, not recovery. Momentum is still negative at -11.39.",
-  "SEPTEMBER COST: the LINK exit gave up ~29.7 percentage points against holding, caused by computing a trail from a live snapshot rather than a daily close. The method was fixed Sept 10; the cost is recorded rather than smoothed.",
-  "RECONCILIATION has never been done - not once since 2026-07-17. The ETH quantity is the user's word from that date and the BTC deploy is advice of unknown execution. Four numbers would fix it.",
-  "UAE band labels read at 11:10 Dubai are DRAFTS and failed by the close five times in September. Six names are muted as noise: TALABAT, DEWA, TECOM, ADNOCDRILL, IHC, and EMIRATESNBD is borderline."
+  "THE UAE STOCK BUCKET IS NOW DEPLOYABLE AND CANNOT BE DEPLOYED. It reached 1,200 AED today. Al Ramz is still not open. 1,200 of 4,000 AED contributed since July sits idle.",
+  "FIVE genuine MACD bearish crosses across the crypto complex in five sessions (ETH, BTC, XRP, DOGE, SOL), all core-verified. The roll-over is propagating down the market-cap ladder toward the alts that still screen STRONG BUY.",
+  "The satellite WAIT is a judgement call overriding a screen where five names qualify. Bounded: deploys on the first BTC or ETH MACD bullish cross, or Oct 15 regardless.",
+  "Both stops hold and both are single-close: ETH below 2,449.83 (9.77% away, locks +33.89%), BTC below 79,304.74 (5.86% away, caps loss at ~$1.76).",
+  "NOTHING in this book has ever been reconciled against the exchange - not once since 2026-07-17. Today's DCA adds two more unconfirmed instructions. Four numbers would fix it.",
+  "UAE band labels keep failing: six this month, and SALIK is the second to fail from a SETTLED close rather than an intraday draft. Yesterday's five-STRONG-BUY cluster is three today."
  ],
  "corrections": [
   "Prior context.json was 13 days stale (2026-07-17) because daily cycles were skipped 2026-07-20..29; refreshed 2026-07-30."

@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-30T07:30+00:00",
+ "updated": "2026-10-01T06:00+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": 0,
@@ -20,12 +20,12 @@
    "stop": 2449.83,
    "plan": "Hold. ONE daily CLOSE below the stop (2,316.48) -> convert ALL to USDT, not another coin. The old 2,300 two-close exit and the 1,964 / 2,105 targets are retired: price is far above all of them and the trail now sits higher than any of them.",
    "action_required": {
-    "as_of": "2026-09-30",
+    "as_of": "2026-10-01",
     "end_state": "hold 0.0091 ETH - if you are already there, do nothing",
     "stop": 2449.83,
     "stop_raised_from": 2316.48,
     "trigger": "ONE daily CLOSE below 2,449.83 -> convert ALL to USDT",
-    "note": "Stop UNCHANGED at 2,449.83. The trail computes 2,402.95 from Tuesday's 2,677.98 close, 0.51 ATR below the existing stop, so max() holds it. ETH 2,663.07 (-1.72%), $96.94, +45.5%. Stop 8.01% below spot, locking +33.89%. Score improved 25 -> 35 as the MACD bearish CROSS aged out of the 3-day window, though momentum is still negative (histogram -11.39)."
+    "note": "Stop UNCHANGED at 2,449.83. The trail computes 2,404.74 from Wednesday's 2,686.01 close, 0.48 ATR below it, so max() holds. ETH 2,715.01 (+1.45%), $98.83, +48.4%. Stop 9.77% below spot, locking +33.89%."
    },
    "fill": {
     "state": "position confirmed by user 2026-07-17; the 2026-08-20 trim is UNCONFIRMED",
@@ -67,9 +67,9 @@
   "started": "2026-07-17",
   "stocks_account": "Al Ramz - not opened yet, user will confirm",
   "accumulations": {
-   "core_uae_stocks_aed": 800,
-   "opportunity_usdt_aed": 0,
-   "satellite_reserve_aed": 209
+   "core_uae_stocks_aed": 1200,
+   "opportunity_usdt_aed": 250,
+   "satellite_reserve_aed": 309
   },
   "dca_history": [
    {
@@ -143,6 +143,51 @@
      "bucket_total_aed": 100,
      "reason": "The satellite slot is held by LINK (half advised at 9.681, second half pending at 10.65-11.05) and the rule is one satellite position at a time. SOL now scores 65 against LINK's 25 and is the strongest non-BTC/ETH alt - but switching the satellite to whatever tops the table each month is exactly the churn the rule exists to prevent, and SOL is +37% since it was declined on Aug 19 at RSI 70.0. Chasing it now would be buying the outcome already missed. September's 100 AED accumulates as satellite reserve until the slot frees - either the 10.65-11.05 order fills or LINK is stopped out."
     }
+   },
+   {
+    "date": "2026-10-01",
+    "amount_aed": 1000,
+    "aed_per_usd": 3.6725,
+    "core_crypto": {
+     "aed": 250,
+     "usd": 68.07,
+     "split": "50/50 - no honest basis for a tilt this month",
+     "eth_aed": 125,
+     "eth_usd": 34.04,
+     "eth_qty": 0.012537,
+     "eth_price": 2715.01,
+     "btc_aed": 125,
+     "btc_usd": 34.04,
+     "btc_qty": 0.00040405,
+     "btc_price": 84240.01,
+     "split_reason": "Scores are IDENTICAL - both BUY 35 with core equal to score. ETH has the better trend extension (price +10.68% above its 50-day against BTC's +7.83%, and a 20/50 separation of +6.84% against +4.99%), but BTC has the marginally shallower momentum deficit once the histogram is normalised by price (-0.2153% against ETH's -0.2664%). One measure each way on assets with the same score is not a basis for a tilt, so this month is 50/50. Previous months tilted 65/35 to ETH (August) because the scores genuinely differed then. DCA is signal-agnostic: both get bought regardless of the bearish momentum."
+    },
+    "core_uae_stocks": {
+     "action": "ACCUMULATE - cannot deploy",
+     "aed": 400,
+     "bucket_total_aed": 1200,
+     "reason": "Al Ramz is still not open. The bucket has now REACHED the 1,200 AED threshold at which the first order becomes possible, so from today the blocker is binding rather than theoretical: enough money to trade, no account to trade through. 1,200 of the 4,000 AED contributed since July is now sitting in a bucket that cannot be spent - 30% of the plan.",
+     "shortlist_if_opened": "On today's readings only three UAE names hold STRONG BUY: ADCB 65, ALDAR 55, EMIRATESNBD 50. Note that yesterday FIVE did - FAB, EAND and ADIB have all slipped to BUY in one session, which is the intraday-draft problem again."
+    },
+    "opportunity": {
+     "action": "HOLD AS USDT",
+     "aed": 250,
+     "bucket_total_aed": 250,
+     "reason": "Two reasons rather than one. First, this bucket's existing position IS the BTC deploy from Sept 20, and its signal has gone from STRONG BUY 75 at entry to BUY 35 now with a MACD bearish cross - adding to it today would be averaging up into weakening momentum on the one position the bucket already owns. Second, neither BTC nor ETH offers a clean entry with momentum negative on both. The bucket rule says explicitly that no deploy is fine."
+    },
+    "satellite": {
+     "action": "WAIT - with a bounded trigger",
+     "aed": 100,
+     "bucket_total_aed": 309,
+     "screen_result": "FIVE names qualify on the letter of the rule - LINK, AVAX, ADA, GRAM and LTC all score core 65 with RSI below 70. So 'wait' is a judgement call OVERRIDING a screen that says deploy, and is recorded as such.",
+     "reason": "The reason is specific and dated, not a feeling: there have now been FIVE genuine MACD bearish crosses across the complex in five sessions - ETH Sept 27, BTC Sept 28, XRP and DOGE Sept 30, SOL today - every one with core equal to score. The roll-over is propagating down the market-cap ladder toward exactly the alts that still screen STRONG BUY. Those five names are the ones that have not crossed YET. Deploying into them today is a bet that the roll-over stops where it currently is, and the satellite rule's purpose is one position with a stop, not a mandate to always be invested.",
+     "BOUNDED_TRIGGER": {
+      "primary": "Deploy the full 309 AED into the strongest core-65 alt with RSI below 70 on the first day EITHER BTC or ETH prints a MACD BULLISH cross - the roll-over reversing is the condition that makes the screen trustworthy again.",
+      "backstop": "If neither has done so by 2026-10-15, deploy anyway into the then-strongest qualifying name.",
+      "why_bounded": "This is the direct lesson from LINK, where a wait-for-conditions rule produced a watch that never acted while the asset ran 26% away. Two weeks, resolves either way.",
+      "note_on_LINK": "LINK screens joint-top at core 65 with RSI 63.4. It is NOT excluded for having stopped us out - that would be anchoring - but re-entering 26.8% above the 11.412 exit would need the entry to stand on its own merits, and a 3xATR stop at 11.70 is 19.1% below spot."
+     }
+    }
    }
   ],
   "satellite_candidate": {
@@ -168,7 +213,7 @@
    }
   },
   "opportunity_status": {
-   "as_of": "2026-09-30",
+   "as_of": "2026-10-01",
    "state": "DEPLOYED (instruction issued 2026-09-20) - fill UNCONFIRMED",
    "what_happened": "BTC rated STRONG BUY (50, core 50) on two consecutive readings - Friday's close of 80,883.87 and Saturday's 81,249.99. That satisfies the 2-day rule. First confirmation in FOUR armings of this trigger (Aug 3 BTC, Aug 15 AVAX, Sept 5-6 BTC all failed to confirm).",
    "instruction": {
@@ -193,14 +238,14 @@
    "position_now": {
     "indicative_qty": 0.00169464,
     "entry": 80340.01,
-    "last": 83038.79,
-    "value_usd": 140.72,
-    "pnl_pct": 3.36,
+    "last": 84240.01,
+    "value_usd": 142.76,
+    "pnl_pct": 4.85,
     "stop": 79304.74,
     "stop_raised_from": 74919.5,
     "trigger": "ONE daily CLOSE below 79,304.74 -> convert ALL back to USDT",
-    "stop_note": "Stop UNCHANGED at 79,304.74. The trail computes 76,907.17 from Tuesday's 83,663.66 close, 1.06 ATR below it, so it holds. Cushion 4.50% - the NARROWEST since the position opened.",
-    "stop_distance_pct": -4.5,
+    "stop_note": "Stop UNCHANGED at 79,304.74. Trail computes 76,512.54 from Wednesday's 83,623.60 close, 1.18 ATR below it. Cushion back out to 5.86% from 4.50%.",
+    "stop_distance_pct": -5.86,
     "signal_note": "BTC score fell 40 -> 25, core equal to score, on a fresh MACD bearish cross with the histogram deepening to -159.06. Trend and structure still intact: price 7.4% above a rising 50-day at 77,284, 20-day above 50-day. All 25 points are those three terms."
    }
   },
@@ -214,14 +259,8 @@
    "adports_status": "Board recommends ACCEPT at AED 6.25 following HSBC's fairness opinion (Aug 26). Deal risk materially reduced; trades as a stub to the Sept 15 3pm close. Remains OFF the core shortlist - a merger-arb stub heading to a delisting is not what the stock bucket is for."
   },
   "next_dca": {
-   "date": "2026-10-01",
-   "days_away": 2,
-   "amount_aed": 1000,
-   "split": "core_uae_stocks 400, core_crypto 250, opportunity 250, satellite 100",
-   "THE_DECISION_THAT_LANDS": "core_uae_stocks reaches 1,200 AED with this contribution - the threshold at which the first UAE stock order becomes possible. Al Ramz is STILL NOT OPEN. This has been the standing blocker since 2026-07-17 and on Thursday it stops being theoretical: the bucket will hold enough to trade and no account to trade it through.",
-   "if_not_open": "The 400 AED accumulates to 1,200 and waits. Nothing breaks, but a quarter of every contribution since July has now gone into a bucket that cannot be spent - 1,200 of 3,000 AED contributed, or 40% of the whole plan sitting idle by Thursday.",
-   "crypto_split_pending": "The core_crypto 250 AED split between BTC and ETH is decided on the day from the signals then, per the DCA rule. Both currently rate BUY with MACD bearish crosses in force, which argues for an even split rather than a tilt, but that is Thursday's call on Thursday's data.",
-   "shortlist_if_open": "On today's readings the ADX large-caps are the only consistently readable part of the UAE board: ALDAR STRONG BUY 65 (seven constructive sessions), FAB 50, EAND 50, ADIB 50, EMIRATESNBD 50, ADCB 45 against core 65."
+   "date": "2026-11-01",
+   "note": "core_uae_stocks will reach 1,600 AED. The bucket has been deployable since 2026-10-01 and has never been deployed."
   }
  },
  "trailing_stop_rule": {

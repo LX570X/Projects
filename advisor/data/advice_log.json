@@ -2003,6 +2003,35 @@
    "action": "the momentum roll-over spreads to the majors' followers",
    "rationale": "XRP STRONG BUY -> BUY (50 -> 25) and DOGE STRONG BUY -> BUY (65 -> 40), both on fresh MACD bearish crosses with core equal to score. That takes the count of genuine momentum crosses to four across the complex in four sessions - ETH Sept 27, BTC Sept 28, XRP and DOGE today - and every one of them has core equal to score, so none is a stretch artefact. GRAM -7.01% gave back most of its Telegram-wallet spike. What has NOT happened matters as much: not one of the eleven has lost its 50-day. Every single asset on the crypto board remains above a rising 50-day with its 20-day above its 50-day. This is momentum deteriorating inside an intact trend structure, which is the same thing I have been saying for four days, and the discipline is to keep saying it rather than escalating the language because it has gone on longer.",
    "status": "logged"
+  },
+  {
+   "date": "2026-10-01",
+   "ticker": "DCA",
+   "action": "October shopping list - 1,000 AED, and only one bucket actually buys",
+   "rationale": "core_crypto 250 AED buys 50/50: 125 AED (about $34.04) into ETH at 2,715.01 for 0.012537 ETH, and 125 AED into BTC at 84,240.01 for 0.00040405 BTC. The split is 50/50 because the scores are IDENTICAL - both BUY 35 with core equal to score - and the secondary measures point one way each: ETH has the better trend extension (+10.68% above its 50-day against BTC's +7.83%, 20/50 separation +6.84% against +4.99%) while BTC has the shallower momentum deficit once the histogram is normalised by price (-0.2153% against -0.2664%). One measure each way on equal scores is not a basis for a tilt. August tilted 65/35 to ETH because the scores genuinely differed then; this month they do not. DCA is signal-agnostic, so both get bought despite negative momentum on both. core_uae_stocks 400 AED accumulates to 1,200 AED and CANNOT be deployed - Al Ramz is still not open, and today the bucket reaches the exact threshold at which the first order becomes possible, so the blocker stops being theoretical. opportunity 250 AED holds as USDT: this bucket's existing position IS the Sept-20 BTC deploy, whose signal has gone from STRONG BUY 75 at entry to BUY 35 with a bearish cross, so adding today would be averaging up into weakening momentum on the one thing the bucket owns. satellite 100 AED waits, taking the reserve to 309 AED.",
+   "status": "shopping list issued - one buy, three holds"
+  },
+  {
+   "date": "2026-10-01",
+   "ticker": "SATELLITE",
+   "action": "WAIT - a judgement call overriding a screen that says deploy, recorded as such",
+   "rationale": "FIVE names qualify on the letter of the satellite rule: LINK, AVAX, ADA, GRAM and LTC all score core 65 with RSI below 70. So declining to deploy is me overriding the screen, and that needs a reason better than caution. Here it is, dated and specific: there have now been FIVE genuine MACD bearish crosses across the complex in five sessions - ETH Sept 27, BTC Sept 28, XRP and DOGE Sept 30, SOL today - every one with core equal to score, so none is a stretch artefact. The roll-over is propagating down the market-cap ladder toward exactly the alts that still screen STRONG BUY, and those five are the ones that have not crossed YET. Deploying into them today is a bet that the roll-over stops where it currently stands. The rule's purpose is one position with a stop, not a mandate to always be invested. BOUNDED so it cannot become the LINK failure, where waiting for conditions produced a watch that never acted while the asset ran 26% away: deploy the full 309 AED into the strongest qualifying name on the first day EITHER BTC or ETH prints a MACD BULLISH cross, or on Oct 15 regardless, whichever comes first. Two weeks, resolves either way. On LINK specifically - it screens joint-top and is NOT excluded for having stopped us out, which would be anchoring; but a re-entry 26.8% above the 11.412 exit has to stand on its own merits and its 3xATR stop sits 19.1% below spot.",
+   "status": "wait - bounded trigger set, resolves by 2026-10-15"
+  },
+  {
+   "date": "2026-10-01",
+   "ticker": "UAE-stocks",
+   "action": "yesterday's five-STRONG-BUY cluster has already dissolved to three",
+   "rationale": "FAB STRONG BUY -> BUY, EAND STRONG BUY -> BUY (50 to 25), ADIB STRONG BUY -> BUY. Yesterday I reported five ADX large-caps at STRONG BUY simultaneously and called it the strongest the UAE board had looked since the plan began, while attaching the caveat that they were Tuesday intraday drafts. The caveat was the part that mattered: three of the five slipped in one session and only ADCB 65, ALDAR 55 and EMIRATESNBD 50 remain. SALIK also gave back its turn - -3.57% to 5.40, BUY -> HOLD, four days after I singled it out as the one UAE move this month that was both large and confirmed. That characterisation was based on Friday's SETTLED close, which is the strongest evidence available here, and it still did not hold five sessions. Worth recording because it is the sixth UAE label to fail this month and the second to fail from a settled close rather than a draft. TECOM SELL -> BUY crossing above its 50-day is its seventeenth band change in eleven weeks and stays muted. EMAARDEV deteriorated to STRONG SELL -50.",
+   "status": "advice only - no positions"
+  },
+  {
+   "date": "2026-10-01",
+   "ticker": "POSITIONS",
+   "action": "no action - eleventh consecutive session, both stops hold",
+   "price": 2715.01,
+   "rationale": "ETH 2,715.01 (+1.45%), $98.83, +48.4%, trail computed 2,404.74 against the 2,449.83 stop (-0.48 ATR), stop 9.77% below spot. BTC 84,240.01 (+0.97%), $142.76, +4.85%, trail computed 76,512.54 against 79,304.74 (-1.18 ATR), cushion back out to 5.86% from yesterday's 4.50%. SOL joined the bearish-cross list (STRONG BUY -> BUY, 50 -> 40), making five crosses in five sessions. Nothing on the crypto board has lost its 50-day yet - all eleven remain above a rising 50-day with the 20-day above it - so the read is unchanged from four days ago: momentum deteriorating inside intact trend structure.",
+   "status": "no action"
   }
  ]
 }
