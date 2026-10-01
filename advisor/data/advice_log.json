@@ -2032,6 +2032,20 @@
    "price": 2715.01,
    "rationale": "ETH 2,715.01 (+1.45%), $98.83, +48.4%, trail computed 2,404.74 against the 2,449.83 stop (-0.48 ATR), stop 9.77% below spot. BTC 84,240.01 (+0.97%), $142.76, +4.85%, trail computed 76,512.54 against 79,304.74 (-1.18 ATR), cushion back out to 5.86% from yesterday's 4.50%. SOL joined the bearish-cross list (STRONG BUY -> BUY, 50 -> 40), making five crosses in five sessions. Nothing on the crypto board has lost its 50-day yet - all eleven remain above a rising 50-day with the 20-day above it - so the read is unchanged from four days ago: momentum deteriorating inside intact trend structure.",
    "status": "no action"
+  },
+  {
+   "date": "2026-10-01",
+   "ticker": "CORRECTION",
+   "action": "today's UAE numbers are SETTLED CLOSES, not drafts - I mischaracterised them",
+   "rationale": "In the DCA write-up ninety minutes ago I framed today's UAE readings as Thursday intraday drafts and said the slipping of FAB, EAND and ADIB showed 'the intraday-draft caveat was the part that mattered'. The conclusion was right but the mechanism I described was wrong. The DCA snapshot was generated at 05:49 UTC, which is 09:49 Dubai - ELEVEN MINUTES BEFORE the DFM and ADX open at 10:00. A pre-open snapshot returns the previous session's settled close, so today's UAE figures are WEDNESDAY'S SETTLED CLOSES and therefore the confirmed record, not drafts. What actually happened is cleaner than what I said: yesterday's five STRONG BUYs were the 11:09 Dubai drafts, and Wednesday's settled closes show three. The drafts failed; today's numbers are the evidence that they failed. Same for SALIK - its -3.57% to 5.40 and BUY -> HOLD is a confirmed close, which makes it a genuinely failed turn rather than a possibly-failing one. The correction strengthens the conclusion rather than weakening it, which is precisely why it is worth making: a right answer reached by a wrong description will mislead the next time the description is reused.",
+   "status": "corrected"
+  },
+  {
+   "date": "2026-10-01",
+   "ticker": "CYCLE",
+   "action": "daily trigger fired 80 minutes after the DCA cycle - NOT re-running the data fetch",
+   "rationale": "The daily cycle fired at 07:08 UTC, eighty minutes after the monthly DCA cycle completed at 06:00 on data generated at 05:49. The freshness check the instruction specifies - date -u against generated_at - gives a gap of 1.33 hours, far inside the ~26-hour threshold, so no cycle was missed and the substance of this run is already done: data fetched, judgement applied, dashboard rebuilt, artifact republished at v42, commit pushed, notification sent. The one thing a fresh fetch would add is Thursday INTRADAY UAE prices in place of Wednesday's settled closes. That is a downgrade, not an upgrade: this book has recorded six UAE band labels failing by the close this month, and the settled closes I already hold are the stronger evidence. So I am not triggering a second GitHub Actions run to replace better data with worse data eighty minutes later. Logging the decision and the arithmetic rather than silently skipping, because 'NEVER SKIP THIS RUN' exists to stop me judging freshness from trigger.txt - and I have not; I checked generated_at as instructed.",
+   "status": "cycle already complete - no refetch"
   }
  ]
 }

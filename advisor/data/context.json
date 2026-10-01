@@ -1,6 +1,10 @@
 {
- "updated": "2026-10-01T06:00+00:00",
+ "updated": "2026-10-01T07:15+00:00",
  "market_notes": [
+  {
+   "market": "CORRECTION - today's UAE numbers are SETTLED CLOSES, not drafts",
+   "note": "In the DCA write-up ninety minutes ago I called today's UAE readings Thursday intraday drafts. Wrong mechanism, right conclusion. The snapshot was generated 05:49 UTC = 09:49 Dubai, ELEVEN MINUTES BEFORE the DFM and ADX open at 10:00, so it returns Wednesday's SETTLED CLOSES - the confirmed record. What happened is cleaner than I described: yesterday's five STRONG BUYs were the 11:09 Dubai drafts, and Wednesday's settled closes show three. The drafts failed and today's numbers are the proof. Same for SALIK: its -3.57% to 5.40 and BUY -> HOLD is a confirmed close, so that turn genuinely failed rather than possibly failing. The correction strengthens the conclusion - which is why it is worth making, since a right answer reached by a wrong description misleads the next time the description gets reused."
+  },
   {
    "market": "OCTOBER DCA - 1,000 AED, and only one bucket actually buys",
    "note": "core_crypto 250 AED buys 50/50: 125 AED (~$34.04) into ETH at 2,715.01 for 0.012537 ETH, 125 AED into BTC at 84,240.01 for 0.00040405 BTC. 50/50 because the scores are IDENTICAL (both BUY 35, core equal to score) and the secondary measures point one way each - ETH better on trend extension (+10.68% above its 50-day vs BTC's +7.83%), BTC better on momentum once the histogram is normalised by price (-0.2153% vs -0.2664%). August tilted 65/35 to ETH because the scores genuinely differed; this month they do not. DCA is signal-agnostic, so both get bought despite negative momentum on both."
@@ -1934,6 +1938,7 @@
   "CLARITY Act floor-vote development: Senate Majority Leader Thune has pledged a floor vote before the August recess, with the week of July 20 under active discussion — a nearer and harder catalyst than the findings' 'no floor vote scheduled' framing. (Coinpedia, KuCoin/Lummis, PYMNTS.)"
  ],
  "data_notes": [
+  "2026-10-01: the monthly DCA trigger fires at ~05:48 UTC (09:48 Dubai), which is BEFORE the 10:00 Dubai market open, so DCA-day UAE figures are the previous session's settled closes. The daily trigger at ~07:08 UTC (11:08 Dubai) lands intraday. Worth remembering - on DCA days the UAE data is the stronger kind.",
   "2026-09-18: the news research pass recovered. Yesterday's unverified FOMC outcome is now confirmed (25bp hike to 3.75-4.00%) and the prior cycle's refusal to infer it from price action proved correct.",
   "GRAM (ex-Toncoin) crossed the 55-bar minimum on 2026-08-25 and has been rated since; it prints BUY (40) today.",
   "ADPORTS has printed 6.06 for three consecutive runs. This is a pinned cash-tender stub, not a frozen feed; the 10-run stock threshold correctly leaves it unflagged through the Sept 15 tender close.",
