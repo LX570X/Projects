@@ -1,71 +1,83 @@
 {
- "generated_at_utc": "2026-10-01T05:49:21+00:00",
+ "generated_at_utc": "2026-10-02T07:09:30+00:00",
  "alerts": [
   {
-   "ticker": "SOLUSDT",
+   "ticker": "BTCUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "SOLUSDT: STRONG BUY -> BUY (score 50 -> 40)"
+   "msg": "BTCUSDT: BUY -> STRONG BUY (score 35 -> 50)"
   },
   {
-   "ticker": "SOLUSDT",
-   "severity": "info",
-   "type": "macd",
-   "msg": "SOLUSDT: MACD bearish cross"
-  },
-  {
-   "ticker": "SALIK",
+   "ticker": "LTCUSDT",
    "severity": "info",
    "type": "big_move",
-   "msg": "SALIK moved -3.6% in the last day (now 5.4 AED)"
+   "msg": "LTCUSDT moved +4.1% in the last day (now 70.21 USD)"
   },
   {
-   "ticker": "SALIK",
+   "ticker": "EMAAR",
    "severity": "info",
-   "type": "signal_change",
-   "msg": "SALIK: BUY -> HOLD (score 30 -> -20)"
+   "type": "macd",
+   "msg": "EMAAR: MACD bearish cross"
+  },
+  {
+   "ticker": "DIB",
+   "severity": "info",
+   "type": "macd",
+   "msg": "DIB: MACD bearish cross"
+  },
+  {
+   "ticker": "DEWA",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "DEWA moved -2.6% in the last day (now 2.65 AED)"
+  },
+  {
+   "ticker": "AIRARABIA",
+   "severity": "info",
+   "type": "macd",
+   "msg": "AIRARABIA: MACD bearish cross"
   },
   {
    "ticker": "EMAARDEV",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "EMAARDEV: SELL -> STRONG SELL (score -35 -> -50)"
-  },
-  {
-   "ticker": "TECOM",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "TECOM: SELL -> BUY (score -35 -> 25)"
-  },
-  {
-   "ticker": "TECOM",
    "severity": "info",
    "type": "macd",
-   "msg": "TECOM: MACD bullish cross"
+   "msg": "EMAARDEV: MACD bearish cross"
   },
   {
-   "ticker": "TECOM",
+   "ticker": "ALDAR",
    "severity": "actionable",
-   "type": "trend",
-   "msg": "TECOM: price crossed above its 50-day average \u2014 trend change"
+   "type": "signal_change",
+   "msg": "ALDAR: STRONG BUY -> BUY (score 55 -> 40)"
   },
   {
    "ticker": "FAB",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "FAB: STRONG BUY -> BUY (score 50 -> 40)"
+   "msg": "FAB: BUY -> SELL (score 40 -> -25)"
+  },
+  {
+   "ticker": "FAB",
+   "severity": "actionable",
+   "type": "trend",
+   "msg": "FAB: price crossed below its 50-day average \u2014 trend change"
+  },
+  {
+   "ticker": "ADCB",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ADCB: STRONG BUY -> BUY (score 65 -> 40)"
   },
   {
    "ticker": "EAND",
-   "severity": "actionable",
+   "severity": "info",
    "type": "signal_change",
-   "msg": "EAND: STRONG BUY -> BUY (score 50 -> 25)"
+   "msg": "EAND: BUY -> HOLD (score 25 -> -15)"
   },
   {
-   "ticker": "ADIB",
+   "ticker": "ADNOCDRILL",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "ADIB: STRONG BUY -> BUY (score 50 -> 40)"
+   "msg": "ADNOCDRILL: SELL -> STRONG SELL (score -40 -> -50)"
   }
  ]
 }
