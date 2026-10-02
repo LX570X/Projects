@@ -2046,6 +2046,36 @@
    "action": "daily trigger fired 80 minutes after the DCA cycle - NOT re-running the data fetch",
    "rationale": "The daily cycle fired at 07:08 UTC, eighty minutes after the monthly DCA cycle completed at 06:00 on data generated at 05:49. The freshness check the instruction specifies - date -u against generated_at - gives a gap of 1.33 hours, far inside the ~26-hour threshold, so no cycle was missed and the substance of this run is already done: data fetched, judgement applied, dashboard rebuilt, artifact republished at v42, commit pushed, notification sent. The one thing a fresh fetch would add is Thursday INTRADAY UAE prices in place of Wednesday's settled closes. That is a downgrade, not an upgrade: this book has recorded six UAE band labels failing by the close this month, and the settled closes I already hold are the stronger evidence. So I am not triggering a second GitHub Actions run to replace better data with worse data eighty minutes later. Logging the decision and the arithmetic rather than silently skipping, because 'NEVER SKIP THIS RUN' exists to stop me judging freshness from trigger.txt - and I have not; I checked generated_at as instructed.",
    "status": "cycle already complete - no refetch"
+  },
+  {
+   "date": "2026-10-02",
+   "ticker": "BTCUSDT",
+   "action": "BUY -> STRONG BUY - closing the Sept-28 deterioration warning on one of the two lines",
+   "price": 85980.01,
+   "rationale": "BTC +2.15% to 85,980.01 and back to STRONG BUY (35 -> 50) with core equal to score. On Sept 28 I notified that both held positions carried fresh MACD bearish crosses and called it a real change in the book's risk picture; one of the two has now recovered and the loop deserves closing rather than being left hanging. Be precise about WHY it recovered: the bearish cross aged out of its 3-day scoring window. That is not the same as momentum turning positive - the histogram is still -46.98 - so the score improvement is mechanical. Verified drivers for the price move: falling oil, lower Treasury yields, a short squeeze and returning US spot ETF demand, with roughly $2.5bn of net inflows across the three weeks to Sept 29 and $6.34bn in Q3. The counterweight is dated and specific: spot BTC ETFs took about $148.7m of net OUTFLOWS on Sept 30, ending a nine-session, ~$3.1bn streak, and October coverage flags rising rates, a 5.17% Treasury yield and expensive oil, with the next FOMC on Oct 27-28. Position $145.71, +7.02%, its best since opening. Stop holds at 79,304.74, cushion 7.76% - widest since Sept 23.",
+   "status": "open, +7.02% - no action, warning closed"
+  },
+  {
+   "date": "2026-10-02",
+   "ticker": "ETHUSDT",
+   "action": "the ratchet has RE-ARMED after seven sessions",
+   "price": 2729.51,
+   "rationale": "ETH's trail computes 2,457.34 from Thursday's 2,706.42 close - ABOVE the existing 2,449.83 stop for the first time since the Sept-22 raise. The improvement is only +0.09 ATR so nothing moves and nothing should, but the direction has flipped. For seven sessions I reported the trail computing BELOW the stop as the designed early warning that the uptrend had stalled; that warning now closes rather than escalating, and saying so is as much part of honest reporting as raising it was. The caveat matters: ETH's own band is still BUY 35 with a negative histogram at -6.71, so the trail has turned before the momentum score has. Position $99.35, +49.2% - the highest it has been. Stop 10.25% below spot, locking +33.89%.",
+   "status": "open, +49.2% - no action, warning closed"
+  },
+  {
+   "date": "2026-10-02",
+   "ticker": "SATELLITE",
+   "action": "trigger NOT met - and the near-miss is worth naming",
+   "rationale": "Yesterday's bounded trigger deploys the 309 AED on the first BTC or ETH MACD BULLISH cross, or Oct 15 regardless. Neither has crossed: BTC's histogram is -46.98 and ETH's -6.71, both still negative. BTC's upgrade to STRONG BUY came from the BEARISH cross aging out of its 3-day window, which is a different event entirely and does not fire the trigger. I am stating that distinction explicitly because it is precisely the kind of near-miss I could talk myself into - 'BTC went back to STRONG BUY, close enough' - and the entire point of writing a trigger down the day before is that it does not bend to a convenient reading the day after. Thirteen days until the backstop.",
+   "status": "wait continues - trigger unmet"
+  },
+  {
+   "date": "2026-10-02",
+   "ticker": "UAE-stocks",
+   "action": "the UAE board falls apart in one session",
+   "rationale": "FAB BUY -> SELL crossing BELOW its 50-day, ADCB STRONG BUY -> BUY (65 -> 40), ALDAR STRONG BUY -> BUY (55 -> 40), EAND BUY -> HOLD, ADNOCDRILL SELL -> STRONG SELL (-50), EMAARDEV to -75 which is the worst score this book has recorded on any asset, DIB to -60, plus MACD bearish crosses on EMAAR, DIB, AIRARABIA and EMAARDEV. Price moves: EMAAR -2.42%, DEWA -2.57%, AIRARABIA -1.86%, EMAARDEV -1.99%. Two days ago five ADX large-caps rated STRONG BUY; Wednesday's settled closes showed three; today only EMIRATESNBD at 50 remains. One genuinely useful thing surfaced: the stretch mechanism is now working in REVERSE on the oversold side - DEWA reads -40 against core -50, AIRARABIA -50 against -60, EAND -15 against -25. Oversold RSI is ADDING points, so the headline bands are less bad than the underlying. I have spent a month reporting stretch penalties making things look worse than they are; this is the mirror, and it is the first time I have seen it on this board. Today's readings are Friday 11:09 Dubai intraday drafts.",
+   "status": "advice only - no positions"
   }
  ]
 }

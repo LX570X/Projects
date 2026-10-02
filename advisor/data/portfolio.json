@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-01T06:00+00:00",
+ "updated": "2026-10-02T07:30+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": 0,
@@ -20,12 +20,12 @@
    "stop": 2449.83,
    "plan": "Hold. ONE daily CLOSE below the stop (2,316.48) -> convert ALL to USDT, not another coin. The old 2,300 two-close exit and the 1,964 / 2,105 targets are retired: price is far above all of them and the trail now sits higher than any of them.",
    "action_required": {
-    "as_of": "2026-10-01",
+    "as_of": "2026-10-02",
     "end_state": "hold 0.0091 ETH - if you are already there, do nothing",
     "stop": 2449.83,
     "stop_raised_from": 2316.48,
     "trigger": "ONE daily CLOSE below 2,449.83 -> convert ALL to USDT",
-    "note": "Stop UNCHANGED at 2,449.83. The trail computes 2,404.74 from Wednesday's 2,686.01 close, 0.48 ATR below it, so max() holds. ETH 2,715.01 (+1.45%), $98.83, +48.4%. Stop 9.77% below spot, locking +33.89%."
+    "note": "Stop UNCHANGED at 2,449.83. The trail computes 2,457.34 from Thursday's 2,706.42 close - ABOVE the existing stop for the first time since Sept 22, but by only +0.09 ATR, nowhere near the 1-ATR gate. ETH 2,729.51 (+0.41%), $99.35, +49.2%. Stop 10.25% below spot, locking +33.89%. Band still BUY 35 with core equal to score; momentum histogram still negative at -6.71."
    },
    "fill": {
     "state": "position confirmed by user 2026-07-17; the 2026-08-20 trim is UNCONFIRMED",
@@ -33,10 +33,9 @@
     "evidence": "user stated 0.0364 ETH on 2026-07-17; no fill confirmation since"
    },
    "signal_deterioration": {
-    "as_of": "2026-09-29",
-    "status": "Price recovered, signal did NOT. ETH is +2.25% and back near its highs, but the score is unchanged at BUY 25 with core equal to score - the MACD bearish cross is still in force and the histogram is still negative. One up day does not repair a momentum cross.",
-    "sequence": "65 -> 50 -> 50 -> 40 -> 25 -> 25 across six sessions, core equal to score throughout.",
-    "note": "Recording the non-repair deliberately. Yesterday I flagged deterioration; today the price bounced, and the tempting read is that the warning has passed. It has not - the band is identical."
+    "as_of": "2026-10-02",
+    "status": "The RATCHET HAS RE-ARMED. For seven sessions the trail computed below the existing stop, which I reported as the designed early warning that the uptrend had stalled. Today it computes above it for the first time since Sept 22. The improvement is only +0.09 ATR so nothing moves, but the direction has flipped and that closes the warning rather than escalating it.",
+    "caveat": "ETH's own band is still BUY 35 with a negative histogram, so this is the trail turning before the momentum score does - not confirmation that momentum has recovered."
    }
   }
  ],
@@ -210,10 +209,15 @@
     "cost_usd": 3.77,
     "note": "I closed the daily scorecard on 2026-09-19 at 8.1% behind, on the grounds that the verdict was settled and extending it would be self-flagellation. The verdict has not changed direction but the number has roughly doubled: LINK is 13.344, the exit is 16.93% behind, and held the position would be +37.84% against the realised +17.88% - about 20 percentage points, or $2.71 on a position this size. Recording it once rather than reopening a daily tracker. Never mentioning a figure that has doubled would be the convenient kind of silence, and it may keep moving.",
     "reporting_policy": "The figure is kept current HERE, in the record, so it stays auditable. It will not be re-narrated in the daily chat summary - that was stated once on 2026-09-25 and repeating it every session would be ritual rather than information. It goes back into a written summary at the monthly review, or sooner if it changes character rather than just size."
+   },
+   "trigger_check_2026_10_02": {
+    "condition": "Deploy on the first BTC or ETH MACD BULLISH cross, or Oct 15 regardless.",
+    "result": "NOT MET. Neither has crossed - BTC's histogram is -46.98 and ETH's -6.71, both still negative. BTC's band improvement to STRONG BUY came from the BEARISH cross aging out of its window, which is not the same event as a bullish cross and does not fire this trigger.",
+    "note": "Stating that distinction explicitly because it is exactly the kind of near-miss I could talk myself into. 13 days until the backstop."
    }
   },
   "opportunity_status": {
-   "as_of": "2026-10-01",
+   "as_of": "2026-10-02",
    "state": "DEPLOYED (instruction issued 2026-09-20) - fill UNCONFIRMED",
    "what_happened": "BTC rated STRONG BUY (50, core 50) on two consecutive readings - Friday's close of 80,883.87 and Saturday's 81,249.99. That satisfies the 2-day rule. First confirmation in FOUR armings of this trigger (Aug 3 BTC, Aug 15 AVAX, Sept 5-6 BTC all failed to confirm).",
    "instruction": {
@@ -238,15 +242,15 @@
    "position_now": {
     "indicative_qty": 0.00169464,
     "entry": 80340.01,
-    "last": 84240.01,
-    "value_usd": 142.76,
-    "pnl_pct": 4.85,
+    "last": 85980.01,
+    "value_usd": 145.71,
+    "pnl_pct": 7.02,
     "stop": 79304.74,
     "stop_raised_from": 74919.5,
     "trigger": "ONE daily CLOSE below 79,304.74 -> convert ALL back to USDT",
-    "stop_note": "Stop UNCHANGED at 79,304.74. Trail computes 76,512.54 from Wednesday's 83,623.60 close, 1.18 ATR below it. Cushion back out to 5.86% from 4.50%.",
-    "stop_distance_pct": -5.86,
-    "signal_note": "BTC score fell 40 -> 25, core equal to score, on a fresh MACD bearish cross with the histogram deepening to -159.06. Trend and structure still intact: price 7.4% above a rising 50-day at 77,284, 20-day above 50-day. All 25 points are those three terms."
+    "stop_note": "Stop UNCHANGED at 79,304.74. Trail computes 78,098.83 from Thursday's 84,880.05 close, 0.53 ATR below it. Cushion 7.76%, widest since Sept 23.",
+    "stop_distance_pct": -7.76,
+    "signal_note": "BTC BUY -> STRONG BUY (35 -> 50), +2.15% to 85,980.01 with core equal to score - the MACD bearish cross from Sept 28 has aged out of its 3-day window. Verified drivers: falling oil, lower Treasury yields, a short squeeze and returning US spot ETF demand, with roughly $2.5bn of net inflows over the three weeks to Sept 29 and $6.34bn across Q3. The counterweight is specific: spot BTC ETFs took about $148.7m of net OUTFLOWS on Sept 30, ending a nine-session, ~$3.1bn inflow streak, and October coverage flags rising rates, a 5.17% Treasury yield and expensive oil as headwinds with the next FOMC on Oct 27-28."
    }
   },
   "stock_shortlist_note": {
