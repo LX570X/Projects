@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-02T07:30+00:00",
+ "updated": "2026-10-03T07:30+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": 0,
@@ -20,12 +20,12 @@
    "stop": 2449.83,
    "plan": "Hold. ONE daily CLOSE below the stop (2,316.48) -> convert ALL to USDT, not another coin. The old 2,300 two-close exit and the 1,964 / 2,105 targets are retired: price is far above all of them and the trail now sits higher than any of them.",
    "action_required": {
-    "as_of": "2026-10-02",
+    "as_of": "2026-10-03",
     "end_state": "hold 0.0091 ETH - if you are already there, do nothing",
     "stop": 2449.83,
     "stop_raised_from": 2316.48,
     "trigger": "ONE daily CLOSE below 2,449.83 -> convert ALL to USDT",
-    "note": "Stop UNCHANGED at 2,449.83. The trail computes 2,457.34 from Thursday's 2,706.42 close - ABOVE the existing stop for the first time since Sept 22, but by only +0.09 ATR, nowhere near the 1-ATR gate. ETH 2,729.51 (+0.41%), $99.35, +49.2%. Stop 10.25% below spot, locking +33.89%. Band still BUY 35 with core equal to score; momentum histogram still negative at -6.71."
+    "note": "Stop UNCHANGED at 2,449.83. The trail computes 2,413.32 from Friday's 2,668.59 close, 0.43 ATR BELOW the existing stop - so the ratchet has STALLED AGAIN after one session of being re-armed. ETH 2,678.83 (-1.84%), $97.51, +46.4%. Stop 8.55% below spot, locking +33.89%."
    },
    "fill": {
     "state": "position confirmed by user 2026-07-17; the 2026-08-20 trim is UNCONFIRMED",
@@ -33,9 +33,9 @@
     "evidence": "user stated 0.0364 ETH on 2026-07-17; no fill confirmation since"
    },
    "signal_deterioration": {
-    "as_of": "2026-10-02",
-    "status": "The RATCHET HAS RE-ARMED. For seven sessions the trail computed below the existing stop, which I reported as the designed early warning that the uptrend had stalled. Today it computes above it for the first time since Sept 22. The improvement is only +0.09 ATR so nothing moves, but the direction has flipped and that closes the warning rather than escalating it.",
-    "caveat": "ETH's own band is still BUY 35 with a negative histogram, so this is the trail turning before the momentum score does - not confirmation that momentum has recovered."
+    "as_of": "2026-10-03",
+    "status": "WARNING REOPENED. Yesterday the trail computed above the stop for the first time in seven sessions and I reported that as closing the stalled-ratchet warning. One session later it computes 0.43 ATR below it again. ETH's histogram has deepened from -6.71 to -12.17.",
+    "lesson": "I closed that warning on one session of evidence after raising it on seven. The caveat I attached was right - I said the trail had turned before the momentum score had - but the headline framing was more confident than one day earns, and this is the second time in a week I have done that (the other being 'BTC is now the stronger of the two positions' on Sept 28, reversed in a session). The pattern is mine, not the market's: I am quicker to call a turn than to call a trend."
    }
   }
  ],
@@ -214,10 +214,15 @@
     "condition": "Deploy on the first BTC or ETH MACD BULLISH cross, or Oct 15 regardless.",
     "result": "NOT MET. Neither has crossed - BTC's histogram is -46.98 and ETH's -6.71, both still negative. BTC's band improvement to STRONG BUY came from the BEARISH cross aging out of its window, which is not the same event as a bullish cross and does not fire this trigger.",
     "note": "Stating that distinction explicitly because it is exactly the kind of near-miss I could talk myself into. 13 days until the backstop."
+   },
+   "trigger_check_2026_10_03": {
+    "condition": "Deploy on the first BTC or ETH MACD BULLISH cross, or Oct 15 regardless.",
+    "result": "NOT MET and moving away - BTC's histogram has deepened to -166.61 from -46.98 and ETH's to -12.17 from -6.71. Twelve days to the backstop.",
+    "wait_scorecard": "The Oct-1 decision to override a screen where five names qualified is looking right on signals rather than on price. Core scores then and now: LINK 65 -> 50, AVAX 65 -> 25, ADA 65 -> 25, LTC 65 -> 40, GRAM 65 -> 65. Four of the five have lost their STRONG BUY in two sessions, three of them on fresh MACD bearish crosses. Prices have moved far less - LINK -3.14%, ADA -3.39%, AVAX -1.92%, GRAM -1.38%, LTC +2.97% - so the money saved so far is small and the vindication is in the deterioration I predicted, not yet in the drawdown avoided. GRAM is now the only one of the five still at core 65, which makes it the de facto front-runner for the Oct-15 backstop if nothing crosses before then."
    }
   },
   "opportunity_status": {
-   "as_of": "2026-10-02",
+   "as_of": "2026-10-03",
    "state": "DEPLOYED (instruction issued 2026-09-20) - fill UNCONFIRMED",
    "what_happened": "BTC rated STRONG BUY (50, core 50) on two consecutive readings - Friday's close of 80,883.87 and Saturday's 81,249.99. That satisfies the 2-day rule. First confirmation in FOUR armings of this trigger (Aug 3 BTC, Aug 15 AVAX, Sept 5-6 BTC all failed to confirm).",
    "instruction": {
@@ -242,15 +247,15 @@
    "position_now": {
     "indicative_qty": 0.00169464,
     "entry": 80340.01,
-    "last": 85980.01,
-    "value_usd": 145.71,
-    "pnl_pct": 7.02,
+    "last": 84589.26,
+    "value_usd": 143.35,
+    "pnl_pct": 5.29,
     "stop": 79304.74,
     "stop_raised_from": 74919.5,
     "trigger": "ONE daily CLOSE below 79,304.74 -> convert ALL back to USDT",
-    "stop_note": "Stop UNCHANGED at 79,304.74. Trail computes 78,098.83 from Thursday's 84,880.05 close, 0.53 ATR below it. Cushion 7.76%, widest since Sept 23.",
-    "stop_distance_pct": -7.76,
-    "signal_note": "BTC BUY -> STRONG BUY (35 -> 50), +2.15% to 85,980.01 with core equal to score - the MACD bearish cross from Sept 28 has aged out of its 3-day window. Verified drivers: falling oil, lower Treasury yields, a short squeeze and returning US spot ETF demand, with roughly $2.5bn of net inflows over the three weeks to Sept 29 and $6.34bn across Q3. The counterweight is specific: spot BTC ETFs took about $148.7m of net OUTFLOWS on Sept 30, ending a nine-session, ~$3.1bn inflow streak, and October coverage flags rising rates, a 5.17% Treasury yield and expensive oil as headwinds with the next FOMC on Oct 27-28."
+    "stop_note": "Stop UNCHANGED at 79,304.74. Trail computes 77,714.96 from Friday's 84,518.01 close, 0.70 ATR below it.",
+    "stop_distance_pct": -6.25,
+    "signal_note": "BTC STRONG BUY -> BUY (50 -> 35), -1.60% to 84,589.26, core equal to score - reversing yesterday's upgrade in ONE session. No fresh cross; the momentum term simply went from 'flat (not scored)' back to 'negative' as the histogram deepened from -46.98 to -166.61. Friday printed a 87,220.00 high and closed 84,518.01, a 3.1% intraday give-back."
    }
   },
   "stock_shortlist_note": {

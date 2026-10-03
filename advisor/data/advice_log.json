@@ -2076,6 +2076,35 @@
    "action": "the UAE board falls apart in one session",
    "rationale": "FAB BUY -> SELL crossing BELOW its 50-day, ADCB STRONG BUY -> BUY (65 -> 40), ALDAR STRONG BUY -> BUY (55 -> 40), EAND BUY -> HOLD, ADNOCDRILL SELL -> STRONG SELL (-50), EMAARDEV to -75 which is the worst score this book has recorded on any asset, DIB to -60, plus MACD bearish crosses on EMAAR, DIB, AIRARABIA and EMAARDEV. Price moves: EMAAR -2.42%, DEWA -2.57%, AIRARABIA -1.86%, EMAARDEV -1.99%. Two days ago five ADX large-caps rated STRONG BUY; Wednesday's settled closes showed three; today only EMIRATESNBD at 50 remains. One genuinely useful thing surfaced: the stretch mechanism is now working in REVERSE on the oversold side - DEWA reads -40 against core -50, AIRARABIA -50 against -60, EAND -15 against -25. Oversold RSI is ADDING points, so the headline bands are less bad than the underlying. I have spent a month reporting stretch penalties making things look worse than they are; this is the mirror, and it is the first time I have seen it on this board. Today's readings are Friday 11:09 Dubai intraday drafts.",
    "status": "advice only - no positions"
+  },
+  {
+   "date": "2026-10-03",
+   "ticker": "SELF-CORRECTION",
+   "action": "I closed yesterday's warning too readily - and it is the second time this week",
+   "rationale": "Yesterday I notified that the Sept-28 deterioration warning on both positions had closed: BTC was back to STRONG BUY and ETH's trail had re-armed above its stop. One session later BTC is back to BUY (50 -> 35) with its histogram deepening from -46.98 to -166.61, and ETH's trail computes 0.43 ATR below its stop again. Both halves of what I closed have reopened. The caveats I attached were correct - I said plainly that BTC's upgrade was the bearish cross aging out rather than momentum turning, and that ETH's trail had turned before its momentum score had - but the HEADLINE was 'both warnings close', which is more confidence than one session earns after seven sessions of the opposite. This is the second instance in six days: on Sept 28 I wrote that BTC was 'now the stronger of the two positions on signal' and it carried the same bearish cross the next day. The pattern is mine, not the market's - I am quicker to call a turn than to call a trend, and a correct caveat under an overconfident headline still misleads, because the headline is what gets read. Concretely for the future: a warning raised on N sessions of evidence does not close on one, and I will say 'the first session of improvement' rather than 'the warning closes'.",
+   "status": "corrected - pattern logged"
+  },
+  {
+   "date": "2026-10-03",
+   "ticker": "crypto-broad",
+   "action": "four more STRONG BUYs lost, and the Oct-1 wait is being vindicated on signals",
+   "rationale": "AVAX STRONG BUY -> BUY (65 -> 25), ADA STRONG BUY -> BUY (50 -> 25) and LTC STRONG BUY -> BUY (65 -> 40), all three on fresh MACD bearish crosses with core equal to score. Everything on the board fell: DOGE -3.07%, GRAM -3.61%, ADA -3.58%, LINK -2.67%, XRP -2.62%, ETH -1.84%, BTC -1.60%. On Oct 1 I declined to deploy the satellite reserve even though FIVE names qualified on the letter of the rule, on the grounds that the momentum roll-over was propagating down the market-cap ladder toward exactly those names. Two sessions later: LINK core 65 -> 50, AVAX 65 -> 25, ADA 65 -> 25, LTC 65 -> 40, GRAM 65 -> 65. Four of five have lost their STRONG BUY. I want to be careful about how much credit that earns: prices have moved far less than scores - LINK -3.14%, ADA -3.39%, AVAX -1.92%, GRAM -1.38%, LTC actually +2.97% - so the money saved is small and the vindication is in the deterioration I forecast, not yet in a drawdown avoided. Two sessions is also not long. GRAM is the only one of the five still at core 65, which makes it the de facto front-runner for the Oct-15 backstop. Still nothing has lost its 50-day: all eleven remain above a rising 50-day with the 20-day above it.",
+   "status": "logged - wait continues, 12 days to backstop"
+  },
+  {
+   "date": "2026-10-03",
+   "ticker": "UAE-stocks",
+   "action": "the collapse continues - three more 50-day crosses, one constructive name left",
+   "rationale": "SALIK BUY -> SELL (-45) crossing BELOW its 50-day on -2.73%, TECOM SELL -> STRONG SELL (-60) crossing below its 50-day on -2.68%, ADIB BUY -> SELL crossing below its 50-day, ADNOCGAS BUY -> SELL, EMIRATESNBD STRONG BUY -> BUY on a MACD bearish cross, TALABAT SELL -> STRONG SELL, AIRARABIA to -75. ALDAR is the ONLY constructive name left on the board at STRONG BUY 50, and it rose 1.12% while everything else fell. Four days ago five ADX large-caps rated STRONG BUY. The sequence is worth stating because it is a clean record of how fast this board turns: five STRONG BUYs on Sept 29 (intraday drafts), three on Wednesday's settled closes, one on Friday, one today. SALIK is the sharpest reversal - STRONG SELL -50 on Sept 22, BUY 30 by Friday Sept 25 on real price, back to SELL -45 today. I called that turn 'the one UAE move this month that is both large and confirmed' on Sept 26. It was confirmed and it was large and it still failed inside a week, which is a reminder that 'confirmed' means the close is real, not that the move will persist.",
+   "status": "advice only - no positions"
+  },
+  {
+   "date": "2026-10-03",
+   "ticker": "POSITIONS",
+   "action": "no action - thirteenth consecutive session",
+   "price": 2678.83,
+   "rationale": "ETH 2,678.83 (-1.84%), $97.51, +46.4%, trail 2,413.32 against the 2,449.83 stop (-0.43 ATR), stop 8.55% below spot. BTC 84,589.26 (-1.60%), $143.35, +5.29%, trail 77,714.96 against 79,304.74 (-0.70 ATR), stop 6.25% below. Friday's BTC bar is worth noting: a high of 87,220.00 and a close of 84,518.01, a 3.1% intraday give-back, which is where yesterday's STRONG BUY came from and where today's downgrade went. Both stops hold untouched; nothing in the book has moved for thirteen sessions.",
+   "status": "no action"
   }
  ]
 }
