@@ -1,83 +1,125 @@
 {
- "generated_at_utc": "2026-10-02T07:09:30+00:00",
+ "generated_at_utc": "2026-10-03T07:09:40+00:00",
  "alerts": [
   {
-   "ticker": "BTCUSDT",
+   "ticker": "AVAXUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "BTCUSDT: BUY -> STRONG BUY (score 35 -> 50)"
+   "msg": "AVAXUSDT: STRONG BUY -> BUY (score 65 -> 25)"
+  },
+  {
+   "ticker": "AVAXUSDT",
+   "severity": "info",
+   "type": "macd",
+   "msg": "AVAXUSDT: MACD bearish cross"
+  },
+  {
+   "ticker": "ADAUSDT",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ADAUSDT: STRONG BUY -> BUY (score 50 -> 25)"
+  },
+  {
+   "ticker": "ADAUSDT",
+   "severity": "info",
+   "type": "macd",
+   "msg": "ADAUSDT: MACD bearish cross"
+  },
+  {
+   "ticker": "LTCUSDT",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "LTCUSDT: STRONG BUY -> BUY (score 65 -> 40)"
   },
   {
    "ticker": "LTCUSDT",
    "severity": "info",
-   "type": "big_move",
-   "msg": "LTCUSDT moved +4.1% in the last day (now 70.21 USD)"
-  },
-  {
-   "ticker": "EMAAR",
-   "severity": "info",
    "type": "macd",
-   "msg": "EMAAR: MACD bearish cross"
+   "msg": "LTCUSDT: MACD bearish cross"
   },
   {
-   "ticker": "DIB",
-   "severity": "info",
-   "type": "macd",
-   "msg": "DIB: MACD bearish cross"
-  },
-  {
-   "ticker": "DEWA",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "DEWA moved -2.6% in the last day (now 2.65 AED)"
-  },
-  {
-   "ticker": "AIRARABIA",
-   "severity": "info",
-   "type": "macd",
-   "msg": "AIRARABIA: MACD bearish cross"
-  },
-  {
-   "ticker": "EMAARDEV",
-   "severity": "info",
-   "type": "macd",
-   "msg": "EMAARDEV: MACD bearish cross"
-  },
-  {
-   "ticker": "ALDAR",
+   "ticker": "EMIRATESNBD",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "ALDAR: STRONG BUY -> BUY (score 55 -> 40)"
+   "msg": "EMIRATESNBD: STRONG BUY -> BUY (score 50 -> 25)"
   },
   {
-   "ticker": "FAB",
+   "ticker": "EMIRATESNBD",
+   "severity": "info",
+   "type": "macd",
+   "msg": "EMIRATESNBD: MACD bearish cross"
+  },
+  {
+   "ticker": "SALIK",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "SALIK moved -2.7% in the last day (now 5.35 AED)"
+  },
+  {
+   "ticker": "SALIK",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "FAB: BUY -> SELL (score 40 -> -25)"
+   "msg": "SALIK: BUY -> SELL (score 30 -> -45)"
   },
   {
-   "ticker": "FAB",
+   "ticker": "SALIK",
+   "severity": "info",
+   "type": "macd",
+   "msg": "SALIK: MACD bearish cross"
+  },
+  {
+   "ticker": "SALIK",
    "severity": "actionable",
    "type": "trend",
-   "msg": "FAB: price crossed below its 50-day average \u2014 trend change"
+   "msg": "SALIK: price crossed below its 50-day average \u2014 trend change"
   },
   {
-   "ticker": "ADCB",
+   "ticker": "TALABAT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "ADCB: STRONG BUY -> BUY (score 65 -> 40)"
+   "msg": "TALABAT: SELL -> STRONG SELL (score -35 -> -50)"
   },
   {
-   "ticker": "EAND",
+   "ticker": "TECOM",
    "severity": "info",
-   "type": "signal_change",
-   "msg": "EAND: BUY -> HOLD (score 25 -> -15)"
+   "type": "big_move",
+   "msg": "TECOM moved -2.7% in the last day (now 3.27 AED)"
   },
   {
-   "ticker": "ADNOCDRILL",
+   "ticker": "TECOM",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "ADNOCDRILL: SELL -> STRONG SELL (score -40 -> -50)"
+   "msg": "TECOM: SELL -> STRONG SELL (score -25 -> -60)"
+  },
+  {
+   "ticker": "TECOM",
+   "severity": "info",
+   "type": "macd",
+   "msg": "TECOM: MACD bearish cross"
+  },
+  {
+   "ticker": "TECOM",
+   "severity": "actionable",
+   "type": "trend",
+   "msg": "TECOM: price crossed below its 50-day average \u2014 trend change"
+  },
+  {
+   "ticker": "ADNOCGAS",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ADNOCGAS: BUY -> SELL (score 25 -> -25)"
+  },
+  {
+   "ticker": "ADIB",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ADIB: BUY -> SELL (score 25 -> -25)"
+  },
+  {
+   "ticker": "ADIB",
+   "severity": "actionable",
+   "type": "trend",
+   "msg": "ADIB: price crossed below its 50-day average \u2014 trend change"
   }
  ]
 }
