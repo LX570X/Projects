@@ -2105,6 +2105,37 @@
    "price": 2678.83,
    "rationale": "ETH 2,678.83 (-1.84%), $97.51, +46.4%, trail 2,413.32 against the 2,449.83 stop (-0.43 ATR), stop 8.55% below spot. BTC 84,589.26 (-1.60%), $143.35, +5.29%, trail 77,714.96 against 79,304.74 (-0.70 ATR), stop 6.25% below. Friday's BTC bar is worth noting: a high of 87,220.00 and a close of 84,518.01, a 3.1% intraday give-back, which is where yesterday's STRONG BUY came from and where today's downgrade went. Both stops hold untouched; nothing in the book has moved for thirteen sessions.",
    "status": "no action"
+  },
+  {
+   "date": "2026-10-04",
+   "ticker": "LINKUSDT",
+   "action": "STRONG BUY -> BUY - the last of the Oct-1 shortlist to fall, leaving GRAM alone",
+   "price": 14.008,
+   "rationale": "LINK lost STRONG BUY (50 -> 40) on a fresh MACD bearish cross, core equal to score. That completes the degradation of the Oct-1 satellite shortlist: core scores then and now are LINK 65 -> 40, AVAX 65 -> 25, ADA 65 -> 25, LTC 65 -> 40, GRAM 65 -> 65. Five of five have lost STRONG BUY except GRAM, in three sessions, each on a genuine MACD cross rather than a stretch artefact. The Oct-1 call to override a screen where all five qualified now looks right on signals - though I said then and repeat now that prices have moved far less than scores, so the money saved remains small. What has changed usefully is that the backstop decision has resolved itself: GRAM is the only name at core 65 AND the least extended at RSI 55.8, which makes it the front-runner on merit rather than by elimination.",
+   "status": "advice only - not held"
+  },
+  {
+   "date": "2026-10-04",
+   "ticker": "GRAMUSDT",
+   "action": "the backstop front-runner, and its catalyst is forward-dated",
+   "price": 1.527,
+   "rationale": "GRAM +2.0% to 1.527, holding STRONG BUY at core 65 while every other name on the Oct-1 shortlist has fallen away. A news check turns up something genuinely unusual for this board: the catalyst is still AHEAD rather than already consumed. Telegram's native non-custodial Gram wallet is rolling out in two phases - phase one has reached a limited set of users, and phase two opens it gradually to Telegram's billion-plus user base over the coming weeks. Zero-fee peer-to-peer transfers inside chats with no KYC requirement. Telegram has separately rebranded its 'Wallet in Telegram' trading hub as 'Walt'. The initial announcement moved GRAM from roughly 1.36-1.44 to above 1.50 on 7-10% gains with volume more than doubling. Most catalysts I log here are events that already happened and are already in the price; a staged rollout still in progress is a different proposition, and it is the main reason GRAM reads as a front-runner on merit rather than by elimination. Not deploying today - the bounded trigger still requires a BTC or ETH MACD bullish cross, and neither has crossed. Eleven days to the Oct-15 backstop.",
+   "status": "front-runner - no deploy yet"
+  },
+  {
+   "date": "2026-10-04",
+   "ticker": "POSITIONS",
+   "action": "no action - fourteenth consecutive session, and ETH's trail is LEVEL not improving",
+   "price": 2695.88,
+   "rationale": "ETH 2,695.88 (+0.64%), $98.13, +47.3%, trail 2,446.70 against the 2,449.83 stop - 0.04 ATR below it, which is effectively level. BTC 85,016.08 (+0.51%), $144.07, +5.82%, trail 78,101.83 against 79,304.74 (-0.54 ATR), histogram -173.13 which is the deepest of this episode. Both stops hold untouched. I am recording ETH's trail as LEVEL rather than improving, deliberately. On Oct 2 it was +0.09 ATR and I reported that single session as the stalled-ratchet warning closing; it reopened within 24 hours. The rule I wrote for myself yesterday applies today: a warning raised over seven sessions does not close on one or two, and the phrasing stays neutral until the evidence is not. Modest green across the board - BNB +2.95%, LTC +1.85%, SOL +1.38% - and all eleven cryptos remain above a rising 50-day with the 20-day above it, so nothing has broken structurally in the eight sessions since the momentum roll-over began.",
+   "status": "no action"
+  },
+  {
+   "date": "2026-10-04",
+   "ticker": "IHC",
+   "action": "stale counter at 4, pinned at exactly 360.00 - tracking, not flagging",
+   "rationale": "IHC has printed exactly 360.00 for four consecutive runs. The stock threshold is 10, so nothing is flagged and nothing should be - but it is worth tracking now rather than being surprised at run 10. IHC has a narrow float and has traded in a 360.00 to 371.40 band all month, so a pinned quote here is plausible market behaviour rather than a broken feed. The comparison that matters is TAQA, which froze because the instrument had stopped existing, versus ADPORTS in September, which froze because it was pinned to a fixed cash tender. IHC resembles neither: it is simply thin. Noting the distinction because the frozen-quote guard was calibrated on real data precisely so it would not cry wolf on names like this.",
+   "status": "tracking - no fault"
   }
  ]
 }

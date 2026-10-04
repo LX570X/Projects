@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-03T07:30+00:00",
+ "updated": "2026-10-04T07:30+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": 0,
@@ -20,12 +20,12 @@
    "stop": 2449.83,
    "plan": "Hold. ONE daily CLOSE below the stop (2,316.48) -> convert ALL to USDT, not another coin. The old 2,300 two-close exit and the 1,964 / 2,105 targets are retired: price is far above all of them and the trail now sits higher than any of them.",
    "action_required": {
-    "as_of": "2026-10-03",
+    "as_of": "2026-10-04",
     "end_state": "hold 0.0091 ETH - if you are already there, do nothing",
     "stop": 2449.83,
     "stop_raised_from": 2316.48,
     "trigger": "ONE daily CLOSE below 2,449.83 -> convert ALL to USDT",
-    "note": "Stop UNCHANGED at 2,449.83. The trail computes 2,413.32 from Friday's 2,668.59 close, 0.43 ATR BELOW the existing stop - so the ratchet has STALLED AGAIN after one session of being re-armed. ETH 2,678.83 (-1.84%), $97.51, +46.4%. Stop 8.55% below spot, locking +33.89%."
+    "note": "Stop UNCHANGED at 2,449.83. The trail computes 2,446.70 from Saturday's 2,687.23 close - 0.04 ATR below the existing stop, which is effectively level with it. ETH 2,695.88 (+0.64%), $98.13, +47.3%. Stop 9.13% below spot, locking +33.89%. DELIBERATELY NOT calling this a turn: yesterday I closed a warning on one session of improvement and it reopened the next day. Level is level, not better."
    },
    "fill": {
     "state": "position confirmed by user 2026-07-17; the 2026-08-20 trim is UNCONFIRMED",
@@ -33,9 +33,9 @@
     "evidence": "user stated 0.0364 ETH on 2026-07-17; no fill confirmation since"
    },
    "signal_deterioration": {
-    "as_of": "2026-10-03",
-    "status": "WARNING REOPENED. Yesterday the trail computed above the stop for the first time in seven sessions and I reported that as closing the stalled-ratchet warning. One session later it computes 0.43 ATR below it again. ETH's histogram has deepened from -6.71 to -12.17.",
-    "lesson": "I closed that warning on one session of evidence after raising it on seven. The caveat I attached was right - I said the trail had turned before the momentum score had - but the headline framing was more confident than one day earns, and this is the second time in a week I have done that (the other being 'BTC is now the stronger of the two positions' on Sept 28, reversed in a session). The pattern is mine, not the market's: I am quicker to call a turn than to call a trend."
+    "as_of": "2026-10-04",
+    "status": "Trail essentially level with the stop (-0.04 ATR) after -0.43 yesterday and +0.09 on Friday. Histogram -11.73, still negative. Band unchanged at BUY 35 with core equal to score.",
+    "framing_discipline": "Recording this as 'level' rather than 'improving'. On Oct 2 I reported one session of improvement as the warning closing and it reopened within 24 hours. The rule I set yesterday applies to me today: a warning raised over seven sessions does not close on one or two, and the phrasing stays neutral until the evidence is not."
    }
   }
  ],
@@ -219,10 +219,16 @@
     "condition": "Deploy on the first BTC or ETH MACD BULLISH cross, or Oct 15 regardless.",
     "result": "NOT MET and moving away - BTC's histogram has deepened to -166.61 from -46.98 and ETH's to -12.17 from -6.71. Twelve days to the backstop.",
     "wait_scorecard": "The Oct-1 decision to override a screen where five names qualified is looking right on signals rather than on price. Core scores then and now: LINK 65 -> 50, AVAX 65 -> 25, ADA 65 -> 25, LTC 65 -> 40, GRAM 65 -> 65. Four of the five have lost their STRONG BUY in two sessions, three of them on fresh MACD bearish crosses. Prices have moved far less - LINK -3.14%, ADA -3.39%, AVAX -1.92%, GRAM -1.38%, LTC +2.97% - so the money saved so far is small and the vindication is in the deterioration I predicted, not yet in the drawdown avoided. GRAM is now the only one of the five still at core 65, which makes it the de facto front-runner for the Oct-15 backstop if nothing crosses before then."
+   },
+   "trigger_check_2026_10_04": {
+    "condition": "Deploy on the first BTC or ETH MACD BULLISH cross, or Oct 15 regardless.",
+    "result": "NOT MET. BTC's histogram is -173.13 - the deepest of this episode - and ETH's -11.73. Eleven days to the backstop.",
+    "shortlist_now": "The Oct-1 shortlist has degraded 5 of 5 except one. Core scores then -> now: LINK 65 -> 40 (lost STRONG BUY today on a fresh MACD bearish cross), AVAX 65 -> 25, ADA 65 -> 25, LTC 65 -> 40, GRAM 65 -> 65. GRAM is the only name left at core 65 and is also the least extended at RSI 55.8, which makes it the clear front-runner for the Oct-15 backstop rather than merely the last one standing.",
+    "gram_catalyst_check": "Verified and - unusually - FORWARD-dated rather than already consumed. Telegram's native non-custodial Gram wallet is rolling out in two phases: phase one has reached a limited set of users, and phase two opens it gradually to Telegram's billion-plus users over the coming weeks. Zero-fee peer-to-peer transfers inside chats, no KYC. Telegram has also rebranded its 'Wallet in Telegram' trading hub to 'Walt'. The initial announcement moved GRAM from roughly 1.36-1.44 to above 1.50 on 7-10% gains with volume more than doubling. The reason this matters for a backstop decision: most of the catalysts on this board are events that have already happened, and a staged rollout still in progress is a different proposition."
    }
   },
   "opportunity_status": {
-   "as_of": "2026-10-03",
+   "as_of": "2026-10-04",
    "state": "DEPLOYED (instruction issued 2026-09-20) - fill UNCONFIRMED",
    "what_happened": "BTC rated STRONG BUY (50, core 50) on two consecutive readings - Friday's close of 80,883.87 and Saturday's 81,249.99. That satisfies the 2-day rule. First confirmation in FOUR armings of this trigger (Aug 3 BTC, Aug 15 AVAX, Sept 5-6 BTC all failed to confirm).",
    "instruction": {
@@ -247,15 +253,15 @@
    "position_now": {
     "indicative_qty": 0.00169464,
     "entry": 80340.01,
-    "last": 84589.26,
-    "value_usd": 143.35,
-    "pnl_pct": 5.29,
+    "last": 85016.08,
+    "value_usd": 144.07,
+    "pnl_pct": 5.82,
     "stop": 79304.74,
     "stop_raised_from": 74919.5,
     "trigger": "ONE daily CLOSE below 79,304.74 -> convert ALL back to USDT",
-    "stop_note": "Stop UNCHANGED at 79,304.74. Trail computes 77,714.96 from Friday's 84,518.01 close, 0.70 ATR below it.",
-    "stop_distance_pct": -6.25,
-    "signal_note": "BTC STRONG BUY -> BUY (50 -> 35), -1.60% to 84,589.26, core equal to score - reversing yesterday's upgrade in ONE session. No fresh cross; the momentum term simply went from 'flat (not scored)' back to 'negative' as the histogram deepened from -46.98 to -166.61. Friday printed a 87,220.00 high and closed 84,518.01, a 3.1% intraday give-back."
+    "stop_note": "Stop UNCHANGED at 79,304.74. Trail computes 78,101.83 from Saturday's 84,753.56 close, 0.54 ATR below it.",
+    "stop_distance_pct": -6.72,
+    "signal_note": "BTC +0.51% to 85,016.08, band unchanged at BUY 35 with core equal to score. Histogram -173.13, the deepest of this episode."
    }
   },
   "stock_shortlist_note": {
@@ -503,5 +509,8 @@
    "RECONCILIATION: nothing in this book has ever been checked against the exchange. The ETH quantity dates from 2026-07-17. Four numbers - ETH, BTC, LINK, USDT - would turn a plausible book into an accurate one.",
    "AL RAMZ: still not open. Tomorrow's contribution takes the UAE stock bucket to 1,200 AED, the threshold at which the first order becomes possible. 40% of everything contributed will then be sitting in a bucket that cannot be spent."
   ]
+ },
+ "data_notes_live": {
+  "IHC": "stale_runs is 4, pinned at exactly 360.00. The stock threshold is 10 runs, so nothing is flagged yet. Worth watching - IHC has a narrow float and has sat in a 360.00-371.40 band all month."
  }
 }
