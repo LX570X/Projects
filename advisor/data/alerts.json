@@ -1,125 +1,23 @@
 {
- "generated_at_utc": "2026-10-03T07:09:40+00:00",
+ "generated_at_utc": "2026-10-04T07:09:33+00:00",
  "alerts": [
   {
-   "ticker": "AVAXUSDT",
+   "ticker": "LINKUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "AVAXUSDT: STRONG BUY -> BUY (score 65 -> 25)"
+   "msg": "LINKUSDT: STRONG BUY -> BUY (score 50 -> 40)"
   },
   {
-   "ticker": "AVAXUSDT",
+   "ticker": "LINKUSDT",
    "severity": "info",
    "type": "macd",
-   "msg": "AVAXUSDT: MACD bearish cross"
-  },
-  {
-   "ticker": "ADAUSDT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "ADAUSDT: STRONG BUY -> BUY (score 50 -> 25)"
-  },
-  {
-   "ticker": "ADAUSDT",
-   "severity": "info",
-   "type": "macd",
-   "msg": "ADAUSDT: MACD bearish cross"
-  },
-  {
-   "ticker": "LTCUSDT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "LTCUSDT: STRONG BUY -> BUY (score 65 -> 40)"
+   "msg": "LINKUSDT: MACD bearish cross"
   },
   {
    "ticker": "LTCUSDT",
    "severity": "info",
-   "type": "macd",
-   "msg": "LTCUSDT: MACD bearish cross"
-  },
-  {
-   "ticker": "EMIRATESNBD",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "EMIRATESNBD: STRONG BUY -> BUY (score 50 -> 25)"
-  },
-  {
-   "ticker": "EMIRATESNBD",
-   "severity": "info",
-   "type": "macd",
-   "msg": "EMIRATESNBD: MACD bearish cross"
-  },
-  {
-   "ticker": "SALIK",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "SALIK moved -2.7% in the last day (now 5.35 AED)"
-  },
-  {
-   "ticker": "SALIK",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "SALIK: BUY -> SELL (score 30 -> -45)"
-  },
-  {
-   "ticker": "SALIK",
-   "severity": "info",
-   "type": "macd",
-   "msg": "SALIK: MACD bearish cross"
-  },
-  {
-   "ticker": "SALIK",
-   "severity": "actionable",
-   "type": "trend",
-   "msg": "SALIK: price crossed below its 50-day average \u2014 trend change"
-  },
-  {
-   "ticker": "TALABAT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "TALABAT: SELL -> STRONG SELL (score -35 -> -50)"
-  },
-  {
-   "ticker": "TECOM",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "TECOM moved -2.7% in the last day (now 3.27 AED)"
-  },
-  {
-   "ticker": "TECOM",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "TECOM: SELL -> STRONG SELL (score -25 -> -60)"
-  },
-  {
-   "ticker": "TECOM",
-   "severity": "info",
-   "type": "macd",
-   "msg": "TECOM: MACD bearish cross"
-  },
-  {
-   "ticker": "TECOM",
-   "severity": "actionable",
-   "type": "trend",
-   "msg": "TECOM: price crossed below its 50-day average \u2014 trend change"
-  },
-  {
-   "ticker": "ADNOCGAS",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "ADNOCGAS: BUY -> SELL (score 25 -> -25)"
-  },
-  {
-   "ticker": "ADIB",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "ADIB: BUY -> SELL (score 25 -> -25)"
-  },
-  {
-   "ticker": "ADIB",
-   "severity": "actionable",
-   "type": "trend",
-   "msg": "ADIB: price crossed below its 50-day average \u2014 trend change"
+   "type": "rsi",
+   "msg": "LTCUSDT: RSI crossed above 70 (now 70.3)"
   }
  ]
 }
