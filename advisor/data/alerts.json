@@ -1,23 +1,71 @@
 {
- "generated_at_utc": "2026-10-04T07:09:33+00:00",
+ "generated_at_utc": "2026-10-05T07:09:33+00:00",
  "alerts": [
   {
-   "ticker": "LINKUSDT",
+   "ticker": "BTCUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "LINKUSDT: STRONG BUY -> BUY (score 50 -> 40)"
+   "msg": "BTCUSDT: BUY -> STRONG BUY (score 35 -> 50)"
   },
   {
-   "ticker": "LINKUSDT",
+   "ticker": "BNBUSDT",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "BNBUSDT: BUY -> STRONG BUY (score 35 -> 50)"
+  },
+  {
+   "ticker": "ADAUSDT",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "ADAUSDT moved +10.9% in the last day (now 0.2717 USD)"
+  },
+  {
+   "ticker": "ADAUSDT",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ADAUSDT: BUY -> STRONG BUY (score 25 -> 75)"
+  },
+  {
+   "ticker": "ADAUSDT",
    "severity": "info",
    "type": "macd",
-   "msg": "LINKUSDT: MACD bearish cross"
+   "msg": "ADAUSDT: MACD bullish cross"
   },
   {
-   "ticker": "LTCUSDT",
+   "ticker": "SALIK",
    "severity": "info",
-   "type": "rsi",
-   "msg": "LTCUSDT: RSI crossed above 70 (now 70.3)"
+   "type": "signal_change",
+   "msg": "SALIK: SELL -> HOLD (score -45 -> 15)"
+  },
+  {
+   "ticker": "DEWA",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "DEWA: SELL -> STRONG SELL (score -40 -> -50) \u2014 stretch penalty applied, trend/momentum unchanged"
+  },
+  {
+   "ticker": "TECOM",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "TECOM: STRONG SELL -> SELL (score -60 -> -45)"
+  },
+  {
+   "ticker": "EAND",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "EAND: HOLD -> SELL (score -15 -> -25) \u2014 stretch penalty applied, trend/momentum unchanged"
+  },
+  {
+   "ticker": "ADNOCGAS",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ADNOCGAS: SELL -> BUY (score -25 -> 40)"
+  },
+  {
+   "ticker": "ADIB",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ADIB: SELL -> BUY (score -25 -> 25)"
   }
  ]
 }
