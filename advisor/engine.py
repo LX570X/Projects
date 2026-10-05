@@ -338,19 +338,30 @@ def analyze(ticker, a):
 
 
 def _stretch_note(prev, cur):
-    """Label an upgrade that is only the overbought penalty falling away.
+    """Label a band change that is only the RSI/Bollinger term moving.
 
     A pullback from a stretched condition mechanically raises the score without
     the trend, structure or momentum having improved at all — on 2026-08-23 a
     red day across the board produced seven 'upgrades'. Say so in the alert
     rather than letting it read as new strength.
+
+    The term is symmetric, so the wording has to be too. Above the RSI line the
+    extreme costs points and losing the extreme gives them back; below it the
+    extreme ADDS points (oversold relief) and leaving the extreme takes them
+    away. Calling that second case a 'penalty applied' was wrong — nothing was
+    penalised, relief was withdrawn (DEWA and EAND, 2026-10-05).
     """
     pc, cc = prev.get("core_score"), cur.get("core_score")
     if pc is None or cc is None:
         return ""
+    oversold = (cur.get("rsi") is not None and cur["rsi"] < 50)
     if cur["score"] > prev["score"] and cc <= pc:
+        if oversold:
+            return " — oversold relief applied, trend/momentum unchanged"
         return " — penalty relief only, trend/momentum unchanged"
     if cur["score"] < prev["score"] and cc >= pc:
+        if oversold:
+            return " — oversold relief withdrawn, trend/momentum unchanged"
         return " — stretch penalty applied, trend/momentum unchanged"
     return ""
 

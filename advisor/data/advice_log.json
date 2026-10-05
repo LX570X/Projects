@@ -2136,6 +2136,43 @@
    "action": "stale counter at 4, pinned at exactly 360.00 - tracking, not flagging",
    "rationale": "IHC has printed exactly 360.00 for four consecutive runs. The stock threshold is 10, so nothing is flagged and nothing should be - but it is worth tracking now rather than being surprised at run 10. IHC has a narrow float and has traded in a 360.00 to 371.40 band all month, so a pinned quote here is plausible market behaviour rather than a broken feed. The comparison that matters is TAQA, which froze because the instrument had stopped existing, versus ADPORTS in September, which froze because it was pinned to a fixed cash tender. IHC resembles neither: it is simply thin. Noting the distinction because the frozen-quote guard was calibrated on real data precisely so it would not cry wolf on names like this.",
    "status": "tracking - no fault"
+  },
+  {
+   "date": "2026-10-05",
+   "ticker": "ENGINE",
+   "action": "FIXED a wording error: on oversold names 'penalty applied' was describing relief being withdrawn",
+   "rationale": "DEWA went SELL -40 to STRONG SELL -50 and EAND HOLD -15 to SELL -25, both tagged 'stretch penalty applied, trend/momentum unchanged'. The tag correctly identified that neither band change came from trend or momentum, but the words were wrong. The RSI/Bollinger term is SYMMETRIC: above the line an extreme costs points and losing the extreme gives them back, while below it an extreme ADDS points as oversold relief and leaving the extreme takes them away. DEWA's RSI rose from 35.5 to 38.7, so what happened is that oversold relief was WITHDRAWN - nothing was penalised. I only noticed because I flagged this symmetry for the first time on Oct 2 and the label had not caught up. Fixed in engine.py: the note now reads 'oversold relief withdrawn' or 'oversold relief applied' when RSI is below 50, and keeps the original wording above it. A label that describes the mechanism backwards is worse than no label, because it invites the reader to conclude the opposite of what happened.",
+   "status": "fixed in engine.py"
+  },
+  {
+   "date": "2026-10-05",
+   "ticker": "SATELLITE",
+   "action": "trigger NOT met - ADA crossed, but the trigger names BTC or ETH",
+   "rationale": "ADA printed a MACD BULLISH cross today, +10.85% to 0.2717, BUY -> STRONG BUY (25 -> 75). The bounded trigger deploys on the first BTC or ETH MACD bullish cross, and neither has crossed: BTC's histogram is -33.50 and ETH's -7.96, both still negative. So the trigger is not met. I named BTC or ETH deliberately on Oct 1 because the reason for waiting was that the roll-over had begun in the MAJORS and was propagating downward - a single alt turning does not establish that the majors have. This is the second near-miss in four days, the first being BTC's Oct-2 band upgrade, and the answer has to be the same both times or the trigger is decoration rather than a rule. Worth adding that BTC has moved a long way toward crossing - its histogram was -173.13 two sessions ago - and may well cross within days, in which case the trigger fires properly rather than by interpretation. Ten days to the Oct-15 backstop.",
+   "status": "wait continues - trigger unmet for the second near-miss"
+  },
+  {
+   "date": "2026-10-05",
+   "ticker": "ADAUSDT",
+   "action": "the front-runner has flipped again - which is the argument for a dated backstop",
+   "price": 0.2717,
+   "rationale": "ADA +10.85%, the biggest single-day move on the board since GRAM's Sept-27 spike, on a MACD bullish cross taking it from BUY 25 to STRONG BUY 75 - the highest core score on the board, with RSI 69.7 still inside the below-70 requirement. Yesterday I named GRAM the front-runner for the Oct-15 backstop 'on merit rather than elimination'; today ADA is clearly ahead of it, core 75 against 50. That the front-runner has changed twice in two days is not a failure of analysis, it is the reason the trigger is bounded by a DATE rather than by my repeated picking. If I were choosing the satellite by judgement each session I would have bought AVAX on Sept 20 at RSI 81.9, GRAM yesterday, and ADA today, and the only thing that saved the reserve from all three was a written rule that does not let me choose. I should expect the Oct-15 name to differ again from today's, and that expectation is the point rather than a problem.",
+   "status": "advice only - no deploy"
+  },
+  {
+   "date": "2026-10-05",
+   "ticker": "POSITIONS",
+   "action": "BOTH trails re-armed - and deliberately not calling it a turn",
+   "price": 2730.68,
+   "rationale": "For the first time since the Sept-22 raises, both trails compute ABOVE their stops: ETH at 2,503.32 against 2,449.83 (+0.72 ATR) and BTC at 80,570.60 against 79,304.74 (+0.64 ATR). Neither clears the 1-ATR gate so nothing moves, which is the rule working rather than a near-miss to regret. BTC also went BUY -> STRONG BUY (35 -> 50), and unlike the Oct-2 upgrade this one has real momentum behind it - the histogram improved from -173.13 to -33.50 in two sessions rather than a cross aging out of its window. ETH 2,730.68 (+1.29%), $99.40, +49.2%; BTC 86,338.00 (+1.55%), $146.31, +7.47%, its best since opening. One number worth flagging ahead of time: BTC's computed trail of 80,570.60 is ABOVE the 80,340.01 entry, so the next qualifying raise will lock a gain rather than merely cap the loss - the first time that has been true. I am still NOT calling this a turn. Two sessions is better than one, but the rule I set on Oct 3 after closing a warning prematurely was that a warning raised over seven sessions does not close on one or two. ETH's band is unchanged at BUY 35 with a negative histogram, so the trail remains ahead of the score. If this is real, a third and fourth session will say so and the gate will clear without me narrating it early.",
+   "status": "no action - fifteenth consecutive session"
+  },
+  {
+   "date": "2026-10-05",
+   "ticker": "CYCLE",
+   "action": "no notification sent, and the reason is the Oct-3 rule",
+   "rationale": "BTC's band change to STRONG BUY is on a held position and qualifies on the letter of the notification list. I am not sending it. On Oct 2 I pushed exactly this - BTC back to STRONG BUY, warning closed - and had to push a correction on Oct 3 when it reversed. Pushing the same headline three days later, with nothing for the user to do either way, would be the third whipsaw notification in four days and would train them to ignore the channel. The rule I wrote on Oct 3 was that a warning raised over N sessions does not close on one or two; the same restraint applies to the mirror image. Today's evidence IS better than Oct 2's - real histogram improvement rather than a cross aging out, plus both trails re-arming - and if it holds, the notification that matters will be an actual stop raise, which is an action rather than a status change. Recording the silence as a decision so it is legible rather than looking like an oversight.",
+   "status": "silent by rule - decision logged"
   }
  ]
 }

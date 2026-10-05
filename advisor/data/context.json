@@ -1,29 +1,29 @@
 {
- "updated": "2026-10-04T07:35+00:00",
+ "updated": "2026-10-05T07:35+00:00",
  "market_notes": [
   {
-   "market": "LINK falls - the Oct-1 shortlist is now 5 of 5 degraded except GRAM",
-   "note": "LINK lost STRONG BUY (50 -> 40) on a fresh MACD bearish cross, core equal to score. Core scores then and now across the Oct-1 shortlist: LINK 65 -> 40, AVAX 65 -> 25, ADA 65 -> 25, LTC 65 -> 40, GRAM 65 -> 65. Five of five gone except GRAM, in three sessions, each on a genuine cross rather than a stretch artefact. The Oct-1 call to override a screen where all five qualified looks right on signals - though prices have moved far less than scores, so the money saved stays small. What has usefully resolved is the backstop: GRAM is the only name at core 65 AND the least extended at RSI 55.8."
+   "market": "BOTH trails re-armed - and deliberately not called a turn",
+   "note": "For the first time since the Sept-22 raises, both trails compute ABOVE their stops: ETH at 2,503.32 against 2,449.83 (+0.72 ATR) and BTC at 80,570.60 against 79,304.74 (+0.64 ATR). Neither clears the 1-ATR gate so nothing moves - the rule working, not a near-miss to regret. BTC also went BUY -> STRONG BUY, and unlike the Oct-2 upgrade this one has real momentum behind it: the histogram improved from -173.13 to -33.50 in two sessions rather than a cross aging out. STILL not calling it a turn - the rule I set on Oct 3 was that a warning raised over seven sessions does not close on one or two, and ETH's band is unchanged at BUY 35 with a negative histogram. If it is real, a third and fourth session will say so and the gate will clear without narration."
   },
   {
-   "market": "GRAM's catalyst is forward-dated, which is rare on this board",
-   "note": "Telegram's native non-custodial Gram wallet is rolling out in TWO phases: phase one has reached a limited set of users, phase two opens gradually to Telegram's billion-plus user base over the coming weeks. Zero-fee peer-to-peer transfers inside chats, no KYC. Telegram has separately rebranded its 'Wallet in Telegram' trading hub as 'Walt'. The initial announcement moved GRAM from roughly 1.36-1.44 to above 1.50 on 7-10% gains with volume more than doubling. Most catalysts logged here are events that already happened and are already in the price; a staged rollout still in progress is a different proposition, and it is why GRAM reads as a front-runner on merit rather than by elimination."
+   "market": "A number worth flagging early",
+   "note": "BTC's computed trail of 80,570.60 is ABOVE the 80,340.01 entry. So the next qualifying raise will LOCK A GAIN rather than merely cap the loss - the first time that has been true since the position opened on Sept 20. The current stop of 79,304.74 is still 1.29% under entry."
   },
   {
-   "market": "ETH's trail is LEVEL, not improving - said deliberately",
-   "note": "The trail computes 2,446.70 against the 2,449.83 stop, 0.04 ATR below it. On Oct 2 it was +0.09 ATR and I reported that single session as the stalled-ratchet warning closing; it reopened within 24 hours. The rule I wrote yesterday applies to me today: a warning raised over seven sessions does not close on one or two, and the phrasing stays neutral until the evidence is not. Level is level, not better. Histogram still -11.73."
+   "market": "Satellite trigger NOT met - ADA crossed, but the trigger names BTC or ETH",
+   "note": "ADA printed a MACD BULLISH cross, +10.85% to 0.2717, BUY -> STRONG BUY (25 -> 75). The trigger deploys on the first BTC or ETH bullish cross and neither has crossed (histograms -33.50 and -7.96, both negative). I named the majors deliberately on Oct 1 because the reason for waiting was that the roll-over began in the MAJORS and was propagating downward; one alt turning does not establish that. Second near-miss in four days after BTC's Oct-2 band upgrade, and the answer has to be the same both times or the trigger is decoration. BTC may well cross within days, in which case it fires properly rather than by interpretation. Ten days to the backstop."
   },
   {
-   "market": "Positions - fourteenth consecutive session with no action",
-   "note": "ETH 2,695.88 (+0.64%), $98.13, +47.3%, stop 9.13% below spot. BTC 85,016.08 (+0.51%), $144.07, +5.82%, stop 6.72% below, histogram -173.13 which is the deepest of this episode. Modest green across the board - BNB +2.95%, LTC +1.85%, SOL +1.38% - and all eleven cryptos remain above a rising 50-day with the 20-day above it. Nothing has broken structurally in the eight sessions since the momentum roll-over began."
+   "market": "The front-runner has flipped again - which is the point, not a problem",
+   "note": "Yesterday GRAM was the backstop front-runner 'on merit'. Today ADA is clearly ahead at core 75 against 50, with RSI 69.7 still inside the below-70 requirement. The front-runner has changed twice in two days. If I were choosing the satellite by judgement each session I would have bought AVAX on Sept 20 at RSI 81.9, GRAM yesterday and ADA today - and the only thing that saved the reserve from all three was a written rule that does not let me choose. Expect the Oct-15 name to differ again from today's."
   },
   {
-   "market": "Satellite trigger still unmet, 11 days to the backstop",
-   "note": "The trigger needs a BTC or ETH MACD BULLISH cross. Neither has crossed and BTC's histogram has deepened to -173.13. The Oct-15 backstop deploys the 309 AED regardless, and on today's board that means GRAM."
+   "market": "Engine fix: on oversold names the label described the mechanism backwards",
+   "note": "DEWA (SELL -40 to STRONG SELL -50) and EAND (HOLD -15 to SELL -25) were both tagged 'stretch penalty applied'. The tag was right that neither change came from trend or momentum, but the words were wrong. The RSI term is SYMMETRIC: above the line an extreme costs points, below it an extreme ADDS points as oversold relief. DEWA's RSI rose 35.5 to 38.7, so relief was WITHDRAWN - nothing was penalised. Fixed: the note now reads 'oversold relief withdrawn' or 'oversold relief applied' when RSI is below 50. A label that describes the mechanism backwards is worse than no label, because it invites the opposite conclusion."
   },
   {
-   "market": "UAE - Sunday, nothing changed",
-   "note": "Every UAE stock shows a stale counter of 1 or more: Sunday's snapshot repeating Friday's settled closes, exactly as designed. ALDAR remains the only constructive name at STRONG BUY 50. IHC's stale counter is 4, pinned at exactly 360.00 - the stock threshold is 10 so nothing is flagged, but it is worth tracking now rather than being surprised at run 10. IHC has a narrow float and has traded in a 360.00-371.40 band all month, so a pinned quote is plausible market behaviour rather than a broken feed."
+   "market": "Positions and the board",
+   "note": "ETH 2,730.68 (+1.29%), $99.40, +49.2%. BTC 86,338.00 (+1.55%), $146.31, +7.47%, its best since opening. BNB joined BTC and ADA at STRONG BUY. Broad green: ADA +10.85%, DOGE +3.62%, XRP +1.91%, LINK +1.63%. Fifteenth consecutive session with no position action. UAE mixed: SALIK SELL -> HOLD, ADNOCGAS SELL -> BUY, ADIB SELL -> BUY, TECOM STRONG SELL -> SELL, against EMAARDEV at -75 and ALDAR holding STRONG BUY 50."
   }
  ],
  "asset_notes": {
@@ -453,6 +453,12 @@
     "impact": "neutral",
     "date": "2026-10-04",
     "source": "advisor data"
+   },
+   {
+    "headline": "+1.55% to 86,338.00, BUY -> STRONG BUY with real momentum behind it - histogram improved -173.13 to -33.50 in two sessions, unlike the Oct-2 upgrade which was a cross aging out. Trail re-armed at +0.64 ATR and now sits ABOVE the entry",
+    "impact": "bullish",
+    "date": "2026-10-05",
+    "source": "advisor data"
    }
   ],
   "ETHUSDT": [
@@ -677,6 +683,12 @@
     "impact": "bullish",
     "date": "2026-10-02",
     "source": "advisor data"
+   },
+   {
+    "headline": "+1.29% to 2,730.68, position +49.2%; trail re-armed at +0.72 ATR above the stop, the strongest since Sept 22, but band unchanged at BUY 35 with a negative histogram",
+    "impact": "bullish",
+    "date": "2026-10-05",
+    "source": "advisor data"
    }
   ],
   "BNBUSDT": [
@@ -720,6 +732,12 @@
     "headline": "STRONG BUY -> BUY (65 -> 40) on a fresh MACD bearish cross, core equal to score - the first genuine crypto downgrade in five sessions",
     "impact": "bearish",
     "date": "2026-09-25",
+    "source": "advisor data"
+   },
+   {
+    "headline": "BUY -> STRONG BUY (35 -> 50)",
+    "impact": "bullish",
+    "date": "2026-10-05",
     "source": "advisor data"
    }
   ],
@@ -1134,6 +1152,12 @@
     "headline": "STRONG SELL -> HOLD, a 65-point swing on a +1.11% move two sessions after going the other way - muted, and behaving exactly as muting predicts",
     "impact": "neutral",
     "date": "2026-09-28",
+    "source": "advisor data"
+   },
+   {
+    "headline": "SELL -> STRONG SELL on oversold relief being WITHDRAWN as RSI rose 35.5 to 38.7 - not a penalty and not trend or momentum; the engine label has been corrected to say so",
+    "impact": "neutral",
+    "date": "2026-10-05",
     "source": "advisor data"
    }
   ],
@@ -1671,6 +1695,12 @@
     "impact": "bearish",
     "date": "2026-10-03",
     "source": "advisor data"
+   },
+   {
+    "headline": "+10.85% to 0.2717 on a MACD BULLISH cross, BUY -> STRONG BUY (25 -> 75) - the highest core score on the board and the biggest single-day move since GRAM's Sept-27 spike",
+    "impact": "bullish",
+    "date": "2026-10-05",
+    "source": "advisor data"
    }
   ],
   "ADPORTS": [
@@ -2005,13 +2035,12 @@
   ]
  },
  "risk_flags": [
-  "The Oct-1 satellite shortlist has degraded 5 of 5 except GRAM in three sessions, each on a genuine MACD cross. Right on signals; prices moved far less, so the money saved stays small.",
-  "GRAM is the Oct-15 backstop front-runner on merit, not elimination: only name at core 65, least extended at RSI 55.8, and its Telegram wallet catalyst is FORWARD-dated with phase two still to roll out to 1bn+ users.",
-  "SATELLITE TRIGGER still unmet and moving away - BTC's histogram deepened to -173.13. The backstop deploys the 309 AED on Oct 15 regardless. 11 days.",
-  "ETH's trail is LEVEL with its stop (-0.04 ATR), NOT improving. Recorded neutrally on purpose: on Oct 2 I called one session of improvement a warning closing and it reopened within 24 hours.",
-  "Both stops hold and both are single-close: ETH below 2,449.83 (9.13% away, locks +33.89%), BTC below 79,304.74 (6.72% away, caps loss at ~$1.76). Fourteen sessions with no action.",
-  "Not one of the eleven cryptos has lost its 50-day in the eight sessions since the roll-over began. Momentum deteriorating inside intact structure, everywhere.",
-  "IHC's stale counter is 4 at exactly 360.00. Threshold is 10, nothing flagged - thin float, 360.00-371.40 band all month, plausible rather than broken. Tracking early rather than being surprised at run 10.",
+  "BOTH trails have re-armed above their stops (ETH +0.72 ATR, BTC +0.64 ATR) but neither clears the 1-ATR gate, so nothing moves. Two sessions of improvement is NOT being called a turn - the Oct-3 rule applies to me.",
+  "BTC's computed trail of 80,570.60 is now ABOVE the 80,340.01 entry: the next qualifying raise will LOCK A GAIN rather than cap the loss, for the first time since Sept 20.",
+  "SATELLITE TRIGGER still unmet. ADA crossed bullish but the trigger names BTC or ETH, and neither has (histograms -33.50 and -7.96). Second near-miss in four days; same answer both times. Backstop Oct 15 - 10 days.",
+  "The backstop front-runner has flipped twice in two days (GRAM -> ADA). That is the argument for a DATED trigger rather than repeated picking: judgement each session would have bought AVAX at RSI 81.9, then GRAM, then ADA.",
+  "No notification sent today despite BTC's band change qualifying on the letter. On Oct 2 I pushed the same headline and corrected it on Oct 3; a third whipsaw push in four days with nothing to act on would train the channel to be ignored. The notification that matters will be an actual stop raise.",
+  "Both stops hold and both are single-close: ETH below 2,449.83 (10.28% away, locks +33.89%), BTC below 79,304.74 (8.15% away, still 1.29% under entry). Fifteen sessions with no action.",
   "NOTHING in this book has ever been reconciled against the exchange. The UAE stock bucket has been deployable since Oct 1 and Al Ramz is still not open."
  ],
  "corrections": [
