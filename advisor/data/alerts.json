@@ -1,71 +1,41 @@
 {
- "generated_at_utc": "2026-10-05T07:09:33+00:00",
+ "generated_at_utc": "2026-10-06T07:09:21+00:00",
  "alerts": [
   {
-   "ticker": "BTCUSDT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "BTCUSDT: BUY -> STRONG BUY (score 35 -> 50)"
-  },
-  {
-   "ticker": "BNBUSDT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "BNBUSDT: BUY -> STRONG BUY (score 35 -> 50)"
-  },
-  {
-   "ticker": "ADAUSDT",
+   "ticker": "AIRARABIA",
    "severity": "info",
    "type": "big_move",
-   "msg": "ADAUSDT moved +10.9% in the last day (now 0.2717 USD)"
+   "msg": "AIRARABIA moved -2.7% in the last day (now 4.61 AED)"
   },
   {
-   "ticker": "ADAUSDT",
+   "ticker": "AIRARABIA",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "ADAUSDT: BUY -> STRONG BUY (score 25 -> 75)"
+   "msg": "AIRARABIA: STRONG SELL -> SELL (score -65 -> -45) \u2014 oversold relief applied, trend/momentum unchanged"
   },
   {
-   "ticker": "ADAUSDT",
+   "ticker": "AIRARABIA",
    "severity": "info",
-   "type": "macd",
-   "msg": "ADAUSDT: MACD bullish cross"
-  },
-  {
-   "ticker": "SALIK",
-   "severity": "info",
-   "type": "signal_change",
-   "msg": "SALIK: SELL -> HOLD (score -45 -> 15)"
-  },
-  {
-   "ticker": "DEWA",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "DEWA: SELL -> STRONG SELL (score -40 -> -50) \u2014 stretch penalty applied, trend/momentum unchanged"
-  },
-  {
-   "ticker": "TECOM",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "TECOM: STRONG SELL -> SELL (score -60 -> -45)"
+   "type": "rsi",
+   "msg": "AIRARABIA: RSI crossed below 30 (now 29.7)"
   },
   {
    "ticker": "EAND",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "EAND: HOLD -> SELL (score -15 -> -25) \u2014 stretch penalty applied, trend/momentum unchanged"
-  },
-  {
-   "ticker": "ADNOCGAS",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "ADNOCGAS: SELL -> BUY (score -25 -> 40)"
+   "msg": "EAND: SELL -> BUY (score -25 -> 25)"
   },
   {
    "ticker": "ADIB",
    "severity": "actionable",
+   "type": "trend",
+   "msg": "ADIB: price crossed above its 50-day average \u2014 trend change"
+  },
+  {
+   "ticker": "ADNOCDRILL",
+   "severity": "actionable",
    "type": "signal_change",
-   "msg": "ADIB: SELL -> BUY (score -25 -> 25)"
+   "msg": "ADNOCDRILL: STRONG SELL -> SELL (score -50 -> -40)"
   }
  ]
 }
