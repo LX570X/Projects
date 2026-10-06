@@ -2173,6 +2173,36 @@
    "action": "no notification sent, and the reason is the Oct-3 rule",
    "rationale": "BTC's band change to STRONG BUY is on a held position and qualifies on the letter of the notification list. I am not sending it. On Oct 2 I pushed exactly this - BTC back to STRONG BUY, warning closed - and had to push a correction on Oct 3 when it reversed. Pushing the same headline three days later, with nothing for the user to do either way, would be the third whipsaw notification in four days and would train them to ignore the channel. The rule I wrote on Oct 3 was that a warning raised over N sessions does not close on one or two; the same restraint applies to the mirror image. Today's evidence IS better than Oct 2's - real histogram improvement rather than a cross aging out, plus both trails re-arming - and if it holds, the notification that matters will be an actual stop raise, which is an action rather than a status change. Recording the silence as a decision so it is legible rather than looking like an oversight.",
    "status": "silent by rule - decision logged"
+  },
+  {
+   "date": "2026-10-06",
+   "ticker": "BTCUSDT",
+   "action": "band flips for the FOURTH time in five sessions - yesterday's restraint vindicated in a day",
+   "price": 85334.0,
+   "rationale": "BTC STRONG BUY -> BUY (50 -> 35), -1.15%, with the histogram re-deepening from -33.50 to -158.39 in a single session. The full sequence: BUY Oct 1, STRONG BUY Oct 2, BUY Oct 3, BUY Oct 4, STRONG BUY Oct 5, BUY today. Four flips in five sessions on a price that has travelled from 84,240 to 85,334 - a 1.3% range. Yesterday I declined to send a notification on the STRONG BUY upgrade, reasoning that I had pushed the same headline on Oct 2 and corrected it on Oct 3, and that 'if it holds, the notification that matters will be an actual stop raise'. It did not hold, and it took one session to find out. That is a concrete payoff from a restraint rule rather than a hypothetical one, and worth recording as such. The mechanism is now clear and worth naming: BTC's score sits on the 45 threshold with the momentum term oscillating between 'flat (not scored)' and 'negative' as the histogram crosses zero. That is exactly the knife-edge condition that made TECOM, DEWA and TALABAT's bands uninformative and got them muted. I am NOT muting a held position's band - the score still feeds the deploy trigger and the record - but a BTC band change on its own is no longer news and will not be reported as such.",
+   "status": "open, +6.22% - no action, band churn noted"
+  },
+  {
+   "date": "2026-10-06",
+   "ticker": "ENGINE",
+   "action": "yesterday's label fix is working in production",
+   "rationale": "AIRARABIA came through as STRONG SELL -> SELL tagged 'oversold relief applied, trend/momentum unchanged', with RSI crossing below 30 to 29.7 and score -45 against core -75. That is exactly right and exactly what the old wording would have got backwards: under yesterday's code it would have read 'penalty relief only', implying a penalty had lifted when what actually happened is that an oversold extreme ADDED 30 points of relief to a score whose underlying is unchanged at -75. The practical value is immediate - a reader seeing 'STRONG SELL -> SELL' on a stock that fell 2.74% would reasonably assume things had improved, and the label now says plainly that they have not. Fixed yesterday, validated today on the first oversold band change to come through.",
+   "status": "fix validated in production"
+  },
+  {
+   "date": "2026-10-06",
+   "ticker": "SATELLITE",
+   "action": "trigger moved sharply AWAY - and I said the opposite yesterday",
+   "rationale": "Yesterday I wrote that BTC 'has moved a long way toward crossing and may well cross within days'. One session later its histogram has re-deepened from -33.50 to -158.39, which is further from crossing than it was two days ago. ETH's went from -7.96 to -10.89. The trigger is not met and is not close. I am flagging the reversal of my own expectation because the phrasing yesterday was forward-looking in a way that invited the reader to expect a deploy imminently, and this is the third time in a fortnight I have been too quick to extrapolate a two-session direction. The bounded backstop is doing the work my forecasting is not: nine days from today the 309 AED deploys into whatever qualifies, regardless of what I think is about to happen. ADA holds STRONG BUY at core 75 for a second session with RSI 68.2, the first time the front-runner has been stable two days running.",
+   "status": "wait continues - 9 days to backstop"
+  },
+  {
+   "date": "2026-10-06",
+   "ticker": "POSITIONS",
+   "action": "no action - sixteenth consecutive session",
+   "price": 2696.4,
+   "rationale": "ETH 2,696.40 (-1.21%), $98.15, +47.4%, trail 2,489.20 against the 2,449.83 stop (+0.53 ATR, down from +0.72). BTC 85,334.00 (-1.15%), $144.61, +6.22%, trail 79,843.74 against 79,304.74 (+0.27 ATR, down from +0.64). Both trails remain above their stops but both retreated, and neither is near the 1-ATR gate. CORRECTION to yesterday: I wrote that BTC's computed trail of 80,570.60 was above the 80,340.01 entry so the next raise would lock a gain. Today's computed trail is 79,843.74, which is BELOW entry again - the statement was true of yesterday's number but I presented it as a durable threshold crossing when it was one session's arithmetic. Context: global crypto market cap around $3.02tn, Fear & Greed rose 70 to 73 DESPITE weaker prices which is a contrarian caution, about $61.91m of BTC liquidations in 24 hours with longs at $46.58m, and resistance cited at 87,000-88,000.",
+   "status": "no action"
   }
  ]
 }

@@ -1,29 +1,29 @@
 {
- "updated": "2026-10-05T07:35+00:00",
+ "updated": "2026-10-06T07:35+00:00",
  "market_notes": [
   {
-   "market": "BOTH trails re-armed - and deliberately not called a turn",
-   "note": "For the first time since the Sept-22 raises, both trails compute ABOVE their stops: ETH at 2,503.32 against 2,449.83 (+0.72 ATR) and BTC at 80,570.60 against 79,304.74 (+0.64 ATR). Neither clears the 1-ATR gate so nothing moves - the rule working, not a near-miss to regret. BTC also went BUY -> STRONG BUY, and unlike the Oct-2 upgrade this one has real momentum behind it: the histogram improved from -173.13 to -33.50 in two sessions rather than a cross aging out. STILL not calling it a turn - the rule I set on Oct 3 was that a warning raised over seven sessions does not close on one or two, and ETH's band is unchanged at BUY 35 with a negative histogram. If it is real, a third and fourth session will say so and the gate will clear without narration."
+   "market": "BTC's band flips for the FOURTH time in five sessions",
+   "note": "STRONG BUY -> BUY (50 -> 35), -1.15%, histogram re-deepening from -33.50 to -158.39 in one session. Full sequence: BUY Oct 1, STRONG BUY Oct 2, BUY Oct 3, BUY Oct 4, STRONG BUY Oct 5, BUY today - four flips on a price that travelled 84,240 to 85,334, a 1.3% range. The mechanism is the same knife-edge that got TECOM, DEWA and TALABAT muted: the score sits on the 45 threshold with the momentum term oscillating between 'flat (not scored)' and 'negative' as the histogram crosses zero. NOT muting a held position's band - the score still feeds the deploy trigger and the record - but a BTC band change on its own is no longer news."
   },
   {
-   "market": "A number worth flagging early",
-   "note": "BTC's computed trail of 80,570.60 is ABOVE the 80,340.01 entry. So the next qualifying raise will LOCK A GAIN rather than merely cap the loss - the first time that has been true since the position opened on Sept 20. The current stop of 79,304.74 is still 1.29% under entry."
+   "market": "Yesterday's restraint vindicated in one session",
+   "note": "Yesterday I declined to notify on BTC's STRONG BUY upgrade, having pushed the same headline on Oct 2 and corrected it on Oct 3, and wrote that 'if it holds, the notification that matters will be an actual stop raise'. It did not hold, and one session was enough to find out. A concrete payoff from a restraint rule rather than a hypothetical one."
   },
   {
-   "market": "Satellite trigger NOT met - ADA crossed, but the trigger names BTC or ETH",
-   "note": "ADA printed a MACD BULLISH cross, +10.85% to 0.2717, BUY -> STRONG BUY (25 -> 75). The trigger deploys on the first BTC or ETH bullish cross and neither has crossed (histograms -33.50 and -7.96, both negative). I named the majors deliberately on Oct 1 because the reason for waiting was that the roll-over began in the MAJORS and was propagating downward; one alt turning does not establish that. Second near-miss in four days after BTC's Oct-2 band upgrade, and the answer has to be the same both times or the trigger is decoration. BTC may well cross within days, in which case it fires properly rather than by interpretation. Ten days to the backstop."
+   "market": "And an expectation of mine that reversed immediately",
+   "note": "Yesterday I wrote that BTC 'has moved a long way toward crossing and may well cross within days'. Its histogram has since gone from -33.50 to -158.39 - further from crossing than two days ago. Flagging it because the phrasing invited the reader to expect a deploy imminently, and this is the third time in a fortnight I have extrapolated a two-session direction too confidently. The bounded backstop is doing the work my forecasting is not: nine days from today the 309 AED deploys into whatever qualifies, regardless of what I think is about to happen."
   },
   {
-   "market": "The front-runner has flipped again - which is the point, not a problem",
-   "note": "Yesterday GRAM was the backstop front-runner 'on merit'. Today ADA is clearly ahead at core 75 against 50, with RSI 69.7 still inside the below-70 requirement. The front-runner has changed twice in two days. If I were choosing the satellite by judgement each session I would have bought AVAX on Sept 20 at RSI 81.9, GRAM yesterday and ADA today - and the only thing that saved the reserve from all three was a written rule that does not let me choose. Expect the Oct-15 name to differ again from today's."
+   "market": "The engine label fix is working in production",
+   "note": "AIRARABIA came through STRONG SELL -> SELL tagged 'oversold relief applied, trend/momentum unchanged', with RSI crossing below 30 to 29.7 and score -45 against core -75. Exactly right, and exactly what yesterday's code would have got backwards - it would have read 'penalty relief only', implying a penalty had lifted when an oversold extreme had in fact ADDED 30 points to a score whose underlying is unchanged at -75. A reader seeing STRONG SELL -> SELL on a stock that fell 2.74% would reasonably assume improvement; the label now says plainly there is none."
   },
   {
-   "market": "Engine fix: on oversold names the label described the mechanism backwards",
-   "note": "DEWA (SELL -40 to STRONG SELL -50) and EAND (HOLD -15 to SELL -25) were both tagged 'stretch penalty applied'. The tag was right that neither change came from trend or momentum, but the words were wrong. The RSI term is SYMMETRIC: above the line an extreme costs points, below it an extreme ADDS points as oversold relief. DEWA's RSI rose 35.5 to 38.7, so relief was WITHDRAWN - nothing was penalised. Fixed: the note now reads 'oversold relief withdrawn' or 'oversold relief applied' when RSI is below 50. A label that describes the mechanism backwards is worse than no label, because it invites the opposite conclusion."
+   "market": "Positions - sixteenth consecutive session with no action",
+   "note": "ETH 2,696.40 (-1.21%), $98.15, +47.4%, trail +0.53 ATR above the stop (from +0.72). BTC 85,334.00 (-1.15%), $144.61, +6.22%, trail +0.27 ATR (from +0.64). Both trails remain above their stops but both retreated; neither is near the 1-ATR gate. CORRECTION: yesterday I said BTC's computed trail had crossed above the entry so the next raise would lock a gain. Today's computes 79,843.74, BELOW the 80,340.01 entry - the statement was true of that number but I presented one session's arithmetic as a durable threshold crossing."
   },
   {
-   "market": "Positions and the board",
-   "note": "ETH 2,730.68 (+1.29%), $99.40, +49.2%. BTC 86,338.00 (+1.55%), $146.31, +7.47%, its best since opening. BNB joined BTC and ADA at STRONG BUY. Broad green: ADA +10.85%, DOGE +3.62%, XRP +1.91%, LINK +1.63%. Fifteenth consecutive session with no position action. UAE mixed: SALIK SELL -> HOLD, ADNOCGAS SELL -> BUY, ADIB SELL -> BUY, TECOM STRONG SELL -> SELL, against EMAARDEV at -75 and ALDAR holding STRONG BUY 50."
+   "market": "Market context",
+   "note": "Global crypto market cap around $3.02tn. The Fear & Greed Index ROSE from 70 to 73 despite weaker major-asset prices, which is a contrarian caution rather than a comfort. About $61.91m of BTC liquidations in 24 hours with longs at $46.58m. Resistance cited at 87,000-88,000. ADA holds STRONG BUY at core 75 for a second session with RSI 68.2 - the first time the backstop front-runner has been stable two days running. UAE: EAND SELL -> BUY, ADIB crossed above its 50-day, ADNOCDRILL STRONG SELL -> SELL, against TECOM back to -60 and AIRARABIA -2.74%."
   }
  ],
  "asset_notes": {
@@ -459,6 +459,12 @@
     "impact": "bullish",
     "date": "2026-10-05",
     "source": "advisor data"
+   },
+   {
+    "headline": "-1.15% to 85,334.00, STRONG BUY -> BUY with the histogram re-deepening -33.50 to -158.39 - fourth band flip in five sessions on a 1.3% price range. Market cap ~$3.02tn, Fear & Greed rose 70 to 73 despite weaker prices, ~$61.91m of liquidations (longs $46.58m), resistance 87,000-88,000",
+    "impact": "bearish",
+    "date": "2026-10-06",
+    "source": "news research pass"
    }
   ],
   "ETHUSDT": [
@@ -1191,6 +1197,12 @@
     "impact": "bearish",
     "date": "2026-09-16",
     "source": "advisor data"
+   },
+   {
+    "headline": "-2.74% to 4.61 with RSI crossing below 30 to 29.7; STRONG SELL -> SELL tagged 'oversold relief applied' - score -45 against core -75, so nothing improved",
+    "impact": "bearish",
+    "date": "2026-10-06",
+    "source": "advisor data"
    }
   ],
   "EAND": [
@@ -1210,6 +1222,12 @@
     "headline": "STRONG BUY -> BUY (50 -> 25), one of three ADX large-caps to slip in a single session after yesterday's five-STRONG-BUY cluster",
     "impact": "bearish",
     "date": "2026-10-01",
+    "source": "advisor data"
+   },
+   {
+    "headline": "SELL -> BUY (-25 -> 25)",
+    "impact": "bullish",
+    "date": "2026-10-06",
     "source": "advisor data"
    }
   ],
@@ -1701,6 +1719,12 @@
     "impact": "bullish",
     "date": "2026-10-05",
     "source": "advisor data"
+   },
+   {
+    "headline": "Holds STRONG BUY at core 75 for a second session, RSI 68.2 - the backstop front-runner, stable two days running for the first time",
+    "impact": "bullish",
+    "date": "2026-10-06",
+    "source": "advisor data"
    }
   ],
   "ADPORTS": [
@@ -2035,12 +2059,12 @@
   ]
  },
  "risk_flags": [
-  "BOTH trails have re-armed above their stops (ETH +0.72 ATR, BTC +0.64 ATR) but neither clears the 1-ATR gate, so nothing moves. Two sessions of improvement is NOT being called a turn - the Oct-3 rule applies to me.",
-  "BTC's computed trail of 80,570.60 is now ABOVE the 80,340.01 entry: the next qualifying raise will LOCK A GAIN rather than cap the loss, for the first time since Sept 20.",
-  "SATELLITE TRIGGER still unmet. ADA crossed bullish but the trigger names BTC or ETH, and neither has (histograms -33.50 and -7.96). Second near-miss in four days; same answer both times. Backstop Oct 15 - 10 days.",
-  "The backstop front-runner has flipped twice in two days (GRAM -> ADA). That is the argument for a DATED trigger rather than repeated picking: judgement each session would have bought AVAX at RSI 81.9, then GRAM, then ADA.",
-  "No notification sent today despite BTC's band change qualifying on the letter. On Oct 2 I pushed the same headline and corrected it on Oct 3; a third whipsaw push in four days with nothing to act on would train the channel to be ignored. The notification that matters will be an actual stop raise.",
-  "Both stops hold and both are single-close: ETH below 2,449.83 (10.28% away, locks +33.89%), BTC below 79,304.74 (8.15% away, still 1.29% under entry). Fifteen sessions with no action.",
+  "BTC's band has flipped FOUR times in five sessions on a 1.3% price range - the same knife-edge mechanism that got TECOM, DEWA and TALABAT muted. A BTC band change on its own is no longer news; the score still feeds the deploy trigger and the record.",
+  "SATELLITE TRIGGER moved sharply AWAY: BTC's histogram re-deepened -33.50 to -158.39, further from crossing than two days ago. I said yesterday it 'may well cross within days' and that was too confident. Backstop deploys Oct 15 regardless - 9 days.",
+  "Both trails remain above their stops but both retreated (ETH +0.53 ATR from +0.72, BTC +0.27 from +0.64). Neither near the 1-ATR gate. Still not calling a turn.",
+  "CORRECTION: BTC's computed trail is 79,843.74, BELOW the 80,340.01 entry. Yesterday I presented one session's arithmetic as a durable crossing; the next raise will not necessarily lock a gain.",
+  "Fear & Greed ROSE 70 to 73 while prices weakened - a contrarian caution, not a comfort. Resistance cited at 87,000-88,000.",
+  "Both stops hold and both are single-close: ETH below 2,449.83 (9.14% away, locks +33.89%), BTC below 79,304.74 (7.07% away). Sixteen sessions with no action.",
   "NOTHING in this book has ever been reconciled against the exchange. The UAE stock bucket has been deployable since Oct 1 and Al Ramz is still not open."
  ],
  "corrections": [
