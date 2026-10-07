@@ -1,41 +1,47 @@
 {
- "generated_at_utc": "2026-10-06T07:09:21+00:00",
+ "generated_at_utc": "2026-10-07T07:09:24+00:00",
  "alerts": [
   {
-   "ticker": "AIRARABIA",
+   "ticker": "ADAUSDT",
    "severity": "info",
    "type": "big_move",
-   "msg": "AIRARABIA moved -2.7% in the last day (now 4.61 AED)"
+   "msg": "ADAUSDT moved -4.4% in the last day (now 0.2571 USD)"
   },
   {
-   "ticker": "AIRARABIA",
+   "ticker": "GRAMUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "AIRARABIA: STRONG SELL -> SELL (score -65 -> -45) \u2014 oversold relief applied, trend/momentum unchanged"
+   "msg": "GRAMUSDT: STRONG BUY -> BUY (score 50 -> 25)"
   },
   {
-   "ticker": "AIRARABIA",
+   "ticker": "GRAMUSDT",
    "severity": "info",
-   "type": "rsi",
-   "msg": "AIRARABIA: RSI crossed below 30 (now 29.7)"
+   "type": "macd",
+   "msg": "GRAMUSDT: MACD bearish cross"
   },
   {
-   "ticker": "EAND",
+   "ticker": "SALIK",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "SALIK moved +3.4% in the last day (now 5.52 AED)"
+  },
+  {
+   "ticker": "SALIK",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "EAND: SELL -> BUY (score -25 -> 25)"
+   "msg": "SALIK: HOLD -> STRONG BUY (score 15 -> 45)"
   },
   {
-   "ticker": "ADIB",
+   "ticker": "SALIK",
    "severity": "actionable",
    "type": "trend",
-   "msg": "ADIB: price crossed above its 50-day average \u2014 trend change"
+   "msg": "SALIK: price crossed above its 50-day average \u2014 trend change"
   },
   {
-   "ticker": "ADNOCDRILL",
+   "ticker": "DU",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "ADNOCDRILL: STRONG SELL -> SELL (score -50 -> -40)"
+   "msg": "DU: BUY -> STRONG BUY (score 35 -> 50)"
   }
  ]
 }
