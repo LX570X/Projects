@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-06T07:30+00:00",
+ "updated": "2026-10-07T07:30+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": 0,
@@ -20,12 +20,12 @@
    "stop": 2449.83,
    "plan": "Hold. ONE daily CLOSE below the stop (2,316.48) -> convert ALL to USDT, not another coin. The old 2,300 two-close exit and the 1,964 / 2,105 targets are retired: price is far above all of them and the trail now sits higher than any of them.",
    "action_required": {
-    "as_of": "2026-10-06",
+    "as_of": "2026-10-07",
     "end_state": "hold 0.0091 ETH - if you are already there, do nothing",
     "stop": 2449.83,
     "stop_raised_from": 2316.48,
     "trigger": "ONE daily CLOSE below 2,449.83 -> convert ALL to USDT",
-    "note": "Stop UNCHANGED at 2,449.83. The trail computes 2,489.20 from Monday's 2,709.98 close - still above the stop at +0.53 ATR but down from +0.72 yesterday, and well short of the 1-ATR gate. ETH 2,696.40 (-1.21%), $98.15, +47.4%. Stop 9.14% below spot, locking +33.89%."
+    "note": "Stop UNCHANGED at 2,449.83. The trail computes 2,484.69 from Tuesday's 2,697.49 close - still above the stop at +0.49 ATR but nowhere near the 1-ATR gate. ETH 2,617.36 (-2.93%), $95.27, +43.0%, down from +47.4%. This is the LARGEST single-day fall in the position since the roll-over began on Sept 27. THE CUSHION HAS COMPRESSED: the stop is now 6.40% below spot against 9.14% yesterday - a 2.7-point narrowing in one session. At today's rate of decline a qualifying close is roughly two sessions away. NO ACTION: the rule is one daily CLOSE below 2,449.83 and nothing else."
    },
    "fill": {
     "state": "position confirmed by user 2026-07-17; the 2026-08-20 trim is UNCONFIRMED",
@@ -36,6 +36,16 @@
     "as_of": "2026-10-05",
     "status": "Second consecutive session of improvement and the strongest yet: the trail is +0.72 ATR above the stop against -0.04 yesterday and -0.43 on Saturday. BTC's trail has also re-armed at +0.64 ATR.",
     "framing_discipline": "Still NOT calling this a turn. Two sessions is better than one but the rule I set on Oct 3 was that a warning raised over seven sessions does not close on one or two. ETH's own band is unchanged at BUY 35 with a negative histogram, so the trail is again ahead of the score. If this is real, a third and fourth session will say so and the gate will clear on its own."
+   },
+   "cushion_watch": {
+    "as_of": "2026-10-07",
+    "spot": 2617.36,
+    "stop": 2449.83,
+    "gap_pct": -6.4,
+    "yesterday_gap_pct": -9.14,
+    "rsi": 49.5,
+    "note": "ETH's RSI has fallen to 49.5, below the midline for the first time since July. Wednesday's bar ran 2,699.80 down to 2,591.71 - a 4.0% intraday range and the widest of this episode.",
+    "arithmetic": "6.40% to go. Two more sessions at today's -2.93% would do it; a single capitulation day could. Stating the arithmetic rather than a forecast - I have been wrong three times in a fortnight extrapolating two sessions of direction, and this is one session."
    }
   }
  ],
@@ -237,10 +247,15 @@
     "condition": "Deploy on the first BTC or ETH MACD BULLISH cross, or Oct 15 regardless.",
     "result": "NOT MET and moved sharply away - BTC's histogram re-deepened from -33.50 to -158.39 and ETH's from -7.96 to -10.89. Yesterday I noted BTC 'may well cross within days'; one session later it is further from crossing than before. Nine days to the backstop.",
     "front_runner": "ADA holds STRONG BUY at core 75 for a second consecutive session, with RSI 68.2 inside the below-70 requirement. First time the front-runner has been stable two days running."
+   },
+   "trigger_check_2026_10_07": {
+    "condition": "Deploy on the first BTC or ETH MACD BULLISH cross, or Oct 15 regardless.",
+    "result": "NOT MET and at its furthest yet - BTC's histogram is -308.46 (from -158.39) and ETH's -16.64 (from -10.89). Eight days to the backstop.",
+    "shortlist_collapsed_to_one": "GRAM lost STRONG BUY today on a fresh MACD bearish cross (-3.96%, core 50 -> 25), which leaves ADA as the ONLY name on the whole crypto board that qualifies under the rule - core 75 against a 45 minimum, RSI 59.5 against a 70 maximum. Every other non-major sits at core 35 or below. The Oct-1 shortlist of five is now a shortlist of one, and if the backstop fires on Oct 15 with the board looking like this, ADA is not a choice so much as the only thing left that passes."
    }
   },
   "opportunity_status": {
-   "as_of": "2026-10-06",
+   "as_of": "2026-10-07",
    "state": "DEPLOYED (instruction issued 2026-09-20) - fill UNCONFIRMED",
    "what_happened": "BTC rated STRONG BUY (50, core 50) on two consecutive readings - Friday's close of 80,883.87 and Saturday's 81,249.99. That satisfies the 2-day rule. First confirmation in FOUR armings of this trigger (Aug 3 BTC, Aug 15 AVAX, Sept 5-6 BTC all failed to confirm).",
    "instruction": {
@@ -265,15 +280,15 @@
    "position_now": {
     "indicative_qty": 0.00169464,
     "entry": 80340.01,
-    "last": 85334.0,
-    "value_usd": 144.61,
-    "pnl_pct": 6.22,
+    "last": 84160.0,
+    "value_usd": 142.62,
+    "pnl_pct": 4.75,
     "stop": 79304.74,
     "stop_raised_from": 74919.5,
     "trigger": "ONE daily CLOSE below 79,304.74 -> convert ALL back to USDT",
-    "stop_note": "Stop UNCHANGED at 79,304.74. The trail computes 79,843.74 from Monday's 85,766.87 close - above the stop at +0.27 ATR, down from +0.64 yesterday. Still above the 80,340.01 entry only by a hair now (79,843.74 is in fact BELOW entry, correcting yesterday's note: the computed trail dipped back under it as BTC fell).",
-    "stop_distance_pct": -7.07,
-    "signal_note": "BTC STRONG BUY -> BUY (50 -> 35), -1.15% to 85,334.00, with the histogram re-deepening from -33.50 to -158.39 in one session. That is the FOURTH flip in BTC's band in five sessions: BUY -> STRONG BUY Oct 2, BUY Oct 3, STRONG BUY Oct 5, BUY today."
+    "stop_note": "Stop UNCHANGED at 79,304.74. Trail computes 79,881.54 from Tuesday's 85,549.93 close, +0.31 ATR above the stop. Cushion 5.77% against 7.07% yesterday.",
+    "stop_distance_pct": -5.77,
+    "signal_note": "BTC -1.38% to 84,160.00, band unchanged at BUY 35 for a second session - the churn has stopped for now. But the histogram has deepened to -308.46, nearly double yesterday's -158.39 and the deepest reading of this entire episode."
    },
    "band_churn_note": {
     "as_of": "2026-10-06",

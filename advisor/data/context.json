@@ -1,29 +1,29 @@
 {
- "updated": "2026-10-06T07:35+00:00",
+ "updated": "2026-10-07T07:35+00:00",
  "market_notes": [
   {
-   "market": "BTC's band flips for the FOURTH time in five sessions",
-   "note": "STRONG BUY -> BUY (50 -> 35), -1.15%, histogram re-deepening from -33.50 to -158.39 in one session. Full sequence: BUY Oct 1, STRONG BUY Oct 2, BUY Oct 3, BUY Oct 4, STRONG BUY Oct 5, BUY today - four flips on a price that travelled 84,240 to 85,334, a 1.3% range. The mechanism is the same knife-edge that got TECOM, DEWA and TALABAT muted: the score sits on the 45 threshold with the momentum term oscillating between 'flat (not scored)' and 'negative' as the histogram crosses zero. NOT muting a held position's band - the score still feeds the deploy trigger and the record - but a BTC band change on its own is no longer news."
+   "market": "ETH's largest single-day fall of the episode - cushion compresses to 6.40%",
+   "note": "ETH -2.93% to 2,617.36, $95.27, +43.0% from +47.4%. Wednesday's bar ran 2,699.80 to 2,591.71, a 4.0% intraday range and the widest of this episode, with RSI falling to 49.5 - below the midline for the first time since July. The 2,449.83 stop is now 6.40% below spot against 9.14% yesterday, a 2.7-point compression in one session. Arithmetic rather than forecast: two more sessions at today's rate would reach it, and a single capitulation day could. Said that way deliberately - I have been wrong three times in a fortnight extrapolating two sessions of direction, and this is one. NO ACTION: the rule is one daily CLOSE below 2,449.83, the stop still locks +33.89%, and the trail computes 2,484.69 which is ABOVE the stop."
   },
   {
-   "market": "Yesterday's restraint vindicated in one session",
-   "note": "Yesterday I declined to notify on BTC's STRONG BUY upgrade, having pushed the same headline on Oct 2 and corrected it on Oct 3, and wrote that 'if it holds, the notification that matters will be an actual stop raise'. It did not hold, and one session was enough to find out. A concrete payoff from a restraint rule rather than a hypothetical one."
+   "market": "A dated driver - and it is the Iran theme again",
+   "note": "Bitcoin dipped below $84,000 as oil prices surged following reported Iranian tanker attacks, after breaking support near $85,700 earlier in the session. Same geopolitical thread this book has tracked since July as the dominant UAE equity driver. Being careful about one thing: earlier searches returned retrospective pieces on the H1-2026 crash - 'ETH lost 60%', a '$1,800 crisis', $2.4bn of cumulative ETH ETF outflows over five months, supply turning slightly inflationary post-Dencun as activity moved to Layer 2. Some may be true background but none is dated to today, and presenting it as today's cause would repeat the August leverage-figure error. Logged as background, not as drivers."
   },
   {
-   "market": "And an expectation of mine that reversed immediately",
-   "note": "Yesterday I wrote that BTC 'has moved a long way toward crossing and may well cross within days'. Its histogram has since gone from -33.50 to -158.39 - further from crossing than two days ago. Flagging it because the phrasing invited the reader to expect a deploy imminently, and this is the third time in a fortnight I have extrapolated a two-session direction too confidently. The bounded backstop is doing the work my forecasting is not: nine days from today the 309 AED deploys into whatever qualifies, regardless of what I think is about to happen."
+   "market": "A divergence I cannot explain",
+   "note": "An Iran escalation that is risk-off for crypto should also hit UAE equities, yet the UAE board IMPROVED today - SALIK to STRONG BUY, DU to STRONG BUY. The oil-linked names barely moved (ADNOCGAS +0.91%, ADPORTS +0.65%), so I cannot attribute the UAE strength to an oil trade, and SALIK is a toll operator while DU is a telecom. Recording the divergence as unexplained rather than inventing a mechanism for it."
   },
   {
-   "market": "The engine label fix is working in production",
-   "note": "AIRARABIA came through STRONG SELL -> SELL tagged 'oversold relief applied, trend/momentum unchanged', with RSI crossing below 30 to 29.7 and score -45 against core -75. Exactly right, and exactly what yesterday's code would have got backwards - it would have read 'penalty relief only', implying a penalty had lifted when an oversold extreme had in fact ADDED 30 points to a score whose underlying is unchanged at -75. A reader seeing STRONG SELL -> SELL on a stock that fell 2.74% would reasonably assume improvement; the label now says plainly there is none."
+   "market": "The satellite shortlist of five has collapsed to ONE",
+   "note": "GRAM lost STRONG BUY on a fresh MACD bearish cross (-3.96%, core 50 -> 25), leaving ADA as the only name on the entire crypto board that qualifies: core 75 against a 45 minimum, RSI 59.5 against a 70 maximum. Every other non-major sits at core 35 or below. Five names to one in six sessions - so if the backstop fires on Oct 15 with the board like this, ADA is not a choice but the only thing that passes. ADA fell 4.39% today and still holds core 75; its STRONG BUY is the most durable thing on the board."
   },
   {
-   "market": "Positions - sixteenth consecutive session with no action",
-   "note": "ETH 2,696.40 (-1.21%), $98.15, +47.4%, trail +0.53 ATR above the stop (from +0.72). BTC 85,334.00 (-1.15%), $144.61, +6.22%, trail +0.27 ATR (from +0.64). Both trails remain above their stops but both retreated; neither is near the 1-ATR gate. CORRECTION: yesterday I said BTC's computed trail had crossed above the entry so the next raise would lock a gain. Today's computes 79,843.74, BELOW the 80,340.01 entry - the statement was true of that number but I presented one session's arithmetic as a durable threshold crossing."
+   "market": "The trigger is at its furthest from being met",
+   "note": "BTC's histogram has deepened to -308.46, nearly double yesterday's -158.39 and the deepest of the entire episode; ETH's is -16.64. BTC's band held at BUY 35 for a second session, so the four-flips-in-five-sessions churn has stopped for now. Eight days to the Oct-15 backstop."
   },
   {
-   "market": "Market context",
-   "note": "Global crypto market cap around $3.02tn. The Fear & Greed Index ROSE from 70 to 73 despite weaker major-asset prices, which is a contrarian caution rather than a comfort. About $61.91m of BTC liquidations in 24 hours with longs at $46.58m. Resistance cited at 87,000-88,000. ADA holds STRONG BUY at core 75 for a second session with RSI 68.2 - the first time the backstop front-runner has been stable two days running. UAE: EAND SELL -> BUY, ADIB crossed above its 50-day, ADNOCDRILL STRONG SELL -> SELL, against TECOM back to -60 and AIRARABIA -2.74%."
+   "market": "UAE improves while crypto weakens",
+   "note": "SALIK HOLD -> STRONG BUY (+3.37%, crossing above its 50-day), DU BUY -> STRONG BUY, ALDAR holding STRONG BUY 50, EMIRATESNBD BUY 40, with ADCB, ADNOCGAS, ADIB and ADPORTS at BUY 35 - the most constructive UAE board since Oct 1, on the day crypto had its worst session of the episode. SALIK is on its FOURTH band regime in fifteen sessions (STRONG SELL Sept 22, BUY Sept 25, SELL Oct 3, STRONG BUY today), but unlike the muted names its moves have real price behind them (+4.46%, -2.73%, +3.37%), so it is a volatile stock rather than a float artefact and is not being muted. All readings are Wednesday 11:09 Dubai intraday drafts."
   }
  ],
  "asset_notes": {
@@ -465,6 +465,12 @@
     "impact": "bearish",
     "date": "2026-10-06",
     "source": "news research pass"
+   },
+   {
+    "headline": "-1.38% to 84,160.00 as oil surged on reported Iranian tanker attacks, after breaking support near 85,700; histogram deepens to -308.46, the deepest of this episode",
+    "impact": "bearish",
+    "date": "2026-10-07",
+    "source": "news research pass"
    }
   ],
   "ETHUSDT": [
@@ -694,6 +700,12 @@
     "headline": "+1.29% to 2,730.68, position +49.2%; trail re-armed at +0.72 ATR above the stop, the strongest since Sept 22, but band unchanged at BUY 35 with a negative histogram",
     "impact": "bullish",
     "date": "2026-10-05",
+    "source": "advisor data"
+   },
+   {
+    "headline": "-2.93% to 2,617.36, the largest single-day fall of this episode; 4.0% intraday range (2,699.80 to 2,591.71), RSI to 49.5 below the midline for the first time since July. Stop cushion compresses 9.14% to 6.40%",
+    "impact": "bearish",
+    "date": "2026-10-07",
     "source": "advisor data"
    }
   ],
@@ -1120,6 +1132,12 @@
     "headline": "-2.73% to 5.35, BUY -> SELL (-45) crossing BELOW its 50-day - a full round trip from STRONG SELL -50 on Sept 22 to BUY 30 on Sept 25 and back, inside eleven sessions",
     "impact": "bearish",
     "date": "2026-10-03",
+    "source": "advisor data"
+   },
+   {
+    "headline": "+3.37% to 5.52, HOLD -> STRONG BUY crossing above its 50-day - a FOURTH band regime in fifteen sessions, but with real price behind each move, so not muted",
+    "impact": "bullish",
+    "date": "2026-10-07",
     "source": "advisor data"
    }
   ],
@@ -1725,6 +1743,12 @@
     "impact": "bullish",
     "date": "2026-10-06",
     "source": "advisor data"
+   },
+   {
+    "headline": "-4.39% to 0.2571 yet HOLDS core 75 - the only name on the crypto board that still qualifies under the satellite rule (core 45+, RSI below 70 at 59.5)",
+    "impact": "neutral",
+    "date": "2026-10-07",
+    "source": "advisor data"
    }
   ],
   "ADPORTS": [
@@ -1860,6 +1884,12 @@
     "headline": "Sold off to 10.94 (session range 11.40-10.88) after the MSCI implementation close - about -5.2% across the event, with the give-back larger than the four-session run-up",
     "impact": "bearish",
     "date": "2026-09-01",
+    "source": "advisor data"
+   },
+   {
+    "headline": "BUY -> STRONG BUY (35 -> 50)",
+    "impact": "bullish",
+    "date": "2026-10-07",
     "source": "advisor data"
    }
   ],
@@ -2055,17 +2085,23 @@
     "impact": "bullish",
     "date": "2026-10-04",
     "source": "news research pass"
+   },
+   {
+    "headline": "-3.96% to 1.478, STRONG BUY -> BUY on a fresh MACD bearish cross (core 50 -> 25) - leaves ADA as the only qualifying satellite candidate on the board",
+    "impact": "bearish",
+    "date": "2026-10-07",
+    "source": "advisor data"
    }
   ]
  },
  "risk_flags": [
-  "BTC's band has flipped FOUR times in five sessions on a 1.3% price range - the same knife-edge mechanism that got TECOM, DEWA and TALABAT muted. A BTC band change on its own is no longer news; the score still feeds the deploy trigger and the record.",
-  "SATELLITE TRIGGER moved sharply AWAY: BTC's histogram re-deepened -33.50 to -158.39, further from crossing than two days ago. I said yesterday it 'may well cross within days' and that was too confident. Backstop deploys Oct 15 regardless - 9 days.",
-  "Both trails remain above their stops but both retreated (ETH +0.53 ATR from +0.72, BTC +0.27 from +0.64). Neither near the 1-ATR gate. Still not calling a turn.",
-  "CORRECTION: BTC's computed trail is 79,843.74, BELOW the 80,340.01 entry. Yesterday I presented one session's arithmetic as a durable crossing; the next raise will not necessarily lock a gain.",
-  "Fear & Greed ROSE 70 to 73 while prices weakened - a contrarian caution, not a comfort. Resistance cited at 87,000-88,000.",
-  "Both stops hold and both are single-close: ETH below 2,449.83 (9.14% away, locks +33.89%), BTC below 79,304.74 (7.07% away). Sixteen sessions with no action.",
-  "NOTHING in this book has ever been reconciled against the exchange. The UAE stock bucket has been deployable since Oct 1 and Al Ramz is still not open."
+  "ETH's stop cushion compressed from 9.14% to 6.40% in ONE session on its largest fall of the episode. Two more sessions at that rate would reach the 2,449.83 stop; a single capitulation day could. Arithmetic, not forecast. No action - the rule is one daily CLOSE, and the stop still locks +33.89%.",
+  "BTC's histogram has deepened to -308.46, the deepest of this entire episode and nearly double yesterday. The satellite trigger is at its furthest from being met. 8 days to the Oct-15 backstop.",
+  "The satellite shortlist has collapsed from FIVE qualifying names to ONE. ADA alone passes (core 75, RSI 59.5); every other non-major is at core 35 or below. If the backstop fires on Oct 15 with this board, ADA is the only thing that passes rather than a choice.",
+  "A dated driver: oil surged on reported Iranian tanker attacks, with BTC breaking support near 85,700. Same geopolitical thread tracked since July. Retrospective H1-2026 crash material found in earlier searches is logged as background, NOT as today's cause.",
+  "UNEXPLAINED DIVERGENCE: an Iran escalation should hit UAE equities too, yet the UAE board improved (SALIK and DU both to STRONG BUY). Oil-linked names barely moved, so no oil-trade mechanism fits. Recorded as unexplained.",
+  "Both stops hold and both are single-close: ETH below 2,449.83 (6.40% away), BTC below 79,304.74 (5.77% away). Seventeen sessions with no action.",
+  "NOTHING in this book has ever been reconciled against the exchange. The UAE stock bucket has been deployable since Oct 1 and Al Ramz is still not open - on the day the UAE board turned its most constructive in a week."
  ],
  "corrections": [
   "Prior context.json was 13 days stale (2026-07-17) because daily cycles were skipped 2026-07-20..29; refreshed 2026-07-30."
