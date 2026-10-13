@@ -1,7 +1,7 @@
 # Trading Advisor — Signal Report
 
 - Data fetched: 2026-10-13T07:09:39+00:00 UTC
-- Report time: 2026-10-13 11:09 Dubai time
+- Report time: 2026-10-13 11:17 Dubai time
 - UAE market (DFM/ADX): OPEN (hours Mon–Fri 10:00–15:00 Dubai)
 
 > Educational, rules-based technical screen — not licensed financial advice. Markets can move against any signal; never risk money you cannot afford to lose.
@@ -79,6 +79,7 @@
 **ADNOCDRILL** — STRONG SELL (score -65): price below 50-day average (5.84) — downtrend; 20-day avg below 50-day avg (bearish structure); MACD momentum negative; RSI 41 neutral; TradingView technical consensus bearish.
 
 ## Alerts (changes since previous run)
+- [actionable] YOUR POSITION ETHUSDT: STOP HIT — last completed daily close 2447.17 is below the stop 2449.83. Plan says exit to USDT now, at 2529.63, not at the stop level
 - [info] ETHUSDT: BUY -> HOLD (score 35 -> -15)
 - [actionable] ETHUSDT: price crossed below its 50-day average — trend change
 - [info] SOLUSDT moved -4.1% in the last day (now 108.22 USD)

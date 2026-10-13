@@ -211,8 +211,41 @@ def analyze_precomputed(ticker, a):
         "target1": target1, "target2": target2,
         "hi52": hi52, "lo52": lo52, "hi20": hi20, "lo20": lo20,
         "core_score": score - stretch,  # score excluding stretch penalties/bonuses
+        # The TradingView path gets indicators but no bar history, so there is no
+        # completed close to test a stop against. portfolio_report falls back to
+        # the live tick and says so rather than silently skipping the check.
+        "prev_close": None,
         "off_52w_high_pct": round((last / hi52 - 1) * 100, 2) if hi52 else None,
     }
+
+
+def last_completed_close(bars, now=None):
+    """Close of the most recent bar that is NOT the in-progress one.
+
+    stop_trigger_rule (codified 2026-09-12) says a stop or target triggers on a
+    DAILY CLOSE, never an intraday print. portfolio_report tested the live tick
+    instead, so the two disagreed. On 2026-10-13 they disagreed in the direction
+    that MISSES an exit: ETH's 2026-10-12 close of 2,447.17 breached the 2,449.83
+    stop, but the live tick had recovered to 2,529.63, so stop_hit read False.
+    The exit was caught by a manual gap check, not by the engine.
+
+    This is the same class of error as the trail bug fixed on 2026-09-10 - a level
+    derived from daily closes but tested against a mid-bar price.
+
+    A bar whose UTC date is today is still being built (crypto bars roll at
+    00:00 UTC; the UAE snapshot lands ~70 minutes into the session), so the last
+    completed close is the newest bar dated strictly before today.
+    """
+    if not bars:
+        return None
+    today = (now or datetime.now(timezone.utc)).date()
+    for b in reversed(bars):
+        t = b.get("t")
+        if t is None:
+            continue
+        if datetime.fromtimestamp(t, timezone.utc).date() < today:
+            return b.get("c")
+    return None
 
 
 def analyze(ticker, a):
@@ -328,6 +361,8 @@ def analyze(ticker, a):
         "target1": target1, "target2": target2,
         "hi52": hi52, "lo52": lo52, "hi20": hi20, "lo20": lo20,
         "core_score": score - stretch,  # score excluding stretch penalties/bonuses
+        # last COMPLETED daily close - what stops and targets are tested against
+        "prev_close": last_completed_close(bars),
         "hi52_bars": hi52_bars,
         # Do NOT call it a 52-week high unless the window really spans ~52 weeks.
         "off_52w_high_pct": (round((last / hi52 - 1) * 100, 2)
@@ -466,6 +501,13 @@ def portfolio_report(portfolio, signals):
         if not s:
             continue
         last = s["last"]
+        # Stops and targets trigger on a DAILY CLOSE (stop_trigger_rule,
+        # 2026-09-12), so they are tested against the last completed close -
+        # NOT the live tick, which is mid-bar at the 07:10 UTC snapshot.
+        trig = s.get("prev_close")
+        basis = "last completed daily close"
+        if trig is None:
+            trig, basis = last, "live tick (no bar history from this source)"
         out.append({
             "ticker": h["ticker"], "qty": h["qty"], "last": last,
             "currency": s.get("currency"),
@@ -473,9 +515,10 @@ def portfolio_report(portfolio, signals):
             "ref_price": h.get("ref_price"),
             "pnl_pct": (last / h["ref_price"] - 1) * 100 if h.get("ref_price") else None,
             "stop": h.get("stop"), "target1": h.get("target1"), "target2": h.get("target2"),
-            "stop_hit": h.get("stop") is not None and last <= h["stop"],
-            "t1_hit": h.get("target1") is not None and last >= h["target1"],
-            "t2_hit": h.get("target2") is not None and last >= h["target2"],
+            "trigger_px": trig, "trigger_basis": basis,
+            "stop_hit": h.get("stop") is not None and trig <= h["stop"],
+            "t1_hit": h.get("target1") is not None and trig >= h["target1"],
+            "t2_hit": h.get("target2") is not None and trig >= h["target2"],
             "signal": s["signal"], "plan": h.get("plan"),
         })
     return out
@@ -488,13 +531,17 @@ def portfolio_alerts(prev_port, port):
         b = prev.get(p["ticker"], {})
         if p["stop_hit"] and not b.get("stop_hit"):
             alerts.append({"ticker": p["ticker"], "severity": "actionable", "type": "stop_hit",
-                           "msg": f"YOUR POSITION {p['ticker']}: STOP HIT at {p['last']:.6g} (stop {p['stop']:.6g}) — plan says exit to USDT now"})
+                           "msg": (f"YOUR POSITION {p['ticker']}: STOP HIT — {p['trigger_basis']} "
+                                   f"{p['trigger_px']:.6g} is below the stop {p['stop']:.6g}. "
+                                   f"Plan says exit to USDT now, at {p['last']:.6g}, not at the stop level")})
         if p["t1_hit"] and not b.get("t1_hit"):
             alerts.append({"ticker": p["ticker"], "severity": "actionable", "type": "target_hit",
-                           "msg": f"YOUR POSITION {p['ticker']}: TARGET 1 reached ({p['target1']:.6g}) — plan says take half off, stop to entry"})
+                           "msg": (f"YOUR POSITION {p['ticker']}: TARGET 1 reached — {p['trigger_basis']} "
+                                   f"{p['trigger_px']:.6g} is above {p['target1']:.6g} — plan says take half off, stop to entry")})
         if p["t2_hit"] and not b.get("t2_hit"):
             alerts.append({"ticker": p["ticker"], "severity": "actionable", "type": "target_hit",
-                           "msg": f"YOUR POSITION {p['ticker']}: TARGET 2 reached ({p['target2']:.6g}) — plan says take remaining profit"})
+                           "msg": (f"YOUR POSITION {p['ticker']}: TARGET 2 reached — {p['trigger_basis']} "
+                                   f"{p['trigger_px']:.6g} is above {p['target2']:.6g} — plan says take remaining profit")})
         if "SELL" in p["signal"] and not p["stop_hit"]:
             was_sell = "SELL" in (b.get("signal") or "")
             if not was_sell:

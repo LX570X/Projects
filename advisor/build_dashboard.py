@@ -111,6 +111,7 @@ def main():
     snap = load("snapshot.json", {"assets": {}, "fetched_at_utc": ""})
     alerts = (load("alerts.json", {}) or {}).get("alerts", [])
     ctx = load("context.json", {}) or {}
+    book = load("portfolio.json", {}) or {}
     signals = sig["signals"]
     bars = {t: [b["c"] for b in a.get("bars", [])] for t, a in snap.get("assets", {}).items()}
     notes = ctx.get("asset_notes", {})
@@ -172,6 +173,30 @@ def main():
 </div>""")
         port_html = (f'<section><p class="eyebrow">Your holdings</p>'
                      f'<div class="ideas">{"".join(cards)}</div></section>')
+
+    # The standing instruction is rendered from the book, NOT from the holdings
+    # list. On 2026-10-13 ETH was exited and holdings went empty, which would have
+    # removed the "Your holdings" card and left the mobile view showing no
+    # instruction at all on the one day it mattered most. An action the user has to
+    # take should not be a side effect of still owning the thing.
+    act_html = ""
+    act = book.get("last_action") or {}
+    if act.get("end_state"):
+        bits = []
+        for label, key in (("Why", "why"), ("Do not", "do_not"), ("Status", "execution")):
+            if act.get(key):
+                bits.append(f'<p class="idea-note"><strong>{esc(label)}:</strong> {esc(act[key])}</p>')
+        verdict = (act.get("action") or "").upper()
+        chip = "chip-sell chip-strong" if "SELL" in verdict else (
+            "chip-buy chip-strong" if "BUY" in verdict else "chip-hold")
+        act_html = f"""<section>
+<p class="eyebrow">Do this now — {esc(act.get('date', ''))}</p>
+<div class="idea idea-act">
+<div class="idea-head"><span class="chip {chip}">{esc(act.get('action', ''))}</span>
+<strong>{esc(act.get('ticker', ''))}</strong></div>
+<p class="idea-why"><strong>{esc(act['end_state'])}</strong></p>
+{''.join(bits)}
+</div></section>"""
 
     ideas_html = ""
     if buys or sells:
@@ -394,6 +419,8 @@ ul.watch, ul.alerts, ul.ctx {{ margin: 0; padding: 0 0 0 2px; list-style: none;
 ul.alerts li, ul.watch li, ul.ctx li {{ background: var(--surface); border: 1px solid var(--border);
   border-radius: 8px; padding: 8px 12px; }}
 .ctx-updated {{ color: var(--muted); font-size: 12px; margin: 8px 0 0; }}
+.idea-act {{ border-width: 2px; border-color: var(--crit); }}
+.idea-act .idea-why {{ font-size: 17px; }}
 .calc-row {{ display: flex; flex-wrap: wrap; gap: 12px; margin: 4px 0 10px; }}
 .calc-row label {{ display: flex; align-items: center; gap: 8px; background: var(--surface);
   border: 1px solid var(--border); border-radius: 8px; padding: 8px 12px; font-size: 13.5px; color: var(--ink-2); }}
@@ -426,6 +453,7 @@ a {{ color: var(--accent); }}
 <span class="pill">Auto-refreshes hourly</span>
 </div>
 </header>
+{act_html}
 {port_html}
 {ideas_html}
 {calc_html}

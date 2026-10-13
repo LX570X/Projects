@@ -1,6 +1,12 @@
 {
- "generated_at_utc": "2026-10-13T07:09:40+00:00",
+ "generated_at_utc": "2026-10-13T07:17:26+00:00",
  "alerts": [
+  {
+   "ticker": "ETHUSDT",
+   "severity": "actionable",
+   "type": "stop_hit",
+   "msg": "YOUR POSITION ETHUSDT: STOP HIT \u2014 last completed daily close 2447.17 is below the stop 2449.83. Plan says exit to USDT now, at 2529.63, not at the stop level"
+  },
   {
    "ticker": "ETHUSDT",
    "severity": "info",

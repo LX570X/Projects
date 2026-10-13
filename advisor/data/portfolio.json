@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-07T07:30+00:00",
+ "updated": "2026-10-13T07:30+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": 0,
@@ -9,46 +9,7 @@
    "evidence": "never reconciled against the exchange"
   }
  },
- "holdings": [
-  {
-   "ticker": "ETHUSDT",
-   "qty": 0.0364,
-   "ref_price": 1829.7,
-   "ref_value_usd": 66.6,
-   "added": "2026-07-17",
-   "source": "converted from BTC on Binance",
-   "stop": 2449.83,
-   "plan": "Hold. ONE daily CLOSE below the stop (2,316.48) -> convert ALL to USDT, not another coin. The old 2,300 two-close exit and the 1,964 / 2,105 targets are retired: price is far above all of them and the trail now sits higher than any of them.",
-   "action_required": {
-    "as_of": "2026-10-07",
-    "end_state": "hold 0.0091 ETH - if you are already there, do nothing",
-    "stop": 2449.83,
-    "stop_raised_from": 2316.48,
-    "trigger": "ONE daily CLOSE below 2,449.83 -> convert ALL to USDT",
-    "note": "Stop UNCHANGED at 2,449.83. The trail computes 2,484.69 from Tuesday's 2,697.49 close - still above the stop at +0.49 ATR but nowhere near the 1-ATR gate. ETH 2,617.36 (-2.93%), $95.27, +43.0%, down from +47.4%. This is the LARGEST single-day fall in the position since the roll-over began on Sept 27. THE CUSHION HAS COMPRESSED: the stop is now 6.40% below spot against 9.14% yesterday - a 2.7-point narrowing in one session. At today's rate of decline a qualifying close is roughly two sessions away. NO ACTION: the rule is one daily CLOSE below 2,449.83 and nothing else."
-   },
-   "fill": {
-    "state": "position confirmed by user 2026-07-17; the 2026-08-20 trim is UNCONFIRMED",
-    "as_of": "2026-08-22",
-    "evidence": "user stated 0.0364 ETH on 2026-07-17; no fill confirmation since"
-   },
-   "signal_deterioration": {
-    "as_of": "2026-10-05",
-    "status": "Second consecutive session of improvement and the strongest yet: the trail is +0.72 ATR above the stop against -0.04 yesterday and -0.43 on Saturday. BTC's trail has also re-armed at +0.64 ATR.",
-    "framing_discipline": "Still NOT calling this a turn. Two sessions is better than one but the rule I set on Oct 3 was that a warning raised over seven sessions does not close on one or two. ETH's own band is unchanged at BUY 35 with a negative histogram, so the trail is again ahead of the score. If this is real, a third and fourth session will say so and the gate will clear on its own."
-   },
-   "cushion_watch": {
-    "as_of": "2026-10-07",
-    "spot": 2617.36,
-    "stop": 2449.83,
-    "gap_pct": -6.4,
-    "yesterday_gap_pct": -9.14,
-    "rsi": 49.5,
-    "note": "ETH's RSI has fallen to 49.5, below the midline for the first time since July. Wednesday's bar ran 2,699.80 down to 2,591.71 - a 4.0% intraday range and the widest of this episode.",
-    "arithmetic": "6.40% to go. Two more sessions at today's -2.93% would do it; a single capitulation day could. Stating the arithmetic rather than a forecast - I have been wrong three times in a fortnight extrapolating two sessions of direction, and this is one session."
-   }
-  }
- ],
+ "holdings": [],
  "monthly_plan": {
   "amount_aed": 1000,
   "buckets": [
@@ -207,7 +168,7 @@
    "selection_rule": "Any new satellite candidate must have CORE score at or above 45 AND RSI below 70 at the moment of selection - the corrected wording adopted 2026-09-21.",
    "why_nothing_today": "Ten of eleven cryptos rate STRONG BUY, so the constraint is not a shortage of candidates - it is that every one of them is extended after a four-session vertical move, and the reserve is 209 AED (about $57). Adding a third small position at the top of a run, on the same day both existing stops ratchet, is activity rather than edge.",
    "expiry": "If no candidate qualifies by the monthly review, the 209 AED rolls into the next monthly plan rather than sitting as a permanent open order.",
-   "reserve_aed": 209,
+   "reserve_aed": 309,
    "link_final_note": {
     "as_of": "2026-09-26",
     "link_now": 14.096,
@@ -252,10 +213,20 @@
     "condition": "Deploy on the first BTC or ETH MACD BULLISH cross, or Oct 15 regardless.",
     "result": "NOT MET and at its furthest yet - BTC's histogram is -308.46 (from -158.39) and ETH's -16.64 (from -10.89). Eight days to the backstop.",
     "shortlist_collapsed_to_one": "GRAM lost STRONG BUY today on a fresh MACD bearish cross (-3.96%, core 50 -> 25), which leaves ADA as the ONLY name on the whole crypto board that qualifies under the rule - core 75 against a 45 minimum, RSI 59.5 against a 70 maximum. Every other non-major sits at core 35 or below. The Oct-1 shortlist of five is now a shortlist of one, and if the backstop fires on Oct 15 with the board looking like this, ADA is not a choice so much as the only thing left that passes."
+   },
+   "reserve_correction": "This field read 209 from 2026-09-22 through 2026-10-12. The Oct-1 DCA added the fourth 100 AED and accumulations.satellite_reserve_aed was updated to 309 that day while this copy was not. 309 is correct; the duplicate here was stale for twelve days. Found while checking the backstop size.",
+   "trigger_check_2026_10_13": {
+    "condition": "Deploy on the first BTC or ETH MACD BULLISH cross, or Oct 15 regardless.",
+    "result": "NOT MET, and at its furthest from being met since the trigger was armed - BTC's histogram is -485.07 (from -308.46) and ETH's -30.22 (from -16.64). Both roughly doubled in the wrong direction over the gap.",
+    "days_to_backstop": 2,
+    "backstop_has_no_candidate": "THE SHORTLIST IS NOW EMPTY. ADA lost STRONG BUY today (75 -> 35, -5.76%), and it was the last name standing after GRAM went on Oct 7. The selection rule needs CORE >= 45 with RSI < 70. The highest core score on the entire non-BTC/ETH crypto board is 35, held by five names at once. Nothing passes - not marginally, not arguably.",
+    "what_happens_on_oct_15": "The backstop was written as 'deploy into the then-strongest qualifying name'. On this board there is no qualifying name, so there is nothing for it to fire into. Under the expiry clause the 309 AED rolls into the November plan. I want to be clear this is the rule operating as written and not me dodging the date I set: if ANY non-major reaches core 45 with RSI under 70 by Oct 15, the backstop fires and I deploy into it.",
+    "the_wait_was_right": "The Oct-1 decision to override a screen on which five names qualified has been vindicated on price as well as signals. From the Oct-1 close to today: LINK 14.468 -> 13.034 (-9.9%), GRAM 1.518 -> 1.379 (-9.2%), LTC 67.33 -> 62.39 (-7.3%), ADA 0.2537 -> 0.2390 (-5.8%), AVAX 11.112 -> 10.513 (-5.4%). Average about -7.5%, or roughly $6 saved on a 309 AED stake. Small money. The point is that the reasoning - that the roll-over had started in the majors and was propagating down - was correct, and the board has now done exactly that.",
+    "front_runner": "None. For the first time since the trigger was armed on Oct 1 there is no front-runner to name, which is more informative than any of the four times the name changed."
    }
   },
   "opportunity_status": {
-   "as_of": "2026-10-07",
+   "as_of": "2026-10-13",
    "state": "DEPLOYED (instruction issued 2026-09-20) - fill UNCONFIRMED",
    "what_happened": "BTC rated STRONG BUY (50, core 50) on two consecutive readings - Friday's close of 80,883.87 and Saturday's 81,249.99. That satisfies the 2-day rule. First confirmation in FOUR armings of this trigger (Aug 3 BTC, Aug 15 AVAX, Sept 5-6 BTC all failed to confirm).",
    "instruction": {
@@ -280,22 +251,23 @@
    "position_now": {
     "indicative_qty": 0.00169464,
     "entry": 80340.01,
-    "last": 84160.0,
-    "value_usd": 142.62,
-    "pnl_pct": 4.75,
+    "last": 83698.01,
+    "value_usd": 141.84,
+    "pnl_pct": 4.18,
     "stop": 79304.74,
-    "stop_raised_from": 74919.5,
     "trigger": "ONE daily CLOSE below 79,304.74 -> convert ALL back to USDT",
-    "stop_note": "Stop UNCHANGED at 79,304.74. Trail computes 79,881.54 from Tuesday's 85,549.93 close, +0.31 ATR above the stop. Cushion 5.77% against 7.07% yesterday.",
-    "stop_distance_pct": -5.77,
-    "signal_note": "BTC -1.38% to 84,160.00, band unchanged at BUY 35 for a second session - the churn has stopped for now. But the histogram has deepened to -308.46, nearly double yesterday's -158.39 and the deepest reading of this entire episode."
+    "stop_note": "Stop UNCHANGED at 79,304.74. The trail computes 75,478.64 from Monday's 81,850.00 close - 1.80 ATR BELOW the existing stop, so the never-lowered rule holds it where it is. The trail has gone from +0.31 ATR above the stop on Oct 7 to 1.80 ATR below it: the cushion the trail was building through late September has been given back entirely.",
+    "stop_distance_pct": -5.25,
+    "signal_note": "BTC -0.60% to 83,698.01, band unchanged at BUY 35 for a third session, still ABOVE its 50-day (81,140.84). It is now the only one of the book's two lines left standing, and the only major that did not break trend today. But its MACD histogram is -485.07, deeper again from -308.46 on Oct 7 and by far the worst of this episode.",
+    "role_change": "With ETH exited, BTC is the entire remaining crypto exposure - and its fill has never been confirmed. The confirmed book after today's instruction is cash."
    },
    "band_churn_note": {
     "as_of": "2026-10-06",
     "sequence": "BUY (Oct 1) -> STRONG BUY (Oct 2) -> BUY (Oct 3) -> BUY (Oct 4) -> STRONG BUY (Oct 5) -> BUY (Oct 6)",
     "why": "BTC's score sits on the 45 threshold with the momentum term oscillating between 'flat (not scored)' and 'negative' as the histogram crosses zero. Four flips in five sessions on a price that has gone 84,240 -> 85,334, a 1.3% range.",
     "consequence": "BTC's band changes are now behaving like the UAE names I muted - TECOM, DEWA, TALABAT - and for the same mechanical reason. I am NOT muting a held position's band, because the score still feeds the deploy trigger and the record, but I am noting that a BTC band change on its own is no longer informative and should not be reported as news."
-   }
+   },
+   "survived_the_gap": "BTC held its stop through the worst six-day stretch of the episode, with 3.09% to spare on the closing basis. Noted without being made into a virtue: a 5.25% cushion on a name whose momentum reading is the worst it has been is not a strong position, it is an intact one."
   },
   "stock_shortlist_note": {
    "as_of": "2026-08-24",
@@ -373,27 +345,21 @@
   "why": "a daily review of a one-line confirmed book manufactures more instructions than the user can execute - which is what created eleven unconfirmed instructions"
  },
  "book_summary": {
-  "as_of": "2026-09-14",
+  "as_of": "2026-10-13",
   "confirmed": {
-   "lines": [
-    {
-     "ticker": "ETHUSDT",
-     "qty": 0.0364,
-     "value_usd": 91.62,
-     "pnl_pct": 37.6
-    }
-   ],
-   "total_usd": 91.62
+   "lines": [],
+   "total_usd": 92.08,
+   "note": "The ETH line is EXITED by instruction today. Until execution is confirmed the $92.08 is 'ETH being converted to USDT' rather than either one cleanly - the value is the same on both sides of the trade, so the total is unaffected. There is no confirmed market exposure left in the book."
   },
   "advised_unconfirmed": {
    "lines": [
     {
      "ticker": "BTCUSDT",
-     "qty": 0.001058,
-     "notional_usd": 82.11
+     "qty": 0.00169464,
+     "notional_usd": 141.84
     }
    ],
-   "total_notional_usd": 82.11,
+   "total_notional_usd": 141.84,
    "note": "NOTIONAL ONLY - no P&L is reported on these and they are never added to the confirmed total"
   },
   "closed": [
@@ -405,21 +371,53 @@
     "exit": 11.412,
     "result_pct": 17.88,
     "note": "Stop-out on the 2026-09-13 close. ADVISED-UNCONFIRMED throughout, so this is an advice outcome and not a realised trade."
+   },
+   {
+    "ticker": "ETHUSDT",
+    "opened": "2026-07-17",
+    "closed": "2026-10-13",
+    "entry": 1829.7,
+    "exit": 2529.63,
+    "result_pct": 38.25,
+    "note": "Stop-out on the 2026-10-12 close of 2,447.17, 2.66 below the 2,449.83 trailing stop. The ONLY line in this book ever confirmed by the user, and the only one whose result is a real outcome rather than an advice outcome - subject to execution of today's instruction. Held 88 days. See eth_exit."
    }
   ],
-  "struck": "BTC +$13.98 and LINK +$3.09 of previously reported P&L (about $17) removed from the record on 2026-08-24"
+  "struck": "BTC +$13.98 and LINK +$3.09 of previously reported P&L (about $17) removed from the record on 2026-08-24",
+  "uninvested_aed": {
+   "core_uae_stocks": 1200,
+   "opportunity_usdt": 250,
+   "satellite_reserve": 309,
+   "total": 1759
+  }
  },
  "gap_check": {
-  "as_of": "2026-09-10",
-  "gap_hours": 71.98,
-  "why": "Daily cycles for Sept 8 and Sept 9 fired but were not serviced - the session was idle. Data ran from 2026-09-07T07:10:58Z to 2026-09-10T07:10:40Z with no reading in between.",
-  "result": "NO stop or target was crossed during the gap.",
-  "detail": [
-   "LINK stop 11.337 - lowest intraday print across Sept 7-10 was 11.584 (Sept 9), 2.18% above. Closest call of the four trail triggers to date.",
-   "ETH hard stop 2,209 - lowest intraday print 2,441.68 (Sept 8), 10.53% above.",
-   "ETH close-exit 2,300 - lowest daily CLOSE 2,468.13 (Sept 9), 6.16% above. No count started.",
-   "BTC opportunity deploy was never armed, so no BTC level was live."
-  ]
+  "as_of": "2026-10-13",
+  "gap_hours": 143.99,
+  "why": "Five daily cycles (Oct 8, 9, 10, 11, 12) fired but were not serviced - the session was idle. Data ran from 2026-10-07T07:09:24Z to 2026-10-13T07:09:40Z with no reading in between.",
+  "result": "ETH's STOP WAS CROSSED - on the LAST close in the gap. BTC's was not.",
+  "eth_detail": {
+   "stop": 2449.83,
+   "closes_each_missed_cycle_would_have_read": {
+    "cycle_Oct_08_reads_Oct_07_close": 2574.14,
+    "cycle_Oct_09_reads_Oct_08_close": 2474.8,
+    "cycle_Oct_10_reads_Oct_09_close": 2487.7,
+    "cycle_Oct_11_reads_Oct_10_close": 2506.52,
+    "cycle_Oct_12_reads_Oct_11_close": 2536.94,
+    "cycle_Oct_13_reads_Oct_12_close": 2447.17
+   },
+   "verdict": "THE MISSED CYCLES COST NOTHING. Every one of the five would have read a close ABOVE the stop and correctly held. Oct 12's close is the first and only qualifying close, and today is the first cycle that could possibly have observed it. The exit is not one day late.",
+   "luck_vs_method": "Stated plainly: that is luck. Five unserviced cycles with a live stop 6.4% away was real exposure, and the gap resolving harmlessly does not make it safe. If the breach had come on Oct 8's close the exit would have been four days and 3.3% late.",
+   "intraday_lows_ignored_correctly": "Oct 8 traded down to 2,406.11 and Oct 12 to 2,443.00 - BOTH below the stop. The close-based rule ignored both, and on Oct 8 it was right to: price closed that day at 2,474.80, back above the stop. An intraday-triggered stop would have exited on a day the level held by the close. Same precedent as LINK on 2026-09-11."
+  },
+  "btc_detail": {
+   "stop": 79304.74,
+   "lowest_close_in_gap": 81754.45,
+   "lowest_close_date": "2026-10-08",
+   "lowest_close_margin_pct": 3.09,
+   "lowest_low_in_gap": 80393.56,
+   "lowest_low_margin_pct": 1.37,
+   "verdict": "NOT HIT on either basis. Closest approach was Oct 8, 1.37% above the stop intraday and 3.09% above on the close."
+  }
  },
  "stop_trigger_rule": {
   "codified": "2026-09-12",
@@ -432,40 +430,24 @@
   "honesty_note": "This is being written down AFTER the ambiguous event, and it resolves in the direction that keeps the LINK position alive. That is uncomfortable and is recorded rather than glossed. The three reasons above are outcome-independent, and the rule now binds in both directions: a close below a stop exits even if the position recovers intraday afterwards.",
   "cost_disclosed": "A close-based stop does NOT fill at the stop level. With one observation a day, the exit happens at the next daily reading, which can be well below the stop. Yesterday I wrote 'if it fires it fires near +17.1%' - that was imprecise, and the realistic fill is worse than the level."
  },
- "eth_stop_watch": {
-  "as_of": "2026-09-28",
-  "stop": 2449.83,
-  "trigger": "one daily CLOSE below 2,449.83",
-  "distance_pct": -7.55,
-  "locks_pct": 33.89,
-  "recent_closes": [
-   2691.61,
-   2696.33,
-   2688.65,
-   2649.81
-  ]
- },
  "satellite_rule_fix": {
   "adopted": "2026-09-21",
   "rule": "A satellite candidate lapses when its CORE score falls below 45, not when its headline band does. Headline-band moves caused only by stretch penalties do not lapse a candidate, and do not trigger one either.",
   "why": "The 2026-09-21 AVAX lapse fired on over-extension rather than deterioration. The outcome was right, the wording was not.",
   "not_retroactive": "Does not apply to the AVAX candidate that lapsed on 2026-09-21."
  },
- "stretch_watch": {
-  "as_of": "2026-09-24",
-  "outcome": "Yesterday six of eleven cryptos carried stretch penalties and I wrote that the engine was flagging extension rather than weakness, and that the easy part of the move had happened. Today the board fell and the stretched alts fell hardest - AVAX (RSI 79.8) -8.40%, XRP (70.1) -7.58%, DOGE (72.2) -7.55%, ADA (72.8) -6.78%. But the relationship is LOOSE, not clean, and overclaiming it would be the easy mistake: BTC was stretched at RSI 72.6 and fell only 2.73%, LINK was the least stretched of the big fallers at 64.3 and still fell 4.76%, and LTC - the second most stretched at 78.8 - was the ONLY green name on the board at +6.80%. Stretch ranked the downside directionally and got the extremes right, and it also completely missed the day's biggest single move. Treat it as one input among several, not a forecast.",
-  "now": "Every stretch penalty has unwound. All ten of the STRONG BUY names now read score 65 with core 65; only LTC still carries one (35 against core 65, RSI 80.3) and GRAM has genuinely weakened to BUY 30 on core."
- },
  "inaction_note": {
-  "as_of": "2026-09-27",
-  "count": "Eighth consecutive session with no action. The trail has held the stop six times in a row since the two raises on Sept 22.",
-  "why_it_matters": "Most of what this system produces is 'leave it alone', computed rather than decided. The failure mode it guards against is the one this book actually had in August, when stops were re-derived from scratch every session and drifted."
+  "as_of": "2026-10-13",
+  "count": "Streak broken at fourteen sessions. The last instruction this book issued was the BTC deploy on 2026-09-20; before today, every cycle since had computed 'leave it alone'.",
+  "why_it_matters": "The system produced one action in twenty-three days and that action was triggered by a rule written a month earlier, not by a judgement made today. That is the design working. The failure mode it guards against is the one this book had in August, when stops were re-derived from scratch every session and drifted."
  },
  "book_signal_state": {
-  "as_of": "2026-09-28",
-  "summary": "BOTH held positions now carry fresh MACD bearish crosses with core equal to score - genuine momentum deterioration, not stretch. Neither has broken trend or structure: ETH is 10.2% above its rising 50-day, BTC 8.1% above its.",
-  "honest_reading": "This is the first time both lines have deteriorated together. It is a real change in the book's risk picture and is being reported as one. It is NOT a sell signal under any written rule, and I am not going to invent one - the exits are single daily closes below 2,449.83 and 79,304.74, which are 7.55% and 4.60% away.",
-  "counterweight": "ETF flows remain positive on both assets and Fear & Greed is still in Greed at 63. Momentum rolling over while money still arrives is a normal mid-trend divergence as often as it is a top."
+  "as_of": "2026-10-13",
+  "summary": "A regime change, not a bad day. FIVE of eleven cryptos lost their 50-day averages in one reading - ETH, SOL, XRP, DOGE and GRAM - and the UAE board lost five more: EMIRATESNBD, ADCB, EAND, ADNOCGAS and ADIB. Eleven 50-day trend breaks across two asset classes in a single session is the broadest deterioration this book has recorded.",
+  "crypto": "Not one name on the crypto board is rated above BUY 35. On Sept 24 ten of eleven were STRONG BUY. Every MACD histogram on the board is negative. The six still above their 50-days - BTC, ADA, AVAX, BNB, LINK, LTC - are all at exactly 35, which is the trend-plus-structure score with momentum subtracted; they are holding their averages and nothing more.",
+  "uae": "Worse. Fifteen of nineteen names are SELL or STRONG SELL, six at -65. FAB went SELL -> STRONG SELL at -55. SALIK went STRONG BUY 45 -> SELL -35 in one reading, its fifth band regime in twenty sessions. Only DU (BUY 30), ADPORTS and ALDAR (BUY 25) are still rated to buy, and ALDAR lost STRONG BUY today.",
+  "honest_reading": "The book exited its one confirmed position into this, which looks prescient and was not - the stop fired on a mechanical rule set on 2026-09-19, and the trend break arrived the same day by coincidence of timing, not foresight. What the board does say is that there is nothing to redeploy into. That is a conclusion I would have reached today regardless of the stop.",
+  "uae_caveat": "All UAE readings are Tuesday 11:09 Dubai INTRADAY DRAFTS - the market closes at 14:45/15:00 local. Eleven of these have failed by the close in the last month. The five UAE trend breaks are drafts and may not settle."
  },
  "bookkeeping_correction": {
   "found": "2026-09-29",
@@ -544,6 +526,60 @@
   ]
  },
  "data_notes_live": {
-  "IHC": "stale_runs is 4, pinned at exactly 360.00. The stock threshold is 10 runs, so nothing is flagged yet. Worth watching - IHC has a narrow float and has sat in a 360.00-371.40 band all month."
+  "IHC": "stale_runs reset to 0 - IHC moved off 360.00 to 354.90, so the pin has cleared after four runs. No longer a concern.",
+  "EMAARDEV": "stale_runs 1 at 12.80. Threshold for stocks is 10 runs. Nothing flagged."
+ },
+ "last_action": {
+  "date": "2026-10-13",
+  "ticker": "ETHUSDT",
+  "action": "SELL - convert ALL ETH to USDT",
+  "end_state": "hold 0 ETH and 0 of any other coin from this position - the whole line goes to USDT. If you are already there, do nothing.",
+  "why": "The stop fired. ONE daily CLOSE below 2,449.83 was the written trigger and Monday 2026-10-12 closed at 2,447.17 - 2.66 below it. The rule has no deadband and I am not adding one today.",
+  "execution": "INSTRUCTED 2026-10-13, execution NOT yet confirmed",
+  "proceeds_usd_if_full_line": 92.08,
+  "proceeds_usd_if_aug20_trim_was_taken": 23.02,
+  "do_not": "Do NOT roll it into another coin. USDT, and it stays there - no deploy trigger is armed and five of eleven cryptos just lost their 50-day."
+ },
+ "eth_exit": {
+  "date": "2026-10-13",
+  "triggering_close": {
+   "date": "2026-10-12",
+   "close": 2447.17,
+   "stop": 2449.83,
+   "breach_abs": 2.66,
+   "breach_pct": -0.109
+  },
+  "entry": 1829.7,
+  "entry_date": "2026-07-17",
+  "exit": 2529.63,
+  "exit_basis": "today's 07:09 UTC observation - stop_trigger_rule says the exit happens at the NEXT daily observation, not at the stop level",
+  "days_held": 88,
+  "result_pct": 38.25,
+  "stop_level_alone_would_have_locked_pct": 33.89,
+  "slippage": "FAVOURABLE for once: ETH closed below the stop on Monday and then recovered, so the exit lands 3.26% ABOVE the stop level - worth 4.36 extra percentage points of return. The cost_disclosed note on stop_trigger_rule warned the fill is usually WORSE than the level. This time it is better. That is luck, not method, and the next one can go the other way.",
+  "proceeds_usd": 92.08,
+  "entry_cost_usd": 66.6,
+  "gain_usd": 25.48,
+  "quantity_note": "The percentage is quantity-independent. The dollar figures assume the CONFIRMED 0.0364 ETH. The 2026-08-20 advised trim to 0.0091 was never confirmed, so if it WAS taken the proceeds are $23.02 instead. The end-state instruction - hold 0 ETH - is correct either way, which is the whole point of end-state form.",
+  "book_effect": "The confirmed book does not change value today: $92.08 of ETH becomes $92.08 of USDT. What changes is that it stops being exposed.",
+  "corroboration": "The exit does not rest on the 2.66 alone. ETH ALSO crossed below its 50-day today (2,529.63 against 2,557.40) and its band went BUY 35 -> HOLD -15. Trend break and stop firing agree.",
+  "honest_margin_note": "The breach is 0.11%. That is inside the spread between exchanges, and another data source could plausibly show Monday closing a hair above 2,449.83. I am acting on it anyway for two reasons: the 2,449.83 level was itself computed from Binance daily closes, so testing it against Binance daily closes is internally consistent; and the stop_trigger_rule honesty_note of 2026-09-12 said in advance that the rule 'now binds in both directions - a close below a stop exits even if the position recovers intraday afterwards.' Price HAS recovered. Inventing a deadband today, on a 38% winner, after the rule was written to cover exactly this case, would be the worst available failure of discipline in this book."
+ },
+ "engine_fix_2026_10_13": {
+  "found": "The gap check caught ETH's stop. THE ENGINE DID NOT.",
+  "bug": "portfolio_report() tested h['stop'] against the LIVE 07:10 UTC tick, while stop_trigger_rule (codified 2026-09-12) says a stop triggers on a DAILY CLOSE. Today the two disagreed in the direction that misses an exit: the Oct-12 close of 2,447.17 breached the stop, but the live tick had recovered to 2,529.63, so stop_hit read FALSE on the only day it has ever mattered.",
+  "severity": "This is the most consequential defect found in this system to date. Every 'no stop hit' the engine has reported since 2026-08-21 was computed on the wrong price. It only failed to matter because no stop had fired until today, and today it was caught by hand.",
+  "same_class_as": "The trail bug fixed on 2026-09-10 - a level derived from daily closes but evaluated against a mid-bar price. I fixed the level computation then and did not check the trigger evaluation. Half a fix.",
+  "fix": "Added last_completed_close(bars): the newest bar dated strictly before today in UTC. portfolio_report now tests stops and targets against that, and reports trigger_px and trigger_basis so the price used is auditable rather than implied.",
+  "limitation_disclosed": "The TradingView path supplies indicators but no bar history, so prev_close is None for ADX-sourced names and those fall back to the live tick with trigger_basis saying so. No ADX name is a held position today, so nothing is affected now - but if a UAE position is ever opened, its stop will be evaluated on an intraday print until that source gives bars. Written down rather than left to be rediscovered.",
+  "verified": "Re-ran against today's data: the engine now emits 'YOUR POSITION ETHUSDT: STOP HIT - last completed daily close 2447.17 is below the stop 2449.83. Plan says exit to USDT now, at 2529.63, not at the stop level.' The alert also now states the exit price rather than implying a fill at the level, which is the error corrected on 2026-09-12."
+ },
+ "stale_plan_string_2026_10_13": {
+  "found": "2026-10-13",
+  "defect": "holdings[0].plan named the stop as 2,316.48 from 2026-09-19 until today, while the stop had been raised to 2,449.83 that same day and action_required.stop was updated correctly.",
+  "user_visible": "build_dashboard renders .plan as the holdings card's note, so the mobile view showed the correct 2,449.8 in its levels grid and a contradictory 2,316.48 in its prose for 24 consecutive days. Both numbers on the same card.",
+  "why_it_happened": "The stop lives in three places on the holding - stop, action_required.stop and the prose inside plan - and the Sept-19 raise updated the first two. A number duplicated in prose does not get maintained.",
+  "fixed": "The stale string is corrected in today's output and holdings is now empty, so it cannot recur on this line. The structural lesson is the duplication: trailing_stop_rule should be read off the stop field alone and prose should not restate levels.",
+  "not_consequential_to_any_decision": "Every stop decision in the record was computed against 2,449.83, including today's exit. No trade or instruction used 2,316.48. The harm was that the user was shown two different stops for the same position for over three weeks."
  }
 }

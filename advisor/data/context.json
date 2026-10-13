@@ -1,29 +1,29 @@
 {
- "updated": "2026-10-07T07:35+00:00",
+ "updated": "2026-10-13T07:35+00:00",
  "market_notes": [
   {
-   "market": "ETH's largest single-day fall of the episode - cushion compresses to 6.40%",
-   "note": "ETH -2.93% to 2,617.36, $95.27, +43.0% from +47.4%. Wednesday's bar ran 2,699.80 to 2,591.71, a 4.0% intraday range and the widest of this episode, with RSI falling to 49.5 - below the midline for the first time since July. The 2,449.83 stop is now 6.40% below spot against 9.14% yesterday, a 2.7-point compression in one session. Arithmetic rather than forecast: two more sessions at today's rate would reach it, and a single capitulation day could. Said that way deliberately - I have been wrong three times in a fortnight extrapolating two sessions of direction, and this is one. NO ACTION: the rule is one daily CLOSE below 2,449.83, the stop still locks +33.89%, and the trail computes 2,484.69 which is ABOVE the stop."
+   "market": "ETH's STOP FIRED on Monday's close - the position is exited at +38.25%",
+   "note": "Monday 2026-10-12 CLOSED at 2,447.17, 2.66 below the 2,449.83 trailing stop - a 0.11% breach of a trigger with no deadband. The exit executes at today's observation, 2,529.63, because a close-based stop with one reading a day cannot fill at the level. Entry 1,829.70 on 2026-07-17, so +38.25% over 88 days: $92.08 out, $25.48 gained on the confirmed 0.0364. The slippage is FAVOURABLE for once - ETH closed below the stop and recovered overnight, so the exit lands 3.26% above the level, worth 4.36 percentage points more than the +33.89% the stop alone locked. That is luck, not method, and the next one can go the other way. The exit is independently corroborated: ETH also crossed below its 50-day today and the band went BUY 35 -> HOLD -15."
   },
   {
-   "market": "A dated driver - and it is the Iran theme again",
-   "note": "Bitcoin dipped below $84,000 as oil prices surged following reported Iranian tanker attacks, after breaking support near $85,700 earlier in the session. Same geopolitical thread this book has tracked since July as the dominant UAE equity driver. Being careful about one thing: earlier searches returned retrospective pieces on the H1-2026 crash - 'ETH lost 60%', a '$1,800 crisis', $2.4bn of cumulative ETH ETF outflows over five months, supply turning slightly inflationary post-Dencun as activity moved to Layer 2. Some may be true background but none is dated to today, and presenting it as today's cause would repeat the August leverage-figure error. Logged as background, not as drivers."
+   "market": "Eleven 50-day trend breaks in one session, across both asset classes",
+   "note": "Crypto lost five - ETH, SOL, XRP, DOGE, GRAM - and the UAE board five more: EMIRATESNBD, ADCB, EAND, ADNOCGAS, ADIB. Not one crypto now rates above BUY 35, against ten of eleven at STRONG BUY on Sept 24, and every MACD histogram on the board is negative. SALIK went STRONG BUY 45 -> SELL -35 in a single reading; FAB deepened to STRONG SELL -55; six UAE names sit at -65. This is the broadest single-session deterioration this book has recorded."
   },
   {
-   "market": "A divergence I cannot explain",
-   "note": "An Iran escalation that is risk-off for crypto should also hit UAE equities, yet the UAE board IMPROVED today - SALIK to STRONG BUY, DU to STRONG BUY. The oil-linked names barely moved (ADNOCGAS +0.91%, ADPORTS +0.65%), so I cannot attribute the UAE strength to an oil trade, and SALIK is a toll operator while DU is a telecom. Recording the divergence as unexplained rather than inventing a mechanism for it."
+   "market": "The week's backdrop: hawkish FOMC minutes, $1.16bn of long liquidations, $1bn+ of ETF outflows",
+   "note": "The September FOMC minutes released Oct 7 pointed to another hike by year-end; futures liquidations ran $1.16bn with over 90% longs; US spot BTC and ETH ETFs took more than $1bn of net weekly outflows per Farside. ETH lost about 9% on the week and traded under $2,432 at one point, BTC under $81,000. Explicitly NOT presented as the cause of Monday's particular close - US-hours reporting had Monday as a small recovery session, with BTC opening 83,673 (+0.9%) and ETH 2,534 (+1.2%). This is the week's weather, not the trigger."
   },
   {
-   "market": "The satellite shortlist of five has collapsed to ONE",
-   "note": "GRAM lost STRONG BUY on a fresh MACD bearish cross (-3.96%, core 50 -> 25), leaving ADA as the only name on the entire crypto board that qualifies: core 75 against a 45 minimum, RSI 59.5 against a 70 maximum. Every other non-major sits at core 35 or below. Five names to one in six sessions - so if the backstop fires on Oct 15 with the board like this, ADA is not a choice but the only thing that passes. ADA fell 4.39% today and still holds core 75; its STRONG BUY is the most durable thing on the board."
+   "market": "The Oct-15 satellite backstop has no qualifying candidate",
+   "note": "ADA lost STRONG BUY today (core 75 -> 35, -5.76%), the last name standing after GRAM went on Oct 7. The rule needs core >= 45 with RSI < 70 and the highest core on the non-major board is 35, held by five names at once. With no qualifying name the backstop has nothing to fire into and the 309 AED rolls into November. The MACD half is further away than ever: BTC's histogram -485.07, ETH's -30.22, both roughly doubled the wrong way over the gap. The Oct-1 wait is now vindicated on price too - the five names that screened then are down 5.4% to 9.9% since."
   },
   {
-   "market": "The trigger is at its furthest from being met",
-   "note": "BTC's histogram has deepened to -308.46, nearly double yesterday's -158.39 and the deepest of the entire episode; ETH's is -16.64. BTC's band held at BUY 35 for a second session, so the four-flips-in-five-sessions churn has stopped for now. Eight days to the Oct-15 backstop."
+   "market": "A defect was found that would have missed today's exit",
+   "note": "The engine tested stops against the LIVE tick while the codified rule says a DAILY CLOSE. Today they disagreed in the direction that misses an exit - the Oct-12 close breached the stop but the live tick had recovered above it, so the engine read 'no stop hit' on the only day it has ever mattered. The exit was caught by the manual gap check. Fixed: stops and targets now test the last completed daily close and report which price was used. Same class as the trail bug fixed on Sept 10, which means that was half a fix."
   },
   {
-   "market": "UAE improves while crypto weakens",
-   "note": "SALIK HOLD -> STRONG BUY (+3.37%, crossing above its 50-day), DU BUY -> STRONG BUY, ALDAR holding STRONG BUY 50, EMIRATESNBD BUY 40, with ADCB, ADNOCGAS, ADIB and ADPORTS at BUY 35 - the most constructive UAE board since Oct 1, on the day crypto had its worst session of the episode. SALIK is on its FOURTH band regime in fifteen sessions (STRONG SELL Sept 22, BUY Sept 25, SELL Oct 3, STRONG BUY today), but unlike the muted names its moves have real price behind them (+4.46%, -2.73%, +3.37%), so it is a volatile stock rather than a float artefact and is not being muted. All readings are Wednesday 11:09 Dubai intraday drafts."
+   "market": "After today the confirmed book holds no market exposure",
+   "note": "ETH was the only line this user ever confirmed. Once the conversion is executed the confirmed book is $92.08 of USDT and nothing else. BTC remains at $141.84 notional but its fill has never been confirmed, and 1,759 AED sits uninvested across three buckets - 1,200 of it blocked on the Al Ramz account that has been unopened since July 17 and deployable since Oct 1."
   }
  ],
  "asset_notes": {
@@ -475,7 +475,7 @@
   ],
   "ETHUSDT": [
    {
-    "headline": "Vitalik Buterin unveils 'Lean Ethereum' — biggest rebuild since the Merge",
+    "headline": "Vitalik Buterin unveils 'Lean Ethereum' \u2014 biggest rebuild since the Merge",
     "impact": "bullish",
     "date": "2026-07-05",
     "source": "CoinDesk, The Block, TechTimes, Bankless"
@@ -707,6 +707,12 @@
     "impact": "bearish",
     "date": "2026-10-07",
     "source": "advisor data"
+   },
+   {
+    "headline": "Position exited at +38.25% - 2026-10-12 close of 2,447.17 breached the 2,449.83 stop",
+    "impact": "neutral",
+    "date": "2026-10-13",
+    "source": "advisor book - mechanical trailing stop set 2026-09-19"
    }
   ],
   "BNBUSDT": [
@@ -1055,7 +1061,7 @@
     "source": "Gulf News, Khaleej Times, Emirates 24/7 (11 Jun 2026); Emaar press release / Economy Middle East (11 May 2026); stockanalysis.com"
    },
    {
-    "headline": "H1 2026 sales of AED 286bn ($77.9bn) — second-highest half-year on record; prices +6.7% YoY",
+    "headline": "H1 2026 sales of AED 286bn ($77.9bn) \u2014 second-highest half-year on record; prices +6.7% YoY",
     "impact": "bullish",
     "date": "2026-07-05",
     "source": "Arabian Business, Economy Middle East, Dubai Chronicle (early Jul 2026)"
@@ -2095,30 +2101,31 @@
   ]
  },
  "risk_flags": [
-  "ETH's stop cushion compressed from 9.14% to 6.40% in ONE session on its largest fall of the episode. Two more sessions at that rate would reach the 2,449.83 stop; a single capitulation day could. Arithmetic, not forecast. No action - the rule is one daily CLOSE, and the stop still locks +33.89%.",
-  "BTC's histogram has deepened to -308.46, the deepest of this entire episode and nearly double yesterday. The satellite trigger is at its furthest from being met. 8 days to the Oct-15 backstop.",
-  "The satellite shortlist has collapsed from FIVE qualifying names to ONE. ADA alone passes (core 75, RSI 59.5); every other non-major is at core 35 or below. If the backstop fires on Oct 15 with this board, ADA is the only thing that passes rather than a choice.",
-  "A dated driver: oil surged on reported Iranian tanker attacks, with BTC breaking support near 85,700. Same geopolitical thread tracked since July. Retrospective H1-2026 crash material found in earlier searches is logged as background, NOT as today's cause.",
-  "UNEXPLAINED DIVERGENCE: an Iran escalation should hit UAE equities too, yet the UAE board improved (SALIK and DU both to STRONG BUY). Oil-linked names barely moved, so no oil-trade mechanism fits. Recorded as unexplained.",
-  "Both stops hold and both are single-close: ETH below 2,449.83 (6.40% away), BTC below 79,304.74 (5.77% away). Seventeen sessions with no action.",
-  "NOTHING in this book has ever been reconciled against the exchange. The UAE stock bucket has been deployable since Oct 1 and Al Ramz is still not open - on the day the UAE board turned its most constructive in a week."
+  "ETH IS EXITED BY INSTRUCTION - execution not yet confirmed. Proceeds stay in USDT. Do NOT roll into another coin: no deploy trigger is armed and five of eleven cryptos just lost their 50-day.",
+  "Five daily cycles (Oct 8-12) fired unserviced, a 143.99-hour gap, with a live stop 6.4% away. It resolved harmlessly - every missed cycle would have read a close above the stop - but that is luck. Had the breach landed on Oct 8's close the exit would have been four days and 3.3% late. The gap itself is the standing risk, not the outcome.",
+  "BTC's trail has gone from +0.31 ATR above its stop on Oct 7 to 1.80 ATR BELOW it. The cushion built through late September has been handed back in full, the stop is 5.25% away, and its MACD histogram of -485.07 is the worst of the episode. It is intact, not strong.",
+  "BTC's fill has never been confirmed, 23 days after the 2026-09-20 instruction. Once ETH is converted it is the only crypto line in the book and the book cannot tell whether it exists.",
+  "Al Ramz is still not open, 88 days after the plan started. The UAE bucket has held its deployable 1,200 AED since Oct 1 and has never been deployed - and the UAE board it was meant to buy into has just lost five more names to trend breaks, so the blocker has cost nothing so far.",
+  "Reconciliation has never been performed since 2026-07-17. Four numbers are still wanted from Binance -> Wallet -> Overview: ETH, BTC, LINK and USDT quantities. The ETH exit makes this more urgent, not less - the instruction is to convert a quantity the book has not verified in 88 days.",
+  "ADX-sourced names (TradingView) supply no bar history, so any future UAE position's stop will be evaluated against an intraday print rather than a daily close until that changes. No UAE position is held today.",
+  "All UAE readings today are Tuesday 11:09 Dubai intraday drafts against a 14:45/15:00 close. Eleven such drafts have failed by the close in the last month, so the five UAE trend breaks may not settle."
  ],
  "corrections": [
-  "Prior context.json was 13 days stale (2026-07-17) because daily cycles were skipped 2026-07-20..29; refreshed 2026-07-30."
+  "Prior context.json was 13 days stale (2026-07-17) because daily cycles were skipped 2026-07-20..29; refreshed 2026-07-30.",
+  "2026-10-13: satellite_candidate.reserve_aed read 209 for twelve days after the Oct-1 DCA took the reserve to 309. The accumulations field was correct; the duplicate was stale. Found while sizing the backstop."
  ],
  "missing": [
-  "GENIUS Act stablecoin final-rules deadline is July 18, 2026 — TOMORROW: six agencies (OCC, FDIC, NCUA, Treasury, FinCEN, OFAC) must finalize rules one year after enactment; comment periods closed June 9 and there is no statutory fallback if they miss. Direct near-term catalyst/risk for stablecoins (USDC/Coinbase economics — which the findings themselves cite in the CLARITY yield fight — and Tether) yet absent from all three crypto findings. (Kraken blog Jul 15, CryptoSlate, OCC Bulletin 2026-3, Chapman tracker.)",
-  "US Q2 earnings season is underway and clusters against the July FOMC: JPMorgan/BofA/Citi/Wells reported July 14-15 (same day as CPI); Alphabet July 22; Microsoft and Meta July 29 — the same day as the Fed decision; Apple and Amazon July 30; ~$725B of planned 2026 hyperscaler AI capex is the dominant theme. The findings cite 'AI-spending worries' as a crypto risk-off driver but omit the entire US earnings calendar that will set global risk sentiment during the plan's first two weeks. (VaaSBlock, IG, ClaritX previews.)",
-  "OPEC+ supply policy is absent from the UAE macro work: the July 5 virtual meeting approved a fifth consecutive monthly output increase (+188K b/d for August across Saudi/Russia/Iraq/Kuwait/Kazakhstan/Algeria/Oman), and the next meeting is August 2 — directly material to Brent (which the findings track closely), UAE fiscal backdrop, and ADX energy names. CNBC notes the hike came 'as Hormuz exports start to recover,' a nuance that cuts against the pure supply-fear narrative. (CNBC Jul 5, Bloomberg, Rigzone.)",
+  "GENIUS Act stablecoin final-rules deadline is July 18, 2026 \u2014 TOMORROW: six agencies (OCC, FDIC, NCUA, Treasury, FinCEN, OFAC) must finalize rules one year after enactment; comment periods closed June 9 and there is no statutory fallback if they miss. Direct near-term catalyst/risk for stablecoins (USDC/Coinbase economics \u2014 which the findings themselves cite in the CLARITY yield fight \u2014 and Tether) yet absent from all three crypto findings. (Kraken blog Jul 15, CryptoSlate, OCC Bulletin 2026-3, Chapman tracker.)",
+  "US Q2 earnings season is underway and clusters against the July FOMC: JPMorgan/BofA/Citi/Wells reported July 14-15 (same day as CPI); Alphabet July 22; Microsoft and Meta July 29 \u2014 the same day as the Fed decision; Apple and Amazon July 30; ~$725B of planned 2026 hyperscaler AI capex is the dominant theme. The findings cite 'AI-spending worries' as a crypto risk-off driver but omit the entire US earnings calendar that will set global risk sentiment during the plan's first two weeks. (VaaSBlock, IG, ClaritX previews.)",
+  "OPEC+ supply policy is absent from the UAE macro work: the July 5 virtual meeting approved a fifth consecutive monthly output increase (+188K b/d for August across Saudi/Russia/Iraq/Kuwait/Kazakhstan/Algeria/Oman), and the next meeting is August 2 \u2014 directly material to Brent (which the findings track closely), UAE fiscal backdrop, and ADX energy names. CNBC notes the hike came 'as Hormuz exports start to recover,' a nuance that cuts against the pure supply-fear narrative. (CNBC Jul 5, Bloomberg, Rigzone.)",
   "Fed HIKE risk is materially understated: post-June-SEP, the median 2026 dot was revised UP to 3.8% (from 3.4%), nine of eighteen members project at least one hike, and CNBC's June-CPI coverage says the Fed is 'broadly expected to raise its benchmark rate in September.' The findings frame July 28-29 almost entirely as hold-vs-cut; a hike-skewed Fed is a different regime for crypto beta and for dirham-pegged UAE funding costs. (CNBC Jul 14, Intellectia, NPR Jun 17.)",
-  "Iran succession is resolved, not open: Ali Khamenei was assassinated February 28, 2026 and Mojtaba Khamenei was announced as supreme leader on March 9 after an Assembly of Experts vote — important context for regime durability and war trajectory that the UAE findings present as unresolved 'succession uncertainty.' (Wikipedia, CNN, Washington Post, Carnegie.)",
-  "CLARITY Act floor-vote development: Senate Majority Leader Thune has pledged a floor vote before the August recess, with the week of July 20 under active discussion — a nearer and harder catalyst than the findings' 'no floor vote scheduled' framing. (Coinpedia, KuCoin/Lummis, PYMNTS.)"
+  "Iran succession is resolved, not open: Ali Khamenei was assassinated February 28, 2026 and Mojtaba Khamenei was announced as supreme leader on March 9 after an Assembly of Experts vote \u2014 important context for regime durability and war trajectory that the UAE findings present as unresolved 'succession uncertainty.' (Wikipedia, CNN, Washington Post, Carnegie.)",
+  "CLARITY Act floor-vote development: Senate Majority Leader Thune has pledged a floor vote before the August recess, with the week of July 20 under active discussion \u2014 a nearer and harder catalyst than the findings' 'no floor vote scheduled' framing. (Coinpedia, KuCoin/Lummis, PYMNTS.)"
  ],
  "data_notes": [
-  "2026-10-01: the monthly DCA trigger fires at ~05:48 UTC (09:48 Dubai), which is BEFORE the 10:00 Dubai market open, so DCA-day UAE figures are the previous session's settled closes. The daily trigger at ~07:08 UTC (11:08 Dubai) lands intraday. Worth remembering - on DCA days the UAE data is the stronger kind.",
-  "2026-09-18: the news research pass recovered. Yesterday's unverified FOMC outcome is now confirmed (25bp hike to 3.75-4.00%) and the prior cycle's refusal to infer it from price action proved correct.",
-  "GRAM (ex-Toncoin) crossed the 55-bar minimum on 2026-08-25 and has been rated since; it prints BUY (40) today.",
-  "ADPORTS has printed 6.06 for three consecutive runs. This is a pinned cash-tender stub, not a frozen feed; the 10-run stock threshold correctly leaves it unflagged through the Sept 15 tender close.",
-  "TAQA was removed from the watchlist on 2026-09-02 after delisting from ADX; the watchlist is 19 UAE stocks and 11 cryptos, 30 assets total."
+  "2026-10-13: the engine's stop_hit test used the live 07:10 UTC tick, not the last completed daily close, contradicting stop_trigger_rule. Fixed with last_completed_close(); signals now carry prev_close and the portfolio block carries trigger_px and trigger_basis.",
+  "2026-10-13: ADX/TradingView assets have no bars, so prev_close is None and their stops fall back to the live tick with trigger_basis saying so explicitly.",
+  "2026-10-13: IHC's stale_runs reset to 0 - it moved off the pinned 360.00 to 354.90 after four runs, so that watch is closed.",
+  "2026-10-01: the monthly DCA trigger fires at ~05:48 UTC (09:48 Dubai), which is BEFORE the 10:00 Dubai market open, so DCA-day UAE figures are the previous session's settled closes. The daily trigger at ~07:08 UTC (11:08 Dubai) lands intraday. On DCA days the UAE data is the stronger kind."
  ]
 }
