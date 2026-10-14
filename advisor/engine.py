@@ -435,6 +435,43 @@ def resolve_states(prev_signals, signals):
                             f"consecutive runs — quote looks frozen, not rated"] + s.get("reasons", [])
 
 
+def _hairline_note(prev, cur):
+    """Label a band change driven by a 50-day cross too small to be trusted.
+
+    resolve_states() debounces trend_state with a 0.5% buffer around the 50-day
+    average, so a hairline cross raises no trend alert. The SCORING has no such
+    buffer: the price-vs-50-day term is the largest single component at +/-25 and
+    flips the instant price crosses, which moves the score 50 points and fires a
+    band-change alert the trend logic deliberately suppressed.
+
+    On 2026-10-14 both of the day's band changes were this artefact. BNB went
+    BUY 35 -> HOLD -15 sitting 0.14% BELOW its 50-day, and ADCB went SELL -25 ->
+    BUY 25 sitting 0.42% ABOVE its own - in opposite directions, on the same
+    mechanism, neither confirmed as a trend change by the system's own buffer.
+
+    Note the asymmetry this exposes: the smaller 20/50 structure term (+/-15) IS
+    protected by MA_DEADBAND while the larger trend term is not. Adding a deadband
+    to the trend term would reprice the whole board and break comparability with
+    the record, so that is proposed in the book rather than done here. This
+    function only makes the alert say what it is standing on.
+    """
+    try:
+        c_last, c_sma = cur.get("last"), cur.get("sma50")
+        p_last, p_sma = prev.get("last"), prev.get("sma50")
+        if not all(isinstance(v, (int, float)) and v for v in (c_last, c_sma, p_last, p_sma)):
+            return ""
+        if (c_last > c_sma) == (p_last > p_sma):
+            return ""  # the trend term did not flip, so this is not the cause
+        gap = c_last / c_sma - 1
+        if abs(gap) >= 0.005:
+            return ""  # a real cross, outside the buffer - trend_state flipped too
+        side = "below" if gap < 0 else "above"
+        return (f" - HAIRLINE 50-day cross: price is only {abs(gap) * 100:.2f}% {side} "
+                f"the average, inside the 0.5% buffer, so no trend change was confirmed")
+    except (TypeError, ZeroDivisionError):
+        return ""
+
+
 def diff_alerts(prev_signals, signals):
     alerts = []
     prev = {s["ticker"]: s for s in (prev_signals or [])}
@@ -474,7 +511,7 @@ def diff_alerts(prev_signals, signals):
             alerts.append({"ticker": s["ticker"], "severity": sev,
                            "type": "signal_change",
                            "msg": f"{s['ticker']}: {p['signal']} -> {s['signal']} (score {p['score']} -> {s['score']})"
-                                  + _stretch_note(p, s)})
+                                  + _stretch_note(p, s) + _hairline_note(p, s)})
         if p.get("rsi") is not None and s.get("rsi") is not None:
             for level, direction in [(30, "below"), (70, "above")]:
                 was = p["rsi"] < level if direction == "below" else p["rsi"] > level
@@ -552,7 +589,14 @@ def portfolio_alerts(prev_port, port):
 
 def uae_market_open(now_utc):
     dubai = now_utc + timedelta(hours=4)
-    return dubai.weekday() <= 4 and (10, 0) <= (dubai.hour, dubai.minute) <= (15, 0)
+# UAE equities trade MONDAY-THURSDAY, not Mon-Fri. Our bar source has
+    # ZERO Friday bars in 206 bars spanning a full year (2025-10-14..2026-10-14),
+    # against 50-53 bars for each of Mon/Tue/Wed/Thu. Found 2026-10-14. Until then
+    # this said weekday() <= 4, so every Friday the dashboard told the user the
+    # market was OPEN while it was shut. The fix is right whether the market is
+    # closed on Fridays or the source merely omits them: either way we have no
+    # Friday data and must not claim a live session.
+    return dubai.weekday() <= 3 and (10, 0) <= (dubai.hour, dubai.minute) <= (15, 0)
 
 
 def fmt_price(v):
@@ -570,7 +614,7 @@ def render_report(signals, snapshot, alerts):
     lines.append(f"- Data fetched: {snapshot['fetched_at_utc']} UTC")
     lines.append(f"- Report time: {dubai.strftime('%Y-%m-%d %H:%M')} Dubai time")
     lines.append(f"- UAE market (DFM/ADX): {'OPEN' if uae_market_open(now) else 'CLOSED'} "
-                 "(hours Mon–Fri 10:00–15:00 Dubai)")
+                 "(hours Mon–Thu 10:00–15:00 Dubai)")
     if snapshot.get("failures"):
         lines.append(f"- Data failures this run: {', '.join(snapshot['failures'])}")
     lines.append("")

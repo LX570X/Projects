@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-13T07:30+00:00",
+ "updated": "2026-10-14T07:30+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": 0,
@@ -223,10 +223,17 @@
     "what_happens_on_oct_15": "The backstop was written as 'deploy into the then-strongest qualifying name'. On this board there is no qualifying name, so there is nothing for it to fire into. Under the expiry clause the 309 AED rolls into the November plan. I want to be clear this is the rule operating as written and not me dodging the date I set: if ANY non-major reaches core 45 with RSI under 70 by Oct 15, the backstop fires and I deploy into it.",
     "the_wait_was_right": "The Oct-1 decision to override a screen on which five names qualified has been vindicated on price as well as signals. From the Oct-1 close to today: LINK 14.468 -> 13.034 (-9.9%), GRAM 1.518 -> 1.379 (-9.2%), LTC 67.33 -> 62.39 (-7.3%), ADA 0.2537 -> 0.2390 (-5.8%), AVAX 11.112 -> 10.513 (-5.4%). Average about -7.5%, or roughly $6 saved on a 309 AED stake. Small money. The point is that the reasoning - that the roll-over had started in the majors and was propagating down - was correct, and the board has now done exactly that.",
     "front_runner": "None. For the first time since the trigger was armed on Oct 1 there is no front-runner to name, which is more informative than any of the four times the name changed."
+   },
+   "trigger_check_2026_10_14": {
+    "condition": "Deploy on the first BTC or ETH MACD BULLISH cross, or Oct 15 regardless.",
+    "result": "NOT MET. Both histograms narrowed for the first time in six sessions - BTC -439.15 from -485.07, ETH -27.90 from -30.22 - but both remain firmly negative and neither has crossed. One session of narrowing is not a turn and I am not treating it as one.",
+    "days_to_backstop": 1,
+    "qualifying_candidates": "STILL NONE. The rule needs CORE >= 45 with RSI < 70 on a non-BTC/ETH name. The highest core on that board is 35, shared by ADA, AVAX, LINK and LTC. BNB fell out of the BUY band today. Nothing is within ten points of qualifying.",
+    "tomorrow": "The backstop date is 2026-10-15. Unless a non-major reaches core 45 with RSI under 70 on tomorrow's reading, there is no qualifying name for it to fire into and the 309 AED rolls into the November plan under the expiry clause. I will state the outcome explicitly tomorrow either way rather than letting the date pass silently."
    }
   },
   "opportunity_status": {
-   "as_of": "2026-10-13",
+   "as_of": "2026-10-14",
    "state": "DEPLOYED (instruction issued 2026-09-20) - fill UNCONFIRMED",
    "what_happened": "BTC rated STRONG BUY (50, core 50) on two consecutive readings - Friday's close of 80,883.87 and Saturday's 81,249.99. That satisfies the 2-day rule. First confirmation in FOUR armings of this trigger (Aug 3 BTC, Aug 15 AVAX, Sept 5-6 BTC all failed to confirm).",
    "instruction": {
@@ -251,15 +258,14 @@
    "position_now": {
     "indicative_qty": 0.00169464,
     "entry": 80340.01,
-    "last": 83698.01,
-    "value_usd": 141.84,
-    "pnl_pct": 4.18,
+    "last": 83584.38,
+    "value_usd": 141.65,
+    "pnl_pct": 4.04,
     "stop": 79304.74,
     "trigger": "ONE daily CLOSE below 79,304.74 -> convert ALL back to USDT",
-    "stop_note": "Stop UNCHANGED at 79,304.74. The trail computes 75,478.64 from Monday's 81,850.00 close - 1.80 ATR BELOW the existing stop, so the never-lowered rule holds it where it is. The trail has gone from +0.31 ATR above the stop on Oct 7 to 1.80 ATR below it: the cushion the trail was building through late September has been given back entirely.",
-    "stop_distance_pct": -5.25,
-    "signal_note": "BTC -0.60% to 83,698.01, band unchanged at BUY 35 for a third session, still ABOVE its 50-day (81,140.84). It is now the only one of the book's two lines left standing, and the only major that did not break trend today. But its MACD histogram is -485.07, deeper again from -308.46 on Oct 7 and by far the worst of this episode.",
-    "role_change": "With ETH exited, BTC is the entire remaining crypto exposure - and its fill has never been confirmed. The confirmed book after today's instruction is cash."
+    "stop_note": "Stop UNCHANGED at 79,304.74. The trail computes 77,151.36 from Monday's 83,169.00 close, 1.07 ATR BELOW the existing stop, so the never-lowered rule holds it. The trail has recovered from 1.80 ATR below the stop yesterday to 1.07 ATR below - closing the gap but still nowhere near re-arming.",
+    "stop_distance_pct": -5.12,
+    "signal_note": "BTC -0.14% to 83,584.38, band unchanged at BUY 35 for a fourth session, still above its 50-day (81,231.16). It is the only line in the book and the only major holding its trend. Its MACD histogram improved to -439.15 from -485.07 - the FIRST narrowing in six sessions, and ETH's narrowed too (-27.90 from -30.22). ONE session. I have over-extrapolated a two-session direction three times in the last month and will not do it on one."
    },
    "band_churn_note": {
     "as_of": "2026-10-06",
@@ -538,7 +544,9 @@
   "execution": "INSTRUCTED 2026-10-13, execution NOT yet confirmed",
   "proceeds_usd_if_full_line": 92.08,
   "proceeds_usd_if_aug20_trim_was_taken": 23.02,
-  "do_not": "Do NOT roll it into another coin. USDT, and it stays there - no deploy trigger is armed and five of eleven cryptos just lost their 50-day."
+  "do_not": "Do NOT roll it into another coin. USDT, and it stays there - no deploy trigger is armed and five of eleven cryptos just lost their 50-day.",
+  "still_outstanding_as_of": "2026-10-14",
+  "note_2026_10_14": "Instruction UNCHANGED and still unconfirmed. ETH is 2,507.84 today, so the 2,529.63 exit is 0.87% ahead one day on. Recording that once, here, and NOT re-narrating it daily - same policy set for the LINK exit on 2026-09-25. It goes back into a written summary at the monthly review, or sooner if it changes character rather than just size."
  },
  "eth_exit": {
   "date": "2026-10-13",
@@ -581,5 +589,57 @@
   "why_it_happened": "The stop lives in three places on the holding - stop, action_required.stop and the prose inside plan - and the Sept-19 raise updated the first two. A number duplicated in prose does not get maintained.",
   "fixed": "The stale string is corrected in today's output and holdings is now empty, so it cannot recur on this line. The structural lesson is the duplication: trailing_stop_rule should be read off the stop field alone and prose should not restate levels.",
   "not_consequential_to_any_decision": "Every stop decision in the record was computed against 2,449.83, including today's exit. No trade or instruction used 2,316.48. The harm was that the user was shown two different stops for the same position for over three weeks."
+ },
+ "engine_fix_2026_10_14": {
+  "found": "Both of today's band changes were artefacts of the same mechanism, in opposite directions.",
+  "mechanism": "resolve_states() debounces trend_state with a 0.5% buffer around the 50-day average, so a hairline cross raises no trend alert. The SCORING has no buffer: the price-vs-50-day term is the largest single component at +/-25 and flips the instant price crosses. A cross of a tenth of a percent therefore moves the score 50 points and fires a band-change alert that the trend logic deliberately suppressed.",
+  "todays_two_cases": {
+   "BNBUSDT": "BUY 35 -> HOLD -15 while sitting 0.14% BELOW its 50-day (743.35 against 744.38).",
+   "ADCB": "SELL -25 -> BUY 25 while sitting 0.42% ABOVE its own (15.92 against 15.85). Opposite direction, same mechanism, on a +1.02% day."
+  },
+  "adcb_was_caught_by_a_different_guard": "ADCB produced NO alert at all, because the anti-whipsaw rule saw BUY (Oct 12) -> SELL (Oct 13) -> BUY (Oct 14) and suppressed the repeat. That guard, added for exactly this, earned its keep today and independently confirms the move is churn.",
+  "fix_made": "Added _hairline_note(), which labels a band-change alert when the 50-day term flipped and price is inside the 0.5% buffer. This changes alert WORDING only. It is the same pattern as _stretch_note, which labels a band change caused only by the RSI/Bollinger term.",
+  "fix_not_made_deliberately": "I did NOT add a deadband to the scoring's trend term. It would reprice the entire board and break comparability with 90 days of recorded scores, and that is not a change to make unilaterally mid-cycle. Proposed below with a measurement instead."
+ },
+ "deadband_asymmetry_proposal": {
+  "raised": "2026-10-14",
+  "observation": "The scoring protects its SMALLER term and not its larger one. The 20/50 structure term (+/-15) is gated by MA_DEADBAND so it is not scored when the averages are within 0.5% of each other. The price-vs-50-day trend term (+/-25) has no gate at all.",
+  "measurement": {
+   "method": "For the 20 instruments that supply bar history, over the last 180 completed days each (3,360 observations), counted how often the close sits within +/-0.5% of its own 50-day average, and what share of 50-day SIDE CHANGES land inside that buffer.",
+   "in_buffer": "192 of 3,360 observations = 5.7%",
+   "side_changes": 219,
+   "hairline_side_changes": 76,
+   "hairline_share": "35% - roughly one in three 50-day crosses is a hairline the trend debounce suppresses while the score acts on it at full +/-25.",
+   "worst_offenders": "DIB 57%, XRP 56%, BNB 55%, TECOM 52%. The measurement independently fingers the names I had already muted for band churn by eye - TECOM, DEWA and TALABAT - which is the strongest evidence that this is the mechanism behind that churn rather than a separate problem.",
+   "cleanest": "ETH: 1 of 180 observations in the buffer (0.6%) and 0 of 3 crosses hairline. Its cross on 2026-10-13 was decisive, which is worth knowing given it triggered the exit."
+  },
+  "proposal": "Gate the trend term the same way the structure term is gated: when |close/sma50 - 1| < MA_DEADBAND, do not score it and say 'price within 0.5% of the 50-day - no trend edge (not scored)'. That would make a hairline cross worth 0 rather than a 50-point swing, and would align the score with the trend_state buffer that already exists.",
+  "cost_of_the_change": "It would reprice every historical score, so comparisons against the 90-day record would break unless the record is annotated. It would also mute some genuine early crosses - ETH's 2026-10-13 cross was 1.08% clear so it would still have scored, but a slower roll-over might score 0 for a few sessions before confirming.",
+  "status": "NOT IMPLEMENTED. Recorded with its measurement so the decision rests on 219 observed crosses rather than on today's two anecdotes. This is a design change to make deliberately, at a review, not inside a daily cycle."
+ },
+ "uae_calendar_error_2026_10_14": {
+  "found": "2026-10-14",
+  "error": "UAE equities trade MONDAY-THURSDAY. This system has said Mon-Fri since it was built on 2026-07-17 - in ADVISOR.md, in the engine's market-hours helper, and on the dashboard.",
+  "evidence": "Our bar source returns 206 daily bars for the DFM names spanning a full year (2025-10-14 to 2026-10-14) with the weekday distribution Mon 50, Tue 52, Wed 53, Thu 51 and FRIDAY ZERO. Not one Friday bar in a year, and no Sat/Sun either. 206 bars over 52 weeks is 3.96 sessions a week.",
+  "user_visible_consequence": "The dashboard computed open_uae with weekday() <= 4, so EVERY FRIDAY for 89 days it displayed 'UAE market OPEN (Mon-Fri 10:00-15:00 Dubai)' while the market was shut. Roughly 12 Fridays.",
+  "second_consequence": "On a Thursday my advice said 'prepare for next open' meaning Friday. The next open is MONDAY. Any Thursday-evening framing of timing in the last three months was off by three days.",
+  "fixed": "engine.py and build_dashboard.py now use weekday() <= 3, the dashboard pill reads Mon-Thu, and ADVISOR.md records that a Thursday's next open is Monday.",
+  "epistemic_note": "I cannot distinguish 'the market is closed on Fridays' from 'our source omits Fridays' - the TradingView-sourced ADX names supply no bar history at all, so there is no second source to check against. The fix is correct under BOTH readings: either way we hold no Friday data and must not claim a live session. Stating that rather than asserting the exchange calendar as settled fact."
+ },
+ "uae_data_lag_2026_10_14": {
+  "found": "2026-10-14",
+  "issue": "The Yahoo UAE series publishes the most recent completed session LATE, by about a day.",
+  "evidence": "Yesterday's 07:09 UTC snapshot held bars ending 10-08 then 10-13 (the in-progress bar) - Monday 10-12 was ABSENT. Today's snapshot holds 10-08, 10-12 and 10-14, and Tuesday 10-13 is now the one absent. Monday's bar materialised a day after Monday.",
+  "consequence_for_averages": "UAE sma20/sma50 are therefore computed over a series missing the latest one or two sessions. Combined with the four-day week, the last 50 UAE bars span 86 calendar days against roughly 70 for a clean five-day 50-session window - the window reaches about 23% further back in time than the crypto equivalent. In a falling market that biases the average toward older, higher prices and makes price look MORE below its average than it is. That plausibly contributed to how extreme yesterday's UAE reading was.",
+  "consequence_for_stops": "This bites the fix I made yesterday. last_completed_close() returns the newest bar dated before today, which for a UAE name can be a TWO-session-old close. If a UAE position is ever opened, its stop would be tested against a stale close. Added to the limitation already recorded for the ADX/TradingView names, which have no bars at all and fall back to the live tick.",
+  "not_fixed": "No code change. The honest options are to carry the lag or to stop rating UAE names until their bar settles, and the second is worse - it would blind the board for a day at a time. Recorded so the averages are read with it in mind."
+ },
+ "yesterdays_uae_claim_revisited": {
+  "as_of": "2026-10-14",
+  "what_i_said": "On 2026-10-13 I led with 'eleven 50-day trend breaks in one session across two asset classes' and called it the broadest single-session deterioration this book has recorded.",
+  "how_it_holds_up": "The CRYPTO half holds: ETH, SOL, XRP, DOGE and GRAM all have full auditable bar history and all five remain below their 50-days today. The UAE half is weaker than I presented it. Four of the five - ADCB, EAND, ADNOCGAS, ADIB - come from the TradingView path, which supplies a precomputed sma50 I cannot audit and no bars to recompute from. Only EMIRATESNBD was independently checkable.",
+  "and_one_has_already_reversed": "ADCB is back above its 50-day today and rated BUY 25, one session after I reported it as a trend break. Its band went BUY -> SELL -> BUY in three readings and the anti-whipsaw guard correctly suppressed the third.",
+  "correction": "The count of eleven was what the engine reported and I am not revising the number, but 'eleven trend breaks' overstated the evidence: five were solid, one was checkable, and four rested on an unauditable precomputed average. I should have said so at the time. This is the same lesson as 2026-10-03 - a reading taken on one session, from one source, is not a confirmed regime change.",
+  "what_does_hold": "The conclusion drawn from it does not depend on the weak half: there is nothing on the board worth deploying into. That was true on the crypto evidence alone."
  }
 }

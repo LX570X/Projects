@@ -1,7 +1,7 @@
 # Trading Advisor — Signal Report
 
 - Data fetched: 2026-10-14T07:09:04+00:00 UTC
-- Report time: 2026-10-14 11:09 Dubai time
+- Report time: 2026-10-14 11:12 Dubai time
 - UAE market (DFM/ADX): OPEN (hours Mon–Fri 10:00–15:00 Dubai)
 
 > Educational, rules-based technical screen — not licensed financial advice. Markets can move against any signal; never risk money you cannot afford to lose.
@@ -79,7 +79,7 @@
 **IHC** — STRONG SELL (score -65): price below 50-day average (368.7) — downtrend; 20-day avg below 50-day avg (bearish structure); MACD momentum negative; RSI 35 neutral; TradingView technical consensus bearish.
 
 ## Alerts (changes since previous run)
-- [info] BNBUSDT: BUY -> HOLD (score 35 -> -15)
+- [info] BNBUSDT: BUY -> HOLD (score 35 -> -15) - HAIRLINE 50-day cross: price is only 0.14% below the average, inside the 0.5% buffer, so no trend change was confirmed
 - [info] TALABAT moved +3.8% in the last day (now 1.09 AED)
 - [actionable] EMAARDEV: STRONG SELL -> SELL (score -50 -> -35)
 

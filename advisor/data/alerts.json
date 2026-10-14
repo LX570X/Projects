@@ -1,11 +1,11 @@
 {
- "generated_at_utc": "2026-10-14T07:09:05+00:00",
+ "generated_at_utc": "2026-10-14T07:12:14+00:00",
  "alerts": [
   {
    "ticker": "BNBUSDT",
    "severity": "info",
    "type": "signal_change",
-   "msg": "BNBUSDT: BUY -> HOLD (score 35 -> -15)"
+   "msg": "BNBUSDT: BUY -> HOLD (score 35 -> -15) - HAIRLINE 50-day cross: price is only 0.14% below the average, inside the 0.5% buffer, so no trend change was confirmed"
   },
   {
    "ticker": "TALABAT",

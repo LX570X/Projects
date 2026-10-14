@@ -26,7 +26,9 @@ This file is the operating procedure for the hourly advisor routine
    - a big move: |24h| ≥ 4% crypto, |1d| ≥ 2.5% UAE stock
    Keep it under 200 chars, lead with ticker + action.
    Otherwise stay silent — no noise.
-6. UAE market hours are Mon–Fri 10:00–15:00 Dubai (UTC+4). Outside these
+6. UAE market hours are Mon–Thu 10:00–15:00 Dubai (UTC+4) — the board has NO
+   Friday session (zero Friday bars in a full year of data, confirmed 2026-10-14),
+   so on a Thursday the next open is MONDAY. Outside these
    hours stock advice is "prepare for next open", not "act now".
    Crypto is 24/7 — always actionable.
 
