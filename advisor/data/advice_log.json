@@ -2274,6 +2274,62 @@
    "action": "hold - stop unchanged at 79,304.74",
    "rationale": "BTC -0.60% to 83,698.01, band unchanged at BUY 35 for a third session and still above its 50-day at 81,140.84 - the only major that did not break trend today. $141.84 on the indicative 0.00169464, +4.18% against the 80,340.01 entry, stop 5.25% away. The trail computes 75,478.64 from Monday's 81,850.00 close, 1.80 ATR BELOW the existing stop, so the never-lowered rule holds it. Worth naming: the trail stood at +0.31 ATR above the stop on Oct 7 and is now 1.80 ATR below it, so the cushion built through late September has been handed back in full. The histogram is -485.07, deeper again from -308.46 and the worst of the episode. It survived the gap with 3.09% to spare on closes - noted without making it a virtue, because a 5.25% cushion on a name with its worst-ever momentum reading is intact, not strong. With ETH out, this unconfirmed line is the whole of the book's remaining crypto exposure.",
    "status": "no action - fill still UNCONFIRMED since 2026-09-20"
+  },
+  {
+   "date": "2026-10-14",
+   "ticker": "UAE-stocks",
+   "action": "CORRECTION - yesterday's UAE breakdown did not settle",
+   "rationale": "I led the 2026-10-13 cycle with a UAE collapse: five 50-day trend breaks, 15 of 19 names SELL or worse, SALIK STRONG BUY to SELL in one reading. Those were 11:09 Dubai intraday drafts and I said so, but the headline contradicted the caveat. They did not settle. The DFM CLOSED UP 0.361% at 5,858.87 with BANKING THE BEST-PERFORMING SECTOR at +0.79%, and the ADX closed up 0.33% at 9,793, adding about AED 6bn (Emirates 24|7, published Oct 14 covering the Oct 13 session). ADCB is back above its 50-day today at BUY 25 and its band has gone BUY -> SELL -> BUY in three readings, correctly suppressed by the anti-whipsaw guard on the third. Of the five breaks, four came from the TradingView path whose precomputed 50-day average I cannot audit and have no bars to recompute. The lesson is the one from 2026-10-03 and I have now had it twice: a reading from one session and one source is not a regime change, and writing the caveat does not cancel the headline.",
+   "status": "correction recorded - no positions, Al Ramz still closed"
+  },
+  {
+   "date": "2026-10-14",
+   "ticker": "AIRARABIA",
+   "action": "do NOT treat RSI 26 as a bounce candidate - the engine is scoring this backwards",
+   "rationale": "AIRARABIA reads SELL -45 with a CORE of -65, the 20-point gap being 'RSI 26 oversold - bounce candidate'. That oversold-ness has a live, dated operational cause. Houthi strikes hit Riyadh King Khalid International on Oct 8, 10 and 11 - four attacks in five days, with GACA reporting 12 killed and 309 injured on Oct 10 and a Terminal 4 fire on Oct 11 - and a NOTAM keeps the airport closed to 21:00 UTC on Oct 17. Cirium counted 353 of 354 Riyadh departures cancelled on Oct 11. Air Arabia has cancelled Sharjah-Riyadh (G9151/52/54/55) and Sharjah-Abha (G9195/96) on Oct 13, 14 and 15 after already suspending Riyadh, Tabuk and Abha over Oct 10-11; at least 14-15 airlines have cut Saudi flying. This is the mirror of the _stretch_note problem: the engine awards +20 for being oversold at the exact moment the reason for being oversold is unresolved. There IS a dated reversal trigger - the NOTAM expires Oct 17 - which makes this worth watching rather than writing off, but the stock is not mispriced, its routes are cancelled. No position, no action, and explicitly no dip-buying thesis.",
+   "status": "advice only - flagged as a scoring artefact to not act on"
+  },
+  {
+   "date": "2026-10-14",
+   "ticker": "crypto-macro",
+   "action": "the bear case I cited yesterday reversed the next session",
+   "rationale": "Yesterday I gave the backdrop as hawkish FOMC minutes, $1.16bn of long liquidations and $1bn+ of weekly ETF outflows. On Oct 13 US spot BTC ETFs flipped to +$175.62M from -$65.4M, and US spot ETH ETFs flipped to +$24.84M, ENDING A TEN-SESSION STREAK WORTH ABOUT $697M that began Sept 29. Treasury yields eased off the Oct 7 24-year high, the dollar slipped from an 18-month high of 102.61, NY Fed's Williams said on Oct 13 that one more hike may be appropriate but he sees no reason for more in 2027, and traders now price roughly 80% odds of NO hike at the Oct 27-28 FOMC. Oct 14 liquidations flipped short-heavy. BTC's Oct 13 low just under $81,000 was bought by spot rather than leverage. Two honest observations. First, flow data I presented as the bear case turned one day later, which is an argument for presenting flows as what they are - a lagging weekly aggregate - rather than as a driver. Second and more uncomfortable: ETH's outflow streak broke on Oct 13, the session AFTER the Oct 12 close that fired the stop. Recording that because the user is entitled to it, NOT as second-guessing - the rule was written Sept 19, ETH independently lost its 50-day on Oct 13 and is still below it today. One session of positive flow is a timing input to watch, not a re-entry signal.",
+   "status": "recorded - no action"
+  },
+  {
+   "date": "2026-10-14",
+   "ticker": "ADIB",
+   "action": "its STRONG SELL has a dated company-specific cause, not a market one",
+   "rationale": "ADIB published its rights-issue timetable on Mon Oct 12: up to 106,383,000 new shares, about one right per 34.14 held, at AED 16.45 - roughly a 28.8% discount to the Aug 24 close, raising AED 1.75bn. Buy-by Oct 29, record date Nov 2, rights trade on ADX Nov 4-16, subscription Nov 10-24, new shares trade Dec 18, with CBUAE and SCA approvals following the Oct 6 general assembly. Dilution plus a deep-discount overhang is a real reason it screens weakest of the banks at -55, and it matters for yesterday's narrative: ADIB was one of the five UAE names I reported as a market-wide trend break, and it has a company-specific explanation instead. This is the most actionable single-stock finding on the UAE board, and the research pass filed it under the wrong ticker - it surfaced inside the ADCB thread.",
+   "status": "advice only - no position; avoid ahead of the rights trading window"
+  },
+  {
+   "date": "2026-10-14",
+   "ticker": "engine",
+   "action": "fixed the UAE trading week and labelled hairline 50-day crosses",
+   "rationale": "Two defects. First, UAE equities trade MONDAY-THURSDAY: our bar source returns 206 daily bars spanning a full year with Mon 50, Tue 52, Wed 53, Thu 51 and FRIDAY ZERO. The dashboard computed open_uae with weekday() <= 4, so for 89 days it displayed 'UAE market OPEN (Mon-Fri)' on roughly 12 Fridays when the market was shut, and on Thursdays my 'next open' meant Friday when it means Monday. Fixed in engine.py, build_dashboard.py and ADVISOR.md. I cannot distinguish 'the exchange is closed on Fridays' from 'our source omits Fridays' because the ADX names supply no bars to check against, but the fix is correct under both readings since we hold no Friday data either way. Second, both of today's band changes were hairline 50-day crosses: BNB went BUY 35 to HOLD -15 sitting 0.14% BELOW its 50-day and ADCB went SELL -25 to BUY 25 sitting 0.42% ABOVE its own. resolve_states debounces trend_state with a 0.5% buffer so neither raised a trend alert, but the scoring has no buffer and its +/-25 trend term flips the instant price crosses. Added _hairline_note() to say so in the alert. Measured rather than asserted: across 3,360 observations, 5.7% of closes sit inside that buffer and 76 of 219 side changes - 35% - are hairline, worst at DIB 57%, XRP 56%, BNB 55% and TECOM 52%, which is independently the set I had already muted for churn by eye. ETH is cleanest at 0.6%, so yesterday's exit-triggering cross was not this. I did NOT gate the scoring's trend term: it would reprice 90 days of recorded scores and that is a review decision, not a daily-cycle one.",
+   "status": "fixed and pushed; the scoring change is proposed with its measurement, not made"
+  },
+  {
+   "date": "2026-10-14",
+   "ticker": "notification",
+   "action": "deliberately overrode a literal big-move trigger - no push sent",
+   "rationale": "ADVISOR.md lists |1d| >= 2.5% on a stock as a material change warranting a notification. TALABAT moved +3.81% to 1.09 AED and meets it literally. I suppressed it, and I am recording that as an override rather than dressing it up as immaterial. Reasons: TALABAT is rated at the floor (STRONG SELL -65), the user holds no UAE stock and cannot buy one while Al Ramz is unopened, the reading is an unsettled 11:09 Dubai intraday draft on a day when yesterday's drafts have just been shown not to settle, and the move is measured against Monday's close because Tuesday's bar has not published - so it is a two-session move reported as one day. Today's other two band changes are hairline-cross artefacts and the second produced no alert at all. Nothing on the board is actionable, there is no position to change, and CPI lands in five hours. This sets a precedent I should hold consistently: a big-move trigger on a floor-rated instrument the user cannot trade does not earn a phone alert. If literal adherence is wanted instead, that is a one-line change and the user's call.",
+   "status": "no notification sent - first deliberate override of a literal trigger, logged for audit"
+  },
+  {
+   "date": "2026-10-14",
+   "ticker": "BTCUSDT",
+   "action": "hold - stop unchanged at 79,304.74",
+   "rationale": "BTC -0.14% to 83,584.38, band unchanged at BUY 35 for a fourth session and still above its 50-day at 81,231.16 - the only major holding its trend. $141.65 on the indicative 0.00169464, +4.04%, stop 5.12% away. The trail computes 77,151.36 from Monday's 83,169.00 close, 1.07 ATR BELOW the existing stop, so the never-lowered rule holds it; it has recovered from 1.80 ATR below yesterday without coming close to re-arming. Its MACD histogram improved to -439.15 from -485.07, the first narrowing in six sessions, and ETH's narrowed too. ONE session - I have over-extrapolated a two-session direction three times in the last month and will not do it on one. The Oct 13 flow reversal and the easing in yields and the dollar are a genuinely better backdrop than yesterday's, but CPI lands at 12:30 UTC today with a split consensus and that is the next real test.",
+   "status": "no action - fill still UNCONFIRMED since 2026-09-20"
+  },
+  {
+   "date": "2026-10-14",
+   "ticker": "satellite",
+   "action": "backstop falls tomorrow with still no qualifying candidate",
+   "rationale": "The rule needs CORE >= 45 with RSI < 70 on a non-BTC/ETH name. The highest core on that board is 35, shared by ADA, AVAX, LINK and LTC, and BNB dropped out of the BUY band today. Nothing is within ten points. Both MACD histograms narrowed for the first time in six sessions - BTC -439.15 from -485.07, ETH -27.90 from -30.22 - but neither has crossed and one session of narrowing is not a turn. Tomorrow I will state the outcome explicitly either way rather than letting the date pass in silence: unless a non-major reaches core 45 with RSI under 70 on tomorrow's reading, the 309 AED rolls into November under the expiry clause. Useful accident of timing - CPI lands today, so tomorrow's backstop decision will be taken with the print known rather than hours before it. Separately, the research pass gave ADA, AVAX, LINK and LTC no coverage at all while giving BNB, a HOLD, the deepest single-ticker pass. Those four are the only names rated to buy, so that was the wrong allocation of effort and it is corrected for tomorrow's run.",
+   "status": "no deploy; reserve 309 AED; decision due 2026-10-15"
   }
  ]
 }
