@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-14T07:30+00:00",
+ "updated": "2026-10-15T07:30+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": 0,
@@ -161,9 +161,9 @@
    }
   ],
   "satellite_candidate": {
-   "as_of": "2026-09-22",
+   "as_of": "2026-10-15",
    "ticker": null,
-   "status": "NO CANDIDATE - reserve uninvested",
+   "status": "BACKSTOP DATE REACHED AND NOT FIRED - reserve rolls to November",
    "avax_note": "AVAX fell 4.39% today to 10.699 and is back at STRONG BUY (45, core 65) after yesterday's lapse. The lapse was right: not buying at RSI 81.9 saved 4.39% in one session, and RSI is still 74.2. I am NOT resurrecting the candidate 24 hours after closing it. Re-opening a position decision the day after a rule closed it is the same flip-flop the rule exists to prevent, whichever direction it points. AVAX is excluded from satellite consideration until 2026-09-28 as a cooling-off.",
    "selection_rule": "Any new satellite candidate must have CORE score at or above 45 AND RSI below 70 at the moment of selection - the corrected wording adopted 2026-09-21.",
    "why_nothing_today": "Ten of eleven cryptos rate STRONG BUY, so the constraint is not a shortage of candidates - it is that every one of them is extended after a four-session vertical move, and the reserve is 209 AED (about $57). Adding a third small position at the top of a run, on the same day both existing stops ratchet, is activity rather than edge.",
@@ -230,10 +230,34 @@
     "days_to_backstop": 1,
     "qualifying_candidates": "STILL NONE. The rule needs CORE >= 45 with RSI < 70 on a non-BTC/ETH name. The highest core on that board is 35, shared by ADA, AVAX, LINK and LTC. BNB fell out of the BUY band today. Nothing is within ten points of qualifying.",
     "tomorrow": "The backstop date is 2026-10-15. Unless a non-major reaches core 45 with RSI under 70 on tomorrow's reading, there is no qualifying name for it to fire into and the 309 AED rolls into the November plan under the expiry clause. I will state the outcome explicitly tomorrow either way rather than letting the date pass silently."
+   },
+   "BACKSTOP_RESOLUTION_2026_10_15": {
+    "the_condition": "Armed 2026-10-01 as a BOUNDED_TRIGGER: deploy 309 AED on the first BTC or ETH MACD BULLISH cross, or on 2026-10-15 regardless, into the then-strongest qualifying name. Qualifying means CORE score >= 45 AND RSI < 70 on a non-BTC/ETH alt.",
+    "macd_leg": "NOT MET. BTC's histogram is -613.72, its deepest reading of the entire episode, and ETH's is -36.38, also the deepest. Both moved sharply FURTHER from crossing today. Yesterday both narrowed for one session and I said explicitly that one session was not a turn; it was not.",
+    "date_leg_outcome": "THE DATE ARRIVED AND THERE IS NO QUALIFYING NAME. The whole non-BTC/ETH board: AVAX core 35, then ADA, BNB, LTC at -5 and DOGE, GRAM, LINK, SOL, XRP at -15. The highest core on the board is 35 against a 45 minimum, and ten of the eleven tracked coins are now BELOW their 50-day averages. Nothing qualifies - not marginally, not arguably.",
+    "resolution": "The backstop does NOT fire. Under the expiry clause the 309 AED rolls into the November plan rather than sitting as a permanent open order. Stating this explicitly on the date, as promised on 2026-10-13 and again on 2026-10-14, rather than letting the date pass in silence.",
+    "is_this_a_dodge": "No, and the test is that the rule's own wording decided it, not me. The backstop said 'deploy into the then-strongest QUALIFYING name'. Had any alt held core 45 today I would have deployed into it on a board I think is ugly, because that is what the trigger said. None did. What the date actually bought was protection against my own indecision - the front-runner changed four times in five days (LINK, GRAM, ADA, GRAM again) and the date stopped that from running forever.",
+    "what_the_wait_saved": {
+     "method": "Oct 1 close to today's reading, for the five names that screened as qualifying candidates on Oct 1 when I overrode the screen and waited.",
+     "LINK": "14.468 -> 12.057 = -16.66%",
+     "GRAM": "1.518 -> 1.340 = -11.73%",
+     "LTC": "67.33 -> 58.00 = -13.86%",
+     "ADA": "0.2537 -> 0.2206 = -13.05%",
+     "AVAX": "11.112 -> 9.549 = -14.07%",
+     "mean": "-13.87%",
+     "on_the_stake": "309 AED is about $84.14, so the wait avoided roughly $11.72 of drawdown.",
+     "honest_scale": "Twelve dollars. The decision was right and the money is trivial, and I would rather say that than inflate a $12 outcome into a vindication. What it does establish is that the REASONING held up - on Oct 1 I said the roll-over had started in the majors and was propagating downward, and the board has now done exactly that, with ten of eleven coins below their 50-days."
+    },
+    "november": "The reserve becomes 409 AED on 2026-11-01 when the next 100 AED lands. I am NOT re-arming a date-bounded trigger today: the condition that made a bounded trigger sensible was a board full of qualifying candidates I was hesitating over, and there are now none. The satellite rule reverts to its standing form - deploy into the strongest non-BTC/ETH alt at core >= 45 with RSI < 70, whenever one appears, always with a stop."
+   },
+   "trigger_check_2026_10_15": {
+    "condition": "Deploy on the first BTC or ETH MACD BULLISH cross, or Oct 15 regardless.",
+    "result": "RESOLVED - see BACKSTOP_RESOLUTION_2026_10_15. Not fired, reserve rolls to November.",
+    "days_to_backstop": 0
    }
   },
   "opportunity_status": {
-   "as_of": "2026-10-14",
+   "as_of": "2026-10-15",
    "state": "DEPLOYED (instruction issued 2026-09-20) - fill UNCONFIRMED",
    "what_happened": "BTC rated STRONG BUY (50, core 50) on two consecutive readings - Friday's close of 80,883.87 and Saturday's 81,249.99. That satisfies the 2-day rule. First confirmation in FOUR armings of this trigger (Aug 3 BTC, Aug 15 AVAX, Sept 5-6 BTC all failed to confirm).",
    "instruction": {
@@ -258,14 +282,19 @@
    "position_now": {
     "indicative_qty": 0.00169464,
     "entry": 80340.01,
-    "last": 83584.38,
-    "value_usd": 141.65,
-    "pnl_pct": 4.04,
+    "last": 80944.01,
+    "value_usd": 137.17,
+    "pnl_pct": 0.75,
     "stop": 79304.74,
     "trigger": "ONE daily CLOSE below 79,304.74 -> convert ALL back to USDT",
-    "stop_note": "Stop UNCHANGED at 79,304.74. The trail computes 77,151.36 from Monday's 83,169.00 close, 1.07 ATR BELOW the existing stop, so the never-lowered rule holds it. The trail has recovered from 1.80 ATR below the stop yesterday to 1.07 ATR below - closing the gap but still nowhere near re-arming.",
-    "stop_distance_pct": -5.12,
-    "signal_note": "BTC -0.14% to 83,584.38, band unchanged at BUY 35 for a fourth session, still above its 50-day (81,231.16). It is the only line in the book and the only major holding its trend. Its MACD histogram improved to -439.15 from -485.07 - the FIRST narrowing in six sessions, and ETH's narrowed too (-27.90 from -30.22). ONE session. I have over-extrapolated a two-session direction three times in the last month and will not do it on one."
+    "stop_hit": false,
+    "stop_not_hit_detail": "The triggering basis is the last COMPLETED daily close, which is Wednesday 2026-10-14 at 81,682.01 - still 3.00% ABOVE the stop. Today's intraday low of 80,226.35 did not breach it either, clearing it by 1.16%. No action.",
+    "stop_distance_pct": -2.03,
+    "CUSHION_COMPRESSION": "The cushion against SPOT has gone from -5.12% yesterday to -2.03% today, a 3.1-point narrowing in one session on a -3.12% move. That is the sharpest single-session compression this position has had. Arithmetic, not forecast: a close below 79,304.74 requires a further 2.03% fall from here, and today's range has already been 1.7%.",
+    "stop_note": "Stop UNCHANGED at 79,304.74. The trail computes 75,334.74 from Wednesday's close, 1.88 ATR BELOW the existing stop, so the never-lowered rule holds it. The trail is now FURTHER below the stop than yesterday (1.88 ATR against 1.07), because the close it is computed from fell.",
+    "signal_note": "BTC -3.12% to 80,944.01, band BUY 35 -> HOLD -15. But read that band change carefully: it is a HAIRLINE 50-day cross, 0.354% below the average and inside the 0.5% buffer, so trend_state did NOT flip and no trend change is confirmed. The _hairline_note added yesterday labelled it automatically. The -3.12% move is entirely real; the band change is the +/-25 trend term flipping on a third of a percent. Its MACD histogram at -613.72 is the deepest of the episode.",
+    "gain_nearly_gone": "+0.75% against +4.04% yesterday and +4.75% on Oct 7. The position has given back essentially all of its gain and is now a roughly flat line with a stop 2% away.",
+    "role": "Still the only crypto line in the book, and still UNCONFIRMED 25 days after the 2026-09-20 instruction. If this stop fires I will be issuing an exit on a position I have never been able to verify exists."
    },
    "band_churn_note": {
     "as_of": "2026-10-06",
@@ -443,17 +472,18 @@
   "not_retroactive": "Does not apply to the AVAX candidate that lapsed on 2026-09-21."
  },
  "inaction_note": {
-  "as_of": "2026-10-13",
-  "count": "Streak broken at fourteen sessions. The last instruction this book issued was the BTC deploy on 2026-09-20; before today, every cycle since had computed 'leave it alone'.",
-  "why_it_matters": "The system produced one action in twenty-three days and that action was triggered by a rule written a month earlier, not by a judgement made today. That is the design working. The failure mode it guards against is the one this book had in August, when stops were re-derived from scratch every session and drifted."
+  "as_of": "2026-10-15",
+  "count": "No new instruction today. The last one was the ETH exit on 2026-10-13, which is still unconfirmed.",
+  "why_it_matters": "On a day when every asset on the crypto board fell and four names confirmed trend breaks, the system produced no trade. That is the design: the BTC stop is a single daily close below a fixed level and that level was not touched, and the satellite trigger needed a qualifying name and there was none. Both outcomes were computed, not decided."
  },
  "book_signal_state": {
-  "as_of": "2026-10-13",
-  "summary": "A regime change, not a bad day. FIVE of eleven cryptos lost their 50-day averages in one reading - ETH, SOL, XRP, DOGE and GRAM - and the UAE board lost five more: EMIRATESNBD, ADCB, EAND, ADNOCGAS and ADIB. Eleven 50-day trend breaks across two asset classes in a single session is the broadest deterioration this book has recorded.",
-  "crypto": "Not one name on the crypto board is rated above BUY 35. On Sept 24 ten of eleven were STRONG BUY. Every MACD histogram on the board is negative. The six still above their 50-days - BTC, ADA, AVAX, BNB, LINK, LTC - are all at exactly 35, which is the trend-plus-structure score with momentum subtracted; they are holding their averages and nothing more.",
-  "uae": "Worse. Fifteen of nineteen names are SELL or STRONG SELL, six at -65. FAB went SELL -> STRONG SELL at -55. SALIK went STRONG BUY 45 -> SELL -35 in one reading, its fifth band regime in twenty sessions. Only DU (BUY 30), ADPORTS and ALDAR (BUY 25) are still rated to buy, and ALDAR lost STRONG BUY today.",
-  "honest_reading": "The book exited its one confirmed position into this, which looks prescient and was not - the stop fired on a mechanical rule set on 2026-09-19, and the trend break arrived the same day by coincidence of timing, not foresight. What the board does say is that there is nothing to redeploy into. That is a conclusion I would have reached today regardless of the stop.",
-  "uae_caveat": "All UAE readings are Tuesday 11:09 Dubai INTRADAY DRAFTS - the market closes at 14:45/15:00 local. Eleven of these have failed by the close in the last month. The five UAE trend breaks are drafts and may not settle."
+  "as_of": "2026-10-15",
+  "summary": "THE CRYPTO BREAKDOWN IS NOW REAL AND BROAD - and unlike the UAE reading two days ago, this one is fully auditable. Ten of eleven tracked coins are below their 50-day averages. Every name on the board fell, seven of them by more than 4%: LINK -6.66%, AVAX -6.52%, ADA -6.41%, LTC -6.25%, ETH -5.87%, DOGE -5.66%, SOL -4.68%, XRP -4.43%, BNB -3.32%, BTC -3.12%, GRAM -2.19%.",
+  "confirmed_trend_breaks": "LINK, ADA, LTC and BNB all crossed below their 50-days by margins OUTSIDE the 0.5% buffer, so these are confirmed trend changes, not artefacts. BTC's cross is a hairline at 0.354% and is NOT confirmed. AVAX is the only coin still genuinely above its average, at +2.83%.",
+  "contrast_with_the_uae_error": "Worth stating the difference explicitly after getting it wrong on 2026-10-13. These are crypto names with full 400-bar histories, 24/7 settled prices, and moves of 3-7% - there is no intraday-draft problem and no unauditable precomputed average. When I said the UAE board had collapsed I was reading 11:09 Dubai drafts that closed higher. This is not that.",
+  "uae": "And the UAE board has gone the OTHER way, which is further evidence the Oct-13 reading was wrong. EMIRATESNBD went SELL -30 -> STRONG BUY +45 on a +2.54% move, crossing above its 50-day by 2.06% with a fresh MACD bullish cross - a 75-point swing and the largest this book has recorded. ADCB also confirmed a cross above its 50-day. Against that, SALIK fell SELL -> STRONG SELL -50, its sixth band regime in about twenty-two sessions.",
+  "honest_reading": "The book is almost entirely in cash and that is now luck as much as judgement. The ETH exit was a mechanical stop, not a forecast, and it happened to land two days before this. I am not going to claim foresight for a rule written on 2026-09-19. What I can say is that the conclusion I have drawn every day since - that there is nothing worth deploying into - has been the right one, and today it is the written rules rather than my judgement that are keeping the money still.",
+  "uae_caveat": "All UAE readings are Thursday 11:09 Dubai intraday DRAFTS against a 14:45/15:00 close, and today is the LAST session of the UAE week - the board does not trade Friday, so the next open is Monday. Given that Tuesday's drafts closed in the opposite direction, EMIRATESNBD's STRONG BUY should be treated as day one of a two-session confirmation, not a signal."
  },
  "bookkeeping_correction": {
   "found": "2026-09-29",
