@@ -1,104 +1,104 @@
 {
- "generated_at_utc": "2026-10-14T07:09:04+00:00",
+ "generated_at_utc": "2026-10-15T07:09:32+00:00",
  "movers": [
   {
-   "symbol": "GNSUSDT",
-   "last": 0.708,
-   "change24h_pct": 93.443,
-   "quote_volume24h": 10379769.47554,
-   "rsi": 77.2,
-   "above_sma20": true,
-   "above_sma50": true,
-   "setup": false
-  },
-  {
-   "symbol": "WALUSDT",
-   "last": 0.05062,
-   "change24h_pct": 30.296,
-   "quote_volume24h": 10311762.49113,
-   "rsi": 74.2,
-   "above_sma20": true,
-   "above_sma50": true,
-   "setup": false
-  },
-  {
-   "symbol": "AVAUSDT",
-   "last": 0.2886,
-   "change24h_pct": 22.081,
-   "quote_volume24h": 6906173.01816,
-   "rsi": 67.8,
-   "above_sma20": true,
-   "above_sma50": true,
-   "setup": false
-  },
-  {
-   "symbol": "WUSDT",
-   "last": 0.01636,
-   "change24h_pct": -15.844,
-   "quote_volume24h": 12002872.291214,
-   "rsi": 55.5,
-   "above_sma20": true,
-   "above_sma50": true,
-   "setup": false
-  },
-  {
-   "symbol": "LUMIAUSDT",
-   "last": 0.0986,
-   "change24h_pct": -15.073,
-   "quote_volume24h": 5067928.082486,
-   "rsi": 54.4,
-   "above_sma20": true,
-   "above_sma50": true,
-   "setup": false
-  },
-  {
-   "symbol": "AMPUSDT",
-   "last": 0.000733,
-   "change24h_pct": 14.89,
-   "quote_volume24h": 10058573.527848,
-   "rsi": 64.2,
-   "above_sma20": true,
-   "above_sma50": true,
-   "setup": true
-  },
-  {
-   "symbol": "BLURUSDT",
-   "last": 0.0107,
-   "change24h_pct": -14.468,
-   "quote_volume24h": 7191650.823522,
-   "rsi": 22.2,
+   "symbol": "EPICUSDT",
+   "last": 0.3091,
+   "change24h_pct": -25.608,
+   "quote_volume24h": 7737199.93555,
+   "rsi": 27.5,
    "above_sma20": false,
    "above_sma50": false,
    "setup": false
   },
   {
-   "symbol": "GTCUSDT",
-   "last": 0.20799,
-   "change24h_pct": -13.869,
-   "quote_volume24h": 7078991.471685,
-   "rsi": 58.9,
+   "symbol": "KORUBUSDT",
+   "last": 10.74,
+   "change24h_pct": -23.667,
+   "quote_volume24h": 20017735.1536,
+   "rsi": 22.7,
+   "above_sma20": false,
+   "above_sma50": false,
+   "setup": false
+  },
+  {
+   "symbol": "CHIPUSDT",
+   "last": 0.04466,
+   "change24h_pct": -21.054,
+   "quote_volume24h": 6064056.92463,
+   "rsi": 44.5,
+   "above_sma20": false,
+   "above_sma50": false,
+   "setup": false
+  },
+  {
+   "symbol": "SOXLBUSDT",
+   "last": 103.94,
+   "change24h_pct": -17.912,
+   "quote_volume24h": 23790666.50667,
+   "rsi": 29.0,
+   "above_sma20": false,
+   "above_sma50": false,
+   "setup": false
+  },
+  {
+   "symbol": "WALUSDT",
+   "last": 0.05819,
+   "change24h_pct": 15.205,
+   "quote_volume24h": 48261839.000501,
+   "rsi": 78.7,
    "above_sma20": true,
    "above_sma50": true,
    "setup": false
   },
   {
-   "symbol": "OGNUSDT",
-   "last": 0.03359,
-   "change24h_pct": -12.617,
-   "quote_volume24h": 12095199.50969,
-   "rsi": 62.2,
-   "above_sma20": true,
+   "symbol": "ZAMAUSDT",
+   "last": 0.06557,
+   "change24h_pct": -15.197,
+   "quote_volume24h": 9304869.83048,
+   "rsi": 41.4,
+   "above_sma20": false,
+   "above_sma50": false,
+   "setup": false
+  },
+  {
+   "symbol": "SNXXBUSDT",
+   "last": 9.75,
+   "change24h_pct": -15.144,
+   "quote_volume24h": 7349668.5124,
+   "rsi": 27.4,
+   "above_sma20": false,
+   "above_sma50": false,
+   "setup": false
+  },
+  {
+   "symbol": "OPUSDT",
+   "last": 0.129,
+   "change24h_pct": -15.132,
+   "quote_volume24h": 16802705.99664,
+   "rsi": 49.6,
+   "above_sma20": false,
    "above_sma50": true,
    "setup": false
   },
   {
-   "symbol": "MAGICUSDT",
-   "last": 0.1114,
-   "change24h_pct": -10.161,
-   "quote_volume24h": 7678717.12224,
-   "rsi": 62.6,
-   "above_sma20": true,
-   "above_sma50": true,
+   "symbol": "PUMPUSDT",
+   "last": 0.004261,
+   "change24h_pct": -15.018,
+   "quote_volume24h": 43108736.666279,
+   "rsi": 39.5,
+   "above_sma20": false,
+   "above_sma50": false,
+   "setup": false
+  },
+  {
+   "symbol": "JTOUSDT",
+   "last": 0.4543,
+   "change24h_pct": -13.893,
+   "quote_volume24h": 5403687.88753,
+   "rsi": 40.9,
+   "above_sma20": false,
+   "above_sma50": false,
    "setup": false
   }
  ]
