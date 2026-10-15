@@ -2365,6 +2365,55 @@
    "action": "push sent - BTC stop proximity",
    "rationale": "Sent, unlike yesterday. The material changes today are numerous and real: seven coins moved more than 4%, four confirmed 50-day trend breaks, EMIRATESNBD moved 75 score points on a +2.54% day, and most importantly the stop on the book's only crypto line went from 5.12% to 2.03% away. Led with BTC and with the fact that NO action is required, because the single most likely misreading of a '2% from the stop' alert is that the user should sell now - and the rule is one daily close below 79,305, nothing else. Deliberately did not wait for the news research to complete: the actionable facts were already established from the price data, and the research only adds why.",
    "status": "sent"
+  },
+  {
+   "date": "2026-10-15",
+   "ticker": "macro",
+   "action": "the selloff has THREE strands and CPI is only one of them",
+   "rationale": "September CPI printed hot on Oct 14: headline +0.6% m/m and 3.7% y/y against 3.6% consensus and 3.4% prior, core +0.3% m/m against +0.2% and 2.6% y/y against 2.5%, with August core at 2.4% so core accelerated 0.2pp. Verified against the BLS release itself. Resolving a disagreement between my own threads: the monthly MOVE was energy-led - gasoline +9.1% m/m was over half the all-items rise, energy +20.4% y/y, food unchanged - while the SURPRISE was broader, since headline beat on one measure and core on both. But CPI is NOT the root trigger. The Kospi had already fallen about 7% on Oct 13 with a sell sidecar BEFORE the print, on AI and semiconductor worries, and Asia fell again on Oct 15 with the Korea Exchange triggering a second sidecar at 09:07:42 KST, KOSPI 200 opening -5.59% and Samsung -9.05%; The Block tied BTC breaking under $81,000 to that. A third strand is an AI-credit derating - CoreWeave -15.46% on a Gartner warning that 80% of neoclouds could disappear by 2030, Oracle -8.83%. Equities: S&P -1.11% to 7,718.94, worst since Jul 29; Nasdaq -1.88%. Two headline claims did NOT hold to the close: the 10-year spiked 5.19% to near 5.33% within 30 minutes and then CLOSED at 5.19-5.20%, flat to slightly lower, and while the dollar did close at an 18-month high it gave that back early on Oct 15. October hike odds repriced from 22% to somewhere between 35% and 54% depending on provider and timestamp, and were already being pulled back on Oct 15 after Fed officials sounded cautious - so I am deliberately NOT quoting a point estimate. Liquidations ran about $935-951m with roughly 92% longs and a confirmed $476m one-hour burst, and no exchange incident occurred, so the forced selling was leverage.",
+   "status": "recorded - no action; BTC stop unchanged and not hit"
+  },
+  {
+   "date": "2026-10-15",
+   "ticker": "ETHUSDT",
+   "action": "no re-entry - checked deliberately and there is no dated trigger",
+   "rationale": "The exit proceeds sit in USDT so this needed answering rather than assuming. There is no dated ETH catalyst inside the next two weeks. Glamsterdam activated on the Sepolia testnet on Oct 6 but has NO Hoodi date and NO mainnet date, with the Ethereum Foundation stating both are undecided. Devcon 8 on Nov 3-6 in Mumbai carries no protocol action and is explicitly not a catalyst. The validator EXIT queue peaked near 850,736 ETH around Oct 2 - about 2% of staked supply, up roughly 392% from 166,000 on Sept 29 - driven by MetaMask Staking pulling validators after disclosing a security incident on Sept 30, and whether it has eased is NOT established, with one report putting it back near 870,130 ETH on Oct 10. ETH ETF flows resumed outflows on Oct 14 at -$129.5m with ETHA about -$110m and NO fund taking an inflow. ETH is 7.59% below its 50-day, RSI 34.1, below its lower Bollinger band. So the money stays in USDT not as a judgement call but because the research contains nothing to act on. Also correcting myself: I described the ETH outflow streak as 'ten sessions, ~$697M' - that merged Farside's 10 sessions/$782.8M with The Block's nine days/$697.2M, and no source actually characterised Oct 13 as ending it. That framing was my inference.",
+   "status": "no action - proceeds remain USDT; exit execution still unconfirmed"
+  },
+  {
+   "date": "2026-10-15",
+   "ticker": "SALIK",
+   "action": "RETRACTED my own explanation - the dividend is real and does not explain the rating",
+   "rationale": "Salik's board approved an interim H1-2026 dividend of 9.3872 fils per share on Oct 6 - AED 704.04m, about 100% of H1 net profit - with the register closing Oct 16 and the last cum-dividend day Oct 14, which derives an ex-date of today. On a 5.26 price that is a mechanical 1.78% step-down, and my first reading was that this explained SALIK falling SELL -> STRONG SELL and much of its band churn. I checked it against our own bars before writing it up and THE BARS REFUTE IT: Salik opened +0.38% against Tuesday's close and is +0.19% on the day. There is no step-down. DEWA is the same story - it fell 2.55% INTRADAY on a -0.36% opening gap, which is not the shape an ex-date makes, and its October distribution has no confirmed ex-date at all. Recording the retraction because the explanation was attractive, mechanical and wrong, and it is exactly the kind of tidy story I would have published two weeks ago. What survives is a genuine systemic finding, below.",
+   "status": "retracted - no explanation found for SALIK's band change"
+  },
+  {
+   "date": "2026-10-15",
+   "ticker": "engine",
+   "action": "found: UAE prices are NOT dividend-adjusted, and today's UAE intraday bars are malformed",
+   "rationale": "Two data findings, both tested rather than asserted. FIRST: the Yahoo UAE series is RAW, not dividend-adjusted. Tested against DEWA's April 2026 distribution of 6.2 fils, about 2.2% of price - the largest overnight down-gap in that window is -1.78% on 2026-04-13, which is a raw ex-date step-down. The engine has no dividend handling at all, and UAE blue chips pay roughly 2% semi-annually, so every ex-date will produce a spurious bearish signal on precisely the dividend names the core_uae_stocks bucket exists to buy. DEWA's next distribution is expected in October with no confirmed date, so this may be about to happen again. NOT FIXED: adjusting for dividends needs a dividend calendar the current sources do not supply, and inventing one would be worse than knowing the limitation. SECOND: 8 of the 10 Yahoo UAE names have an internally inconsistent in-progress bar today - the reported low sits ABOVE the close, and DEWA's high sits BELOW its open. The source appears to report a single intraday price as both high and low, collapsing the range to zero. That feeds atr(), which UNDERSTATES ATR for UAE names and therefore tightens any stop suggestion derived from it. No UAE position is held so nothing is affected today, but a UAE stop computed from today's data would be too tight.",
+   "status": "recorded with tests; neither fixed, both now known limitations"
+  },
+  {
+   "date": "2026-10-15",
+   "ticker": "AVAXUSDT",
+   "action": "the one coin still in trend - note the Nov 8 unlock before November's satellite attempt",
+   "rationale": "AVAX is the only one of eleven tracked coins still genuinely above its 50-day, at +2.83%, despite falling 6.52% today, which makes it the name a buyer would reach for and so the one worth researching properly. It has a real dated catalyst: on Oct 14 Dubai's DIFC Courts went live issuing court orders and hearing records as non-transferable blockchain credentials on Avalanche's C-Chain, letting banks and foreign courts verify in seconds that a document is court-issued and unaltered, with only a hash on-chain. Confirmed against Avalanche's own blog plus independent outlets. A UAE-specific crypto integration is unusually relevant to this book. Against that there is a dated supply overhang: a cliff unlock of 1,666,800 AVAX - roughly $16m, about 0.3-0.46% of supply - releases to the Avalanche Foundation on 2026-11-08, part of a quarterly schedule to 2030. AVAX does NOT qualify for the satellite rule today at core 35 against a 45 minimum, so this changes nothing now. But Nov 8 falls inside the November window the reserve just rolled into, so if AVAX becomes the candidate that date must be resolved first rather than discovered afterwards.",
+   "status": "no action - does not qualify; flagged for the November attempt"
+  },
+  {
+   "date": "2026-10-15",
+   "ticker": "broken-alts",
+   "action": "LINK, ADA and LTC broke trend on beta, not news - a useful null result",
+   "rationale": "All three crossed below their 50-day averages and the research found no coin-specific cause for any of them. Chainlink's Data Feeds and Data Streams went live on Stellar mainnet on Oct 14, which is expansionary rather than bearish and no source ties it to a price reaction. Grayscale's Litecoin Trust ETF conversion is still pending and unapproved, with Form S-3/A filed Sept 11. ADA returned nothing dated at all. Stating this as a positive finding rather than an empty search: because the breakdown is uniform beta, it should be read as ONE event and not nine, and a recovery in the majors would carry all three back without each needing its own catalyst. It also means there is no coin here that is broken for its own reasons and should be dropped from the watchlist.",
+   "status": "recorded - no positions in any of the three"
+  },
+  {
+   "date": "2026-10-15",
+   "ticker": "research-process",
+   "action": "the biggest gap in today's pass was oil, and it is the variable that matters most",
+   "rationale": "The critic's leading point is right and I am recording it rather than filing it away. The CPI beat was ENERGY-led - gasoline +9.1% m/m, over half the monthly all-items rise, energy +20.4% y/y, tied to the US-Iran conflict since late February - and the pass produced not a single dated crude datapoint: no Brent or WTI level, no OPEC+ meeting date, no Hormuz status, no refinery or crack figure. Whether October's print repeats in November depends almost entirely on that one variable, and it is the strand connecting the macro picture to AIRARABIA's jet fuel and to Gulf energy sentiment generally. Second gap: Fed speakers on Oct 15 appear only as a parenthetical in two entries with no named official and no source of their own, despite being the most recent in-window event, already repricing October odds, and cutting against every bearish finding - and the FOMC blackout begins Sat Oct 17, so today and tomorrow are the last window. Third: only AVAX was news-screened of the satellite universe, so 'no qualifying candidate' rests partly on a universe the news pass never covered - though that conclusion is score-based and news cannot move AVAX's 35. Fixing oil and Fed speakers first next run. Yesterday's accepted gap - that the BUY-rated names went uncovered - was corrected today: AVAX and the three broken alts each got a thread.",
+   "status": "process note - gaps named for the next run"
   }
  ]
 }
