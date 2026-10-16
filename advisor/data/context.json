@@ -1,49 +1,41 @@
 {
- "updated": "2026-10-15T07:55+00:00",
+ "updated": "2026-10-16T08:05+00:00",
  "market_notes": [
   {
-   "market": "CPI printed HOT on Oct 14 - that is the first leg of the selloff",
-   "note": "BLS released September CPI on 2026-10-14 at 08:30 ET. Headline +0.6% m/m and 3.7% y/y against a 3.6% consensus, up from 3.4% in August. Core +0.3% m/m against +0.2% expected and 2.6% y/y against 2.5%, with August core at 2.4% - so core ACCELERATED 0.2pp. Resolving a disagreement between my own research threads: the monthly MOVE was energy-led (gasoline +9.1% m/m, over half the all-items rise; energy +5.2% m/m and +20.4% y/y; gasoline +34.2% y/y; food unchanged), while the SURPRISE was broader, because headline beat on one measure and core beat on both. Reporting ties the energy surge to the US-Iran conflict that began in late February. Equities: S&P 500 -1.11% to 7,718.94, its biggest fall since July 29; Nasdaq -1.88% to 26,692.87; info tech worst at -2.6%; Philadelphia Semiconductor -4.3%, a sixth straight loss. Verified against the BLS release itself, not just secondary coverage."
+   "market": "OIL ANSWERED: gasoline pressure is EASING, so September's energy spike is unlikely to repeat",
+   "note": "This was the gap I named yesterday and it is the variable that decides whether October's CPI repeats. Retail gasoline is FLAT: AAA has $4.3333 on Oct 14, $4.3344 on Oct 15 and about $4.33 on Oct 16 - a tenth of a cent over three days - and DOWN from $4.3612 a week earlier, though still +41% against $3.0674 a year ago. The supply response is visible in the EIA weekly released Oct 15: gasoline stocks BUILT 3.5m barrels to 208.3m against an expected 0.5m draw, with refinery utilisation up 0.8pp to 93.5% and crude runs up 135,000 b/d. High runs plus a gasoline build is what caps pump prices. So the +9.1% m/m gasoline line that drove over half of September's all-items rise is not repeating so far."
   },
   {
-   "market": "The SECOND leg was Asia, and it is not a CPI story",
-   "note": "Attribution matters here and I nearly got it wrong. The risk-off did NOT start with CPI: the Kospi had already fallen about 7% on Oct 13, with a sell-side sidecar, BEFORE the print, on AI and semiconductor worries. Then on Oct 15 Asia fell again - the Korea Exchange triggered a sell sidecar at 09:07:42 KST, the KOSPI 200 opened -5.59% at 5,673.01 from 6,008.81 and traded into the 5,500s, with a separate 20-minute circuit breaker and Samsung -9.05%. The Block explicitly tied BTC breaking below $81,000 to that Asian risk-off. There is also an AI-credit strand: CoreWeave -15.46% after a Gartner warning that 80% of neoclouds could disappear by 2030, and Oracle -8.83%. So this is a three-strand selloff - hot CPI, an Asian equity break, and an AI-debt derating - not one cause."
+   "market": "But DIESEL is where the tightness sits, and the headline crude draw was a hurricane",
+   "note": "The same EIA report runs the other way on distillate: stocks DREW 2.5m barrels to 102.6m against an expected 1.6m draw. And the IEA's Oil Market Report of Oct 14 cut 2026 world demand to -2.6 mb/d year on year from -2.5 mb/d - a DEEPER contraction - with diesel accounting for 25% of the decline, blaming restricted product availability and a deteriorating economy, while September global supply rose 2.5 mb/d to 102.3 mb/d. It calls the 2027 recovery 'fragile'. Crude headed for a weekly gain on Iranian tanker strikes in Hormuz plus a US crude draw of 8.56m barrels to 415.6m, the largest since February - but Reuters attributes that draw to Hurricane Isaias Gulf of Mexico shut-ins, which is a weather interruption more likely to reverse than a demand-driven tightening. WTI November settled $97.97 (+3.03%) on Oct 15; Brent December $105.92."
   },
   {
-   "market": "Rate-hike odds roughly doubled, but the range is disputed and already fading",
-   "note": "The pre-print October hike probability was 22% (matching the roughly 80% no-hike I reported yesterday). After the print it repriced to somewhere between about 35% and 50% for the Oct 27-28 FOMC - CME FedWatch around 50%, Yahoo 35% and 37%, Investinglive 47%, Mitrade 37% peaking near 52%, Polymarket spiking near 50% then settling around 30%. I am deliberately NOT quoting a point estimate: providers and timestamps disagree by 15 points and my own research threads returned four different ranges. Two things cut the other way: odds were PULLED BACK on the morning of Oct 15 after Fed officials sounded cautious, and the dollar gave back its 18-month high. A year-end hike is heavily priced (a 63-96% band across sources; Citi moved to forecasting a December hike)."
+   "market": "The energy risk has a DATED expiry in November, and it is not a de-escalation",
+   "note": "Iranian attacks on shipping in the Strait of Hormuz have surged to their highest level since the war began, with an Iranian official saying Tehran has changed tactics against vessels. Trump has posted that he will not attack Iran before the November 3 midterms - but that is a three-week pause, not a ceiling: a third carrier group and roughly 2,000 Marines are being sent with the buildup due to complete by November, and the WSJ reports Trump told aides he expects to resume bombing that month. Reopening diplomacy is STALLED on sequencing - Washington wants the nuclear file first, Tehran wants the strait and maritime security first. ING is quoted that the market is pricing 'a significant risk premium' and that removing it entirely would require some form of US-Iran agreement. Also worth flagging: yesterday's research surfaced a CNBC attribution of easing yields to 'Russian diesel supply hopes from a US-brokered energy ceasefire'. No such concluded ceasefire was found - the diplomacy is open - so that framing is not corroborated."
   },
   {
-   "market": "Treasury yields ROUND-TRIPPED - 'yields surged' describes 30 minutes, not the day",
-   "note": "The 10-year spiked from about 5.19% to near 5.33% within half an hour of the release, and then closed at 5.19-5.20%, flat to slightly LOWER on the day (Forbes 5.19%, StreetStats 5.20%, Babypips 'little changed'). The dollar index DID close at an 18-month high, +0.4% to about 102.54, its strongest since April 2025 - and then slipped to 102.06 early on Oct 15. Recording this because the headline version of Oct 14 is 'hot CPI, yields surged, dollar soared' and only one of those three held to the close."
+   "market": "THE HAWKISH REPRICING HAS LARGELY UNWOUND - this reverses what I reported yesterday",
+   "note": "Yesterday I said October hike odds had repriced from 22% to somewhere in the 35-50% range. As of Oct 16, CME FedWatch reads 72.3% HOLD, which is about 27.7% for a hike - back near the 17-22% that prevailed before the print. The arc, reported as ranges because providers genuinely disagree: pre-CPI ~17-22%, a post-print spike to ~37-50%, Oct 15 ~25-35%, Oct 16 ~15-28%. December is the one consistent figure at ~90-92%, so the market has moved the expected hike out rather than cancelling it. The cause is named and well sourced: SF Fed's Daly told Reuters on Oct 14 that further hikes are 'more likely than not' but there is no need to act at Oct 27-28, adding that 'risks are not realities, and reacting on risk when you have time to make a good decision... feels imprudent', and she attributed the hot CPI mainly to gasoline. Vice Chair for Supervision Bowman said at the IIF in Bangkok the same day that the Fed has time and she sees no urgent need for further action. Cleveland's Hammack was the hawkish dissent on Oct 15. Chair Warsh, in Bangkok on Oct 16 with the IMF's Georgieva, declined to signal - 'I don't prejudge meetings' - and called October and December the 'crystallising moments'."
   },
   {
-   "market": "Liquidations were the mechanism: about $940m, roughly 92% longs",
-   "note": "24-hour liquidations ran about $935-951m with longs roughly 92% of the total ($876.3m long-only of a $951.4m total per The Block; Yahoo has $942.1m total and $863.3m longs). ETH was liquidated harder than BTC - about $283m against $196m - and there was a confirmed single-hour burst of over $476m across roughly 180,000 traders. No exchange outage, hack or halt occurred on Oct 14-15, so the forced selling was leverage, not infrastructure. One caveat carried from the research: Binance's own status page was not checked, and it is the venue alleged to carry most of that hourly burst."
+   "market": "The FOMC blackout begins TOMORROW - no more Fed commentary before the decision",
+   "note": "The blackout for the Oct 27-28 meeting runs Saturday Oct 17 from 00:00 ET through Thursday Oct 29 at 23:59 ET, confirmed two ways - the Atlanta Fed's published blackout calendar and the FOMC's own external-communications policy, which sets the window from the second Saturday before a meeting. So Warsh's Friday appearance was the LAST on-record Fed commentary before the decision. Practical consequence: the dovish drift of the last two sessions is now frozen in place for eleven days, and the next thing to move October pricing will be data, not speakers."
   },
   {
-   "market": "The ETF flip I cited yesterday reversed within a session - for the second day running",
-   "note": "Yesterday I reported Oct 13's flip to +$175.62m BTC and +$24.84m ETH as a better backdrop. On Oct 14 US spot BTC ETFs swung to -$261.0m (FBTC -$152.7m, IBIT -$110.9m) and ETH ETFs to -$129.5m (BlackRock ETHA about -$110m, roughly 85% of it, with NO fund taking an inflow) - a combined -$390.5m. Oct 15 flows are confirmed NOT yet published because the US session has not settled, so no Oct 15 number should be assumed. The lesson, now demonstrated twice in two days: a single day of ETF flow is too noisy to cite as a backdrop at all, and I should stop doing it. Also correcting my own figure - I called it a 'ten-session, $697m' ETH outflow streak; Farside counts 10 sessions from Sept 29 to Oct 12 totalling about $782.8m, while The Block counted nine days and $697.2m as of Oct 10. I merged two different counts."
+   "market": "That Fed channel is what drove the crypto bounce - confirmed, not inferred",
+   "note": "The 10-year fell to about 5.08%, its lowest since Sept 25 and down roughly 11bp, and the dollar index fell about 0.44% to around 102.00 after its Oct 14 18-month high. The Block and Blockhead independently make the identical causal chain - Bowman and Daly remarks, October odds falling on FedWatch, the 10-year to ~5.08%, BTC back to ~$82,060. Asian equities stabilised: the KOSPI closed +2.05% at 5,668.05 after Thursday's -7.57% rout to 5,554.22, when both the KOSPI and KOSDAQ hit circuit breakers on the same day for the first time since July 29; the KOSDAQ closed +4.46% and triggered a BUY-side sidecar, mirroring Thursday's sell sidecar. Upstream, Jensen Huang said at a Stockholm event that Nvidia 'doesn't need to backstop' CoreWeave, and CRWV erased a ~9.5% intraday drop."
   },
   {
-   "market": "AVAX, the only coin still above its 50-day, has a UAE-specific catalyst AND a dated supply overhang",
-   "note": "Dubai's DIFC Courts went live on 2026-10-14 issuing court orders and hearing records as non-transferable blockchain credentials on Avalanche's C-Chain, so banks, companies and foreign courts can verify in seconds that a document is court-issued and unaltered; only a hash goes on-chain, with text and party names kept off it. Confirmed against Avalanche's own blog and multiple independent outlets. Against that, a cliff unlock of 1,666,800 AVAX - about $16m, roughly 0.3-0.46% of supply - releases to the Avalanche Foundation on 2026-11-08, one instalment of a quarterly schedule running to 2030. AVAX is the name a buyer would reach for, so both halves matter. It still does NOT qualify for the satellite rule at core 35 against a 45 minimum, but if it becomes the November candidate the Nov 8 unlock falls inside that window and must be resolved first."
+   "market": "But the bounce is thin on substance - four independent reasons to discount it",
+   "note": "FIRST, the flows are not there: US spot BTC ETFs took just +$5.06m on Oct 15 with only 1 of 12 funds positive, which is flows stalling rather than dip-buying, and ETH ETFs were NEGATIVE at -$60.22m, a second straight outflow day, with $306.5m shed over Oct 9-15. SECOND, the short-squeeze story is FALSE: Benzinga's headline claiming a '$1bn short squeeze' is contradicted by its own body text, and every independent breakdown has Oct 15's roughly $929-973m of liquidations at 84-92% LONGS. It was a long flush, not a squeeze. THIRD, CoreWeave's equity bounce was NOT confirmed by its credit - 5-year CDS jumped to an intraday record 1,194.5bp, implying better than 60% five-year default odds, with 2031 notes yielding above 16% against more than $40bn of debt. FOURTH, regional risk appetite was not uniformly restored: Indonesia's Jakarta Composite closed down 10.6% after MSCI opened a consultation on reclassifying the market as 'standalone', its worst fall since January 1998. Separately, the crypto Fear & Greed index is UNUSABLE this session - readings span 38 to 64 with contradictory directions of change."
   },
   {
-   "market": "LINK, ADA and LTC broke trend for NO coin-specific reason - it is pure beta",
-   "note": "All three crossed below their 50-day averages and the research found no coin-specific cause for any of them. Chainlink's Data Feeds and Data Streams went live on Stellar mainnet on Oct 14, which is expansionary rather than bearish and is not tied to any price reaction. Grayscale's Litecoin Trust ETF conversion remains pending and unapproved (Form S-3/A filed Sept 11). ADA turned up nothing dated at all. That is a useful null result: the alt breakdown is market beta, so it should be read as one event and not nine, and a recovery in the majors would carry them back rather than each needing its own catalyst."
+   "market": "September PPI badly overshot on Oct 15 and the market shrugged",
+   "note": "Confirmed from the BLS release: final demand +1.3% m/m and +6.3% y/y, with over 80% of the broad-based rise attributable to final-demand energy at +10.8%. Equities still closed higher that session and hike odds did not escalate. Worth noting because it is the opposite reaction to the previous day's CPI on a hotter number, which is the clearest single piece of evidence that the market has stopped treating energy-driven inflation prints as policy-relevant. Keep the two energy figures distinct: CPI gasoline was +9.1% m/m, PPI final-demand energy +10.8% - one research thread conflated them."
   },
   {
-   "market": "There is NO dated ETH re-entry trigger inside the next two weeks",
-   "note": "Checked deliberately, because the exit proceeds are sitting in USDT. Glamsterdam activated on the Sepolia testnet on Oct 6 but has NO Hoodi date and NO mainnet date - the Ethereum Foundation says both are undecided. Devcon 8 is Nov 3-6 in Mumbai and carries no protocol action, so it is not a catalyst. The validator EXIT queue peaked near 850,736 ETH around Oct 2, about 2% of staked supply and up roughly 392% from 166,000 on Sept 29, driven by MetaMask Staking pulling validators after disclosing a security incident on Sept 30 - and whether it has eased is NOT established, with one report putting it back near 870,130 ETH on Oct 10. ETF outflows resumed. Conclusion: the money stays in USDT not as a judgement call but because there is no dated trigger to act on."
-  },
-  {
-   "market": "SALIK's dividend is real, but it does NOT explain today's rating - and I checked before saying so",
-   "note": "Salik's board approved an interim H1-2026 dividend of 9.3872 fils (AED 0.0939, AED 704.04m, about 100% of H1 net profit) on Oct 6, with the register closing Oct 16 and the last cum-dividend day Oct 14 - which derives an ex-date of today. On a 5.26 price that is a mechanical 1.78% step-down, and my first reading was that this explained SALIK falling to STRONG SELL. THE BARS REFUTE IT. Salik opened +0.38% against Tuesday's close and is +0.19% on the day - there is no step-down. DEWA likewise fell 2.55% INTRADAY on a -0.36% opening gap, which is not the shape an ex-date makes, and DEWA's October dividend has no confirmed ex-date at all. So the dividend is a real fact and the wrong explanation, and the attractive story did not survive the data."
-  },
-  {
-   "market": "Nothing explains EMIRATESNBD's move, which is a reason for caution not confidence",
-   "note": "Its 75-point band swing to STRONG BUY has no identified dated cause. The DFM banking sector's +0.79% day was Oct 13, the wrong session, and a 0.79% sector move cannot account for a 2.54% single-stock move anyway. No market wrap for the Oct 14 or Oct 15 sessions could be found at all. No Q3 results date is confirmed. The one live corporate item - Emirates NBD Egypt's agreement to buy HSBC Bank Egypt's retail business, signed Aug 2 - guides to completion in H2 2027 and is not a driver. An unexplained 75-point swing on an intraday draft is day one of two, not a signal."
+   "market": "An independent source corroborates BTC's sub-$80,000 print - and a note on which venue defines the stop",
+   "note": "Bloomberg reports BTC briefly slid below $80,000 on Oct 15 for the first time in almost a month, which independently corroborates the 79,800.00 low in our own Binance bar. One of today's date-checkers tried to strike that low as an unverified aggregator quote; it is not - it comes from the Binance klines API, the same venue whose daily closes defined the 79,304.74 stop in the first place, so testing one against the other is internally consistent. But the honest caveat is worth stating once: the stop rests on ONE venue's prints, other venues printed different lows that session (Fortune had $80,915 at 7:15am ET, CoinDesk $82,116 later), and a 495-dollar margin is thin enough that a different data source could plausibly have shown a breach."
   }
  ],
  "asset_notes": {
@@ -497,6 +489,12 @@
     "impact": "bearish",
     "date": "2026-10-15",
     "source": "BLS CPI release, The Block, Korea JoongAng Daily, Yahoo Finance, CNBC"
+   },
+   {
+    "headline": "Stop held: Thursday's 79,800 low was 0.62% above it, closed 3.71% clear; Fed officials cooling hike bets drove the rebound",
+    "impact": "neutral",
+    "date": "2026-10-16",
+    "source": "Binance klines (own fetch); Bloomberg corroborates a sub-$80,000 print; The Block, Blockhead, CNBC on the Fed channel"
    }
   ],
   "ETHUSDT": [
@@ -1277,6 +1275,12 @@
     "impact": "bearish",
     "date": "2026-10-14",
     "source": "Gulf News, Gulf Business, Al Jazeera, Saudi SPA/GACA statements N2697867 and N2698973, Cirium via Gulf News"
+   },
+   {
+    "headline": "Jet-fuel backdrop: gasoline easing but distillate drew 2.5m bbl and the IEA has diesel at 25% of a deepening demand contraction",
+    "impact": "bearish",
+    "date": "2026-10-15",
+    "source": "EIA Weekly Petroleum Status Report; IEA Oil Market Report October 2026"
    }
   ],
   "EAND": [
@@ -2169,19 +2173,21 @@
   ]
  },
  "risk_flags": [
-  "BTC's stop cushion compressed from 5.12% to 2.03% in one session. The stop is 79,304.74 and triggers on ONE DAILY CLOSE. Wednesday closed 81,682.01, still 3.00% clear, and today's verified Binance low of 80,226.35 cleared it by 1.16%. NO ACTION unless a close prints below the level.",
-  "The three-strand selloff is unresolved: hot CPI, an Asian equity break that is still running as of this morning, and an AI-credit derating. The Asian leg had no catalyst inside my research and is the one that broke BTC under $81,000.",
-  "OIL IS THE BIGGEST UNRESEARCHED VARIABLE. The CPI beat was energy-led - gasoline +9.1% m/m, over half the monthly rise - and the research pass produced not one dated crude datapoint: no Brent or WTI level, no OPEC+ date, no Hormuz status. Whether October's print repeats depends on it. Fixing this first next run.",
-  "Fed speakers on Oct 15 are already pulling October hike odds back and cut against every bearish item. The FOMC blackout for the Oct 27-28 meeting begins Sat Oct 17, so today and tomorrow are the last Fed-speak window.",
-  "Do NOT quote a single October hike probability. Providers span 35% to 54% post-print against a 22% base, and the number was already fading on Oct 15.",
-  "A single day of ETF flow has now reversed within one session on two consecutive days. Stop citing daily flows as a backdrop.",
-  "ETH IS EXITED BY INSTRUCTION, execution still unconfirmed three days on. There is NO dated re-entry trigger inside two weeks, and the validator exit queue near 850,000 ETH is unresolved.",
-  "BTC's fill has never been confirmed, 25 days after the 2026-09-20 instruction. If this stop fires I will be issuing an exit on a position I cannot verify exists.",
-  "The Yahoo UAE series is RAW, not dividend-adjusted - DEWA's April 2026 ex-date shows as a -1.78% overnight gap on 2026-04-13. UAE blue chips pay roughly 2% semi-annually, so ex-dates WILL produce spurious bearish signals on exactly the names the UAE bucket is meant to buy. DEWA's next distribution is expected in October with no confirmed ex-date.",
-  "Today's in-progress UAE bars are internally inconsistent on 8 of 10 names - the reported low sits ABOVE the close, and DEWA's high sits BELOW its open. High and low collapse to a single value, which UNDERSTATES ATR and therefore tightens any UAE stop suggestion. Do not trust today's UAE intraday range.",
-  "EMIRATESNBD's STRONG BUY is day 1 of 2, has no identified cause, and rests on a marginal composition (structure deadbanded at 0.49%, MACD momentum flat at 0.02). Friday is not a UAE session, so confirmation cannot come before Monday.",
-  "AVAX is the only coin above its 50-day and carries a 1,666,800 AVAX Foundation unlock on 2026-11-08, inside the November satellite window.",
-  "Al Ramz still not open, 90 days in. Because EMIRATESNBD would be day 1 of 2 regardless, the blocker has NOT yet cost a trade - it will if that confirms on Monday.",
+  "BTC's stop HELD - Thursday's low of 79,800.00 was 0.62% above 79,304.74 and it closed 3.71% clear. No action. Cushion back to -3.47%. The margin was 495 dollars on one venue's prints.",
+  "Energy is two-sided: gasoline is easing (flat pump prices, a 3.5m barrel stock build, 93.5% refinery utilisation) so September's CPI spike is unlikely to repeat, BUT distillate drew 2.5m barrels and the IEA has diesel at 25% of a deepening demand contraction.",
+  "DATED ESCALATION RISK IN NOVEMBER: Trump's stated pause on striking Iran runs only to the Nov 3 midterms, a third carrier group and ~2,000 Marines complete their buildup in November, and the WSJ reports he expects to resume bombing then. Hormuz diplomacy is stalled on sequencing.",
+  "The FOMC blackout begins Sat Oct 17 and runs to Oct 29. Warsh's Friday appearance was the last Fed commentary before the Oct 27-28 decision, so the dovish drift is frozen for eleven days and only data can move October pricing now.",
+  "October hike odds have largely UNWOUND to ~27.7% (CME, Oct 16) from a post-CPI spike of 35-50%, but December sits at ~90-92% - the hike is deferred, not cancelled.",
+  "The crypto bounce is thin: BTC ETF flows +$5.06m with 1 of 12 funds positive, ETH ETFs -$60.22m on a second straight outflow day, the '$1bn short squeeze' story is false (84-92% longs), CoreWeave's CDS hit a record 1,194.5bp while its equity rallied, and Jakarta fell 10.6%.",
+  "Crypto Fear & Greed is UNUSABLE this session - readings span 38 to 64 with contradictory directions. Do not cite it.",
+  "Only four of eleven coins are rated BUY and none better; every MACD histogram on the board is negative. DOGE and GRAM fell HOLD -> SELL on days they ROSE 3.1% and 3.7%, as structure deteriorated while price rose.",
+  "ETH IS EXITED BY INSTRUCTION, execution unconfirmed four days on. Still 4.0% below its 50-day. No dated re-entry trigger exists inside two weeks.",
+  "BTC's fill has never been confirmed, 26 days after the 2026-09-20 instruction.",
+  "UAE DATE STAMPS ARE UNRELIABLE: the newest Yahoo UAE bar carries the FETCH date whether or not the market traded, then is re-dated once settled. last_completed_close() therefore returns a UAE close one session stale. Crypto verified unaffected. Not fixed.",
+  "The Mon-Thu trading week is CONFIRMED correct - today's lone Friday bar is that date-stamp placeholder, not a session (one Friday in 207 bars, on the one day we sampled a Friday).",
+  "EMIRATESNBD holds STRONG BUY for a second reading but the confirmation CANNOT be established, because the same session appeared under two different dates. Monday follows a weekend with no session and should disambiguate.",
+  "The Yahoo UAE series is RAW, not dividend-adjusted (DEWA's April ex-date shows as a -1.78% gap on 2026-04-13), so ex-dates create spurious bearish signals on the dividend names the UAE bucket exists to buy.",
+  "Al Ramz still not open, 91 days in. It has not yet cost a trade, because no UAE signal has been confirmed.",
   "Reconciliation never performed since 2026-07-17. Four numbers wanted from Binance -> Wallet -> Overview: ETH, BTC, LINK, USDT."
  ],
  "corrections": [
@@ -2191,7 +2197,10 @@
   "2026-10-14: UAE market hours were wrong from 2026-07-17 to today - Mon-Fri instead of Mon-Thu. The dashboard displayed 'market OPEN' on roughly 12 Fridays when it was shut.",
   "2026-10-15: I described ETH's ETF outflow streak as 'ten sessions, ~$697M'. That merged two different counts - Farside has 10 sessions (Sept 29-Oct 12) totalling ~$782.8M, The Block had nine days and $697.2M as of Oct 10. Neither source characterises Oct 13 as 'ending the streak'; that was my inference.",
   "2026-10-15: my first reading was that SALIK's fall to STRONG SELL was a dividend ex-date artefact. The bars refute it - SALIK opened +0.38% and is +0.19% on the day, with no step-down. The dividend is real and the explanation was wrong. DEWA's -2.55% is intraday on a -0.36% gap, so not an ex-date shape either.",
-  "2026-10-15: yesterday I cited Oct 13's ETF inflow flip as a better backdrop. It reversed the next session to a combined -$390.5M. Second consecutive day a flow datapoint I cited turned within one session."
+  "2026-10-15: yesterday I cited Oct 13's ETF inflow flip as a better backdrop. It reversed the next session to a combined -$390.5M. Second consecutive day a flow datapoint I cited turned within one session.",
+  "2026-10-16: yesterday I reported October hike odds repricing from 22% to 35-50% as the standing state. By Oct 16 that had largely unwound to ~27.7% on CME, near the pre-print level, after Daly and Bowman both said there was no urgency. The direction I reported was right for Oct 14 and stale within two sessions.",
+  "2026-10-16: my Oct-14 note called the UAE data problem a '~1-day publication lag'. The real mechanism is a forward date-stamp on the newest bar. Right observation, wrong cause.",
+  "2026-10-16: yesterday I called BTC's 80,226.35 'today's verified low', clearing the stop by 1.16%. That was the low as of the 07:09 reading with 17 hours of the bar left to run; the session printed 79,800.00, a 0.62% margin. An in-progress bar's low is a floor-so-far."
  ],
  "missing": [
   "GENIUS Act stablecoin final-rules deadline is July 18, 2026 \u2014 TOMORROW: six agencies (OCC, FDIC, NCUA, Treasury, FinCEN, OFAC) must finalize rules one year after enactment; comment periods closed June 9 and there is no statutory fallback if they miss. Direct near-term catalyst/risk for stablecoins (USDC/Coinbase economics \u2014 which the findings themselves cite in the CLARITY yield fight \u2014 and Tether) yet absent from all three crypto findings. (Kraken blog Jul 15, CryptoSlate, OCC Bulletin 2026-3, Chapman tracker.)",
