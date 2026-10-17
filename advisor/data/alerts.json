@@ -1,47 +1,41 @@
 {
- "generated_at_utc": "2026-10-16T07:11:26+00:00",
+ "generated_at_utc": "2026-10-17T07:08:39+00:00",
  "alerts": [
+  {
+   "ticker": "XRPUSDT",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "XRPUSDT: HOLD -> STRONG SELL (score -15 -> -50)"
+  },
   {
    "ticker": "DOGEUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "DOGEUSDT: HOLD -> SELL (score -15 -> -35)"
+   "msg": "DOGEUSDT: SELL -> STRONG SELL (score -35 -> -50)"
   },
   {
-   "ticker": "GRAMUSDT",
+   "ticker": "EMAAR",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "GRAMUSDT: HOLD -> SELL (score -15 -> -35)"
+   "msg": "EMAAR: HOLD -> BUY (score 15 -> 30)"
   },
   {
-   "ticker": "DEWA",
+   "ticker": "TALABAT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "DEWA: SELL -> STRONG SELL (score -25 -> -60)"
+   "msg": "TALABAT: STRONG SELL -> SELL (score -65 -> -40)"
   },
   {
-   "ticker": "DEWA",
+   "ticker": "TALABAT",
    "severity": "info",
    "type": "macd",
-   "msg": "DEWA: MACD bearish cross"
+   "msg": "TALABAT: MACD bullish cross"
   },
   {
-   "ticker": "EMAARDEV",
+   "ticker": "AIRARABIA",
    "severity": "info",
    "type": "macd",
-   "msg": "EMAARDEV: MACD bullish cross"
-  },
-  {
-   "ticker": "ALDAR",
-   "severity": "info",
-   "type": "signal_change",
-   "msg": "ALDAR: BUY -> HOLD (score 25 -> 15)"
-  },
-  {
-   "ticker": "FAB",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "FAB: STRONG SELL -> SELL (score -55 -> -40)"
+   "msg": "AIRARABIA: MACD bullish cross"
   }
  ]
 }
