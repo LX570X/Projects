@@ -2477,6 +2477,41 @@
    "action": "defended our own BTC numbers against a date-checker, and stated the venue caveat",
    "rationale": "One of today's adversarial checkers tried to strike the 79,800.00 low and the 82,245.93 close as unverified aggregator quotes, noting other prints that session - Fortune $80,915 at 7:15am ET, CoinDesk $82,116, Coinbase ~$82,385. It was checking a researcher's echo of those figures, not our source. Our numbers come from the Binance klines API, the same venue whose daily closes defined the 79,304.74 stop, so testing one against the other is internally consistent and I am NOT revising them. Independent corroboration exists: Bloomberg reports BTC briefly slid below $80,000 on Oct 15 for the first time in almost a month, which is consistent with a 79,800 low and with the stop at 79,304.74 NOT being breached. But the caveat deserves stating once rather than buried: the stop rests on ONE venue's prints, other venues printed materially different levels that session, and a 495-dollar margin is thin enough that a different data source could plausibly have shown a breach. That is inherent to defining a stop on a single venue, it remains the right choice because the level was derived from those same closes, and it is the kind of thing worth knowing before it matters rather than after.",
    "status": "numbers upheld; single-venue dependency recorded"
+  },
+  {
+   "date": "2026-10-17",
+   "ticker": "engine",
+   "action": "REVERTED my own Mon-Thu change - the UAE market trades Mon-FRIDAY",
+   "rationale": "On Oct 14 I found zero Friday bars in 206 spanning a full year and changed engine.py, build_dashboard.py and ADVISOR.md to a four-day week. On Oct 16 a lone Friday bar appeared and instead of treating it as counter-evidence I explained it away as a date-stamp placeholder and wrote that the ambiguity was 'now RESOLVED in favour of a closed Friday'. Today's data refutes that outright: a SETTLED Friday bar for ALL TEN Yahoo UAE names, with genuine ranges and valid OHLC - EMIRATESNBD O 31.28 H 31.62 L 30.92 C 31.58, a 2.3% range - plus a Thursday bar that was absent yesterday, and NO Saturday bar. Friday is a session. Reverted in all three files. The Oct-14 change was a defensible reading; the Oct-16 escalation was the real error, because I had written on Oct 14 that I could not distinguish 'exchange closed' from 'source omits Fridays' and then talked myself out of my own caveat two days later because a tidy mechanism was available. COST: for three days the dashboard would have mislabelled a Friday as closed; exactly one Friday fell in the window, Oct 16, and on that day it did. No decision depended on it and no position exists. UNEXPLAINED AND LEFT UNEXPLAINED: the history still holds only 1 Friday in 208 bars, which a settlement lag cannot account for, so the older date stamps are wrong in some way I have not diagnosed - and I am not inventing a third theory to cover it. The operational rule is now in ADVISOR.md: do not re-derive the trading calendar from this source's weekday distribution. A year of one source's data is evidence about the source, not about the world.",
+   "status": "reverted and pushed; the weekday anomaly remains undiagnosed and is documented as such"
+  },
+  {
+   "date": "2026-10-17",
+   "ticker": "BTCUSDT",
+   "action": "hold - stop held a third time, Friday closed 2.91% clear",
+   "rationale": "Friday 2026-10-16 CLOSED at 81,615.64 against the 79,304.74 stop, 2.91% above it, with an intraday low of 80,809.25 clearing by 1.90%. Saturday has been quiet - a 0.32% range between 81,416.00 and 81,677.88, BTC -0.63% to 81,652.00, band unchanged at BUY 35 for a second session and still above its 50-day. Position +1.63%, $138.37. Stop UNCHANGED: the trail computes 75,353.76 from Friday's close, 1.89 ATR below it. The cushion has now spent four sessions inside a three-point band - -5.12%, -2.03%, -3.47%, -2.87% - resolving neither into an exit nor into safety, and the histogram has deepened again to -510.13. The position itself has round-tripped from +4.75% on Oct 7 to +0.75% on Oct 15 to +1.63% now. Nothing to do: the rule is one daily close below the level.",
+   "status": "no action - fill still UNCONFIRMED since 2026-09-20"
+  },
+  {
+   "date": "2026-10-17",
+   "ticker": "EMIRATESNBD",
+   "action": "day 1 of 2 on SETTLED data - a cleaner footing, not a shortcut",
+   "rationale": "STRONG BUY 60, core 60 - the strongest UAE reading in this book's history - and crucially it is taken on FRIDAY'S SETTLED CLOSE of 31.58 rather than an intraday draft. With no Saturday session every UAE live value equals Friday's close exactly, which I verified across five names, so the Saturday run yields settled data, the same useful property the monthly DCA run has. Composition matters here: the score is trend +25 at 2.23% above a rising 50-day, slope +10, MACD momentum +15 with the histogram turning POSITIVE at +0.070, and a fresh bullish cross +10, with the 20/50 structure deadbanded at 0.39%. Thursday's 45 had FLAT momentum; Friday's 60 has positive momentum, so the improvement is in the strongest part of the score rather than in the stretch terms. This counts as ONE settled session - the first UAE reading I can place on a specific completed session with confidence, since the Oct 15 and Oct 16 readings were mid-session and, given the date-stamp instability, could not be pinned to a day. Monday gives the second. If it holds, the 2-day rule is satisfied and the UAE bucket has its first confirmed candidate since becoming deployable on Oct 1 - and Al Ramz being shut will have cost a trade for the first time, which I will then be able to say without inflating an unconfirmed signal.",
+   "status": "advice only - day 1 of 2 on settled data; Al Ramz still closed"
+  },
+  {
+   "date": "2026-10-17",
+   "ticker": "crypto-board",
+   "action": "breadth deteriorated again - only TWO of eleven rated BUY",
+   "rationale": "Crypto gave back part of Friday's bounce on a quiet Saturday, every coin lower between -0.63% (BTC) and -2.94% (ADA), with nothing reaching the 4% alert threshold. Only BTC and AVAX are rated BUY, against four yesterday: ADA and LTC both fell out, ADA crossing back below its 50-day for the second time in three sessions - it has now gone above, below, above, below across four readings, and the whipsaw guard correctly suppressed the alerts each time. XRP fell HOLD -> STRONG SELL (-15 -> -50) and DOGE SELL -> STRONG SELL; those are the first STRONG SELL ratings on the crypto board in this episode. Every histogram is negative and BTC's is deepest at -510.13. Reading Friday's bounce against today: the flows were already saying it was thin - BTC ETFs +$5.06m with 1 of 12 funds positive, ETH ETFs -$60.22m - and one session later the band count has halved. I am not claiming that as a called shot; the flow evidence was reported yesterday as a reason to discount the bounce and it has held up for exactly one day.",
+   "status": "recorded - nothing qualifies for the satellite rule"
+  },
+  {
+   "date": "2026-10-17",
+   "ticker": "notification",
+   "action": "no push - deliberately silent",
+   "rationale": "Four actionable band changes fired (XRP to STRONG SELL, DOGE to STRONG SELL, EMAAR to BUY, TALABAT off STRONG SELL) but none is actionable FOR THIS USER: the two crypto downgrades are in names not held and already deep in SELL territory, and the two UAE changes cannot be traded while Al Ramz is shut. No crypto move reached the 4% threshold. BTC's stop held with nothing to do. I pushed yesterday to resolve the stop-proximity alert, and the right follow-up to 'it held' is silence rather than a second message saying it is still holding.",
+   "status": "silent"
   }
  ]
 }

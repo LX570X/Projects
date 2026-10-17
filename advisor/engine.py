@@ -589,14 +589,15 @@ def portfolio_alerts(prev_port, port):
 
 def uae_market_open(now_utc):
     dubai = now_utc + timedelta(hours=4)
-# UAE equities trade MONDAY-THURSDAY, not Mon-Fri. Our bar source has
-    # ZERO Friday bars in 206 bars spanning a full year (2025-10-14..2026-10-14),
-    # against 50-53 bars for each of Mon/Tue/Wed/Thu. Found 2026-10-14. Until then
-    # this said weekday() <= 4, so every Friday the dashboard told the user the
-    # market was OPEN while it was shut. The fix is right whether the market is
-    # closed on Fridays or the source merely omits them: either way we have no
-    # Friday data and must not claim a live session.
-    return dubai.weekday() <= 3 and (10, 0) <= (dubai.hour, dubai.minute) <= (15, 0)
+# UAE equities trade MONDAY-FRIDAY. A four-day week was asserted here
+    # from 2026-10-14 to 2026-10-17, because the bar source then held ZERO Friday
+    # bars in 206 spanning a year. REVERTED on 2026-10-17: a SETTLED Friday bar
+    # (2026-10-16) exists for all ten names with a genuine intraday range -
+    # EMIRATESNBD O 31.28 H 31.62 L 30.92 C 31.58 - and there is no Saturday bar.
+    # Friday is a session. The missing year of Fridays is a defect in the source's
+    # historical date stamps, which are separately known to be unstable for recent
+    # bars. Do NOT re-derive the trading calendar from this source's weekday counts.
+    return dubai.weekday() <= 4 and (10, 0) <= (dubai.hour, dubai.minute) <= (15, 0)
 
 
 def fmt_price(v):
@@ -614,7 +615,7 @@ def render_report(signals, snapshot, alerts):
     lines.append(f"- Data fetched: {snapshot['fetched_at_utc']} UTC")
     lines.append(f"- Report time: {dubai.strftime('%Y-%m-%d %H:%M')} Dubai time")
     lines.append(f"- UAE market (DFM/ADX): {'OPEN' if uae_market_open(now) else 'CLOSED'} "
-                 "(hours Mon–Thu 10:00–15:00 Dubai)")
+                 "(hours Mon–Fri 10:00–15:00 Dubai)")
     if snapshot.get("failures"):
         lines.append(f"- Data failures this run: {', '.join(snapshot['failures'])}")
     lines.append("")

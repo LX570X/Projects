@@ -118,14 +118,15 @@ def main():
 
     now = datetime.now(timezone.utc)
     dubai = now + timedelta(hours=4)
-# UAE equities trade MONDAY-THURSDAY, not Mon-Fri. Our bar source has
-    # ZERO Friday bars in 206 bars spanning a full year (2025-10-14..2026-10-14),
-    # against 50-53 bars for each of Mon/Tue/Wed/Thu. Found 2026-10-14. Until then
-    # this said weekday() <= 4, so every Friday the dashboard told the user the
-    # market was OPEN while it was shut. The fix is right whether the market is
-    # closed on Fridays or the source merely omits them: either way we have no
-    # Friday data and must not claim a live session.
-    open_uae = dubai.weekday() <= 3 and (10, 0) <= (dubai.hour, dubai.minute) <= (15, 0)
+# UAE equities trade MONDAY-FRIDAY. A four-day week was asserted here
+    # from 2026-10-14 to 2026-10-17, because the bar source then held ZERO Friday
+    # bars in 206 spanning a year. REVERTED on 2026-10-17: a SETTLED Friday bar
+    # (2026-10-16) exists for all ten names with a genuine intraday range -
+    # EMIRATESNBD O 31.28 H 31.62 L 30.92 C 31.58 - and there is no Saturday bar.
+    # Friday is a session. The missing year of Fridays is a defect in the source's
+    # historical date stamps, which are separately known to be unstable for recent
+    # bars. Do NOT re-derive the trading calendar from this source's weekday counts.
+    open_uae = dubai.weekday() <= 4 and (10, 0) <= (dubai.hour, dubai.minute) <= (15, 0)
 
     buys = [s for s in signals if "BUY" in s["signal"]]
     sells = [s for s in signals if "SELL" in s["signal"]]
@@ -455,7 +456,7 @@ a {{ color: var(--accent); }}
 <h1>UAE + Crypto Trading Desk</h1>
 <p class="asof">Signals computed {esc(sig.get('generated_at_utc', ''))} UTC · data as of {esc(snap.get('fetched_at_utc', ''))} · {dubai.strftime('%H:%M')} Dubai time</p>
 <div class="pills">
-<span class="pill"><span class="dot {'dot-open' if open_uae else 'dot-closed'}"></span>UAE market {'OPEN' if open_uae else 'CLOSED'} (Mon–Thu 10:00–15:00 Dubai)</span>
+<span class="pill"><span class="dot {'dot-open' if open_uae else 'dot-closed'}"></span>UAE market {'OPEN' if open_uae else 'CLOSED'} (Mon–Fri 10:00–15:00 Dubai)</span>
 <span class="pill"><span class="dot dot-open"></span>Crypto 24/7</span>
 <span class="pill">Auto-refreshes hourly</span>
 </div>
