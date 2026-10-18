@@ -1,41 +1,17 @@
 {
- "generated_at_utc": "2026-10-17T07:08:39+00:00",
+ "generated_at_utc": "2026-10-18T07:08:44+00:00",
  "alerts": [
   {
-   "ticker": "XRPUSDT",
+   "ticker": "ETHUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "XRPUSDT: HOLD -> STRONG SELL (score -15 -> -50)"
+   "msg": "ETHUSDT: HOLD -> SELL (score -15 -> -30)"
   },
   {
-   "ticker": "DOGEUSDT",
+   "ticker": "LTCUSDT",
    "severity": "actionable",
-   "type": "signal_change",
-   "msg": "DOGEUSDT: SELL -> STRONG SELL (score -35 -> -50)"
-  },
-  {
-   "ticker": "EMAAR",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "EMAAR: HOLD -> BUY (score 15 -> 30)"
-  },
-  {
-   "ticker": "TALABAT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "TALABAT: STRONG SELL -> SELL (score -65 -> -40)"
-  },
-  {
-   "ticker": "TALABAT",
-   "severity": "info",
-   "type": "macd",
-   "msg": "TALABAT: MACD bullish cross"
-  },
-  {
-   "ticker": "AIRARABIA",
-   "severity": "info",
-   "type": "macd",
-   "msg": "AIRARABIA: MACD bullish cross"
+   "type": "trend",
+   "msg": "LTCUSDT: price crossed below its 50-day average \u2014 trend change"
   }
  ]
 }
