@@ -1,29 +1,25 @@
 {
- "updated": "2026-10-17T07:35+00:00",
+ "updated": "2026-10-18T07:30+00:00",
  "market_notes": [
   {
-   "market": "CORRECTION: the UAE market trades Mon-FRIDAY. I reverted my own four-day-week change",
-   "note": "On Oct 14 I found zero Friday bars in a year of data and changed the system to a Monday-Thursday week. On Oct 16 a lone Friday bar appeared and I explained it away rather than treating it as counter-evidence. Today refutes it: a SETTLED Friday bar for all ten UAE names with genuine ranges and valid OHLC (EMIRATESNBD O 31.28 H 31.62 L 30.92 C 31.58), a Thursday bar that was missing yesterday, and no Saturday bar. Reverted everywhere. The year of missing Fridays is still unexplained - a settlement lag cannot account for it - so the rule now written down is: do not derive the trading calendar from this source's weekday counts. A year of one source's data is evidence about the source, not the world."
+   "market": "ETH has fallen to SELL - its first since the position opened in July",
+   "note": "ETH is 2,411.67, down 0.91%, now 5.48% below a still-rising 50-day of 2,551.59 with RSI 38.2 and a negative histogram. Band HOLD -> SELL (-15 -> -30). The Oct 13 exit at 2,529.63 is 4.89% ahead of spot. Noted today because a band change is a change of CHARACTER; the running percentage itself stays in the record rather than the daily summary."
   },
   {
-   "market": "Saturday readings are SETTLED Friday closes - the week's best UAE data",
-   "note": "With no Saturday session every UAE live value equals Friday's settled close exactly, verified across five names. So the Saturday run gives settled closes rather than the 11:09 Dubai intraday drafts that misled me on Oct 13. Same useful property as the monthly DCA run, which fires before the Dubai open."
+   "market": "BTC's stop held a fourth time, and the cushion has gone nowhere for five sessions",
+   "note": "Saturday closed 81,491.04, 2.76% above the 79,304.74 stop, low 1.91% clear. Sunday flat at +0.12%. The cushion has read -5.12%, -2.03%, -3.47%, -2.87%, -2.99% across five sessions - neither firing nor moving out of reach. The histogram improved to -474.59 from -510.13, a second narrowing in four sessions, deliberately not extrapolated."
   },
   {
-   "market": "BTC's stop held a third time; the cushion has gone nowhere for four sessions",
-   "note": "Friday closed 81,615.64, 2.91% above the 79,304.74 stop, with the intraday low 1.90% clear. Saturday has been quiet. But the cushion has spent four sessions inside a three-point band - -5.12%, -2.03%, -3.47%, -2.87% - resolving neither way, while the histogram deepened again to -510.13 and the position round-tripped from +4.75% on Oct 7 to +1.63% now."
+   "market": "Crypto breadth is unchanged and poor - two of eleven rated BUY",
+   "note": "A flat Sunday, everything between -0.15% and -2.32%, nothing near the 4% threshold. Only BTC and AVAX are rated BUY for a second session; LTC confirmed a cross below its 50-day outside the 0.5% buffer. Every histogram on the board is negative. On Sept 24 ten of eleven were STRONG BUY."
   },
   {
-   "market": "Crypto breadth halved in a session - only BTC and AVAX still rated BUY",
-   "note": "Every coin gave back part of Friday's bounce, between -0.63% and -2.94%, none reaching the 4% threshold. ADA and LTC fell out of BUY, ADA crossing below its 50-day for the second time in three sessions. XRP fell HOLD to STRONG SELL and DOGE SELL to STRONG SELL - the first STRONG SELLs on the crypto board this episode. The thin-bounce evidence reported yesterday (BTC ETF flows +$5.06m with 1 of 12 funds positive, ETH ETFs -$60.22m) has held up for exactly one session."
+   "market": "No new UAE data at all - and EMIRATESNBD is still day 1 of 2",
+   "note": "The market is closed for the weekend, every UAE name carries stale_runs >= 1 and prices are identical to yesterday's. Today's figures are the SAME Friday closes. A non-trading day does not advance a confirmation count, so reporting STRONG BUY 60 again would be double-counting one session. Monday supplies the second. Watch: TECOM's stale_runs is 4 and ALDAR's 3 against a threshold of 10 - weekend repeats that should reset Monday, but a real freeze if they keep climbing."
   },
   {
-   "market": "EMIRATESNBD is the strongest UAE reading on record here - on settled data",
-   "note": "STRONG BUY 60 on Friday's settled close of 31.58: trend +25 at 2.23% above a rising 50-day, slope +10, MACD momentum +15 with the histogram turning POSITIVE at +0.070, and a fresh bullish cross +10, with structure deadbanded at 0.39%. Thursday's 45 had flat momentum, so the improvement is in the strongest part of the score. That is ONE settled session; Monday gives the second. Against it, four UAE names printed MACD bullish crosses from deeply oversold levels (AIRARABIA, TALABAT, EMAARDEV, DEWA off STRONG SELL), which is bounce mechanics rather than recovery - eleven of nineteen UAE names are still SELL or worse."
-  },
-  {
-   "market": "The FOMC blackout began today - eleven days with no scheduled Fed news",
-   "note": "The blackout for the Oct 27-28 meeting runs from today through Oct 29. Warsh's Friday appearance in Bangkok was the last on-record Fed commentary, so the dovish drift that took October hike odds back to roughly 27.7% is frozen in place and only data can move it now. December remains ~90-92% for a hike, so the market has deferred it rather than cancelled it."
+   "market": "NOTHING FOUND for the weekend, and there is a structural reason",
+   "note": "Two targeted searches returned only 2025 material and nothing dated Oct 17-18. Recorded as a null rather than reaching for older articles - the trap declined on Oct 7 and caught again on Oct 14. The emptiness is informative: US spot ETFs do not trade at weekends, so Friday Oct 16 remains the latest settled flow data with the next session Monday Oct 19, and the FOMC blackout runs through Oct 29, so there is no scheduled macro commentary either."
   }
  ],
  "asset_notes": {

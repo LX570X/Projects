@@ -2512,6 +2512,41 @@
    "action": "no push - deliberately silent",
    "rationale": "Four actionable band changes fired (XRP to STRONG SELL, DOGE to STRONG SELL, EMAAR to BUY, TALABAT off STRONG SELL) but none is actionable FOR THIS USER: the two crypto downgrades are in names not held and already deep in SELL territory, and the two UAE changes cannot be traded while Al Ramz is shut. No crypto move reached the 4% threshold. BTC's stop held with nothing to do. I pushed yesterday to resolve the stop-proximity alert, and the right follow-up to 'it held' is silence rather than a second message saying it is still holding.",
    "status": "silent"
+  },
+  {
+   "date": "2026-10-18",
+   "ticker": "ETHUSDT",
+   "action": "ETH has fallen to SELL - noted because it is a change of character, not just of size",
+   "rationale": "ETH dropped HOLD -> SELL (-15 -> -30), its first SELL rating since the position was opened on 2026-07-17. It is 2,411.67, 5.48% below a still-rising 50-day of 2,551.59, RSI 38.2 with a negative histogram and no structural edge (the 20/50 averages are within 0.31%). The exit at 2,529.63 on 2026-10-13 is now 4.89% ahead of spot. My standing policy is to keep the post-exit comparison in the record and NOT re-narrate it daily - set for LINK on 2026-09-25 and reaffirmed for ETH on 2026-10-14 - with the exception that it returns to the summary if it changes CHARACTER rather than just size. A band change to SELL is exactly that, which is why it appears today and will not appear tomorrow for being 5% instead of 4.89%. Practically it changes nothing: there was already no dated re-entry trigger, and a SELL rating is a reason not to re-enter rather than a reason to act.",
+   "status": "no action - proceeds remain USDT; exit execution still unconfirmed"
+  },
+  {
+   "date": "2026-10-18",
+   "ticker": "BTCUSDT",
+   "action": "hold - stop held a fourth time; fifth session with the cushion going nowhere",
+   "rationale": "Saturday 2026-10-17 CLOSED at 81,491.04, 2.76% above the 79,304.74 stop, with the intraday low of 80,819.66 clearing by 1.91%. Sunday is flat: +0.12% on a 0.83% range, band unchanged at BUY 35 for a third session, still above its 50-day, RSI 47.4. Position +1.76%, $138.54. Stop UNCHANGED - the trail computes 75,382.75 from Saturday's close, 1.93 ATR below it. The thing worth recording is the stasis rather than the hold: the cushion has now read -5.12%, -2.03%, -3.47%, -2.87% and -2.99% across five sessions, neither firing nor moving out of reach. The histogram improved to -474.59 from -510.13, a second narrowing in four sessions, and I am explicitly NOT extrapolating that - I have been wrong three times in a month doing exactly that.",
+   "status": "no action - fill still UNCONFIRMED since 2026-09-20"
+  },
+  {
+   "date": "2026-10-18",
+   "ticker": "EMIRATESNBD",
+   "action": "STILL day 1 of 2 - today adds nothing and I am not counting it",
+   "rationale": "Today's reading is STRONG BUY 60 at 31.58 again, identical to yesterday's, because the UAE market is closed for the weekend and every UAE name carries stale_runs >= 1 with unchanged prices. These are the SAME Friday closes read yesterday. A non-trading day does not advance a confirmation count, and reporting the same session twice as two readings would be precisely the double-counting the 2-day rule exists to prevent - and a close cousin of the date-stamp error I made and reverted yesterday. Monday 2026-10-20 supplies the genuine second settled session. Also noting a data watch rather than a finding: TECOM's stale_runs is 4 and ALDAR's 3 against a stock threshold of 10. Those are weekend repeats and the counter should reset on Monday; if either keeps climbing past Monday it is a real frozen quote.",
+   "status": "advice only - day 1 of 2 unchanged; Al Ramz still closed"
+  },
+  {
+   "date": "2026-10-18",
+   "ticker": "news",
+   "action": "NOTHING FOUND for the weekend - recorded as a null result",
+   "rationale": "Two targeted searches for Oct 17-18 crypto news returned only 2025 material and nothing dated to this weekend. Recording that as a null rather than reaching for older articles, which is the trap I declined on 2026-10-07 and which a date-checker caught again on 2026-10-14 in the form of an Aug-19 selloff article that would have read perfectly as current. There is also a STRUCTURAL reason the pass is empty, which makes it informative rather than a failure: US spot ETFs do not trade at weekends, so Friday Oct 16 remains the latest settled flow data and the next session is Monday Oct 19; and the FOMC blackout runs through Oct 29, so there is no scheduled macro commentary either. A proportionate two-search check was the right scale for a day with one new signal fact and no UAE session - a fifteen-agent pass would have produced the same null at far greater cost.",
+   "status": "null result recorded"
+  },
+  {
+   "date": "2026-10-18",
+   "ticker": "notification",
+   "action": "no push - silent",
+   "rationale": "Two actionable alerts fired - ETH to SELL and LTC's confirmed 50-day break - but neither is actionable for this user: ETH was exited five days ago and the proceeds are in USDT, and LTC is not held and does not qualify for the satellite rule. No crypto move reached 4% (the largest was AVAX at -2.32%). BTC's stop held with nothing to do, and the UAE board produced no new data at all. Fifth consecutive day of no action and the second consecutive silent day.",
+   "status": "silent"
   }
  ]
 }

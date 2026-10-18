@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-17T07:30+00:00",
+ "updated": "2026-10-18T07:25+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": 0,
@@ -257,7 +257,7 @@
    }
   },
   "opportunity_status": {
-   "as_of": "2026-10-17",
+   "as_of": "2026-10-18",
    "state": "DEPLOYED (instruction issued 2026-09-20) - fill UNCONFIRMED",
    "what_happened": "BTC rated STRONG BUY (50, core 50) on two consecutive readings - Friday's close of 80,883.87 and Saturday's 81,249.99. That satisfies the 2-day rule. First confirmation in FOUR armings of this trigger (Aug 3 BTC, Aug 15 AVAX, Sept 5-6 BTC all failed to confirm).",
    "instruction": {
@@ -282,17 +282,17 @@
    "position_now": {
     "indicative_qty": 0.00169464,
     "entry": 80340.01,
-    "last": 81652.0,
-    "value_usd": 138.37,
-    "pnl_pct": 1.63,
+    "last": 81752.94,
+    "value_usd": 138.54,
+    "pnl_pct": 1.76,
     "stop": 79304.74,
     "trigger": "ONE daily CLOSE below 79,304.74 -> convert ALL back to USDT",
     "stop_hit": false,
-    "stop_not_hit_detail": "Friday 2026-10-16 CLOSED at 81,615.64, which is 2.91% above the stop. Friday's intraday low of 80,809.25 cleared it by 1.90%. Saturday has been quiet - a 0.32% range between 81,416.00 and 81,677.88. No action.",
-    "stop_distance_pct": -2.87,
-    "stop_note": "Stop UNCHANGED. The trail computes 75,353.76 from Friday's close, 1.89 ATR BELOW the existing stop, so the never-lowered rule holds it.",
-    "signal_note": "BTC -0.63% to 81,652.00, band unchanged at BUY 35 for a second session, still above its 50-day. Histogram -510.13, deeper again from -498.03. The position has round-tripped: +4.75% on Oct 7, +0.75% on Oct 15, +1.63% now.",
-    "cushion_history": "-5.12% (Oct 14) -> -2.03% (Oct 15) -> -3.47% (Oct 16) -> -2.87% (Oct 17). Three sessions inside a 3-point band with no resolution either way."
+    "stop_not_hit_detail": "Saturday 2026-10-17 CLOSED at 81,491.04, 2.76% above the stop, with an intraday low of 80,819.66 clearing it by 1.91%. Sunday is flat - BTC +0.12%, a 0.83% range. No action.",
+    "stop_distance_pct": -2.99,
+    "stop_note": "Stop UNCHANGED. The trail computes 75,382.75 from Saturday's close, 1.93 ATR BELOW it.",
+    "signal_note": "Band unchanged at BUY 35 for a third session, still above its 50-day, RSI 47.4. The histogram improved to -474.59 from -510.13 - a second narrowing in four sessions, and I am not extrapolating it.",
+    "cushion_history": "-5.12%, -2.03%, -3.47%, -2.87%, -2.99% over five sessions. The stop has neither fired nor moved out of reach; this is the fifth session inside a three-point band."
    },
    "band_churn_note": {
     "as_of": "2026-10-06",
@@ -475,11 +475,12 @@
   "why_it_matters": "On a day when every asset on the crypto board fell and four names confirmed trend breaks, the system produced no trade. That is the design: the BTC stop is a single daily close below a fixed level and that level was not touched, and the satellite trigger needed a qualifying name and there was none. Both outcomes were computed, not decided."
  },
  "book_signal_state": {
-  "as_of": "2026-10-17",
-  "summary": "Crypto gave back part of Friday's bounce on a quiet Saturday - every coin lower, between -0.63% (BTC) and -2.94% (ADA), with no move reaching the 4% alert threshold. Breadth DETERIORATED further: only TWO of eleven are rated BUY (BTC and AVAX) against four yesterday. ADA and LTC both fell out of BUY, ADA crossing back below its 50-day for the second time in three sessions.",
-  "deterioration": "XRP fell HOLD -> STRONG SELL (-15 -> -50) and DOGE SELL -> STRONG SELL. Those are the first STRONG SELL ratings on the crypto board in this episode. Every histogram remains negative and BTC's is the deepest at -510.13.",
-  "uae": "Market closed (weekend), and today's readings are Friday's SETTLED closes - the strongest UAE data of the week. EMIRATESNBD strengthened to STRONG BUY 60 on positive momentum, the best UAE reading on record here. EMAAR rose HOLD -> BUY 30. Against that, four names printed MACD bullish crosses from deeply oversold positions (AIRARABIA, TALABAT, EMAARDEV, and DEWA improved off STRONG SELL), which is bounce mechanics in a downtrend rather than recovery - eleven of nineteen UAE names are still SELL or worse.",
-  "honest_reading": "Nothing to do. BTC's stop needs a daily close below 79,304.74 and Friday closed 2.91% clear; nothing qualifies for the satellite rule at core 45; the UAE candidate needs one more settled session; and the FOMC blackout that began today removes the only scheduled source of macro news for eleven days. This is a week where the written rules produced no action four days running, which is the system working rather than failing."
+  "as_of": "2026-10-18",
+  "summary": "A flat Sunday. Crypto drifted lower between -0.15% and -2.32%, nothing near the 4% threshold, and only BTC and AVAX remain rated BUY for a second session. Two changes: ETH fell HOLD -> SELL, and LTC confirmed a cross below its 50-day by a margin outside the 0.5% buffer.",
+  "breadth": "Two BUY, five HOLD, two SELL and two STRONG SELL across eleven coins. Every histogram is negative. On Sept 24 ten of eleven were STRONG BUY.",
+  "uae": "No new data - weekend. See uae_no_new_data_2026_10_18.",
+  "news": "NOTHING FOUND dated to Oct 17-18. Recording that as a null result rather than reaching for older material: both searches returned only 2025 articles, and there is a structural reason - US spot ETFs do not trade at weekends, so Friday Oct 16 remains the latest flow data and the next session is Monday Oct 19. The FOMC blackout also runs to Oct 29, so there is no scheduled macro news either.",
+  "honest_reading": "Fifth consecutive day with no action, all of it computed rather than decided: BTC's stop needs a daily close below 79,304.74 and Saturday closed 2.76% clear; nothing reaches core 45 for the satellite rule; the UAE candidate needs a trading day it has not had; and there is no re-entry trigger for the ETH proceeds."
  },
  "bookkeeping_correction": {
   "found": "2026-09-29",
@@ -681,5 +682,18 @@
   "recent_date_stamps_still_unstable": "Yesterday's bar stamped 10-15 (O 30.68, C 31.46) is today's bar stamped 10-14 (O 30.68, C 31.50), and a NEW 10-15 bar appeared with a different open (31.40). So recent bars do get re-dated on settlement. That observation stands; the conclusion I drew from it did not.",
   "consequence_for_last_completed_close": "Unchanged and still worth knowing: for a UAE name the function can return a close one session stale, because the newest bar is excluded as in-progress. Crypto is verified unaffected. No UAE position is held.",
   "still_raw_not_dividend_adjusted": "Unchanged from 2026-10-15: DEWA's April ex-date shows as a -1.78% gap on 2026-04-13, so UAE ex-dates create spurious bearish signals."
+ },
+ "eth_post_exit": {
+  "as_of": "2026-10-18",
+  "status": "ETH has fallen to SELL -30 - the first SELL rating since the position was opened on 2026-07-17.",
+  "detail": "2,411.67, down 0.91%, 5.48% below a still-rising 50-day of 2,551.59, RSI 38.2 with a negative histogram. The 2026-10-13 exit at 2,529.63 is now 4.89% ahead of spot.",
+  "reporting_policy": "Kept current HERE and NOT re-narrated daily - the policy set for the LINK exit on 2026-09-25 and reaffirmed for this one on 2026-10-14. It goes into a written summary at the monthly review, or sooner if it changes character rather than just size. A band change to SELL is a change of character, which is why it is noted today.",
+  "no_reentry": "Unchanged from 2026-10-15: there is no dated re-entry trigger. A SELL rating is a reason not to re-enter, not a reason to act."
+ },
+ "uae_no_new_data_2026_10_18": {
+  "as_of": "2026-10-18",
+  "fact": "Every UAE name carries stale_runs >= 1 and identical prices to yesterday's reading, because the market is closed for the weekend. Today's UAE figures are the SAME Friday closes read yesterday - there is no new session and no new information.",
+  "consequence_for_emiratesnbd": "It is STILL day 1 of 2. A non-trading day does not advance a confirmation count, and reporting STRONG BUY 60 again today as though it were a second reading would be double-counting the same session. Monday 2026-10-20 supplies the second settled session.",
+  "watch": "TECOM's stale_runs is now 4 and ALDAR's 3 against a stock threshold of 10. Both are weekend repeats rather than frozen quotes, so the counter will reset on Monday - but if either keeps climbing past Monday it is a real freeze."
  }
 }
