@@ -2603,6 +2603,20 @@
    "action": "RE-ISSUED: convert ALL ETH to USDT now. End state: hold 0 ETH.",
    "rationale": "First genuine user input since 2026-07-17: the user says their money is in ETH, so the Oct-13 exit was never executed. The stop fired on the Oct-12 close of 2,447.17 and the case has only strengthened: ETH is 2,431.86, STRONG SELL -65, 4.68% below a 50-day that turned down yesterday, and today the 20-day crossed below the 50-day. Converting now realises +32.9% on the 1,829.70 entry; the delay cost about 3.9% versus the instructed 2,529.63 exit. USDT, not BTC: BTC is BUY 35 with a negative histogram, which is not a confirmed deploy signal, and only 2 of 11 coins rate BUY. Not waiting for a bounce - that is the decision the stop exists to remove.",
    "status": "RE-ISSUED to user directly; reconciliation of all balances requested"
+  },
+  {
+   "date": "2026-10-19",
+   "ticker": "ETHUSDT",
+   "action": "EXECUTED - user converted all ETH to USDT",
+   "rationale": "User confirmed: 'Now I just have usdt nothing else.' The stop fired on the Oct-12 close and was instructed Oct 13 at 2,529.63; it was executed six days later at roughly 2,431.86, so the realised result is about +32.9% on the 1,829.70 entry rather than +38.3%. Exact fill not yet stated. This is the first executed instruction confirmed in the book's history.",
+   "status": "DONE - confirmed by user"
+  },
+  {
+   "date": "2026-10-19",
+   "ticker": "BTCUSDT",
+   "action": "RETIRED - the Sept-20 BTC position never existed",
+   "rationale": "The user holds only USDT, so the 2026-09-20 BTC deploy was never executed. For 29 days the daily cycle tracked its stop as 'advised-unconfirmed', and on Oct 15 and Oct 16 it generated push notifications about a stop on a position the user did not have. The reporting rule kept it out of every P&L figure, which is exactly what that rule was for, but the notifications should not have been sent on an unconfirmed line. Fix: unconfirmed positions no longer trigger notifications. The user should disregard both BTC alerts.",
+   "status": "retired; notification rule tightened"
   }
  ]
 }

@@ -1,12 +1,12 @@
 {
- "updated": "2026-10-19T10:25+00:00",
+ "updated": "2026-10-19T10:45+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
-  "USDT": 0,
+  "USDT": null,
   "fill": {
-   "state": "unconfirmed",
-   "as_of": "2026-08-22",
-   "evidence": "never reconciled against the exchange"
+   "state": "CONFIRMED by user 2026-10-19 - USDT is the ONLY holding; exact amount not yet stated",
+   "as_of": "2026-10-19",
+   "evidence": "User: 'Now I just have usdt nothing else', after converting ETH -> USDT on Binance Convert."
   }
  },
  "holdings": [],
@@ -258,7 +258,7 @@
   },
   "opportunity_status": {
    "as_of": "2026-10-19",
-   "state": "DEPLOYED (instruction issued 2026-09-20) - fill UNCONFIRMED",
+   "state": "NEVER EXECUTED - retired 2026-10-19",
    "what_happened": "BTC rated STRONG BUY (50, core 50) on two consecutive readings - Friday's close of 80,883.87 and Saturday's 81,249.99. That satisfies the 2-day rule. First confirmation in FOUR armings of this trigger (Aug 3 BTC, Aug 15 AVAX, Sept 5-6 BTC all failed to confirm).",
    "instruction": {
     "end_state": "hold about $136 of BTC, funded from the 500 AED opportunity bucket held in USDT - if you are already there, do nothing",
@@ -279,29 +279,19 @@
    ],
    "bucket_aed": 500,
    "held_as": "BTC once executed",
-   "position_now": {
-    "indicative_qty": 0.00169464,
-    "entry": 80340.01,
-    "last": 82884.0,
-    "value_usd": 140.46,
-    "pnl_pct": 3.17,
-    "stop": 79304.74,
-    "trigger": "ONE daily CLOSE below 79,304.74 -> convert ALL back to USDT",
-    "stop_hit": false,
-    "stop_not_hit_detail": "Sunday 2026-10-18 CLOSED at 82,116.00, 3.54% above the stop. BTC is +1.40% today to 82,884.00. No action.",
-    "stop_distance_pct": -4.32,
-    "cushion_FINALLY_MOVED": "-5.12%, -2.03%, -3.47%, -2.87%, -2.99%, now -4.32%. After five sessions inside a three-point band the cushion has genuinely widened, back to roughly where it was on Oct 14 before the compression. The histogram also improved sharply to -340.18 from -474.59 and -510.13 - the clearest two-session improvement of this episode, and RSI has recovered to 52.0.",
-    "discipline_note": "I am recording that improvement and NOT calling it a turn. I have been wrong three times in a month extrapolating two sessions of direction - on Oct 5 ('BTC may well cross within days', reversed in one session), on Oct 5 again (a claimed durable trail crossing), and on Sept 28 ('BTC is now the stronger of the two positions'). Two good sessions after a bad week is not a trend.",
-    "stop_note": "Stop UNCHANGED. The trail computes 76,047.08 from Sunday's close, still 1.61 ATR BELOW the existing stop, so the never-lowered rule holds it. The trail has not re-armed.",
-    "signal_note": "Band unchanged at BUY 35 for a fourth session, above its 50-day. The position is +3.17%, its best since Oct 7."
-   },
    "band_churn_note": {
     "as_of": "2026-10-06",
     "sequence": "BUY (Oct 1) -> STRONG BUY (Oct 2) -> BUY (Oct 3) -> BUY (Oct 4) -> STRONG BUY (Oct 5) -> BUY (Oct 6)",
     "why": "BTC's score sits on the 45 threshold with the momentum term oscillating between 'flat (not scored)' and 'negative' as the histogram crosses zero. Four flips in five sessions on a price that has gone 84,240 -> 85,334, a 1.3% range.",
     "consequence": "BTC's band changes are now behaving like the UAE names I muted - TECOM, DEWA, TALABAT - and for the same mechanical reason. I am NOT muting a held position's band, because the score still feeds the deploy trigger and the record, but I am noting that a BTC band change on its own is no longer informative and should not be reported as news."
    },
-   "survived_the_gap": "BTC held its stop through the worst six-day stretch of the episode, with 3.09% to spare on the closing basis. Noted without being made into a virtue: a 5.25% cushion on a name whose momentum reading is the worst it has been is not a strong position, it is an intact one."
+   "survived_the_gap": "BTC held its stop through the worst six-day stretch of the episode, with 3.09% to spare on the closing basis. Noted without being made into a virtue: a 5.25% cushion on a name whose momentum reading is the worst it has been is not a strong position, it is an intact one.",
+   "retired": {
+    "date": "2026-10-19",
+    "evidence": "User confirmed USDT is their only holding. The 2026-09-20 BTC deploy (indicative 0.00169464 BTC at 80,340.01) was never bought.",
+    "what_this_means": "For 29 days the daily cycle tracked a stop on a position that did not exist, including two push notifications on Oct 15 and Oct 16 about its stop distance. The confirmed/unconfirmed reporting rule contained the damage - no P&L was ever counted on it - but the alerts were about a phantom and should be disregarded.",
+    "lesson": "A position that stays unconfirmed for more than a few days should stop generating alerts. Recorded as a process fix: unconfirmed lines are tracked in the record but do not trigger notifications."
+   }
   },
   "stock_shortlist_note": {
    "as_of": "2026-08-24",
@@ -379,22 +369,20 @@
   "why": "a daily review of a one-line confirmed book manufactures more instructions than the user can execute - which is what created eleven unconfirmed instructions"
  },
  "book_summary": {
-  "as_of": "2026-10-13",
+  "as_of": "2026-10-19",
   "confirmed": {
-   "lines": [],
-   "total_usd": 92.08,
-   "note": "The ETH line is EXITED by instruction today. Until execution is confirmed the $92.08 is 'ETH being converted to USDT' rather than either one cleanly - the value is the same on both sides of the trade, so the total is unaffected. There is no confirmed market exposure left in the book."
-  },
-  "advised_unconfirmed": {
    "lines": [
     {
-     "ticker": "BTCUSDT",
-     "qty": 0.00169464,
-     "notional_usd": 141.84
+     "ticker": "USDT",
+     "qty": null,
+     "note": "only holding; amount to be stated by user"
     }
    ],
-   "total_notional_usd": 141.84,
-   "note": "NOTIONAL ONLY - no P&L is reported on these and they are never added to the confirmed total"
+   "total_usd": null
+  },
+  "advised_unconfirmed": {
+   "lines": [],
+   "note": "BTC line retired - never executed"
   },
   "closed": [
    {
@@ -409,20 +397,15 @@
    {
     "ticker": "ETHUSDT",
     "opened": "2026-07-17",
-    "closed": "2026-10-13",
+    "closed": "2026-10-19",
     "entry": 1829.7,
-    "exit": 2529.63,
-    "result_pct": 38.25,
-    "note": "Stop-out on the 2026-10-12 close of 2,447.17, 2.66 below the 2,449.83 trailing stop. The ONLY line in this book ever confirmed by the user, and the only one whose result is a real outcome rather than an advice outcome - subject to execution of today's instruction. Held 88 days. See eth_exit."
+    "exit": 2431.86,
+    "result_pct": 32.91,
+    "note": "Stop fired on the 2026-10-12 close (2,447.17 < 2,449.83). Instructed 2026-10-13 at 2,529.63, NOT executed until 2026-10-19, confirmed by the user. Realised roughly +32.9% vs the 1,829.70 entry instead of +38.3% - the six-day delay cost about 3.9%. The only confirmed position this book has ever held, and now a real, realised result.",
+    "exit_basis": "approximate - the 10:20 UTC price on the day the user converted; exact fill not stated"
    }
   ],
-  "struck": "BTC +$13.98 and LINK +$3.09 of previously reported P&L (about $17) removed from the record on 2026-08-24",
-  "uninvested_aed": {
-   "core_uae_stocks": 1200,
-   "opportunity_usdt": 250,
-   "satellite_reserve": 309,
-   "total": 1759
-  }
+  "struck": "BTC +$13.98 and LINK +$3.09 of previously reported P&L (about $17) removed from the record on 2026-08-24"
  },
  "gap_check": {
   "as_of": "2026-10-13",
@@ -564,19 +547,11 @@
  },
  "last_action": {
   "date": "2026-10-19",
-  "ticker": "ETHUSDT",
-  "action": "CONVERT all ETH to USDT",
-  "end_state": "hold 0 ETH - the whole ETH balance goes to USDT. If you are already there, do nothing.",
-  "why": "Re-issued 2026-10-19 after you told me your money is still in ETH. The stop fired on the 2026-10-12 close and ETH has deteriorated since: STRONG SELL -65, 4.7% below a 50-day that has turned down, and the 20-day has now crossed below the 50-day.",
-  "execution": "RE-ISSUED 2026-10-19 - the 2026-10-13 instruction was NOT executed (user statement)",
-  "proceeds_usd_if_full_line": 92.08,
-  "proceeds_usd_if_aug20_trim_was_taken": 23.02,
-  "do_not": "Do NOT convert into BTC or another coin, and do not wait for a bounce. BTC is only BUY 35, which is not a confirmed entry under the rules, and only 2 of 11 coins are rated BUY.",
-  "still_outstanding_as_of": "2026-10-14",
-  "note_2026_10_14": "Instruction UNCHANGED and still unconfirmed. ETH is 2,507.84 today, so the 2,529.63 exit is 0.87% ahead one day on. Recording that once, here, and NOT re-narrating it daily - same policy set for the LINK exit on 2026-09-25. It goes back into a written summary at the monthly review, or sooner if it changes character rather than just size.",
-  "user_statement_2026_10_19": "'I have my money in eth, what should I do? Convert to what?'",
-  "how": "Binance -> Trade -> Convert. From: ETH, tap Max. To: USDT. Preview -> Confirm. (If USDT is not offered, use USDC.)",
-  "wording_fix_2026_10_19": "The 2026-10-19 re-issue said 'SELL', breaking the book's own rule that alerts say CONVERT. The user's Binance shows only Buy and Convert, so 'sell' read as an action they could not take."
+  "ticker": "USDT",
+  "action": "HOLD USDT - nothing to do",
+  "end_state": "Hold your USDT. Nothing qualifies to buy right now; you will get a notification when a signal confirms.",
+  "why": "ETH was converted to USDT on 2026-10-19 (confirmed by you). Only 2 of 11 coins are rated BUY and none is a confirmed entry under the rules.",
+  "execution": "DONE - ETH -> USDT confirmed by user 2026-10-19"
  },
  "eth_exit": {
   "date": "2026-10-13",
@@ -720,6 +695,8 @@
   "what_it_tells_us": "The 2026-10-13 ETH -> USDT exit was NOT executed; the user still holds ETH. Quantity not yet stated.",
   "what_it_puts_in_doubt": "If the user's money is in ETH, the 2026-09-20 BTC deploy (0.00169464 BTC, 'advised-unconfirmed' for 29 days) and possibly the DCA instructions may never have been executed either. The BTC line is NOT treated as real until the user confirms it.",
   "asked_for": "ETH, BTC, LINK and USDT balances from Binance -> Wallet -> Overview.",
-  "cost_of_the_delay": "ETH 2,431.86 now vs the 2,529.63 instructed exit = -3.87%, about $3.56 on 0.0364 ETH. Still +32.9% vs the 1,829.70 entry."
- }
+  "cost_of_the_delay": "ETH 2,431.86 now vs the 2,529.63 instructed exit = -3.87%, about $3.56 on 0.0364 ETH. Still +32.9% vs the 1,829.70 entry.",
+  "result": "RECONCILED: ETH 0, BTC 0, LINK 0, USDT only. First reconciliation since 2026-07-17. The BTC line was never real. Open question: the exact USDT amount, which will also show whether the monthly 1,000 AED contributions ever reached Binance."
+ },
+ "notification_rule_fix_2026_10_19": "Unconfirmed positions no longer generate push notifications. Only confirmed holdings do."
 }
