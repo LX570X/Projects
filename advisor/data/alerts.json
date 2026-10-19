@@ -1,17 +1,35 @@
 {
- "generated_at_utc": "2026-10-18T07:08:44+00:00",
+ "generated_at_utc": "2026-10-19T07:09:29+00:00",
  "alerts": [
   {
    "ticker": "ETHUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "ETHUSDT: HOLD -> SELL (score -15 -> -30)"
+   "msg": "ETHUSDT: SELL -> STRONG SELL (score -30 -> -50)"
   },
   {
-   "ticker": "LTCUSDT",
+   "ticker": "DEWA",
    "severity": "actionable",
-   "type": "trend",
-   "msg": "LTCUSDT: price crossed below its 50-day average \u2014 trend change"
+   "type": "signal_change",
+   "msg": "DEWA: SELL -> STRONG SELL (score -35 -> -65)"
+  },
+  {
+   "ticker": "AIRARABIA",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "AIRARABIA moved +2.6% in the last day (now 4.66 AED)"
+  },
+  {
+   "ticker": "ALDAR",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ALDAR: HOLD -> BUY (score 15 -> 25)"
+  },
+  {
+   "ticker": "ADIB",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ADIB: STRONG SELL -> SELL (score -55 -> -30)"
   }
  ]
 }
