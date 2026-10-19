@@ -2596,6 +2596,13 @@
    "action": "no push - silent for a third day",
    "rationale": "Four actionable band changes fired - ETH to STRONG SELL, DEWA to STRONG SELL, ALDAR to BUY, ADIB off STRONG SELL - plus AIRARABIA's +2.64% clearing the stock threshold. None is actionable for this user: ETH was exited six days ago, and the four UAE moves cannot be traded while Al Ramz is shut. No crypto move reached 4%. BTC's cushion widened, which is good news requiring no action, and a notification that says 'nothing to do, things improved' trains the user to ignore the channel.",
    "status": "silent"
+  },
+  {
+   "date": "2026-10-19",
+   "ticker": "ETHUSDT",
+   "action": "RE-ISSUED: convert ALL ETH to USDT now. End state: hold 0 ETH.",
+   "rationale": "First genuine user input since 2026-07-17: the user says their money is in ETH, so the Oct-13 exit was never executed. The stop fired on the Oct-12 close of 2,447.17 and the case has only strengthened: ETH is 2,431.86, STRONG SELL -65, 4.68% below a 50-day that turned down yesterday, and today the 20-day crossed below the 50-day. Converting now realises +32.9% on the 1,829.70 entry; the delay cost about 3.9% versus the instructed 2,529.63 exit. USDT, not BTC: BTC is BUY 35 with a negative histogram, which is not a confirmed deploy signal, and only 2 of 11 coins rate BUY. Not waiting for a bounce - that is the decision the stop exists to remove.",
+   "status": "RE-ISSUED to user directly; reconciliation of all balances requested"
   }
  ]
 }
