@@ -1,35 +1,11 @@
 {
- "generated_at_utc": "2026-10-19T07:09:29+00:00",
+ "generated_at_utc": "2026-10-19T10:20:58+00:00",
  "alerts": [
   {
-   "ticker": "ETHUSDT",
+   "ticker": "ADNOCGAS",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "ETHUSDT: SELL -> STRONG SELL (score -30 -> -50)"
-  },
-  {
-   "ticker": "DEWA",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "DEWA: SELL -> STRONG SELL (score -35 -> -65)"
-  },
-  {
-   "ticker": "AIRARABIA",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "AIRARABIA moved +2.6% in the last day (now 4.66 AED)"
-  },
-  {
-   "ticker": "ALDAR",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "ALDAR: HOLD -> BUY (score 15 -> 25)"
-  },
-  {
-   "ticker": "ADIB",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "ADIB: STRONG SELL -> SELL (score -55 -> -30)"
+   "msg": "ADNOCGAS: STRONG SELL -> SELL (score -50 -> -35)"
   }
  ]
 }
