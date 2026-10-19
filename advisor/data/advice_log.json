@@ -2547,6 +2547,55 @@
    "action": "no push - silent",
    "rationale": "Two actionable alerts fired - ETH to SELL and LTC's confirmed 50-day break - but neither is actionable for this user: ETH was exited five days ago and the proceeds are in USDT, and LTC is not held and does not qualify for the satellite rule. No crypto move reached 4% (the largest was AVAX at -2.32%). BTC's stop held with nothing to do, and the UAE board produced no new data at all. Fifth consecutive day of no action and the second consecutive silent day.",
    "status": "silent"
+  },
+  {
+   "date": "2026-10-19",
+   "ticker": "engine",
+   "action": "SOLVED the Friday anomaly - the source serves Friday bars then DELETES them",
+   "rationale": "Five days after first noticing it, the mechanism is explained by observation rather than theory. FRIDAY IS A TRADING SESSION, and the data source serves Friday's bar transiently - visible on the Saturday and Sunday runs - then DELETES it when Monday's bar appears. Evidence: on Sat Oct 17 and Sun Oct 18 a settled Friday bar existed for ALL TEN Yahoo UAE names with genuine OHLC and real ranges (EMIRATESNBD O 31.28 H 31.62 L 30.92 C 31.58); today it is gone from all ten and the weekday distribution is back to exactly zero Fridays; and Monday's OPEN equals the Friday close we observed, exactly, on three of five checked names - EMIRATESNBD 31.58, SALIK 5.21, TECOM 3.23 - so Friday really traded and closed there. SCORECARD ON MY OWN REASONING: the Oct-14 observation was correct and the anomaly real; the Oct-14 conclusion of a four-day week was wrong; the Oct-16 escalation was the worst error, when a Friday bar appeared and I explained it away rather than treating it as counter-evidence, abandoning a caveat I had correctly written two days before; the Oct-17 revert to Mon-Fri was right; and the Oct-17 admission that the anomaly was undiagnosed was the right call, because the explanation then arrived from watching rather than guessing. THE MATERIAL CONSEQUENCE is larger than the calendar question: every UAE moving average is permanently computed over a series missing ONE SESSION IN FIVE, and because the bars are deleted rather than delayed the hole never closes. That explains the measurement I took on Oct 14 and misread - the last 50 UAE bars span 86 calendar days against roughly 70 for a clean five-day window - so a UAE '50-day average' reaches back about 12.5 weeks instead of 10 and is biased toward older prices. It degrades every UAE trend call including EMIRATESNBD's STRONG BUY, which rests on being 2.2% above an average built from 80% of the sessions. Direction is probably robust to a uniform sampling of four days in five; the precise distances are not, and I should stop quoting them as if they were. PROPOSED FIX: the weekend run sees the Friday bar before deletion, so Fridays can be captured on Saturday, persisted locally and merged back. NOT BUILT TODAY - no UAE position can be opened while Al Ramz is shut, so this is premature engineering now, but it should be fixed BEFORE the first UAE trade rather than after.",
+   "status": "diagnosis complete; fix proposed and deliberately deferred; consequence recorded"
+  },
+  {
+   "date": "2026-10-19",
+   "ticker": "BTCUSDT",
+   "action": "hold - the cushion has finally widened, and I am not calling it a turn",
+   "rationale": "Sunday 2026-10-18 CLOSED at 82,116.00, 3.54% above the 79,304.74 stop, and BTC is +1.40% today to 82,884.00 with the live cushion at -4.32%. The position is +3.17% at $140.46, its best since Oct 7. After five sessions pinned inside a three-point band (-5.12%, -2.03%, -3.47%, -2.87%, -2.99%) the cushion has genuinely widened, and the histogram improved sharply to -340.18 from -474.59 and -510.13 - the clearest two-session improvement of this episode - with RSI recovering to 52.0. I am recording that and explicitly NOT calling it a turn: I have been wrong three times in a month extrapolating two sessions of direction, including on Oct 5 when I wrote that BTC 'may well cross within days' and it moved further away in one session. Two good sessions after a bad week is not a trend. Stop UNCHANGED - the trail computes 76,047.08 from Sunday's close, still 1.61 ATR below the stop, so it has NOT re-armed. Worth naming the divergence: this is the fourth session in which BTC and the alts have split, with BTC's histogram recovering while ETH fell to STRONG SELL and XRP and DOGE reached the -65 floor. Whatever is lifting BTC is not reaching the rest of the board.",
+   "status": "no action - fill still UNCONFIRMED since 2026-09-20"
+  },
+  {
+   "date": "2026-10-19",
+   "ticker": "ETHUSDT",
+   "action": "fell to STRONG SELL and its 50-day has TURNED DOWN",
+   "rationale": "ETH fell SELL -> STRONG SELL (-30 -> -50). It rose 0.94% on the day but sits 4.62% below a 50-day of 2,552 that is now sloping DOWN rather than up - a structural change rather than a price one, and the first time the ETH 50-day has turned since the position was opened in July. RSI 40.9, histogram still negative. The exit at 2,529.63 is 3.93% ahead of spot. This is the second consecutive change of CHARACTER - the band on Sunday, the slope today - which under the reporting policy is why it returns to the summary while a bare change in the percentage would not. Practical effect: none on the book, but it removes any remaining argument for re-entry. When I exited on Oct 13 the 50-day was still rising and the case rested on a mechanical stop plus a fresh trend break; six days on, the longer-term average has confirmed the break.",
+   "status": "no action - proceeds remain USDT; exit execution still unconfirmed"
+  },
+  {
+   "date": "2026-10-19",
+   "ticker": "EMIRATESNBD",
+   "action": "Monday's draft agrees - confirmation completes tomorrow, not today",
+   "rationale": "STRONG BUY 60 for a third consecutive reading at 31.48, RSI 55.0, stale_runs 0 so this is fresh data. But today's figure is a Monday 11:08 Dubai INTRADAY DRAFT against a 14:45/15:00 close, and eleven such drafts have failed by the close in the last month - which is precisely the error I made on Oct 13 when I led with a UAE collapse that closed higher. So the count stands at ONE settled session (Friday's close of 31.58, corroborated today by Monday's open printing at exactly that level) plus a Monday draft that agrees. The second SETTLED close arrives in tomorrow's data. I am not compressing the rule to reach a conclusion a day early, particularly on a signal whose underlying 50-day average I established today is computed from four sessions in five. The wider UAE picture does support it: six names now rate BUY or better - EMIRATESNBD 60, EMAAR 30, ADCB 25, ADPORTS 25, ALDAR 25 up from HOLD, DU 20 - the best breadth in weeks, and ADIB improved from STRONG SELL -55 to SELL -30 as the rights-issue overhang is absorbed.",
+   "status": "advice only - one settled session plus an agreeing draft; Al Ramz still closed"
+  },
+  {
+   "date": "2026-10-19",
+   "ticker": "AIRARABIA",
+   "action": "the reversal trigger date has passed and the outcome is UNVERIFIED",
+   "rationale": "On Oct 14 I flagged a dated reversal trigger: the NOTAM closing Riyadh King Khalid International expired at 21:00 UTC on Oct 17. That date has now passed, AIRARABIA is +2.64% to 4.66 - a move above the 2.5% stock threshold - and it carries a fresh MACD bullish cross. I searched for confirmation that the airport reopened and COULD NOT GET IT: the most recent reachable item is dated Oct 9, which predates the Oct 10 and Oct 11 strikes it would need to postdate, and the 'fully resumed operations' pieces are from December 2025. So the price move is CONSISTENT with a reopening but does not establish one, and I am recording it as unverified rather than completing the story. The signal itself has not turned: still SELL -40, below a 50-day that is sloping down, with bearish 20/50 structure. Note one improvement - core now equals the headline at -40 with RSI at 42.6, so the oversold-relief distortion I flagged on Oct 14 has unwound and the rating is no longer being propped by a +20 bounce-candidate term.",
+   "status": "advice only - no position; reopening unverified"
+  },
+  {
+   "date": "2026-10-19",
+   "ticker": "TECOM",
+   "action": "the frozen-quote watch is now REAL, as predicted yesterday",
+   "rationale": "TECOM's stale_runs has reached 5 - printing 3.23 for five consecutive runs - on a MONDAY, with live data flowing and every other UAE name reading 0 after ALDAR reset by moving. Yesterday I wrote that a counter still climbing past Monday would be a genuine freeze rather than a weekend repeat, and set that test in advance. It climbed. The stock threshold is 10 runs so TECOM is not yet muted, but it is halfway there and the precedent is bad: TAQA stopped trading on ADX on 2026-08-07 and was rated BUY on the same 2.66 print for 27 consecutive days before the frozen-quote guard was built. ADNOCGAS is also at 3, from the TradingView path which supplies no bars at all. Both are now on watch rather than merely noted.",
+   "status": "watch - not yet muted at 5 of 10 runs"
+  },
+  {
+   "date": "2026-10-19",
+   "ticker": "notification",
+   "action": "no push - silent for a third day",
+   "rationale": "Four actionable band changes fired - ETH to STRONG SELL, DEWA to STRONG SELL, ALDAR to BUY, ADIB off STRONG SELL - plus AIRARABIA's +2.64% clearing the stock threshold. None is actionable for this user: ETH was exited six days ago, and the four UAE moves cannot be traded while Al Ramz is shut. No crypto move reached 4%. BTC's cushion widened, which is good news requiring no action, and a notification that says 'nothing to do, things improved' trains the user to ignore the channel.",
+   "status": "silent"
   }
  ]
 }

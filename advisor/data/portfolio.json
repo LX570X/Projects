@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-18T07:25+00:00",
+ "updated": "2026-10-19T07:30+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": 0,
@@ -257,7 +257,7 @@
    }
   },
   "opportunity_status": {
-   "as_of": "2026-10-18",
+   "as_of": "2026-10-19",
    "state": "DEPLOYED (instruction issued 2026-09-20) - fill UNCONFIRMED",
    "what_happened": "BTC rated STRONG BUY (50, core 50) on two consecutive readings - Friday's close of 80,883.87 and Saturday's 81,249.99. That satisfies the 2-day rule. First confirmation in FOUR armings of this trigger (Aug 3 BTC, Aug 15 AVAX, Sept 5-6 BTC all failed to confirm).",
    "instruction": {
@@ -282,17 +282,18 @@
    "position_now": {
     "indicative_qty": 0.00169464,
     "entry": 80340.01,
-    "last": 81752.94,
-    "value_usd": 138.54,
-    "pnl_pct": 1.76,
+    "last": 82884.0,
+    "value_usd": 140.46,
+    "pnl_pct": 3.17,
     "stop": 79304.74,
     "trigger": "ONE daily CLOSE below 79,304.74 -> convert ALL back to USDT",
     "stop_hit": false,
-    "stop_not_hit_detail": "Saturday 2026-10-17 CLOSED at 81,491.04, 2.76% above the stop, with an intraday low of 80,819.66 clearing it by 1.91%. Sunday is flat - BTC +0.12%, a 0.83% range. No action.",
-    "stop_distance_pct": -2.99,
-    "stop_note": "Stop UNCHANGED. The trail computes 75,382.75 from Saturday's close, 1.93 ATR BELOW it.",
-    "signal_note": "Band unchanged at BUY 35 for a third session, still above its 50-day, RSI 47.4. The histogram improved to -474.59 from -510.13 - a second narrowing in four sessions, and I am not extrapolating it.",
-    "cushion_history": "-5.12%, -2.03%, -3.47%, -2.87%, -2.99% over five sessions. The stop has neither fired nor moved out of reach; this is the fifth session inside a three-point band."
+    "stop_not_hit_detail": "Sunday 2026-10-18 CLOSED at 82,116.00, 3.54% above the stop. BTC is +1.40% today to 82,884.00. No action.",
+    "stop_distance_pct": -4.32,
+    "cushion_FINALLY_MOVED": "-5.12%, -2.03%, -3.47%, -2.87%, -2.99%, now -4.32%. After five sessions inside a three-point band the cushion has genuinely widened, back to roughly where it was on Oct 14 before the compression. The histogram also improved sharply to -340.18 from -474.59 and -510.13 - the clearest two-session improvement of this episode, and RSI has recovered to 52.0.",
+    "discipline_note": "I am recording that improvement and NOT calling it a turn. I have been wrong three times in a month extrapolating two sessions of direction - on Oct 5 ('BTC may well cross within days', reversed in one session), on Oct 5 again (a claimed durable trail crossing), and on Sept 28 ('BTC is now the stronger of the two positions'). Two good sessions after a bad week is not a trend.",
+    "stop_note": "Stop UNCHANGED. The trail computes 76,047.08 from Sunday's close, still 1.61 ATR BELOW the existing stop, so the never-lowered rule holds it. The trail has not re-armed.",
+    "signal_note": "Band unchanged at BUY 35 for a fourth session, above its 50-day. The position is +3.17%, its best since Oct 7."
    },
    "band_churn_note": {
     "as_of": "2026-10-06",
@@ -475,12 +476,11 @@
   "why_it_matters": "On a day when every asset on the crypto board fell and four names confirmed trend breaks, the system produced no trade. That is the design: the BTC stop is a single daily close below a fixed level and that level was not touched, and the satellite trigger needed a qualifying name and there was none. Both outcomes were computed, not decided."
  },
  "book_signal_state": {
-  "as_of": "2026-10-18",
-  "summary": "A flat Sunday. Crypto drifted lower between -0.15% and -2.32%, nothing near the 4% threshold, and only BTC and AVAX remain rated BUY for a second session. Two changes: ETH fell HOLD -> SELL, and LTC confirmed a cross below its 50-day by a margin outside the 0.5% buffer.",
-  "breadth": "Two BUY, five HOLD, two SELL and two STRONG SELL across eleven coins. Every histogram is negative. On Sept 24 ten of eleven were STRONG BUY.",
-  "uae": "No new data - weekend. See uae_no_new_data_2026_10_18.",
-  "news": "NOTHING FOUND dated to Oct 17-18. Recording that as a null result rather than reaching for older material: both searches returned only 2025 articles, and there is a structural reason - US spot ETFs do not trade at weekends, so Friday Oct 16 remains the latest flow data and the next session is Monday Oct 19. The FOMC blackout also runs to Oct 29, so there is no scheduled macro news either.",
-  "honest_reading": "Fifth consecutive day with no action, all of it computed rather than decided: BTC's stop needs a daily close below 79,304.74 and Saturday closed 2.76% clear; nothing reaches core 45 for the satellite rule; the UAE candidate needs a trading day it has not had; and there is no re-entry trigger for the ETH proceeds."
+  "as_of": "2026-10-19",
+  "summary": "Crypto bounced modestly - everything flat to +2.16%, nothing near the 4% threshold - and BTC led with +1.40%. But breadth did not improve: still only BTC and AVAX rated BUY, while ETH fell to STRONG SELL and XRP and DOGE both reached the -65 floor.",
+  "the_split": "This is the fourth session where BTC and the alts have diverged. BTC is +3.17% on the position with a recovering histogram; ETH, XRP and DOGE are at or near the floor. Whatever is lifting BTC is not reaching the rest of the board.",
+  "uae": "The UAE board has the best breadth in weeks: SIX names rated BUY or better - EMIRATESNBD 60, EMAAR 30, ADCB 25, ADPORTS 25, ALDAR 25 (up from HOLD), DU 20. ADIB improved sharply from STRONG SELL -55 to SELL -30, consistent with the rights-issue overhang being absorbed. Against that DEWA fell to the -65 floor. All of it is Monday intraday draft data.",
+  "honest_reading": "Sixth consecutive day with no action. BTC's stop needs a close below 79,304.74 and Sunday closed 3.54% clear; nothing reaches core 45 for the satellite rule; the UAE candidate needs one more settled close; and the ETH proceeds have no re-entry trigger. The only thing that changed materially today is my understanding of the data, not the board."
  },
  "bookkeeping_correction": {
   "found": "2026-09-29",
@@ -668,15 +668,6 @@
   "monday": "Monday 2026-10-20 gives the second settled session. If it holds STRONG BUY, the 2-day rule is satisfied and the UAE bucket has its first confirmed candidate since becoming deployable on Oct 1.",
   "al_ramz": "Still not open, 92 days in. It has not yet cost a trade. If Monday confirms, it will have - and that is the first time I will be able to say so without inflating an unconfirmed signal."
  },
- "uae_calendar_REVERSAL_2026_10_17": {
-  "headline": "I was WRONG about the UAE trading week, and I am reverting my own change.",
-  "what_i_did": "On 2026-10-14 I found zero Friday bars in 206 spanning a full year and changed engine.py, build_dashboard.py and ADVISOR.md from weekday() <= 4 to <= 3, declaring a Monday-Thursday week. On 2026-10-16 a lone Friday bar appeared and instead of treating that as counter-evidence I explained it away as a date-stamp placeholder and wrote that the ambiguity was 'now RESOLVED in favour of a closed Friday'. That strengthening was the actual error - the Oct-14 change was a defensible reading of the data, the Oct-16 escalation was not.",
-  "what_todays_data_shows": "A SETTLED Friday bar (2026-10-16) now exists for ALL TEN Yahoo UAE names, with genuine intraday ranges and internally valid OHLC - EMIRATESNBD O 31.28 H 31.62 L 30.92 C 31.58, a 2.3% range. TECOM, which had no Friday bar yesterday, has one now. A Thursday 2026-10-15 bar also appeared, having been absent yesterday. And there is NO Saturday bar. Friday is a trading session; Saturday is not.",
-  "so_the_market_is": "MONDAY-FRIDAY, as originally assumed. Reverted in all three files.",
-  "what_remains_unexplained": "The historical series still holds only 1 Friday in 208 bars. A one-day settlement lag cannot explain a year of missing Fridays, so the older date stamps are wrong in some way I have not diagnosed. I am NOT inventing a third theory to cover it. The operational rule is written into ADVISOR.md: do not re-derive the trading calendar from this source's weekday distribution.",
-  "cost_of_my_error": "For three days - Oct 14, 15 and 16 - the dashboard would have shown 'UAE market CLOSED' on a Friday when it was open. Only one Friday fell in that window, 2026-10-16, and on that day the dashboard did display CLOSED while the market traded. No decision depended on it and no position exists, so the cost is a wrong label on one day. The process cost is larger: I presented a weekday count from one source as an exchange calendar, and then defended it against its own counter-evidence.",
-  "the_lesson_i_am_writing_down": "A year of one source's data is evidence about the SOURCE, not about the world. I had the right instinct on Oct 14 - I wrote then that I could not distinguish 'exchange closed' from 'source omits' - and then two days later I talked myself out of my own caveat because a tidy mechanism was available. The caveat was right and the mechanism was a story."
- },
  "uae_data_notes_2026_10_17": {
   "saturday_readings_are_SETTLED": "Confirmed today: with no Saturday session, every UAE live value equals Friday's settled close exactly (EMIRATESNBD 31.58, EMAAR 11.46, DEWA 2.70, SALIK 5.21, TECOM 3.23). So the Saturday run produces the strongest UAE data of the week - settled closes, not intraday drafts. Same property as the monthly DCA run, which fires before the Dubai open.",
   "recent_date_stamps_still_unstable": "Yesterday's bar stamped 10-15 (O 30.68, C 31.46) is today's bar stamped 10-14 (O 30.68, C 31.50), and a NEW 10-15 bar appeared with a different open (31.40). So recent bars do get re-dated on settlement. That observation stands; the conclusion I drew from it did not.",
@@ -684,16 +675,41 @@
   "still_raw_not_dividend_adjusted": "Unchanged from 2026-10-15: DEWA's April ex-date shows as a -1.78% gap on 2026-04-13, so UAE ex-dates create spurious bearish signals."
  },
  "eth_post_exit": {
-  "as_of": "2026-10-18",
-  "status": "ETH has fallen to SELL -30 - the first SELL rating since the position was opened on 2026-07-17.",
-  "detail": "2,411.67, down 0.91%, 5.48% below a still-rising 50-day of 2,551.59, RSI 38.2 with a negative histogram. The 2026-10-13 exit at 2,529.63 is now 4.89% ahead of spot.",
-  "reporting_policy": "Kept current HERE and NOT re-narrated daily - the policy set for the LINK exit on 2026-09-25 and reaffirmed for this one on 2026-10-14. It goes into a written summary at the monthly review, or sooner if it changes character rather than just size. A band change to SELL is a change of character, which is why it is noted today.",
-  "no_reentry": "Unchanged from 2026-10-15: there is no dated re-entry trigger. A SELL rating is a reason not to re-enter, not a reason to act."
+  "as_of": "2026-10-19",
+  "status": "ETH fell SELL -> STRONG SELL (-30 -> -50), and its 50-day average has now TURNED DOWN.",
+  "detail": "2,433.89, up 0.94% on the day but 4.62% below a 50-day of 2,552 that is now sloping DOWN rather than up - a structural change, not just a price one. RSI 40.9. The 2026-10-13 exit at 2,529.63 is 3.93% ahead of spot.",
+  "why_this_is_noted": "Two changes of CHARACTER in two days: yesterday the band fell to SELL, today to STRONG SELL and the 50-day slope flipped. Under the reporting policy a change of character returns to the summary while a change of size does not, which is why this appears again today and the bare percentage will not tomorrow.",
+  "no_reentry": "Unchanged. There is no dated re-entry trigger, and the structure has deteriorated rather than stabilised since the exit."
  },
  "uae_no_new_data_2026_10_18": {
   "as_of": "2026-10-18",
   "fact": "Every UAE name carries stale_runs >= 1 and identical prices to yesterday's reading, because the market is closed for the weekend. Today's UAE figures are the SAME Friday closes read yesterday - there is no new session and no new information.",
   "consequence_for_emiratesnbd": "It is STILL day 1 of 2. A non-trading day does not advance a confirmation count, and reporting STRONG BUY 60 again today as though it were a second reading would be double-counting the same session. Monday 2026-10-20 supplies the second settled session.",
   "watch": "TECOM's stale_runs is now 4 and ALDAR's 3 against a stock threshold of 10. Both are weekend repeats rather than frozen quotes, so the counter will reset on Monday - but if either keeps climbing past Monday it is a real freeze."
+ },
+ "uae_friday_mystery_SOLVED_2026_10_19": {
+  "resolved": "2026-10-19. Five days after first noticing it, the Friday anomaly is explained.",
+  "the_mechanism": "FRIDAY IS A TRADING SESSION. The data source serves Friday's bar TRANSIENTLY - it is visible on the Saturday and Sunday runs - and then DELETES it when Monday's bar appears. That is why a year of history holds zero Fridays.",
+  "evidence": [
+   "On Sat 2026-10-17 and Sun 2026-10-18 a settled Friday bar existed for ALL TEN Yahoo UAE names with genuine OHLC and real intraday ranges (EMIRATESNBD O 31.28 H 31.62 L 30.92 C 31.58).",
+   "Today it is GONE from all ten, and the weekday distribution is back to exactly zero Fridays (EMAAR: Mon 51, Tue 52, Wed 52, Thu 51, Fri 0).",
+   "Monday's OPEN equals the Friday close we observed, exactly, on three of five checked names - EMIRATESNBD 31.58, SALIK 5.21, TECOM 3.23. Friday really did trade and close there."
+  ],
+  "scorecard_on_my_own_reasoning": {
+   "oct_14_observation": "CORRECT. Zero Fridays in a year was real and systematic, not noise.",
+   "oct_14_conclusion": "WRONG. I read it as a four-day trading week and changed the code.",
+   "oct_16_escalation": "WRONG, and the worst of the three. A Friday bar appeared, I explained it away as a placeholder, and wrote that the ambiguity was 'resolved in favour of a closed Friday' - abandoning a caveat I had correctly written two days earlier.",
+   "oct_17_revert": "CORRECT. Reverting to Mon-Fri was right, though for a reason I could not yet name.",
+   "oct_17_claim_of_ignorance": "Honest and now superseded: I wrote that the anomaly was 'undiagnosed' and declined to invent a third theory. That was the right call - the explanation arrived two days later from observation rather than speculation."
+  },
+  "MATERIAL_CONSEQUENCE": "Every UAE moving average is permanently computed over a series missing ONE SESSION IN FIVE. This is not a lag that catches up - the Friday bars are deleted, so the hole is permanent. It explains the measurement I took on 2026-10-14 and misread: the last 50 UAE bars span 86 calendar days against roughly 70 for a clean five-day window. So a UAE '50-day average' actually reaches back about 12.5 calendar weeks instead of 10, biasing it toward older prices and systematically mis-stating how far price sits from it.",
+  "bearing_on_todays_signals": "This degrades every UAE trend call, including EMIRATESNBD's STRONG BUY, which rests on being 2.2% above a 50-day computed from 80% of the actual sessions. It does not make the signal worthless - direction is probably robust to a uniform 20% sampling of sessions - but the precise distances are not trustworthy and should not be quoted as though they were.",
+  "proposed_fix": "The weekend run SEES the Friday bar before it is deleted, so Friday bars can be captured on Saturday or Sunday, persisted locally, and merged back into the series. That fixes Fridays going FORWARD but not the year of history, so the 50-day average stays contaminated for roughly ten weeks until enough captured Fridays accumulate.",
+  "not_built_today": "Deliberately not implemented. No UAE position can be opened while Al Ramz is shut, so a persistence layer today is premature engineering. But this should be fixed BEFORE the first UAE trade rather than after, and it is now the top item on that list - every UAE trend signal is currently computed on four fifths of the sessions."
+ },
+ "uae_data_notes_2026_10_19": {
+  "tecom_freeze_is_now_REAL": "TECOM's stale_runs has reached 5, on a Monday with live data, while ALDAR reset to 0 by moving and every other name reads 0. Yesterday I wrote that a counter still climbing past Monday would be a real freeze rather than a weekend repeat. It is. TECOM has printed 3.23 for five consecutive runs against a stock threshold of 10, so it is not yet muted but it is on the way. Precedent: TAQA stopped trading on ADX on 2026-08-07 and was rated BUY on the same 2.66 print for 27 days before anyone noticed.",
+  "adnocgas_watch": "ADNOCGAS stale_runs 3 at 3.25, from the TradingView path which supplies no bars. Worth watching alongside TECOM.",
+  "monday_is_an_intraday_draft": "Today's UAE readings are Monday 11:08 Dubai mid-session drafts against a 14:45/15:00 close. Eleven such drafts have failed by the close in the last month, which is the error I made on 2026-10-13."
  }
 }
