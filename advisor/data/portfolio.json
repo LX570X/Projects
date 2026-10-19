@@ -565,7 +565,7 @@
  "last_action": {
   "date": "2026-10-19",
   "ticker": "ETHUSDT",
-  "action": "SELL - convert ALL ETH to USDT",
+  "action": "CONVERT all ETH to USDT",
   "end_state": "hold 0 ETH - the whole ETH balance goes to USDT. If you are already there, do nothing.",
   "why": "Re-issued 2026-10-19 after you told me your money is still in ETH. The stop fired on the 2026-10-12 close and ETH has deteriorated since: STRONG SELL -65, 4.7% below a 50-day that has turned down, and the 20-day has now crossed below the 50-day.",
   "execution": "RE-ISSUED 2026-10-19 - the 2026-10-13 instruction was NOT executed (user statement)",
@@ -574,7 +574,9 @@
   "do_not": "Do NOT convert into BTC or another coin, and do not wait for a bounce. BTC is only BUY 35, which is not a confirmed entry under the rules, and only 2 of 11 coins are rated BUY.",
   "still_outstanding_as_of": "2026-10-14",
   "note_2026_10_14": "Instruction UNCHANGED and still unconfirmed. ETH is 2,507.84 today, so the 2,529.63 exit is 0.87% ahead one day on. Recording that once, here, and NOT re-narrating it daily - same policy set for the LINK exit on 2026-09-25. It goes back into a written summary at the monthly review, or sooner if it changes character rather than just size.",
-  "user_statement_2026_10_19": "'I have my money in eth, what should I do? Convert to what?'"
+  "user_statement_2026_10_19": "'I have my money in eth, what should I do? Convert to what?'",
+  "how": "Binance -> Trade -> Convert. From: ETH, tap Max. To: USDT. Preview -> Confirm. (If USDT is not offered, use USDC.)",
+  "wording_fix_2026_10_19": "The 2026-10-19 re-issue said 'SELL', breaking the book's own rule that alerts say CONVERT. The user's Binance shows only Buy and Convert, so 'sell' read as an action they could not take."
  },
  "eth_exit": {
   "date": "2026-10-13",
