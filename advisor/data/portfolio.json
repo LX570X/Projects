@@ -35,7 +35,7 @@
    }
   ],
   "started": "2026-07-17",
-  "stocks_account": "Al Ramz - NOT opened (confirmed 2026-10-19). Decision pending: open it, or redirect the 400 AED UAE bucket to crypto.",
+  "stocks_account": "NOT opened (2026-10-19). User asked about TAMM - see uae_account_route.",
   "accumulations": {
    "core_uae_stocks_aed": 0,
    "opportunity_usdt_aed": 0,
@@ -318,6 +318,13 @@
    "why": "Three months of 'accumulate' instructions produced balances that existed only in this file. Every bucket must now name a physical place.",
    "crypto_600_aed": "Deposit 600 AED to Binance each month: core_crypto 250 (buy BTC/ETH that day), opportunity 250 (convert to USDT and hold for a buy signal), satellite 100 (USDT until an alt qualifies).",
    "uae_stocks_400_aed": "Keep in the user's bank account, earmarked, until the Al Ramz account is open - or redirect to crypto if the user decides against UAE stocks."
+  },
+  "uae_account_route": {
+   "as_of": "2026-10-19",
+   "tamm": "TAMM for ADX Investors (launched GITEX Oct 2025): Emirates ID + UAE PASS gives an ADX investor number (NIN) instantly, plus portfolio and dividend views. IPO subscription is planned.",
+   "unconfirmed": "Whether orders can be placed inside TAMM without a broker. ADX's own How-to-Invest page still says to pick a licensed broker and place orders through it. Treat a broker as required until the user confirms otherwise in the app.",
+   "adx_only": "A TAMM/ADX number covers ADX names only (ALDAR, FAB, ADCB, IHC, EAND, ADNOCGAS, ADIB, ADPORTS, ADNOCDRILL). DFM names (EMAAR, EMIRATESNBD, DIB, SALIK, DEWA, TALABAT, AIRARABIA, EMAARDEV, DU, TECOM) need a separate DFM number, which a broker can apply for during account opening.",
+   "timing": "UAE bucket deploys at 1,200 AED (three monthly 400s) because of broker minimum commissions, so the first UAE purchase falls around Jan 1 2027. There are about ten weeks to set accounts up."
   }
  },
  "trailing_stop_rule": {
