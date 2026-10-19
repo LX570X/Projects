@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-19T10:45+00:00",
+ "updated": "2026-10-19T11:00+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": null,
@@ -35,11 +35,12 @@
    }
   ],
   "started": "2026-07-17",
-  "stocks_account": "Al Ramz - not opened yet, user will confirm",
+  "stocks_account": "Al Ramz - NOT opened (confirmed 2026-10-19). Decision pending: open it, or redirect the 400 AED UAE bucket to crypto.",
   "accumulations": {
-   "core_uae_stocks_aed": 1200,
-   "opportunity_usdt_aed": 250,
-   "satellite_reserve_aed": 309
+   "core_uae_stocks_aed": 0,
+   "opportunity_usdt_aed": 0,
+   "satellite_reserve_aed": 0,
+   "reset": "2026-10-19: all three were ZEROED. The user confirmed they made NO monthly deposits - the 1,200 / 250 / 309 AED shown here since August were planned amounts, never real money. First real contribution: 2026-11-01."
   },
   "dca_history": [
    {
@@ -77,7 +78,9 @@
      "stop": 0.15369,
      "max_loss_usd": 2.61,
      "reason": "Strongest non-BTC/ETH alt (+55) with real catalysts (RealFi testnet, van Rossem fork, Grayscale ETF filing, whale accumulation); but clears MA deadband by only 0.05pp and BTC breaking down is a headwind for alts."
-    }
+    },
+    "funded": false,
+    "funded_note": "Instruction issued; user confirmed 2026-10-19 that no deposit was made."
    },
    {
     "date": "2026-09-01",
@@ -112,7 +115,9 @@
      "aed": 100,
      "bucket_total_aed": 100,
      "reason": "The satellite slot is held by LINK (half advised at 9.681, second half pending at 10.65-11.05) and the rule is one satellite position at a time. SOL now scores 65 against LINK's 25 and is the strongest non-BTC/ETH alt - but switching the satellite to whatever tops the table each month is exactly the churn the rule exists to prevent, and SOL is +37% since it was declined on Aug 19 at RSI 70.0. Chasing it now would be buying the outcome already missed. September's 100 AED accumulates as satellite reserve until the slot frees - either the 10.65-11.05 order fills or LINK is stopped out."
-    }
+    },
+    "funded": false,
+    "funded_note": "Instruction issued; user confirmed 2026-10-19 that no deposit was made."
    },
    {
     "date": "2026-10-01",
@@ -157,7 +162,9 @@
       "why_bounded": "This is the direct lesson from LINK, where a wait-for-conditions rule produced a watch that never acted while the asset ran 26% away. Two weeks, resolves either way.",
       "note_on_LINK": "LINK screens joint-top at core 65 with RSI 63.4. It is NOT excluded for having stopped us out - that would be anchoring - but re-entering 26.8% above the 11.412 exit would need the entry to stand on its own merits, and a 3xATR stop at 11.70 is 19.1% below spot."
      }
-    }
+    },
+    "funded": false,
+    "funded_note": "Instruction issued; user confirmed 2026-10-19 that no deposit was made."
    }
   ],
   "satellite_candidate": {
@@ -168,7 +175,7 @@
    "selection_rule": "Any new satellite candidate must have CORE score at or above 45 AND RSI below 70 at the moment of selection - the corrected wording adopted 2026-09-21.",
    "why_nothing_today": "Ten of eleven cryptos rate STRONG BUY, so the constraint is not a shortage of candidates - it is that every one of them is extended after a four-session vertical move, and the reserve is 209 AED (about $57). Adding a third small position at the top of a run, on the same day both existing stops ratchet, is activity rather than edge.",
    "expiry": "If no candidate qualifies by the monthly review, the 209 AED rolls into the next monthly plan rather than sitting as a permanent open order.",
-   "reserve_aed": 309,
+   "reserve_aed": 0,
    "link_final_note": {
     "as_of": "2026-09-26",
     "link_now": 14.096,
@@ -304,7 +311,13 @@
   },
   "next_dca": {
    "date": "2026-11-01",
-   "note": "core_uae_stocks will reach 1,600 AED. The bucket has been deployable since 2026-10-01 and has never been deployed."
+   "note": "FIRST REAL CONTRIBUTION. The user stated on 2026-10-19 they will start monthly deposits next month."
+  },
+  "where_the_money_physically_goes": {
+   "adopted": "2026-10-19",
+   "why": "Three months of 'accumulate' instructions produced balances that existed only in this file. Every bucket must now name a physical place.",
+   "crypto_600_aed": "Deposit 600 AED to Binance each month: core_crypto 250 (buy BTC/ETH that day), opportunity 250 (convert to USDT and hold for a buy signal), satellite 100 (USDT until an alt qualifies).",
+   "uae_stocks_400_aed": "Keep in the user's bank account, earmarked, until the Al Ramz account is open - or redirect to crypto if the user decides against UAE stocks."
   }
  },
  "trailing_stop_rule": {
@@ -698,5 +711,11 @@
   "cost_of_the_delay": "ETH 2,431.86 now vs the 2,529.63 instructed exit = -3.87%, about $3.56 on 0.0364 ETH. Still +32.9% vs the 1,829.70 entry.",
   "result": "RECONCILED: ETH 0, BTC 0, LINK 0, USDT only. First reconciliation since 2026-07-17. The BTC line was never real. Open question: the exact USDT amount, which will also show whether the monthly 1,000 AED contributions ever reached Binance."
  },
- "notification_rule_fix_2026_10_19": "Unconfirmed positions no longer generate push notifications. Only confirmed holdings do."
+ "notification_rule_fix_2026_10_19": "Unconfirmed positions no longer generate push notifications. Only confirmed holdings do.",
+ "capital_2026_10_19": {
+  "usdt_estimate_usd": 88.5,
+  "basis": "0.0364 ETH converted at roughly 2,431.86, less a small fee. User has not stated the exact USDT figure.",
+  "everything_else": "zero - no BTC, no LINK, no other coin, no deposits, no UAE stocks"
+ },
+ "communication_rule_2026_10_19": "Going forward: ONE instruction on the 1st of each month, plus a notification only when (a) a CONFIRMED holding hits a stop/target, or (b) a buy signal confirms. The daily cycle still runs and updates the dashboard, but it does not message the user unless one of those happens."
 }

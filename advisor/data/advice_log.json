@@ -2617,6 +2617,13 @@
    "action": "RETIRED - the Sept-20 BTC position never existed",
    "rationale": "The user holds only USDT, so the 2026-09-20 BTC deploy was never executed. For 29 days the daily cycle tracked its stop as 'advised-unconfirmed', and on Oct 15 and Oct 16 it generated push notifications about a stop on a position the user did not have. The reporting rule kept it out of every P&L figure, which is exactly what that rule was for, but the notifications should not have been sent on an unconfirmed line. Fix: unconfirmed positions no longer trigger notifications. The user should disregard both BTC alerts.",
    "status": "retired; notification rule tightened"
+  },
+  {
+   "date": "2026-10-19",
+   "ticker": "monthly-plan",
+   "action": "RESET to reality - no deposits were ever made; first real one is Nov 1",
+   "rationale": "User confirmed they did not make the monthly 1,000 AED deposits and will start next month. Every 'accumulated' bucket balance shown since August (UAE stocks 1,200 AED, opportunity 250, satellite 309) was a planned figure, not money - zeroed so the Nov-1 shopping list starts from the truth. The real book is about $88.5 of USDT from the ETH conversion and nothing else. To stop this recurring, every bucket now names a physical location: 600 AED a month goes to Binance, and the 400 AED UAE-stocks share stays earmarked in the bank until Al Ramz is open. Communication also simplified to one instruction on the 1st plus alerts only for confirmed holdings or a confirmed buy signal - three months of daily instructions produced one executed trade, which says the cadence was wrong for how this book is actually used.",
+   "status": "reset; awaiting user decision on Al Ramz"
   }
  ]
 }
