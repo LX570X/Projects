@@ -19,13 +19,17 @@ This file is the operating procedure for the hourly advisor routine
    fresh signals table, levels, and a short "what to do now" plan.
    Artifact URL: https://claude.ai/code/artifact/6a72554f-21a9-43b9-8283-c1cc7cea3f66
    (republish advisor/reports/dashboard.html from this session to keep it).
-5. Notify (PushNotification) ONLY when at least one of:
-   - a signal band changed to/from BUY, STRONG BUY, SELL, STRONG SELL
-   - price crossed the 50-day average (trend change)
-   - a previously advised stop or target level was hit
-   - a big move: |24h| ≥ 4% crypto, |1d| ≥ 2.5% UAE stock
-   Keep it under 200 chars, lead with ticker + action.
-   Otherwise stay silent — no noise.
+5. Notify (PushNotification) ONLY when there is something for the user to DO
+   (tightened 2026-10-19 — three months of alerts on market moves produced one
+   executed trade, and two alerts were about a BTC position the user never held):
+   - a CONFIRMED holding (one the user has said they own) hits its stop or target
+   - a buy signal CONFIRMS under the rules (e.g. two consecutive readings) for
+     something the user's current cash can buy — say what to buy and how much
+   - the monthly instruction on the 1st (sent by the DCA routine)
+   Band changes, trend crosses and big moves on assets the user does not hold
+   are recorded on the dashboard, NOT pushed. Unconfirmed positions never push.
+   Keep it under 200 chars, lead with ticker + action. Otherwise stay silent.
+   The user can ask for the broader alerts back at any time.
 6. UAE market hours are Mon–Fri 10:00–15:00 Dubai (UTC+4). A Mon–Thu week was
    asserted on 2026-10-14 from zero Friday bars in a year of data and REVERTED on
    2026-10-17, when a settled Friday bar appeared for all ten names. Do NOT
