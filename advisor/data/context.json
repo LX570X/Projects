@@ -1,33 +1,17 @@
 {
- "updated": "2026-10-19T07:40+00:00",
+ "updated": "2026-10-20T07:30+00:00",
  "market_notes": [
   {
-   "market": "SOLVED: the source serves Friday bars then DELETES them - UAE averages miss a session in five",
-   "note": "Friday IS a trading session. The data source serves Friday's bar transiently, visible on the Saturday and Sunday runs, then deletes it when Monday's appears - which is why a year of history held zero Fridays. Proof: the settled Friday bar existed for all ten names over the weekend, is gone from all ten today, and Monday's open printed at exactly the Friday close we saw (EMIRATESNBD 31.58, SALIK 5.21, TECOM 3.23). The consequence matters more than the calendar: every UAE moving average is permanently computed over four sessions in five, and because the bars are deleted rather than delayed the hole never closes. A UAE '50-day average' reaches back about 12.5 calendar weeks instead of 10. Direction is probably robust to a uniform 4-in-5 sampling; the precise distances are not, so they should not be quoted as though they were."
+   "market": "Nothing to buy - the USDT stays put",
+   "note": "No coin is at STRONG BUY. BTC and AVAX hold BUY 35; BNB fell to SELL; ETH, XRP and DOGE stay at the -65 floor. The deploy rule needs STRONG BUY on two consecutive readings."
   },
   {
-   "market": "BTC's cushion finally widened after five sessions pinned in a band",
-   "note": "Sunday closed 82,116.00, 3.54% above the 79,304.74 stop, and BTC is +1.40% today to 82,884.00 with the live cushion at -4.32%. The sequence has been -5.12%, -2.03%, -3.47%, -2.87%, -2.99%, now -4.32%. The histogram improved sharply to -340.18 from -474.59 and -510.13, the clearest two-session improvement of this episode, and RSI recovered to 52.0. Recorded and explicitly NOT called a turn - I have been wrong three times in a month extrapolating two sessions of direction. The trail still sits 1.61 ATR below the stop and has not re-armed."
+   "market": "UAE breadth is the best in weeks, but none of it is buyable yet",
+   "note": "EMIRATESNBD (60) and ADCB (50) are at STRONG BUY, with five names BUY or better. There's no broker account and no UAE money until about January, so these are recorded, not acted on. ADCB's Q3 results date isn't announced; last year's came on Oct 27."
   },
   {
-   "market": "BTC and the alts have now diverged for four sessions",
-   "note": "BTC is +3.17% on the position with a recovering histogram, while ETH fell to STRONG SELL and XRP and DOGE both reached the -65 floor. Crypto breadth did not improve on a green day: still only BTC and AVAX rated BUY out of eleven. Whatever is lifting BTC is not reaching the rest of the board."
-  },
-  {
-   "market": "ETH's 50-day has TURNED DOWN - the break is now confirmed by the longer average",
-   "note": "ETH fell SELL -> STRONG SELL (-30 -> -50). It rose 0.94% on the day but sits 4.62% below a 50-day of 2,552 that is now sloping DOWN rather than up - the first time it has turned since the position opened in July. The Oct 13 exit at 2,529.63 is 3.93% ahead. When I exited, the case was a mechanical stop plus a fresh trend break while the 50-day was still rising; six days on the longer average has confirmed it."
-  },
-  {
-   "market": "The UAE board has its best breadth in weeks - but it is Monday draft data",
-   "note": "Six names rate BUY or better: EMIRATESNBD 60, EMAAR 30, ADCB 25, ADPORTS 25, ALDAR 25 (up from HOLD), DU 20. ADIB improved sharply from STRONG SELL -55 to SELL -30, consistent with the AED 1.75bn rights-issue overhang being absorbed ahead of rights trading on Nov 4-16. Against that DEWA fell to the -65 floor. All of it is Monday 11:08 Dubai intraday draft data, and eleven such drafts have failed by the close in the last month."
-  },
-  {
-   "market": "AIRARABIA's reversal-trigger date passed and the outcome is UNVERIFIED",
-   "note": "On Oct 14 I flagged that the NOTAM closing Riyadh King Khalid International expired at 21:00 UTC on Oct 17. That date has passed and AIRARABIA is +2.64% with a fresh MACD bullish cross - but I could NOT confirm the airport reopened: the most recent reachable report is dated Oct 9, which predates the Oct 10-11 strikes, and the 'fully resumed' coverage is from December 2025. The move is consistent with a reopening and does not establish one. The signal has not turned - still SELL -40 below a falling 50-day - though the oversold-relief distortion flagged on Oct 14 has unwound, with core now equal to the headline at -40 and RSI at 42.6."
-  },
-  {
-   "market": "TECOM's frozen-quote watch is now real, on a test set in advance",
-   "note": "TECOM has printed 3.23 for five consecutive runs, on a Monday with live data flowing and every other UAE name reading zero after ALDAR reset by moving. Yesterday I set the test explicitly - a counter still climbing past Monday is a genuine freeze rather than a weekend repeat - and it climbed. The threshold is 10 runs so it is not yet muted. Precedent: TAQA stopped trading on ADX on 2026-08-07 and was rated BUY on the same 2.66 print for 27 days before the guard existed. ADNOCGAS is at 3, from the bar-less TradingView path."
+   "market": "AIRARABIA up two days running - cause unverified",
+   "note": "+5.73% to 4.80 after +2.64% yesterday, rating improved to SELL -25. No report newer than Oct 10 confirms Riyadh flights resumed."
   }
  ],
  "asset_notes": {

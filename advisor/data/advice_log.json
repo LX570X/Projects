@@ -2624,6 +2624,20 @@
    "action": "RESET to reality - no deposits were ever made; first real one is Nov 1",
    "rationale": "User confirmed they did not make the monthly 1,000 AED deposits and will start next month. Every 'accumulated' bucket balance shown since August (UAE stocks 1,200 AED, opportunity 250, satellite 309) was a planned figure, not money - zeroed so the Nov-1 shopping list starts from the truth. The real book is about $88.5 of USDT from the ETH conversion and nothing else. To stop this recurring, every bucket now names a physical location: 600 AED a month goes to Binance, and the 400 AED UAE-stocks share stays earmarked in the bank until Al Ramz is open. Communication also simplified to one instruction on the 1st plus alerts only for confirmed holdings or a confirmed buy signal - three months of daily instructions produced one executed trade, which says the cadence was wrong for how this book is actually used.",
    "status": "reset; awaiting user decision on Al Ramz"
+  },
+  {
+   "date": "2026-10-20",
+   "ticker": "USDT",
+   "action": "hold - nothing qualifies to buy",
+   "rationale": "First daily cycle on the reconciled book: about $88.5 of USDT and nothing else. No coin is at STRONG BUY (best: BTC and AVAX at BUY 35), so the deploy rule - STRONG BUY on two consecutive readings - is not met. No confirmed holdings, so no stops or targets to check. Under the notification rule tightened yesterday, nothing here reaches the user.",
+   "status": "no action, no notification"
+  },
+  {
+   "date": "2026-10-20",
+   "ticker": "engine",
+   "action": "CORRECTED yesterday's 'SOLVED' - Monday's UAE bar is missing too",
+   "rationale": "Yesterday I declared the Friday anomaly solved: Friday bars appear on the weekend and are deleted when Monday's appears. Today Monday Oct 19's bar is also missing - the series reads Oct 13, 14, 15, then today. Best current model: a rolling lag on the latest completed session (backfilled later), plus Fridays that are never backfilled. Prediction set in advance: Monday Oct 19 reappears within a day or two; Friday Oct 16 never does. Third confident explanation in a week to be partly overturned, so from here I state predictions, not solutions. The operational conclusions are unchanged by every revision. Also: TECOM's freeze watch is cleared (its counter reset), so yesterday's 'the freeze is now real' was premature.",
+   "status": "correction recorded; prediction to check on the next runs"
   }
  ]
 }
