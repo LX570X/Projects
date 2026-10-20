@@ -1,11 +1,23 @@
 {
- "generated_at_utc": "2026-10-19T10:20:58+00:00",
+ "generated_at_utc": "2026-10-20T07:10:53+00:00",
  "alerts": [
   {
-   "ticker": "ADNOCGAS",
+   "ticker": "BNBUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "ADNOCGAS: STRONG SELL -> SELL (score -50 -> -35)"
+   "msg": "BNBUSDT: HOLD -> SELL (score -15 -> -30)"
+  },
+  {
+   "ticker": "ADCB",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ADCB: BUY -> STRONG BUY (score 35 -> 50)"
+  },
+  {
+   "ticker": "IHC",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "IHC: STRONG SELL -> SELL (score -65 -> -40)"
   }
  ]
 }
