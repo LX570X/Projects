@@ -2638,6 +2638,20 @@
    "action": "CORRECTED yesterday's 'SOLVED' - Monday's UAE bar is missing too",
    "rationale": "Yesterday I declared the Friday anomaly solved: Friday bars appear on the weekend and are deleted when Monday's appears. Today Monday Oct 19's bar is also missing - the series reads Oct 13, 14, 15, then today. Best current model: a rolling lag on the latest completed session (backfilled later), plus Fridays that are never backfilled. Prediction set in advance: Monday Oct 19 reappears within a day or two; Friday Oct 16 never does. Third confident explanation in a week to be partly overturned, so from here I state predictions, not solutions. The operational conclusions are unchanged by every revision. Also: TECOM's freeze watch is cleared (its counter reset), so yesterday's 'the freeze is now real' was premature.",
    "status": "correction recorded; prediction to check on the next runs"
+  },
+  {
+   "date": "2026-10-21",
+   "ticker": "USDT",
+   "action": "hold - nothing qualifies to buy",
+   "rationale": "No coin is at STRONG BUY; BTC, AVAX and LTC sit at BUY 35. The deploy rule needs STRONG BUY on two consecutive readings. No confirmed holdings to watch. No notification.",
+   "status": "no action"
+  },
+  {
+   "date": "2026-10-21",
+   "ticker": "engine",
+   "action": "prediction CONFIRMED - the UAE date model passed its first advance test",
+   "rationale": "Yesterday I recorded in advance that Monday Oct 19 would reappear and Friday Oct 16 would not. Today Monday is present in 10 of 10 names and Friday in 0 of 10, with Tuesday Oct 20 now the missing session. The model - a one-session rolling lag plus Fridays that are never backfilled - is the first of four explanations this week to make a prediction in advance and pass it. Next prediction: Tuesday reappears tomorrow.",
+   "status": "confirmed"
   }
  ]
 }
