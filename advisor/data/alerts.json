@@ -1,23 +1,47 @@
 {
- "generated_at_utc": "2026-10-20T07:10:53+00:00",
+ "generated_at_utc": "2026-10-21T07:14:23+00:00",
  "alerts": [
   {
-   "ticker": "BNBUSDT",
+   "ticker": "SOLUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "BNBUSDT: HOLD -> SELL (score -15 -> -30)"
+   "msg": "SOLUSDT: HOLD -> SELL (score -15 -> -30)"
   },
   {
-   "ticker": "ADCB",
+   "ticker": "GRAMUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "ADCB: BUY -> STRONG BUY (score 35 -> 50)"
+   "msg": "GRAMUSDT: SELL -> STRONG SELL (score -35 -> -50)"
   },
   {
-   "ticker": "IHC",
+   "ticker": "LTCUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "IHC: STRONG SELL -> SELL (score -65 -> -40)"
+   "msg": "LTCUSDT: HOLD -> BUY (score -15 -> 35)"
+  },
+  {
+   "ticker": "LTCUSDT",
+   "severity": "actionable",
+   "type": "trend",
+   "msg": "LTCUSDT: price crossed above its 50-day average \u2014 trend change"
+  },
+  {
+   "ticker": "EMAAR",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "EMAAR: BUY -> STRONG BUY (score 30 -> 50)"
+  },
+  {
+   "ticker": "FAB",
+   "severity": "info",
+   "type": "signal_change",
+   "msg": "FAB: SELL -> HOLD (score -40 -> -15)"
+  },
+  {
+   "ticker": "ADNOCDRILL",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ADNOCDRILL: STRONG SELL -> SELL (score -50 -> -40)"
   }
  ]
 }
