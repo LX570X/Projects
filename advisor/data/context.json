@@ -1,13 +1,13 @@
 {
- "updated": "2026-10-21T07:30+00:00",
+ "updated": "2026-10-22T07:30+00:00",
  "market_notes": [
   {
-   "market": "Nothing to buy - the USDT stays put",
-   "note": "A green crypto day (+0.3% to +3.3%) but no coin reached STRONG BUY. BTC, AVAX and LTC are at BUY 35; LTC crossed back above its 50-day. SOL fell to SELL and GRAM to STRONG SELL; ETH, XRP and DOGE remain at -65."
+   "market": "Nothing to buy - crypto breadth down to a single BUY",
+   "note": "Only BTC is rated BUY (35). AVAX and LTC fell back out, AVAX crossing below its 50-day. GRAM joined ETH and DOGE at the -65 floor. No coin is near STRONG BUY."
   },
   {
-   "market": "The strongest UAE board since this system started - not yet buyable",
-   "note": "ADCB 65, EMIRATESNBD 60 and EMAAR 50 are all STRONG BUY, with FAB improving from SELL to HOLD. There's no broker account and no UAE money until about January. Emirates NBD's Q3 results are not out yet; last year's came around Oct 23-24."
+   "market": "The UAE board split",
+   "note": "ADCB 65, EMAAR 50 and EMIRATESNBD 50 hold STRONG BUY, while FAB fell HOLD -> STRONG SELL, ALDAR crossed below its 50-day to SELL and EMAARDEV fell to STRONG SELL. No FAB Q3 release found; last year's was Oct 22. Not buyable until a broker account and about January funding."
   }
  ],
  "asset_notes": {

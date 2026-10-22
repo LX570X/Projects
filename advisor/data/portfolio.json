@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-21T07:30+00:00",
+ "updated": "2026-10-22T07:30+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": null,
@@ -479,10 +479,10 @@
   "why_it_matters": "On a day when every asset on the crypto board fell and four names confirmed trend breaks, the system produced no trade. That is the design: the BTC stop is a single daily close below a fixed level and that level was not touched, and the satellite trigger needed a qualifying name and there was none. Both outcomes were computed, not decided."
  },
  "book_signal_state": {
-  "as_of": "2026-10-21",
-  "for_the_user": "Holding about $88.5 USDT. Nothing to buy: no coin at STRONG BUY (BTC, AVAX and LTC at BUY 35). No confirmed holdings. No notification.",
-  "crypto": "A green day across the board, but breadth barely moved: LTC rejoined BUY with a 50-day cross, while SOL fell to SELL and GRAM to STRONG SELL. ETH, XRP and DOGE remain at -65.",
-  "uae": "Three STRONG BUYs now - ADCB 65, EMIRATESNBD 60, EMAAR 50 - the strongest UAE board since this system started. Still not buyable: no broker account, no UAE money until about January. Emirates NBD Q3 results not out yet; last year's came around Oct 23-24, so likely this week."
+  "as_of": "2026-10-22",
+  "for_the_user": "Holding about $88.5 USDT. Nothing to buy: no coin at STRONG BUY, and only BTC is still rated BUY. No confirmed holdings. No notification.",
+  "crypto": "Breadth narrowed to one: AVAX and LTC fell back out of BUY, AVAX crossing below its 50-day. GRAM joined ETH and DOGE at the -65 floor; SOL fell to SELL -45.",
+  "uae": "Split board. ADCB 65, EMAAR 50 and EMIRATESNBD 50 hold STRONG BUY, while FAB dropped HOLD -> STRONG SELL (-15 -> -50), ALDAR HOLD -> SELL with a 50-day cross, and EMAARDEV to STRONG SELL. FAB's Q3 results were not found; last year's came out on Oct 22, so they may be due today. Not buyable either way."
  },
  "bookkeeping_correction": {
   "found": "2026-09-29",
@@ -713,6 +713,11 @@
    "result": "CONFIRMED. Monday Oct 19 present in 10 of 10 names; Friday Oct 16 in 0 of 10. Tuesday Oct 20 is now the missing one, as the lag model expects.",
    "model_now": "A one-session rolling lag on the latest completed session, which is backfilled a day later, plus Friday sessions that are never backfilled. This is the first version of the explanation that made a prediction in advance and passed.",
    "next_prediction": "Tuesday Oct 20 reappears tomorrow; Friday Oct 16 stays absent."
+  },
+  "PREDICTION_CHECK_2026_10_22": {
+   "prediction": "Set 2026-10-21: Tuesday Oct 20 reappears; Friday Oct 16 stays absent.",
+   "result": "CONFIRMED again. Tue Oct 20 present in 10 of 10, Fri Oct 16 in 0 of 10, and Wed Oct 21 is now the missing session.",
+   "standing": "Two advance predictions passed in two days. The model is now the working description of this source: the latest completed session is backfilled a day late, and Fridays are never backfilled. No further daily checks planned; re-test only if a reading contradicts it."
   }
  },
  "uae_data_notes_2026_10_19": {

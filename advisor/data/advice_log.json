@@ -2652,6 +2652,20 @@
    "action": "prediction CONFIRMED - the UAE date model passed its first advance test",
    "rationale": "Yesterday I recorded in advance that Monday Oct 19 would reappear and Friday Oct 16 would not. Today Monday is present in 10 of 10 names and Friday in 0 of 10, with Tuesday Oct 20 now the missing session. The model - a one-session rolling lag plus Fridays that are never backfilled - is the first of four explanations this week to make a prediction in advance and pass it. Next prediction: Tuesday reappears tomorrow.",
    "status": "confirmed"
+  },
+  {
+   "date": "2026-10-22",
+   "ticker": "USDT",
+   "action": "hold - nothing qualifies to buy",
+   "rationale": "No coin is at STRONG BUY and crypto breadth narrowed to a single BUY (BTC 35) as AVAX and LTC fell out. The deploy rule needs STRONG BUY on two consecutive readings. No confirmed holdings. No notification.",
+   "status": "no action"
+  },
+  {
+   "date": "2026-10-22",
+   "ticker": "engine",
+   "action": "second advance prediction CONFIRMED - UAE date model now the working description",
+   "rationale": "Tuesday Oct 20 reappeared in 10 of 10 UAE names and Friday Oct 16 is still in 0 of 10, with Wednesday Oct 21 now the missing session - exactly as predicted yesterday. Two advance tests passed in two days. Treating the model as settled for operational purposes and stopping the daily check; re-test only if a reading contradicts it.",
+   "status": "confirmed"
   }
  ]
 }
