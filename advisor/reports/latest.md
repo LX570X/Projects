@@ -1,7 +1,7 @@
 # Trading Advisor — Signal Report
 
-- Data fetched: 2026-10-21T07:14:23+00:00 UTC
-- Report time: 2026-10-21 11:14 Dubai time
+- Data fetched: 2026-10-22T07:13:02+00:00 UTC
+- Report time: 2026-10-22 11:13 Dubai time
 - UAE market (DFM/ADX): OPEN (hours Mon–Fri 10:00–15:00 Dubai)
 - Data failures this run: EAND
 
@@ -11,80 +11,81 @@
 
 | Asset | Price | 24h/1d | Signal | Score | RSI | Stop | Target 1 | Target 2 |
 |---|---|---|---|---|---|---|---|---|
-| BTCUSDT (Bitcoin) | 82,846.01 USD | +1.3% | **BUY** | 35 | 51.9 | 78,949.07 | 86,742.95 | 90,639.89 |
-| AVAXUSDT (Avalanche) | 9.69 USD | +1.4% | **BUY** | 35 | 44.9 | 8.375 | 11.01 | 12.32 |
-| LTCUSDT (Litecoin) | 61.54 USD | +3.3% | **BUY** | 35 | 48.1 | 55.79 | 67.29 | 73.05 |
-| LINKUSDT (Chainlink) | 12.34 USD | +2.8% | **HOLD** | -15 | 44.9 | 11.02 | 13.66 | 14.98 |
-| ADAUSDT (Cardano) | 0.2238 USD | +2.8% | **HOLD** | -15 | 44.0 | 0.1949 | 0.2527 | 0.2817 |
-| BNBUSDT (BNB) | 744.30 USD | +1.8% | **SELL** | -30 | 50.2 | 704.25 | 784.35 | 824.41 |
-| SOLUSDT (Solana) | 106.20 USD | +1.5% | **SELL** | -30 | 43.8 | 96.36 | 116.04 | 125.87 |
-| GRAMUSDT (Gram (ex-Toncoin)) | 1.356 USD | +0.3% | **STRONG SELL** | -50 | 43.2 | 1.233 | 1.479 | 1.603 |
-| ETHUSDT (Ethereum) | 2,443.72 USD | +1.9% | **STRONG SELL** | -65 | 42.6 | 2,251.56 | 2,635.88 | 2,828.04 |
-| XRPUSDT (XRP) | 1.336 USD | +2.6% | **STRONG SELL** | -65 | 42.6 | 1.229 | 1.443 | 1.551 |
-| DOGEUSDT (Dogecoin) | 0.08167 USD | +2.8% | **STRONG SELL** | -65 | 41.4 | 0.07416 | 0.08918 | 0.09669 |
+| BTCUSDT (Bitcoin) | 82,314.82 USD | -0.6% | **BUY** | 35 | 49.2 | 78,328.94 | 86,300.70 | 90,286.59 |
+| LINKUSDT (Chainlink) | 12.14 USD | -1.5% | **HOLD** | -15 | 43.0 | 10.89 | 13.4 | 14.65 |
+| AVAXUSDT (Avalanche) | 9.334 USD | -3.6% | **HOLD** | -15 | 40.6 | 8.13 | 10.54 | 11.74 |
+| ADAUSDT (Cardano) | 0.2173 USD | -2.9% | **HOLD** | -15 | 40.8 | 0.1913 | 0.2433 | 0.2694 |
+| LTCUSDT (Litecoin) | 60.09 USD | -2.3% | **HOLD** | -15 | 44.1 | 54.81 | 65.37 | 70.66 |
+| BNBUSDT (BNB) | 737.60 USD | -0.9% | **SELL** | -30 | 47.5 | 703.25 | 771.95 | 806.29 |
+| SOLUSDT (Solana) | 104.26 USD | -1.8% | **SELL** | -45 | 40.6 | 95.25 | 113.27 | 122.28 |
+| XRPUSDT (XRP) | 1.338 USD | +0.1% | **STRONG SELL** | -50 | 43.6 | 1.233 | 1.442 | 1.546 |
+| ETHUSDT (Ethereum) | 2,428.62 USD | -0.6% | **STRONG SELL** | -65 | 41.8 | 2,245.82 | 2,611.42 | 2,794.23 |
+| DOGEUSDT (Dogecoin) | 0.0795 USD | -2.6% | **STRONG SELL** | -65 | 37.7 | 0.07263 | 0.08637 | 0.09325 |
+| GRAMUSDT (Gram (ex-Toncoin)) | 1.34 USD | -1.1% | **STRONG SELL** | -65 | 41.5 | 1.223 | 1.457 | 1.574 |
 
-**BTCUSDT** — BUY (score 35): price above 50-day average (8.172e+04) — uptrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping up; MACD momentum negative; RSI 52 neutral.
-**AVAXUSDT** — BUY (score 35): price above 50-day average (9.552) — uptrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping up; MACD momentum negative; RSI 45 neutral.
-**LTCUSDT** — BUY (score 35): price above 50-day average (60.87) — uptrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping up; MACD momentum negative; RSI 48 neutral.
-**LINKUSDT** — HOLD (score -15): price below 50-day average (12.72) — downtrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping up; MACD momentum negative; RSI 45 neutral.
-**ADAUSDT** — HOLD (score -15): price below 50-day average (0.231) — downtrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping up; MACD momentum negative; RSI 44 neutral.
-**BNBUSDT** — SELL (score -30): price below 50-day average (749.1) — downtrend; 20/50-day averages within 0.04% — no structural edge (not scored); 50-day average sloping up; MACD momentum negative; RSI 50 neutral.
-**SOLUSDT** — SELL (score -30): price below 50-day average (109.7) — downtrend; 20/50-day averages within 0.13% — no structural edge (not scored); 50-day average sloping up; MACD momentum negative; RSI 44 neutral.
-**GRAMUSDT** — STRONG SELL (score -50): price below 50-day average (1.42) — downtrend; 20/50-day averages within 0.01% — no structural edge (not scored); 50-day average sloping down; MACD momentum negative; RSI 43 neutral.
-**ETHUSDT** — STRONG SELL (score -65): price below 50-day average (2552) — downtrend; 20-day avg below 50-day avg (bearish structure); 50-day average sloping down; MACD momentum negative; RSI 43 neutral.
-**XRPUSDT** — STRONG SELL (score -65): price below 50-day average (1.413) — downtrend; 20-day avg below 50-day avg (bearish structure); 50-day average sloping down; MACD momentum negative; RSI 43 neutral.
-**DOGEUSDT** — STRONG SELL (score -65): price below 50-day average (0.08795) — downtrend; 20-day avg below 50-day avg (bearish structure); 50-day average sloping down; MACD momentum negative; RSI 41 neutral.
+**BTCUSDT** — BUY (score 35): price above 50-day average (8.184e+04) — uptrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping up; MACD momentum negative; RSI 49 neutral.
+**LINKUSDT** — HOLD (score -15): price below 50-day average (12.75) — downtrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping up; MACD momentum negative; RSI 43 neutral.
+**AVAXUSDT** — HOLD (score -15): price below 50-day average (9.595) — downtrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping up; MACD momentum negative; RSI 41 neutral.
+**ADAUSDT** — HOLD (score -15): price below 50-day average (0.2314) — downtrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping up; MACD momentum negative; RSI 41 neutral.
+**LTCUSDT** — HOLD (score -15): price below 50-day average (61.08) — downtrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping up; MACD momentum negative; RSI 44 neutral.
+**BNBUSDT** — SELL (score -30): price below 50-day average (750.4) — downtrend; 20-day avg below 50-day avg (bearish structure); 50-day average sloping up; MACD momentum flat (not scored); RSI 47 neutral.
+**SOLUSDT** — SELL (score -45): price below 50-day average (109.7) — downtrend; 20-day avg below 50-day avg (bearish structure); 50-day average sloping up; MACD momentum negative; RSI 41 neutral.
+**XRPUSDT** — STRONG SELL (score -50): price below 50-day average (1.411) — downtrend; 20-day avg below 50-day avg (bearish structure); 50-day average sloping down; MACD momentum flat (not scored); RSI 44 neutral.
+**ETHUSDT** — STRONG SELL (score -65): price below 50-day average (2553) — downtrend; 20-day avg below 50-day avg (bearish structure); 50-day average sloping down; MACD momentum negative; RSI 42 neutral.
+**DOGEUSDT** — STRONG SELL (score -65): price below 50-day average (0.08791) — downtrend; 20-day avg below 50-day avg (bearish structure); 50-day average sloping down; MACD momentum negative; RSI 38 neutral.
+**GRAMUSDT** — STRONG SELL (score -65): price below 50-day average (1.421) — downtrend; 20-day avg below 50-day avg (bearish structure); 50-day average sloping down; MACD momentum negative; RSI 42 neutral.
 
 ## UAE Stocks (trade via Al Ramz)
 
 | Asset | Price | 24h/1d | Signal | Score | RSI | Stop | Target 1 | Target 2 |
 |---|---|---|---|---|---|---|---|---|
-| ADCB (Abu Dhabi Commercial Bank) | 16.6 AED | -1.0% | **STRONG BUY** | 65 | 60.1 | 15.56 | 17.24 | 17.87 |
-| EMIRATESNBD (Emirates NBD) | 31.76 AED | +0.8% | **STRONG BUY** | 60 | 56.9 | 29.32 | 33.34 | 34.91 |
-| EMAAR (Emaar Properties) | 11.44 AED | -0.5% | **STRONG BUY** | 50 | 51.6 | 11.1 | 11.78 | 12.12 |
-| ADPORTS (AD Ports Group) | 6.19 AED | +0.3% | **BUY** | 35 | 61.0 | 6.05 | 6.308 | 6.426 |
-| DU (Emirates Integrated Telecom (du)) | 12.12 AED | -1.0% | **BUY** | 20 | 54.0 | 11.71 | 12.53 | 12.94 |
-| ALDAR (Aldar Properties) | 7.92 AED | -0.6% | **HOLD** | 15 | 44.2 | 7.647 | 8.193 | 8.466 |
-| FAB (First Abu Dhabi Bank) | 19.36 AED | +0.2% | **HOLD** | -15 | 50.6 | 18.46 | 20.01 | 20.66 |
-| TALABAT (Talabat Holding) | 1.13 AED | +1.8% | **SELL** | -25 | 51.7 | 1.04 | 1.181 | 1.231 |
-| AIRARABIA (Air Arabia) | 4.84 AED | +3.0% | **SELL** | -25 | 55.5 | 4.51 | 5.091 | 5.343 |
-| EMAARDEV (Emaar Development) | 12.72 AED | -0.9% | **SELL** | -35 | 40.3 | 12.29 | 13.15 | 13.58 |
-| ADNOCGAS (ADNOC Gas) | 3.2 AED | -0.9% | **SELL** | -40 | 35.5 | 3.123 | 3.277 | 3.355 |
-| ADIB (Abu Dhabi Islamic Bank) | 22.62 AED | -0.8% | **SELL** | -40 | 45.0 | 21.76 | 23.48 | 24.35 |
-| ADNOCDRILL (ADNOC Drilling) | 5.65 AED | +1.1% | **SELL** | -40 | 49.5 | 5.45 | 5.838 | 6.027 |
-| DIB (Dubai Islamic Bank) | 7.08 AED | -0.3% | **STRONG SELL** | -50 | 38.0 | 6.906 | 7.254 | 7.429 |
-| SALIK (Salik Company) | 5.13 AED | -0.4% | **STRONG SELL** | -50 | 38.9 | 4.887 | 5.373 | 5.616 |
-| IHC (International Holding Company) | 352.30 AED | -1.2% | **STRONG SELL** | -50 | 36.9 | 344.63 | 359.97 | 367.64 |
-| DEWA (Dubai Electricity & Water Authority) | 2.62 AED | -1.1% | **STRONG SELL** | -65 | 38.2 | 2.52 | 2.72 | 2.82 |
-| TECOM (TECOM Group) | 3.17 AED | -1.9% | **STRONG SELL** | -65 | 33.7 | 3.034 | 3.306 | 3.441 |
+| ADCB (Abu Dhabi Commercial Bank) | 16.7 AED | -0.4% | **STRONG BUY** | 65 | 62.7 | 15.56 | 17.34 | 17.99 |
+| EMAAR (Emaar Properties) | 11.48 AED | +0.0% | **STRONG BUY** | 50 | 53.1 | 11.14 | 11.82 | 12.15 |
+| EMIRATESNBD (Emirates NBD) | 31.26 AED | -1.0% | **STRONG BUY** | 50 | 52.8 | 29.32 | 32.85 | 34.44 |
+| ADPORTS (AD Ports Group) | 6.18 AED | +0.0% | **BUY** | 35 | 59.7 | 6.069 | 6.291 | 6.402 |
+| DU (Emirates Integrated Telecom (du)) | 12.16 AED | +0.3% | **BUY** | 20 | 55.1 | 11.74 | 12.58 | 12.99 |
+| TALABAT (Talabat Holding) | 1.13 AED | -0.9% | **SELL** | -25 | 51.3 | 1.04 | 1.179 | 1.227 |
+| AIRARABIA (Air Arabia) | 4.86 AED | +2.3% | **SELL** | -25 | 57.0 | 4.51 | 5.123 | 5.386 |
+| ADNOCDRILL (ADNOC Drilling) | 5.68 AED | -0.4% | **SELL** | -25 | 51.3 | 5.45 | 5.866 | 6.052 |
+| ALDAR (Aldar Properties) | 7.85 AED | -0.6% | **SELL** | -35 | 40.4 | 7.587 | 8.113 | 8.377 |
+| ADIB (Abu Dhabi Islamic Bank) | 22.66 AED | +0.2% | **SELL** | -40 | 45.7 | 21.83 | 23.49 | 24.31 |
+| TECOM (TECOM Group) | 3.12 AED | -1.9% | **SELL** | -45 | 29.7 | 2.997 | 3.243 | 3.366 |
+| DIB (Dubai Islamic Bank) | 7.12 AED | +1.0% | **STRONG SELL** | -50 | 42.9 | 6.937 | 7.303 | 7.486 |
+| SALIK (Salik Company) | 5.12 AED | -0.6% | **STRONG SELL** | -50 | 38.4 | 4.883 | 5.357 | 5.594 |
+| FAB (First Abu Dhabi Bank) | 18.9 AED | -1.0% | **STRONG SELL** | -50 | 41.7 | 18.24 | 19.56 | 20.22 |
+| IHC (International Holding Company) | 352.00 AED | +0.0% | **STRONG SELL** | -50 | 36.6 | 344.77 | 359.23 | 366.47 |
+| ADNOCGAS (ADNOC Gas) | 3.22 AED | +0.9% | **STRONG SELL** | -50 | 41.2 | 3.141 | 3.299 | 3.378 |
+| DEWA (Dubai Electricity & Water Authority) | 2.63 AED | -0.4% | **STRONG SELL** | -65 | 39.2 | 2.531 | 2.729 | 2.827 |
+| EMAARDEV (Emaar Development) | 12.62 AED | -1.3% | **STRONG SELL** | -65 | 37.4 | 12.2 | 13.04 | 13.45 |
 
-**ADCB** — STRONG BUY (score 65): price above 50-day average (15.93) — uptrend; 20-day avg above 50-day avg (bullish structure); MACD momentum positive; RSI 60 neutral; TradingView technical consensus bullish.
-**EMIRATESNBD** — STRONG BUY (score 60): price above 50-day average (30.92) — uptrend; 20/50-day averages within 0.40% — no structural edge (not scored); 50-day average sloping up; MACD momentum positive; fresh MACD bullish cross (last 3 days); RSI 57 neutral.
-**EMAAR** — STRONG BUY (score 50): price above 50-day average (11.29) — uptrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping up; MACD momentum flat (not scored); RSI 52 neutral.
-**ADPORTS** — BUY (score 35): price above 50-day average (6.067) — uptrend; 20-day avg above 50-day avg (bullish structure); MACD momentum negative; RSI 61 neutral; TradingView technical consensus bullish.
-**DU** — BUY (score 20): price above 50-day average (11.85) — uptrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping down; MACD momentum flat (not scored); fresh MACD bearish cross (last 3 days); RSI 54 neutral.
-**ALDAR** — HOLD (score 15): price above 50-day average (7.901) — uptrend; 20-day avg above 50-day avg (bullish structure); MACD momentum negative; RSI 44 neutral; TradingView technical consensus bearish.
-**FAB** — HOLD (score -15): price below 50-day average (19.54) — downtrend; 20-day avg below 50-day avg (bearish structure); MACD momentum positive; RSI 51 neutral; TradingView technical consensus bullish.
-**TALABAT** — SELL (score -25): price below 50-day average (1.142) — downtrend; 20-day avg below 50-day avg (bearish structure); 50-day average sloping down; MACD momentum positive; fresh MACD bullish cross (last 3 days); RSI 52 neutral.
-**AIRARABIA** — SELL (score -25): price below 50-day average (4.893) — downtrend; 20-day avg below 50-day avg (bearish structure); 50-day average sloping down; MACD momentum positive; fresh MACD bullish cross (last 3 days); RSI 55 neutral.
-**EMAARDEV** — SELL (score -35): price below 50-day average (13.06) — downtrend; 20/50-day averages within 0.48% — no structural edge (not scored); 50-day average sloping down; MACD momentum flat (not scored); RSI 40 neutral.
-**ADNOCGAS** — SELL (score -40): price below 50-day average (3.278) — downtrend; 20/50-day averages within 0.23% — no structural edge (not scored); MACD momentum negative; RSI 36 neutral; price below lower Bollinger band (stretched down); TradingView technical consensus bearish.
-**ADIB** — SELL (score -40): price below 50-day average (23.17) — downtrend; 20-day avg below 50-day avg (bearish structure); MACD momentum flat (not scored); RSI 45 neutral.
-**ADNOCDRILL** — SELL (score -40): price below 50-day average (5.786) — downtrend; 20-day avg below 50-day avg (bearish structure); MACD momentum flat (not scored); RSI 50 neutral.
-**DIB** — STRONG SELL (score -50): price below 50-day average (7.315) — downtrend; 20-day avg below 50-day avg (bearish structure); 50-day average sloping down; MACD momentum flat (not scored); RSI 38 neutral.
-**SALIK** — STRONG SELL (score -50): price below 50-day average (5.343) — downtrend; 20/50-day averages within 0.29% — no structural edge (not scored); 50-day average sloping down; MACD momentum negative; RSI 39 neutral.
-**IHC** — STRONG SELL (score -50): price below 50-day average (365.9) — downtrend; 20-day avg below 50-day avg (bearish structure); MACD momentum flat (not scored); RSI 37 neutral; TradingView technical consensus bearish.
-**DEWA** — STRONG SELL (score -65): price below 50-day average (2.721) — downtrend; 20-day avg below 50-day avg (bearish structure); 50-day average sloping down; MACD momentum negative; RSI 38 neutral.
-**TECOM** — STRONG SELL (score -65): price below 50-day average (3.338) — downtrend; 20-day avg below 50-day avg (bearish structure); 50-day average sloping down; MACD momentum negative; RSI 34 neutral.
+**ADCB** — STRONG BUY (score 65): price above 50-day average (15.93) — uptrend; 20-day avg above 50-day avg (bullish structure); MACD momentum positive; RSI 63 neutral; TradingView technical consensus bullish.
+**EMAAR** — STRONG BUY (score 50): price above 50-day average (11.3) — uptrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping up; MACD momentum flat (not scored); RSI 53 neutral.
+**EMIRATESNBD** — STRONG BUY (score 50): price above 50-day average (30.94) — uptrend; 20/50-day averages within 0.24% — no structural edge (not scored); 50-day average sloping up; MACD momentum positive; RSI 53 neutral.
+**ADPORTS** — BUY (score 35): price above 50-day average (6.088) — uptrend; 20-day avg above 50-day avg (bullish structure); MACD momentum negative; RSI 60 neutral; TradingView technical consensus bullish.
+**DU** — BUY (score 20): price above 50-day average (11.85) — uptrend; 20-day avg above 50-day avg (bullish structure); 50-day average sloping down; MACD momentum flat (not scored); fresh MACD bearish cross (last 3 days); RSI 55 neutral.
+**TALABAT** — SELL (score -25): price below 50-day average (1.144) — downtrend; 20-day avg below 50-day avg (bearish structure); 50-day average sloping down; MACD momentum positive; fresh MACD bullish cross (last 3 days); RSI 51 neutral.
+**AIRARABIA** — SELL (score -25): price below 50-day average (4.89) — downtrend; 20-day avg below 50-day avg (bearish structure); 50-day average sloping down; MACD momentum positive; fresh MACD bullish cross (last 3 days); RSI 57 neutral.
+**ADNOCDRILL** — SELL (score -25): price below 50-day average (5.783) — downtrend; 20-day avg below 50-day avg (bearish structure); MACD momentum positive; RSI 51 neutral.
+**ALDAR** — SELL (score -35): price below 50-day average (7.903) — downtrend; 20-day avg above 50-day avg (bullish structure); MACD momentum negative; RSI 40 neutral; TradingView technical consensus bearish.
+**ADIB** — SELL (score -40): price below 50-day average (23.16) — downtrend; 20-day avg below 50-day avg (bearish structure); MACD momentum flat (not scored); RSI 46 neutral.
+**TECOM** — SELL (score -45): price below 50-day average (3.333) — downtrend; 20-day avg below 50-day avg (bearish structure); 50-day average sloping down; MACD momentum negative; RSI 30 oversold — bounce candidate.
+**DIB** — STRONG SELL (score -50): price below 50-day average (7.31) — downtrend; 20-day avg below 50-day avg (bearish structure); 50-day average sloping down; MACD momentum flat (not scored); RSI 43 neutral.
+**SALIK** — STRONG SELL (score -50): price below 50-day average (5.338) — downtrend; 20/50-day averages within 0.20% — no structural edge (not scored); 50-day average sloping down; MACD momentum negative; RSI 38 neutral.
+**FAB** — STRONG SELL (score -50): price below 50-day average (19.52) — downtrend; 20-day avg below 50-day avg (bearish structure); MACD momentum flat (not scored); RSI 42 neutral; TradingView technical consensus bearish.
+**IHC** — STRONG SELL (score -50): price below 50-day average (365.5) — downtrend; 20-day avg below 50-day avg (bearish structure); MACD momentum flat (not scored); RSI 37 neutral; TradingView technical consensus bearish.
+**ADNOCGAS** — STRONG SELL (score -50): price below 50-day average (3.275) — downtrend; 20/50-day averages within 0.16% — no structural edge (not scored); MACD momentum negative; RSI 41 neutral; TradingView technical consensus bearish.
+**DEWA** — STRONG SELL (score -65): price below 50-day average (2.72) — downtrend; 20-day avg below 50-day avg (bearish structure); 50-day average sloping down; MACD momentum negative; RSI 39 neutral.
+**EMAARDEV** — STRONG SELL (score -65): price below 50-day average (13.05) — downtrend; 20-day avg below 50-day avg (bearish structure); 50-day average sloping down; MACD momentum negative; RSI 37 neutral.
 
 ## Alerts (changes since previous run)
-- [actionable] SOLUSDT: HOLD -> SELL (score -15 -> -30)
-- [actionable] GRAMUSDT: SELL -> STRONG SELL (score -35 -> -50)
-- [actionable] LTCUSDT: HOLD -> BUY (score -15 -> 35)
-- [actionable] LTCUSDT: price crossed above its 50-day average — trend change
-- [actionable] EMAAR: BUY -> STRONG BUY (score 30 -> 50)
-- [info] FAB: SELL -> HOLD (score -40 -> -15)
-- [actionable] ADNOCDRILL: STRONG SELL -> SELL (score -50 -> -40)
+- [info] AVAXUSDT: BUY -> HOLD (score 35 -> -15)
+- [actionable] AVAXUSDT: price crossed below its 50-day average — trend change
+- [actionable] EMAARDEV: SELL -> STRONG SELL (score -35 -> -65)
+- [actionable] TECOM: STRONG SELL -> SELL (score -65 -> -45) — oversold relief applied, trend/momentum unchanged
+- [info] TECOM: RSI crossed below 30 (now 29.7)
+- [actionable] ALDAR: HOLD -> SELL (score 15 -> -35)
+- [actionable] ALDAR: price crossed below its 50-day average — trend change
+- [actionable] FAB: HOLD -> STRONG SELL (score -15 -> -50)
 
 Position sizing: risk no more than 1–2% of capital per idea; the suggested stop defines the risk per unit.
 

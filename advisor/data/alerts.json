@@ -1,47 +1,53 @@
 {
- "generated_at_utc": "2026-10-21T07:14:23+00:00",
+ "generated_at_utc": "2026-10-22T07:13:02+00:00",
  "alerts": [
   {
-   "ticker": "SOLUSDT",
-   "severity": "actionable",
+   "ticker": "AVAXUSDT",
+   "severity": "info",
    "type": "signal_change",
-   "msg": "SOLUSDT: HOLD -> SELL (score -15 -> -30)"
+   "msg": "AVAXUSDT: BUY -> HOLD (score 35 -> -15)"
   },
   {
-   "ticker": "GRAMUSDT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "GRAMUSDT: SELL -> STRONG SELL (score -35 -> -50)"
-  },
-  {
-   "ticker": "LTCUSDT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "LTCUSDT: HOLD -> BUY (score -15 -> 35)"
-  },
-  {
-   "ticker": "LTCUSDT",
+   "ticker": "AVAXUSDT",
    "severity": "actionable",
    "type": "trend",
-   "msg": "LTCUSDT: price crossed above its 50-day average \u2014 trend change"
+   "msg": "AVAXUSDT: price crossed below its 50-day average \u2014 trend change"
   },
   {
-   "ticker": "EMAAR",
+   "ticker": "EMAARDEV",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "EMAAR: BUY -> STRONG BUY (score 30 -> 50)"
+   "msg": "EMAARDEV: SELL -> STRONG SELL (score -35 -> -65)"
+  },
+  {
+   "ticker": "TECOM",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "TECOM: STRONG SELL -> SELL (score -65 -> -45) \u2014 oversold relief applied, trend/momentum unchanged"
+  },
+  {
+   "ticker": "TECOM",
+   "severity": "info",
+   "type": "rsi",
+   "msg": "TECOM: RSI crossed below 30 (now 29.7)"
+  },
+  {
+   "ticker": "ALDAR",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ALDAR: HOLD -> SELL (score 15 -> -35)"
+  },
+  {
+   "ticker": "ALDAR",
+   "severity": "actionable",
+   "type": "trend",
+   "msg": "ALDAR: price crossed below its 50-day average \u2014 trend change"
   },
   {
    "ticker": "FAB",
-   "severity": "info",
-   "type": "signal_change",
-   "msg": "FAB: SELL -> HOLD (score -40 -> -15)"
-  },
-  {
-   "ticker": "ADNOCDRILL",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "ADNOCDRILL: STRONG SELL -> SELL (score -50 -> -40)"
+   "msg": "FAB: HOLD -> STRONG SELL (score -15 -> -50)"
   }
  ]
 }
