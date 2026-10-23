@@ -2666,6 +2666,20 @@
    "action": "second advance prediction CONFIRMED - UAE date model now the working description",
    "rationale": "Tuesday Oct 20 reappeared in 10 of 10 UAE names and Friday Oct 16 is still in 0 of 10, with Wednesday Oct 21 now the missing session - exactly as predicted yesterday. Two advance tests passed in two days. Treating the model as settled for operational purposes and stopping the daily check; re-test only if a reading contradicts it.",
    "status": "confirmed"
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "USDT",
+   "action": "hold - nothing rated BUY at all",
+   "rationale": "Zero of eleven coins rate BUY. BTC's drop to HOLD is a hairline 50-day cross (0.03%), labelled and not a confirmed trend change. Deploy rule not met. No confirmed holdings. No notification.",
+   "status": "no action"
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "EMIRATESNBD",
+   "action": "the week-long UAE front-runner fell STRONG BUY -> SELL after Q3 results",
+   "rationale": "Emirates NBD reported Q3 on Oct 21: net profit flat at Dh6.4bn, operating expenses +18% against income +6%, Dh2.1bn of impairments mainly at DenizBank, CET1 down to 13.4% from 14.7%. The shares fell about 4.2% from yesterday's reading to 29.96, breaking the 50-day with a MACD bearish cross. The engine shows -6.4% because Thursday's bar is not yet backfilled, so that figure spans two sessions. Attribution to the results is plausible but unconfirmed - the whole UAE board fell 2.4-3.6% the same day. This was the stock I named to the user on Oct 19 as the strongest on the board; it is worth saying plainly that it no longer is, so the January decision starts fresh.",
+   "status": "advice only - not buyable; recorded"
   }
  ]
 }

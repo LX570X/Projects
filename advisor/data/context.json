@@ -1,13 +1,13 @@
 {
- "updated": "2026-10-22T07:30+00:00",
+ "updated": "2026-10-23T07:35+00:00",
  "market_notes": [
   {
-   "market": "Nothing to buy - crypto breadth down to a single BUY",
-   "note": "Only BTC is rated BUY (35). AVAX and LTC fell back out, AVAX crossing below its 50-day. GRAM joined ETH and DOGE at the -65 floor. No coin is near STRONG BUY."
+   "market": "No coin is rated BUY - the USDT stays put",
+   "note": "BTC slipped to HOLD on a 0.03% hairline 50-day cross (not a confirmed trend change). Zero of eleven coins at BUY; LINK fell to SELL. ETH, DOGE and GRAM remain at -65."
   },
   {
-   "market": "The UAE board split",
-   "note": "ADCB 65, EMAAR 50 and EMIRATESNBD 50 hold STRONG BUY, while FAB fell HOLD -> STRONG SELL, ALDAR crossed below its 50-day to SELL and EMAARDEV fell to STRONG SELL. No FAB Q3 release found; last year's was Oct 22. Not buyable until a broker account and about January funding."
+   "market": "Emirates NBD fell after its Q3 results - the UAE board reversed in two sessions",
+   "note": "Q3 released Oct 21: profit flat at Dh6.4bn, costs +18%, Dh2.1bn impairments mainly at DenizBank, CET1 13.4% vs 14.7%. Shares -4.2% from yesterday to 29.96, STRONG BUY -> SELL. EMAAR, ALDAR, DIB, TALABAT, EMAARDEV, TECOM and ADCB all fell 2.4-3.6%. Only ADCB is still STRONG BUY. Friday intraday drafts; attribution to the results is plausible, not confirmed."
   }
  ],
  "asset_notes": {
