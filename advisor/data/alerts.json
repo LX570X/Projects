@@ -1,53 +1,119 @@
 {
- "generated_at_utc": "2026-10-22T07:13:02+00:00",
+ "generated_at_utc": "2026-10-23T07:13:36+00:00",
  "alerts": [
   {
-   "ticker": "AVAXUSDT",
+   "ticker": "BTCUSDT",
    "severity": "info",
    "type": "signal_change",
-   "msg": "AVAXUSDT: BUY -> HOLD (score 35 -> -15)"
+   "msg": "BTCUSDT: BUY -> HOLD (score 35 -> -15) - HAIRLINE 50-day cross: price is only 0.03% below the average, inside the 0.5% buffer, so no trend change was confirmed"
   },
   {
-   "ticker": "AVAXUSDT",
+   "ticker": "LINKUSDT",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "LINKUSDT: HOLD -> SELL (score -15 -> -30)"
+  },
+  {
+   "ticker": "EMAAR",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "EMAAR moved -3.0% in the last day (now 11.18 AED)"
+  },
+  {
+   "ticker": "EMAAR",
+   "severity": "info",
+   "type": "signal_change",
+   "msg": "EMAAR: STRONG BUY -> HOLD (score 50 -> -15)"
+  },
+  {
+   "ticker": "EMAAR",
    "severity": "actionable",
    "type": "trend",
-   "msg": "AVAXUSDT: price crossed below its 50-day average \u2014 trend change"
+   "msg": "EMAAR: price crossed below its 50-day average \u2014 trend change"
+  },
+  {
+   "ticker": "EMIRATESNBD",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "EMIRATESNBD moved -6.4% in the last day (now 29.96 AED)"
+  },
+  {
+   "ticker": "EMIRATESNBD",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "EMIRATESNBD: STRONG BUY -> SELL (score 50 -> -40)"
+  },
+  {
+   "ticker": "EMIRATESNBD",
+   "severity": "info",
+   "type": "macd",
+   "msg": "EMIRATESNBD: MACD bearish cross"
+  },
+  {
+   "ticker": "EMIRATESNBD",
+   "severity": "actionable",
+   "type": "trend",
+   "msg": "EMIRATESNBD: price crossed below its 50-day average \u2014 trend change"
+  },
+  {
+   "ticker": "DIB",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "DIB moved -2.5% in the last day (now 7.01 AED)"
+  },
+  {
+   "ticker": "DIB",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "DIB: STRONG SELL -> SELL (score -50 -> -40)"
+  },
+  {
+   "ticker": "DIB",
+   "severity": "info",
+   "type": "macd",
+   "msg": "DIB: MACD bullish cross"
+  },
+  {
+   "ticker": "TALABAT",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "TALABAT moved -3.5% in the last day (now 1.1 AED)"
   },
   {
    "ticker": "EMAARDEV",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "EMAARDEV: SELL -> STRONG SELL (score -35 -> -65)"
+   "severity": "info",
+   "type": "big_move",
+   "msg": "EMAARDEV moved -3.6% in the last day (now 12.26 AED)"
   },
   {
-   "ticker": "TECOM",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "TECOM: STRONG SELL -> SELL (score -65 -> -45) \u2014 oversold relief applied, trend/momentum unchanged"
+   "ticker": "EMAARDEV",
+   "severity": "info",
+   "type": "rsi",
+   "msg": "EMAARDEV: RSI crossed below 30 (now 29.4)"
   },
   {
    "ticker": "TECOM",
    "severity": "info",
+   "type": "big_move",
+   "msg": "TECOM moved -3.1% in the last day (now 3.09 AED)"
+  },
+  {
+   "ticker": "ALDAR",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "ALDAR moved -3.1% in the last day (now 7.45 AED)"
+  },
+  {
+   "ticker": "ALDAR",
+   "severity": "info",
    "type": "rsi",
-   "msg": "TECOM: RSI crossed below 30 (now 29.7)"
+   "msg": "ALDAR: RSI crossed below 30 (now 26.6)"
   },
   {
-   "ticker": "ALDAR",
+   "ticker": "ADIB",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "ALDAR: HOLD -> SELL (score 15 -> -35)"
-  },
-  {
-   "ticker": "ALDAR",
-   "severity": "actionable",
-   "type": "trend",
-   "msg": "ALDAR: price crossed below its 50-day average \u2014 trend change"
-  },
-  {
-   "ticker": "FAB",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "FAB: HOLD -> STRONG SELL (score -15 -> -50)"
+   "msg": "ADIB: SELL -> STRONG SELL (score -40 -> -65)"
   }
  ]
 }
