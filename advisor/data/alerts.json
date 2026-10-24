@@ -1,119 +1,71 @@
 {
- "generated_at_utc": "2026-10-23T07:13:36+00:00",
+ "generated_at_utc": "2026-10-24T07:10:10+00:00",
  "alerts": [
   {
    "ticker": "BTCUSDT",
-   "severity": "info",
-   "type": "signal_change",
-   "msg": "BTCUSDT: BUY -> HOLD (score 35 -> -15) - HAIRLINE 50-day cross: price is only 0.03% below the average, inside the 0.5% buffer, so no trend change was confirmed"
-  },
-  {
-   "ticker": "LINKUSDT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "LINKUSDT: HOLD -> SELL (score -15 -> -30)"
-  },
-  {
-   "ticker": "EMAAR",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "EMAAR moved -3.0% in the last day (now 11.18 AED)"
-  },
-  {
-   "ticker": "EMAAR",
-   "severity": "info",
-   "type": "signal_change",
-   "msg": "EMAAR: STRONG BUY -> HOLD (score 50 -> -15)"
-  },
-  {
-   "ticker": "EMAAR",
    "severity": "actionable",
    "type": "trend",
-   "msg": "EMAAR: price crossed below its 50-day average \u2014 trend change"
+   "msg": "BTCUSDT: price crossed below its 50-day average \u2014 trend change"
   },
   {
-   "ticker": "EMIRATESNBD",
+   "ticker": "BNBUSDT",
    "severity": "info",
-   "type": "big_move",
-   "msg": "EMIRATESNBD moved -6.4% in the last day (now 29.96 AED)"
-  },
-  {
-   "ticker": "EMIRATESNBD",
-   "severity": "actionable",
    "type": "signal_change",
-   "msg": "EMIRATESNBD: STRONG BUY -> SELL (score 50 -> -40)"
+   "msg": "BNBUSDT: SELL -> HOLD (score -30 -> -20)"
   },
   {
-   "ticker": "EMIRATESNBD",
+   "ticker": "BNBUSDT",
    "severity": "info",
    "type": "macd",
-   "msg": "EMIRATESNBD: MACD bearish cross"
+   "msg": "BNBUSDT: MACD bullish cross"
   },
   {
-   "ticker": "EMIRATESNBD",
-   "severity": "actionable",
-   "type": "trend",
-   "msg": "EMIRATESNBD: price crossed below its 50-day average \u2014 trend change"
-  },
-  {
-   "ticker": "DIB",
+   "ticker": "GRAMUSDT",
    "severity": "info",
    "type": "big_move",
-   "msg": "DIB moved -2.5% in the last day (now 7.01 AED)"
+   "msg": "GRAMUSDT moved -5.0% in the last day (now 1.256 USD)"
   },
   {
-   "ticker": "DIB",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "DIB: STRONG SELL -> SELL (score -50 -> -40)"
+   "ticker": "LTCUSDT",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "LTCUSDT moved -4.7% in the last day (now 56.88 USD)"
   },
   {
    "ticker": "DIB",
    "severity": "info",
    "type": "macd",
-   "msg": "DIB: MACD bullish cross"
+   "msg": "DIB: MACD bearish cross"
   },
   {
-   "ticker": "TALABAT",
+   "ticker": "SALIK",
    "severity": "info",
    "type": "big_move",
-   "msg": "TALABAT moved -3.5% in the last day (now 1.1 AED)"
+   "msg": "SALIK moved -2.7% in the last day (now 5 AED)"
   },
   {
-   "ticker": "EMAARDEV",
+   "ticker": "AIRARABIA",
+   "severity": "info",
+   "type": "signal_change",
+   "msg": "AIRARABIA: SELL -> HOLD (score -35 -> 15) - HAIRLINE 50-day cross: price is only 0.27% above the average, inside the 0.5% buffer, so no trend change was confirmed"
+  },
+  {
+   "ticker": "ADCB",
    "severity": "info",
    "type": "big_move",
-   "msg": "EMAARDEV moved -3.6% in the last day (now 12.26 AED)"
+   "msg": "ADCB moved -3.7% in the last day (now 16.08 AED)"
   },
   {
-   "ticker": "EMAARDEV",
-   "severity": "info",
-   "type": "rsi",
-   "msg": "EMAARDEV: RSI crossed below 30 (now 29.4)"
-  },
-  {
-   "ticker": "TECOM",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "TECOM moved -3.1% in the last day (now 3.09 AED)"
-  },
-  {
-   "ticker": "ALDAR",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "ALDAR moved -3.1% in the last day (now 7.45 AED)"
-  },
-  {
-   "ticker": "ALDAR",
-   "severity": "info",
-   "type": "rsi",
-   "msg": "ALDAR: RSI crossed below 30 (now 26.6)"
+   "ticker": "ADCB",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ADCB: STRONG BUY -> BUY (score 50 -> 40)"
   },
   {
    "ticker": "ADIB",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "ADIB: SELL -> STRONG SELL (score -40 -> -65)"
+   "severity": "info",
+   "type": "big_move",
+   "msg": "ADIB moved -2.5% in the last day (now 21.74 AED)"
   }
  ]
 }
