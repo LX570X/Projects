@@ -1,13 +1,13 @@
 {
- "updated": "2026-10-23T07:35+00:00",
+ "updated": "2026-10-24T07:30+00:00",
  "market_notes": [
   {
-   "market": "No coin is rated BUY - the USDT stays put",
-   "note": "BTC slipped to HOLD on a 0.03% hairline 50-day cross (not a confirmed trend change). Zero of eleven coins at BUY; LINK fell to SELL. ETH, DOGE and GRAM remain at -65."
+   "market": "BTC confirmed a break below its 50-day; no coin is rated BUY",
+   "note": "BTC 80,793, now a confirmed trend break (outside the 0.5% buffer). The board fell 1-5%: GRAM -5.0%, LTC -4.7%, LINK -3.6%. No dated driver found for Oct 23-24 - reported as a null rather than reusing the Oct 9 or Oct 15 explanations."
   },
   {
-   "market": "Emirates NBD fell after its Q3 results - the UAE board reversed in two sessions",
-   "note": "Q3 released Oct 21: profit flat at Dh6.4bn, costs +18%, Dh2.1bn impairments mainly at DenizBank, CET1 13.4% vs 14.7%. Shares -4.2% from yesterday to 29.96, STRONG BUY -> SELL. EMAAR, ALDAR, DIB, TALABAT, EMAARDEV, TECOM and ADCB all fell 2.4-3.6%. Only ADCB is still STRONG BUY. Friday intraday drafts; attribution to the results is plausible, not confirmed."
+   "market": "No UAE name at STRONG BUY after Friday's close",
+   "note": "ADCB slipped to BUY 40 (-3.7%). ADPORTS 35 and DU 30 are the only other BUYs. Weekend readings are Friday's settled closes."
   }
  ],
  "asset_notes": {

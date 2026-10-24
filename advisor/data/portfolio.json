@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23T07:35+00:00",
+ "updated": "2026-10-24T07:30+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": null,
@@ -479,11 +479,11 @@
   "why_it_matters": "On a day when every asset on the crypto board fell and four names confirmed trend breaks, the system produced no trade. That is the design: the BTC stop is a single daily close below a fixed level and that level was not touched, and the satellite trigger needed a qualifying name and there was none. Both outcomes were computed, not decided."
  },
  "book_signal_state": {
-  "as_of": "2026-10-23",
-  "for_the_user": "Holding about $88.5 USDT. Nothing to buy - NO coin is rated BUY at all now. No confirmed holdings. No notification.",
-  "crypto": "BTC slipped BUY -> HOLD on a HAIRLINE 50-day cross (0.03% below), correctly labelled by _hairline_note and not a confirmed trend change. With that, zero of eleven coins rate BUY. LINK fell to SELL.",
-  "uae": "A broad Friday selloff in intraday drafts. EMIRATESNBD fell STRONG BUY -> SELL with a MACD bearish cross and a 50-day break; EMAAR STRONG BUY -> HOLD with a 50-day break; ALDAR, DIB, TALABAT, EMAARDEV, TECOM and ADCB all down 2.4-3.6%; ADIB to STRONG SELL. Only ADCB (50) remains STRONG BUY.",
-  "the_lesson": "Two sessions ago this was 'the strongest UAE board since the system started', with three STRONG BUYs. It reversed within two sessions. Nothing could be bought, and on Oct 20 I stopped counting EMIRATESNBD's confirmation daily because it could not be acted on - both turned out to be the right restraint. It is also further evidence that a UAE signal needs settled-session confirmation before money moves, which is the rule the January purchase will follow."
+  "as_of": "2026-10-24",
+  "for_the_user": "Holding about $88.5 USDT. Nothing to buy. No confirmed holdings. No notification.",
+  "crypto": "BTC CONFIRMED a break below its 50-day this time - outside the 0.5% buffer, so a real trend change, after yesterday's hairline. Zero of eleven coins rate BUY. Broad weakness: GRAM -4.99%, LTC -4.66%, LINK -3.58%, AVAX -3.11%, ADA -3.00%, XRP -2.99%. No dated driver found for Oct 23-24.",
+  "usdt_decision_so_far": "ETH is 2,378.36 against the ~2,431.86 the user converted at on Oct 19, so staying out has avoided about 2.2% so far. Recorded here, not narrated daily.",
+  "uae": "Saturday readings are Friday's settled closes. ADCB slipped STRONG BUY -> BUY (-3.71%), so no UAE name is at STRONG BUY. AIRARABIA's move to HOLD is a hairline 50-day cross (0.27%), labelled."
  },
  "bookkeeping_correction": {
   "found": "2026-09-29",

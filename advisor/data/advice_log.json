@@ -2680,6 +2680,13 @@
    "action": "the week-long UAE front-runner fell STRONG BUY -> SELL after Q3 results",
    "rationale": "Emirates NBD reported Q3 on Oct 21: net profit flat at Dh6.4bn, operating expenses +18% against income +6%, Dh2.1bn of impairments mainly at DenizBank, CET1 down to 13.4% from 14.7%. The shares fell about 4.2% from yesterday's reading to 29.96, breaking the 50-day with a MACD bearish cross. The engine shows -6.4% because Thursday's bar is not yet backfilled, so that figure spans two sessions. Attribution to the results is plausible but unconfirmed - the whole UAE board fell 2.4-3.6% the same day. This was the stock I named to the user on Oct 19 as the strongest on the board; it is worth saying plainly that it no longer is, so the January decision starts fresh.",
    "status": "advice only - not buyable; recorded"
+  },
+  {
+   "date": "2026-10-24",
+   "ticker": "USDT",
+   "action": "hold - nothing rated BUY; BTC confirms a 50-day break",
+   "rationale": "BTC crossed below its 50-day outside the buffer - a confirmed trend change following yesterday's hairline. Zero coins rate BUY and the board fell 1-5%. No dated driver found; the only hits were the already-recorded Oct 9 and Oct 15 moves, which are not offered as today's cause. Staying in USDT since the Oct 19 conversion has avoided about 2.2% on ETH. No confirmed holdings, nothing buyable, no notification.",
+   "status": "no action"
   }
  ]
 }
