@@ -1,13 +1,13 @@
 {
- "updated": "2026-10-24T07:30+00:00",
+ "updated": "2026-10-25T07:20+00:00",
  "market_notes": [
   {
-   "market": "BTC confirmed a break below its 50-day; no coin is rated BUY",
-   "note": "BTC 80,793, now a confirmed trend break (outside the 0.5% buffer). The board fell 1-5%: GRAM -5.0%, LTC -4.7%, LINK -3.6%. No dated driver found for Oct 23-24 - reported as a null rather than reusing the Oct 9 or Oct 15 explanations."
+   "market": "Nothing to buy; crypto drifting lower",
+   "note": "Zero of eleven coins rate BUY. ADA and LTC fell to SELL. BTC 80,610, below its 50-day; ETH 2,346.85."
   },
   {
-   "market": "No UAE name at STRONG BUY after Friday's close",
-   "note": "ADCB slipped to BUY 40 (-3.7%). ADPORTS 35 and DU 30 are the only other BUYs. Weekend readings are Friday's settled closes."
+   "market": "Coming up: FOMC Wed Oct 28, then your first monthly contribution Nov 1",
+   "note": "The Fed decides Oct 28 at 14:00 ET (18:00 Dubai); after the post-CPI spike unwound, a hold was priced at roughly 70%. On Nov 1 at 09:47 Dubai you'll get the first real monthly shopping list for the 1,000 AED."
   }
  ],
  "asset_notes": {
