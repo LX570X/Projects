@@ -2694,6 +2694,13 @@
    "action": "hold - nothing rated BUY",
    "rationale": "Zero coins rate BUY; ADA and LTC fell to SELL on a quiet Sunday drift. No confirmed holdings, nothing buyable, no notification. News search deliberately skipped (weekend, ETFs closed, Fed blackout). Next dated events: FOMC Oct 28, first real contribution Nov 1.",
    "status": "no action"
+  },
+  {
+   "date": "2026-10-26",
+   "ticker": "USDT",
+   "action": "hold - nothing rated BUY; BTC falls to SELL",
+   "rationale": "BTC fell HOLD -> SELL and no coin rates BUY. No confirmed holdings, nothing buyable, no notification. ADCB's +3.5% to STRONG BUY comes before its Q3 results, which a search confirmed are not yet out (last year: Oct 27) - so the move is unexplained and recorded as such.",
+   "status": "no action"
   }
  ]
 }

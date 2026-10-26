@@ -1,13 +1,17 @@
 {
- "updated": "2026-10-25T07:20+00:00",
+ "updated": "2026-10-26T07:30+00:00",
  "market_notes": [
   {
-   "market": "Nothing to buy; crypto drifting lower",
-   "note": "Zero of eleven coins rate BUY. ADA and LTC fell to SELL. BTC 80,610, below its 50-day; ETH 2,346.85."
+   "market": "Nothing to buy; BTC slips to SELL",
+   "note": "Zero of eleven coins rate BUY, seven are SELL or worse. BTC 80,142; ETH 2,320."
   },
   {
-   "market": "Coming up: FOMC Wed Oct 28, then your first monthly contribution Nov 1",
-   "note": "The Fed decides Oct 28 at 14:00 ET (18:00 Dubai); after the post-CPI spike unwound, a hold was priced at roughly 70%. On Nov 1 at 09:47 Dubai you'll get the first real monthly shopping list for the 1,000 AED."
+   "market": "ADCB back to STRONG BUY ahead of results",
+   "note": "+3.5% to STRONG BUY 65 on a Monday draft. Q3 results not yet published; last year's came Oct 27. AIRARABIA confirmed a cross above its 50-day."
+  },
+  {
+   "market": "This week",
+   "note": "FOMC decision Wed Oct 28 at 18:00 Dubai. First real monthly contribution Sun Nov 1 at 09:47 Dubai."
   }
  ],
  "asset_notes": {

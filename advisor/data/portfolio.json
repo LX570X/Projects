@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T07:20+00:00",
+ "updated": "2026-10-26T07:30+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": null,
@@ -479,12 +479,11 @@
   "why_it_matters": "On a day when every asset on the crypto board fell and four names confirmed trend breaks, the system produced no trade. That is the design: the BTC stop is a single daily close below a fixed level and that level was not touched, and the satellite trigger needed a qualifying name and there was none. Both outcomes were computed, not decided."
  },
  "book_signal_state": {
-  "as_of": "2026-10-25",
+  "as_of": "2026-10-26",
   "for_the_user": "Holding about $88.5 USDT. Nothing to buy. No confirmed holdings. No notification.",
-  "crypto": "A quiet Sunday drift lower. Zero coins at BUY; ADA and LTC fell HOLD -> SELL. ETH 2,346.85, about 3.5% below the Oct-19 conversion price.",
-  "uae": "Weekend - no new data. ADCB 40, ADPORTS 35 and DU 30 are the only BUYs.",
-  "coming_up": "FOMC decision Wed Oct 28, 14:00 ET (18:00 Dubai) - the market had priced a hold at roughly 70% after the post-CPI spike unwound. Nov 1 at 09:47 Dubai: first real monthly contribution and shopping list.",
-  "news": "No search run: weekend, US ETFs closed, Fed blackout in force through Oct 29, and last Sunday's search returned only stale material."
+  "crypto": "BTC fell HOLD -> SELL. Zero of eleven coins at BUY; seven are SELL or worse. ETH 2,320.34, about 4.6% below the Oct-19 conversion price.",
+  "uae": "Monday intraday draft. ADCB back to STRONG BUY 65 (+3.5%) ahead of Q3 results, which are not out yet - last year's came on Oct 27, so likely tomorrow. AIRARABIA confirmed a cross above its 50-day. DU slipped to HOLD, ALDAR to SELL (oversold relief withdrawn).",
+  "coming_up": "ADCB Q3 results likely Oct 27; FOMC decision Wed Oct 28, 18:00 Dubai; first real monthly contribution Nov 1."
  },
  "bookkeeping_correction": {
   "found": "2026-09-29",
