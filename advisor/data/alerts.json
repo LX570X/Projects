@@ -1,17 +1,47 @@
 {
- "generated_at_utc": "2026-10-25T07:09:08+00:00",
+ "generated_at_utc": "2026-10-26T07:10:25+00:00",
  "alerts": [
   {
-   "ticker": "ADAUSDT",
+   "ticker": "BTCUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "ADAUSDT: HOLD -> SELL (score -15 -> -45)"
+   "msg": "BTCUSDT: HOLD -> SELL (score -15 -> -30)"
   },
   {
-   "ticker": "LTCUSDT",
+   "ticker": "DIB",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "LTCUSDT: HOLD -> SELL (score -15 -> -30)"
+   "msg": "DIB: STRONG SELL -> SELL (score -60 -> -40)"
+  },
+  {
+   "ticker": "DIB",
+   "severity": "info",
+   "type": "macd",
+   "msg": "DIB: MACD bullish cross"
+  },
+  {
+   "ticker": "AIRARABIA",
+   "severity": "actionable",
+   "type": "trend",
+   "msg": "AIRARABIA: price crossed above its 50-day average \u2014 trend change"
+  },
+  {
+   "ticker": "DU",
+   "severity": "info",
+   "type": "signal_change",
+   "msg": "DU: BUY -> HOLD (score 30 -> 15)"
+  },
+  {
+   "ticker": "ALDAR",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ALDAR: HOLD -> SELL (score -5 -> -25) \u2014 oversold relief withdrawn, trend/momentum unchanged"
+  },
+  {
+   "ticker": "ADCB",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ADCB: BUY -> STRONG BUY (score 40 -> 65)"
   }
  ]
 }
