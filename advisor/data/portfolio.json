@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-26T07:30+00:00",
+ "updated": "2026-10-27T07:30+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": null,
@@ -479,11 +479,11 @@
   "why_it_matters": "On a day when every asset on the crypto board fell and four names confirmed trend breaks, the system produced no trade. That is the design: the BTC stop is a single daily close below a fixed level and that level was not touched, and the satellite trigger needed a qualifying name and there was none. Both outcomes were computed, not decided."
  },
  "book_signal_state": {
-  "as_of": "2026-10-26",
-  "for_the_user": "Holding about $88.5 USDT. Nothing to buy. No confirmed holdings. No notification.",
-  "crypto": "BTC fell HOLD -> SELL. Zero of eleven coins at BUY; seven are SELL or worse. ETH 2,320.34, about 4.6% below the Oct-19 conversion price.",
-  "uae": "Monday intraday draft. ADCB back to STRONG BUY 65 (+3.5%) ahead of Q3 results, which are not out yet - last year's came on Oct 27, so likely tomorrow. AIRARABIA confirmed a cross above its 50-day. DU slipped to HOLD, ALDAR to SELL (oversold relief withdrawn).",
-  "coming_up": "ADCB Q3 results likely Oct 27; FOMC decision Wed Oct 28, 18:00 Dubai; first real monthly contribution Nov 1."
+  "as_of": "2026-10-27",
+  "for_the_user": "Holding about $88.5 USDT. Nothing to buy - ten of eleven coins are SELL or worse. No notification.",
+  "crypto": "AVAX fell to SELL. Only BNB is above SELL, at HOLD -20. ETH 2,305.14, about 5.2% below the Oct-19 conversion price.",
+  "uae": "ADCB holds STRONG BUY 50 and is backed by strong Q3 results (released Oct 22). ADNOCDRILL's jump to BUY is a hairline 50-day cross (0.01%), labelled. Not buyable until January.",
+  "coming_up": "FOMC decision tomorrow, Oct 28, 18:00 Dubai. First real monthly contribution Nov 1."
  },
  "bookkeeping_correction": {
   "found": "2026-09-29",
@@ -752,5 +752,12 @@
   "source": "Emirates NBD media centre; Khaleej Times; Gulf News; The Asian Banker",
   "price_reaction": "Down about 4.2% from yesterday's reading (31.26 -> 29.96), with a 50-day break and MACD bearish cross. Reported as -6.4% 'in the last day' because Thursday's bar has not been backfilled yet - the figure spans Wednesday's close to Friday intraday.",
   "attribution": "PLAUSIBLE, NOT CONFIRMED. The results are dated and contain clear negatives (flat profit, cost growth outpacing income, Turkish provisions, a lower capital ratio), but no market report was found tying the share move to them, and the whole UAE board fell the same day."
+ },
+ "adcb_q3_2026": {
+  "released": "2026-10-22",
+  "figures": "Nine-month net profit after tax AED 10.296bn (+27% YoY); Q3 net profit AED 3.559bn (+15%); 21st consecutive quarter of profit growth. Operating income +10% to AED 18.3bn; non-interest income +21%; ROAE 16.2%; cost-to-income 27.3% (improved 40bp).",
+  "source": "Gulf News, Khaleej Times, Gulf Today (Oct 22), TradeArabia, GDN",
+  "versus_emiratesnbd": "The two banks reported a day apart and diverged: Emirates NBD's Q3 profit was flat with costs +18% and Turkish impairments; ADCB's rose 15% with costs falling relative to income. ADCB's STRONG BUY has fundamental support; Emirates NBD's lost it.",
+  "my_error": "On Oct 26 I recorded ADCB's results as 'not yet out, likely Oct 27' and told the user so. They were published Oct 22 - the search simply missed them. A null search result is not evidence an event has not happened."
  }
 }

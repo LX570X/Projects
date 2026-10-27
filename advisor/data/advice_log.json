@@ -2701,6 +2701,20 @@
    "action": "hold - nothing rated BUY; BTC falls to SELL",
    "rationale": "BTC fell HOLD -> SELL and no coin rates BUY. No confirmed holdings, nothing buyable, no notification. ADCB's +3.5% to STRONG BUY comes before its Q3 results, which a search confirmed are not yet out (last year: Oct 27) - so the move is unexplained and recorded as such.",
    "status": "no action"
+  },
+  {
+   "date": "2026-10-27",
+   "ticker": "USDT",
+   "action": "hold - nothing rated BUY",
+   "rationale": "Ten of eleven coins are SELL or worse; AVAX joined them. No confirmed holdings, nothing buyable, no notification.",
+   "status": "no action"
+  },
+  {
+   "date": "2026-10-27",
+   "ticker": "ADCB",
+   "action": "CORRECTION - Q3 results were already out (Oct 22) and strong",
+   "rationale": "Yesterday I recorded and told the user that ADCB's Q3 results were 'probably out tomorrow'. They were published Oct 22: nine-month net profit AED 10.296bn (+27%), Q3 AED 3.559bn (+15%), the 21st straight quarter of profit growth, ROAE 16.2%, cost-to-income 27.3%. The earlier search simply missed them. Lesson: a null search is not evidence an event has not happened. Substance: ADCB's STRONG BUY now has fundamental support, the opposite of Emirates NBD a day earlier - useful context for the January UAE purchase, though nothing is decided until then.",
+   "status": "correction recorded"
   }
  ]
 }
