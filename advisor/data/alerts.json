@@ -1,53 +1,131 @@
 {
- "generated_at_utc": "2026-10-27T07:12:22+00:00",
+ "generated_at_utc": "2026-10-28T07:09:59+00:00",
  "alerts": [
   {
-   "ticker": "AVAXUSDT",
+   "ticker": "XRPUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "AVAXUSDT: HOLD -> SELL (score -15 -> -30)"
+   "msg": "XRPUSDT: STRONG SELL -> SELL (score -50 -> -25)"
   },
   {
-   "ticker": "DIB",
+   "ticker": "XRPUSDT",
    "severity": "info",
    "type": "macd",
-   "msg": "DIB: MACD bearish cross"
+   "msg": "XRPUSDT: MACD bullish cross"
+  },
+  {
+   "ticker": "DOGEUSDT",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "DOGEUSDT: STRONG SELL -> SELL (score -65 -> -40)"
+  },
+  {
+   "ticker": "DOGEUSDT",
+   "severity": "info",
+   "type": "macd",
+   "msg": "DOGEUSDT: MACD bullish cross"
+  },
+  {
+   "ticker": "LINKUSDT",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "LINKUSDT: SELL -> STRONG SELL (score -45 -> -65)"
+  },
+  {
+   "ticker": "EMAAR",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "EMAAR moved +4.1% in the last day (now 11.6 AED)"
+  },
+  {
+   "ticker": "EMAAR",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "EMAAR: HOLD -> STRONG BUY (score -15 -> 60)"
+  },
+  {
+   "ticker": "EMAAR",
+   "severity": "info",
+   "type": "macd",
+   "msg": "EMAAR: MACD bullish cross"
+  },
+  {
+   "ticker": "EMAAR",
+   "severity": "actionable",
+   "type": "trend",
+   "msg": "EMAAR: price crossed above its 50-day average \u2014 trend change"
+  },
+  {
+   "ticker": "DEWA",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "DEWA: STRONG SELL -> BUY (score -50 -> 25) - HAIRLINE 50-day cross: price is only 0.35% above the average, inside the 0.5% buffer, so no trend change was confirmed"
+  },
+  {
+   "ticker": "DEWA",
+   "severity": "info",
+   "type": "macd",
+   "msg": "DEWA: MACD bullish cross"
+  },
+  {
+   "ticker": "TALABAT",
+   "severity": "info",
+   "type": "signal_change",
+   "msg": "TALABAT: SELL -> HOLD (score -30 -> -15)"
+  },
+  {
+   "ticker": "AIRARABIA",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "AIRARABIA moved +5.4% in the last day (now 5.26 AED)"
+  },
+  {
+   "ticker": "AIRARABIA",
+   "severity": "info",
+   "type": "rsi",
+   "msg": "AIRARABIA: RSI crossed above 70 (now 73.9)"
   },
   {
    "ticker": "EMAARDEV",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "EMAARDEV: SELL -> STRONG SELL (score -35 -> -65) \u2014 oversold relief withdrawn, trend/momentum unchanged"
+   "severity": "info",
+   "type": "big_move",
+   "msg": "EMAARDEV moved +2.8% in the last day (now 12.56 AED)"
   },
   {
-   "ticker": "TECOM",
+   "ticker": "DU",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "TECOM: SELL -> STRONG SELL (score -45 -> -65) \u2014 oversold relief withdrawn, trend/momentum unchanged"
+   "msg": "DU: BUY -> STRONG BUY (score 30 -> 60)"
+  },
+  {
+   "ticker": "DU",
+   "severity": "info",
+   "type": "macd",
+   "msg": "DU: MACD bullish cross"
+  },
+  {
+   "ticker": "ALDAR",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "ALDAR moved +3.1% in the last day (now 7.89 AED)"
+  },
+  {
+   "ticker": "FAB",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "FAB: STRONG SELL -> SELL (score -55 -> -30)"
   },
   {
    "ticker": "IHC",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "IHC: STRONG SELL -> SELL (score -50 -> -40) \u2014 oversold relief applied, trend/momentum unchanged"
-  },
-  {
-   "ticker": "ADNOCGAS",
-   "severity": "info",
-   "type": "signal_change",
-   "msg": "ADNOCGAS: STRONG SELL -> HOLD (score -50 -> -20) \u2014 oversold relief applied, trend/momentum unchanged"
-  },
-  {
-   "ticker": "ADNOCGAS",
    "severity": "info",
    "type": "rsi",
-   "msg": "ADNOCGAS: RSI crossed below 30 (now 26.1)"
+   "msg": "IHC: RSI crossed below 30 (now 27.8)"
   },
   {
-   "ticker": "ADNOCDRILL",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "ADNOCDRILL: SELL -> BUY (score -25 -> 35) - HAIRLINE 50-day cross: price is only 0.01% above the average, inside the 0.5% buffer, so no trend change was confirmed"
+   "ticker": "ADIB",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "ADIB moved -4.0% in the last day (now 22.06 AED)"
   }
  ]
 }
