@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-27T07:30+00:00",
+ "updated": "2026-10-28T07:25+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": null,
@@ -479,11 +479,11 @@
   "why_it_matters": "On a day when every asset on the crypto board fell and four names confirmed trend breaks, the system produced no trade. That is the design: the BTC stop is a single daily close below a fixed level and that level was not touched, and the satellite trigger needed a qualifying name and there was none. Both outcomes were computed, not decided."
  },
  "book_signal_state": {
-  "as_of": "2026-10-27",
-  "for_the_user": "Holding about $88.5 USDT. Nothing to buy - ten of eleven coins are SELL or worse. No notification.",
-  "crypto": "AVAX fell to SELL. Only BNB is above SELL, at HOLD -20. ETH 2,305.14, about 5.2% below the Oct-19 conversion price.",
-  "uae": "ADCB holds STRONG BUY 50 and is backed by strong Q3 results (released Oct 22). ADNOCDRILL's jump to BUY is a hairline 50-day cross (0.01%), labelled. Not buyable until January.",
-  "coming_up": "FOMC decision tomorrow, Oct 28, 18:00 Dubai. First real monthly contribution Nov 1."
+  "as_of": "2026-10-28",
+  "for_the_user": "Holding about $88.5 USDT. Nothing to buy - every coin is HOLD or worse. No notification.",
+  "crypto": "A broad bounce of +1.2% to +3.5% ahead of the Fed, with XRP and DOGE lifting off STRONG SELL on MACD bullish crosses, but no coin is above HOLD and LINK fell to STRONG SELL. ETH 2,354.89.",
+  "uae": "Wednesday intraday draft, broad rebound: EMAAR +4.1% to STRONG BUY 60 with a confirmed 50-day cross, DU to STRONG BUY 60, ADCB holds 65, ALDAR +3.1%, AIRARABIA +5.4% (RSI 73.9, overbought). DEWA's jump to BUY is a hairline cross (0.35%), labelled. ADIB -4.0% a day before its rights-issue buy-by date (Oct 29) - not attributed. Not buyable until January.",
+  "fomc": "Decision today, 14:00 ET / 18:00 Dubai, after this run. Outcome to be recorded tomorrow."
  },
  "bookkeeping_correction": {
   "found": "2026-09-29",

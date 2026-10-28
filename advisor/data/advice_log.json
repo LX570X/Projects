@@ -2715,6 +2715,13 @@
    "action": "CORRECTION - Q3 results were already out (Oct 22) and strong",
    "rationale": "Yesterday I recorded and told the user that ADCB's Q3 results were 'probably out tomorrow'. They were published Oct 22: nine-month net profit AED 10.296bn (+27%), Q3 AED 3.559bn (+15%), the 21st straight quarter of profit growth, ROAE 16.2%, cost-to-income 27.3%. The earlier search simply missed them. Lesson: a null search is not evidence an event has not happened. Substance: ADCB's STRONG BUY now has fundamental support, the opposite of Emirates NBD a day earlier - useful context for the January UAE purchase, though nothing is decided until then.",
    "status": "correction recorded"
+  },
+  {
+   "date": "2026-10-28",
+   "ticker": "USDT",
+   "action": "hold - nothing rated above HOLD",
+   "rationale": "Crypto bounced 1-3.5% into the FOMC but no coin is above HOLD. No confirmed holdings, nothing buyable, no notification. No news search run: the FOMC decision lands after this reading, and today's UAE rebound (EMAAR and DU to STRONG BUY) cannot be acted on until January.",
+   "status": "no action"
   }
  ]
 }
