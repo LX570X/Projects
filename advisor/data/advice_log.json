@@ -2722,6 +2722,20 @@
    "action": "hold - nothing rated above HOLD",
    "rationale": "Crypto bounced 1-3.5% into the FOMC but no coin is above HOLD. No confirmed holdings, nothing buyable, no notification. No news search run: the FOMC decision lands after this reading, and today's UAE rebound (EMAAR and DU to STRONG BUY) cannot be acted on until January.",
    "status": "no action"
+  },
+  {
+   "date": "2026-10-29",
+   "ticker": "macro",
+   "action": "FOMC held at 3.75-4.00%, 10-2 with two hike dissents",
+   "rationale": "The Fed held on Oct 28 as priced; Cook and Hammack dissented for a 25bp hike. Warsh announced fewer rate meetings from 2027. Reaction modest: 2-year -8bp to 4.70%, dollar a touch weaker. December hike still ~85% priced. The first search returned only previews; a second, extended search found the outcome.",
+   "status": "recorded"
+  },
+  {
+   "date": "2026-10-29",
+   "ticker": "USDT",
+   "action": "hold - nothing qualifies",
+   "rationale": "Crypto fell 0.4-4.3% after the Fed. BNB's move to BUY 35 is a hairline 50-day cross (0.23%) - labelled, not a confirmed trend change, and BUY 35 is not the STRONG BUY the deploy rule requires. No confirmed holdings, no notification. Next: Nov 1 first real contribution.",
+   "status": "no action"
   }
  ]
 }
