@@ -1,131 +1,59 @@
 {
- "generated_at_utc": "2026-10-28T07:09:59+00:00",
+ "generated_at_utc": "2026-10-29T07:12:14+00:00",
  "alerts": [
   {
-   "ticker": "XRPUSDT",
+   "ticker": "BNBUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "XRPUSDT: STRONG SELL -> SELL (score -50 -> -25)"
+   "msg": "BNBUSDT: HOLD -> BUY (score -15 -> 35) - HAIRLINE 50-day cross: price is only 0.23% above the average, inside the 0.5% buffer, so no trend change was confirmed"
   },
   {
-   "ticker": "XRPUSDT",
-   "severity": "info",
-   "type": "macd",
-   "msg": "XRPUSDT: MACD bullish cross"
-  },
-  {
-   "ticker": "DOGEUSDT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "DOGEUSDT: STRONG SELL -> SELL (score -65 -> -40)"
-  },
-  {
-   "ticker": "DOGEUSDT",
-   "severity": "info",
-   "type": "macd",
-   "msg": "DOGEUSDT: MACD bullish cross"
-  },
-  {
-   "ticker": "LINKUSDT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "LINKUSDT: SELL -> STRONG SELL (score -45 -> -65)"
-  },
-  {
-   "ticker": "EMAAR",
+   "ticker": "ADAUSDT",
    "severity": "info",
    "type": "big_move",
-   "msg": "EMAAR moved +4.1% in the last day (now 11.6 AED)"
+   "msg": "ADAUSDT moved -4.3% in the last day (now 0.1975 USD)"
   },
   {
-   "ticker": "EMAAR",
+   "ticker": "ADAUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "EMAAR: HOLD -> STRONG BUY (score -15 -> 60)"
-  },
-  {
-   "ticker": "EMAAR",
-   "severity": "info",
-   "type": "macd",
-   "msg": "EMAAR: MACD bullish cross"
-  },
-  {
-   "ticker": "EMAAR",
-   "severity": "actionable",
-   "type": "trend",
-   "msg": "EMAAR: price crossed above its 50-day average \u2014 trend change"
+   "msg": "ADAUSDT: SELL -> STRONG SELL (score -45 -> -65)"
   },
   {
    "ticker": "DEWA",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "DEWA: STRONG SELL -> BUY (score -50 -> 25) - HAIRLINE 50-day cross: price is only 0.35% above the average, inside the 0.5% buffer, so no trend change was confirmed"
+   "msg": "DEWA: BUY -> SELL (score 25 -> -40)"
   },
   {
-   "ticker": "DEWA",
-   "severity": "info",
-   "type": "macd",
-   "msg": "DEWA: MACD bullish cross"
-  },
-  {
-   "ticker": "TALABAT",
-   "severity": "info",
-   "type": "signal_change",
-   "msg": "TALABAT: SELL -> HOLD (score -30 -> -15)"
-  },
-  {
-   "ticker": "AIRARABIA",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "AIRARABIA moved +5.4% in the last day (now 5.26 AED)"
-  },
-  {
-   "ticker": "AIRARABIA",
-   "severity": "info",
-   "type": "rsi",
-   "msg": "AIRARABIA: RSI crossed above 70 (now 73.9)"
-  },
-  {
-   "ticker": "EMAARDEV",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "EMAARDEV moved +2.8% in the last day (now 12.56 AED)"
-  },
-  {
-   "ticker": "DU",
+   "ticker": "TECOM",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "DU: BUY -> STRONG BUY (score 30 -> 60)"
+   "msg": "TECOM: STRONG SELL -> SELL (score -65 -> -40)"
   },
   {
-   "ticker": "DU",
+   "ticker": "TECOM",
    "severity": "info",
    "type": "macd",
-   "msg": "DU: MACD bullish cross"
+   "msg": "TECOM: MACD bullish cross"
   },
   {
    "ticker": "ALDAR",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "ALDAR moved +3.1% in the last day (now 7.89 AED)"
-  },
-  {
-   "ticker": "FAB",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "FAB: STRONG SELL -> SELL (score -55 -> -30)"
+   "msg": "ALDAR: SELL -> STRONG SELL (score -25 -> -50)"
   },
   {
-   "ticker": "IHC",
-   "severity": "info",
-   "type": "rsi",
-   "msg": "IHC: RSI crossed below 30 (now 27.8)"
+   "ticker": "ADCB",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ADCB: STRONG BUY -> BUY (score 65 -> 40)"
   },
   {
-   "ticker": "ADIB",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "ADIB moved -4.0% in the last day (now 22.06 AED)"
+   "ticker": "ADNOCDRILL",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ADNOCDRILL: BUY -> SELL (score 35 -> -25)"
   }
  ]
 }
