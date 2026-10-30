@@ -2736,6 +2736,13 @@
    "action": "hold - nothing qualifies",
    "rationale": "Crypto fell 0.4-4.3% after the Fed. BNB's move to BUY 35 is a hairline 50-day cross (0.23%) - labelled, not a confirmed trend change, and BUY 35 is not the STRONG BUY the deploy rule requires. No confirmed holdings, no notification. Next: Nov 1 first real contribution.",
    "status": "no action"
+  },
+  {
+   "date": "2026-10-30",
+   "ticker": "USDT",
+   "action": "hold - every coin SELL or worse",
+   "rationale": "All eleven coins SELL or worse. BNB's hairline BUY from yesterday reversed to STRONG SELL (-4.9%) - the hairline label correctly marked it unconfirmed. ETH ~7.4% below the Oct-19 conversion. ADIB's -3.3% matches its rights-issue ex-date (no search needed; recorded Oct 14). Prepared the book for the Nov-1 routine. No confirmed holdings, no notification.",
+   "status": "no action"
   }
  ]
 }
