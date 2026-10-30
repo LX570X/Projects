@@ -1,59 +1,59 @@
 {
- "generated_at_utc": "2026-10-29T07:12:14+00:00",
+ "generated_at_utc": "2026-10-30T07:13:10+00:00",
  "alerts": [
+  {
+   "ticker": "BNBUSDT",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "BNBUSDT moved -4.9% in the last day (now 714.67 USD)"
+  },
   {
    "ticker": "BNBUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "BNBUSDT: HOLD -> BUY (score -15 -> 35) - HAIRLINE 50-day cross: price is only 0.23% above the average, inside the 0.5% buffer, so no trend change was confirmed"
+   "msg": "BNBUSDT: BUY -> STRONG SELL (score 35 -> -55)"
   },
   {
-   "ticker": "ADAUSDT",
+   "ticker": "BNBUSDT",
    "severity": "info",
-   "type": "big_move",
-   "msg": "ADAUSDT moved -4.3% in the last day (now 0.1975 USD)"
+   "type": "macd",
+   "msg": "BNBUSDT: MACD bearish cross"
   },
   {
-   "ticker": "ADAUSDT",
+   "ticker": "SOLUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "ADAUSDT: SELL -> STRONG SELL (score -45 -> -65)"
+   "msg": "SOLUSDT: SELL -> STRONG SELL (score -45 -> -65)"
+  },
+  {
+   "ticker": "XRPUSDT",
+   "severity": "info",
+   "type": "macd",
+   "msg": "XRPUSDT: MACD bearish cross"
   },
   {
    "ticker": "DEWA",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "DEWA: BUY -> SELL (score 25 -> -40)"
+   "msg": "DEWA: SELL -> STRONG SELL (score -40 -> -50)"
   },
   {
-   "ticker": "TECOM",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "TECOM: STRONG SELL -> SELL (score -65 -> -40)"
-  },
-  {
-   "ticker": "TECOM",
+   "ticker": "AIRARABIA",
    "severity": "info",
-   "type": "macd",
-   "msg": "TECOM: MACD bullish cross"
+   "type": "big_move",
+   "msg": "AIRARABIA moved -8.2% in the last day (now 4.91 AED)"
   },
   {
-   "ticker": "ALDAR",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "ALDAR: SELL -> STRONG SELL (score -25 -> -50)"
-  },
-  {
-   "ticker": "ADCB",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "ADCB: STRONG BUY -> BUY (score 65 -> 40)"
+   "ticker": "ADIB",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "ADIB moved -3.3% since the last reading (now 20.8 AED)"
   },
   {
    "ticker": "ADNOCDRILL",
    "severity": "actionable",
-   "type": "signal_change",
-   "msg": "ADNOCDRILL: BUY -> SELL (score 35 -> -25)"
+   "type": "trend",
+   "msg": "ADNOCDRILL: price crossed above its 50-day average \u2014 trend change"
   }
  ]
 }
