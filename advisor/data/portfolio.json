@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-30T07:30+00:00",
+ "updated": "2026-10-31T07:20+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": null,
@@ -486,11 +486,11 @@
   "why_it_matters": "On a day when every asset on the crypto board fell and four names confirmed trend breaks, the system produced no trade. That is the design: the BTC stop is a single daily close below a fixed level and that level was not touched, and the satellite trigger needed a qualifying name and there was none. Both outcomes were computed, not decided."
  },
  "book_signal_state": {
-  "as_of": "2026-10-30",
-  "for_the_user": "Holding about $88.5 USDT. Nothing to buy - every coin is SELL or worse. No notification.",
-  "crypto": "All eleven coins SELL or worse; seven at STRONG SELL. BNB went BUY -> STRONG SELL (-4.88%, MACD bearish cross) one day after a move to BUY that _hairline_note had labelled as unconfirmed (0.23% above its 50-day) - the label did its job. BTC 78,476; ETH 2,251.02, RSI 30.5.",
-  "usdt_decision_so_far": "ETH is about 7.4% below the ~2,431.86 the user converted at on Oct 19.",
-  "uae": "Friday draft. EMAAR and DU hold STRONG BUY 50. ADIB -3.3% on Oct 30, the first trading day after its rights-issue buy-by date (Oct 29) - consistent with the ex-rights adjustment recorded on Oct 14. AIRARABIA -8.2% after +5.4% two days earlier."
+  "as_of": "2026-10-31",
+  "for_the_user": "Holding about $88.5 USDT. Nothing to buy - every coin SELL or worse. No notification.",
+  "crypto": "Eight of eleven at STRONG SELL; DOGE joined at -75. BTC 77,430.65 (RSI 34.7); ETH 2,245.49 (RSI 30.1), about 7.7% below the Oct-19 conversion.",
+  "uae": "Saturday = Friday's settled closes. DU STRONG BUY 65, EMAAR STRONG BUY 50. EMIRATESNBD fell further to STRONG SELL (-3.5%). ADIB -3.9% a second day after going ex-rights.",
+  "tomorrow": "Nov 1, 09:47 Dubai: first real monthly contribution. UAE-stocks decision still unanswered, so the 400 AED stays in the bank by default."
  },
  "bookkeeping_correction": {
   "found": "2026-09-29",

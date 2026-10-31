@@ -2743,6 +2743,13 @@
    "action": "hold - every coin SELL or worse",
    "rationale": "All eleven coins SELL or worse. BNB's hairline BUY from yesterday reversed to STRONG SELL (-4.9%) - the hairline label correctly marked it unconfirmed. ETH ~7.4% below the Oct-19 conversion. ADIB's -3.3% matches its rights-issue ex-date (no search needed; recorded Oct 14). Prepared the book for the Nov-1 routine. No confirmed holdings, no notification.",
    "status": "no action"
+  },
+  {
+   "date": "2026-10-31",
+   "ticker": "USDT",
+   "action": "hold - every coin SELL or worse",
+   "rationale": "Eight of eleven coins at STRONG SELL. No confirmed holdings, nothing buyable, no notification. News search skipped: weekend, nothing actionable. Tomorrow's Nov-1 routine runs with the UAE decision still open, so its default (400 AED stays in the bank) applies.",
+   "status": "no action"
   }
  ]
 }
