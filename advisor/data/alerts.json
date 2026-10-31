@@ -1,59 +1,65 @@
 {
- "generated_at_utc": "2026-10-30T07:13:10+00:00",
+ "generated_at_utc": "2026-10-31T07:08:41+00:00",
  "alerts": [
   {
-   "ticker": "BNBUSDT",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "BNBUSDT moved -4.9% in the last day (now 714.67 USD)"
-  },
-  {
-   "ticker": "BNBUSDT",
+   "ticker": "DOGEUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "BNBUSDT: BUY -> STRONG SELL (score 35 -> -55)"
+   "msg": "DOGEUSDT: SELL -> STRONG SELL (score -40 -> -75)"
   },
   {
-   "ticker": "BNBUSDT",
+   "ticker": "DOGEUSDT",
    "severity": "info",
    "type": "macd",
-   "msg": "BNBUSDT: MACD bearish cross"
+   "msg": "DOGEUSDT: MACD bearish cross"
   },
   {
-   "ticker": "SOLUSDT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "SOLUSDT: SELL -> STRONG SELL (score -45 -> -65)"
-  },
-  {
-   "ticker": "XRPUSDT",
-   "severity": "info",
-   "type": "macd",
-   "msg": "XRPUSDT: MACD bearish cross"
-  },
-  {
-   "ticker": "DEWA",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "DEWA: SELL -> STRONG SELL (score -40 -> -50)"
-  },
-  {
-   "ticker": "AIRARABIA",
+   "ticker": "EMIRATESNBD",
    "severity": "info",
    "type": "big_move",
-   "msg": "AIRARABIA moved -8.2% in the last day (now 4.91 AED)"
+   "msg": "EMIRATESNBD moved -3.5% in the last day (now 29.22 AED)"
+  },
+  {
+   "ticker": "EMIRATESNBD",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "EMIRATESNBD: SELL -> STRONG SELL (score -30 -> -50)"
+  },
+  {
+   "ticker": "SALIK",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "SALIK: STRONG SELL -> SELL (score -50 -> -40)"
+  },
+  {
+   "ticker": "SALIK",
+   "severity": "info",
+   "type": "macd",
+   "msg": "SALIK: MACD bullish cross"
   },
   {
    "ticker": "ADIB",
    "severity": "info",
    "type": "big_move",
-   "msg": "ADIB moved -3.3% since the last reading (now 20.8 AED)"
+   "msg": "ADIB moved -3.9% in the last day (now 19.88 AED)"
   },
   {
-   "ticker": "ADNOCDRILL",
+   "ticker": "ADIB",
    "severity": "actionable",
-   "type": "trend",
-   "msg": "ADNOCDRILL: price crossed above its 50-day average \u2014 trend change"
+   "type": "signal_change",
+   "msg": "ADIB: STRONG SELL -> SELL (score -55 -> -35) \u2014 oversold relief applied, trend/momentum unchanged"
+  },
+  {
+   "ticker": "ADIB",
+   "severity": "info",
+   "type": "rsi",
+   "msg": "ADIB: RSI crossed below 30 (now 29.8)"
+  },
+  {
+   "ticker": "ADPORTS",
+   "severity": "info",
+   "type": "signal_change",
+   "msg": "ADPORTS: BUY -> HOLD (score 25 -> 10)"
   }
  ]
 }
