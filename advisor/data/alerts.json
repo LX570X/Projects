@@ -1,65 +1,11 @@
 {
- "generated_at_utc": "2026-10-31T07:08:41+00:00",
+ "generated_at_utc": "2026-11-01T05:49:55+00:00",
  "alerts": [
   {
-   "ticker": "DOGEUSDT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "DOGEUSDT: SELL -> STRONG SELL (score -40 -> -75)"
-  },
-  {
-   "ticker": "DOGEUSDT",
-   "severity": "info",
-   "type": "macd",
-   "msg": "DOGEUSDT: MACD bearish cross"
-  },
-  {
-   "ticker": "EMIRATESNBD",
+   "ticker": "AVAXUSDT",
    "severity": "info",
    "type": "big_move",
-   "msg": "EMIRATESNBD moved -3.5% in the last day (now 29.22 AED)"
-  },
-  {
-   "ticker": "EMIRATESNBD",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "EMIRATESNBD: SELL -> STRONG SELL (score -30 -> -50)"
-  },
-  {
-   "ticker": "SALIK",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "SALIK: STRONG SELL -> SELL (score -50 -> -40)"
-  },
-  {
-   "ticker": "SALIK",
-   "severity": "info",
-   "type": "macd",
-   "msg": "SALIK: MACD bullish cross"
-  },
-  {
-   "ticker": "ADIB",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "ADIB moved -3.9% in the last day (now 19.88 AED)"
-  },
-  {
-   "ticker": "ADIB",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "ADIB: STRONG SELL -> SELL (score -55 -> -35) \u2014 oversold relief applied, trend/momentum unchanged"
-  },
-  {
-   "ticker": "ADIB",
-   "severity": "info",
-   "type": "rsi",
-   "msg": "ADIB: RSI crossed below 30 (now 29.8)"
-  },
-  {
-   "ticker": "ADPORTS",
-   "severity": "info",
-   "type": "signal_change",
-   "msg": "ADPORTS: BUY -> HOLD (score 25 -> 10)"
+   "msg": "AVAXUSDT moved +5.2% in the last day (now 8.953 USD)"
   }
  ]
 }
