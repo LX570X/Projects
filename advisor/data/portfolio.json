@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-31T07:20+00:00",
+ "updated": "2026-11-01T06:00+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": null,
@@ -40,7 +40,13 @@
    "core_uae_stocks_aed": 0,
    "opportunity_usdt_aed": 0,
    "satellite_reserve_aed": 0,
-   "reset": "2026-10-19: all three were ZEROED. The user confirmed they made NO monthly deposits - the 1,200 / 250 / 309 AED shown here since August were planned amounts, never real money. First real contribution: 2026-11-01."
+   "reset": "2026-10-19: all three were ZEROED. The user confirmed they made NO monthly deposits - the 1,200 / 250 / 309 AED shown here since August were planned amounts, never real money. First real contribution: 2026-11-01.",
+   "pending_2026_11_01": {
+    "core_uae_stocks_aed": 400,
+    "opportunity_usdt_aed": 250,
+    "satellite_reserve_aed": 100,
+    "rule": "These move into the confirmed figures above ONLY when the user confirms the deposit. Crediting buckets on instruction rather than execution is exactly how three months of imaginary balances built up."
+   }
   },
   "dca_history": [
    {
@@ -165,6 +171,50 @@
     },
     "funded": false,
     "funded_note": "Instruction issued; user confirmed 2026-10-19 that no deposit was made."
+   },
+   {
+    "date": "2026-11-01",
+    "amount_aed": 1000,
+    "funded": "PENDING - instruction issued; user to confirm",
+    "core_crypto": {
+     "aed": 250,
+     "usd": 68.07,
+     "btc_aed": 125,
+     "btc_usd": 34.04,
+     "btc_qty_indicative": 0.000437,
+     "btc_price": 77879.99,
+     "eth_aed": 125,
+     "eth_usd": 34.04,
+     "eth_qty_indicative": 0.01501,
+     "eth_price": 2267.47,
+     "split_reason": "50/50. Both BTC (-4.99% vs 50-day, SELL -45) and ETH (-9.92%, STRONG SELL -65) are below trend, and the plan's rule is 'both below trend -> still buy 50/50'. DCA is signal-agnostic by design; only the split responds to signals."
+    },
+    "core_uae_stocks": {
+     "action": "accumulate - keep in your bank",
+     "aed": 400,
+     "bucket_total_aed": 400,
+     "reason": "No broker account; the user has not yet decided on UAE stocks. Default from Oct 19 applies: earmark it in the bank."
+    },
+    "opportunity": {
+     "action": "hold as USDT this month",
+     "aed": 250,
+     "usd": 68.07,
+     "bucket_total_aed": 250,
+     "reason": "No crypto rated BUY - all eleven SELL or worse. UAE BUYs (DU, EMAAR, ADCB, ADNOCDRILL) cannot be bought without a broker."
+    },
+    "satellite": {
+     "action": "wait - hold as USDT",
+     "aed": 100,
+     "usd": 27.23,
+     "bucket_total_aed": 100,
+     "reason": "No non-BTC/ETH alt rated BUY or better."
+    },
+    "user_steps": [
+     "Buy 600 AED of USDT on Binance (about $163).",
+     "Convert $34 of USDT to BTC, and $34 of USDT to ETH.",
+     "Leave the rest as USDT.",
+     "Keep 400 AED in your bank for UAE stocks."
+    ]
    }
   ],
   "satellite_candidate": {
@@ -310,8 +360,8 @@
    "adports_status": "Board recommends ACCEPT at AED 6.25 following HSBC's fairness opinion (Aug 26). Deal risk materially reduced; trades as a stub to the Sept 15 3pm close. Remains OFF the core shortlist - a merger-arb stub heading to a delisting is not what the stock bucket is for."
   },
   "next_dca": {
-   "date": "2026-11-01",
-   "note": "FIRST REAL CONTRIBUTION. The user stated on 2026-10-19 they will start monthly deposits next month."
+   "date": "2026-12-01",
+   "note": "Second real contribution - if November's is confirmed."
   },
   "where_the_money_physically_goes": {
    "adopted": "2026-10-19",
@@ -573,12 +623,12 @@
   "EMAARDEV": "stale_runs 1 at 12.80. Threshold for stocks is 10 runs. Nothing flagged."
  },
  "last_action": {
-  "date": "2026-10-19",
-  "ticker": "USDT",
-  "action": "HOLD USDT - nothing to do",
-  "end_state": "Hold your USDT. Nothing qualifies to buy right now; you will get a notification when a signal confirms.",
-  "why": "ETH was converted to USDT on 2026-10-19 (confirmed by you). Only 2 of 11 coins are rated BUY and none is a confirmed entry under the rules.",
-  "execution": "DONE - ETH -> USDT confirmed by user 2026-10-19"
+  "date": "2026-11-01",
+  "ticker": "MONTHLY PLAN",
+  "action": "BUY - first monthly contribution",
+  "end_state": "Buy 600 AED of USDT on Binance. Convert $34 to BTC and $34 to ETH. Keep the rest as USDT. Keep 400 AED in your bank for UAE stocks.",
+  "why": "The regular monthly BTC/ETH buy happens whatever the signals say - that is what dollar-cost averaging is. Everything else stays as cash because nothing qualifies to buy.",
+  "execution": "PENDING - reply 'done' once it's done"
  },
  "eth_exit": {
   "date": "2026-10-13",
