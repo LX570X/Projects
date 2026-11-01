@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01T06:00+00:00",
+ "updated": "2026-11-01T07:15+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": null,
@@ -536,11 +536,10 @@
   "why_it_matters": "On a day when every asset on the crypto board fell and four names confirmed trend breaks, the system produced no trade. That is the design: the BTC stop is a single daily close below a fixed level and that level was not touched, and the satellite trigger needed a qualifying name and there was none. Both outcomes were computed, not decided."
  },
  "book_signal_state": {
-  "as_of": "2026-10-31",
-  "for_the_user": "Holding about $88.5 USDT. Nothing to buy - every coin SELL or worse. No notification.",
-  "crypto": "Eight of eleven at STRONG SELL; DOGE joined at -75. BTC 77,430.65 (RSI 34.7); ETH 2,245.49 (RSI 30.1), about 7.7% below the Oct-19 conversion.",
-  "uae": "Saturday = Friday's settled closes. DU STRONG BUY 65, EMAAR STRONG BUY 50. EMIRATESNBD fell further to STRONG SELL (-3.5%). ADIB -3.9% a second day after going ex-rights.",
-  "tomorrow": "Nov 1, 09:47 Dubai: first real monthly contribution. UAE-stocks decision still unanswered, so the 400 AED stays in the bank by default."
+  "as_of": "2026-11-01",
+  "for_the_user": "Monthly shopping list issued at 05:49 UTC and still PENDING confirmation. No further action today. No second notification.",
+  "crypto": "Unchanged from the monthly run: no coin rated BUY. BTC 77,983 (SELL), ETH 2,268.57 (STRONG SELL). No alerts.",
+  "uae": "Weekend - no new data."
  },
  "bookkeeping_correction": {
   "found": "2026-09-29",
