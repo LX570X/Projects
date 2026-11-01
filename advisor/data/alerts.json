@@ -1,11 +1,4 @@
 {
- "generated_at_utc": "2026-11-01T05:49:55+00:00",
- "alerts": [
-  {
-   "ticker": "AVAXUSDT",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "AVAXUSDT moved +5.2% in the last day (now 8.953 USD)"
-  }
- ]
+ "generated_at_utc": "2026-11-01T07:09:22+00:00",
+ "alerts": []
 }
