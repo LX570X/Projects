@@ -1,4 +1,41 @@
 {
- "generated_at_utc": "2026-11-01T07:09:22+00:00",
- "alerts": []
+ "generated_at_utc": "2026-11-02T07:21:38+00:00",
+ "alerts": [
+  {
+   "ticker": "SOLUSDT",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "SOLUSDT: STRONG SELL -> SELL (score -65 -> -45) \u2014 oversold relief applied, trend/momentum unchanged"
+  },
+  {
+   "ticker": "SOLUSDT",
+   "severity": "info",
+   "type": "rsi",
+   "msg": "SOLUSDT: RSI crossed below 30 (now 28.8)"
+  },
+  {
+   "ticker": "SALIK",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "SALIK moved -2.6% in the last day (now 5.15 AED)"
+  },
+  {
+   "ticker": "IHC",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "IHC: SELL -> STRONG SELL (score -45 -> -65) \u2014 oversold relief withdrawn, trend/momentum unchanged"
+  },
+  {
+   "ticker": "ADIB",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ADIB: SELL -> STRONG SELL (score -35 -> -55) \u2014 oversold relief withdrawn, trend/momentum unchanged"
+  },
+  {
+   "ticker": "ADPORTS",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ADPORTS: HOLD -> BUY (score 10 -> 20)"
+  }
+ ]
 }
