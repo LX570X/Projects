@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01T07:15+00:00",
+ "updated": "2026-11-02T07:35+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": null,
@@ -536,10 +536,11 @@
   "why_it_matters": "On a day when every asset on the crypto board fell and four names confirmed trend breaks, the system produced no trade. That is the design: the BTC stop is a single daily close below a fixed level and that level was not touched, and the satellite trigger needed a qualifying name and there was none. Both outcomes were computed, not decided."
  },
  "book_signal_state": {
-  "as_of": "2026-11-01",
-  "for_the_user": "Monthly shopping list issued at 05:49 UTC and still PENDING confirmation. No further action today. No second notification.",
-  "crypto": "Unchanged from the monthly run: no coin rated BUY. BTC 77,983 (SELL), ETH 2,268.57 (STRONG SELL). No alerts.",
-  "uae": "Weekend - no new data."
+  "as_of": "2026-11-02",
+  "for_the_user": "Nov-1 shopping list still PENDING confirmation. No coin rated BUY, so nothing beyond it. No notification.",
+  "crypto": "All eleven SELL or worse. SOL's lift to SELL is oversold relief only (RSI 28.8), labelled. BTC 78,204; ETH 2,286.",
+  "uae": "Monday draft: EMAAR and DU STRONG BUY 50; ADIB and IHC to STRONG SELL as oversold relief was withdrawn.",
+  "coming_up": "US midterms Tue Nov 3. Per the Oct 16 research, Trump's stated pause on striking Iran ran to the midterms, with a carrier-group buildup completing in November - the next dated energy/geopolitical risk."
  },
  "bookkeeping_correction": {
   "found": "2026-09-29",
