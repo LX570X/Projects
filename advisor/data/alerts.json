@@ -1,83 +1,113 @@
 {
- "generated_at_utc": "2026-11-03T07:09:01+00:00",
+ "generated_at_utc": "2026-11-04T07:09:40+00:00",
  "alerts": [
   {
-   "ticker": "ADAUSDT",
+   "ticker": "XRPUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "ADAUSDT: STRONG SELL -> SELL (score -65 -> -45) \u2014 oversold relief applied, trend/momentum unchanged"
+   "msg": "XRPUSDT: STRONG SELL -> SELL (score -65 -> -40)"
   },
   {
-   "ticker": "ADAUSDT",
+   "ticker": "XRPUSDT",
    "severity": "info",
-   "type": "rsi",
-   "msg": "ADAUSDT: RSI crossed below 30 (now 29.8)"
+   "type": "macd",
+   "msg": "XRPUSDT: MACD bullish cross"
   },
   {
    "ticker": "EMAAR",
    "severity": "info",
-   "type": "macd",
-   "msg": "EMAAR: MACD bullish cross"
+   "type": "big_move",
+   "msg": "EMAAR moved +5.2% in the last day (now 12.1 AED)"
   },
   {
-   "ticker": "EMIRATESNBD",
+   "ticker": "DIB",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "EMIRATESNBD: STRONG SELL -> SELL (score -50 -> -30)"
+   "msg": "DIB: STRONG SELL -> SELL (score -50 -> -40)"
+  },
+  {
+   "ticker": "DIB",
+   "severity": "info",
+   "type": "macd",
+   "msg": "DIB: MACD bullish cross"
+  },
+  {
+   "ticker": "SALIK",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "SALIK moved +3.1% in the last day (now 5.33 AED)"
+  },
+  {
+   "ticker": "SALIK",
+   "severity": "info",
+   "type": "signal_change",
+   "msg": "SALIK: SELL -> HOLD (score -40 -> 5) - HAIRLINE 50-day cross: price is only 0.17% above the average, inside the 0.5% buffer, so no trend change was confirmed"
+  },
+  {
+   "ticker": "SALIK",
+   "severity": "info",
+   "type": "macd",
+   "msg": "SALIK: MACD bearish cross"
+  },
+  {
+   "ticker": "DEWA",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "DEWA: STRONG SELL -> SELL (score -50 -> -35)"
   },
   {
    "ticker": "TALABAT",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "TALABAT moved +2.7% in the last day (now 1.125 AED)"
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "TALABAT: HOLD -> BUY (score -15 -> 35)"
   },
   {
    "ticker": "TALABAT",
-   "severity": "info",
-   "type": "signal_change",
-   "msg": "TALABAT: SELL -> HOLD (score -30 -> -15)"
-  },
-  {
-   "ticker": "AIRARABIA",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "AIRARABIA moved -2.9% in the last day (now 4.94 AED)"
-  },
-  {
-   "ticker": "EMAARDEV",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "EMAARDEV moved +9.5% in the last day (now 13.2 AED)"
-  },
-  {
-   "ticker": "EMAARDEV",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "EMAARDEV: STRONG SELL -> BUY (score -65 -> 25)"
-  },
-  {
-   "ticker": "EMAARDEV",
-   "severity": "info",
-   "type": "macd",
-   "msg": "EMAARDEV: MACD bullish cross"
-  },
-  {
-   "ticker": "EMAARDEV",
    "severity": "actionable",
    "type": "trend",
-   "msg": "EMAARDEV: price crossed above its 50-day average \u2014 trend change"
+   "msg": "TALABAT: price crossed above its 50-day average \u2014 trend change"
   },
   {
-   "ticker": "FAB",
-   "severity": "actionable",
+   "ticker": "EMAARDEV",
+   "severity": "info",
    "type": "signal_change",
-   "msg": "FAB: STRONG SELL -> SELL (score -65 -> -40)"
+   "msg": "EMAARDEV: BUY -> HOLD (score 25 -> -5) \u2014 stretch penalty applied, trend/momentum unchanged"
   },
   {
-   "ticker": "IHC",
+   "ticker": "EMAARDEV",
    "severity": "info",
    "type": "rsi",
-   "msg": "IHC: RSI crossed below 30 (now 25.3)"
+   "msg": "EMAARDEV: RSI crossed above 70 (now 72.1)"
+  },
+  {
+   "ticker": "DU",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "DU: STRONG BUY -> BUY (score 50 -> 40)"
+  },
+  {
+   "ticker": "DU",
+   "severity": "info",
+   "type": "macd",
+   "msg": "DU: MACD bearish cross"
+  },
+  {
+   "ticker": "ALDAR",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "ALDAR moved +3.0% in the last day (now 7.93 AED)"
+  },
+  {
+   "ticker": "ALDAR",
+   "severity": "info",
+   "type": "signal_change",
+   "msg": "ALDAR: STRONG SELL -> HOLD (score -50 -> 10) - HAIRLINE 50-day cross: price is only 0.26% above the average, inside the 0.5% buffer, so no trend change was confirmed"
+  },
+  {
+   "ticker": "ADPORTS",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ADPORTS: HOLD -> SELL (score 10 -> -40) - HAIRLINE 50-day cross: price is only 0.13% below the average, inside the 0.5% buffer, so no trend change was confirmed"
   }
  ]
 }
