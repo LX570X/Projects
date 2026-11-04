@@ -1,13 +1,17 @@
 {
- "updated": "2026-11-03T07:25+00:00",
+ "updated": "2026-11-04T07:25+00:00",
  "market_notes": [
   {
-   "market": "Crypto down 2-3% on midterm day",
-   "note": "All eleven SELL or worse. BTC 76,542; ETH 2,246. Your Nov 1 list still applies - it's in dollars."
+   "market": "Crypto bounces after the midterms - still nothing to buy",
+   "note": "+1-2.5%, all eleven SELL or worse. Your Nov 1 list still applies."
   },
   {
-   "market": "Emaar Development +9.5% - cause unknown",
-   "note": "Jumped to BUY with a confirmed 50-day cross. No news found; one calendar lists Q3 results for Nov 6. Not buyable until January."
+   "market": "UAE rally: Emaar +5.2% to STRONG BUY",
+   "note": "SALIK and ALDAR +3%, TALABAT crossed above its 50-day. Several moves are hairline crosses. Not buyable until January."
+  },
+  {
+   "market": "Midterm results pending",
+   "note": "Not yet reported at this hour. Will check tomorrow, along with whether the pause on Iran strikes ends."
   }
  ],
  "asset_notes": {
