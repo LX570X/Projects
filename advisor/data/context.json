@@ -1,17 +1,25 @@
 {
- "updated": "2026-11-04T07:25+00:00",
+ "updated": "2026-11-05T07:55+00:00",
  "market_notes": [
   {
-   "market": "Crypto bounces after the midterms - still nothing to buy",
-   "note": "+1-2.5%, all eleven SELL or worse. Your Nov 1 list still applies."
+   "market": "Binance hacked for $6.3B on Oct 29 - hold new deposits",
+   "note": "Binance says users won't lose funds and has replaced ~95-98%. Withdrawals reopened in stages from Nov 1; the full proof of reserves is still being generated. Keep the Nov 1 money in your bank until it's out."
   },
   {
-   "market": "UAE rally: Emaar +5.2% to STRONG BUY",
-   "note": "SALIK and ALDAR +3%, TALABAT crossed above its 50-day. Several moves are hairline crosses. Not buyable until January."
+   "market": "Democrats win both houses; markets rally, oil drops",
+   "note": "Dow +3.0%, S&P 500 +1.6% on Nov 4. Brent -8.7% to $94.62 (lowest since Aug 31), ~$93.7 today. Gold back above $4,000."
   },
   {
-   "market": "Midterm results pending",
-   "note": "Not yet reported at this hour. Will check tomorrow, along with whether the pause on Iran strikes ends."
+   "market": "Crypto bounces but stays below trend",
+   "note": "BTC +3.4% to 80.7k after dipping to 75.7k; ETH +5.7%. ~$950M liquidated, mostly shorts; ETF inflows small. Nothing rated BUY."
+  },
+  {
+   "market": "Dubai's best day since April",
+   "note": "DFM +3.95% on Nov 4; Emirates NBD +6.1%, Emaar +4.4%; Abu Dhabi flat. Emaar offered AED 15/share for the rest of Emaar Development."
+  },
+  {
+   "market": "Iran: no deal, strikes not ruled out",
+   "note": "US 'defensive' strikes on Qeshm Island Nov 2. Trump: 'no immediate plans' but 'locked and loaded'. Eurasia Group: 60% odds of renewed strikes; escalation could push Brent to $110-125."
   }
  ],
  "asset_notes": {
@@ -471,6 +479,12 @@
     "impact": "neutral",
     "date": "2026-10-16",
     "source": "Binance klines (own fetch); Bloomberg corroborates a sub-$80,000 print; The Block, Blockhead, CNBC on the Fed channel"
+   },
+   {
+    "headline": "Post-midterm relief rally: dip to ~75.6k then >81k; ~$950M liquidations mostly shorts; spot BTC ETF +$74.6M on Nov 4",
+    "impact": "bullish",
+    "date": "2026-11-04",
+    "source": "CoinDesk, Yahoo Finance/Unchained, SoSoValue via TokenPost"
    }
   ],
   "ETHUSDT": [
@@ -719,6 +733,12 @@
     "impact": "bearish",
     "date": "2026-10-14",
     "source": "blog.ethereum.org Glamsterdam testnet announcement, CoinDesk, SoSoValue via KuCoin/TokenPost/PANews"
+   },
+   {
+    "headline": "ETH back above $2,400 (+5.6%); spot ETH ETF +$53M on Nov 4",
+    "impact": "bullish",
+    "date": "2026-11-04",
+    "source": "Investing.com, TokenPost"
    }
   ],
   "BNBUSDT": [
@@ -1019,6 +1039,12 @@
     "impact": "bullish",
     "date": "2026-09-29",
     "source": "advisor data"
+   },
+   {
+    "headline": "+6.1% on Nov 4 as the DFM index jumped 3.95%; no bank-specific catalyst found",
+    "impact": "bullish",
+    "date": "2026-11-04",
+    "source": "Emirates 24|7, Reuters"
    }
   ],
   "TALABAT": [
@@ -1649,6 +1675,12 @@
     "impact": "bearish",
     "date": "2026-10-07",
     "source": "Cavendish Maxwell via The National, Gulf Business, Economy Middle East; Emaar Development H1 DFM filing"
+   },
+   {
+    "headline": "Emaar proposes AED 15/share cash offer for the ~20.8% of Emaar Development it does not own (subject to Emaar board approval). The price is now anchored to the offer, so technical signals are not meaningful.",
+    "impact": "neutral",
+    "date": "2026-11-04",
+    "source": "The National, AGBI"
    }
   ],
   "AVAXUSDT": [
@@ -2149,6 +2181,8 @@
   ]
  },
  "risk_flags": [
+  "VENUE RISK (2026-11-05): all of the user's crypto is on Binance, which lost ~$6.3B to a hack on 2026-10-29. Binance pledges users are covered; withdrawals restored in phases from Nov 1; 44-token proof of reserves pending (~Nov 6, inferred). New deposits on hold until the proof is out.",
+  "Iran escalation risk persists after the midterms: CENTCOM reportedly finalised a 3-day strike plan (not approved); IRGC claims tanker mine strikes on Nov 4-5 (unconfirmed). Eurasia Group: renewed strikes 60%, deal 10%.",
   "BTC's stop HELD - Thursday's low of 79,800.00 was 0.62% above 79,304.74 and it closed 3.71% clear. No action. Cushion back to -3.47%. The margin was 495 dollars on one venue's prints.",
   "Energy is two-sided: gasoline is easing (flat pump prices, a 3.5m barrel stock build, 93.5% refinery utilisation) so September's CPI spike is unlikely to repeat, BUT distillate drew 2.5m barrels and the IEA has diesel at 25% of a deepening demand contraction.",
   "DATED ESCALATION RISK IN NOVEMBER: Trump's stated pause on striking Iran runs only to the Nov 3 midterms, a third carrier group and ~2,000 Marines complete their buildup in November, and the WSJ reports he expects to resume bombing then. Hormuz diplomacy is stalled on sequencing.",
@@ -2178,7 +2212,10 @@
   "2026-10-16: my Oct-14 note called the UAE data problem a '~1-day publication lag'. The real mechanism is a forward date-stamp on the newest bar. Right observation, wrong cause.",
   "2026-10-16: yesterday I called BTC's 80,226.35 'today's verified low', clearing the stop by 1.16%. That was the low as of the 07:09 reading with 17 hours of the bar left to run; the session printed 79,800.00, a 0.62% margin. An in-progress bar's low is a floor-so-far.",
   "2026-10-17: REVERTED the Mon-Thu trading week asserted on 2026-10-14. A settled Friday bar appeared for all ten UAE names with genuine ranges; Friday is a session. The Oct-16 claim that the ambiguity was 'resolved in favour of a closed Friday' was the real error - I had correctly flagged on Oct 14 that I could not distinguish 'exchange closed' from 'source omits', then abandoned my own caveat for a tidier mechanism.",
-  "2026-10-19: the Friday anomaly is RESOLVED - the source serves Friday bars transiently and deletes them on Monday. The Oct-14 observation was right, the Oct-14 four-day-week conclusion wrong, the Oct-16 escalation worst of all, and the Oct-17 revert right. The real cost was never the calendar label: UAE moving averages permanently omit one session in five."
+  "2026-10-19: the Friday anomaly is RESOLVED - the source serves Friday bars transiently and deletes them on Monday. The Oct-14 observation was right, the Oct-14 four-day-week conclusion wrong, the Oct-16 escalation worst of all, and the Oct-17 revert right. The real cost was never the calendar label: UAE moving averages permanently omit one session in five.",
+  "2026-11-05: MISSED for six cycles - Binance, the user's only crypto venue, lost ~$6.3B to a hack on Oct 29. The Nov-1 monthly plan told the user to deposit there with no mention of it. The daily news pass followed alerts and macro themes and never searched the venue. Fixed: ADVISOR.md step 3 now requires a venue check every cycle.",
+  "2026-11-05: the Nov-4 note said the stated pause on Iran strikes 'ran to the midterms'. The US carried out limited 'defensive' strikes on Qeshm Island on Nov 2, before the vote - the pause was already broken.",
+  "2026-11-05: EMAARDEV's '+9.5% unexplained' (Nov-3 cycle) is now most likely explained by Emaar's AED 15/share cash offer for the ~20.8% of Emaar Development it does not own, filed Nov 4 (The National, AGBI)."
  ],
  "missing": [
   "GENIUS Act stablecoin final-rules deadline is July 18, 2026 \u2014 TOMORROW: six agencies (OCC, FDIC, NCUA, Treasury, FinCEN, OFAC) must finalize rules one year after enactment; comment periods closed June 9 and there is no statutory fallback if they miss. Direct near-term catalyst/risk for stablecoins (USDC/Coinbase economics \u2014 which the findings themselves cite in the CLARITY yield fight \u2014 and Tether) yet absent from all three crypto findings. (Kraken blog Jul 15, CryptoSlate, OCC Bulletin 2026-3, Chapman tracker.)",
@@ -2205,5 +2242,11 @@
   "gaps_i_accept": "The critic is right that the four BUY-rated cryptos - ADA, AVAX, LINK and LTC - got NO research at all, while BNB, a HOLD, got the deepest single-ticker pass. Those four are the only names the board rates to buy, so for a holder of USDT that is the wrong allocation of effort. There was also no ETH-specific thread despite ETH being the only line that transacted this week. And the index-level UAE data that overturned yesterday's headline was found by accident inside the ADCB thread while the thread actually assigned to market-wide research returned 'nothing found'.",
   "gaps_i_also_accept": "The out-of-window standard was applied inconsistently: items at Oct 9 were rejected in two threads and kept with a caveat in a third, and all three EMAARDEV keeps are pre-window. A null result was rejected in one thread and kept in another on identical reasoning. Aggregator quotes were rejected for EMAARDEV and accepted for BNB. And today's CPI was labelled bearish in one thread and neutral in another - I have resolved that to NEUTRAL and PENDING, because labelling an unlanded coin-flip bearish is a forecast.",
   "fix_next_run": "Give the BUY-rated names their own threads before the HOLDs, give ETH a thread while its re-entry is live, and state one out-of-window rule in the brief instead of leaving each checker to invent it."
- }
+ },
+ "upcoming": [
+  "Binance 44-token proof of reserves (~Nov 6, inferred)",
+  "Emaar / Emaar Development Q3 results (Nov 5 or 6, unconfirmed)",
+  "US October CPI (Tue Nov 10, unconfirmed against BLS)",
+  "MSCI index review (Nov 11)"
+ ]
 }

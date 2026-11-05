@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T07:25+00:00",
+ "updated": "2026-11-05T07:55+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": null,
@@ -214,7 +214,8 @@
      "Convert $34 of USDT to BTC, and $34 of USDT to ETH.",
      "Leave the rest as USDT.",
      "Keep 400 AED in your bank for UAE stocks."
-    ]
+    ],
+    "status_2026_11_05": "ON HOLD - Binance hack of 2026-10-29 found on 2026-11-05. Do not deposit until the proof of reserves is published; then execute unchanged. funded stays PENDING."
    }
   ],
   "satellite_candidate": {
@@ -367,7 +368,8 @@
    "adopted": "2026-10-19",
    "why": "Three months of 'accumulate' instructions produced balances that existed only in this file. Every bucket must now name a physical place.",
    "crypto_600_aed": "Deposit 600 AED to Binance each month: core_crypto 250 (buy BTC/ETH that day), opportunity 250 (convert to USDT and hold for a buy signal), satellite 100 (USDT until an alt qualifies).",
-   "uae_stocks_400_aed": "Keep in the user's bank account, earmarked, until the Al Ramz account is open - or redirect to crypto if the user decides against UAE stocks."
+   "uae_stocks_400_aed": "Keep in the user's bank account, earmarked, until the Al Ramz account is open - or redirect to crypto if the user decides against UAE stocks.",
+   "hold_2026_11_05": "While the Binance proof of reserves is pending, all 1,000 AED stays in the user's bank."
   },
   "uae_account_route": {
    "as_of": "2026-10-19",
@@ -536,11 +538,11 @@
   "why_it_matters": "On a day when every asset on the crypto board fell and four names confirmed trend breaks, the system produced no trade. That is the design: the BTC stop is a single daily close below a fixed level and that level was not touched, and the satellite trigger needed a qualifying name and there was none. Both outcomes were computed, not decided."
  },
  "book_signal_state": {
-  "as_of": "2026-11-04",
-  "for_the_user": "Nov-1 shopping list still PENDING confirmation (day 3). No coin rated BUY. No notification.",
-  "crypto": "A +1-2.5% bounce the day after the midterms; all eleven still SELL or worse. BTC 77,952; ETH 2,296.",
-  "uae": "Wednesday draft rally: EMAAR +5.2% to STRONG BUY 65, SALIK +3.1%, ALDAR +3.0%, TALABAT crossed above its 50-day to BUY. Several band changes are hairline crosses (SALIK, ALDAR, ADPORTS), labelled. EMAARDEV fell back to HOLD on a stretch penalty (RSI 72.1).",
-  "midterms": "Held Nov 3. Results not yet found at 07:09 UTC (2am ET); recheck tomorrow. Pre-election reporting expected Democrats to take the House. The stated pause on Iran strikes ran to the midterms."
+  "as_of": "2026-11-05",
+  "for_the_user": "Nov-1 list ON HOLD because of the Binance hack. Notification sent.",
+  "crypto": "Relief rally after the midterms: BTC 80,709 (+3.4%, HOLD -20, MACD bullish cross), ETH 2,430 (+5.7%, SELL -25). Every coin still below its 50-day. Nothing rated BUY.",
+  "uae": "DFM +3.95% on Nov 4 (best day since Apr 8). Our UAE % moves span two sessions (Tue close to Thu draft; Wednesday's bar not yet backfilled). New BUYs: EMIRATESNBD, SALIK, FAB, ADNOCGAS; ALDAR and DU STRONG BUY; EMAAR STRONG BUY 45 with RSI 73. EMAARDEV pinned to Emaar's AED 15 offer - technicals not meaningful. Not buyable until the user has a broker.",
+  "macro": "Democrats won the House and Senate. Brent -8.7% to $94.62 on Nov 4, ~$93.7 Nov 5. Iran: US 'defensive' strikes on Qeshm Island Nov 2; Trump 'no immediate plans' but 'locked and loaded'; no deal."
  },
  "bookkeeping_correction": {
   "found": "2026-09-29",
@@ -623,12 +625,13 @@
   "EMAARDEV": "stale_runs 1 at 12.80. Threshold for stocks is 10 runs. Nothing flagged."
  },
  "last_action": {
-  "date": "2026-11-01",
-  "ticker": "MONTHLY PLAN",
-  "action": "BUY - first monthly contribution",
-  "end_state": "Buy 600 AED of USDT on Binance. Convert $34 to BTC and $34 to ETH. Keep the rest as USDT. Keep 400 AED in your bank for UAE stocks.",
-  "why": "The regular monthly BTC/ETH buy happens whatever the signals say - that is what dollar-cost averaging is. Everything else stays as cash because nothing qualifies to buy.",
-  "execution": "PENDING - reply 'done' once it's done"
+  "date": "2026-11-05",
+  "ticker": "BINANCE - NOV 1 PLAN",
+  "action": "WAIT - don't send new money to Binance yet",
+  "end_state": "Hold off on the Nov 1 list. Keep all 1,000 AED in your bank for now. Leave the USDT you already have where it is. I will tell you when Binance's full proof of reserves is out - then do the Nov 1 list as written.",
+  "why": "Binance lost about $6.3B to a hack on Oct 29, the biggest crypto theft on record. Binance says it is covering the loss itself, not its users, and has replaced about 95-98% of the stolen assets. Withdrawals reopened in stages from Nov 1. The full proof that customer balances are backed 1:1 is still being generated. Waiting a few days costs nothing: the monthly buy does not depend on timing, and no coin is rated BUY.",
+  "do_not": "Do not add new money to Binance until the proof is published. Do not rush to move your existing USDT either - Binance says users will not bear the loss, and moving it needs an outside wallet.",
+  "execution": "ON HOLD - nothing to do now; I will message you when it is safe to go ahead"
  },
  "eth_exit": {
   "date": "2026-10-13",
@@ -823,5 +826,23 @@
   "reaction": "Modest. 2-year Treasury yield -8bp to 4.70%; dollar slightly weaker; 10-year briefly back above 5%. December hike still priced around 85%.",
   "source": "CNN, CNBC, Yahoo Finance live blogs (Oct 28), XTB post-FOMC note, Admiral Markets",
   "for_the_book": "As expected. The live risk is December, and before that the Nov 3 midterms - after which the stated pause on striking Iran ends."
+ },
+ "binance_hack_2026_10_29": {
+  "what": "On 2026-10-29 an attacker drained about $6.3B (TRM: ~$6.36B) from Binance hot wallets on ten chains, mostly within ~20 minutes. Attributed to North Korea (FBI, 2026-11-01). The largest crypto theft on record.",
+  "binance_position": "Binance says it absorbs the loss, not users: it arranged $6.34B of its own funds (SAFU, futures insurance fund, treasury) and reports ~95-98% of affected assets replaced (sources differ). About $2.85-3B of stolen assets reported frozen/intercepted; Elliptic estimates ~$3.24B still in theft-linked addresses.",
+  "withdrawals": "Paused ~54 hours, then reopened in phases from 2026-11-01 (15 networks in the first batch, incl. USDT on Ethereum and BSC). No date given for full restoration as of 2026-11-04. Net outflows ~$5.3B in the first two days.",
+  "proof_of_reserves": "New snapshot at 2026-11-04 00:00 UTC covering 44 tokens (up from 10). Full zk proof takes ~50-60 hours, so expected around 2026-11-06 - inferred, Binance gave no date.",
+  "deposits_during_incident": "Lukka reports the attacker swept new deposits at least six times in the following 3.5 hours - deposits made DURING the incident were exposed. That window has closed.",
+  "advice": "Pause new deposits to Binance until the 44-token proof of reserves is published showing USDT, BTC and ETH at >=100%, then run the Nov 1 list unchanged. Existing ~$88.5 USDT: no action (Binance's pledge covers it; the user has no outside wallet).",
+  "resume_condition": "Proof of reserves published with USDT, BTC, ETH >= 100% AND no new incident. Check every cycle; push a 'go ahead' when met.",
+  "missed_by_advisor": "The advisor did not notice this for six daily cycles (Oct 30 - Nov 4) and issued the Nov 1 plan telling the user to deposit on Binance three days after the hack, with no mention of it. Cause: the daily news pass followed the alert list and macro themes; it never searched the venue itself. Fixed in ADVISOR.md step 3 (venue check every cycle).",
+  "sources": [
+   "CoinDesk 2026-10-30 https://www.coindesk.com/business/2026/10/30/binance-arranges-usd6-34-billion-to-cover-losses-from-record-crypto-hack",
+   "CNBC 2026-10-30 https://www.cnbc.com/2026/10/30/billions-in-crypto-frozen-in-binance-hack-heres-what-happens-next-.html",
+   "PBS NewsHour https://www.pbs.org/newshour/world/what-to-know-about-the-6-3b-hack-on-binance-likely-the-biggest-ever-crypto-theft",
+   "Insurance Journal/Bloomberg 2026-11-01 https://www.insurancejournal.com/news/international/2026/11/01/891003.htm",
+   "The Defiant 2026-11-04 https://thedefiant.io/news/hacks/binance-expands-proof-of-reserves-to-44-tokens-after-hack",
+   "The Crypto Times 2026-11-04 https://www.cryptotimes.io/2026/11/04/binance-replenishes-98-of-assets-affected-by-6-3b-security-incident/"
+  ]
  }
 }

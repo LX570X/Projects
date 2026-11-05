@@ -15,9 +15,14 @@ This file is the operating procedure for the hourly advisor routine
    STRONG BUY / STRONG SELL signal, run a quick news check (WebSearch)
    for company/coin-specific catalysts before advising. Technicals can be
    invalidated by news (earnings, regulation, hacks).
+   VENUE CHECK — EVERY cycle, regardless of alerts: search news from the last
+   48h on Binance (hack, withdrawal suspension, regulatory action, solvency).
+   All of the user's crypto sits there. Added 2026-11-05 after a ~$6.3B
+   Binance hack on 2026-10-29 went unnoticed for six cycles and through the
+   Nov-1 monthly plan, which told the user to deposit there.
 4. Update the dashboard artifact (same file path → same URL) with the
    fresh signals table, levels, and a short "what to do now" plan.
-   Artifact URL: https://claude.ai/code/artifact/6a72554f-21a9-43b9-8283-c1cc7cea3f66
+   Artifact URL: https://claude.ai/artifact/E9P37uw1kWFyavyeeFhSZb
    (republish advisor/reports/dashboard.html from this session to keep it).
 5. Notify (PushNotification) ONLY when there is something for the user to DO
    (tightened 2026-10-19 — three months of alerts on market moves produced one
@@ -26,6 +31,8 @@ This file is the operating procedure for the hourly advisor routine
    - a buy signal CONFIRMS under the rules (e.g. two consecutive readings) for
      something the user's current cash can buy — say what to buy and how much
    - the monthly instruction on the 1st (sent by the DCA routine)
+   - a venue event (hack, frozen withdrawals) that changes what the user should
+     do with money on that venue — and the all-clear when it passes
    Band changes, trend crosses and big moves on assets the user does not hold
    are recorded on the dashboard, NOT pushed. Unconfirmed positions never push.
    Keep it under 200 chars, lead with ticker + action. Otherwise stay silent.

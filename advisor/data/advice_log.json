@@ -2785,6 +2785,13 @@
    "action": "no change - Nov-1 list pending day 3",
    "rationale": "Crypto bounced 1-2.5% but every coin is SELL or worse. UAE rallied in the draft (EMAAR to STRONG BUY 65), not buyable. Midterm results not yet available at this hour - recorded as pending rather than inferred. No notification.",
    "status": "no action"
+  },
+  {
+   "date": "2026-11-05",
+   "ticker": "BINANCE / NOV-1 PLAN",
+   "action": "HOLD the Nov-1 deposit until Binance's proof of reserves is published",
+   "rationale": "Binance suffered a ~$6.3B hack on 2026-10-29 (CoinDesk, CNBC, PBS). It says users are covered and ~95-98% is replaced; withdrawals reopened in phases from Nov 1; the 44-token proof of reserves is still generating. The monthly DCA is timing-agnostic and no coin is rated BUY, so a short wait costs nothing. The advisor missed the hack for six cycles and through the Nov-1 plan - recorded as a miss.",
+   "status": "issued - push sent"
   }
  ]
 }
