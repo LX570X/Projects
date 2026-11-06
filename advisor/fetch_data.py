@@ -142,6 +142,10 @@ def scan_binance_market(watch_symbols, log):
         sym = t.get("symbol", "")
         if not sym.endswith("USDT") or sym in watch_symbols:
             continue
+        # Binance now lists pairs with non-ASCII names (e.g. Chinese meme
+        # tokens); they break the klines URL and are not tradeable ideas here.
+        if not (sym.isascii() and sym.isalnum()):
+            continue
         base = sym[:-4]
         if base in STABLE_BASES or base.endswith(("UP", "DOWN", "BULL", "BEAR")):
             continue
