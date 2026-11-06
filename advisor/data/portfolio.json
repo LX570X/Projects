@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05T07:55+00:00",
+ "updated": "2026-11-06T07:50+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": null,
@@ -538,11 +538,11 @@
   "why_it_matters": "On a day when every asset on the crypto board fell and four names confirmed trend breaks, the system produced no trade. That is the design: the BTC stop is a single daily close below a fixed level and that level was not touched, and the satellite trigger needed a qualifying name and there was none. Both outcomes were computed, not decided."
  },
  "book_signal_state": {
-  "as_of": "2026-11-05",
-  "for_the_user": "Nov-1 list ON HOLD because of the Binance hack. Notification sent.",
-  "crypto": "Relief rally after the midterms: BTC 80,709 (+3.4%, HOLD -20, MACD bullish cross), ETH 2,430 (+5.7%, SELL -25). Every coin still below its 50-day. Nothing rated BUY.",
-  "uae": "DFM +3.95% on Nov 4 (best day since Apr 8). Our UAE % moves span two sessions (Tue close to Thu draft; Wednesday's bar not yet backfilled). New BUYs: EMIRATESNBD, SALIK, FAB, ADNOCGAS; ALDAR and DU STRONG BUY; EMAAR STRONG BUY 45 with RSI 73. EMAARDEV pinned to Emaar's AED 15 offer - technicals not meaningful. Not buyable until the user has a broker.",
-  "macro": "Democrats won the House and Senate. Brent -8.7% to $94.62 on Nov 4, ~$93.7 Nov 5. Iran: US 'defensive' strikes on Qeshm Island Nov 2; Trump 'no immediate plans' but 'locked and loaded'; no deal."
+  "as_of": "2026-11-06",
+  "for_the_user": "Nov-1 list still ON HOLD - Binance's 44-token proof of reserves is not out yet. No new action, no notification.",
+  "crypto": "The post-midterm rally fully reversed: BTC 75,468 (-6.5%, STRONG SELL -65), ETH 2,223 (-8.6%, SELL -40), XRP -9.6%. Driver: the Nov 5 AI/chip stock rout (Nasdaq -5.5%, into correction), ~$1.1-1.25B of mostly long liquidations, -$430M spot BTC ETF outflow.",
+  "uae": "Thursday's bar is not yet backfilled, so today's UAE % moves compare a Friday draft with Wednesday's close. Reuters: Dubai flat on Thu Nov 5, Abu Dhabi +0.6%. DU STRONG BUY 75; EMAAR BUY 35 after Q3 profit +5.5%; DEWA to STRONG SELL -50 on a 0.77% dip below its 50-day; FAB and ADNOCGAS back to SELL. Not buyable until the user has a broker.",
+  "macro": "US jobs report today 12:30 UTC (consensus ~+59k). CPI Tue Nov 10 (bls.gov). Iran: no new strikes found; Trump says a decision is coming 'soon'. UKMTO confirmed a tanker hit by projectiles north of Qatar late Nov 4. Brent back near $100."
  },
  "bookkeeping_correction": {
   "found": "2026-09-29",
@@ -631,7 +631,7 @@
   "end_state": "Hold off on the Nov 1 list. Keep all 1,000 AED in your bank for now. Leave the USDT you already have where it is. I will tell you when Binance's full proof of reserves is out - then do the Nov 1 list as written.",
   "why": "Binance lost about $6.3B to a hack on Oct 29, the biggest crypto theft on record. Binance says it is covering the loss itself, not its users, and has replaced about 95-98% of the stolen assets. Withdrawals reopened in stages from Nov 1. The full proof that customer balances are backed 1:1 is still being generated. Waiting a few days costs nothing: the monthly buy does not depend on timing, and no coin is rated BUY.",
   "do_not": "Do not add new money to Binance until the proof is published. Do not rush to move your existing USDT either - Binance says users will not bear the loss, and moving it needs an outside wallet.",
-  "execution": "ON HOLD - nothing to do now; I will message you when it is safe to go ahead"
+  "execution": "ON HOLD - checked Nov 6 07:15 UTC: the proof is not published yet. Nothing to do; I will message you when it is safe to go ahead"
  },
  "eth_exit": {
   "date": "2026-10-13",
@@ -843,6 +843,12 @@
    "Insurance Journal/Bloomberg 2026-11-01 https://www.insurancejournal.com/news/international/2026/11/01/891003.htm",
    "The Defiant 2026-11-04 https://thedefiant.io/news/hacks/binance-expands-proof-of-reserves-to-44-tokens-after-hack",
    "The Crypto Times 2026-11-04 https://www.cryptotimes.io/2026/11/04/binance-replenishes-98-of-assets-affected-by-6-3b-security-incident/"
-  ]
+  ],
+  "status_2026_11_06": {
+   "proof_of_reserves": "NOT published as of ~07:15 UTC Nov 6 (no completion notice in English or Chinese coverage; 24/7 Wall St on Nov 5: the public cannot verify it yet). Latest verifiable ratios are still the 10-token Oct-31 round (reported >=100% for BTC, ETH, USDT).",
+   "withdrawals": "Still phased. Recovery update #8 opened 69 network-asset pairs (62 tokens, six chains) from 04:00 UTC Nov 5; update #9 (PANews, Nov 6) opens more assets from Nov 6. USDT has been withdrawable on Ethereum and BNB Chain since Nov 1. No full-restoration date.",
+   "new_items": "Nov 5: Binance and Deribit revoked all API keys linked to SignalPlus, a third-party options platform, after a security warning - Binance says its own systems were unaffected (irrelevant unless the user ever connected SignalPlus). Reuters Nov 5: Fed and OCC supervisors checked US bank systems after the hack. Teng: ~$2.85B frozen or intercepted.",
+   "decision": "Hold stays. Resume condition not met."
+  }
  }
 }

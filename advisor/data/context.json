@@ -1,25 +1,21 @@
 {
- "updated": "2026-11-05T07:55+00:00",
+ "updated": "2026-11-06T07:50+00:00",
  "market_notes": [
   {
-   "market": "Binance hacked for $6.3B on Oct 29 - hold new deposits",
-   "note": "Binance says users won't lose funds and has replaced ~95-98%. Withdrawals reopened in stages from Nov 1; the full proof of reserves is still being generated. Keep the Nov 1 money in your bank until it's out."
+   "market": "Binance: reserve proof still not out - keep waiting",
+   "note": "No completed 44-token proof as of this morning. Withdrawals are still reopening in stages. Your Nov 1 money stays in the bank until it's published."
   },
   {
-   "market": "Democrats win both houses; markets rally, oil drops",
-   "note": "Dow +3.0%, S&P 500 +1.6% on Nov 4. Brent -8.7% to $94.62 (lowest since Aug 31), ~$93.7 today. Gold back above $4,000."
+   "market": "Crypto gives back the whole midterm rally",
+   "note": "BTC -6.5% to 75.5k, ETH -8.6%, XRP -9.6%. It followed Thursday's AI and chip stock crash (Nasdaq -5.5%, its worst day since April 2025). About $1.2B of mostly long bets were liquidated."
   },
   {
-   "market": "Crypto bounces but stays below trend",
-   "note": "BTC +3.4% to 80.7k after dipping to 75.7k; ETH +5.7%. ~$950M liquidated, mostly shorts; ETF inflows small. Nothing rated BUY."
+   "market": "Emaar: Q3 profit up 5.5%; Emaar Development buyout approved",
+   "note": "Emaar's board approved paying Dh15 a share for the rest of Emaar Development and plans to delist it. Dubai was flat on Thursday, Abu Dhabi +0.6%."
   },
   {
-   "market": "Dubai's best day since April",
-   "note": "DFM +3.95% on Nov 4; Emirates NBD +6.1%, Emaar +4.4%; Abu Dhabi flat. Emaar offered AED 15/share for the rest of Emaar Development."
-  },
-  {
-   "market": "Iran: no deal, strikes not ruled out",
-   "note": "US 'defensive' strikes on Qeshm Island Nov 2. Trump: 'no immediate plans' but 'locked and loaded'. Eurasia Group: 60% odds of renewed strikes; escalation could push Brent to $110-125."
+   "market": "Today and next week",
+   "note": "US jobs report today 16:30 Dubai. US inflation (CPI) Tuesday Nov 10. Trump says an Iran decision is coming 'soon'; Brent back near $100."
   }
  ],
  "asset_notes": {
@@ -485,6 +481,12 @@
     "impact": "bullish",
     "date": "2026-11-04",
     "source": "CoinDesk, Yahoo Finance/Unchained, SoSoValue via TokenPost"
+   },
+   {
+    "headline": "Falls ~6% to ~75.5k with the Nov 5 AI/Nasdaq rout; ~$1.1-1.25B liquidations (~89% longs); spot BTC ETFs -$430M on Nov 5",
+    "impact": "bearish",
+    "date": "2026-11-05",
+    "source": "CoinDesk, CoinGlass via Crypto Times, SoSoValue via TokenPost"
    }
   ],
   "ETHUSDT": [
@@ -1139,6 +1141,12 @@
     "impact": "bullish",
     "date": "2026-09-26",
     "source": "advisor data"
+   },
+   {
+    "headline": "Q3 2026 net profit ~Dh4.6bn (+5.5% YoY), revenue +~3% to Dh13.6bn; board approved the Dh15/share buyout of Emaar Development (~Dh12bn) and plans to delist it",
+    "impact": "bullish",
+    "date": "2026-11-05",
+    "source": "The National"
    }
   ],
   "SALIK": [
@@ -1681,6 +1689,12 @@
     "impact": "neutral",
     "date": "2026-11-04",
     "source": "The National, AGBI"
+   },
+   {
+    "headline": "Board approved Dh15 cash offer (19.4% premium to the Nov 2 close) with intent to delist; Q3 profit ~Dh3.5bn (+~8%). Offer period reportedly Nov 6 - Dec 10 (single undated source). Price now trades as merger arbitrage.",
+    "impact": "neutral",
+    "date": "2026-11-05",
+    "source": "The National; Dubai Week (timeline, unconfirmed)"
    }
   ],
   "AVAXUSDT": [
@@ -2182,6 +2196,8 @@
  },
  "risk_flags": [
   "VENUE RISK (2026-11-05): all of the user's crypto is on Binance, which lost ~$6.3B to a hack on 2026-10-29. Binance pledges users are covered; withdrawals restored in phases from Nov 1; 44-token proof of reserves pending (~Nov 6, inferred). New deposits on hold until the proof is out.",
+  "RISK-OFF (2026-11-06): the Nov 5 AI/chip rout put the Nasdaq into correction (-5.5%, S&P 500 -4.4%), Kospi tripped a circuit breaker on Nov 6 (-8%), and BTC ETFs saw -$430M. Crypto is trading as a high-beta tech asset again.",
+  "Gulf shipping: UKMTO confirmed a tanker hit by two projectiles ~50nm north of Madinat ash Shamal, Qatar, at 23:20 UTC Nov 4. IRGC claims of further tanker fires on Nov 5 remain unconfirmed. CENTCOM is preparing but has no new directive (Axios, Nov 5).",
   "Iran escalation risk persists after the midterms: CENTCOM reportedly finalised a 3-day strike plan (not approved); IRGC claims tanker mine strikes on Nov 4-5 (unconfirmed). Eurasia Group: renewed strikes 60%, deal 10%.",
   "BTC's stop HELD - Thursday's low of 79,800.00 was 0.62% above 79,304.74 and it closed 3.71% clear. No action. Cushion back to -3.47%. The margin was 495 dollars on one venue's prints.",
   "Energy is two-sided: gasoline is easing (flat pump prices, a 3.5m barrel stock build, 93.5% refinery utilisation) so September's CPI spike is unlikely to repeat, BUT distillate drew 2.5m barrels and the IEA has diesel at 25% of a deepening demand contraction.",
@@ -2215,7 +2231,9 @@
   "2026-10-19: the Friday anomaly is RESOLVED - the source serves Friday bars transiently and deletes them on Monday. The Oct-14 observation was right, the Oct-14 four-day-week conclusion wrong, the Oct-16 escalation worst of all, and the Oct-17 revert right. The real cost was never the calendar label: UAE moving averages permanently omit one session in five.",
   "2026-11-05: MISSED for six cycles - Binance, the user's only crypto venue, lost ~$6.3B to a hack on Oct 29. The Nov-1 monthly plan told the user to deposit there with no mention of it. The daily news pass followed alerts and macro themes and never searched the venue. Fixed: ADVISOR.md step 3 now requires a venue check every cycle.",
   "2026-11-05: the Nov-4 note said the stated pause on Iran strikes 'ran to the midterms'. The US carried out limited 'defensive' strikes on Qeshm Island on Nov 2, before the vote - the pause was already broken.",
-  "2026-11-05: EMAARDEV's '+9.5% unexplained' (Nov-3 cycle) is now most likely explained by Emaar's AED 15/share cash offer for the ~20.8% of Emaar Development it does not own, filed Nov 4 (The National, AGBI)."
+  "2026-11-05: EMAARDEV's '+9.5% unexplained' (Nov-3 cycle) is now most likely explained by Emaar's AED 15/share cash offer for the ~20.8% of Emaar Development it does not own, filed Nov 4 (The National, AGBI).",
+  "2026-11-06: the Nov-5 cycle inferred the Binance 44-token proof would land ~Nov 6. It had not as of 07:15 UTC Nov 6; the hold continues.",
+  "2026-11-06: today's UAE 'daily' moves (e.g. DIB -3.1%, Talabat -3.5%) compare a Friday intraday draft with WEDNESDAY's close - Thursday's bar is not yet backfilled. They are not Thursday moves: Reuters had Dubai flat on Nov 5."
  ],
  "missing": [
   "GENIUS Act stablecoin final-rules deadline is July 18, 2026 \u2014 TOMORROW: six agencies (OCC, FDIC, NCUA, Treasury, FinCEN, OFAC) must finalize rules one year after enactment; comment periods closed June 9 and there is no statutory fallback if they miss. Direct near-term catalyst/risk for stablecoins (USDC/Coinbase economics \u2014 which the findings themselves cite in the CLARITY yield fight \u2014 and Tether) yet absent from all three crypto findings. (Kraken blog Jul 15, CryptoSlate, OCC Bulletin 2026-3, Chapman tracker.)",
@@ -2244,9 +2262,10 @@
   "fix_next_run": "Give the BUY-rated names their own threads before the HOLDs, give ETH a thread while its re-entry is live, and state one out-of-window rule in the brief instead of leaving each checker to invent it."
  },
  "upcoming": [
-  "Binance 44-token proof of reserves (~Nov 6, inferred)",
-  "Emaar / Emaar Development Q3 results (Nov 5 or 6, unconfirmed)",
-  "US October CPI (Tue Nov 10, unconfirmed against BLS)",
-  "MSCI index review (Nov 11)"
+  "US October jobs report - Fri Nov 6 12:30 UTC (consensus ~+59-65k, unemployment 4.2%)",
+  "Binance 44-token proof of reserves - pending",
+  "US October CPI - Tue Nov 10 08:30 ET (bls.gov)",
+  "MSCI index review - Nov 11 (effective Nov 30 close; unconfirmed)",
+  "Emaar Development Dh15 offer reportedly closes Dec 10 (unconfirmed)"
  ]
 }
