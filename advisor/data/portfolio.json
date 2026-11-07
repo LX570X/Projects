@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06T07:50+00:00",
+ "updated": "2026-11-07T08:05+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": null,
@@ -215,7 +215,8 @@
      "Leave the rest as USDT.",
      "Keep 400 AED in your bank for UAE stocks."
     ],
-    "status_2026_11_05": "ON HOLD - Binance hack of 2026-10-29 found on 2026-11-05. Do not deposit until the proof of reserves is published; then execute unchanged. funded stays PENDING."
+    "status_2026_11_05": "ON HOLD - Binance hack of 2026-10-29 found on 2026-11-05. Do not deposit until the proof of reserves is published; then execute unchanged. funded stays PENDING.",
+    "status_2026_11_07": "HOLD LIFTED - go ahead after the in-app check that USDT reserves show >= 100%. funded stays PENDING until the user confirms."
    }
   ],
   "satellite_candidate": {
@@ -369,7 +370,7 @@
    "why": "Three months of 'accumulate' instructions produced balances that existed only in this file. Every bucket must now name a physical place.",
    "crypto_600_aed": "Deposit 600 AED to Binance each month: core_crypto 250 (buy BTC/ETH that day), opportunity 250 (convert to USDT and hold for a buy signal), satellite 100 (USDT until an alt qualifies).",
    "uae_stocks_400_aed": "Keep in the user's bank account, earmarked, until the Al Ramz account is open - or redirect to crypto if the user decides against UAE stocks.",
-   "hold_2026_11_05": "While the Binance proof of reserves is pending, all 1,000 AED stays in the user's bank."
+   "hold_2026_11_05": "While the Binance proof of reserves is pending, all 1,000 AED stays in the user's bank. LIFTED 2026-11-07."
   },
   "uae_account_route": {
    "as_of": "2026-10-19",
@@ -538,11 +539,11 @@
   "why_it_matters": "On a day when every asset on the crypto board fell and four names confirmed trend breaks, the system produced no trade. That is the design: the BTC stop is a single daily close below a fixed level and that level was not touched, and the satellite trigger needed a qualifying name and there was none. Both outcomes were computed, not decided."
  },
  "book_signal_state": {
-  "as_of": "2026-11-06",
-  "for_the_user": "Nov-1 list still ON HOLD - Binance's 44-token proof of reserves is not out yet. No new action, no notification.",
-  "crypto": "The post-midterm rally fully reversed: BTC 75,468 (-6.5%, STRONG SELL -65), ETH 2,223 (-8.6%, SELL -40), XRP -9.6%. Driver: the Nov 5 AI/chip stock rout (Nasdaq -5.5%, into correction), ~$1.1-1.25B of mostly long liquidations, -$430M spot BTC ETF outflow.",
-  "uae": "Thursday's bar is not yet backfilled, so today's UAE % moves compare a Friday draft with Wednesday's close. Reuters: Dubai flat on Thu Nov 5, Abu Dhabi +0.6%. DU STRONG BUY 75; EMAAR BUY 35 after Q3 profit +5.5%; DEWA to STRONG SELL -50 on a 0.77% dip below its 50-day; FAB and ADNOCGAS back to SELL. Not buyable until the user has a broker.",
-  "macro": "US jobs report today 12:30 UTC (consensus ~+59k). CPI Tue Nov 10 (bls.gov). Iran: no new strikes found; Trump says a decision is coming 'soon'. UKMTO confirmed a tanker hit by projectiles north of Qatar late Nov 4. Brent back near $100."
+  "as_of": "2026-11-07",
+  "for_the_user": "Binance hold LIFTED - go ahead with the Nov 1 list after the in-app reserve check. Notification sent.",
+  "crypto": "Quiet Saturday: BTC 76,017 (+0.7%, SELL -45), ETH 2,246 (+1.0%, STRONG SELL -50). Every coin still below its 50-day. Nov 6 spot BTC ETFs -$412M (second day of outflows).",
+  "uae": "Weekend - Friday's settled closes. DFM -0.28% Fri to 6,025.55 but +4.42% on the week; ADX -1.33% to an 18-month low, IHC -2.8% to a four-year low after Q3 attributable profit fell ~30%. ADCB to STRONG BUY 50; DEWA back above its 50-day. Not buyable until the user has a broker.",
+  "macro": "October payrolls +165k vs ~59-65k expected, unemployment 4.1%; December Fed-hike odds back near 80%, dollar index +0.63% to 102.12. Trump confirmed new limited strikes on Qeshm Island on Nov 6 while claiming 'a lot of progress' in talks. Brent $98.32, -13.3% on the week."
  },
  "bookkeeping_correction": {
   "found": "2026-09-29",
@@ -625,13 +626,13 @@
   "EMAARDEV": "stale_runs 1 at 12.80. Threshold for stocks is 10 runs. Nothing flagged."
  },
  "last_action": {
-  "date": "2026-11-05",
+  "date": "2026-11-07",
   "ticker": "BINANCE - NOV 1 PLAN",
-  "action": "WAIT - don't send new money to Binance yet",
-  "end_state": "Hold off on the Nov 1 list. Keep all 1,000 AED in your bank for now. Leave the USDT you already have where it is. I will tell you when Binance's full proof of reserves is out - then do the Nov 1 list as written.",
-  "why": "Binance lost about $6.3B to a hack on Oct 29, the biggest crypto theft on record. Binance says it is covering the loss itself, not its users, and has replaced about 95-98% of the stolen assets. Withdrawals reopened in stages from Nov 1. The full proof that customer balances are backed 1:1 is still being generated. Waiting a few days costs nothing: the monthly buy does not depend on timing, and no coin is rated BUY.",
-  "do_not": "Do not add new money to Binance until the proof is published. Do not rush to move your existing USDT either - Binance says users will not bear the loss, and moving it needs an outside wallet.",
-  "execution": "ON HOLD - checked Nov 6 07:15 UTC: the proof is not published yet. Nothing to do; I will message you when it is safe to go ahead"
+  "action": "GO AHEAD - do the Nov 1 list",
+  "end_state": "1) In the Binance app, search 'Proof of Reserves' and check that USDT shows 100% or more. 2) If it does: buy 600 AED of USDT, convert $34 to BTC and $34 to ETH, and keep the rest as USDT. 3) Keep 400 AED in your bank for UAE stocks.",
+  "why": "Binance published the proof for its latest reserve snapshot on Nov 6 and says customer balances are backed at least 1:1. There has been no new incident at Binance since, and USDT withdrawals have worked since Nov 1. The monthly buy is not about timing, so there is no reason to wait any longer.",
+  "do_not": "If the app shows USDT below 100%, or you cannot find the page, do not deposit - tell me first.",
+  "execution": "PENDING - reply 'done' once it's done"
  },
  "eth_exit": {
   "date": "2026-10-13",
@@ -849,6 +850,13 @@
    "withdrawals": "Still phased. Recovery update #8 opened 69 network-asset pairs (62 tokens, six chains) from 04:00 UTC Nov 5; update #9 (PANews, Nov 6) opens more assets from Nov 6. USDT has been withdrawable on Ethereum and BNB Chain since Nov 1. No full-restoration date.",
    "new_items": "Nov 5: Binance and Deribit revoked all API keys linked to SignalPlus, a third-party options platform, after a security warning - Binance says its own systems were unaffected (irrelevant unless the user ever connected SignalPlus). Reuters Nov 5: Fed and OCC supervisors checked US bank systems after the hack. Teng: ~$2.85B frozen or intercepted.",
    "decision": "Hold stays. Resume condition not met."
+  },
+  "status_2026_11_07": {
+   "proof_of_reserves": "PUBLISHED 2026-11-06 (after 07:15 UTC): Binance says the zk proof for its latest PoR is live and customer balances are backed at least 1:1 (PANews 'Binance Publishes Latest Proof of Reserves, Says User Assets Are Fully Backed 1:1', TechFlow, Odaily citing Yi He, ChainCatcher - all Nov 6). Per-token ratios were not found in the press, and the token list was not confirmed as the 44-token Nov 4 snapshot (inferred from timing). Previous round (Oct 31): BTC 100.04%, ETH 100%, USDT 100%.",
+   "withdrawals": "Still phased but broad: update #9 opened more assets from 04:00 UTC Nov 6; HYPE, INJ, APT, PLASMA, NEAR, LTC targeted for 'end of next week'. USDT on Ethereum and BNB Chain open since Nov 1. TRC20 not explicitly confirmed.",
+   "new_items": "No new Binance incident or regulator action dated Nov 6-7 found. Elliptic (Nov 6): the hackers converted ~$124M of stolen tokens to BTC - laundering, not a new breach.",
+   "decision": "HOLD LIFTED 2026-11-07. The final gate is user-verifiable: the in-app Proof of Reserves page must show USDT >= 100% before depositing.",
+   "residual_risk": "All of the user's crypto stays on one venue that just had the largest hack on record. Acceptable at this size (~$250/month), but revisit if the balance grows or another incident occurs."
   }
  }
 }

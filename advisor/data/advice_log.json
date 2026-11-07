@@ -2799,6 +2799,13 @@
    "action": "no change - Nov-1 list stays on hold (Binance proof not published)",
    "rationale": "Binance's 44-token proof of reserves is not out at 07:15 UTC; withdrawals still phased. Crypto fell 6-10% on the Nov 5 AI/chip stock rout, erasing the post-midterm rally; every coin SELL or worse. UAE not buyable. Nothing for the user to do, so no notification.",
    "status": "no action"
+  },
+  {
+   "date": "2026-11-07",
+   "ticker": "BINANCE / NOV-1 PLAN",
+   "action": "LIFT the hold - execute the Nov-1 list after an in-app check that USDT reserves show >= 100%",
+   "rationale": "Binance published the zk proof for its latest proof of reserves on Nov 6 and says balances are backed at least 1:1 (PANews, TechFlow, Odaily, ChainCatcher). Per-token ratios were not in the press, so the user checks USDT in the app before depositing. No new Binance incident found. Hold lasted Nov 5-7; BTC is ~2.4% and ETH ~0.9% cheaper than at the Nov 1 prices.",
+   "status": "issued - push sent"
   }
  ]
 }

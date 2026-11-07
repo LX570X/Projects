@@ -1,21 +1,21 @@
 {
- "updated": "2026-11-06T07:50+00:00",
+ "updated": "2026-11-07T08:05+00:00",
  "market_notes": [
   {
-   "market": "Binance: reserve proof still not out - keep waiting",
-   "note": "No completed 44-token proof as of this morning. Withdrawals are still reopening in stages. Your Nov 1 money stays in the bank until it's published."
+   "market": "Binance: reserve proof published - go ahead with the Nov 1 list",
+   "note": "Binance says customer balances are backed at least 1:1. First check in the app that 'Proof of Reserves' shows USDT at 100% or more, then do the list."
   },
   {
-   "market": "Crypto gives back the whole midterm rally",
-   "note": "BTC -6.5% to 75.5k, ETH -8.6%, XRP -9.6%. It followed Thursday's AI and chip stock crash (Nasdaq -5.5%, its worst day since April 2025). About $1.2B of mostly long bets were liquidated."
+   "market": "US jobs beat: +165k vs ~60k expected",
+   "note": "Unemployment 4.1%. Odds of a December Fed hike back near 80%; dollar up. Crypto steady, but BTC ETFs saw a second day of outflows (-$412M)."
   },
   {
-   "market": "Emaar: Q3 profit up 5.5%; Emaar Development buyout approved",
-   "note": "Emaar's board approved paying Dh15 a share for the rest of Emaar Development and plans to delist it. Dubai was flat on Thursday, Abu Dhabi +0.6%."
+   "market": "Dubai's best week in six months; Abu Dhabi at an 18-month low",
+   "note": "DFM +4.4% on the week. ADX fell 1.3% Friday as IHC dropped 2.8% after Q3 profit fell ~30%."
   },
   {
-   "market": "Today and next week",
-   "note": "US jobs report today 16:30 Dubai. US inflation (CPI) Tuesday Nov 10. Trump says an Iran decision is coming 'soon'; Brent back near $100."
+   "market": "Iran: more limited US strikes, talk of progress",
+   "note": "Trump confirmed new strikes on Qeshm Island on Nov 6 and said there is 'a lot of progress' in talks. Brent fell 13% on the week, its biggest weekly drop since 2020."
   }
  ],
  "asset_notes": {
@@ -1451,6 +1451,12 @@
     "impact": "bearish",
     "date": "2026-09-30",
     "source": "advisor data"
+   },
+   {
+    "headline": "Q3 2026 attributable profit -~30% to Dh3.25bn on revenue +~31% to Dh35.6bn; 9M profit +109%. Shares -2.8% Nov 6 to a four-year low",
+    "impact": "bearish",
+    "date": "2026-11-05",
+    "source": "The National, Reuters via Business Recorder"
    }
   ],
   "TAQA": [
@@ -1695,6 +1701,12 @@
     "impact": "neutral",
     "date": "2026-11-05",
     "source": "The National; Dubai Week (timeline, unconfirmed)"
+   },
+   {
+    "headline": "Dh15 offer runs until 3pm Thu Dec 10 unless extended (The National, Nov 4); trading at 14.70, ~2% below the offer",
+    "impact": "neutral",
+    "date": "2026-11-07",
+    "source": "The National"
    }
   ],
   "AVAXUSDT": [
@@ -2195,7 +2207,7 @@
   ]
  },
  "risk_flags": [
-  "VENUE RISK (2026-11-05): all of the user's crypto is on Binance, which lost ~$6.3B to a hack on 2026-10-29. Binance pledges users are covered; withdrawals restored in phases from Nov 1; 44-token proof of reserves pending (~Nov 6, inferred). New deposits on hold until the proof is out.",
+  "VENUE RISK (updated 2026-11-07): all of the user's crypto is on Binance, which lost ~$6.3B to a hack on 2026-10-29. Binance published its latest proof of reserves on Nov 6 (says >=1:1); withdrawals largely restored. Deposits resumed with an in-app USDT >= 100% check. Residual concentration risk accepted at this size.",
   "RISK-OFF (2026-11-06): the Nov 5 AI/chip rout put the Nasdaq into correction (-5.5%, S&P 500 -4.4%), Kospi tripped a circuit breaker on Nov 6 (-8%), and BTC ETFs saw -$430M. Crypto is trading as a high-beta tech asset again.",
   "Gulf shipping: UKMTO confirmed a tanker hit by two projectiles ~50nm north of Madinat ash Shamal, Qatar, at 23:20 UTC Nov 4. IRGC claims of further tanker fires on Nov 5 remain unconfirmed. CENTCOM is preparing but has no new directive (Axios, Nov 5).",
   "Iran escalation risk persists after the midterms: CENTCOM reportedly finalised a 3-day strike plan (not approved); IRGC claims tanker mine strikes on Nov 4-5 (unconfirmed). Eurasia Group: renewed strikes 60%, deal 10%.",
@@ -2262,10 +2274,10 @@
   "fix_next_run": "Give the BUY-rated names their own threads before the HOLDs, give ETH a thread while its re-entry is live, and state one out-of-window rule in the brief instead of leaving each checker to invent it."
  },
  "upcoming": [
-  "US October jobs report - Fri Nov 6 12:30 UTC (consensus ~+59-65k, unemployment 4.2%)",
-  "Binance 44-token proof of reserves - pending",
-  "US October CPI - Tue Nov 10 08:30 ET (bls.gov)",
-  "MSCI index review - Nov 11 (effective Nov 30 close; unconfirmed)",
-  "Emaar Development Dh15 offer reportedly closes Dec 10 (unconfirmed)"
+  "US October CPI - Tue Nov 10 08:30 ET",
+  "MSCI November review - posted shortly after 23:00 CET Wed Nov 11 (~02:00 Dubai Thu), effective Nov 30 close",
+  "Binance withdrawals for remaining tokens (HYPE, INJ, APT, NEAR, LTC, PLASMA) - target 'end of next week'",
+  "Emaar Development Dh15 offer closes 3pm Dec 10 (unless extended)",
+  "Next monthly contribution - Dec 1"
  ]
 }
