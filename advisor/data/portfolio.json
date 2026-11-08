@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07T08:05+00:00",
+ "updated": "2026-11-08T07:55+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": null,
@@ -539,11 +539,11 @@
   "why_it_matters": "On a day when every asset on the crypto board fell and four names confirmed trend breaks, the system produced no trade. That is the design: the BTC stop is a single daily close below a fixed level and that level was not touched, and the satellite trigger needed a qualifying name and there was none. Both outcomes were computed, not decided."
  },
  "book_signal_state": {
-  "as_of": "2026-11-07",
-  "for_the_user": "Binance hold LIFTED - go ahead with the Nov 1 list after the in-app reserve check. Notification sent.",
-  "crypto": "Quiet Saturday: BTC 76,017 (+0.7%, SELL -45), ETH 2,246 (+1.0%, STRONG SELL -50). Every coin still below its 50-day. Nov 6 spot BTC ETFs -$412M (second day of outflows).",
-  "uae": "Weekend - Friday's settled closes. DFM -0.28% Fri to 6,025.55 but +4.42% on the week; ADX -1.33% to an 18-month low, IHC -2.8% to a four-year low after Q3 attributable profit fell ~30%. ADCB to STRONG BUY 50; DEWA back above its 50-day. Not buyable until the user has a broker.",
-  "macro": "October payrolls +165k vs ~59-65k expected, unemployment 4.1%; December Fed-hike odds back near 80%, dollar index +0.63% to 102.12. Trump confirmed new limited strikes on Qeshm Island on Nov 6 while claiming 'a lot of progress' in talks. Brent $98.32, -13.3% on the week."
+  "as_of": "2026-11-08",
+  "for_the_user": "Nov-1 list: go-ahead stands (issued Nov 7); waiting for the user's 'done'. No notification today.",
+  "crypto": "Flat Sunday: BTC 75,846 (STRONG SELL -65; heading for a fifth straight losing week), ETH 2,235 (STRONG SELL -50). SOL and GRAM RSI below 30. Nothing rated BUY.",
+  "uae": "Weekend - unchanged from Friday's closes. Monday's open may react to Saturday's Gulf of Oman escalation near Khor Fakkan.",
+  "macro": "Nov 7: CENTCOM disabled the cargo ship Huda trying to break the blockade ~18nm east of Khor Fakkan (UAE east coast) and launched Task Force Iron Gate against Iran's land/Caspian routes; the IRGC said its 2,000-km missile range cap is lifted; Iranian media reported explosions at Qeshm, Jask, Sirik and Bandar Abbas (cause unconfirmed). Qatar mediation continues, no deal. CPI Tue Nov 10 08:30 ET (consensus ~+0.2-0.3% m/m)."
  },
  "bookkeeping_correction": {
   "found": "2026-09-29",
@@ -857,6 +857,12 @@
    "new_items": "No new Binance incident or regulator action dated Nov 6-7 found. Elliptic (Nov 6): the hackers converted ~$124M of stolen tokens to BTC - laundering, not a new breach.",
    "decision": "HOLD LIFTED 2026-11-07. The final gate is user-verifiable: the in-app Proof of Reserves page must show USDT >= 100% before depositing.",
    "residual_risk": "All of the user's crypto stays on one venue that just had the largest hack on record. Acceptable at this size (~$250/month), but revisit if the balance grows or another incident occurs."
+  },
+  "status_2026_11_08": {
+   "venue_check": "No new Binance hack, withdrawal pause, deposit problem or UAE regulator action found for Nov 6-8.",
+   "new_items": "CFO Kaiser Ng is leaving and Justin Yek (ex-Airwallex) replaces him - Binance says the handover was planned six months ago (The Block, TechCrunch, Nov 7). Accounts in France, Spain, Italy and Poland close Dec 31 under MiCA (CoinDesk, Nov 7) - not relevant to the UAE. Singapore's MAS issued a retail warning (Nov 7). Elliptic: ~$175M of stolen altcoins swapped into ~2,300 BTC; the main loot has not moved.",
+   "withdrawals": "Remaining six tokens (HYPE, INJ, APT, PLASMA, NEAR, LTC) still targeted before the Nov 14-15 weekend; no recovery update #10 found.",
+   "decision": "Go-ahead stands. Watch: a senior finance exit nine days after the hack, even if planned, is worth noting; revisit if more leadership leaves or the proof's per-token figures turn out weak."
   }
  }
 }
