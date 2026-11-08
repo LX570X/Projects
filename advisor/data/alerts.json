@@ -1,53 +1,17 @@
 {
- "generated_at_utc": "2026-11-07T07:09:10+00:00",
+ "generated_at_utc": "2026-11-08T07:08:45+00:00",
  "alerts": [
   {
-   "ticker": "BTCUSDT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "BTCUSDT: STRONG SELL -> SELL (score -65 -> -45)"
-  },
-  {
-   "ticker": "ETHUSDT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "ETHUSDT: SELL -> STRONG SELL (score -40 -> -50)"
-  },
-  {
-   "ticker": "DOGEUSDT",
+   "ticker": "SOLUSDT",
    "severity": "info",
-   "type": "macd",
-   "msg": "DOGEUSDT: MACD bearish cross"
+   "type": "rsi",
+   "msg": "SOLUSDT: RSI crossed below 30 (now 29.5)"
   },
   {
-   "ticker": "DEWA",
-   "severity": "actionable",
-   "type": "trend",
-   "msg": "DEWA: price crossed above its 50-day average \u2014 trend change"
-  },
-  {
-   "ticker": "EMAARDEV",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "EMAARDEV: HOLD -> BUY (score 0 -> 30)"
-  },
-  {
-   "ticker": "FAB",
+   "ticker": "GRAMUSDT",
    "severity": "info",
-   "type": "signal_change",
-   "msg": "FAB: SELL -> HOLD (score -25 -> -15)"
-  },
-  {
-   "ticker": "ADCB",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "ADCB: BUY -> STRONG BUY (score 40 -> 50)"
-  },
-  {
-   "ticker": "IHC",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "IHC moved -2.8% in the last day (now 320 AED)"
+   "type": "rsi",
+   "msg": "GRAMUSDT: RSI crossed below 30 (now 27.0)"
   }
  ]
 }
