@@ -1,21 +1,21 @@
 {
- "updated": "2026-11-08T07:55+00:00",
+ "updated": "2026-11-09T07:55+00:00",
  "market_notes": [
   {
-   "market": "Your Nov 1 list: still good to go",
-   "note": "No new problem at Binance. Check Proof of Reserves shows USDT at 100%+, do the list, and reply 'done'."
+   "market": "Crypto at its lowest since August",
+   "note": "BTC ~74k, ETH ~2,105 (-5.8%). Fears of tighter crypto rules under the new Congress, the Nvidia CEO probe and stalled Iran talks; ~$1B of bets on rising prices wiped out. Your Nov 1 list still applies - the monthly buy isn't about timing."
   },
   {
-   "market": "Gulf escalation near the UAE coast",
-   "note": "Saturday: US forces disabled a cargo ship ~18nm off Khor Fakkan and opened a new task force against Iran's land routes; Iran says its missile range limit is lifted; explosions reported at Iranian ports. Qatar still mediating."
+   "market": "Binance: more withdrawals back, nothing new wrong",
+   "note": "HYPE and APT reopened Sunday, ahead of schedule. No new incident found."
   },
   {
-   "market": "Crypto flat; fifth losing week in a row likely",
-   "note": "BTC ~75.8k, ETH ~2,235. Nothing rated BUY."
+   "market": "UAE stocks shrug off the weekend",
+   "note": "Monday draft: Emaar and Aldar +2.6%; FAB and ADNOC Gas back above their 50-day averages. No attack on the UAE reported."
   },
   {
-   "market": "This week",
-   "note": "US inflation (CPI) Tue Nov 10, 17:30 Dubai. MSCI index review results early Thu Nov 12 Dubai time."
+   "market": "Gulf weekend",
+   "note": "Houthi missiles at Riyadh intercepted (an Aramco building damaged by debris); a drone shut Dana Gas's Iraqi gas field. Trump says new war is 'highly unlikely' if talks progress and meets Qatar's PM today. CPI tomorrow 17:30 Dubai."
   }
  ],
  "asset_notes": {
@@ -2209,6 +2209,7 @@
  "risk_flags": [
   "VENUE RISK (updated 2026-11-07): all of the user's crypto is on Binance, which lost ~$6.3B to a hack on 2026-10-29. Binance published its latest proof of reserves on Nov 6 (says >=1:1); withdrawals largely restored. Deposits resumed with an in-app USDT >= 100% check. Residual concentration risk accepted at this size.",
   "GULF ESCALATION NEAR THE UAE (2026-11-07): CENTCOM disabled the M/V Huda ~18nm east of Khor Fakkan (UKMTO incident report), launched Task Force Iron Gate against Iran's land/Caspian supply routes, and the IRGC said its 2,000-km missile range cap is lifted. Explosions reported at Qeshm, Jask, Sirik, Bandar Abbas (cause unconfirmed). Monday UAE open at risk.",
+  "Gulf weekend (Nov 8): Houthi missiles at Riyadh intercepted, debris damaged an Aramco building in KAFD; drone halted Dana Gas's (ADX-listed) Khor Mor field in Iraq; UKMTO reported tanker incidents in Hormuz. No attack on the UAE found.",
   "RISK-OFF (2026-11-06): the Nov 5 AI/chip rout put the Nasdaq into correction (-5.5%, S&P 500 -4.4%), Kospi tripped a circuit breaker on Nov 6 (-8%), and BTC ETFs saw -$430M. Crypto is trading as a high-beta tech asset again.",
   "Gulf shipping: UKMTO confirmed a tanker hit by two projectiles ~50nm north of Madinat ash Shamal, Qatar, at 23:20 UTC Nov 4. IRGC claims of further tanker fires on Nov 5 remain unconfirmed. CENTCOM is preparing but has no new directive (Axios, Nov 5).",
   "Iran escalation risk persists after the midterms: CENTCOM reportedly finalised a 3-day strike plan (not approved); IRGC claims tanker mine strikes on Nov 4-5 (unconfirmed). Eurasia Group: renewed strikes 60%, deal 10%.",
@@ -2246,7 +2247,8 @@
   "2026-11-05: the Nov-4 note said the stated pause on Iran strikes 'ran to the midterms'. The US carried out limited 'defensive' strikes on Qeshm Island on Nov 2, before the vote - the pause was already broken.",
   "2026-11-05: EMAARDEV's '+9.5% unexplained' (Nov-3 cycle) is now most likely explained by Emaar's AED 15/share cash offer for the ~20.8% of Emaar Development it does not own, filed Nov 4 (The National, AGBI).",
   "2026-11-06: the Nov-5 cycle inferred the Binance 44-token proof would land ~Nov 6. It had not as of 07:15 UTC Nov 6; the hold continues.",
-  "2026-11-06: today's UAE 'daily' moves (e.g. DIB -3.1%, Talabat -3.5%) compare a Friday intraday draft with WEDNESDAY's close - Thursday's bar is not yet backfilled. They are not Thursday moves: Reuters had Dubai flat on Nov 5."
+  "2026-11-06: today's UAE 'daily' moves (e.g. DIB -3.1%, Talabat -3.5%) compare a Friday intraday draft with WEDNESDAY's close - Thursday's bar is not yet backfilled. They are not Thursday moves: Reuters had Dubai flat on Nov 5.",
+  "2026-11-09: the Nov-8 note said Monday's UAE open was 'at risk' from the weekend escalation. The Monday draft is higher (Emaar, Aldar +2.6%). Also: Brent's weekly drop is reported as 13.3% (Seeking Alpha, front-month close) and ~17% (Reuters, Nov 9) - different contract references; treat as 'about 13-17%'."
  ],
  "missing": [
   "GENIUS Act stablecoin final-rules deadline is July 18, 2026 \u2014 TOMORROW: six agencies (OCC, FDIC, NCUA, Treasury, FinCEN, OFAC) must finalize rules one year after enactment; comment periods closed June 9 and there is no statutory fallback if they miss. Direct near-term catalyst/risk for stablecoins (USDC/Coinbase economics \u2014 which the findings themselves cite in the CLARITY yield fight \u2014 and Tether) yet absent from all three crypto findings. (Kraken blog Jul 15, CryptoSlate, OCC Bulletin 2026-3, Chapman tracker.)",
@@ -2263,7 +2265,8 @@
   "2026-10-16: last_completed_close() can return a UAE close one session stale. Crypto verified unaffected.",
   "2026-10-15: the Yahoo UAE series is RAW, not dividend-adjusted - DEWA's April ex-date shows as a -1.78% gap on 2026-04-13.",
   "2026-10-14: added _hairline_note(). 76 of 219 measured 50-day side changes (35%) fall inside the 0.5% trend buffer.",
-  "2026-10-13: the engine's stop_hit test used the live tick rather than the last completed daily close. Fixed with last_completed_close()."
+  "2026-10-13: the engine's stop_hit test used the live tick rather than the last completed daily close. Fixed with last_completed_close().",
+  "2026-11-09: Friday-bar model held again - the Fri Nov 6 UAE bar (served over the weekend) was deleted on Monday, and Thursday Nov 5 was backfilled a day late. UAE moving averages keep missing Fridays."
  ],
  "research_pass_quality": {
   "as_of": "2026-10-14",
@@ -2276,9 +2279,11 @@
  },
  "upcoming": [
   "US October CPI - Tue Nov 10 08:30 ET (17:30 Dubai), consensus ~+0.2-0.3% m/m",
+  "Binance Pool / Cloud Mining shutdown - Nov 10 07:00 UTC (routine)",
   "MSCI November review - shortly after 23:00 CET Wed Nov 11 (~02:00 Dubai Thu)",
-  "Binance: remaining six token withdrawals targeted before Nov 14-15",
-  "Emaar Development Dh15 offer closes 3pm Dec 10 (unless extended)",
+  "Binance: INJ, PLASMA, NEAR, LTC withdrawals targeted before Nov 14-15",
+  "Emaar special dividend AED 0.50 - ex-date Nov 13 reported (unconfirmed)",
+  "Emaar Development Dh15 offer closes 3pm Dec 10",
   "Next monthly contribution - Dec 1"
  ]
 }

@@ -2813,6 +2813,13 @@
    "action": "no change - Nov-1 go-ahead stands; awaiting the user's confirmation",
    "rationale": "Venue check clean (no new incident; CFO exit described as planned). Crypto flat, every coin SELL or worse. Gulf escalation near the UAE on Nov 7 raises Monday risk for UAE stocks the user does not hold; the small monthly crypto buy does not depend on timing. No notification.",
    "status": "no action"
+  },
+  {
+   "date": "2026-11-09",
+   "ticker": "daily",
+   "action": "no change - Nov-1 go-ahead stands; awaiting confirmation",
+   "rationale": "Venue check clean. Crypto at two-month lows (BTC ~74k, ETH ~2,105) on regulatory fears, the Nvidia probe and stalled Iran talks; every coin SELL or worse. The monthly buy is timing-agnostic, so the go-ahead is unchanged. UAE draft higher. No notification.",
+   "status": "no action"
   }
  ]
 }
