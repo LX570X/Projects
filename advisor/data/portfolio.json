@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09T07:55+00:00",
+ "updated": "2026-11-10T08:00+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": null,
@@ -539,11 +539,11 @@
   "why_it_matters": "On a day when every asset on the crypto board fell and four names confirmed trend breaks, the system produced no trade. That is the design: the BTC stop is a single daily close below a fixed level and that level was not touched, and the satellite trigger needed a qualifying name and there was none. Both outcomes were computed, not decided."
  },
  "book_signal_state": {
-  "as_of": "2026-11-09",
-  "for_the_user": "Nov-1 list: go-ahead stands (issued Nov 7); still waiting for the user's 'done'. No notification.",
-  "crypto": "Lowest since August late Sunday (Reuters: BTC 73,708, ETH 2,223). Now BTC 74,137 (-2.3%, STRONG SELL -65), ETH 2,105 (-5.8%, STRONG SELL -75). Drivers: fear of tighter crypto rules under a Democratic Congress, the Nvidia CEO probe, stalled US-Iran talks, ~$1B of mostly long liquidations. BTC sits between its 200-day (~73,150) and 100-day (~77,430) averages (CoinDesk). DCA core holdings have no stop by design.",
-  "uae": "Monday intraday draft UP despite the weekend Gulf incidents: Emaar 12.84 (+2.6%), Aldar +2.6%, FAB and ADNOC Gas back above their 50-day (BUY), ADNOC Drilling STRONG BUY. No dated report of today's session yet. Not buyable until the user has a broker.",
-  "macro": "No attack on the UAE found. Weekend: Houthi missiles at Riyadh intercepted, debris damaged an Aramco building; a drone halted Dana Gas's Khor Mor field in Iraq; UAE rescued 22 crew from a ship fire in the Sea of Oman. Trump: new war 'highly unlikely' if talks progress; meets Qatar's PM today. Brent ~$97.5 at the open. CPI Tue Nov 10."
+  "as_of": "2026-11-10",
+  "for_the_user": "Nov-1 list: go-ahead stands; still waiting for 'done'. New: a denied data-leak claim - turn on Binance's anti-phishing code. No notification.",
+  "crypto": "Small rebound: BTC 74,678 (+1.0%, STRONG SELL -65), ETH 2,116 (+1.4%, STRONG SELL -75). ETF outflows continue (BTC -$201M, ETH -$185M on Nov 9). CPI at 13:30 UTC today.",
+  "uae": "Monday Nov 9: Dubai and Abu Dhabi +~1% on Iran relief (Emaar +2.4%). Tuesday draft higher again (Emirates NBD 33.10, Emaar 12.98). FAB -4.5% vs Thursday after Bloomberg reported it is weighing a ~$5B rights issue (no source links the two). ADNOC Gas Q3 net income $1.34B, guidance raised to >=$4B, $940M dividend in December.",
+  "macro": "After meeting Qatar's PM, Trump said the Iran war is 'militarily effectively over' and is holding off new strikes; the Hormuz blockade stays and no deal was announced; Iran's Rezaei called talk of talks 'fake news'. Brent -5.85% to $92.57 (lowest since late August). S&P 500 +2.35%, best day since April. December Fed-hike odds ~84% before CPI (consensus +0.3% headline, +0.2% core m/m; no official annual rate)."
  },
  "bookkeeping_correction": {
   "found": "2026-09-29",
@@ -868,6 +868,17 @@
    "venue_check": "No new Binance hack, withdrawal pause, deposit problem or regulator action found for Nov 7-9.",
    "progress": "HYPE and APT withdrawals reopened Nov 8, ahead of target; INJ, PLASMA, NEAR, LTC still pending. Binance Pool / Cloud Mining shut Nov 10 07:00 UTC (announced earlier as a product review). Co-CEOs and CSO hold an X Spaces chat Nov 9 12:00 UTC (date unconfirmed).",
    "decision": "Go-ahead stands."
+  },
+  "status_2026_11_10": {
+   "venue_check": "No new hack, withdrawal halt, deposit problem or regulator action found for Nov 8-10.",
+   "new_items": [
+    "Nov 9: a seller using the 'ShinyHunters' name offered records said to cover 335M Binance users (KYC files, emails, phones) for $900k. Binance found no evidence of a breach, called it 'likely a scam', investigation ongoing (BleepingComputer, crypto.news). Unverified - but phishing risk rises either way.",
+    "Nov 9: Forbes reported a fired ex-Binance investigator told the IRS that management ignored a probe into ~2,000 suspected Iran-linked accounts (~$1.2B of flows); a federal grand jury subpoenaed him. Binance denies sanctions violations; no charges filed. Future US enforcement risk.",
+    "Nov 9 X Space: CSO Jimmy Su said outside experts will review the hack; attackers' on-chain approvals bypassed the withdrawal system; containment took hours because of the MPC wallet design.",
+    "CryptoQuant (through Nov 8): Binance stablecoin reserves fell from ~$41B to ~$32B since the hack (includes the theft itself)."
+   ],
+   "user_hygiene": "Turn on Binance's anti-phishing code and an authenticator app or passkey; ignore any email, SMS or call claiming to be Binance that asks you to log in or move funds.",
+   "decision": "Go-ahead stands - nothing affects the safety of customer balances. Watch the Iran-sanctions probe."
   }
  }
 }

@@ -2820,6 +2820,13 @@
    "action": "no change - Nov-1 go-ahead stands; awaiting confirmation",
    "rationale": "Venue check clean. Crypto at two-month lows (BTC ~74k, ETH ~2,105) on regulatory fears, the Nvidia probe and stalled Iran talks; every coin SELL or worse. The monthly buy is timing-agnostic, so the go-ahead is unchanged. UAE draft higher. No notification.",
    "status": "no action"
+  },
+  {
+   "date": "2026-11-10",
+   "ticker": "daily",
+   "action": "no change - Nov-1 go-ahead stands; added account-security tip after a denied data-leak claim",
+   "rationale": "Venue check: no incident affecting balances. A 'ShinyHunters' claim of 335M user records (denied by Binance) raises phishing risk, so the user should enable the anti-phishing code and an authenticator/passkey. Forbes reports a US grand-jury probe touching Binance's handling of Iran-linked accounts - a medium-term risk, not an immediate one. Every coin SELL or worse. No notification.",
+   "status": "no action"
   }
  ]
 }
