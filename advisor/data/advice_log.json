@@ -2827,6 +2827,13 @@
    "action": "no change - Nov-1 go-ahead stands; added account-security tip after a denied data-leak claim",
    "rationale": "Venue check: no incident affecting balances. A 'ShinyHunters' claim of 335M user records (denied by Binance) raises phishing risk, so the user should enable the anti-phishing code and an authenticator/passkey. Forbes reports a US grand-jury probe touching Binance's handling of Iran-linked accounts - a medium-term risk, not an immediate one. Every coin SELL or worse. No notification.",
    "status": "no action"
+  },
+  {
+   "date": "2026-11-11",
+   "ticker": "daily",
+   "action": "no change - Nov-1 go-ahead stands",
+   "rationale": "Hot CPI (+0.4% / core +0.3%) made a December hike fully priced and pushed BTC to 72.8k; every coin SELL or worse. Venue check clean (MEXC block is compliance). An attack damaged an ADNOC L&S vessel in UAE waters on Nov 10 - recorded as a risk; UAE stocks the user does not hold. No notification.",
+   "status": "no action"
   }
  ]
 }

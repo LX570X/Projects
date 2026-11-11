@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10T08:00+00:00",
+ "updated": "2026-11-11T07:55+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": null,
@@ -539,11 +539,11 @@
   "why_it_matters": "On a day when every asset on the crypto board fell and four names confirmed trend breaks, the system produced no trade. That is the design: the BTC stop is a single daily close below a fixed level and that level was not touched, and the satellite trigger needed a qualifying name and there was none. Both outcomes were computed, not decided."
  },
  "book_signal_state": {
-  "as_of": "2026-11-10",
-  "for_the_user": "Nov-1 list: go-ahead stands; still waiting for 'done'. New: a denied data-leak claim - turn on Binance's anti-phishing code. No notification.",
-  "crypto": "Small rebound: BTC 74,678 (+1.0%, STRONG SELL -65), ETH 2,116 (+1.4%, STRONG SELL -75). ETF outflows continue (BTC -$201M, ETH -$185M on Nov 9). CPI at 13:30 UTC today.",
-  "uae": "Monday Nov 9: Dubai and Abu Dhabi +~1% on Iran relief (Emaar +2.4%). Tuesday draft higher again (Emirates NBD 33.10, Emaar 12.98). FAB -4.5% vs Thursday after Bloomberg reported it is weighing a ~$5B rights issue (no source links the two). ADNOC Gas Q3 net income $1.34B, guidance raised to >=$4B, $940M dividend in December.",
-  "macro": "After meeting Qatar's PM, Trump said the Iran war is 'militarily effectively over' and is holding off new strikes; the Hormuz blockade stays and no deal was announced; Iran's Rezaei called talk of talks 'fake news'. Brent -5.85% to $92.57 (lowest since late August). S&P 500 +2.35%, best day since April. December Fed-hike odds ~84% before CPI (consensus +0.3% headline, +0.2% core m/m; no official annual rate)."
+  "as_of": "2026-11-11",
+  "for_the_user": "Nov-1 list: go-ahead stands; still waiting for 'done'. No notification.",
+  "crypto": "Hot US CPI knocked crypto lower: BTC low 72,787 on Nov 10, now 73,652 (STRONG SELL -65); ETH ~2,000 low, now 2,057 (SELL -35). ~$724M of mostly long liquidations; BTC ETFs -$95M on Nov 10 (fourth outflow day).",
+  "uae": "Tue Nov 10: Dubai +1.4%, Emirates NBD +3.5% after Trump said Iran strikes aren't needed 'at this point'. Wednesday draft higher: Emirates NBD 33.42, TECOM +5.5% and Talabat +4.0% (no catalyst found), Talabat above its 50-day (BUY). That afternoon an ADNOC L&S vessel was damaged in an attack in UAE territorial waters. Not buyable until the user has a broker.",
+  "macro": "October CPI +0.4% m/m (core +0.3%), both 0.1pt above forecast; no official annual rate. A December Fed hike is now fully priced (25bp ~85-89%, 50bp ~11-15%); Waller said 50bp should be considered. Brent $91.49, a two-month low. Iran's Rezaei: no talks under way; Rubio: no need to restart major combat."
  },
  "bookkeeping_correction": {
   "found": "2026-09-29",
@@ -879,6 +879,11 @@
    ],
    "user_hygiene": "Turn on Binance's anti-phishing code and an authenticator app or passkey; ignore any email, SMS or call claiming to be Binance that asks you to log in or move funds.",
    "decision": "Go-ahead stands - nothing affects the safety of customer balances. Watch the Iran-sanctions probe."
+  },
+  "status_2026_11_11": {
+   "venue_check": "No new hack, general withdrawal pause or regulator action against Binance found for Nov 10-11.",
+   "new_items": "Nov 10: Binance began rejecting withdrawals to MEXC and holding MEXC deposits for compliance review after FinCEN's Nov 6 order naming MEXC Global a primary money-laundering concern. Only relevant if the user ever sends funds to or from MEXC. INJ, PLASMA, NEAR, LTC withdrawals not yet reopened.",
+   "decision": "Go-ahead stands."
   }
  }
 }

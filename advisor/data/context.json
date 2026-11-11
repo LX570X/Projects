@@ -1,21 +1,21 @@
 {
- "updated": "2026-11-10T08:00+00:00",
+ "updated": "2026-11-11T07:55+00:00",
  "market_notes": [
   {
-   "market": "Binance: a data-leak claim (denied) - protect your account",
-   "note": "Someone is selling what they say is data on 335M Binance users; Binance says there's no breach and it's likely a scam. Turn on the anti-phishing code and an authenticator app, and ignore messages asking you to log in or move funds. Your Nov 1 list still applies."
+   "market": "US inflation ran hot - a December Fed hike is now fully priced",
+   "note": "Prices +0.4% in October (core +0.3%), above forecasts. Markets now bet on a hike in December, possibly a big one. BTC dipped to 72.8k, ETH to ~2,000. Your Nov 1 list still applies."
   },
   {
-   "market": "Trump: Iran war 'militarily effectively over'",
-   "note": "After meeting Qatar's PM he's holding off new strikes, but the Hormuz blockade stays and there's no deal. Brent -5.9% to $92.6, its lowest since August. US stocks had their best day since April."
+   "market": "Attack on an ADNOC ship in UAE waters",
+   "note": "An ADNOC Logistics vessel was damaged in an attack in UAE territorial waters on Tuesday afternoon; the attacker was not named. Iran says no talks are under way; the US says it doesn't need to restart major combat."
   },
   {
-   "market": "UAE: two up days on Iran relief",
-   "note": "Dubai and Abu Dhabi +1% Monday; higher again today. FAB is the exception after a report it may raise ~$5B from shareholders. ADNOC Gas profit doubled from Q2."
+   "market": "UAE stocks keep rising",
+   "note": "Dubai +1.4% Tuesday (Emirates NBD +3.5%); higher again this morning. Oil at a two-month low ($91.5)."
   },
   {
-   "market": "US inflation today 17:30 Dubai",
-   "note": "Expected +0.3% for the month (+0.2% core). Markets already price an ~84% chance of a Fed hike in December."
+   "market": "Binance: nothing new affecting your money",
+   "note": "It is blocking transfers to and from MEXC after a US money-laundering order - only matters if you use MEXC."
   }
  ],
  "asset_notes": {
@@ -487,6 +487,12 @@
     "impact": "bearish",
     "date": "2026-11-05",
     "source": "CoinDesk, CoinGlass via Crypto Times, SoSoValue via TokenPost"
+   },
+   {
+    "headline": "Hot CPI: BTC to $72,787 intraday (11-week low); ~$724M liquidations, ~79% longs; spot BTC ETFs -$95M on Nov 10",
+    "impact": "bearish",
+    "date": "2026-11-10",
+    "source": "Bitcoin.com, Crypto Times (CoinGlass), SoSoValue via KuCoin"
    }
   ],
   "ETHUSDT": [
@@ -1047,6 +1053,12 @@
     "impact": "bullish",
     "date": "2026-11-04",
     "source": "Emirates 24|7, Reuters"
+   },
+   {
+    "headline": "+3.5% on Tue Nov 10 as Dubai rose 1.4% on Trump's Iran restraint (Reuters)",
+    "impact": "bullish",
+    "date": "2026-11-10",
+    "source": "Reuters via Zawya / Business Recorder"
    }
   ],
   "TALABAT": [
@@ -2226,6 +2238,8 @@
  },
  "risk_flags": [
   "VENUE RISK (updated 2026-11-07): all of the user's crypto is on Binance, which lost ~$6.3B to a hack on 2026-10-29. Binance published its latest proof of reserves on Nov 6 (says >=1:1); withdrawals largely restored. Deposits resumed with an in-app USDT >= 100% check. Residual concentration risk accepted at this size.",
+  "ATTACK IN UAE WATERS (2026-11-10): ADNOC Logistics & Services said one of its vessels was damaged in an attack in UAE territorial waters in the Arabian Gulf on Tue afternoon (WAM; attacker unnamed). UKMTO also reported a tanker incident in Hormuz late Nov 10. First confirmed attack inside UAE waters in this phase.",
+  "RATES (2026-11-10): hot October CPI - a December Fed hike is fully priced (25bp ~85-89%, 50bp ~11-15%); 10-year yield briefly above 5%. Headwind for crypto.",
   "BINANCE (2026-11-10): (a) a 'ShinyHunters' sale of alleged records on 335M users, denied by Binance - phishing risk; (b) Forbes: a federal grand jury subpoenaed an ex-investigator over ignored Iran-linked accounts (~$1.2B) - possible future US sanctions enforcement. Neither affects balances today.",
   "GULF ESCALATION NEAR THE UAE (2026-11-07): CENTCOM disabled the M/V Huda ~18nm east of Khor Fakkan (UKMTO incident report), launched Task Force Iron Gate against Iran's land/Caspian supply routes, and the IRGC said its 2,000-km missile range cap is lifted. Explosions reported at Qeshm, Jask, Sirik, Bandar Abbas (cause unconfirmed). Monday UAE open at risk.",
   "Gulf weekend (Nov 8): Houthi missiles at Riyadh intercepted, debris damaged an Aramco building in KAFD; drone halted Dana Gas's (ADX-listed) Khor Mor field in Iraq; UKMTO reported tanker incidents in Hormuz. No attack on the UAE found.",
@@ -2297,10 +2311,10 @@
   "fix_next_run": "Give the BUY-rated names their own threads before the HOLDs, give ETH a thread while its re-entry is live, and state one out-of-window rule in the brief instead of leaving each checker to invent it."
  },
  "upcoming": [
-  "US October CPI - today Nov 10 08:30 ET (17:30 Dubai): +0.3% headline / +0.2% core m/m expected, no official annual rate",
-  "MSCI November review - shortly after 23:00 CET Wed Nov 11 (~02:00 Dubai Thu)",
+  "MSCI November review - tonight shortly after 23:00 CET (~02:00 Dubai Thu), effective Nov 30 close",
   "Binance: INJ, PLASMA, NEAR, LTC withdrawals targeted before Nov 14-15",
   "Emaar special dividend ex-date Nov 13 (unconfirmed)",
+  "FOMC Dec 8-9 (hike fully priced)",
   "Emaar Development Dh15 offer closes 3pm Dec 10",
   "Next monthly contribution - Dec 1"
  ]
