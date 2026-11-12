@@ -2834,6 +2834,13 @@
    "action": "no change - Nov-1 go-ahead stands",
    "rationale": "Hot CPI (+0.4% / core +0.3%) made a December hike fully priced and pushed BTC to 72.8k; every coin SELL or worse. Venue check clean (MEXC block is compliance). An attack damaged an ADNOC L&S vessel in UAE waters on Nov 10 - recorded as a risk; UAE stocks the user does not hold. No notification.",
    "status": "no action"
+  },
+  {
+   "date": "2026-11-12",
+   "ticker": "daily",
+   "action": "no change - Nov-1 go-ahead stands",
+   "rationale": "Crypto flat with continuing ETF outflows; every coin SELL or worse. Venue check clean. UAE rally continues (not buyable). Israel reportedly preparing a possible Iran strike - risk recorded. No notification.",
+   "status": "no action"
   }
  ]
 }
