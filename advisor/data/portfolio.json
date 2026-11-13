@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12T08:00+00:00",
+ "updated": "2026-11-13T08:05+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": null,
@@ -539,11 +539,11 @@
   "why_it_matters": "On a day when every asset on the crypto board fell and four names confirmed trend breaks, the system produced no trade. That is the design: the BTC stop is a single daily close below a fixed level and that level was not touched, and the satellite trigger needed a qualifying name and there was none. Both outcomes were computed, not decided."
  },
  "book_signal_state": {
-  "as_of": "2026-11-12",
-  "for_the_user": "Nov-1 list: go-ahead stands; still waiting for 'done'. No notification.",
-  "crypto": "Flat: BTC 73,543 (STRONG SELL -65), ETH 2,047 (SELL -45, RSI 29). Fifth straight day of ETF outflows on Nov 11 (BTC ~-$300M, ETH -$145M). Nvidia's board reportedly preparing to remove Jensen Huang - Nasdaq futures -~1%.",
-  "uae": "Reuters: Dubai +1.4% Tue (Emirates NBD +3.5%) and +0.8% Wed (Emirates NBD +4.3%). Our +7.9% for Emirates NBD spans both sessions (Monday close to Thursday) - real, not one day. FAB announced an AED 15bn rights issue at AED 13.52 (30% below the Nov 10 close; EGM Dec 7). AD Ports heads for a December delisting after ADQ's compulsory purchase at AED 6.25 - its signals are now meaningless. MSCI review: no UAE name among the highlighted changes.",
-  "macro": "Israel's security cabinet reportedly ordered preparations for a possible strike on Iran (KAN, Nov 11); Iran warns of expanded retaliation. UKMTO logged another Hormuz tanker incident Nov 11. The Nov 10 ADNOC L&S attack is still unattributed. Brent $92.76. US PPI Fri Nov 13."
+  "as_of": "2026-11-13",
+  "for_the_user": "Nov-1 list: go-ahead stands; still waiting for 'done'. If bought ~Nov 7, the $68 of BTC+ETH is worth ~$60 now (-11%); if not yet bought, $68 buys ~10% more. No stop on DCA core by design. No notification.",
+  "crypto": "BTC broke below $70k to its lowest since Aug 19 (low 67,568 on Binance), now 69,233 (-5.9%); ETH 1,947 (-4.9%, below $2,000 for the first time since August). Drivers: Nvidia's Jensen Huang resigned Nov 12; December Fed hike ~94% priced; dollar index above 103 (19-month high); MSCI removing Strategy (MSTR) from its indexes effective Nov 30; ETF outflows; ~$1.3-1.6B of mostly long liquidations. Fear & Greed ~20 (extreme fear). 200-week average near $67.75k is the support analysts cite. Every coin SELL or worse (BTC/BNB oversold relief only).",
+  "uae": "Emaar 12.30 - goes ex its AED 0.50 special dividend today (DFM dividends page: ex 13/11, paid 27/11), which explains ~3.9 points of the -4.7%. Emirates NBD closed Thursday at ~AED 35.90 (+3.2%, FXStreet); today's 35.14 is ~2% BELOW that, not +5.3% as our feed shows (feed bar dates are shifted). Not buyable until the user has a broker.",
+  "macro": "Nov 11: tanker Dominica Prosperity hit by a projectile ~14nm NW of Ras Al Khaimah (engine fire, 22 crew safe). Nov 12-13: IRGC claims it destroyed a US radar in Bahrain after a strike on Sirik (unconfirmed by the US/Bahrain). No confirmed Israeli strike on Iran. Brent ~$91. US PPI today 16:30 Dubai."
  },
  "bookkeeping_correction": {
   "found": "2026-09-29",
@@ -888,12 +888,18 @@
   "status_2026_11_12": {
    "venue_check": "No new hack, withdrawal pause or regulator action found for Nov 10-12. INJ/PLASMA/NEAR/LTC reopening not yet confirmed. MEXC block continues (compliance).",
    "decision": "Go-ahead stands."
+  },
+  "status_2026_11_13": {
+   "venue_check": "No new incident or withdrawal problem found during the selloff (Nov 11-13).",
+   "progress": "Nov 12: Binance says it has fully covered the ~$6.34B of hack losses from its own funds (part of SAFU, futures insurance fund surplus, corporate treasury) and plans to refill SAFU to ~$1B. A new 198-token proof-of-reserves snapshot was taken; its proof is still pending. INJ/PLASMA/NEAR/LTC reopening not yet confirmed.",
+   "decision": "Go-ahead stands."
   }
  },
  "pre_uae_trade_fixes": [
   "Capture and persist Friday UAE bars (the source serves them on the weekend and deletes them on Monday) so moving averages stop missing one session in five.",
   "Detect carried-forward placeholder bars (O=H=L=C equal to the previous close - seen for all ten DFM names on Tue 2026-11-10) and exclude them from indicators.",
   "Label every UAE 'daily' move with the close it is measured from (Yahoo's previous close can be two or more sessions old) so multi-session moves are not shown as one day.",
-  "Flag names under a tender/compulsory-purchase offer (EMAARDEV at Dh15, ADPORTS at AED 6.25) as offer-pinned; suppress technical BUY/SELL on them."
+  "Flag names under a tender/compulsory-purchase offer (EMAARDEV at Dh15, ADPORTS at AED 6.25) as offer-pinned; suppress technical BUY/SELL on them.",
+  "Cross-check the newest UAE bars against an independent close (e.g. Reuters/FXStreet): on 2026-11-13 the feed's 'Wed Nov 11' Emirates NBD bar (33.36) was really Tuesday's close and Wednesday/Thursday were missing, so today's move showed as +5.3% when it was about -2% vs Thursday. Recent bar date stamps cannot be trusted."
  ]
 }

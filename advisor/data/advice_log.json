@@ -2841,6 +2841,13 @@
    "action": "no change - Nov-1 go-ahead stands",
    "rationale": "Crypto flat with continuing ETF outflows; every coin SELL or worse. Venue check clean. UAE rally continues (not buyable). Israel reportedly preparing a possible Iran strike - risk recorded. No notification.",
    "status": "no action"
+  },
+  {
+   "date": "2026-11-13",
+   "ticker": "daily",
+   "action": "no change - Nov-1 go-ahead stands through the drop below $70k",
+   "rationale": "BTC below $70k (lowest since Aug 19) on the Nvidia CEO exit, a fully priced December hike, a 19-month-high dollar and MSCI dropping Strategy. The monthly buy is designed to keep going through drops; no coin is rated BUY, so no extra deployment. Venue check clean; Binance says hack losses are fully covered. No notification.",
+   "status": "no action"
   }
  ]
 }

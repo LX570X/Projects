@@ -1,21 +1,21 @@
 {
- "updated": "2026-11-12T08:00+00:00",
+ "updated": "2026-11-13T08:05+00:00",
  "market_notes": [
   {
-   "market": "Crypto steady but money keeps leaving ETFs",
-   "note": "BTC ~73.5k, ETH ~2,050. Fifth straight day of US ETF outflows. Nothing rated BUY. Your Nov 1 list still applies."
+   "market": "Bitcoin below $70,000 - lowest since August",
+   "note": "BTC ~69.2k (low 67.6k), ETH ~1,950. Nvidia's CEO resigned, a December Fed hike is fully priced, the dollar is at a 19-month high, and MSCI is dropping Strategy (a big bitcoin holder). Extreme fear. Your monthly plan keeps going - it's built for this."
   },
   {
-   "market": "Israel reportedly preparing for a possible strike on Iran",
-   "note": "Israeli media say the security cabinet ordered preparations; Iran warns of wider retaliation. Another tanker incident in Hormuz. Tuesday's attack on an ADNOC ship is still unattributed."
+   "market": "Binance says the hack is fully covered",
+   "note": "It has replaced all ~$6.34B from its own funds; a new reserve proof is being prepared. No problems during the selloff."
   },
   {
-   "market": "UAE banks rally; FAB asks shareholders for AED 15bn",
-   "note": "Emirates NBD +3.5% Tue and +4.3% Wed. FAB will sell new shares at AED 13.52, 30% below market. AD Ports is being bought out at AED 6.25 and will delist in December."
+   "market": "Another tanker hit near the UAE",
+   "note": "A tanker was struck ~14nm off Ras Al Khaimah on Nov 11 (crew safe). Iran claims it hit a US radar in Bahrain - unconfirmed. No Israeli strike on Iran confirmed."
   },
   {
-   "market": "MSCI changes: nothing notable for the UAE",
-   "note": "No UAE company among the highlighted changes (effective Nov 30). US producer prices (PPI) tomorrow 17:30 Dubai."
+   "market": "Emaar's dividend day",
+   "note": "Emaar trades without its AED 0.50 special dividend from today - that's most of its -4.7%. Emirates NBD is actually ~2% below Thursday's close (our feed showed +5.3% - wrong)."
   }
  ],
  "asset_notes": {
@@ -493,6 +493,12 @@
     "impact": "bearish",
     "date": "2026-11-10",
     "source": "Bitcoin.com, Crypto Times (CoinGlass), SoSoValue via KuCoin"
+   },
+   {
+    "headline": "Below $70k for the first time since August (low ~$67.5k); Nvidia CEO resignation, 94% December-hike odds, DXY > 103, MSCI drops Strategy; ~$1.3-1.6B liquidations, ~90% longs",
+    "impact": "bearish",
+    "date": "2026-11-13",
+    "source": "CoinDesk, Bloomberg, The Block, CoinGlass via TokenPost"
    }
   ],
   "ETHUSDT": [
@@ -747,6 +753,12 @@
     "impact": "bullish",
     "date": "2026-11-04",
     "source": "Investing.com, TokenPost"
+   },
+   {
+    "headline": "Below $2,000 for the first time since August (low ~1,896); staking at a record 36%",
+    "impact": "bearish",
+    "date": "2026-11-12",
+    "source": "24/7 Wall St"
    }
   ],
   "BNBUSDT": [
@@ -1171,6 +1183,12 @@
     "impact": "neutral",
     "date": "2026-11-10",
     "source": "Yahoo Finance, Simply Wall St (unconfirmed)"
+   },
+   {
+    "headline": "Ex-dividend AED 0.50 special dividend on Nov 13 (DFM dividends summary: entitlement 12/11, ex 13/11, payment 27/11) - accounts for ~3.9 points of the day's drop",
+    "impact": "neutral",
+    "date": "2026-11-13",
+    "source": "DFM dividends summary (via search), Investing.com, Argaam"
    }
   ],
   "SALIK": [
@@ -2262,6 +2280,8 @@
  },
  "risk_flags": [
   "VENUE RISK (updated 2026-11-07): all of the user's crypto is on Binance, which lost ~$6.3B to a hack on 2026-10-29. Binance published its latest proof of reserves on Nov 6 (says >=1:1); withdrawals largely restored. Deposits resumed with an in-app USDT >= 100% check. Residual concentration risk accepted at this size.",
+  "TANKER OFF RAS AL KHAIMAH (2026-11-11): Dominica Prosperity hit by a projectile ~14nm NW of RAK (UKMTO). Plus the Nov 10 ADNOC L&S attack - two vessel attacks in UAE waters/approaches in two days. IRGC claims (unverified) a strike on a US radar in Bahrain on Nov 12-13.",
+  "CRYPTO BREAKDOWN (2026-11-13): BTC < $70k, lowest since Aug 19; extreme fear (~20); the 200-week average (~$67.75k) is the next cited support. MSCI's removal of Strategy (effective Nov 30) implies ~$2.8B of passive MSTR selling.",
   "ISRAEL-IRAN (2026-11-11): Israel's KAN reported the security cabinet ordered the military to prepare for a possible strike on Iran; Iran warned of expanded retaliation. A strike would likely hit oil, Gulf stocks and crypto at the same time.",
   "ATTACK IN UAE WATERS (2026-11-10): ADNOC Logistics & Services said one of its vessels was damaged in an attack in UAE territorial waters in the Arabian Gulf on Tue afternoon (WAM; attacker unnamed). UKMTO also reported a tanker incident in Hormuz late Nov 10. First confirmed attack inside UAE waters in this phase.",
   "RATES (2026-11-10): hot October CPI - a December Fed hike is fully priced (25bp ~85-89%, 50bp ~11-15%); 10-year yield briefly above 5%. Headwind for crypto.",
@@ -2307,7 +2327,8 @@
   "2026-11-06: the Nov-5 cycle inferred the Binance 44-token proof would land ~Nov 6. It had not as of 07:15 UTC Nov 6; the hold continues.",
   "2026-11-06: today's UAE 'daily' moves (e.g. DIB -3.1%, Talabat -3.5%) compare a Friday intraday draft with WEDNESDAY's close - Thursday's bar is not yet backfilled. They are not Thursday moves: Reuters had Dubai flat on Nov 5.",
   "2026-11-09: the Nov-8 note said Monday's UAE open was 'at risk' from the weekend escalation. The Monday draft is higher (Emaar, Aldar +2.6%). Also: Brent's weekly drop is reported as 13.3% (Seeking Alpha, front-month close) and ~17% (Reuters, Nov 9) - different contract references; treat as 'about 13-17%'.",
-  "2026-11-12: this morning's note called Emirates NBD's +7.9% 'overstated' because of a malformed Tuesday bar. The Tuesday bar is a carried-forward placeholder, but the move itself is real: Reuters' +3.5% (Tue) and +4.3% (Wed) compound to ~7.95%. It spans two sessions, not one."
+  "2026-11-12: this morning's note called Emirates NBD's +7.9% 'overstated' because of a malformed Tuesday bar. The Tuesday bar is a carried-forward placeholder, but the move itself is real: Reuters' +3.5% (Tue) and +4.3% (Wed) compound to ~7.95%. It spans two sessions, not one.",
+  "2026-11-13: the Nov-12 note said Emirates NBD's +7.9% (Mon close to Thu draft) was real and spanned Tue+Wed. In fact the feed's dates are shifted: its 'Wed' bar was Tuesday's close, Wednesday closed ~34.80 and Thursday ~35.90 (+3.2%, FXStreet). Today's +5.3% for Emirates NBD is wrong - it is ~2% below Thursday. UAE moves from this feed must be cross-checked before being repeated."
  ],
  "missing": [
   "GENIUS Act stablecoin final-rules deadline is July 18, 2026 \u2014 TOMORROW: six agencies (OCC, FDIC, NCUA, Treasury, FinCEN, OFAC) must finalize rules one year after enactment; comment periods closed June 9 and there is no statutory fallback if they miss. Direct near-term catalyst/risk for stablecoins (USDC/Coinbase economics \u2014 which the findings themselves cite in the CLARITY yield fight \u2014 and Tether) yet absent from all three crypto findings. (Kraken blog Jul 15, CryptoSlate, OCC Bulletin 2026-3, Chapman tracker.)",
@@ -2338,13 +2359,13 @@
   "fix_next_run": "Give the BUY-rated names their own threads before the HOLDs, give ETH a thread while its re-entry is live, and state one out-of-window rule in the brief instead of leaving each checker to invent it."
  },
  "upcoming": [
-  "US October PPI - Fri Nov 13 08:30 ET (17:30 Dubai)",
-  "Emaar special dividend AED 0.50 - ex-date Nov 13 (aggregators), paid Nov 27",
-  "Binance: INJ, PLASMA, NEAR, LTC withdrawals targeted before Nov 14-15",
-  "MSCI changes effective Nov 30 close",
+  "US October PPI - today Nov 13 08:30 ET (16:30 Dubai)",
+  "Binance: 198-token proof of reserves pending; INJ/PLASMA/NEAR/LTC withdrawals targeted before Nov 14-15",
+  "Emaar dividend paid Nov 27",
+  "MSCI changes (incl. Strategy removal) effective Nov 30 close",
+  "Next monthly contribution - Dec 1",
   "FAB rights-issue EGM Dec 7",
-  "FOMC Dec 8-9 (hike fully priced)",
-  "Emaar Development Dh15 offer closes 3pm Dec 10",
-  "Next monthly contribution - Dec 1"
+  "FOMC Dec 8-9 (hike ~94% priced)",
+  "Emaar Development Dh15 offer closes 3pm Dec 10"
  ]
 }
