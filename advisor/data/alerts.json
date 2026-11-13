@@ -1,71 +1,83 @@
 {
- "generated_at_utc": "2026-11-12T07:09:57+00:00",
+ "generated_at_utc": "2026-11-13T07:10:30+00:00",
  "alerts": [
+  {
+   "ticker": "BTCUSDT",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "BTCUSDT moved -5.9% in the last day (now 69233.2 USD)"
+  },
+  {
+   "ticker": "BTCUSDT",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "BTCUSDT: STRONG SELL -> SELL (score -65 -> -35) \u2014 oversold relief applied, trend/momentum unchanged"
+  },
+  {
+   "ticker": "BTCUSDT",
+   "severity": "info",
+   "type": "rsi",
+   "msg": "BTCUSDT: RSI crossed below 30 (now 25.8)"
+  },
   {
    "ticker": "ETHUSDT",
    "severity": "info",
-   "type": "rsi",
-   "msg": "ETHUSDT: RSI crossed below 30 (now 29.4)"
+   "type": "big_move",
+   "msg": "ETHUSDT moved -4.9% in the last day (now 1947.2 USD)"
   },
   {
-   "ticker": "DOGEUSDT",
+   "ticker": "BNBUSDT",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "BNBUSDT moved -5.5% in the last day (now 636.67 USD)"
+  },
+  {
+   "ticker": "BNBUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "DOGEUSDT: STRONG SELL -> SELL (score -65 -> -45) \u2014 oversold relief applied, trend/momentum unchanged"
+   "msg": "BNBUSDT: STRONG SELL -> SELL (score -65 -> -35) \u2014 oversold relief applied, trend/momentum unchanged"
   },
   {
-   "ticker": "DOGEUSDT",
+   "ticker": "BNBUSDT",
    "severity": "info",
    "type": "rsi",
-   "msg": "DOGEUSDT: RSI crossed below 30 (now 29.5)"
+   "msg": "BNBUSDT: RSI crossed below 30 (now 28.0)"
   },
   {
-   "ticker": "EMIRATESNBD",
+   "ticker": "EMAAR",
    "severity": "info",
-   "type": "rsi",
-   "msg": "EMIRATESNBD: RSI crossed above 70 (now 70.8)"
-  },
-  {
-   "ticker": "DIB",
-   "severity": "info",
-   "type": "rsi",
-   "msg": "DIB: RSI crossed above 70 (now 70.9)"
+   "type": "big_move",
+   "msg": "EMAAR moved -4.7% in the last day (now 12.3 AED)"
   },
   {
    "ticker": "DEWA",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "DEWA: HOLD -> SELL (score 15 -> -35) - HAIRLINE 50-day cross: price is only 0.09% below the average, inside the 0.5% buffer, so no trend change was confirmed"
+   "msg": "DEWA: SELL -> BUY (score -35 -> 30)"
   },
   {
-   "ticker": "FAB",
+   "ticker": "TALABAT",
    "severity": "info",
-   "type": "big_move",
-   "msg": "FAB moved +4.2% in the last day (now 20.12 AED)"
+   "type": "signal_change",
+   "msg": "TALABAT: BUY -> HOLD (score 35 -> 15)"
   },
   {
-   "ticker": "FAB",
-   "severity": "actionable",
-   "type": "trend",
-   "msg": "FAB: price crossed above its 50-day average \u2014 trend change"
-  },
-  {
-   "ticker": "ADIB",
+   "ticker": "AIRARABIA",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "ADIB: HOLD -> BUY (score -15 -> 35)"
+   "msg": "AIRARABIA: BUY -> STRONG BUY (score 30 -> 45)"
   },
   {
-   "ticker": "ADIB",
+   "ticker": "ALDAR",
    "severity": "actionable",
-   "type": "trend",
-   "msg": "ADIB: price crossed above its 50-day average \u2014 trend change"
+   "type": "signal_change",
+   "msg": "ALDAR: BUY -> STRONG BUY (score 40 -> 50) \u2014 penalty relief only, trend/momentum unchanged"
   },
   {
    "ticker": "ADPORTS",
    "severity": "actionable",
-   "type": "signal_change",
-   "msg": "ADPORTS: BUY -> SELL (score 35 -> -25) - HAIRLINE 50-day cross: price is only 0.38% below the average, inside the 0.5% buffer, so no trend change was confirmed"
+   "type": "trend",
+   "msg": "ADPORTS: price crossed below its 50-day average \u2014 trend change"
   }
  ]
 }
