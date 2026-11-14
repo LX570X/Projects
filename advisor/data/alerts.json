@@ -1,83 +1,47 @@
 {
- "generated_at_utc": "2026-11-13T07:10:30+00:00",
+ "generated_at_utc": "2026-11-14T07:08:57+00:00",
  "alerts": [
   {
-   "ticker": "BTCUSDT",
+   "ticker": "SOLUSDT",
    "severity": "info",
    "type": "big_move",
-   "msg": "BTCUSDT moved -5.9% in the last day (now 69233.2 USD)"
+   "msg": "SOLUSDT moved -5.9% in the last day (now 75.61 USD)"
   },
   {
-   "ticker": "BTCUSDT",
+   "ticker": "ADAUSDT",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "ADAUSDT moved -4.4% in the last day (now 0.1641 USD)"
+  },
+  {
+   "ticker": "ADAUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "BTCUSDT: STRONG SELL -> SELL (score -65 -> -35) \u2014 oversold relief applied, trend/momentum unchanged"
+   "msg": "ADAUSDT: STRONG SELL -> SELL (score -50 -> -45) \u2014 oversold relief applied, trend/momentum unchanged"
   },
   {
-   "ticker": "BTCUSDT",
+   "ticker": "ADAUSDT",
    "severity": "info",
    "type": "rsi",
-   "msg": "BTCUSDT: RSI crossed below 30 (now 25.8)"
+   "msg": "ADAUSDT: RSI crossed below 30 (now 26.4)"
   },
   {
-   "ticker": "ETHUSDT",
+   "ticker": "GRAMUSDT",
    "severity": "info",
    "type": "big_move",
-   "msg": "ETHUSDT moved -4.9% in the last day (now 1947.2 USD)"
+   "msg": "GRAMUSDT moved -6.7% in the last day (now 1.078 USD)"
   },
   {
-   "ticker": "BNBUSDT",
+   "ticker": "DIB",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "DIB: HOLD -> BUY (score 15 -> 30)"
+  },
+  {
+   "ticker": "SALIK",
    "severity": "info",
    "type": "big_move",
-   "msg": "BNBUSDT moved -5.5% in the last day (now 636.67 USD)"
-  },
-  {
-   "ticker": "BNBUSDT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "BNBUSDT: STRONG SELL -> SELL (score -65 -> -35) \u2014 oversold relief applied, trend/momentum unchanged"
-  },
-  {
-   "ticker": "BNBUSDT",
-   "severity": "info",
-   "type": "rsi",
-   "msg": "BNBUSDT: RSI crossed below 30 (now 28.0)"
-  },
-  {
-   "ticker": "EMAAR",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "EMAAR moved -4.7% in the last day (now 12.3 AED)"
-  },
-  {
-   "ticker": "DEWA",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "DEWA: SELL -> BUY (score -35 -> 30)"
-  },
-  {
-   "ticker": "TALABAT",
-   "severity": "info",
-   "type": "signal_change",
-   "msg": "TALABAT: BUY -> HOLD (score 35 -> 15)"
-  },
-  {
-   "ticker": "AIRARABIA",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "AIRARABIA: BUY -> STRONG BUY (score 30 -> 45)"
-  },
-  {
-   "ticker": "ALDAR",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "ALDAR: BUY -> STRONG BUY (score 40 -> 50) \u2014 penalty relief only, trend/momentum unchanged"
-  },
-  {
-   "ticker": "ADPORTS",
-   "severity": "actionable",
-   "type": "trend",
-   "msg": "ADPORTS: price crossed below its 50-day average \u2014 trend change"
+   "msg": "SALIK moved -2.5% in the last day (now 5.41 AED)"
   }
  ]
 }
