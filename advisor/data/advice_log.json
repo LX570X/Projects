@@ -2848,6 +2848,13 @@
    "action": "no change - Nov-1 go-ahead stands through the drop below $70k",
    "rationale": "BTC below $70k (lowest since Aug 19) on the Nvidia CEO exit, a fully priced December hike, a 19-month-high dollar and MSCI dropping Strategy. The monthly buy is designed to keep going through drops; no coin is rated BUY, so no extra deployment. Venue check clean; Binance says hack losses are fully covered. No notification.",
    "status": "no action"
+  },
+  {
+   "date": "2026-11-14",
+   "ticker": "daily",
+   "action": "no change - Nov-1 go-ahead stands",
+   "rationale": "BTC slipped below its 200-week average (~67.75-68k) to 66.4k on a fully priced December hike, a 19-month-high dollar and a 7th day of ETF outflows. No coin is rated BUY, so no extra deployment; the monthly buy continues by design. Venue check clean (87 networks reopened; DOJ seizing $1.2B of stolen funds). No notification.",
+   "status": "no action"
   }
  ]
 }

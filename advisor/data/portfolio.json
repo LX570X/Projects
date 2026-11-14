@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T08:05+00:00",
+ "updated": "2026-11-14T07:50+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": null,
@@ -539,11 +539,11 @@
   "why_it_matters": "On a day when every asset on the crypto board fell and four names confirmed trend breaks, the system produced no trade. That is the design: the BTC stop is a single daily close below a fixed level and that level was not touched, and the satellite trigger needed a qualifying name and there was none. Both outcomes were computed, not decided."
  },
  "book_signal_state": {
-  "as_of": "2026-11-13",
-  "for_the_user": "Nov-1 list: go-ahead stands; still waiting for 'done'. If bought ~Nov 7, the $68 of BTC+ETH is worth ~$60 now (-11%); if not yet bought, $68 buys ~10% more. No stop on DCA core by design. No notification.",
-  "crypto": "BTC broke below $70k to its lowest since Aug 19 (low 67,568 on Binance), now 69,233 (-5.9%); ETH 1,947 (-4.9%, below $2,000 for the first time since August). Drivers: Nvidia's Jensen Huang resigned Nov 12; December Fed hike ~94% priced; dollar index above 103 (19-month high); MSCI removing Strategy (MSTR) from its indexes effective Nov 30; ETF outflows; ~$1.3-1.6B of mostly long liquidations. Fear & Greed ~20 (extreme fear). 200-week average near $67.75k is the support analysts cite. Every coin SELL or worse (BTC/BNB oversold relief only).",
-  "uae": "Emaar 12.30 - goes ex its AED 0.50 special dividend today (DFM dividends page: ex 13/11, paid 27/11), which explains ~3.9 points of the -4.7%. Emirates NBD closed Thursday at ~AED 35.90 (+3.2%, FXStreet); today's 35.14 is ~2% BELOW that, not +5.3% as our feed shows (feed bar dates are shifted). Not buyable until the user has a broker.",
-  "macro": "Nov 11: tanker Dominica Prosperity hit by a projectile ~14nm NW of Ras Al Khaimah (engine fire, 22 crew safe). Nov 12-13: IRGC claims it destroyed a US radar in Bahrain after a strike on Sirik (unconfirmed by the US/Bahrain). No confirmed Israeli strike on Iran. Brent ~$91. US PPI today 16:30 Dubai."
+  "as_of": "2026-11-14",
+  "for_the_user": "Nov-1 list: go-ahead stands; still waiting for 'done'. No notification.",
+  "crypto": "BTC 67,415 (low 66,427, lowest since Aug 19) - below its 200-week average (~$67.75-68k) since Nov 13; a weekly close below it (Sun Nov 15) would be the first since the cycle low. ETH 1,905 (low 1,878). Seven straight days of BTC ETF outflows (-$185M Nov 13; >$2B in November). Every coin SELL or worse; many RSI < 25 (deeply oversold).",
+  "uae": "Weekend - Friday's settled closes: Emirates NBD 36.00 (flat), Emaar 12.30 (ex AED 0.50 dividend). Not buyable until the user has a broker.",
+  "macro": "October PPI +0.3% m/m (below 0.4% forecast) but 6.5% y/y, highest since Nov 2022. December hike fully priced (~90% 25bp, ~10% 50bp); 10-year ~5.15%; dollar ~103.4, 19-month high. Nov 13: US downed two Iranian drones aimed at Bahrain; CENTCOM denies the IRGC radar claim. Israel's cabinet meets Sunday. Brent ~$95.8."
  },
  "bookkeeping_correction": {
   "found": "2026-09-29",
@@ -892,6 +892,11 @@
   "status_2026_11_13": {
    "venue_check": "No new incident or withdrawal problem found during the selloff (Nov 11-13).",
    "progress": "Nov 12: Binance says it has fully covered the ~$6.34B of hack losses from its own funds (part of SAFU, futures insurance fund surplus, corporate treasury) and plans to refill SAFU to ~$1B. A new 198-token proof-of-reserves snapshot was taken; its proof is still pending. INJ/PLASMA/NEAR/LTC reopening not yet confirmed.",
+   "decision": "Go-ahead stands."
+  },
+  "status_2026_11_14": {
+   "venue_check": "No new incident, withdrawal pause or regulator action found for Nov 12-14; Binance only warned heavy traffic may cause delays.",
+   "progress": "Nov 13 notice: withdrawals reopened on 87 networks this week (incl. LTC, NEAR, APT, HYPE, ADA, AVAX); remaining networks targeted by end of next week; INJ/PLASMA not confirmed. 198-token proof-of-reserves snapshot (Nov 12 00:00 UTC), zk proof pending. US DOJ moved to seize ~$1.2B of the stolen crypto (CryptoTimes, Nov 13).",
    "decision": "Go-ahead stands."
   }
  },

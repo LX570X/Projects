@@ -1,21 +1,21 @@
 {
- "updated": "2026-11-13T08:05+00:00",
+ "updated": "2026-11-14T07:50+00:00",
  "market_notes": [
   {
-   "market": "Bitcoin below $70,000 - lowest since August",
-   "note": "BTC ~69.2k (low 67.6k), ETH ~1,950. Nvidia's CEO resigned, a December Fed hike is fully priced, the dollar is at a 19-month high, and MSCI is dropping Strategy (a big bitcoin holder). Extreme fear. Your monthly plan keeps going - it's built for this."
+   "market": "Bitcoin slips under a key long-term line",
+   "note": "BTC ~67.4k (low 66.4k), just below its 200-week average (~68k) - watch Sunday's weekly close. ETH ~1,905. Money has left US bitcoin funds 7 days running. Nothing rated BUY; your monthly plan continues."
   },
   {
-   "market": "Binance says the hack is fully covered",
-   "note": "It has replaced all ~$6.34B from its own funds; a new reserve proof is being prepared. No problems during the selloff."
+   "market": "US wholesale inflation at a near-4-year high",
+   "note": "+6.5% over the year. A December Fed hike is fully priced; the dollar is at a 19-month high. That's the main weight on crypto."
   },
   {
-   "market": "Another tanker hit near the UAE",
-   "note": "A tanker was struck ~14nm off Ras Al Khaimah on Nov 11 (crew safe). Iran claims it hit a US radar in Bahrain - unconfirmed. No Israeli strike on Iran confirmed."
+   "market": "Binance: almost all withdrawals back",
+   "note": "87 networks reopened this week; the US is moving to seize $1.2B of the stolen crypto. No problems during the selloff."
   },
   {
-   "market": "Emaar's dividend day",
-   "note": "Emaar trades without its AED 0.50 special dividend from today - that's most of its -4.7%. Emirates NBD is actually ~2% below Thursday's close (our feed showed +5.3% - wrong)."
+   "market": "Gulf: drones shot down near Bahrain",
+   "note": "US forces downed two Iranian drones aimed at Bahrain on Friday; Iran's claim of hitting a US radar was denied. Israel's cabinet meets Sunday on Iran."
   }
  ],
  "asset_notes": {
@@ -499,6 +499,12 @@
     "impact": "bearish",
     "date": "2026-11-13",
     "source": "CoinDesk, Bloomberg, The Block, CoinGlass via TokenPost"
+   },
+   {
+    "headline": "Broke below its 200-week MA (~$67.75-68k) on Nov 13; low $66,427 on Nov 14 (lowest since Aug 19); 7th straight day of spot ETF outflows (-$185M Nov 13)",
+    "impact": "bearish",
+    "date": "2026-11-14",
+    "source": "CoinDesk, Cedar News (CoinGlass), TokenPost (SoSoValue)"
    }
   ],
   "ETHUSDT": [
@@ -2281,6 +2287,8 @@
  "risk_flags": [
   "VENUE RISK (updated 2026-11-07): all of the user's crypto is on Binance, which lost ~$6.3B to a hack on 2026-10-29. Binance published its latest proof of reserves on Nov 6 (says >=1:1); withdrawals largely restored. Deposits resumed with an in-app USDT >= 100% check. Residual concentration risk accepted at this size.",
   "TANKER OFF RAS AL KHAIMAH (2026-11-11): Dominica Prosperity hit by a projectile ~14nm NW of RAK (UKMTO). Plus the Nov 10 ADNOC L&S attack - two vessel attacks in UAE waters/approaches in two days. IRGC claims (unverified) a strike on a US radar in Bahrain on Nov 12-13.",
+  "200-WEEK AVERAGE (2026-11-13/14): BTC trades below its ~$67.75-68k 200-week MA, a level analysts treat as long-term support; a weekly close below it (Sun Nov 15) would deepen the bear case. Fear & Greed reportedly ~13-20.",
+  "ISRAEL CABINET (Sun Nov 15): expected to convene on Iran after ordering strike preparations; Nov 13 US downed two Iranian drones aimed at Bahrain. Escalation risk for the weekend and Monday's UAE open.",
   "CRYPTO BREAKDOWN (2026-11-13): BTC < $70k, lowest since Aug 19; extreme fear (~20); the 200-week average (~$67.75k) is the next cited support. MSCI's removal of Strategy (effective Nov 30) implies ~$2.8B of passive MSTR selling.",
   "ISRAEL-IRAN (2026-11-11): Israel's KAN reported the security cabinet ordered the military to prepare for a possible strike on Iran; Iran warned of expanded retaliation. A strike would likely hit oil, Gulf stocks and crypto at the same time.",
   "ATTACK IN UAE WATERS (2026-11-10): ADNOC Logistics & Services said one of its vessels was damaged in an attack in UAE territorial waters in the Arabian Gulf on Tue afternoon (WAM; attacker unnamed). UKMTO also reported a tanker incident in Hormuz late Nov 10. First confirmed attack inside UAE waters in this phase.",
@@ -2359,13 +2367,14 @@
   "fix_next_run": "Give the BUY-rated names their own threads before the HOLDs, give ETH a thread while its re-entry is live, and state one out-of-window rule in the brief instead of leaving each checker to invent it."
  },
  "upcoming": [
-  "US October PPI - today Nov 13 08:30 ET (16:30 Dubai)",
-  "Binance: 198-token proof of reserves pending; INJ/PLASMA/NEAR/LTC withdrawals targeted before Nov 14-15",
+  "BTC weekly close vs the 200-week average - Sun Nov 15",
+  "Israeli security cabinet on Iran - Sun Nov 15 (reported)",
+  "Binance: remaining withdrawal networks by end of next week; 198-token zk proof pending",
   "Emaar dividend paid Nov 27",
   "MSCI changes (incl. Strategy removal) effective Nov 30 close",
   "Next monthly contribution - Dec 1",
   "FAB rights-issue EGM Dec 7",
-  "FOMC Dec 8-9 (hike ~94% priced)",
+  "FOMC Dec 8-9 (hike fully priced)",
   "Emaar Development Dh15 offer closes 3pm Dec 10"
  ]
 }
