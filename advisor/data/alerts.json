@@ -1,47 +1,83 @@
 {
- "generated_at_utc": "2026-11-14T07:08:57+00:00",
+ "generated_at_utc": "2026-11-15T07:09:12+00:00",
  "alerts": [
   {
-   "ticker": "SOLUSDT",
+   "ticker": "BTCUSDT",
    "severity": "info",
    "type": "big_move",
-   "msg": "SOLUSDT moved -5.9% in the last day (now 75.61 USD)"
+   "msg": "BTCUSDT moved -4.4% in the last day (now 64423 USD)"
   },
   {
-   "ticker": "ADAUSDT",
+   "ticker": "ETHUSDT",
    "severity": "info",
    "type": "big_move",
-   "msg": "ADAUSDT moved -4.4% in the last day (now 0.1641 USD)"
+   "msg": "ETHUSDT moved -6.0% in the last day (now 1790.73 USD)"
   },
   {
-   "ticker": "ADAUSDT",
+   "ticker": "BNBUSDT",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "BNBUSDT moved -4.6% in the last day (now 590.31 USD)"
+  },
+  {
+   "ticker": "DOGEUSDT",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "DOGEUSDT moved -8.3% in the last day (now 0.0578 USD)"
+  },
+  {
+   "ticker": "LINKUSDT",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "LINKUSDT moved -5.6% in the last day (now 9.092 USD)"
+  },
+  {
+   "ticker": "LINKUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "ADAUSDT: STRONG SELL -> SELL (score -50 -> -45) \u2014 oversold relief applied, trend/momentum unchanged"
+   "msg": "LINKUSDT: STRONG SELL -> SELL (score -65 -> -35) \u2014 oversold relief applied, trend/momentum unchanged"
   },
   {
-   "ticker": "ADAUSDT",
+   "ticker": "LINKUSDT",
    "severity": "info",
    "type": "rsi",
-   "msg": "ADAUSDT: RSI crossed below 30 (now 26.4)"
+   "msg": "LINKUSDT: RSI crossed below 30 (now 29.7)"
   },
   {
-   "ticker": "GRAMUSDT",
+   "ticker": "AVAXUSDT",
    "severity": "info",
    "type": "big_move",
-   "msg": "GRAMUSDT moved -6.7% in the last day (now 1.078 USD)"
+   "msg": "AVAXUSDT moved -10.9% in the last day (now 7.202 USD)"
   },
   {
-   "ticker": "DIB",
+   "ticker": "AVAXUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "DIB: HOLD -> BUY (score 15 -> 30)"
+   "msg": "AVAXUSDT: SELL -> STRONG SELL (score -35 -> -65)"
   },
   {
-   "ticker": "SALIK",
+   "ticker": "AVAXUSDT",
+   "severity": "info",
+   "type": "macd",
+   "msg": "AVAXUSDT: MACD bearish cross"
+  },
+  {
+   "ticker": "LTCUSDT",
    "severity": "info",
    "type": "big_move",
-   "msg": "SALIK moved -2.5% in the last day (now 5.41 AED)"
+   "msg": "LTCUSDT moved -7.7% in the last day (now 44.75 USD)"
+  },
+  {
+   "ticker": "LTCUSDT",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "LTCUSDT: STRONG SELL -> SELL (score -65 -> -35) \u2014 oversold relief applied, trend/momentum unchanged"
+  },
+  {
+   "ticker": "LTCUSDT",
+   "severity": "info",
+   "type": "rsi",
+   "msg": "LTCUSDT: RSI crossed below 30 (now 26.1)"
   }
  ]
 }
