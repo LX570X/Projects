@@ -2855,6 +2855,13 @@
    "action": "no change - Nov-1 go-ahead stands",
    "rationale": "BTC slipped below its 200-week average (~67.75-68k) to 66.4k on a fully priced December hike, a 19-month-high dollar and a 7th day of ETF outflows. No coin is rated BUY, so no extra deployment; the monthly buy continues by design. Venue check clean (87 networks reopened; DOJ seizing $1.2B of stolen funds). No notification.",
    "status": "no action"
+  },
+  {
+   "date": "2026-11-15",
+   "ticker": "daily",
+   "action": "no change - Nov-1 go-ahead stands through the weekend crash",
+   "rationale": "BTC to 62k (weakest since July) on ~$2B of long liquidations, ETF outflows and Fed-hike pricing - a broad market move, not a Binance event (venue check clean, USDT at peg). Every coin SELL or worse, so no extra deployment; the small monthly buy continues by design and carries no stop. Gulf: Bahrain drone alerts, Houthi missiles at Riyadh - recorded. No notification.",
+   "status": "no action"
   }
  ]
 }
