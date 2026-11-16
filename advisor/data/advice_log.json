@@ -2862,6 +2862,13 @@
    "action": "no change - Nov-1 go-ahead stands through the weekend crash",
    "rationale": "BTC to 62k (weakest since July) on ~$2B of long liquidations, ETF outflows and Fed-hike pricing - a broad market move, not a Binance event (venue check clean, USDT at peg). Every coin SELL or worse, so no extra deployment; the small monthly buy continues by design and carries no stop. Gulf: Bahrain drone alerts, Houthi missiles at Riyadh - recorded. No notification.",
    "status": "no action"
+  },
+  {
+   "date": "2026-11-16",
+   "ticker": "daily",
+   "action": "no change - Nov-1 go-ahead stands",
+   "rationale": "BTC closed the week below its 200-week average (~65.4k vs ~67.85k) after the weekend capitulation; every coin SELL or worse, so no extra deployment. Venue check clean; FBI has seized $1.2B of the stolen funds. Gulf: third US carrier arrives, no Israeli decision reported. No notification.",
+   "status": "no action"
   }
  ]
 }

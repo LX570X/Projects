@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T07:55+00:00",
+ "updated": "2026-11-16T08:05+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": null,
@@ -539,11 +539,11 @@
   "why_it_matters": "On a day when every asset on the crypto board fell and four names confirmed trend breaks, the system produced no trade. That is the design: the BTC stop is a single daily close below a fixed level and that level was not touched, and the satellite trigger needed a qualifying name and there was none. Both outcomes were computed, not decided."
  },
  "book_signal_state": {
-  "as_of": "2026-11-15",
-  "for_the_user": "Nov-1 list: go-ahead stands; still waiting for 'done'. If bought ~Nov 7, the $68 of BTC+ETH is worth ~$56 (-18%); no stop on DCA core by design. No notification.",
-  "crypto": "Weekend crash: BTC Saturday close 64,150 (-6.1%), Sunday low 62,006 (weakest since July 14), now 64,423; ETH low 1,711, now 1,791 (63% below its record). ~$1.9-2.0B of mostly long liquidations; seven days of ETF outflows (~$1.9B); December hike fully priced; strong dollar. No exchange failure or stablecoin depeg. Fear & Greed 10 (extreme fear). Glassnode calls it a 'deep value zone' (4th capitulation event since the ATH) but not a confirmed bottom; next support cited ~$60k. Weekly close vs the 200-week average (~$67.75-68k) tonight at 00:00 UTC - currently well below it.",
-  "uae": "Weekend. Monday's open faces the Bahrain drone alerts and the Israeli cabinet meeting. Not buyable until the user has a broker.",
-  "macro": "Sun Nov 15: Bahrain issued its first threat alerts since September; IRGC claims 6 drones hit a US radar at Riffa; Bahrain TV says it intercepted Iranian drone(s). Saudi intercepted Houthi missiles aimed at Riyadh. Iran claims 3 tankers hit mines in Hormuz on Nov 14 (unconfirmed). No strike on Iran found; Reuters: Trump may hold off barring new provocations. Israel's security cabinet meets today. UAE airspace open; Saudi-route flights disrupted. Brent $95.84 Friday."
+  "as_of": "2026-11-16",
+  "for_the_user": "Nov-1 list: go-ahead stands; still waiting for 'done'. No notification.",
+  "crypto": "Steadier after the crash: BTC 64,500 (weekly close ~65.4k, below the ~67.85k 200-week average for the first weekly close since Aug 16; sixth straight losing week, -13-14%); ETH 1,810. $60k is the support traders watch. Every coin SELL or worse. This week: Warsh speaks Mon, US retail sales and Nvidia earnings Tue, FOMC minutes Wed.",
+  "uae": "Monday draft vs Thursday close: Emaar 12.24 (-5.0%, mostly the AED 0.50 dividend that went ex Fri Nov 13; Reuters had Dubai -0.6% Friday 'on weak earnings' with Emaar -4.5%), Emirates NBD 35.48 (-1.4%). Emirates NBD and Aldar to STRONG BUY. Not buyable until the user has a broker.",
+  "macro": "Israel's security cabinet met Sunday - no decision reported. A third US carrier (Theodore Roosevelt) arrived in the region; Iran warns it could strike first. Bahrain intercepted the IRGC's drones on Nov 15. Tadawul -0.66% and Qatar -1.8% on Sunday. No attack on the UAE found."
  },
  "bookkeeping_correction": {
   "found": "2026-09-29",
@@ -903,6 +903,11 @@
    "venue_check": "No new incident, outage, withdrawal pause or deposit problem found during the Nov 14-15 crash; no regulator action. USDT ~$0.999 on Nov 14 (no depeg).",
    "progress": "Reuters Nov 14: Binance reopened withdrawals on 87 networks this week and targets all remaining networks/assets by end of next week (~Nov 22). The 198-token zk proof is reported complete by one outlet, unconfirmed by Binance.",
    "decision": "Go-ahead stands."
+  },
+  "status_2026_11_16": {
+   "venue_check": "No new incident, outage, withdrawal pause or regulator action found for Nov 14-16.",
+   "progress": "Latest update still Nov 14 (87 networks reopened; rest targeted ~Nov 22). FBI: >$1.2B of the stolen crypto seized (attributed to North Korea's TraderTraitor); >$2.7B frozen in total. 198-token zk proof: one undated report says complete, others say pending - unconfirmed. Binance warned of AI deepfake impersonation of its staff (Nov 15).",
+   "decision": "Go-ahead stands. Hygiene reminder: verify any 'Binance' contact through the app's official support only."
   }
  },
  "pre_uae_trade_fixes": [

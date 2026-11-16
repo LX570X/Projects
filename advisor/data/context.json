@@ -1,21 +1,21 @@
 {
- "updated": "2026-11-15T07:55+00:00",
+ "updated": "2026-11-16T08:05+00:00",
  "market_notes": [
   {
-   "market": "Crypto crash: BTC touched 62k, weakest since July",
-   "note": "About $2B of leveraged bets wiped out over the weekend. BTC ~64.4k, ETH ~1,790. Extreme fear (10/100). No Binance problem and USDT held $1. Your plan doesn't change - small monthly buys are meant to ride this out."
+   "market": "Bitcoin closes the week below its 200-week average",
+   "note": "Weekly close ~65.4k vs ~67.9k; sixth losing week in a row (-13%). Now ~64.5k, ETH ~1,810. $60k is the next line traders watch. Nothing rated BUY; your plan continues."
   },
   {
-   "market": "Binance: full withdrawals back by ~Nov 22",
-   "note": "87 networks reopened this week; the rest targeted by the end of next week (Reuters)."
+   "market": "Binance: FBI seizes $1.2B of the stolen crypto",
+   "note": "No new problems. Full withdrawals still targeted ~Nov 22. Binance warns of fake 'staff' using AI deepfakes - only trust the app's official support."
   },
   {
-   "market": "Gulf: Bahrain alerts, missiles at Riyadh",
-   "note": "Bahrain sounded threat alerts early Sunday after Iranian drones (it says it intercepted them); Saudi intercepted Houthi missiles. UAE airspace open. Israel's cabinet meets today on Iran; Trump reportedly prefers to hold off."
+   "market": "Gulf: third US carrier arrives; Israel's cabinet undecided",
+   "note": "Bahrain shot down Iranian drones on Sunday. Iran warns it could strike first. Saudi and Qatar stocks fell Sunday. No attack on the UAE reported."
   },
   {
-   "market": "Tonight",
-   "note": "Bitcoin's weekly close (04:00 Dubai Monday) - it is well below its 200-week average (~68k)."
+   "market": "This week",
+   "note": "Fed's Warsh speaks today; US retail sales and Nvidia earnings Tuesday; Fed minutes Wednesday."
   }
  ],
  "asset_notes": {
@@ -511,6 +511,12 @@
     "impact": "bearish",
     "date": "2026-11-15",
     "source": "Bloomberg (via The Edge), CoinGlass, Alternative.me via CryptoTicker"
+   },
+   {
+    "headline": "Weekly close ~$65.4k below the ~$67.85k 200-week MA (first weekly close below it since Aug 16); sixth straight losing week (-13-14%); $60k cited as key support",
+    "impact": "bearish",
+    "date": "2026-11-16",
+    "source": "Yahoo Finance history, crypto.news, Invezz, CryptoTicker"
    }
   ],
   "ETHUSDT": [
@@ -2299,6 +2305,7 @@
  "risk_flags": [
   "VENUE RISK (updated 2026-11-07): all of the user's crypto is on Binance, which lost ~$6.3B to a hack on 2026-10-29. Binance published its latest proof of reserves on Nov 6 (says >=1:1); withdrawals largely restored. Deposits resumed with an in-app USDT >= 100% check. Residual concentration risk accepted at this size.",
   "TANKER OFF RAS AL KHAIMAH (2026-11-11): Dominica Prosperity hit by a projectile ~14nm NW of RAK (UKMTO). Plus the Nov 10 ADNOC L&S attack - two vessel attacks in UAE waters/approaches in two days. IRGC claims (unverified) a strike on a US radar in Bahrain on Nov 12-13.",
+  "CARRIERS (2026-11-16): a third US carrier (USS Theodore Roosevelt) arrived in CENTCOM's area; Iran warns it could strike first. Israel's security cabinet met Nov 15 with no decision reported.",
   "CAPITULATION (2026-11-14/15): ~$1.9-2.0B of mostly long liquidations; BTC low $62,022 (since July 14); Fear & Greed 10. Glassnode: 'deep value zone' but no confirmed bottom; next cited support ~$60k.",
   "BAHRAIN (2026-11-15): first threat alerts since September; IRGC claims a 6-drone strike on a US radar at Riffa; Bahrain says it intercepted Iranian drone(s). Saudi intercepted Houthi missiles at Riyadh. Escalation risk for Monday's Gulf open.",
   "200-WEEK AVERAGE (2026-11-13/14): BTC trades below its ~$67.75-68k 200-week MA, a level analysts treat as long-term support; a weekly close below it (Sun Nov 15) would deepen the bear case. Fear & Greed reportedly ~13-20.",
@@ -2350,7 +2357,8 @@
   "2026-11-06: today's UAE 'daily' moves (e.g. DIB -3.1%, Talabat -3.5%) compare a Friday intraday draft with WEDNESDAY's close - Thursday's bar is not yet backfilled. They are not Thursday moves: Reuters had Dubai flat on Nov 5.",
   "2026-11-09: the Nov-8 note said Monday's UAE open was 'at risk' from the weekend escalation. The Monday draft is higher (Emaar, Aldar +2.6%). Also: Brent's weekly drop is reported as 13.3% (Seeking Alpha, front-month close) and ~17% (Reuters, Nov 9) - different contract references; treat as 'about 13-17%'.",
   "2026-11-12: this morning's note called Emirates NBD's +7.9% 'overstated' because of a malformed Tuesday bar. The Tuesday bar is a carried-forward placeholder, but the move itself is real: Reuters' +3.5% (Tue) and +4.3% (Wed) compound to ~7.95%. It spans two sessions, not one.",
-  "2026-11-13: the Nov-12 note said Emirates NBD's +7.9% (Mon close to Thu draft) was real and spanned Tue+Wed. In fact the feed's dates are shifted: its 'Wed' bar was Tuesday's close, Wednesday closed ~34.80 and Thursday ~35.90 (+3.2%, FXStreet). Today's +5.3% for Emirates NBD is wrong - it is ~2% below Thursday. UAE moves from this feed must be cross-checked before being repeated."
+  "2026-11-13: the Nov-12 note said Emirates NBD's +7.9% (Mon close to Thu draft) was real and spanned Tue+Wed. In fact the feed's dates are shifted: its 'Wed' bar was Tuesday's close, Wednesday closed ~34.80 and Thursday ~35.90 (+3.2%, FXStreet). Today's +5.3% for Emirates NBD is wrong - it is ~2% below Thursday. UAE moves from this feed must be cross-checked before being repeated.",
+  "2026-11-16: the Nov-15 note said Saudi intercepted Houthi missiles aimed at Riyadh on Sun Nov 15. Today's check found the only clearly dated report of that is from Nov 8 (Aramco building damaged); a Nov 15 Gulf News headline exists but could not be confirmed as a separate event. Treat the Nov 15 Riyadh intercept as unconfirmed."
  ],
  "missing": [
   "GENIUS Act stablecoin final-rules deadline is July 18, 2026 \u2014 TOMORROW: six agencies (OCC, FDIC, NCUA, Treasury, FinCEN, OFAC) must finalize rules one year after enactment; comment periods closed June 9 and there is no statutory fallback if they miss. Direct near-term catalyst/risk for stablecoins (USDC/Coinbase economics \u2014 which the findings themselves cite in the CLARITY yield fight \u2014 and Tether) yet absent from all three crypto findings. (Kraken blog Jul 15, CryptoSlate, OCC Bulletin 2026-3, Chapman tracker.)",
@@ -2381,8 +2389,9 @@
   "fix_next_run": "Give the BUY-rated names their own threads before the HOLDs, give ETH a thread while its re-entry is live, and state one out-of-window rule in the brief instead of leaving each checker to invent it."
  },
  "upcoming": [
-  "BTC weekly close vs the 200-week average - 00:00 UTC Mon Nov 16 (04:00 Dubai)",
-  "Israeli security cabinet on Iran - Sun Nov 15",
+  "Fed's Warsh speaks - Mon Nov 16",
+  "US retail sales and Nvidia earnings - Tue Nov 17",
+  "FOMC minutes - Wed Nov 18",
   "Binance: all remaining withdrawal networks by ~Nov 22",
   "Emaar dividend paid Nov 27",
   "MSCI changes (incl. Strategy removal) effective Nov 30 close",
