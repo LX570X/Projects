@@ -2869,6 +2869,13 @@
    "action": "no change - Nov-1 go-ahead stands",
    "rationale": "BTC closed the week below its 200-week average (~65.4k vs ~67.85k) after the weekend capitulation; every coin SELL or worse, so no extra deployment. Venue check clean; FBI has seized $1.2B of the stolen funds. Gulf: third US carrier arrives, no Israeli decision reported. No notification.",
    "status": "no action"
+  },
+  {
+   "date": "2026-11-17",
+   "ticker": "daily",
+   "action": "no change - Nov-1 go-ahead stands",
+   "rationale": "Crypto flat near the lows; every coin SELL or worse. Venue check clean. Nvidia earnings tonight are the next risk event. Gulf: reported US strikes on Iranian launchers and two Hormuz tanker attacks - recorded. No notification.",
+   "status": "no action"
   }
  ]
 }

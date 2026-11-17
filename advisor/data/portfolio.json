@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16T08:05+00:00",
+ "updated": "2026-11-17T07:55+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": null,
@@ -539,11 +539,11 @@
   "why_it_matters": "On a day when every asset on the crypto board fell and four names confirmed trend breaks, the system produced no trade. That is the design: the BTC stop is a single daily close below a fixed level and that level was not touched, and the satellite trigger needed a qualifying name and there was none. Both outcomes were computed, not decided."
  },
  "book_signal_state": {
-  "as_of": "2026-11-16",
+  "as_of": "2026-11-17",
   "for_the_user": "Nov-1 list: go-ahead stands; still waiting for 'done'. No notification.",
-  "crypto": "Steadier after the crash: BTC 64,500 (weekly close ~65.4k, below the ~67.85k 200-week average for the first weekly close since Aug 16; sixth straight losing week, -13-14%); ETH 1,810. $60k is the support traders watch. Every coin SELL or worse. This week: Warsh speaks Mon, US retail sales and Nvidia earnings Tue, FOMC minutes Wed.",
-  "uae": "Monday draft vs Thursday close: Emaar 12.24 (-5.0%, mostly the AED 0.50 dividend that went ex Fri Nov 13; Reuters had Dubai -0.6% Friday 'on weak earnings' with Emaar -4.5%), Emirates NBD 35.48 (-1.4%). Emirates NBD and Aldar to STRONG BUY. Not buyable until the user has a broker.",
-  "macro": "Israel's security cabinet met Sunday - no decision reported. A third US carrier (Theodore Roosevelt) arrived in the region; Iran warns it could strike first. Bahrain intercepted the IRGC's drones on Nov 15. Tadawul -0.66% and Qatar -1.8% on Sunday. No attack on the UAE found."
+  "crypto": "Holding near the lows: BTC 64,693 (flat), ETH 1,832. Funding negative; Fear & Greed 10-13. Every coin SELL or worse. Nvidia reports tonight ~21:20 UTC (01:20 Dubai Wed) after Monday's tech sell-off; FOMC minutes Wed.",
+  "uae": "Mon Nov 16 (Reuters): Dubai +0.2% to 6,212, Abu Dhabi +0.2% to 9,683, recovering early losses. FAB to STRONG BUY (rights issue at AED 13.52 pending, EGM Dec 7), ADNOC Gas to BUY, Air Arabia back to BUY. Not buyable until the user has a broker.",
+  "macro": "Mon Nov 16: S&P 500 -1.9%, Nasdaq -2.5% (correction) on the Nvidia leadership turmoil; Warsh's speech was about AI with no rate signal; dollar ~103.5 (19-month high); December hike ~90-96% for 25bp. Gulf: Euronews reports US strikes on Iranian missile launchers at Bandar Lengeh and Sirik on Sunday night; UKMTO logged two tanker attacks in Hormuz on Nov 16 (one ~7nm N of Khasab); IRGC claims a supertanker sank (unconfirmed). Brent -3.6% to $92.44 on an IEA surplus forecast. No attack on the UAE found."
  },
  "bookkeeping_correction": {
   "found": "2026-09-29",
@@ -908,6 +908,11 @@
    "venue_check": "No new incident, outage, withdrawal pause or regulator action found for Nov 14-16.",
    "progress": "Latest update still Nov 14 (87 networks reopened; rest targeted ~Nov 22). FBI: >$1.2B of the stolen crypto seized (attributed to North Korea's TraderTraitor); >$2.7B frozen in total. 198-token zk proof: one undated report says complete, others say pending - unconfirmed. Binance warned of AI deepfake impersonation of its staff (Nov 15).",
    "decision": "Go-ahead stands. Hygiene reminder: verify any 'Binance' contact through the app's official support only."
+  },
+  "status_2026_11_17": {
+   "venue_check": "No new incident, outage, withdrawal pause or regulator action found for Nov 15-17. Nov 15: CZ publicly denied that Binance sold crypto (a dispute with OKX).",
+   "progress": "Latest dated update still Nov 14 (87 networks reopened; rest targeted ~Nov 22). Binance's X post (indexed Nov 14) says the zk proof for the 198-token Nov 12 snapshot is generated (>=1:1); one report says ratios are highlighted for BTC, ETH, BNB, USDT, USDC and SOL. No independent audit.",
+   "decision": "Go-ahead stands."
   }
  },
  "pre_uae_trade_fixes": [
