@@ -1,17 +1,23 @@
 {
- "generated_at_utc": "2026-11-16T07:14:26+00:00",
+ "generated_at_utc": "2026-11-17T07:09:29+00:00",
  "alerts": [
   {
-   "ticker": "EMIRATESNBD",
+   "ticker": "AIRARABIA",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "EMIRATESNBD: BUY -> STRONG BUY (score 35 -> 45) \u2014 penalty relief only, trend/momentum unchanged"
+   "msg": "AIRARABIA: STRONG BUY -> BUY (score 45 -> 30)"
   },
   {
-   "ticker": "ALDAR",
+   "ticker": "FAB",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "ALDAR: BUY -> STRONG BUY (score 40 -> 50)"
+   "msg": "FAB: BUY -> STRONG BUY (score 25 -> 50)"
+  },
+  {
+   "ticker": "ADNOCGAS",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ADNOCGAS: HOLD -> BUY (score 5 -> 30)"
   }
  ]
 }
