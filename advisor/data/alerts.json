@@ -1,23 +1,41 @@
 {
- "generated_at_utc": "2026-11-17T07:09:29+00:00",
+ "generated_at_utc": "2026-11-18T07:11:32+00:00",
  "alerts": [
   {
-   "ticker": "AIRARABIA",
+   "ticker": "XRPUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "AIRARABIA: STRONG BUY -> BUY (score 45 -> 30)"
+   "msg": "XRPUSDT: SELL -> STRONG SELL (score -45 -> -65) \u2014 oversold relief withdrawn, trend/momentum unchanged"
+  },
+  {
+   "ticker": "DIB",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "DIB: BUY -> STRONG BUY (score 20 -> 50)"
+  },
+  {
+   "ticker": "DEWA",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "DEWA: BUY -> STRONG BUY (score 30 -> 50)"
   },
   {
    "ticker": "FAB",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "FAB: BUY -> STRONG BUY (score 25 -> 50)"
+   "severity": "info",
+   "type": "big_move",
+   "msg": "FAB moved +2.8% in the last day (now 22.16 AED)"
   },
   {
-   "ticker": "ADNOCGAS",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "ADNOCGAS: HOLD -> BUY (score 5 -> 30)"
+   "ticker": "FAB",
+   "severity": "info",
+   "type": "rsi",
+   "msg": "FAB: RSI crossed above 70 (now 73.4)"
+  },
+  {
+   "ticker": "ADCB",
+   "severity": "info",
+   "type": "rsi",
+   "msg": "ADCB: RSI crossed above 70 (now 73.3)"
   }
  ]
 }
