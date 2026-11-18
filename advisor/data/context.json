@@ -1,21 +1,21 @@
 {
- "updated": "2026-11-17T07:55+00:00",
+ "updated": "2026-11-18T07:55+00:00",
  "market_notes": [
   {
-   "market": "Crypto holds near its lows ahead of Nvidia",
-   "note": "BTC ~64.7k, ETH ~1,830. US tech stocks fell again Monday (Nasdaq -2.5%). Nvidia reports tonight (01:20 Dubai). Nothing rated BUY; your plan continues."
+   "market": "Gulf escalation: ADNOC ship hit, Kuwait under drone attack",
+   "note": "An ADNOC Logistics vessel was attacked in Hormuz on Tuesday evening (11 injured, 1 missing). The US struck an Iranian launch site on Qeshm; Kuwait intercepted drones this morning. No attack on UAE territory reported."
   },
   {
-   "market": "Binance: nothing new wrong",
-   "note": "Its latest reserve proof says customer balances are backed at least 1:1. Full withdrawals still targeted ~Nov 22."
+   "market": "Nvidia beats; crypto doesn't care",
+   "note": "Record $115.8B revenue and a strong outlook, but BTC stayed ~64.8k and ETH ~1,816. US stocks closed Tuesday at their lowest since July. Fed minutes tonight 23:00 Dubai."
   },
   {
-   "market": "Gulf: more strikes and tanker attacks",
-   "note": "Reports of US strikes on Iranian missile launchers Sunday night; two tankers attacked in Hormuz Monday. Oil fell anyway (-3.6%) on a supply surplus forecast. No attack on the UAE reported."
+   "market": "Binance: reserves above 100%",
+   "note": "Latest proof shows BTC and ETH backed slightly over 100%. Full withdrawals still targeted ~Nov 22. Your Nov 1 list still applies."
   },
   {
-   "market": "UAE stocks edge up",
-   "note": "Dubai and Abu Dhabi +0.2% Monday."
+   "market": "UAE stocks keep climbing",
+   "note": "Dubai +0.6%, Abu Dhabi +0.9% Tuesday; banks leading. Several names now overbought (RSI > 70)."
   }
  ],
  "asset_notes": {
@@ -1593,6 +1593,12 @@
     "impact": "neutral",
     "date": "2026-09-15",
     "source": "advisor data"
+   },
+   {
+    "headline": "RSI above 70 after the UAE bank rally (Abu Dhabi +0.9% Nov 17)",
+    "impact": "neutral",
+    "date": "2026-11-18",
+    "source": "own data; Reuters via Business Recorder"
    }
   ],
   "ADIB": [
@@ -2310,6 +2316,7 @@
  },
  "risk_flags": [
   "VENUE RISK (updated 2026-11-07): all of the user's crypto is on Binance, which lost ~$6.3B to a hack on 2026-10-29. Binance published its latest proof of reserves on Nov 6 (says >=1:1); withdrawals largely restored. Deposits resumed with an in-app USDT >= 100% check. Residual concentration risk accepted at this size.",
+  "GULF ESCALATION WIDENS (2026-11-17/18): ADNOC L&S vessel attacked in Hormuz Nov 17 evening (11 injured, 1 missing - a UAE company's ship with casualties); US self-defense strike on an IRGC site on Qeshm after Iranian drones at Bahrain; Kuwait air defences engaged drones Nov 18 (Iran claims Patriot hits at Ali Al Salem). First Kuwait involvement in this phase.",
   "TANKER OFF RAS AL KHAIMAH (2026-11-11): Dominica Prosperity hit by a projectile ~14nm NW of RAK (UKMTO). Plus the Nov 10 ADNOC L&S attack - two vessel attacks in UAE waters/approaches in two days. IRGC claims (unverified) a strike on a US radar in Bahrain on Nov 12-13.",
   "US STRIKES ON IRANIAN LAUNCHERS (reported 2026-11-16, Euronews): Bandar Lengeh and Sirik hit Sunday night; UKMTO logged two Hormuz tanker attacks Nov 16 (one ~7nm N of Khasab, near the UAE's RAK). Escalation continues despite Trump's reported preference to hold off.",
   "CARRIERS (2026-11-16): a third US carrier (USS Theodore Roosevelt) arrived in CENTCOM's area; Iran warns it could strike first. Israel's security cabinet met Nov 15 with no decision reported.",
@@ -2396,15 +2403,13 @@
   "fix_next_run": "Give the BUY-rated names their own threads before the HOLDs, give ETH a thread while its re-entry is live, and state one out-of-window rule in the brief instead of leaving each checker to invent it."
  },
  "upcoming": [
-  "Nvidia Q3 results - Tue Nov 17 ~21:20 UTC (01:20 Dubai Wed)",
-  "US October retail sales - Tue Nov 17 13:30 UTC",
-  "FOMC minutes - Wed Nov 18",
+  "FOMC minutes - Wed Nov 18 19:00 UTC (23:00 Dubai)",
   "Binance: all remaining withdrawal networks by ~Nov 22",
   "Emaar dividend paid Nov 27",
   "MSCI changes (incl. Strategy removal) effective Nov 30 close",
   "Next monthly contribution - Dec 1",
   "FAB rights-issue EGM Dec 7",
-  "FOMC Dec 8-9 (hike fully priced)",
+  "FOMC Dec 8-9 (hike ~95% priced)",
   "Emaar Development Dh15 offer closes 3pm Dec 10"
  ]
 }
