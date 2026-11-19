@@ -1,41 +1,65 @@
 {
- "generated_at_utc": "2026-11-18T07:11:32+00:00",
+ "generated_at_utc": "2026-11-19T07:09:24+00:00",
  "alerts": [
   {
-   "ticker": "XRPUSDT",
+   "ticker": "SOLUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "XRPUSDT: SELL -> STRONG SELL (score -45 -> -65) \u2014 oversold relief withdrawn, trend/momentum unchanged"
+   "msg": "SOLUSDT: SELL -> STRONG SELL (score -45 -> -65) \u2014 oversold relief withdrawn, trend/momentum unchanged"
   },
   {
-   "ticker": "DIB",
+   "ticker": "ADAUSDT",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "DIB: BUY -> STRONG BUY (score 20 -> 50)"
+   "msg": "ADAUSDT: SELL -> STRONG SELL (score -45 -> -65) \u2014 oversold relief withdrawn, trend/momentum unchanged"
   },
   {
-   "ticker": "DEWA",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "DEWA: BUY -> STRONG BUY (score 30 -> 50)"
-  },
-  {
-   "ticker": "FAB",
+   "ticker": "GRAMUSDT",
    "severity": "info",
    "type": "big_move",
-   "msg": "FAB moved +2.8% in the last day (now 22.16 AED)"
+   "msg": "GRAMUSDT moved -4.0% in the last day (now 1.027 USD)"
   },
   {
-   "ticker": "FAB",
-   "severity": "info",
-   "type": "rsi",
-   "msg": "FAB: RSI crossed above 70 (now 73.4)"
+   "ticker": "GRAMUSDT",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "GRAMUSDT: SELL -> STRONG SELL (score -35 -> -50)"
   },
   {
-   "ticker": "ADCB",
+   "ticker": "LTCUSDT",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "LTCUSDT: SELL -> STRONG SELL (score -45 -> -65) \u2014 oversold relief withdrawn, trend/momentum unchanged"
+  },
+  {
+   "ticker": "SALIK",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "SALIK: BUY -> STRONG BUY (score 35 -> 50)"
+  },
+  {
+   "ticker": "TECOM",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "TECOM: HOLD -> BUY (score 15 -> 35)"
+  },
+  {
+   "ticker": "ALDAR",
    "severity": "info",
    "type": "rsi",
-   "msg": "ADCB: RSI crossed above 70 (now 73.3)"
+   "msg": "ALDAR: RSI crossed above 70 (now 73.3)"
+  },
+  {
+   "ticker": "ADNOCGAS",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ADNOCGAS: BUY -> STRONG BUY (score 40 -> 50)"
+  },
+  {
+   "ticker": "ADPORTS",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ADPORTS: SELL -> BUY (score -25 -> 35) - HAIRLINE 50-day cross: price is only 0.08% above the average, inside the 0.5% buffer, so no trend change was confirmed"
   }
  ]
 }
