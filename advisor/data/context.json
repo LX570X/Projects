@@ -1,21 +1,21 @@
 {
- "updated": "2026-11-18T07:55+00:00",
+ "updated": "2026-11-19T08:00+00:00",
  "market_notes": [
   {
-   "market": "Gulf escalation: ADNOC ship hit, Kuwait under drone attack",
-   "note": "An ADNOC Logistics vessel was attacked in Hormuz on Tuesday evening (11 injured, 1 missing). The US struck an Iranian launch site on Qeshm; Kuwait intercepted drones this morning. No attack on UAE territory reported."
+   "market": "Fed minutes: more hikes coming, maybe a big one",
+   "note": "Almost all officials expect further hikes; Fed Governor Waller says December should be 0.5%. BTC ~63.8k (dipped to ~62k), ETH ~1,810. Nothing rated BUY; your plan continues."
   },
   {
-   "market": "Nvidia beats; crypto doesn't care",
-   "note": "Record $115.8B revenue and a strong outlook, but BTC stayed ~64.8k and ETH ~1,816. US stocks closed Tuesday at their lowest since July. Fed minutes tonight 23:00 Dubai."
+   "market": "Binance wins a $6.5B freezing order in Abu Dhabi",
+   "note": "The ADGM court froze ~26,000 wallets linked to the hackers. No new problems; full withdrawals still targeted ~Nov 22."
   },
   {
-   "market": "Binance: reserves above 100%",
-   "note": "Latest proof shows BTC and ETH backed slightly over 100%. Full withdrawals still targeted ~Nov 22. Your Nov 1 list still applies."
+   "market": "Gulf: Iran attacks Kuwait for the first time",
+   "note": "Drones at a US base in Kuwait; another tanker hit off Khasab. Israel is reportedly pushing the US for a 4-7 day air campaign; Trump hasn't decided. No attack on the UAE reported."
   },
   {
-   "market": "UAE stocks keep climbing",
-   "note": "Dubai +0.6%, Abu Dhabi +0.9% Tuesday; banks leading. Several names now overbought (RSI > 70)."
+   "market": "JPMorgan turns positive on UAE stocks",
+   "note": "It upgraded the UAE to Overweight and picked Aldar, ADCB and ADNOC Gas. UAE markets were flat Wednesday."
   }
  ],
  "asset_notes": {
@@ -1427,6 +1427,12 @@
     "impact": "bullish",
     "date": "2026-11-10",
     "source": "ADNOC Gas release via PR Newswire; Gulf News"
+   },
+   {
+    "headline": "Named a JPMorgan top-10 UAE pick (Nov 17)",
+    "impact": "bullish",
+    "date": "2026-11-17",
+    "source": "Reuters via Devdiscourse"
    }
   ],
   "ALDAR": [
@@ -1459,6 +1465,12 @@
     "impact": "bullish",
     "date": "2026-10-03",
     "source": "advisor data"
+   },
+   {
+    "headline": "JPMorgan (Nov 17) upgraded MSCI UAE to Overweight and added Aldar to its top-10 UAE picks (with ADCB and ADNOC Gas)",
+    "impact": "bullish",
+    "date": "2026-11-17",
+    "source": "Reuters via Devdiscourse; FXStreet"
    }
   ],
   "FAB": [
@@ -2316,6 +2328,8 @@
  },
  "risk_flags": [
   "VENUE RISK (updated 2026-11-07): all of the user's crypto is on Binance, which lost ~$6.3B to a hack on 2026-10-29. Binance published its latest proof of reserves on Nov 6 (says >=1:1); withdrawals largely restored. Deposits resumed with an in-app USDT >= 100% check. Residual concentration risk accepted at this size.",
+  "KUWAIT + CAMPAIGN RISK (2026-11-18/19): Iran's first attack on Kuwait (Ali Al Salem); NYT reports Netanyahu urging a 4-7 day US-Israeli air campaign, Trump undecided. A campaign would likely trigger wider Iranian retaliation across the Gulf, including the UAE.",
+  "FED (2026-11-18): minutes show near-unanimous support for further hikes; Waller explicitly favours 50bp in December. A 50bp surprise would be another hit to crypto.",
   "GULF ESCALATION WIDENS (2026-11-17/18): ADNOC L&S vessel attacked in Hormuz Nov 17 evening (11 injured, 1 missing - a UAE company's ship with casualties); US self-defense strike on an IRGC site on Qeshm after Iranian drones at Bahrain; Kuwait air defences engaged drones Nov 18 (Iran claims Patriot hits at Ali Al Salem). First Kuwait involvement in this phase.",
   "TANKER OFF RAS AL KHAIMAH (2026-11-11): Dominica Prosperity hit by a projectile ~14nm NW of RAK (UKMTO). Plus the Nov 10 ADNOC L&S attack - two vessel attacks in UAE waters/approaches in two days. IRGC claims (unverified) a strike on a US radar in Bahrain on Nov 12-13.",
   "US STRIKES ON IRANIAN LAUNCHERS (reported 2026-11-16, Euronews): Bandar Lengeh and Sirik hit Sunday night; UKMTO logged two Hormuz tanker attacks Nov 16 (one ~7nm N of Khasab, near the UAE's RAK). Escalation continues despite Trump's reported preference to hold off.",
@@ -2403,13 +2417,12 @@
   "fix_next_run": "Give the BUY-rated names their own threads before the HOLDs, give ETH a thread while its re-entry is live, and state one out-of-window rule in the brief instead of leaving each checker to invent it."
  },
  "upcoming": [
-  "FOMC minutes - Wed Nov 18 19:00 UTC (23:00 Dubai)",
   "Binance: all remaining withdrawal networks by ~Nov 22",
   "Emaar dividend paid Nov 27",
   "MSCI changes (incl. Strategy removal) effective Nov 30 close",
   "Next monthly contribution - Dec 1",
   "FAB rights-issue EGM Dec 7",
-  "FOMC Dec 8-9 (hike ~95% priced)",
+  "FOMC Dec 8-9 (25bp ~93-96%, 50bp rising)",
   "Emaar Development Dh15 offer closes 3pm Dec 10"
  ]
 }

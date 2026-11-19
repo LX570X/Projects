@@ -2883,6 +2883,13 @@
    "action": "no change - Nov-1 go-ahead stands",
    "rationale": "Crypto muted; every coin SELL or worse. Venue check clean (BTC/ETH reserves >=100%). Nvidia beat; US stocks at a four-month low. Gulf escalation widened (ADNOC vessel hit, US strike on Qeshm, Kuwait intercepts) - recorded; UAE stocks the user does not hold. No notification.",
    "status": "no action"
+  },
+  {
+   "date": "2026-11-19",
+   "ticker": "daily",
+   "action": "no change - Nov-1 go-ahead stands",
+   "rationale": "Hawkish Fed minutes and Waller's 50bp talk kept crypto near its lows; every coin SELL or worse. Venue check clean; Binance won a $6.5B ADGM freezing order against the hackers. Gulf escalation (Kuwait attacked; Netanyahu pushing a campaign) recorded. No notification.",
+   "status": "no action"
   }
  ]
 }

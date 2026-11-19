@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T07:55+00:00",
+ "updated": "2026-11-19T08:00+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": null,
@@ -539,11 +539,11 @@
   "why_it_matters": "On a day when every asset on the crypto board fell and four names confirmed trend breaks, the system produced no trade. That is the design: the BTC stop is a single daily close below a fixed level and that level was not touched, and the satellite trigger needed a qualifying name and there was none. Both outcomes were computed, not decided."
  },
  "book_signal_state": {
-  "as_of": "2026-11-18",
+  "as_of": "2026-11-19",
   "for_the_user": "Nov-1 list: go-ahead stands; still waiting for 'done'. No notification.",
-  "crypto": "Muted: BTC 64,774, ETH 1,816; Nvidia's beat barely moved crypto. BTC ETFs -$239.9M on Nov 17 (-$1.0B over five days). Every coin SELL or worse. FOMC minutes today 19:00 UTC (23:00 Dubai).",
-  "uae": "Tue Nov 17 (Reuters): Dubai +0.6% to 6,248 (Emaar +1.3%), Abu Dhabi +0.9% to 9,771. Wednesday draft higher again (FAB 22.16, ADCB 18.14 - RSI > 70). DIB, DEWA and Air Arabia to STRONG BUY. Not buyable until the user has a broker.",
-  "macro": "Nvidia Q3 revenue $115.8B vs ~$109B expected, Q4 guide $130B; SEC reportedly probing its disclosures around Huang's exit. Nov 17: S&P 500 -1.0% to its lowest close since July; retail sales +0.2% (core +0.6%); December hike ~95%; 10-year ~5.10%. GULF ESCALATION: an ADNOC L&S vessel was attacked in Hormuz on the evening of Nov 17 (11 injured, 1 missing); the US struck an IRGC launch site on Qeshm after Iranian drone attacks on Bahrain; Kuwait intercepted drones early Nov 18 (Iran claims hits at Ali Al Salem). No attack on UAE territory found. Brent ~$93."
+  "crypto": "Grinding near the lows: BTC 63,829 (Wednesday low ~62.1k), ETH 1,808 (low ~1,733). BTC ETFs -$306.5M on Nov 18. Every coin SELL or worse.",
+  "uae": "Wed Nov 18: Dubai -0.2%, Abu Dhabi +0.3% (Reuters). JPMorgan upgraded MSCI UAE to Overweight on Nov 17 and named Aldar, ADCB and ADNOC Gas among its top-10 picks. Many STRONG BUY ratings; several overbought (Aldar, FAB, ADCB RSI > 70). Not buyable until the user has a broker.",
+  "macro": "October FOMC minutes (Nov 18) hawkish: almost all officials expect more hikes, a couple open to >25bp in December; Waller told CNBC 'you have to go 50 in December'. Dow -1.1% to a 3-month low; S&P 500 fifth straight loss. Gulf: Iran's first attack on Kuwait (Ali Al Salem, Nov 18); a tanker hit ~6nm N of Khasab Nov 18 (crew safe); the ADNOC L&S attack (Nov 17) still unattributed, one crew missing. NYT: Netanyahu urging a 4-7 day US-Israeli campaign; Trump undecided. Brent $91.95. No attack on UAE territory found."
  },
  "bookkeeping_correction": {
   "found": "2026-09-29",
@@ -917,6 +917,11 @@
   "status_2026_11_18": {
    "venue_check": "No new incident, outage, withdrawal pause or regulator action found for Nov 16-18.",
    "progress": "Latest update still Nov 14 (87 networks; rest targeted ~Nov 22). Nov 14 proof of reserves: BTC 100.05%, ETH 100.02% of customer balances (The Crypto Basic).",
+   "decision": "Go-ahead stands."
+  },
+  "status_2026_11_19": {
+   "venue_check": "No new incident, outage, withdrawal pause or regulator action found for Nov 17-19.",
+   "progress": "Nov 18: the ADGM Courts (Abu Dhabi) granted Binance a worldwide freezing order valued at $6.5B against the unidentified hackers, covering ~26,000 linked wallets (The Block, Bloomberg). Latest withdrawal update still Nov 14 (rest targeted ~Nov 22). Binance plans to enter five Asian markets and says it needs no new funding.",
    "decision": "Go-ahead stands."
   }
  },
