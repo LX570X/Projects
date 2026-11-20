@@ -2890,6 +2890,13 @@
    "action": "no change - Nov-1 go-ahead stands",
    "rationale": "Hawkish Fed minutes and Waller's 50bp talk kept crypto near its lows; every coin SELL or worse. Venue check clean; Binance won a $6.5B ADGM freezing order against the hackers. Gulf escalation (Kuwait attacked; Netanyahu pushing a campaign) recorded. No notification.",
    "status": "no action"
+  },
+  {
+   "date": "2026-11-20",
+   "ticker": "daily",
+   "action": "no change - Nov-1 go-ahead stands through the new low",
+   "rationale": "BTC set a new four-month low (61.3k) on a US tech sell-off, Fed-hike pricing and a record IBIT outflow; every coin SELL or worse, so no extra deployment. Venue check clean. Trump deferring any Iran decision to next year lowers near-term Gulf risk. No notification.",
+   "status": "no action"
   }
  ]
 }

@@ -1,21 +1,21 @@
 {
- "updated": "2026-11-19T08:00+00:00",
+ "updated": "2026-11-20T07:55+00:00",
  "market_notes": [
   {
-   "market": "Fed minutes: more hikes coming, maybe a big one",
-   "note": "Almost all officials expect further hikes; Fed Governor Waller says December should be 0.5%. BTC ~63.8k (dipped to ~62k), ETH ~1,810. Nothing rated BUY; your plan continues."
+   "market": "Bitcoin hits its lowest since July",
+   "note": "~61.3k overnight (now ~61.9k), ETH ~1,750. US stocks fell 2% as Anthropic listed; BlackRock's bitcoin fund saw a record $541M withdrawal. Next line traders watch: ~$57.8k (July low). Your plan continues; nothing rated BUY."
   },
   {
-   "market": "Binance wins a $6.5B freezing order in Abu Dhabi",
-   "note": "The ADGM court froze ~26,000 wallets linked to the hackers. No new problems; full withdrawals still targeted ~Nov 22."
+   "market": "Trump: no rush on Iran until next year",
+   "note": "That lowers the near-term risk of a big US-Israeli campaign. A Houthi missile hit a Riyadh tower on Thursday. No attack on the UAE reported."
   },
   {
-   "market": "Gulf: Iran attacks Kuwait for the first time",
-   "note": "Drones at a US base in Kuwait; another tanker hit off Khasab. Israel is reportedly pushing the US for a 4-7 day air campaign; Trump hasn't decided. No attack on the UAE reported."
+   "market": "Binance: quiet",
+   "note": "No new problems; still aiming to reopen all withdrawals by ~Nov 22. The hackers keep moving stolen ETH, which may weigh on ETH's price."
   },
   {
-   "market": "JPMorgan turns positive on UAE stocks",
-   "note": "It upgraded the UAE to Overweight and picked Aldar, ADCB and ADNOC Gas. UAE markets were flat Wednesday."
+   "market": "UAE stocks ease",
+   "note": "Dubai -0.2% Thursday; banks gave back some gains."
   }
  ],
  "asset_notes": {
@@ -517,6 +517,12 @@
     "impact": "bearish",
     "date": "2026-11-16",
     "source": "Yahoo Finance history, crypto.news, Invezz, CryptoTicker"
+   },
+   {
+    "headline": "Lowest since early July ($61,273) on Nov 19 amid the Anthropic-IPO tech sell-off; record $541M IBIT outflow; ~$660M liquidations; seventh weekly loss in prospect",
+    "impact": "bearish",
+    "date": "2026-11-20",
+    "source": "CoinDesk, Bloomberg, crypto.news"
    }
   ],
   "ETHUSDT": [
@@ -783,6 +789,12 @@
     "impact": "bearish",
     "date": "2026-11-15",
     "source": "CryptoTicker, Bloomberg via The Edge"
+   },
+   {
+    "headline": "Binance hacker wallet moved ~291k ETH (> $500M) since Nov 17 (Lookonchain) - possible selling overhang; ETH ~1,745",
+    "impact": "bearish",
+    "date": "2026-11-19",
+    "source": "The Defiant, crypto.news, TokenPost"
    }
   ],
   "BNBUSDT": [
@@ -1100,6 +1112,12 @@
     "headline": "+4.3% on Wed Nov 11 (Dubai +0.8%) after +3.5% Tue - no bank-specific catalyst found",
     "impact": "bullish",
     "date": "2026-11-11",
+    "source": "Reuters via Business Recorder"
+   },
+   {
+    "headline": "-1.6% Thu Nov 19 (Reuters: regional attacks and hawkish Fed minutes); lower again in Friday's draft",
+    "impact": "bearish",
+    "date": "2026-11-19",
     "source": "Reuters via Business Recorder"
    }
   ],
@@ -2328,8 +2346,9 @@
  },
  "risk_flags": [
   "VENUE RISK (updated 2026-11-07): all of the user's crypto is on Binance, which lost ~$6.3B to a hack on 2026-10-29. Binance published its latest proof of reserves on Nov 6 (says >=1:1); withdrawals largely restored. Deposits resumed with an in-app USDT >= 100% check. Residual concentration risk accepted at this size.",
-  "KUWAIT + CAMPAIGN RISK (2026-11-18/19): Iran's first attack on Kuwait (Ali Al Salem); NYT reports Netanyahu urging a 4-7 day US-Israeli air campaign, Trump undecided. A campaign would likely trigger wider Iranian retaliation across the Gulf, including the UAE.",
+  "NEW LOW (2026-11-19): BTC $61,273, below the Nov 15 low; record IBIT outflow ($541M); Bitfinex flags the July cycle low ~$57.8k as the next level if outflows persist. Hacker ETH movements (~291k ETH since Nov 17) are an ETH-specific overhang.",
   "FED (2026-11-18): minutes show near-unanimous support for further hikes; Waller explicitly favours 50bp in December. A 50bp surprise would be another hit to crypto.",
+  "CAMPAIGN RISK EASED (2026-11-19): Trump told Axios he is 'not rushing' an Iran decision until after the start of the year. Iran's first attack on Kuwait (Nov 18) and the Houthi strike on Riyadh's PIF tower (Nov 19) show the conflict is still active.",
   "GULF ESCALATION WIDENS (2026-11-17/18): ADNOC L&S vessel attacked in Hormuz Nov 17 evening (11 injured, 1 missing - a UAE company's ship with casualties); US self-defense strike on an IRGC site on Qeshm after Iranian drones at Bahrain; Kuwait air defences engaged drones Nov 18 (Iran claims Patriot hits at Ali Al Salem). First Kuwait involvement in this phase.",
   "TANKER OFF RAS AL KHAIMAH (2026-11-11): Dominica Prosperity hit by a projectile ~14nm NW of RAK (UKMTO). Plus the Nov 10 ADNOC L&S attack - two vessel attacks in UAE waters/approaches in two days. IRGC claims (unverified) a strike on a US radar in Bahrain on Nov 12-13.",
   "US STRIKES ON IRANIAN LAUNCHERS (reported 2026-11-16, Euronews): Bandar Lengeh and Sirik hit Sunday night; UKMTO logged two Hormuz tanker attacks Nov 16 (one ~7nm N of Khasab, near the UAE's RAK). Escalation continues despite Trump's reported preference to hold off.",
@@ -2417,12 +2436,13 @@
   "fix_next_run": "Give the BUY-rated names their own threads before the HOLDs, give ETH a thread while its re-entry is live, and state one out-of-window rule in the brief instead of leaving each checker to invent it."
  },
  "upcoming": [
-  "Binance: all remaining withdrawal networks by ~Nov 22",
+  "Binance: all remaining withdrawal networks by ~Nov 22 - check Nov 22-23",
+  "BTC weekly close - Sun Nov 22",
   "Emaar dividend paid Nov 27",
   "MSCI changes (incl. Strategy removal) effective Nov 30 close",
   "Next monthly contribution - Dec 1",
   "FAB rights-issue EGM Dec 7",
-  "FOMC Dec 8-9 (25bp ~93-96%, 50bp rising)",
+  "FOMC Dec 8-9",
   "Emaar Development Dh15 offer closes 3pm Dec 10"
  ]
 }

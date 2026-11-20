@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T08:00+00:00",
+ "updated": "2026-11-20T07:55+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": null,
@@ -539,11 +539,11 @@
   "why_it_matters": "On a day when every asset on the crypto board fell and four names confirmed trend breaks, the system produced no trade. That is the design: the BTC stop is a single daily close below a fixed level and that level was not touched, and the satellite trigger needed a qualifying name and there was none. Both outcomes were computed, not decided."
  },
  "book_signal_state": {
-  "as_of": "2026-11-19",
-  "for_the_user": "Nov-1 list: go-ahead stands; still waiting for 'done'. No notification.",
-  "crypto": "Grinding near the lows: BTC 63,829 (Wednesday low ~62.1k), ETH 1,808 (low ~1,733). BTC ETFs -$306.5M on Nov 18. Every coin SELL or worse.",
-  "uae": "Wed Nov 18: Dubai -0.2%, Abu Dhabi +0.3% (Reuters). JPMorgan upgraded MSCI UAE to Overweight on Nov 17 and named Aldar, ADCB and ADNOC Gas among its top-10 picks. Many STRONG BUY ratings; several overbought (Aldar, FAB, ADCB RSI > 70). Not buyable until the user has a broker.",
-  "macro": "October FOMC minutes (Nov 18) hawkish: almost all officials expect more hikes, a couple open to >25bp in December; Waller told CNBC 'you have to go 50 in December'. Dow -1.1% to a 3-month low; S&P 500 fifth straight loss. Gulf: Iran's first attack on Kuwait (Ali Al Salem, Nov 18); a tanker hit ~6nm N of Khasab Nov 18 (crew safe); the ADNOC L&S attack (Nov 17) still unattributed, one crew missing. NYT: Netanyahu urging a 4-7 day US-Israeli campaign; Trump undecided. Brent $91.95. No attack on UAE territory found."
+  "as_of": "2026-11-20",
+  "for_the_user": "Nov-1 list: go-ahead stands; still waiting for 'done'. If bought ~Nov 7, the $68 of BTC+ETH is worth ~$54 (-20%); no stop on DCA core by design. No notification.",
+  "crypto": "New low: BTC 61,273 late Nov 19 (lowest since early July), now 61,936; ETH 1,747 (low 1,718). Drivers: US tech sell-off on Anthropic's IPO day (Dow -2.2%, first close below 50,000 since June), Fed-hike pricing, a record $541M IBIT outflow ($582M total; $3.47B in November), ~$660M liquidations. Fear & Greed 10-11. Bitfinex: a sustained break of $61.3k with heavy ETF outflows exposes the July cycle low (~$57.8k). On track for a seventh weekly loss. Every coin SELL or worse.",
+  "uae": "Thu Nov 19 (Reuters): Dubai -0.2%, Emirates NBD -1.6% on regional attacks and the hawkish Fed minutes. Friday draft lower again (Emirates NBD 34.88 vs Wednesday 36.02). Not buyable until the user has a broker.",
+  "macro": "Trump told Axios he is 'not rushing' an Iran decision until after the start of 2027 - lowers near-term campaign risk. A Houthi missile damaged Riyadh's PIF tower Nov 19 (no casualties). No attack on the UAE found. Brent just under $92."
  },
  "bookkeeping_correction": {
   "found": "2026-09-29",
@@ -923,6 +923,11 @@
    "venue_check": "No new incident, outage, withdrawal pause or regulator action found for Nov 17-19.",
    "progress": "Nov 18: the ADGM Courts (Abu Dhabi) granted Binance a worldwide freezing order valued at $6.5B against the unidentified hackers, covering ~26,000 linked wallets (The Block, Bloomberg). Latest withdrawal update still Nov 14 (rest targeted ~Nov 22). Binance plans to enter five Asian markets and says it needs no new funding.",
    "decision": "Go-ahead stands."
+  },
+  "status_2026_11_20": {
+   "venue_check": "No new incident, outage, withdrawal pause or regulator action found for Nov 18-20 (status tracker: operational Nov 19).",
+   "progress": "No update since Nov 14 on reopening the remaining networks by ~Nov 22. The hacker wallet moved ~291k ETH (> $500M) since Nov 17 (Lookonchain) - laundering, not a Binance incident, but a possible ETH overhang; ~$2.85B frozen, ~$2.56B still in hacker-linked wallets.",
+   "decision": "Go-ahead stands. Check on Nov 22-23 whether the full-reopening target was met."
   }
  },
  "pre_uae_trade_fixes": [
