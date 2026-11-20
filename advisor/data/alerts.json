@@ -1,65 +1,83 @@
 {
- "generated_at_utc": "2026-11-19T07:09:24+00:00",
+ "generated_at_utc": "2026-11-20T07:09:44+00:00",
  "alerts": [
   {
    "ticker": "SOLUSDT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "SOLUSDT: SELL -> STRONG SELL (score -45 -> -65) \u2014 oversold relief withdrawn, trend/momentum unchanged"
+   "severity": "info",
+   "type": "rsi",
+   "msg": "SOLUSDT: RSI crossed below 30 (now 26.8)"
   },
   {
    "ticker": "ADAUSDT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "ADAUSDT: SELL -> STRONG SELL (score -45 -> -65) \u2014 oversold relief withdrawn, trend/momentum unchanged"
-  },
-  {
-   "ticker": "GRAMUSDT",
    "severity": "info",
-   "type": "big_move",
-   "msg": "GRAMUSDT moved -4.0% in the last day (now 1.027 USD)"
-  },
-  {
-   "ticker": "GRAMUSDT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "GRAMUSDT: SELL -> STRONG SELL (score -35 -> -50)"
+   "type": "rsi",
+   "msg": "ADAUSDT: RSI crossed below 30 (now 27.8)"
   },
   {
    "ticker": "LTCUSDT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "LTCUSDT: SELL -> STRONG SELL (score -45 -> -65) \u2014 oversold relief withdrawn, trend/momentum unchanged"
+   "severity": "info",
+   "type": "big_move",
+   "msg": "LTCUSDT moved -7.0% in the last day (now 41.58 USD)"
   },
   {
-   "ticker": "SALIK",
+   "ticker": "LTCUSDT",
+   "severity": "info",
+   "type": "rsi",
+   "msg": "LTCUSDT: RSI crossed below 30 (now 25.1)"
+  },
+  {
+   "ticker": "EMAAR",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "SALIK: BUY -> STRONG BUY (score 35 -> 50)"
+   "msg": "EMAAR: STRONG BUY -> BUY (score 65 -> 40)"
+  },
+  {
+   "ticker": "EMAAR",
+   "severity": "info",
+   "type": "macd",
+   "msg": "EMAAR: MACD bearish cross"
+  },
+  {
+   "ticker": "EMIRATESNBD",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "EMIRATESNBD moved -3.2% in the last day (now 34.88 AED)"
+  },
+  {
+   "ticker": "TALABAT",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "TALABAT: HOLD -> BUY (score 15 -> 30)"
+  },
+  {
+   "ticker": "AIRARABIA",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "AIRARABIA: STRONG BUY -> BUY (score 50 -> 25)"
+  },
+  {
+   "ticker": "AIRARABIA",
+   "severity": "info",
+   "type": "macd",
+   "msg": "AIRARABIA: MACD bearish cross"
   },
   {
    "ticker": "TECOM",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "TECOM: HOLD -> BUY (score 15 -> 35)"
-  },
-  {
-   "ticker": "ALDAR",
    "severity": "info",
-   "type": "rsi",
-   "msg": "ALDAR: RSI crossed above 70 (now 73.3)"
+   "type": "big_move",
+   "msg": "TECOM moved -2.9% in the last day (now 3.32 AED)"
   },
   {
-   "ticker": "ADNOCGAS",
+   "ticker": "FAB",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "ADNOCGAS: BUY -> STRONG BUY (score 40 -> 50)"
+   "msg": "FAB: BUY -> STRONG BUY (score 35 -> 65) \u2014 penalty relief only, trend/momentum unchanged"
   },
   {
-   "ticker": "ADPORTS",
+   "ticker": "ADNOCDRILL",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "ADPORTS: SELL -> BUY (score -25 -> 35) - HAIRLINE 50-day cross: price is only 0.08% above the average, inside the 0.5% buffer, so no trend change was confirmed"
+   "msg": "ADNOCDRILL: STRONG BUY -> BUY (score 50 -> 40)"
   }
  ]
 }
