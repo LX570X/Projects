@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T07:55+00:00",
+ "updated": "2026-11-21T07:55+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": null,
@@ -539,11 +539,11 @@
   "why_it_matters": "On a day when every asset on the crypto board fell and four names confirmed trend breaks, the system produced no trade. That is the design: the BTC stop is a single daily close below a fixed level and that level was not touched, and the satellite trigger needed a qualifying name and there was none. Both outcomes were computed, not decided."
  },
  "book_signal_state": {
-  "as_of": "2026-11-20",
-  "for_the_user": "Nov-1 list: go-ahead stands; still waiting for 'done'. If bought ~Nov 7, the $68 of BTC+ETH is worth ~$54 (-20%); no stop on DCA core by design. No notification.",
-  "crypto": "New low: BTC 61,273 late Nov 19 (lowest since early July), now 61,936; ETH 1,747 (low 1,718). Drivers: US tech sell-off on Anthropic's IPO day (Dow -2.2%, first close below 50,000 since June), Fed-hike pricing, a record $541M IBIT outflow ($582M total; $3.47B in November), ~$660M liquidations. Fear & Greed 10-11. Bitfinex: a sustained break of $61.3k with heavy ETF outflows exposes the July cycle low (~$57.8k). On track for a seventh weekly loss. Every coin SELL or worse.",
-  "uae": "Thu Nov 19 (Reuters): Dubai -0.2%, Emirates NBD -1.6% on regional attacks and the hawkish Fed minutes. Friday draft lower again (Emirates NBD 34.88 vs Wednesday 36.02). Not buyable until the user has a broker.",
-  "macro": "Trump told Axios he is 'not rushing' an Iran decision until after the start of 2027 - lowers near-term campaign risk. A Houthi missile damaged Riyadh's PIF tower Nov 19 (no casualties). No attack on the UAE found. Brent just under $92."
+  "as_of": "2026-11-21",
+  "for_the_user": "Nov-1 list: go-ahead stands; still waiting for 'done'. If bought ~Nov 7, the $68 of BTC+ETH is worth ~$51 (-25%); no stop on DCA core by design. No notification.",
+  "crypto": "Crash: BTC broke the July low - ~$55.1-55.8k on Nov 21 (lowest since Sep 2024, >50% below the Oct 2025 record), now 58,261; ETH low 1,538, now 1,637. ~$2.4B of liquidations; record ETF outflows (-$582M Nov 19, ~$3.5B in November). Cross-asset: Nasdaq -5.3%, S&P 500 -3.7% (correction) on Nov 20 as Nvidia fell 12-14% on a reported SEC accounting probe; a December hike fully priced. No exchange/stablecoin shock. Every coin SELL or worse (RSI 16-29).",
+  "uae": "Weekend. DU STRONG BUY with RSI 71; TECOM and ADNOC Drilling hairline 50-day dips (SELL, unconfirmed). Not buyable until the user has a broker.",
+  "macro": "US: Dow and S&P 500 in correction; Nvidia under a reported SEC probe. Gulf: Trump deferred any Iran decision to next year; no attack on the UAE found."
  },
  "bookkeeping_correction": {
   "found": "2026-09-29",
@@ -928,6 +928,11 @@
    "venue_check": "No new incident, outage, withdrawal pause or regulator action found for Nov 18-20 (status tracker: operational Nov 19).",
    "progress": "No update since Nov 14 on reopening the remaining networks by ~Nov 22. The hacker wallet moved ~291k ETH (> $500M) since Nov 17 (Lookonchain) - laundering, not a Binance incident, but a possible ETH overhang; ~$2.85B frozen, ~$2.56B still in hacker-linked wallets.",
    "decision": "Go-ahead stands. Check on Nov 22-23 whether the full-reopening target was met."
+  },
+  "status_2026_11_21": {
+   "venue_check": "BNB's ~8-10% drop matched BTC/ETH in the market-wide crash; no Binance-specific trigger, withdrawal pause, outage, regulator action or solvency rumour found for Nov 19-21. USDT ~$0.998-1.002 (no depeg).",
+   "progress": "No update since Nov 14 on reopening all remaining networks by ~Nov 22. Elliptic: ~488k ETH moved out of hack wallets since Nov 17, mostly parked, little cashed out. ADGM freezing order review hearing Dec 1.",
+   "decision": "Go-ahead stands. Check Nov 22-23 whether the full-reopening target was met."
   }
  },
  "pre_uae_trade_fixes": [

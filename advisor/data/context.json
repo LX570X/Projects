@@ -1,21 +1,21 @@
 {
- "updated": "2026-11-20T07:55+00:00",
+ "updated": "2026-11-21T07:55+00:00",
  "market_notes": [
   {
-   "market": "Bitcoin hits its lowest since July",
-   "note": "~61.3k overnight (now ~61.9k), ETH ~1,750. US stocks fell 2% as Anthropic listed; BlackRock's bitcoin fund saw a record $541M withdrawal. Next line traders watch: ~$57.8k (July low). Your plan continues; nothing rated BUY."
+   "market": "Bitcoin crashes to ~55.5k - lowest since September 2024",
+   "note": "Now ~58.3k, more than 50% below its record. ETH touched 1,538. About $2.4B of leveraged bets wiped out. Your plan continues - but only put in money you won't need for years."
   },
   {
-   "market": "Trump: no rush on Iran until next year",
-   "note": "That lowers the near-term risk of a big US-Israeli campaign. A Houthi missile hit a Riyadh tower on Thursday. No attack on the UAE reported."
+   "market": "It's a whole-market sell-off",
+   "note": "US tech stocks crashed Friday (Nasdaq -5.3%, S&P 500 -3.7%) after a report of an SEC probe into Nvidia's accounting. A December Fed hike is fully priced."
   },
   {
-   "market": "Binance: quiet",
-   "note": "No new problems; still aiming to reopen all withdrawals by ~Nov 22. The hackers keep moving stolen ETH, which may weigh on ETH's price."
+   "market": "Binance held up",
+   "note": "BNB fell with everything else; no outage, withdrawal pause or Binance-specific problem. USDT stayed at $1. Full withdrawals still targeted ~Nov 22."
   },
   {
-   "market": "UAE stocks ease",
-   "note": "Dubai -0.2% Thursday; banks gave back some gains."
+   "market": "Next steps",
+   "note": "Bitcoin's weekly close Sunday night. Your next monthly contribution is Dec 1."
   }
  ],
  "asset_notes": {
@@ -523,6 +523,12 @@
     "impact": "bearish",
     "date": "2026-11-20",
     "source": "CoinDesk, Bloomberg, crypto.news"
+   },
+   {
+    "headline": "Below the July low: ~$55,530-55,830 on Nov 21 (lowest since Sep 2024), -10% on the day; ~$2.4B of 24h liquidations; >50% below the Oct 2025 record",
+    "impact": "bearish",
+    "date": "2026-11-21",
+    "source": "Reuters via TradingView, Bloomberg, CoinDesk (CoinGlass), Investing.com"
    }
   ],
   "ETHUSDT": [
@@ -851,6 +857,12 @@
     "impact": "bearish",
     "date": "2026-10-09",
     "source": "Bloomberg, Crypto Briefing, The Daily Hodl (Oct 13), KuCoin, BNB Chain blog"
+   },
+   {
+    "headline": "~-8-10% to ~$511-527 on Nov 21, in line with BTC/ETH; no BNB- or Binance-specific trigger found",
+    "impact": "bearish",
+    "date": "2026-11-21",
+    "source": "TokenPost, Blockchain.News, CoinCentral"
    }
   ],
   "SOLUSDT": [
@@ -2346,6 +2358,7 @@
  },
  "risk_flags": [
   "VENUE RISK (updated 2026-11-07): all of the user's crypto is on Binance, which lost ~$6.3B to a hack on 2026-10-29. Binance published its latest proof of reserves on Nov 6 (says >=1:1); withdrawals largely restored. Deposits resumed with an in-app USDT >= 100% check. Residual concentration risk accepted at this size.",
+  "BREAKDOWN (2026-11-20/21): BTC broke its July cycle low (~57.8k) to ~$55.5k (lowest since Sep 2024; >50% below the ATH); cross-asset AI sell-off (Nasdaq -5.3%, S&P -3.7% on Nov 20; Nvidia -12-14% on a reported SEC accounting probe). ~$2.4B liquidations. No venue or stablecoin failure.",
   "NEW LOW (2026-11-19): BTC $61,273, below the Nov 15 low; record IBIT outflow ($541M); Bitfinex flags the July cycle low ~$57.8k as the next level if outflows persist. Hacker ETH movements (~291k ETH since Nov 17) are an ETH-specific overhang.",
   "FED (2026-11-18): minutes show near-unanimous support for further hikes; Waller explicitly favours 50bp in December. A 50bp surprise would be another hit to crypto.",
   "CAMPAIGN RISK EASED (2026-11-19): Trump told Axios he is 'not rushing' an Iran decision until after the start of the year. Iran's first attack on Kuwait (Nov 18) and the Houthi strike on Riyadh's PIF tower (Nov 19) show the conflict is still active.",
@@ -2437,10 +2450,11 @@
  },
  "upcoming": [
   "Binance: all remaining withdrawal networks by ~Nov 22 - check Nov 22-23",
-  "BTC weekly close - Sun Nov 22",
+  "BTC weekly close - Sun Nov 22 (00:00 UTC Mon)",
   "Emaar dividend paid Nov 27",
   "MSCI changes (incl. Strategy removal) effective Nov 30 close",
   "Next monthly contribution - Dec 1",
+  "ADGM freezing-order review hearing - Dec 1",
   "FAB rights-issue EGM Dec 7",
   "FOMC Dec 8-9",
   "Emaar Development Dh15 offer closes 3pm Dec 10"
