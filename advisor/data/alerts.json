@@ -1,83 +1,143 @@
 {
- "generated_at_utc": "2026-11-20T07:09:44+00:00",
+ "generated_at_utc": "2026-11-21T07:09:21+00:00",
  "alerts": [
+  {
+   "ticker": "BTCUSDT",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "BTCUSDT moved -5.9% in the last day (now 58260.8 USD)"
+  },
+  {
+   "ticker": "ETHUSDT",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "ETHUSDT moved -6.3% in the last day (now 1637.48 USD)"
+  },
+  {
+   "ticker": "BNBUSDT",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "BNBUSDT moved -7.8% in the last day (now 527.84 USD)"
+  },
   {
    "ticker": "SOLUSDT",
    "severity": "info",
+   "type": "big_move",
+   "msg": "SOLUSDT moved -6.0% in the last day (now 68.35 USD)"
+  },
+  {
+   "ticker": "XRPUSDT",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "XRPUSDT moved -7.0% in the last day (now 0.9005 USD)"
+  },
+  {
+   "ticker": "XRPUSDT",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "XRPUSDT: STRONG SELL -> SELL (score -65 -> -45) \u2014 oversold relief applied, trend/momentum unchanged"
+  },
+  {
+   "ticker": "XRPUSDT",
+   "severity": "info",
    "type": "rsi",
-   "msg": "SOLUSDT: RSI crossed below 30 (now 26.8)"
+   "msg": "XRPUSDT: RSI crossed below 30 (now 24.9)"
+  },
+  {
+   "ticker": "DOGEUSDT",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "DOGEUSDT moved -6.8% in the last day (now 0.05368 USD)"
+  },
+  {
+   "ticker": "LINKUSDT",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "LINKUSDT moved -5.3% in the last day (now 8.396 USD)"
+  },
+  {
+   "ticker": "LINKUSDT",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "LINKUSDT: STRONG SELL -> SELL (score -65 -> -45) \u2014 oversold relief applied, trend/momentum unchanged"
+  },
+  {
+   "ticker": "LINKUSDT",
+   "severity": "info",
+   "type": "rsi",
+   "msg": "LINKUSDT: RSI crossed below 30 (now 27.5)"
+  },
+  {
+   "ticker": "AVAXUSDT",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "AVAXUSDT moved -7.9% in the last day (now 6.346 USD)"
+  },
+  {
+   "ticker": "AVAXUSDT",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "AVAXUSDT: STRONG SELL -> SELL (score -65 -> -45) \u2014 oversold relief applied, trend/momentum unchanged"
+  },
+  {
+   "ticker": "AVAXUSDT",
+   "severity": "info",
+   "type": "rsi",
+   "msg": "AVAXUSDT: RSI crossed below 30 (now 27.4)"
   },
   {
    "ticker": "ADAUSDT",
    "severity": "info",
-   "type": "rsi",
-   "msg": "ADAUSDT: RSI crossed below 30 (now 27.8)"
+   "type": "big_move",
+   "msg": "ADAUSDT moved -6.5% in the last day (now 0.1402 USD)"
   },
   {
-   "ticker": "LTCUSDT",
+   "ticker": "GRAMUSDT",
    "severity": "info",
    "type": "big_move",
-   "msg": "LTCUSDT moved -7.0% in the last day (now 41.58 USD)"
+   "msg": "GRAMUSDT moved -9.2% in the last day (now 0.921 USD)"
   },
   {
-   "ticker": "LTCUSDT",
+   "ticker": "GRAMUSDT",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "GRAMUSDT: STRONG SELL -> SELL (score -50 -> -45) \u2014 oversold relief applied, trend/momentum unchanged"
+  },
+  {
+   "ticker": "GRAMUSDT",
    "severity": "info",
    "type": "rsi",
-   "msg": "LTCUSDT: RSI crossed below 30 (now 25.1)"
+   "msg": "GRAMUSDT: RSI crossed below 30 (now 29.4)"
   },
   {
-   "ticker": "EMAAR",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "EMAAR: STRONG BUY -> BUY (score 65 -> 40)"
-  },
-  {
-   "ticker": "EMAAR",
+   "ticker": "GRAMUSDT",
    "severity": "info",
    "type": "macd",
-   "msg": "EMAAR: MACD bearish cross"
+   "msg": "GRAMUSDT: MACD bearish cross"
   },
   {
-   "ticker": "EMIRATESNBD",
+   "ticker": "DU",
    "severity": "info",
    "type": "big_move",
-   "msg": "EMIRATESNBD moved -3.2% in the last day (now 34.88 AED)"
+   "msg": "DU moved +3.2% in the last day (now 13.42 AED)"
   },
   {
-   "ticker": "TALABAT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "TALABAT: HOLD -> BUY (score 15 -> 30)"
-  },
-  {
-   "ticker": "AIRARABIA",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "AIRARABIA: STRONG BUY -> BUY (score 50 -> 25)"
-  },
-  {
-   "ticker": "AIRARABIA",
+   "ticker": "DU",
    "severity": "info",
-   "type": "macd",
-   "msg": "AIRARABIA: MACD bearish cross"
+   "type": "rsi",
+   "msg": "DU: RSI crossed above 70 (now 71.2)"
   },
   {
    "ticker": "TECOM",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "TECOM moved -2.9% in the last day (now 3.32 AED)"
-  },
-  {
-   "ticker": "FAB",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "FAB: BUY -> STRONG BUY (score 35 -> 65) \u2014 penalty relief only, trend/momentum unchanged"
+   "msg": "TECOM: BUY -> SELL (score 35 -> -30) - HAIRLINE 50-day cross: price is only 0.24% below the average, inside the 0.5% buffer, so no trend change was confirmed"
   },
   {
    "ticker": "ADNOCDRILL",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "ADNOCDRILL: STRONG BUY -> BUY (score 50 -> 40)"
+   "msg": "ADNOCDRILL: BUY -> SELL (score 40 -> -35) - HAIRLINE 50-day cross: price is only 0.41% below the average, inside the 0.5% buffer, so no trend change was confirmed"
   }
  ]
 }
