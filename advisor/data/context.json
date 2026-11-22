@@ -1,21 +1,21 @@
 {
- "updated": "2026-11-21T07:55+00:00",
+ "updated": "2026-11-22T07:55+00:00",
  "market_notes": [
   {
-   "market": "Bitcoin crashes to ~55.5k - lowest since September 2024",
-   "note": "Now ~58.3k, more than 50% below its record. ETH touched 1,538. About $2.4B of leveraged bets wiped out. Your plan continues - but only put in money you won't need for years."
+   "market": "Bitcoin bounces 9% off its two-year low",
+   "note": "From ~55.1k back above 60k on Saturday as forced selling ran out; ~59.2k now. ETH ~1,660. Still rated SELL. Weekly close tonight."
   },
   {
-   "market": "It's a whole-market sell-off",
-   "note": "US tech stocks crashed Friday (Nasdaq -5.3%, S&P 500 -3.7%) after a report of an SEC probe into Nvidia's accounting. A December Fed hike is fully priced."
+   "market": "Binance: full-withdrawal target day",
+   "note": "No word yet on whether every network has reopened. It doesn't affect your USDT, which has been withdrawable since Nov 1. No new problems."
   },
   {
-   "market": "Binance held up",
-   "note": "BNB fell with everything else; no outage, withdrawal pause or Binance-specific problem. USDT stayed at $1. Full withdrawals still targeted ~Nov 22."
+   "market": "Gulf: Iran hits Bahrain again",
+   "note": "An industrial site in Bahrain caught fire after an Iranian strike Saturday (no injuries); two tankers hit leaving Hormuz. No attack on the UAE reported."
   },
   {
-   "market": "Next steps",
-   "note": "Bitcoin's weekly close Sunday night. Your next monthly contribution is Dec 1."
+   "market": "This week",
+   "note": "US inflation (PCE) and GDP Wednesday; US markets closed Thursday for Thanksgiving. Your next monthly contribution is Dec 1."
   }
  ],
  "asset_notes": {
@@ -2449,8 +2449,10 @@
   "fix_next_run": "Give the BUY-rated names their own threads before the HOLDs, give ETH a thread while its re-entry is live, and state one out-of-window rule in the brief instead of leaving each checker to invent it."
  },
  "upcoming": [
-  "Binance: all remaining withdrawal networks by ~Nov 22 - check Nov 22-23",
   "BTC weekly close - Sun Nov 22 (00:00 UTC Mon)",
+  "Binance: confirm all remaining withdrawals reopened (target ~Nov 22)",
+  "US October PCE + Q3 GDP - Wed Nov 25 08:30 ET",
+  "US Thanksgiving - Thu Nov 26 (markets closed)",
   "Emaar dividend paid Nov 27",
   "MSCI changes (incl. Strategy removal) effective Nov 30 close",
   "Next monthly contribution - Dec 1",

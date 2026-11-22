@@ -2904,6 +2904,13 @@
    "action": "no change - Nov-1 go-ahead stands through the break of the July low",
    "rationale": "BTC to ~55.5k (lowest since Sep 2024) in a cross-asset AI/tech sell-off with ~$2.4B of liquidations; not a Binance event (BNB moved with the market, USDT at peg). Every coin SELL or worse, so no extra deployment; the small monthly buy continues by design. Next contribution Dec 1 - remind the user to invest only money they will not need for years. No notification.",
    "status": "no action"
+  },
+  {
+   "date": "2026-11-22",
+   "ticker": "daily",
+   "action": "no change - Nov-1 go-ahead stands",
+   "rationale": "BTC bounced 9% off a two-year low as forced selling eased; still SELL across the board. Binance's full-withdrawal target date passed without a confirmation either way - not material for USDT, which has been withdrawable since Nov 1. Gulf: Iran hit Bahrain again. No notification.",
+   "status": "no action"
   }
  ]
 }
