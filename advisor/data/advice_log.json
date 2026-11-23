@@ -2911,6 +2911,13 @@
    "action": "no change - Nov-1 go-ahead stands",
    "rationale": "BTC bounced 9% off a two-year low as forced selling eased; still SELL across the board. Binance's full-withdrawal target date passed without a confirmation either way - not material for USDT, which has been withdrawable since Nov 1. Gulf: Iran hit Bahrain again. No notification.",
    "status": "no action"
+  },
+  {
+   "date": "2026-11-23",
+   "ticker": "daily",
+   "action": "no change - Nov-1 go-ahead stands",
+   "rationale": "Crypto rebound is short-covering in extreme fear with ETF outflows continuing; every coin SELL or worse. Venue check clean; full-withdrawal target passed without word, irrelevant to the user's USDT. Gulf attacks continue outside the UAE. No notification.",
+   "status": "no action"
   }
  ]
 }

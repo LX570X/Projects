@@ -1,21 +1,21 @@
 {
- "updated": "2026-11-22T07:55+00:00",
+ "updated": "2026-11-23T07:55+00:00",
  "market_notes": [
   {
-   "market": "Bitcoin bounces 9% off its two-year low",
-   "note": "From ~55.1k back above 60k on Saturday as forced selling ran out; ~59.2k now. ETH ~1,660. Still rated SELL. Weekly close tonight."
+   "market": "Crypto bounces again, but it's short-covering",
+   "note": "BTC ~61.5k, ETH ~1,726. Traders betting on further falls were forced to buy back; real buying is thin (US bitcoin funds lost $1.8B last week). Still rated SELL. Your plan continues."
   },
   {
-   "market": "Binance: full-withdrawal target day",
-   "note": "No word yet on whether every network has reopened. It doesn't affect your USDT, which has been withdrawable since Nov 1. No new problems."
+   "market": "Binance: no news on the last withdrawals",
+   "note": "The Nov 22 target passed with no announcement either way. It doesn't affect your USDT. No new problems."
   },
   {
-   "market": "Gulf: Iran hits Bahrain again",
-   "note": "An industrial site in Bahrain caught fire after an Iranian strike Saturday (no injuries); two tankers hit leaving Hormuz. No attack on the UAE reported."
+   "market": "Gulf: attacks continue around the UAE",
+   "note": "Iran hit an industrial site in Bahrain (two injured); two tankers hit near Hormuz; the Houthis claim a Saudi refinery attack. No attack on the UAE reported."
   },
   {
    "market": "This week",
-   "note": "US inflation (PCE) and GDP Wednesday; US markets closed Thursday for Thanksgiving. Your next monthly contribution is Dec 1."
+   "note": "US inflation (PCE) and GDP Wednesday; US markets closed Thursday. Your next monthly contribution is Dec 1."
   }
  ],
  "asset_notes": {
@@ -1039,6 +1039,12 @@
     "impact": "bearish",
     "date": "2026-09-17",
     "source": "advisor data"
+   },
+   {
+    "headline": "Monday draft 8.41 (+9.2% vs Thursday; Friday close 7.71 per Yahoo) - no catalyst found in any dated source; unverified until the close",
+    "impact": "neutral",
+    "date": "2026-11-23",
+    "source": "own data; Yahoo Finance"
    }
   ],
   "EMIRATESNBD": [
@@ -2418,7 +2424,8 @@
   "2026-11-09: the Nov-8 note said Monday's UAE open was 'at risk' from the weekend escalation. The Monday draft is higher (Emaar, Aldar +2.6%). Also: Brent's weekly drop is reported as 13.3% (Seeking Alpha, front-month close) and ~17% (Reuters, Nov 9) - different contract references; treat as 'about 13-17%'.",
   "2026-11-12: this morning's note called Emirates NBD's +7.9% 'overstated' because of a malformed Tuesday bar. The Tuesday bar is a carried-forward placeholder, but the move itself is real: Reuters' +3.5% (Tue) and +4.3% (Wed) compound to ~7.95%. It spans two sessions, not one.",
   "2026-11-13: the Nov-12 note said Emirates NBD's +7.9% (Mon close to Thu draft) was real and spanned Tue+Wed. In fact the feed's dates are shifted: its 'Wed' bar was Tuesday's close, Wednesday closed ~34.80 and Thursday ~35.90 (+3.2%, FXStreet). Today's +5.3% for Emirates NBD is wrong - it is ~2% below Thursday. UAE moves from this feed must be cross-checked before being repeated.",
-  "2026-11-16: the Nov-15 note said Saudi intercepted Houthi missiles aimed at Riyadh on Sun Nov 15. Today's check found the only clearly dated report of that is from Nov 8 (Aramco building damaged); a Nov 15 Gulf News headline exists but could not be confirmed as a separate event. Treat the Nov 15 Riyadh intercept as unconfirmed."
+  "2026-11-16: the Nov-15 note said Saudi intercepted Houthi missiles aimed at Riyadh on Sun Nov 15. Today's check found the only clearly dated report of that is from Nov 8 (Aramco building damaged); a Nov 15 Gulf News headline exists but could not be confirmed as a separate event. Treat the Nov 15 Riyadh intercept as unconfirmed.",
+  "2026-11-23: the Nov-22 note said Iran's Nov 21 strike on a Bahrain industrial site caused 'no injuries'. Reuters (via Arab News) reports two people were hurt."
  ],
  "missing": [
   "GENIUS Act stablecoin final-rules deadline is July 18, 2026 \u2014 TOMORROW: six agencies (OCC, FDIC, NCUA, Treasury, FinCEN, OFAC) must finalize rules one year after enactment; comment periods closed June 9 and there is no statutory fallback if they miss. Direct near-term catalyst/risk for stablecoins (USDC/Coinbase economics \u2014 which the findings themselves cite in the CLARITY yield fight \u2014 and Tether) yet absent from all three crypto findings. (Kraken blog Jul 15, CryptoSlate, OCC Bulletin 2026-3, Chapman tracker.)",
@@ -2449,8 +2456,6 @@
   "fix_next_run": "Give the BUY-rated names their own threads before the HOLDs, give ETH a thread while its re-entry is live, and state one out-of-window rule in the brief instead of leaving each checker to invent it."
  },
  "upcoming": [
-  "BTC weekly close - Sun Nov 22 (00:00 UTC Mon)",
-  "Binance: confirm all remaining withdrawals reopened (target ~Nov 22)",
   "US October PCE + Q3 GDP - Wed Nov 25 08:30 ET",
   "US Thanksgiving - Thu Nov 26 (markets closed)",
   "Emaar dividend paid Nov 27",
