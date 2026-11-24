@@ -1,95 +1,41 @@
 {
- "generated_at_utc": "2026-11-23T07:12:15+00:00",
+ "generated_at_utc": "2026-11-24T07:09:28+00:00",
  "alerts": [
   {
-   "ticker": "SOLUSDT",
+   "ticker": "ETHUSDT",
    "severity": "info",
-   "type": "big_move",
-   "msg": "SOLUSDT moved +4.4% in the last day (now 72.19 USD)"
-  },
-  {
-   "ticker": "SOLUSDT",
-   "severity": "info",
-   "type": "macd",
-   "msg": "SOLUSDT: MACD bullish cross"
-  },
-  {
-   "ticker": "XRPUSDT",
-   "severity": "info",
-   "type": "macd",
-   "msg": "XRPUSDT: MACD bullish cross"
+   "type": "rsi",
+   "msg": "ETHUSDT: RSI crossed below 30 (now 28.8)"
   },
   {
    "ticker": "LINKUSDT",
    "severity": "info",
-   "type": "big_move",
-   "msg": "LINKUSDT moved +4.3% in the last day (now 8.912 USD)"
+   "type": "macd",
+   "msg": "LINKUSDT: MACD bullish cross"
   },
   {
-   "ticker": "LINKUSDT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "LINKUSDT: SELL -> STRONG SELL (score -45 -> -65) \u2014 oversold relief withdrawn, trend/momentum unchanged"
-  },
-  {
-   "ticker": "AVAXUSDT",
-   "severity": "actionable",
-   "type": "signal_change",
-   "msg": "AVAXUSDT: SELL -> STRONG SELL (score -45 -> -65) \u2014 oversold relief withdrawn, trend/momentum unchanged"
-  },
-  {
-   "ticker": "GRAMUSDT",
+   "ticker": "ADAUSDT",
    "severity": "info",
-   "type": "big_move",
-   "msg": "GRAMUSDT moved +6.8% in the last day (now 1.004 USD)"
+   "type": "macd",
+   "msg": "ADAUSDT: MACD bullish cross"
   },
   {
    "ticker": "LTCUSDT",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "LTCUSDT moved +4.4% in the last day (now 40.67 USD)"
-  },
-  {
-   "ticker": "DIB",
-   "severity": "info",
-   "type": "big_move",
-   "msg": "DIB moved +9.2% in the last day (now 8.41 AED)"
-  },
-  {
-   "ticker": "DIB",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "DIB: STRONG BUY -> BUY (score 65 -> 35) \u2014 stretch penalty applied, trend/momentum unchanged"
+   "msg": "LTCUSDT: SELL -> STRONG SELL (score -45 -> -65) \u2014 oversold relief withdrawn, trend/momentum unchanged"
   },
   {
-   "ticker": "DIB",
-   "severity": "info",
-   "type": "rsi",
-   "msg": "DIB: RSI crossed above 70 (now 79.6)"
-  },
-  {
-   "ticker": "SALIK",
-   "severity": "info",
-   "type": "macd",
-   "msg": "SALIK: MACD bearish cross"
-  },
-  {
-   "ticker": "DEWA",
-   "severity": "info",
-   "type": "rsi",
-   "msg": "DEWA: RSI crossed above 70 (now 70.1)"
-  },
-  {
-   "ticker": "TECOM",
+   "ticker": "DU",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "TECOM: SELL -> BUY (score -30 -> 35)"
+   "msg": "DU: STRONG BUY -> BUY (score 45 -> 35) \u2014 stretch penalty applied, trend/momentum unchanged"
   },
   {
-   "ticker": "ADPORTS",
+   "ticker": "ADNOCDRILL",
    "severity": "actionable",
    "type": "signal_change",
-   "msg": "ADPORTS: SELL -> BUY (score -25 -> 35) - HAIRLINE 50-day cross: price is only 0.26% above the average, inside the 0.5% buffer, so no trend change was confirmed"
+   "msg": "ADNOCDRILL: SELL -> BUY (score -35 -> 25)"
   }
  ]
 }
