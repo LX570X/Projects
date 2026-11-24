@@ -1,21 +1,21 @@
 {
- "updated": "2026-11-23T07:55+00:00",
+ "updated": "2026-11-24T07:55+00:00",
  "market_notes": [
   {
-   "market": "Crypto bounces again, but it's short-covering",
-   "note": "BTC ~61.5k, ETH ~1,726. Traders betting on further falls were forced to buy back; real buying is thin (US bitcoin funds lost $1.8B last week). Still rated SELL. Your plan continues."
+   "market": "Nvidia brings back Jensen Huang - stocks soar, crypto fades",
+   "note": "Nvidia +31%, Nasdaq +6% Monday. BTC jumped to 64.6k but slipped back to ~60.5k; money is still leaving US bitcoin funds. Nothing rated BUY."
   },
   {
-   "market": "Binance: no news on the last withdrawals",
-   "note": "The Nov 22 target passed with no announcement either way. It doesn't affect your USDT. No new problems."
+   "market": "Dubai Islamic Bank +11% on merger talk",
+   "note": "DIB's board meets Wednesday on a 'strategic acquisition'; Bloomberg reports talks to combine it with Emirates NBD's Emirates Islamic. Dubai index +1.3%."
   },
   {
-   "market": "Gulf: attacks continue around the UAE",
-   "note": "Iran hit an industrial site in Bahrain (two injured); two tankers hit near Hormuz; the Houthis claim a Saudi refinery attack. No attack on the UAE reported."
+   "market": "Binance hires outside security experts",
+   "note": "Mandiant, SlowMist and Verichains will review its security; the US is moving to seize $1.1B of the stolen USDC. No new problems."
   },
   {
-   "market": "This week",
-   "note": "US inflation (PCE) and GDP Wednesday; US markets closed Thursday. Your next monthly contribution is Dec 1."
+   "market": "Oil at a three-month low",
+   "note": "Brent ~$89. Iran claims three tankers hit mines in Hormuz (unconfirmed). No attack on the UAE reported. US inflation and GDP data tomorrow."
   }
  ],
  "asset_notes": {
@@ -1045,6 +1045,12 @@
     "impact": "neutral",
     "date": "2026-11-23",
     "source": "own data; Yahoo Finance"
+   },
+   {
+    "headline": "+11.02% to AED 8.56 on Nov 23 after disclosing a Nov 25 board meeting to evaluate a 'strategic acquisition'; Bloomberg: early talks to combine DIB with Emirates Islamic (Emirates NBD unit); Citi sees an Emirates Islamic sale to DIB as more likely",
+    "impact": "bullish",
+    "date": "2026-11-23",
+    "source": "The National, Bloomberg, Gulf News, FXStreet"
    }
   ],
   "EMIRATESNBD": [
@@ -1137,6 +1143,12 @@
     "impact": "bearish",
     "date": "2026-11-19",
     "source": "Reuters via Business Recorder"
+   },
+   {
+    "headline": "Board meets Nov 25 to 'consider and approve potential transaction opportunities' (linked to the Emirates Islamic-DIB talks); shares -0.8% Nov 23",
+    "impact": "neutral",
+    "date": "2026-11-23",
+    "source": "Gulf News, The National"
    }
   ],
   "TALABAT": [
@@ -2456,8 +2468,10 @@
   "fix_next_run": "Give the BUY-rated names their own threads before the HOLDs, give ETH a thread while its re-entry is live, and state one out-of-window rule in the brief instead of leaving each checker to invent it."
  },
  "upcoming": [
+  "DIB and Emirates NBD board meetings - Wed Nov 25 (possible Emirates Islamic deal)",
   "US October PCE + Q3 GDP - Wed Nov 25 08:30 ET",
-  "US Thanksgiving - Thu Nov 26 (markets closed)",
+  "Binance maintenance Nov 25 06:00 UTC (reported, unconfirmed)",
+  "US Thanksgiving - Thu Nov 26",
   "Emaar dividend paid Nov 27",
   "MSCI changes (incl. Strategy removal) effective Nov 30 close",
   "Next monthly contribution - Dec 1",

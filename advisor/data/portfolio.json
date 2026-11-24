@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T07:55+00:00",
+ "updated": "2026-11-24T07:55+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": null,
@@ -539,11 +539,11 @@
   "why_it_matters": "On a day when every asset on the crypto board fell and four names confirmed trend breaks, the system produced no trade. That is the design: the BTC stop is a single daily close below a fixed level and that level was not touched, and the satellite trigger needed a qualifying name and there was none. Both outcomes were computed, not decided."
  },
  "book_signal_state": {
-  "as_of": "2026-11-23",
+  "as_of": "2026-11-24",
   "for_the_user": "Nov-1 list: go-ahead stands; still waiting for 'done'. No notification.",
-  "crypto": "Second day of rebound: BTC 61,502 (+4%; weekly close ~61.3k, above the $58k stabilisation line analysts cite but well below the ~68k 200-week average); ETH 1,726. Driven by short-covering in extreme fear (F&G 10-11), not new demand: spot BTC ETFs -$1.79B in the week to Nov 20 (fourth weekly outflow). Bets on a 50bp December hike faded to ~0 after the stock rout; 25bp still ~89-97%. Support ~58.6k, resistance 62-65k. Every coin SELL or worse.",
-  "uae": "Monday draft: DIB 8.41 (+9.2% vs Thursday; it closed 7.71 Friday per Yahoo) - no catalyst found, treat as unverified until the close; du 13.40 (+3.1%; Reuters had du +3.2% Friday). Not buyable until the user has a broker.",
-  "macro": "Gulf: Iran struck a civilian industrial site in Bahrain on Nov 21 (two injured); two tankers hit near Hormuz (no casualties); Houthis claimed an attack on Saudi Arabia's Rabigh refinery Nov 22 (unconfirmed). US-Iran talks stalled. No attack on the UAE found. Brent ~$92.7. US PCE + GDP Wed; Thanksgiving Thu."
+  "crypto": "BTC spiked to 64.6k Monday when Nvidia reinstated Jensen Huang (NVDA +31%, Nasdaq +6%, best day since April 2025), then faded to 60,546 - a short squeeze, not spot demand; spot BTC ETFs -$570M on Nov 23. ETH 1,701. Every coin SELL or worse. US PCE + GDP tomorrow.",
+  "uae": "DIB +11% Mon Nov 23 to 8.56 (biggest intraday gain since 2014) after disclosing a Nov 25 board meeting on a 'strategic acquisition'; Bloomberg: early talks to combine DIB with Emirates NBD's Emirates Islamic; ENBD's board also meets Nov 25 (Citi sees a sale of Emirates Islamic to DIB as more likely). DFM +1.29% to 6,306.87. Not buyable until the user has a broker.",
+  "macro": "Brent $89.37 (lowest since Aug 31) on Libyan and Middle East supply. IRGC claims three US-escorted tankers hit mines in Hormuz Nov 23 (unconfirmed). No attack on the UAE found. December 25bp hike ~96% priced."
  },
  "bookkeeping_correction": {
   "found": "2026-09-29",
@@ -944,6 +944,11 @@
    "venue_check": "No new incident, outage, withdrawal pause or regulator action found for Nov 21-23.",
    "withdrawal_target": "The ~Nov 22 target for reopening all remaining networks passed with no Binance announcement of completion or delay found. Not material for this user (USDT on ETH/BSC open since Nov 1). Binance's Nov 20 statement says all affected customer funds are fully restored.",
    "other": "EU only: Binance charges 0.025%/month (min 10 USDC) from Nov 29 to users in France, Italy, Poland and Spain who have not withdrawn, closing accounts by year-end (no MiCA licence).",
+   "decision": "Go-ahead stands."
+  },
+  "status_2026_11_24": {
+   "venue_check": "No new incident, outage or withdrawal pause found for Nov 22-24.",
+   "progress": "Nov 23: Binance hired Mandiant (Google Cloud), SlowMist and Verichains for an independent security review (no timeline). US DOJ filed civil forfeiture for ~$1.1-1.17B of frozen USDC from the hack (36 addresses, 18 chains). Still no post-Nov 14 announcement on reopening all remaining networks. A maintenance window Nov 25 06:00 UTC is reported by PANews only (unconfirmed).",
    "decision": "Go-ahead stands."
   }
  },
