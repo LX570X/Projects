@@ -1,21 +1,21 @@
 {
- "updated": "2026-11-24T07:55+00:00",
+ "updated": "2026-11-25T07:55+00:00",
  "market_notes": [
   {
-   "market": "Nvidia brings back Jensen Huang - stocks soar, crypto fades",
-   "note": "Nvidia +31%, Nasdaq +6% Monday. BTC jumped to 64.6k but slipped back to ~60.5k; money is still leaving US bitcoin funds. Nothing rated BUY."
+   "market": "Crypto back under 60k on tariff fears",
+   "note": "BTC ~59.4k, ETH ~1,664. A report of sweeping new US tariffs and a sixth day of money leaving bitcoin funds (a record ~$4.8B this month). Nothing rated BUY."
   },
   {
-   "market": "Dubai Islamic Bank +11% on merger talk",
-   "note": "DIB's board meets Wednesday on a 'strategic acquisition'; Bloomberg reports talks to combine it with Emirates NBD's Emirates Islamic. Dubai index +1.3%."
+   "market": "Binance: one-hour withdrawal maintenance this morning",
+   "note": "Planned pause on all networks from 10:00 Dubai, about an hour; trading unaffected. If a withdrawal looks stuck this morning, that's why."
   },
   {
-   "market": "Binance hires outside security experts",
-   "note": "Mandiant, SlowMist and Verichains will review its security; the US is moving to seize $1.1B of the stolen USDC. No new problems."
+   "market": "Ship hit off Khor Fakkan",
+   "note": "A bulk carrier anchored ~23nm off the UAE's east coast caught fire after a projectile hit (no casualties). The UAE runs a nationwide security drill today."
   },
   {
-   "market": "Oil at a three-month low",
-   "note": "Brent ~$89. Iran claims three tankers hit mines in Hormuz (unconfirmed). No attack on the UAE reported. US inflation and GDP data tomorrow."
+   "market": "UAE banks rally; DIB deal decision today",
+   "note": "ADCB +5% on a Morgan Stanley upgrade. DIB and Emirates NBD boards meet today on a possible Emirates Islamic deal. US inflation (PCE) and GDP this afternoon."
   }
  ],
  "asset_notes": {
@@ -1659,6 +1659,12 @@
     "impact": "neutral",
     "date": "2026-11-18",
     "source": "own data; Reuters via Business Recorder"
+   },
+   {
+    "headline": "+5.1% on Nov 24 after a Morgan Stanley upgrade (Nov 23); RSI ~77",
+    "impact": "bullish",
+    "date": "2026-11-24",
+    "source": "Edge Consultancy wrap, MarketScreener/MT Newswires"
    }
   ],
   "ADIB": [
@@ -2376,6 +2382,8 @@
  },
  "risk_flags": [
   "VENUE RISK (updated 2026-11-07): all of the user's crypto is on Binance, which lost ~$6.3B to a hack on 2026-10-29. Binance published its latest proof of reserves on Nov 6 (says >=1:1); withdrawals largely restored. Deposits resumed with an in-app USDT >= 100% check. Residual concentration risk accepted at this size.",
+  "KHOR FAKKAN (2026-11-24): UKMTO 218-26 - a bulk carrier anchored at Dibba OPL ~23nm NE of Khor Fakkan was hit by a projectile (fire, no casualties). Third vessel incident in UAE waters/approaches this month (Nov 10 ADNOC L&S, Nov 11 off RAK).",
+  "TARIFFS (2026-11-24): WSJ reports the US is preparing broad tariffs on most goods from China, all EU members and 14 other economies (USTR could announce this week). Another risk-off driver.",
   "BREAKDOWN (2026-11-20/21): BTC broke its July cycle low (~57.8k) to ~$55.5k (lowest since Sep 2024; >50% below the ATH); cross-asset AI sell-off (Nasdaq -5.3%, S&P -3.7% on Nov 20; Nvidia -12-14% on a reported SEC accounting probe). ~$2.4B liquidations. No venue or stablecoin failure.",
   "NEW LOW (2026-11-19): BTC $61,273, below the Nov 15 low; record IBIT outflow ($541M); Bitfinex flags the July cycle low ~$57.8k as the next level if outflows persist. Hacker ETH movements (~291k ETH since Nov 17) are an ETH-specific overhang.",
   "FED (2026-11-18): minutes show near-unanimous support for further hikes; Waller explicitly favours 50bp in December. A 50bp surprise would be another hit to crypto.",
@@ -2468,9 +2476,8 @@
   "fix_next_run": "Give the BUY-rated names their own threads before the HOLDs, give ETH a thread while its re-entry is live, and state one out-of-window rule in the brief instead of leaving each checker to invent it."
  },
  "upcoming": [
-  "DIB and Emirates NBD board meetings - Wed Nov 25 (possible Emirates Islamic deal)",
-  "US October PCE + Q3 GDP - Wed Nov 25 08:30 ET",
-  "Binance maintenance Nov 25 06:00 UTC (reported, unconfirmed)",
+  "DIB and Emirates NBD board meetings - today Nov 25",
+  "US October PCE + Q3 GDP - today 08:30 ET (17:30 Dubai)",
   "US Thanksgiving - Thu Nov 26",
   "Emaar dividend paid Nov 27",
   "MSCI changes (incl. Strategy removal) effective Nov 30 close",

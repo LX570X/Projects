@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T07:55+00:00",
+ "updated": "2026-11-25T07:55+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": null,
@@ -539,11 +539,11 @@
   "why_it_matters": "On a day when every asset on the crypto board fell and four names confirmed trend breaks, the system produced no trade. That is the design: the BTC stop is a single daily close below a fixed level and that level was not touched, and the satellite trigger needed a qualifying name and there was none. Both outcomes were computed, not decided."
  },
  "book_signal_state": {
-  "as_of": "2026-11-24",
+  "as_of": "2026-11-25",
   "for_the_user": "Nov-1 list: go-ahead stands; still waiting for 'done'. No notification.",
-  "crypto": "BTC spiked to 64.6k Monday when Nvidia reinstated Jensen Huang (NVDA +31%, Nasdaq +6%, best day since April 2025), then faded to 60,546 - a short squeeze, not spot demand; spot BTC ETFs -$570M on Nov 23. ETH 1,701. Every coin SELL or worse. US PCE + GDP tomorrow.",
-  "uae": "DIB +11% Mon Nov 23 to 8.56 (biggest intraday gain since 2014) after disclosing a Nov 25 board meeting on a 'strategic acquisition'; Bloomberg: early talks to combine DIB with Emirates NBD's Emirates Islamic; ENBD's board also meets Nov 25 (Citi sees a sale of Emirates Islamic to DIB as more likely). DFM +1.29% to 6,306.87. Not buyable until the user has a broker.",
-  "macro": "Brent $89.37 (lowest since Aug 31) on Libyan and Middle East supply. IRGC claims three US-escorted tankers hit mines in Hormuz Nov 23 (unconfirmed). No attack on the UAE found. December 25bp hike ~96% priced."
+  "crypto": "BTC 59,364, ETH 1,664: back below 60k as the Nvidia rally faded and a WSJ report of sweeping new US tariffs (China, EU, 14 others) hit risk; ~$844M liquidations; sixth straight day of BTC ETF outflows (-$231M Nov 24; a record ~$4.7-4.9B in November). Kospi -5% today on chip stocks. SOL/XRP/ADA only to HOLD on oversold relief. US PCE (expected ~3.8% y/y) and GDP today; December hike ~93-96% priced.",
+  "uae": "Tue Nov 24: ADX +1.0% to 9,871.87 (ADCB +5.1% after a Morgan Stanley upgrade, ADIB +4.1%), DFM +0.8% to 6,359.71 (Emaar +2.4%). DIB and Emirates NBD boards meet today on the reported Emirates Islamic deal. Not buyable until the user has a broker.",
+  "macro": "UKMTO: a bulk carrier anchored ~23nm NE of Khor Fakkan (UAE east coast) was hit by a projectile (fire, no casualties). IRGC claims more tanker mine strikes. The UAE holds a nationwide security drill today. Brent +2.3% to $91.40. No attack on UAE territory found."
  },
  "bookkeeping_correction": {
   "found": "2026-09-29",
@@ -950,6 +950,11 @@
    "venue_check": "No new incident, outage or withdrawal pause found for Nov 22-24.",
    "progress": "Nov 23: Binance hired Mandiant (Google Cloud), SlowMist and Verichains for an independent security review (no timeline). US DOJ filed civil forfeiture for ~$1.1-1.17B of frozen USDC from the hack (36 addresses, 18 chains). Still no post-Nov 14 announcement on reopening all remaining networks. A maintenance window Nov 25 06:00 UTC is reported by PANews only (unconfirmed).",
    "decision": "Go-ahead stands."
+  },
+  "status_2026_11_25": {
+   "venue_check": "SCHEDULED maintenance: Binance paused withdrawals on all networks for ~60 minutes from 06:00 UTC Nov 25 (announced Nov 24; several outlets); spot trading unaffected; no completion notice promised. No report of disruption found. No new hack, outage, unscheduled pause or regulator action for Nov 23-25.",
+   "progress": "Still no announcement that all remaining networks reopened (target ~Nov 22). Forbes (Nov 24): proof of reserves does not show who controls signing keys - a limit of PoR, not a new finding about Binance.",
+   "decision": "Go-ahead stands; a planned one-hour pause is routine."
   }
  },
  "pre_uae_trade_fixes": [
