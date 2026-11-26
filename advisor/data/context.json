@@ -1,21 +1,21 @@
 {
- "updated": "2026-11-25T07:55+00:00",
+ "updated": "2026-11-26T08:00+00:00",
  "market_notes": [
   {
-   "market": "Crypto back under 60k on tariff fears",
-   "note": "BTC ~59.4k, ETH ~1,664. A report of sweeping new US tariffs and a sixth day of money leaving bitcoin funds (a record ~$4.8B this month). Nothing rated BUY."
+   "market": "Crypto dips, then recovers above 60k",
+   "note": "BTC fell to ~57.2k on hot US inflation and tariff news, then bounced to ~60.5k - a higher low than last week. Money is still leaving bitcoin funds (a record ~$5B this month). Nothing rated BUY."
   },
   {
-   "market": "Binance: one-hour withdrawal maintenance this morning",
-   "note": "Planned pause on all networks from 10:00 Dubai, about an hour; trading unaffected. If a withdrawal looks stuck this morning, that's why."
+   "market": "DIB to buy Emirates Islamic",
+   "note": "An all-share deal creating the world's #2 listed Islamic bank; Emirates NBD will own 32.5% of DIB. Still needs regulator and shareholder approval."
   },
   {
-   "market": "Ship hit off Khor Fakkan",
-   "note": "A bulk carrier anchored ~23nm off the UAE's east coast caught fire after a projectile hit (no casualties). The UAE runs a nationwide security drill today."
+   "market": "Gulf: projectile near a tanker west of Dubai",
+   "note": "No damage. Houthis claim a strike on Saudi Arabia's biggest refinery; Riyadh's PIF tower hit again. Oil +3.5%. No attack on the UAE reported."
   },
   {
-   "market": "UAE banks rally; DIB deal decision today",
-   "note": "ADCB +5% on a Morgan Stanley upgrade. DIB and Emirates NBD boards meet today on a possible Emirates Islamic deal. US inflation (PCE) and GDP this afternoon."
+   "market": "Binance: short TRON maintenance this morning",
+   "note": "USDT on the TRON (TRC20) network paused about an hour from 10:00 Dubai. Your next monthly contribution is Dec 1 - I'll send the list that morning."
   }
  ],
  "asset_notes": {
@@ -1051,6 +1051,12 @@
     "impact": "bullish",
     "date": "2026-11-23",
     "source": "The National, Bloomberg, Gulf News, FXStreet"
+   },
+   {
+    "headline": "Agreed to acquire 100% of Emirates Islamic from Emirates NBD in an all-share deal: 0.642 DIB shares per EI share, ~3.49bn new shares, Emirates NBD to hold 32.5%; combined assets ~AED 585bn; needs CBUAE, CMA and shareholder approval. Closed 8.92 (+1.6%) Nov 25; RSI ~86",
+    "impact": "bullish",
+    "date": "2026-11-25",
+    "source": "Gulf Business, The National, AGBI"
    }
   ],
   "EMIRATESNBD": [
@@ -1149,6 +1155,12 @@
     "impact": "neutral",
     "date": "2026-11-23",
     "source": "Gulf News, The National"
+   },
+   {
+    "headline": "Selling Emirates Islamic to DIB for a 32.5% DIB stake; shares -1.2% to 34.20 on Nov 25",
+    "impact": "neutral",
+    "date": "2026-11-25",
+    "source": "AGBI, The National"
    }
   ],
   "TALABAT": [
@@ -2382,6 +2394,7 @@
  },
  "risk_flags": [
   "VENUE RISK (updated 2026-11-07): all of the user's crypto is on Binance, which lost ~$6.3B to a hack on 2026-10-29. Binance published its latest proof of reserves on Nov 6 (says >=1:1); withdrawals largely restored. Deposits resumed with an in-app USDT >= 100% check. Residual concentration risk accepted at this size.",
+  "WEST OF DUBAI (2026-11-25): UKMTO - an unknown projectile exploded near a tanker ~50nm west of Dubai (no damage). Houthi claims on Ras Tanura and repeated hits on Riyadh's PIF tower show the war widening across the Gulf. UAE territory not attacked so far.",
   "KHOR FAKKAN (2026-11-24): UKMTO 218-26 - a bulk carrier anchored at Dibba OPL ~23nm NE of Khor Fakkan was hit by a projectile (fire, no casualties). Third vessel incident in UAE waters/approaches this month (Nov 10 ADNOC L&S, Nov 11 off RAK).",
   "TARIFFS (2026-11-24): WSJ reports the US is preparing broad tariffs on most goods from China, all EU members and 14 other economies (USTR could announce this week). Another risk-off driver.",
   "BREAKDOWN (2026-11-20/21): BTC broke its July cycle low (~57.8k) to ~$55.5k (lowest since Sep 2024; >50% below the ATH); cross-asset AI sell-off (Nasdaq -5.3%, S&P -3.7% on Nov 20; Nvidia -12-14% on a reported SEC accounting probe). ~$2.4B liquidations. No venue or stablecoin failure.",
@@ -2476,15 +2489,13 @@
   "fix_next_run": "Give the BUY-rated names their own threads before the HOLDs, give ETH a thread while its re-entry is live, and state one out-of-window rule in the brief instead of leaving each checker to invent it."
  },
  "upcoming": [
-  "DIB and Emirates NBD board meetings - today Nov 25",
-  "US October PCE + Q3 GDP - today 08:30 ET (17:30 Dubai)",
-  "US Thanksgiving - Thu Nov 26",
   "Emaar dividend paid Nov 27",
   "MSCI changes (incl. Strategy removal) effective Nov 30 close",
-  "Next monthly contribution - Dec 1",
+  "Next monthly contribution - Dec 1 (monthly routine)",
   "ADGM freezing-order review hearing - Dec 1",
   "FAB rights-issue EGM Dec 7",
-  "FOMC Dec 8-9",
-  "Emaar Development Dh15 offer closes 3pm Dec 10"
+  "FOMC Dec 8-9 (hike ~98% priced)",
+  "Emaar Development Dh15 offer closes 3pm Dec 10",
+  "Colorado freeze hearing (TRON addresses) - Dec 17"
  ]
 }

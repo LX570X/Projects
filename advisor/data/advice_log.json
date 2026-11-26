@@ -2932,6 +2932,13 @@
    "action": "no change - Nov-1 go-ahead stands",
    "rationale": "BTC below 60k on tariffs and ETF outflows; every coin SELL or HOLD (oversold relief), none BUY. Binance's planned one-hour withdrawal maintenance is routine. Vessel hit off Khor Fakkan recorded. No notification.",
    "status": "no action"
+  },
+  {
+   "date": "2026-11-26",
+   "ticker": "daily",
+   "action": "no change - Nov-1 go-ahead stands",
+   "rationale": "BTC held a higher low (57.2k vs 55.1k) and recovered above 60k on short liquidations; nothing rated BUY. Venue check clean (scheduled TRC20 maintenance only). DIB-Emirates Islamic deal agreed - recorded. Gulf: projectile near a tanker west of Dubai; Saudi refinery attack claim. No notification.",
+   "status": "no action"
   }
  ]
 }
