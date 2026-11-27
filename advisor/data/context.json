@@ -1,21 +1,21 @@
 {
- "updated": "2026-11-26T08:00+00:00",
+ "updated": "2026-11-27T07:55+00:00",
  "market_notes": [
   {
-   "market": "Crypto dips, then recovers above 60k",
-   "note": "BTC fell to ~57.2k on hot US inflation and tariff news, then bounced to ~60.5k - a higher low than last week. Money is still leaving bitcoin funds (a record ~$5B this month). Nothing rated BUY."
+   "market": "Binance: withdrawals fully back",
+   "note": "Binance says the hack-related withdrawal suspension is over, four weeks after the theft. A few small networks are paused for unrelated maintenance."
   },
   {
-   "market": "DIB to buy Emirates Islamic",
-   "note": "An all-share deal creating the world's #2 listed Islamic bank; Emirates NBD will own 32.5% of DIB. Still needs regulator and shareholder approval."
+   "market": "Crypto recovers slowly",
+   "note": "BTC ~61.8k, ETH ~1,735 - a holiday short-squeeze after a record month of fund outflows (~$5.4B). Still rated SELL. Your Dec 1 contribution list comes Monday."
   },
   {
-   "market": "Gulf: projectile near a tanker west of Dubai",
-   "note": "No damage. Houthis claim a strike on Saudi Arabia's biggest refinery; Riyadh's PIF tower hit again. Oil +3.5%. No attack on the UAE reported."
+   "market": "Gulf: deadly strikes in Kuwait and Saudi",
+   "note": "Two Italian technicians killed at a Kuwaiti air-defence site; one worker killed at Saudi Arabia's Jazan refinery; another tanker hit near Hormuz. No attack on the UAE reported. Oil up to ~$96.6."
   },
   {
-   "market": "Binance: short TRON maintenance this morning",
-   "note": "USDT on the TRON (TRC20) network paused about an hour from 10:00 Dubai. Your next monthly contribution is Dec 1 - I'll send the list that morning."
+   "market": "DIB keeps climbing",
+   "note": "+9.75% Thursday to 9.79 on the Emirates Islamic deal; now very overbought."
   }
  ],
  "asset_notes": {
@@ -1057,6 +1057,12 @@
     "impact": "bullish",
     "date": "2026-11-25",
     "source": "Gulf Business, The National, AGBI"
+   },
+   {
+    "headline": "Closed 9.79 (+9.75%) Thu Nov 26 on the Emirates Islamic deal; Dubai +1.5%; RSI ~90",
+    "impact": "bullish",
+    "date": "2026-11-26",
+    "source": "FXStreet, Reuters via Business Recorder"
    }
   ],
   "EMIRATESNBD": [
@@ -2393,7 +2399,8 @@
   ]
  },
  "risk_flags": [
-  "VENUE RISK (updated 2026-11-07): all of the user's crypto is on Binance, which lost ~$6.3B to a hack on 2026-10-29. Binance published its latest proof of reserves on Nov 6 (says >=1:1); withdrawals largely restored. Deposits resumed with an in-app USDT >= 100% check. Residual concentration risk accepted at this size.",
+  "VENUE RISK (updated 2026-11-27): Binance says the post-hack withdrawal suspension is fully lifted (Nov 26); losses covered; reserves >=100% (Nov 12 snapshot). Residual concentration risk on one exchange accepted at this size.",
+  "GULF CASUALTIES (2026-11-26): two Italian Rheinmetall technicians killed at a Kuwaiti air-defence site (Kuwait blames Iranian drones); Aramco Jazan refinery hit (1 dead). Tanker struck ~18nm E of Khasab Nov 25. The UAE has not been hit directly so far.",
   "WEST OF DUBAI (2026-11-25): UKMTO - an unknown projectile exploded near a tanker ~50nm west of Dubai (no damage). Houthi claims on Ras Tanura and repeated hits on Riyadh's PIF tower show the war widening across the Gulf. UAE territory not attacked so far.",
   "KHOR FAKKAN (2026-11-24): UKMTO 218-26 - a bulk carrier anchored at Dibba OPL ~23nm NE of Khor Fakkan was hit by a projectile (fire, no casualties). Third vessel incident in UAE waters/approaches this month (Nov 10 ADNOC L&S, Nov 11 off RAK).",
   "TARIFFS (2026-11-24): WSJ reports the US is preparing broad tariffs on most goods from China, all EU members and 14 other economies (USTR could announce this week). Another risk-off driver.",
@@ -2489,13 +2496,14 @@
   "fix_next_run": "Give the BUY-rated names their own threads before the HOLDs, give ETH a thread while its re-entry is live, and state one out-of-window rule in the brief instead of leaving each checker to invent it."
  },
  "upcoming": [
-  "Emaar dividend paid Nov 27",
+  "Deribit BTC options expiry (~$6.8B) - today 08:00 UTC",
+  "OPEC+ meeting - Sun Nov 29",
   "MSCI changes (incl. Strategy removal) effective Nov 30 close",
   "Next monthly contribution - Dec 1 (monthly routine)",
-  "ADGM freezing-order review hearing - Dec 1",
+  "ADGM freezing-order hearing - Dec 1 (single source)",
   "FAB rights-issue EGM Dec 7",
   "FOMC Dec 8-9 (hike ~98% priced)",
   "Emaar Development Dh15 offer closes 3pm Dec 10",
-  "Colorado freeze hearing (TRON addresses) - Dec 17"
+  "Colorado TRON-address freeze hearing - Dec 17"
  ]
 }

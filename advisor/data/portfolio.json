@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T08:00+00:00",
+ "updated": "2026-11-27T07:55+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": null,
@@ -539,11 +539,11 @@
   "why_it_matters": "On a day when every asset on the crypto board fell and four names confirmed trend breaks, the system produced no trade. That is the design: the BTC stop is a single daily close below a fixed level and that level was not touched, and the satellite trigger needed a qualifying name and there was none. Both outcomes were computed, not decided."
  },
  "book_signal_state": {
-  "as_of": "2026-11-26",
-  "for_the_user": "Nov-1 list: go-ahead stands; still waiting for 'done'. Next contribution Dec 1 (the monthly routine will issue the list). No notification.",
-  "crypto": "BTC dipped to ~57.2k Wednesday on hot core PCE, US tariff proposals and an AI-stock wobble, then short liquidations lifted it back to 60,508 - a higher low than Nov 21's 55.1k. ETH 1,688 (HOLD, oversold relief only). Seventh straight day of BTC ETF outflows (-$453M Nov 25); November a record ~$5B. Nothing rated BUY.",
-  "uae": "DIB agreed to buy 100% of Emirates Islamic from Emirates NBD in an all-share deal (0.642 DIB shares per EI share; Emirates NBD will own 32.5% of the enlarged DIB; combined assets ~AED 585bn, the world's #2 listed Islamic bank). Needs central bank, CMA and shareholder approval. DIB closed Wed at 8.92 (+1.6%), Emirates NBD 34.20 (-1.2%). DFM +0.3%, ADX +0.3%. Not buyable until the user has a broker.",
-  "macro": "US: October PCE 3.8% y/y (in line), core 3.3% (hot); Q3 GDP revised up to 4.3%; December hike ~98% priced; 10-year fell to ~4.85% on safe-haven buying. USTR proposed Section 301 tariffs on 14 economies (comments due Jan 5). Gulf: Houthis claimed a strike on Saudi Arabia's Ras Tanura refinery (unconfirmed); Riyadh's PIF tower hit again Nov 24 (11 injured); a projectile exploded near a tanker ~50nm west of Dubai (no damage). Brent +3.5% to $94.61. No attack on UAE territory found."
+  "as_of": "2026-11-27",
+  "for_the_user": "Nov-1 list: go-ahead stands; still waiting for 'done'. Dec-1 monthly list next. No notification.",
+  "crypto": "Slow recovery: BTC 61,770 (MACD bullish cross), ETH 1,735; Thanksgiving bounce from >$100M of short liquidations in thin trading after a 57.2k low. Record ~$5.39B November ETF outflows (7 straight days to Nov 25). Fear & Greed 12. ~$6.8B of BTC options expire on Deribit today 08:00 UTC. Every coin SELL.",
+  "uae": "DIB closed Thu Nov 26 at 9.79 (+9.75%) on the Emirates Islamic deal (Dubai +1.5%); today 9.97 (+1.8% on Thursday), RSI ~90 - very overbought. Emaar 13.36, RSI 73. Not buyable until the user has a broker.",
+  "macro": "Gulf worsening: two Italian technicians killed at a Kuwaiti air-defence site (Kuwait blames Iranian drones; Iran denies); Aramco's Jazan refinery hit, one worker killed; a tanker struck ~18nm east of Khasab Nov 25. No attack on UAE territory found. Brent $96.57; OPEC+ meets Sun Nov 29."
  },
  "bookkeeping_correction": {
   "found": "2026-09-29",
@@ -960,6 +960,11 @@
    "venue_check": "No new hack, unplanned outage or regulator action found for Nov 24-26. Scheduled: TRON (TRC20) deposit/withdrawal maintenance from 05:55 UTC Nov 26 for ~1 hour (Binance Support announcement) - affects USDT sent on TRC20 during that window only. No post-event report on the Nov 25 all-network maintenance either way.",
    "other": "A US federal court in Colorado reportedly extended a freeze on ~27,304 TRON addresses (Binance/OKX accounts named in a specific case) to a Dec 17 hearing - not related to this user. Still no announcement that every post-hack network reopened.",
    "decision": "Go-ahead stands."
+  },
+  "status_2026_11_27": {
+   "milestone": "Nov 26: Binance said its withdrawal recovery work is complete and the suspension from the October hack is fully lifted (Cointelegraph, CoinDesk, Crypto Times). A few networks stay paused for unrelated reasons, incl. USDC on Hedera, World Chain and Sonic.",
+   "venue_check": "No new hack, outage, solvency concern or regulator action against Binance found for Nov 25-27. Unrelated: bStocks token transfers pause Nov 30-Dec 3 for dividends (not BTC/ETH/USDT).",
+   "decision": "Go-ahead stands; the post-hack withdrawal saga is closed."
   }
  },
  "pre_uae_trade_fixes": [

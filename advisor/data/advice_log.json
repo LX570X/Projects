@@ -2939,6 +2939,13 @@
    "action": "no change - Nov-1 go-ahead stands",
    "rationale": "BTC held a higher low (57.2k vs 55.1k) and recovered above 60k on short liquidations; nothing rated BUY. Venue check clean (scheduled TRC20 maintenance only). DIB-Emirates Islamic deal agreed - recorded. Gulf: projectile near a tanker west of Dubai; Saudi refinery attack claim. No notification.",
    "status": "no action"
+  },
+  {
+   "date": "2026-11-27",
+   "ticker": "daily",
+   "action": "no change - Nov-1 go-ahead stands",
+   "rationale": "Binance declared its post-hack withdrawal suspension fully lifted (Nov 26). Crypto recovering on short-covering, still SELL everywhere. Gulf casualties in Kuwait and Saudi recorded; no attack on the UAE. No notification.",
+   "status": "no action"
   }
  ]
 }
