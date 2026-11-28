@@ -1,21 +1,21 @@
 {
- "updated": "2026-11-27T07:55+00:00",
+ "updated": "2026-11-28T07:45+00:00",
  "market_notes": [
   {
-   "market": "Binance: withdrawals fully back",
-   "note": "Binance says the hack-related withdrawal suspension is over, four weeks after the theft. A few small networks are paused for unrelated maintenance."
+   "market": "Crypto gives back its bounce",
+   "note": "BTC ~59.4k (-3.8%), ETH ~1,650 (-4.9%). Bitcoin funds have had 8 straight days of outflows; November is a record month for outflows. Coins are oversold, but that alone is not a buy signal."
   },
   {
-   "market": "Crypto recovers slowly",
-   "note": "BTC ~61.8k, ETH ~1,735 - a holiday short-squeeze after a record month of fund outflows (~$5.4B). Still rated SELL. Your Dec 1 contribution list comes Monday."
+   "market": "Binance: still clean",
+   "note": "No new problems. Withdrawals are open; a few small networks are paused. Your Dec 1 list comes Monday."
   },
   {
-   "market": "Gulf: deadly strikes in Kuwait and Saudi",
-   "note": "Two Italian technicians killed at a Kuwaiti air-defence site; one worker killed at Saudi Arabia's Jazan refinery; another tanker hit near Hormuz. No attack on the UAE reported. Oil up to ~$96.6."
+   "market": "Dubai's best week in ~17 months",
+   "note": "DFM up ~5.6% this week and back above its pre-war level. Emirates NBD +3.3% Friday, DIB ~+27% this week on its merger deal. Many names are now very stretched."
   },
   {
-   "market": "DIB keeps climbing",
-   "note": "+9.75% Thursday to 9.79 on the Emirates Islamic deal; now very overbought."
+   "market": "Gulf shipping still under fire",
+   "note": "More ships were hit or disabled near Hormuz this week. Nothing has hit the UAE itself. Oil ~$95; OPEC+ meets Sunday."
   }
  ],
  "asset_notes": {
@@ -529,6 +529,12 @@
     "impact": "bearish",
     "date": "2026-11-21",
     "source": "Reuters via TradingView, Bloomberg, CoinDesk (CoinGlass), Investing.com"
+   },
+   {
+    "headline": "Fell from ~62.2k to ~58.7k Fri Nov 27 after the $6.8B Deribit expiry and during US hours; BTC ETFs -$389M (8th straight day), November ~-$5.78B record",
+    "impact": "bearish",
+    "date": "2026-11-27",
+    "source": "Investing.com, SoSoValue via The Block"
    }
   ],
   "ETHUSDT": [
@@ -1063,6 +1069,12 @@
     "impact": "bullish",
     "date": "2026-11-26",
     "source": "FXStreet, Reuters via Business Recorder"
+   },
+   {
+    "headline": "Closed 9.83 (+0.4%) Fri Nov 27; ~+27% for the week on the Emirates Islamic deal (derived)",
+    "impact": "neutral",
+    "date": "2026-11-27",
+    "source": "Yahoo feed; research pass"
    }
   ],
   "EMIRATESNBD": [
@@ -1167,6 +1179,12 @@
     "impact": "neutral",
     "date": "2026-11-25",
     "source": "AGBI, The National"
+   },
+   {
+    "headline": "Closed 35.20 (+3.3%) Fri Nov 27 from 34.08; DFM +1.4%, week +5.6% (single-source)",
+    "impact": "bullish",
+    "date": "2026-11-27",
+    "source": "Yahoo feed; research pass (no independent confirmation)"
    }
   ],
   "TALABAT": [
@@ -2399,7 +2417,8 @@
   ]
  },
  "risk_flags": [
-  "VENUE RISK (updated 2026-11-27): Binance says the post-hack withdrawal suspension is fully lifted (Nov 26); losses covered; reserves >=100% (Nov 12 snapshot). Residual concentration risk on one exchange accepted at this size.",
+  "VENUE RISK (updated 2026-11-28): Binance post-hack withdrawal suspension fully lifted (Nov 26); no new incident Nov 26-28; reserves >=100% (Nov 12 snapshot, ZK proof ~Nov 14). USDC paused on Hedera/World Chain/Sonic; one unconfirmed report of USDT-on-Solana blocked Nov 27. Phishing 'refund'/'speed up withdrawal' scams are active.",
+  "GULF SHIPPING (2026-11-26/27): Kun Peng tanker hit by a projectile off Oman (engine-room fire); CENTCOM says a US aircraft disabled the bulk carrier Pacific Archer in the Gulf of Oman (Nov 26); the IRGC claims a tanker hit a mine near Hormuz Nov 27 (unverified Iranian claim); Tehran threatened retaliation. No attack on UAE territory found (not independently confirmed - search budget ran out).",
   "GULF CASUALTIES (2026-11-26): two Italian Rheinmetall technicians killed at a Kuwaiti air-defence site (Kuwait blames Iranian drones); Aramco Jazan refinery hit (1 dead). Tanker struck ~18nm E of Khasab Nov 25. The UAE has not been hit directly so far.",
   "WEST OF DUBAI (2026-11-25): UKMTO - an unknown projectile exploded near a tanker ~50nm west of Dubai (no damage). Houthi claims on Ras Tanura and repeated hits on Riyadh's PIF tower show the war widening across the Gulf. UAE territory not attacked so far.",
   "KHOR FAKKAN (2026-11-24): UKMTO 218-26 - a bulk carrier anchored at Dibba OPL ~23nm NE of Khor Fakkan was hit by a projectile (fire, no casualties). Third vessel incident in UAE waters/approaches this month (Nov 10 ADNOC L&S, Nov 11 off RAK).",
@@ -2465,7 +2484,8 @@
   "2026-11-12: this morning's note called Emirates NBD's +7.9% 'overstated' because of a malformed Tuesday bar. The Tuesday bar is a carried-forward placeholder, but the move itself is real: Reuters' +3.5% (Tue) and +4.3% (Wed) compound to ~7.95%. It spans two sessions, not one.",
   "2026-11-13: the Nov-12 note said Emirates NBD's +7.9% (Mon close to Thu draft) was real and spanned Tue+Wed. In fact the feed's dates are shifted: its 'Wed' bar was Tuesday's close, Wednesday closed ~34.80 and Thursday ~35.90 (+3.2%, FXStreet). Today's +5.3% for Emirates NBD is wrong - it is ~2% below Thursday. UAE moves from this feed must be cross-checked before being repeated.",
   "2026-11-16: the Nov-15 note said Saudi intercepted Houthi missiles aimed at Riyadh on Sun Nov 15. Today's check found the only clearly dated report of that is from Nov 8 (Aramco building damaged); a Nov 15 Gulf News headline exists but could not be confirmed as a separate event. Treat the Nov 15 Riyadh intercept as unconfirmed.",
-  "2026-11-23: the Nov-22 note said Iran's Nov 21 strike on a Bahrain industrial site caused 'no injuries'. Reuters (via Arab News) reports two people were hurt."
+  "2026-11-23: the Nov-22 note said Iran's Nov 21 strike on a Bahrain industrial site caused 'no injuries'. Reuters (via Arab News) reports two people were hurt.",
+  "2026-11-28: yesterday's 'Brent $96.57' was the Nov 26 settlement; Brent settled $95.44 on Nov 27 (-1.2%). The Jan contract expires Nov 30, so weekly % figures are distorted."
  ],
  "missing": [
   "GENIUS Act stablecoin final-rules deadline is July 18, 2026 \u2014 TOMORROW: six agencies (OCC, FDIC, NCUA, Treasury, FinCEN, OFAC) must finalize rules one year after enactment; comment periods closed June 9 and there is no statutory fallback if they miss. Direct near-term catalyst/risk for stablecoins (USDC/Coinbase economics \u2014 which the findings themselves cite in the CLARITY yield fight \u2014 and Tether) yet absent from all three crypto findings. (Kraken blog Jul 15, CryptoSlate, OCC Bulletin 2026-3, Chapman tracker.)",
@@ -2484,26 +2504,21 @@
   "2026-10-14: added _hairline_note(). 76 of 219 measured 50-day side changes (35%) fall inside the 0.5% trend buffer.",
   "2026-10-13: the engine's stop_hit test used the live tick rather than the last completed daily close. Fixed with last_completed_close().",
   "2026-11-09: Friday-bar model held again - the Fri Nov 6 UAE bar (served over the weekend) was deleted on Monday, and Thursday Nov 5 was backfilled a day late. UAE moving averages keep missing Fridays.",
-  "2026-11-12: all ten DFM names carry a placeholder Tue Nov 10 bar (O=H=L=C = Monday's close); Wednesday not yet backfilled; Yahoo's previous close was Monday's. Daily UAE moves today span Monday close to Thursday draft. DEWA has no Thursday draft at all. Added to pre_uae_trade_fixes."
+  "2026-11-12: all ten DFM names carry a placeholder Tue Nov 10 bar (O=H=L=C = Monday's close); Wednesday not yet backfilled; Yahoo's previous close was Monday's. Daily UAE moves today span Monday close to Thursday draft. DEWA has no Thursday draft at all. Added to pre_uae_trade_fixes.",
+  "2026-11-28: the Yahoo Thursday Nov 26 bar for ENBD was backfilled to 34.08 (yesterday it showed a 34.82 draft). ENBD has closed at its daily low on three straight bars (Nov 24-26) - possible bar-shift artefact, already covered by pre_uae_trade_fixes. EAND keeps failing on the TradingView scanner ('not in response')."
  ],
- "research_pass_quality": {
-  "as_of": "2026-10-14",
-  "method": "Seven parallel research threads, each followed by an adversarial date-check whose only job is to reject material not dated to 2026-10-10..14, then a completeness critic. 13 agents.",
-  "what_it_caught": "The date-checker rejected 43 of roughly 60 findings. Among them: a FAB deposit-rate 'move' that was a six-week-old campaign recycled in an Oct 13 article; a Gulf sukuk-issuance item mis-stamped from Oct 8 into the window; an AGBI UAE-banks preview that is actually from October 2025 and attributes its forecasts to CI Capital rather than the UBS analyst claimed; and an Aug 19 article reporting FAB -2.8%/ADIB -2.04%/ADCB -1.91% that would have read perfectly as 'this week's selloff'. That last one is precisely the error I made on 2026-10-07 and declined, and it surfaced again unprompted.",
-  "what_it_got_wrong": "The critic asserted nobody checked whether today's CPI number landed. It cannot have landed: 08:30 ET is 12:30 UTC and this reading is 07:09 UTC. A preview was the only possible coverage.",
-  "gaps_i_accept": "The critic is right that the four BUY-rated cryptos - ADA, AVAX, LINK and LTC - got NO research at all, while BNB, a HOLD, got the deepest single-ticker pass. Those four are the only names the board rates to buy, so for a holder of USDT that is the wrong allocation of effort. There was also no ETH-specific thread despite ETH being the only line that transacted this week. And the index-level UAE data that overturned yesterday's headline was found by accident inside the ADCB thread while the thread actually assigned to market-wide research returned 'nothing found'.",
-  "gaps_i_also_accept": "The out-of-window standard was applied inconsistently: items at Oct 9 were rejected in two threads and kept with a caveat in a third, and all three EMAARDEV keeps are pre-window. A null result was rejected in one thread and kept in another on identical reasoning. Aggregator quotes were rejected for EMAARDEV and accepted for BNB. And today's CPI was labelled bearish in one thread and neutral in another - I have resolved that to NEUTRAL and PENDING, because labelling an unlanded coin-flip bearish is a forecast.",
-  "fix_next_run": "Give the BUY-rated names their own threads before the HOLDs, give ETH a thread while its re-entry is live, and state one out-of-window rule in the brief instead of leaving each checker to invent it."
- },
+ "research_pass_quality": "2026-11-28: Binance and crypto items were independently verified. UAE closes and Gulf items could NOT be independently verified: the shared web-search budget ran out mid-pass, and several news hosts are outside the network allowlist. Treat them as single-source.",
  "upcoming": [
-  "Deribit BTC options expiry (~$6.8B) - today 08:00 UTC",
-  "OPEC+ meeting - Sun Nov 29",
+  "OPEC+ meeting - Sun Nov 29 (expected to keep Q1 2027 targets)",
   "MSCI changes (incl. Strategy removal) effective Nov 30 close",
-  "Next monthly contribution - Dec 1 (monthly routine)",
-  "ADGM freezing-order hearing - Dec 1 (single source)",
+  "Next monthly contribution - Mon Dec 1 (monthly routine)",
+  "ADGM freezing-order hearing - Dec 1",
+  "UAE National Day holiday - markets reportedly closed Dec 2-3 (to confirm)",
+  "US November jobs report - Dec 4",
   "FAB rights-issue EGM Dec 7",
-  "FOMC Dec 8-9 (hike ~98% priced)",
+  "FOMC Dec 8-9 (hike ~99% priced)",
   "Emaar Development Dh15 offer closes 3pm Dec 10",
-  "Colorado TRON-address freeze hearing - Dec 17"
+  "Colorado TRON-address freeze hearing - Dec 17",
+  "Deribit quarterly expiry Dec 25 (~$10B BTC)"
  ]
 }

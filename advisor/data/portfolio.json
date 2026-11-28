@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T07:55+00:00",
+ "updated": "2026-11-28T07:45+00:00",
  "note": "User holdings tracked by the advisor. Plan levels frozen at entry. Position size ~$66: alerts must say CONVERT (to USDT) or buy more - never \"sell/cash out\". Stocks start soon; add positions when user confirms purchases.",
  "cash": {
   "USDT": null,
@@ -539,11 +539,11 @@
   "why_it_matters": "On a day when every asset on the crypto board fell and four names confirmed trend breaks, the system produced no trade. That is the design: the BTC stop is a single daily close below a fixed level and that level was not touched, and the satellite trigger needed a qualifying name and there was none. Both outcomes were computed, not decided."
  },
  "book_signal_state": {
-  "as_of": "2026-11-27",
-  "for_the_user": "Nov-1 list: go-ahead stands; still waiting for 'done'. Dec-1 monthly list next. No notification.",
-  "crypto": "Slow recovery: BTC 61,770 (MACD bullish cross), ETH 1,735; Thanksgiving bounce from >$100M of short liquidations in thin trading after a 57.2k low. Record ~$5.39B November ETF outflows (7 straight days to Nov 25). Fear & Greed 12. ~$6.8B of BTC options expire on Deribit today 08:00 UTC. Every coin SELL.",
-  "uae": "DIB closed Thu Nov 26 at 9.79 (+9.75%) on the Emirates Islamic deal (Dubai +1.5%); today 9.97 (+1.8% on Thursday), RSI ~90 - very overbought. Emaar 13.36, RSI 73. Not buyable until the user has a broker.",
-  "macro": "Gulf worsening: two Italian technicians killed at a Kuwaiti air-defence site (Kuwait blames Iranian drones; Iran denies); Aramco's Jazan refinery hit, one worker killed; a tanker struck ~18nm east of Khasab Nov 25. No attack on UAE territory found. Brent $96.57; OPEC+ meets Sun Nov 29."
+  "as_of": "2026-11-28",
+  "for_the_user": "Nov-1 list: go-ahead stands; still waiting for 'done'. Dec-1 monthly list on Monday. No notification.",
+  "crypto": "BTC 59,418 (-3.8%), ETH 1,649 (-4.9%). The Thanksgiving bounce faded on Fri Nov 27 after the Deribit expiry and during US hours, while US stocks rallied (Nasdaq +2.3%). BTC ETFs -$389M Nov 27 (8th straight outflow day; November ~-$5.78B, a record); ETH ETFs -$69M (9th day). BTC, ETH and BNB moved SELL to HOLD only because RSI is oversold (26-28); trend and momentum are unchanged, so this is not a buy signal.",
+  "uae": "Friday Nov 27 (single-source closes): DFM +1.4% to ~6,575, its first close above the pre-war level; week ~+5.6%. ENBD 35.20 (+3.3%), DIB 9.83 (+0.4%; ~+27% this week), Emaar 13.46 (+2.0%), Aldar 8.98 (+1.8%). Several names are overbought (DIB RSI ~90). Not buyable until the user has a broker.",
+  "macro": "Fed hike on Dec 9 ~99% priced after core PCE 3.3% (highest since Nov 2023); 10Y ~4.94%. Brent settled $95.44 Nov 27 (-1.2%), ~+3% for the week. OPEC+ meets Sun Nov 29 and is expected to keep Q1 2027 targets. Gulf: Kun Peng tanker hit off Oman Nov 26; the US disabled the bulk carrier Pacific Archer in the Gulf of Oman (CENTCOM Nov 27); the IRGC claims a tanker hit a mine (Iranian claim only). No attack on UAE territory found."
  },
  "bookkeeping_correction": {
   "found": "2026-09-29",
@@ -965,6 +965,10 @@
    "milestone": "Nov 26: Binance said its withdrawal recovery work is complete and the suspension from the October hack is fully lifted (Cointelegraph, CoinDesk, Crypto Times). A few networks stay paused for unrelated reasons, incl. USDC on Hedera, World Chain and Sonic.",
    "venue_check": "No new hack, outage, solvency concern or regulator action against Binance found for Nov 25-27. Unrelated: bStocks token transfers pause Nov 30-Dec 3 for dividends (not BTC/ETH/USDT).",
    "decision": "Go-ahead stands; the post-hack withdrawal saga is closed."
+  },
+  "status_2026_11_28": {
+   "venue_check": "No new hack, outage, solvency worry or regulator action against Binance found for Nov 26-28. USDC is still paused on Hedera and World Chain (low hot-wallet balance) and on Sonic. One small outlet says USDT on Solana was also blocked Nov 27, but only that source reports it and it may repeat an October status. TRC20, ERC20 and BEP20 are not listed as blocked. Brazil granted Binance Brasil an FX licence (announced Nov 27). Binance Blockchain Week in Bangkok Nov 28-29; the technical post-mortem has still not been published.",
+   "decision": "Go-ahead stands. If the user ever withdraws USDT, use TRC20/BEP20/ERC20, not Solana."
   }
  },
  "pre_uae_trade_fixes": [
