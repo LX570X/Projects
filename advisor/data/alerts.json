@@ -1,47 +1,83 @@
 {
- "generated_at_utc": "2026-11-27T07:08:24+00:00",
+ "generated_at_utc": "2026-11-28T07:08:41+00:00",
  "alerts": [
   {
    "ticker": "BTCUSDT",
    "severity": "info",
-   "type": "macd",
-   "msg": "BTCUSDT: MACD bullish cross"
+   "type": "signal_change",
+   "msg": "BTCUSDT: SELL -> HOLD (score -25 -> -5) \u2014 oversold relief applied, trend/momentum unchanged"
+  },
+  {
+   "ticker": "BTCUSDT",
+   "severity": "info",
+   "type": "rsi",
+   "msg": "BTCUSDT: RSI crossed below 30 (now 26.2)"
+  },
+  {
+   "ticker": "ETHUSDT",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "ETHUSDT moved -4.9% in the last day (now 1649.44 USD)"
+  },
+  {
+   "ticker": "ETHUSDT",
+   "severity": "info",
+   "type": "rsi",
+   "msg": "ETHUSDT: RSI crossed below 30 (now 27.3)"
   },
   {
    "ticker": "BNBUSDT",
    "severity": "info",
-   "type": "macd",
-   "msg": "BNBUSDT: MACD bullish cross"
-  },
-  {
-   "ticker": "AVAXUSDT",
-   "severity": "actionable",
    "type": "signal_change",
-   "msg": "AVAXUSDT: STRONG SELL -> SELL (score -65 -> -25)"
+   "msg": "BNBUSDT: SELL -> HOLD (score -25 -> -5) \u2014 oversold relief applied, trend/momentum unchanged"
   },
   {
-   "ticker": "AVAXUSDT",
-   "severity": "info",
-   "type": "macd",
-   "msg": "AVAXUSDT: MACD bullish cross"
-  },
-  {
-   "ticker": "EMAAR",
+   "ticker": "BNBUSDT",
    "severity": "info",
    "type": "rsi",
-   "msg": "EMAAR: RSI crossed above 70 (now 72.8)"
+   "msg": "BNBUSDT: RSI crossed below 30 (now 28.0)"
   },
   {
-   "ticker": "TECOM",
+   "ticker": "AVAXUSDT",
    "severity": "info",
-   "type": "signal_change",
-   "msg": "TECOM: SELL -> HOLD (score -40 -> 5)"
+   "type": "big_move",
+   "msg": "AVAXUSDT moved -4.1% in the last day (now 6.5 USD)"
   },
   {
-   "ticker": "TECOM",
+   "ticker": "ADAUSDT",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "ADAUSDT moved -4.8% in the last day (now 0.1458 USD)"
+  },
+  {
+   "ticker": "EMIRATESNBD",
+   "severity": "info",
+   "type": "big_move",
+   "msg": "EMIRATESNBD moved +3.3% in the last day (now 35.2 AED)"
+  },
+  {
+   "ticker": "DIB",
    "severity": "actionable",
-   "type": "trend",
-   "msg": "TECOM: price crossed above its 50-day average \u2014 trend change"
+   "type": "signal_change",
+   "msg": "DIB: BUY -> STRONG BUY (score 35 -> 45) \u2014 penalty relief only, trend/momentum unchanged"
+  },
+  {
+   "ticker": "TALABAT",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "TALABAT: STRONG BUY -> BUY (score 45 -> 30)"
+  },
+  {
+   "ticker": "EMAARDEV",
+   "severity": "info",
+   "type": "macd",
+   "msg": "EMAARDEV: MACD bearish cross"
+  },
+  {
+   "ticker": "ADPORTS",
+   "severity": "actionable",
+   "type": "signal_change",
+   "msg": "ADPORTS: SELL -> BUY (score -25 -> 35) - HAIRLINE 50-day cross: price is only 0.02% above the average, inside the 0.5% buffer, so no trend change was confirmed"
   }
  ]
 }
